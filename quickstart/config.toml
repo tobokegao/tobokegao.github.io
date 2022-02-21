@@ -39,13 +39,13 @@ preserveTaxonomyNames = true
     loadfastload = false
 
     # Sets the speed for the page loading effect. Default is 1.0.
-    loadspeedfactor = 2.0
+    loadspeedfactor = 1.5
 
     # Enables or disables the second flyby cursor. Default is false.
     loadonepass = false
 
 [params.copyright]
-    name = "とぼけがお"
+    name = "Tobokegao"
 
     # The url to use as link in the copyright name in the footer. Leave empty to use none.
     url = "https://tobokegao.github.io/about/"

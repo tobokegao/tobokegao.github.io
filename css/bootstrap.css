@@ -221,14 +221,6 @@ textarea {
   }
 }
 
-@font-face {
-  font-family: 'DOS';
-  font-style: normal;
-  font-weight: normal;
-  src: url('fonts/Fixedsys500c.eot');
-  src: local('☺'), url('fonts/Fixedsys500c.woff') format('woff'), url('fonts/misaki_gothic.ttf') format('truetype'), url('fonts/Fixedsys500c.svg') format('svg');
-}
-
 body {
   margin: 0;
   font-family: DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
