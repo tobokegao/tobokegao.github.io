@@ -226,7 +226,7 @@ textarea {
   font-style: normal;
   font-weight: normal;
   src: url('fonts/Fixedsys500c.eot');
-  src: local('☺'), url('fonts/Fixedsys500c.woff') format('woff'), url('fonts/Fixedsys500c.ttf') format('truetype'), url('fonts/Fixedsys500c.svg') format('svg');
+  src: local('☺'), url('fonts/Fixedsys500c.woff') format('woff'), url('fonts/misaki_gothic.ttf') format('truetype'), url('fonts/Fixedsys500c.svg') format('svg');
 }
 
 body {
@@ -235,7 +235,7 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: #bbbbbb;
-  background-color: #000084;
+  background-color: #006599;
 }
 
 a {
