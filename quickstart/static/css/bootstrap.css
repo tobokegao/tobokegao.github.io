@@ -222,16 +222,16 @@ textarea {
 }
 
 @font-face {
-  font-family: 'misaki_gothic';
+  font-family: 'k8x12';
   font-style: normal;
   font-weight: normal;
-  src: url('fonts/misaki_gothic.eot');
-  src: local('☺'), url('fonts/misaki_gothic.woff') format('woff'), url('fonts/misaki_gothic.ttf') format('truetype'), url('fonts/misaki_gothic.svg') format('svg');
+  src: url('fonts/k8x12.eot');
+  src: local('☺'), url('fonts/k8x12.woff') format('woff'), url('fonts/k8x12.ttf') format('truetype'), url('fonts/k8x12.svg') format('svg');
 }
 
 body {
   margin: 0;
-  font-family: misaki_gothic, Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: k8x12, DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 18px;
   line-height: 20px;
   color: #bbbbbb;
@@ -1018,7 +1018,7 @@ address {
 code,
 pre {
   padding: 0;
-  font-family: misaki_gothic, Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: k8x12, DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 18px;
   color: #555555;
   -webkit-border-radius: 0;
@@ -1118,7 +1118,7 @@ input,
 button,
 select,
 textarea {
-  font-family: misaki_gothic, Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: k8x12, DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
 label {
@@ -4332,7 +4332,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   padding: 4px 12.4px;
   margin-bottom: 0;
-  font-family: misaki_gothic, Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: k8x12, DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 18px;
   font-weight: normal;
   line-height: 1;
