@@ -27,6 +27,8 @@ preserveTaxonomyNames = true
     # Urls for social networks
     twitter = "https://twitter.com/to6okegao"
     facebook = "https://www.facebook.com/to6okegao"
+    bandcamp = "https://tobokegao.bandcamp.com/"
+    soundcloud = "https://soundcloud.com/tobokegao"
     apple_music = "https://music.apple.com/jp/artist/tobokegao/1532385760"
     spotify = "https://open.spotify.com/artist/2ZW0H3Dntod1TN6dUFKY3v"
     youtube = "https://www.youtube.com/c/to6okegao"
@@ -45,7 +47,7 @@ preserveTaxonomyNames = true
     name = "Tobokegao"
 
     # The url to use as link in the copyright name in the footer. Leave empty to use none.
-    url = ""
+    url = "https://tobokegao.github.io/about/"
 
     # Text to go before copyright information
     prefix = "[hugo.386 theme by Max le Fou](https://gitlab.com/maxlefou/hugo.386)"
