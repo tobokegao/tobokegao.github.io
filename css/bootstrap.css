@@ -221,6 +221,14 @@ textarea {
   }
 }
 
+@font-face {
+  font-family: 'misaki_gothic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/misaki_gothic.eot');
+  src: local('☺'), url('fonts/misaki_gothic.woff') format('woff'), url('fonts/misaki_gothic.ttf') format('truetype'), url('fonts/misaki_gothic.svg') format('svg');
+}
+
 body {
   margin: 0;
   font-family: DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
