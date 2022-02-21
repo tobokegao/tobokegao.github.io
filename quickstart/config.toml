@@ -36,7 +36,7 @@ preserveTaxonomyNames = true
     loadfastload = false
 
     # Sets the speed for the page loading effect. Default is 1.0.
-    loadspeedfactor = 0.5
+    loadspeedfactor = 2.0
 
     # Enables or disables the second flyby cursor. Default is false.
     loadonepass = false
