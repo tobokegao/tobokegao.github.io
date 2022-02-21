@@ -231,7 +231,7 @@ textarea {
 
 body {
   margin: 0;
-  font-family: k8x12, DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: k8x12, Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 18px;
   line-height: 20px;
   color: #bbbbbb;
@@ -1018,7 +1018,7 @@ address {
 code,
 pre {
   padding: 0;
-  font-family: k8x12, DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: k8x12, Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 18px;
   color: #555555;
   -webkit-border-radius: 0;
@@ -1118,7 +1118,7 @@ input,
 button,
 select,
 textarea {
-  font-family: k8x12, DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: k8x12, Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
 label {
@@ -4332,7 +4332,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   padding: 4px 12.4px;
   margin-bottom: 0;
-  font-family: k8x12, DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: k8x12, Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 18px;
   font-weight: normal;
   line-height: 1;
