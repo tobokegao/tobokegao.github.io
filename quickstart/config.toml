@@ -33,7 +33,7 @@ preserveTaxonomyNames = true
     spotify = "https://open.spotify.com/artist/2ZW0H3Dntod1TN6dUFKY3v"
     youtube = "https://www.youtube.com/c/to6okegao"
     github = "https://github.com/tobokegao"
-    contact = "<mailto:to6okegao@gmail.com>"
+    contact = "mailto:to6okegao@gmail.com"
 
     # Enables or disables the loading animations. false activates them. Default is false.
     loadfastload = false
