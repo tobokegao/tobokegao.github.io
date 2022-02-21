@@ -45,7 +45,7 @@ preserveTaxonomyNames = true
     name = "Tobokegao"
 
     # The url to use as link in the copyright name in the footer. Leave empty to use none.
-    url = " "
+    url = ""
 
     # Text to go before copyright information
     prefix = "[hugo.386 theme by Max le Fou](https://gitlab.com/maxlefou/hugo.386)"
