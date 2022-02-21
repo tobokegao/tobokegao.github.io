@@ -45,7 +45,7 @@ preserveTaxonomyNames = true
     loadonepass = false
 
 [params.copyright]
-    name = "Tobokegao"
+    name = "とぼけがお"
 
     # The url to use as link in the copyright name in the footer. Leave empty to use none.
     url = "https://tobokegao.github.io/about/"
