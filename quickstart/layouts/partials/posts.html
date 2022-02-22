@@ -1,0 +1,5 @@
+{{range first 10 ($.Site.GetPage "/post" ).Pages }}
+<li>
+    <a href="{{ .Permalink }}">{{.Title}}</a>
+</li>
+{{ end }}
