@@ -16,7 +16,6 @@ theme = "hugo.386"
 preserveTaxonomyNames = true
 
 [params]
-  [params.en]
     # The name to display as main title in the home page
     mainpagetitle = "Tobokegao Official Home Page!"
 
@@ -54,6 +53,7 @@ preserveTaxonomyNames = true
 
     # Enables or disables the second flyby cursor. Default is false.
     loadonepass = false
+
 [params.ja]
     # The name to display as main title in the home page
     mainpagetitle = "とぼけがおオフィシャルホームページ!"
@@ -62,13 +62,13 @@ preserveTaxonomyNames = true
     mainpagesubtitle = "TBKゾーンへようこそ!" 
 
     # The description of your website. It will be displayed in the home page
-    mainpagedesc = "This website is a repository of information about Tobokegao. Check the links below to access the posts."
+    mainpagedesc = "このサイトは、とぼけがおに関する情報を集めたものです。以下のリンクから投稿にアクセスできます。"
 
     # The name to display in the copyright section in the footer
     copyrightname = "Tobokegao"
 
     # The url to use as link in the copyright name in the footer. Leave empty to use none.
-    copyrighturl = "https://tobokegao.github.io/about/"
+    copyrighturl = "https://tobokegao.github.io/about/ja"
 
     # Show the "built on Hugo" disclaimer
     showhugo = true
