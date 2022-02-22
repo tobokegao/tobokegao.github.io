@@ -4246,7 +4246,7 @@ input[type="submit"].btn.btn-mini {
   display: block;
   float: right;
   padding: 0 10px;
-  margin-right: -10px;
+  margin-right: 100px;
   font-size: 27px;
   color: #a85400;
   text-shadow: 0;
@@ -4256,7 +4256,7 @@ input[type="submit"].btn.btn-mini {
   display: block;
   float: right;
   padding: 0 10px;
-  margin-right: -100px;
+  margin-right: 100px;
   font-size: 27px;
   color: #fefe54;
   text-shadow: 0;
