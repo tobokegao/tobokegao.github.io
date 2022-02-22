@@ -4245,7 +4245,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .tab__btn--item_current-lang {
   display: block;
-  float: left;
+  float: right;
   padding: 10 0px;
   margin-left: 6px;
   font-size: 18px;
@@ -4255,7 +4255,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .tab__btn--item {
   display: block;
-  float: left;
+  float: right;
   padding: 10 0px;
   margin-left: 6px;
   font-size: 18px;
