@@ -6,7 +6,7 @@ DefaultContentLanguage = "en"
   [languages.en]
     languageName = "English"
     weight = 1
-    title = "English Page"
+    title = "English"
   [languages.ja]
     languageName = "Japanese"
     weight = 2
