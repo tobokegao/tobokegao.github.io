@@ -5,12 +5,12 @@ DefaultContentLanguage = "en"
 [languages]
   [languages.en]
     languageName = "English"
-    weight = 10
-    title = "Tobokegao Official Home Page"
+    weight = 1
+    title = "English Page"
   [languages.ja]
     languageName = "Japanese"
-    weight = 20
-    title = "とぼけがおオフィシャルホームページ"
+    weight = 2
+    title = "日本語"
 
 theme = "hugo.386"
 preserveTaxonomyNames = true

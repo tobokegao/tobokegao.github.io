@@ -6,9 +6,9 @@
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
                 {{ if .IsTranslated }}
                     {{ range .Translations }}
-                    <li>
-                        <a class="language" href="{{ .Permalink }}"><i class="fa fa-globe">&nbsp;</i>{{ .Title }}</a>
-                    </li>
+                        <li>
+                            <a class="language" href="{{ .Permalink }}"><i class="fa fa-globe">&nbsp;</i>{{ .Title }}</a>
+                        </li>
                     {{ end }}
                 {{ end }}
             <a class="brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
