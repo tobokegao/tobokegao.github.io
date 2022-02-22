@@ -7,11 +7,11 @@
                 {{ if .IsTranslated }}
                     {{ range .Translations }}
                         <li>
-                            <a class="language" href="{{ .Permalink }}"><i class="fa fa-globe">&nbsp;</i>{{ .Title }}</a>
+                            <a class="language" href="{{ .Permalink }}"><i class="fa fa-globe">&nbsp;</i>{{ .Site.Title }}</a>
                         </li>
                     {{ end }}
                 {{ end }}
-            <a class="brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+            <a class="language" href="{{ .Permalink }}"><i class="fa fa-globe">&nbsp;</i>{{ .Site.Title }}</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     {{ $currentPage := . }}
