@@ -222,16 +222,26 @@ textarea {
 }
 
 @font-face {
-  font-family: 'k8x12';
+  font-family: 'DOS';
   font-style: normal;
   font-weight: normal;
-  src: url('fonts/k8x12.eot');
-  src: local('☺'), url('fonts/k8x12.woff') format('woff'), url('fonts/k8x12.ttf') format('truetype'), url('fonts/k8x12.svg') format('svg');
+  src: url('fonts/Fixedsys500c.eot');
+  src: local('☺'), url('fonts/Fixedsys500c.woff') format('woff'), url('fonts/Fixedsys500c.ttf') format('truetype'), url('fonts/Fixedsys500c.svg') format('svg');
 }
+
+@font-face {
+  font-family: 'PixelMplus10-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/PixelMplus10-Regular.eot');
+  src: local('☺'), url('fonts/PixelMplus10-Regular.woff') format('woff'), url('fonts/PixelMplus10-Regular.ttf') format('truetype'), url('fonts/PixelMplus10-Regular.svg') format('svg');
+}
+
+
 
 body {
   margin: 0;
-  font-family: k8x12, DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: DOS, PixelMplus10-Regular, Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 18px;
   line-height: 20px;
   color: #bbbbbb;
@@ -1018,7 +1028,7 @@ address {
 code,
 pre {
   padding: 0;
-  font-family: k8x12, DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: DOS, PixelMplus10-Regular, Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 18px;
   color: #555555;
   -webkit-border-radius: 0;
@@ -1118,7 +1128,7 @@ input,
 button,
 select,
 textarea {
-  font-family: k8x12, DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: DOS, PixelMplus10-Regular, Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
 label {
@@ -4332,7 +4342,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   padding: 4px 12.4px;
   margin-bottom: 0;
-  font-family: k8x12, DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: DOS, PixelMplus10-Regular, Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 18px;
   font-weight: normal;
   line-height: 1;
