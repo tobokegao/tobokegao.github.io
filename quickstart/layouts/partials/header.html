@@ -6,10 +6,24 @@
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
                 {{ if .IsTranslated }}
                     {{ range .Translations }}
-                        <a class="brand" href="{{ .Permalink }}">{{ .Site.Title }}</a>
+                        <a class="brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
                     {{ end }}
                 {{ end }}
-            <div class="nav-collapse collapse">
+                {{ if .IsTranslated }}
+                <div class="translated__box">
+                    <ul class="tab__btn">
+                        <li>
+                            <span class="tab__btn--item current-lang">{{ .Site.Language.LanguageName }}</span>
+                        </li>
+                        { range .Translations }}
+                            <li>
+                                <a class="tab__btn--item" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+                            </li>
+                        {{end}}
+                        </ul>
+                    </div>
+                {{end}}
+                <div class="nav-collapse collapse">
                 <ul class="nav">
                     {{ $currentPage := . }}
                     {{ range .Site.Menus.main }}
