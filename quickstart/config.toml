@@ -15,102 +15,102 @@ DefaultContentLanguage = "en"
     title = "日本語ページへ"
     contentDir = "content/japanese"
 
-theme = "hugo.386"
-preserveTaxonomyNames = true
+  theme = "hugo.386"
+  preserveTaxonomyNames = true
 
-[params]
-    # The name to display as main title in the home page
-    mainpagetitle = "Tobokegao Official Home Page!"
+  [params]
+      # The name to display as main title in the home page
+      mainpagetitle = "Tobokegao Official Home Page!"
 
-    # The subtitle to display under the title in the home page
-    mainpagesubtitle = "Welcome to TBK zone!" 
+      # The subtitle to display under the title in the home page
+      mainpagesubtitle = "Welcome to TBK zone!" 
 
-    # The description of your website. It will be displayed in the home page
-    mainpagedesc = "This website is a repository of information about Tobokegao. Check the links below to access the posts."
+      # The description of your website. It will be displayed in the home page
+      mainpagedesc = "This website is a repository of information about Tobokegao. Check the links below to access the posts."
 
-    # The name to display in the copyright section in the footer
-    copyrightname = "Tobokegao"
+      # The name to display in the copyright section in the footer
+      copyrightname = "Tobokegao"
 
-    # The url to use as link in the copyright name in the footer. Leave empty to use none.
-    copyrighturl = "https://tobokegao.github.io/about/"
+      # The url to use as link in the copyright name in the footer. Leave empty to use none.
+      copyrighturl = "https://tobokegao.github.io/about/"
 
-    # Show the "built on Hugo" disclaimer
-    showhugo = true
+      # Show the "built on Hugo" disclaimer
+      showhugo = true
 
-    # Urls for social networks
-    twitter = "https://twitter.com/to6okegao"
-    facebook = "https://www.facebook.com/to6okegao"
-    bandcamp = "https://tobokegao.bandcamp.com/"
-    soundcloud = "https://soundcloud.com/tobokegao"
-    apple_music = "https://music.apple.com/jp/artist/tobokegao/1532385760"
-    spotify = "https://open.spotify.com/artist/2ZW0H3Dntod1TN6dUFKY3v"
-    youtube = "https://www.youtube.com/c/to6okegao"
-    github = "https://github.com/tobokegao"
-    contact = "mailto:to6okegao@gmail.com"
+      # Urls for social networks
+      twitter = "https://twitter.com/to6okegao"
+      facebook = "https://www.facebook.com/to6okegao"
+      bandcamp = "https://tobokegao.bandcamp.com/"
+      soundcloud = "https://soundcloud.com/tobokegao"
+      apple_music = "https://music.apple.com/jp/artist/tobokegao/1532385760"
+      spotify = "https://open.spotify.com/artist/2ZW0H3Dntod1TN6dUFKY3v"
+      youtube = "https://www.youtube.com/c/to6okegao"
+      github = "https://github.com/tobokegao"
+      contact = "mailto:to6okegao@gmail.com"
 
-    # Enables or disables the loading animations. false activates them. Default is false.
-    loadfastload = false
+      # Enables or disables the loading animations. false activates them. Default is false.
+      loadfastload = false
 
-    # Sets the speed for the page loading effect. Default is 1.0.
-    loadspeedfactor = 1.5
+      # Sets the speed for the page loading effect. Default is 1.0.
+      loadspeedfactor = 1.5
 
-    # Enables or disables the second flyby cursor. Default is false.
-    loadonepass = false
+      # Enables or disables the second flyby cursor. Default is false.
+      loadonepass = false
 
-[params.copyright]
-    name = "Tobokegao"
+  [params.copyright]
+      name = "Tobokegao"
 
-    # The url to use as link in the copyright name in the footer. Leave empty to use none.
-    url = "https://tobokegao.github.io/about/"
+      # The url to use as link in the copyright name in the footer. Leave empty to use none.
+      url = "https://tobokegao.github.io/about/"
 
-    # Text to go before copyright information
-    prefix = "[hugo.386 theme by Max le Fou](https://gitlab.com/maxlefou/hugo.386)"
+      # Text to go before copyright information
+      prefix = "[hugo.386 theme by Max le Fou](https://gitlab.com/maxlefou/hugo.386)"
 
-    # Text to go between copyright and hugo disclaimer (if enabled)
-    suffix = "TBK site"
+      # Text to go between copyright and hugo disclaimer (if enabled)
+      suffix = "TBK site"
 
-[menu]
-  # This displays buttons in the navbar to access your contents
-  [[menu.main]]
-    identifier = "about" # An unique identifier for the button
-    name = "About"       # A display name for the button
-    url = "/about/"      # The path to the content. It can lead to a single page (like here)
-    weight = 10          # A number to order the buttons in the navbar
+  [menu]
+    # This displays buttons in the navbar to access your contents
+    [[menu.main]]
+      identifier = "about" # An unique identifier for the button
+      name = "About"       # A display name for the button
+      url = "/about/"      # The path to the content. It can lead to a single page (like here)
+      weight = 10          # A number to order the buttons in the navbar
 
-  [[menu.main]]
-    identifier = "posts"
-    name = "All posts"
-    url = "/post/"       # The path can lead to a content folder too.
-    weight = 20
+    [[menu.main]]
+      identifier = "posts"
+      name = "All posts"
+      url = "/post/"       # The path can lead to a content folder too.
+      weight = 20
 
-[taxonomies]
-category = "categories"
-tag = "tags"
+  [taxonomies]
+  category = "categories"
+  tag = "tags"
 
 
-[privacy]
+  [privacy]
 
-  [privacy.vimeo]
-    disabled = false
-    simple = true
+    [privacy.vimeo]
+      disabled = false
+      simple = true
 
-  [privacy.twitter]
-    disabled = false
-    enableDNT = true
-    simple = true
+    [privacy.twitter]
+      disabled = false
+      enableDNT = true
+      simple = true
 
-  [privacy.instagram]
-    disabled = false
-    simple = true
+    [privacy.instagram]
+      disabled = false
+      simple = true
 
-  [privacy.youtube]
-    disabled = false
-    privacyEnhanced = true
+    [privacy.youtube]
+      disabled = false
+      privacyEnhanced = true
 
-[services]
+  [services]
 
-  [services.instagram]
-    disableInlineCSS = true
+    [services.instagram]
+      disableInlineCSS = true
 
-  [services.twitter]
-    disableInlineCSS = true
+    [services.twitter]
+      disableInlineCSS = true
