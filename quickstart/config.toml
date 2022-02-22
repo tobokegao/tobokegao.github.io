@@ -114,3 +114,6 @@ DefaultContentLanguage = "en"
 
     [services.twitter]
       disableInlineCSS = true
+
+  [markup.goldmark.renderer]
+    unsafe = true
