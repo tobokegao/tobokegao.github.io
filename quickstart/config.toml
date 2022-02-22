@@ -6,13 +6,13 @@ DefaultContentLanguage = "en"
   [languages.en]
     languageName = "English"
     weight = 1
-    title = "Tobokegao Official Home Page"
+    title = "とぼけがおオフィシャルホームページ"
     contentDir = "content/english"
 
   [languages.ja]
     languageName = "Japanese"
     weight = 2
-    title = "とぼけがおオフィシャルホームページ"
+    title = "Tobokegao Official Home Page"
     contentDir = "content/japanese"
 
   theme = "hugo.386"
