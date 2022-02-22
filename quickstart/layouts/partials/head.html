@@ -1,5 +1,9 @@
 <head>
-    <title>{{ .Site.Title }}</title>
+    {{ if .IsTranslated }}
+        {{ range .Translations }}
+            <title>{{ if not .IsHome }}{{ .Title }} |{{ end }} {{ .Site.Title }}</title>
+        {{ end }}
+    {{ end }}
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

@@ -1,5 +1,4 @@
 baseURL = "https://tobokegao.github.io/"
-title = "Tobokegao Official Home Page"
 languageCode = "en"
 DefaultContentLanguage = "en"
 
@@ -7,13 +6,13 @@ DefaultContentLanguage = "en"
   [languages.en]
     languageName = "English"
     weight = 1
-    site.title = "Tobokegao Official Home Page"
+    title = "Tobokegao Official Home Page"
     contentDir = "content/english"
 
   [languages.ja]
     languageName = "Japanese"
     weight = 2
-    site.title = "とぼけがおオフィシャルホームページ"
+    title = "とぼけがおオフィシャルホームページ"
     contentDir = "content/japanese"
 
   theme = "hugo.386"
