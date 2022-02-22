@@ -26,10 +26,10 @@ preserveTaxonomyNames = true
     mainpagedesc = "This website is a repository of information about Tobokegao. Check the links below to access the posts."
 
     # The name to display in the copyright section in the footer
-    copyrightname = "JM Fergeau"
+    copyrightname = "Tobokegao"
 
     # The url to use as link in the copyright name in the footer. Leave empty to use none.
-    copyrighturl = "http://jmf-portfolio.netlify.com"
+    copyrighturl = "https://tobokegao.github.io/about/"
 
     # Show the "built on Hugo" disclaimer
     showhugo = true
