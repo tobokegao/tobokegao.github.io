@@ -13,11 +13,11 @@
                 <div class="translated__box">
                     <ul class="tab__btn">
                         <li>
-                            <span class="brand">{{ .Site.Language.LanguageName }}</span>
+                            <span class="tab__btn--item current-lang">{{ .Site.Language.LanguageName }}</span>
                         </li>
                         {{ range .Translations }}
                             <li>
-                                <a class="brand" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+                                <a class="tab__btn--item" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
                             </li>
                         {{end}}
                         </ul>
