@@ -11,7 +11,7 @@ DefaultContentLanguage = "en"
   [languages.ja]
     languageName = "jp"
     weight = 2
-    title = "とぼけがおオフィシャルホームページ"
+    title = "Tobokegao Official Home Page"
     contentDir = "content/japanese"
 
   theme = "hugo.386"
