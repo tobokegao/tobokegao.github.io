@@ -4,14 +4,18 @@
     <div class="navbar-inner">
         <div class="container">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
-            <a class="brand" href="{{ .Permalink }}">{{ .Site.Title }}</a>
+                {{ if .IsTranslated }}
+                    {{ range .Translations }}
+                        <a class="brand" href="{{ .Permalink }}">{{ .Site.Title }}</a>
+                    {{ end }}
+                {{ end }}
                 {{ if .IsTranslated }}
                 <div class="translated__box">
                     <ul class="tab__btn">
                         <li>
                             <span class="brand">{{ .Site.Language.LanguageName }}</span>
                         </li>
-                        {{ range .Translations }}
+                        { range .Translations }}
                             <li>
                                 <a class="brand" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
                             </li>
