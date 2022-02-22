@@ -4242,7 +4242,7 @@ input[type="submit"].btn.btn-mini {
   text-shadow: 0;
 }
 
-.navbar .tab__btn--item {
+.navbar .tab__btn--item_current-lang {
   display: block;
   float: right;
   padding: 0 10px;
@@ -4252,13 +4252,13 @@ input[type="submit"].btn.btn-mini {
   text-shadow: 0;
 }
 
-.navbar .brand {
+.navbar .tab__btn--item {
   display: block;
-  float: left;
+  float: right;
   padding: 0 10px;
-  margin-left: -10px;
-  font-size: 18px;
-  color: #006599;
+  margin-right: -100px;
+  font-size: 20px;
+  color: #fefe54;
   text-shadow: 0;
 }
 
