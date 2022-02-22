@@ -14,7 +14,7 @@ categories = [
     "syntax",
 ]
 series = ["Themes Guide"]
-aliases = ["/ja/post/markdown-syntax/"]
+aliases = ["/post/ja/markdown-syntax/"]
 +++
 
 この記事では、Hugoのコンテンツファイルで使用できる基本的なMarkdown構文のサンプルと、Hugoテーマで基本的なHTML要素がCSSで装飾されているかどうかを示しています。
