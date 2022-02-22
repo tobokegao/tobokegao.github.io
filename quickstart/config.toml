@@ -1,3 +1,4 @@
+publishDir = "docs"
 baseURL = "https://tobokegao.github.io/"
 languageCode = "en"
 DefaultContentLanguage = "en"
