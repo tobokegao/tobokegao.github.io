@@ -1,13 +1,24 @@
 baseURL = "https://tobokegao.github.io/"
 title = "Tobokegao Official Home Page"
 languageCode = "en"
-DefaultContentLanguage = "en" # Change this to change the site's language
+DefaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 10
+    title = "Japanese Old Tales"
+  [languages.ja]
+    languageName = "Japanese"
+    weight = 20
+    title = "日本むかし話"
+
 theme = "hugo.386"
 preserveTaxonomyNames = true
 
 [params]
     # The name to display as main title in the home page
-    mainpagetitle = "Tobokegao Official Home Page"
+    mainpagetitle = "Tobokegao Official Home Page!"
 
     # The subtitle to display under the title in the home page
     mainpagesubtitle = "Welcome to TBK zone!" 
