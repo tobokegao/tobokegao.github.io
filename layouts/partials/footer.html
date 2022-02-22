@@ -1,0 +1,15 @@
+<footer class="container">
+    <hr class="soften">
+    <p>
+        {{- partial "copyright.html" . -}}
+    </p>
+    <p class="text-center">
+        {{ with .Site.Params.twitter }}<a href="{{ . }}">Twitter</a> {{ end }}
+        {{ with .Site.Params.facebook }}<a href="{{ . }}">Facebook</a> {{ end }}
+        {{ with .Site.Params.apple_music }}<a href="{{ . }}">Apple Music</a> {{ end }}
+        {{ with .Site.Params.spotify }}<a href="{{ . }}">Spotify</a>{{ end }}
+        {{ with .Site.Params.youtube }}<a href="{{ . }}">YouTube</a>{{ end }}
+        {{ with .Site.Params.github }}<a href="{{ . }}">GitHub</a> {{ end }}
+    </p>
+</footer>
+
