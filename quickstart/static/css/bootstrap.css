@@ -4245,7 +4245,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .tab__btn--item_current-lang {
   display: nonw;
   float: left;
-  padding: 0 20px;
+  padding: 0 10px;
   margin-left: -10px;
   font-size: 18px;
   color: #a85400;
@@ -4255,7 +4255,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .tab__btn--item {
   display: none;
   float: left;
-  padding: 0 74px;
+  padding: 0 10px;
   margin-left: -10px;
   font-size: 18px;
   color: #fefe54;
