@@ -8,10 +8,10 @@
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="/ja/tags/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown構文ガイド</title>
-      <link>/ja/markdown-syntax/</link>
+      <link>/ja/post/markdown-syntax/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/ja/markdown-syntax/</guid>
+      <guid>/ja/post/markdown-syntax/</guid>
       <description>&lt;p&gt;この記事では、Hugoのコンテンツファイルで使用できる基本的なMarkdown構文のサンプルと、Hugoテーマで基本的なHTML要素がCSSで装飾されているかどうかを示しています。&lt;/p&gt;</description>
     </item>
     
