@@ -1,1 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://tobokegao.github.io/ja/categories/</loc><xhtml:link rel="alternate" hreflang="en" href="https://tobokegao.github.io/categories/"/><xhtml:link rel="alternate" hreflang="ja" href="https://tobokegao.github.io/ja/categories/"/></url><url><loc>https://tobokegao.github.io/ja/tags/</loc><xhtml:link rel="alternate" hreflang="en" href="https://tobokegao.github.io/tags/"/><xhtml:link rel="alternate" hreflang="ja" href="https://tobokegao.github.io/ja/tags/"/></url><url><loc>https://tobokegao.github.io/ja/</loc><xhtml:link rel="alternate" hreflang="en" href="https://tobokegao.github.io/"/><xhtml:link rel="alternate" hreflang="ja" href="https://tobokegao.github.io/ja/"/></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>/ja/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="/ja/categories/"
+                />
+  </url><url>
+    <loc>/ja/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="/ja/tags/"
+                />
+  </url><url>
+    <loc>/ja/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="/ja/"
+                />
+  </url>
+</urlset>
