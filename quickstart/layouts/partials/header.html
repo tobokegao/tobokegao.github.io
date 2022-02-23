@@ -6,7 +6,7 @@
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
                 {{ if .IsTranslated }}
                     {{ range .Translations }}
-                        <a class="brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+                        <a class="brand" href="{{ "https://tobokegao.github.io/" | relURL }} ">{{ .Site.Title }}</a>
                     {{ end }}
                 {{ end }}
                 {{ if .IsTranslated }}
