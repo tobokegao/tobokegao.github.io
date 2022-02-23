@@ -20,13 +20,13 @@ DefaultContentLanguage = "en"
 
   [params]
       # The name to display as main title in the home page
-      mainpagetitle = "Tobokegao Official Home Page! とぼけがおオフィシャルホームページ！"
+      mainpagetitle = "Tobokegao Official Home Page!<br>とぼけがおオフィシャルホームページ！"
 
       # The subtitle to display under the title in the home page
-      mainpagesubtitle = "Welcome to TBK zone! TBKゾーンへようこそ！" 
+      mainpagesubtitle = "Welcome to TBK zone!<br>TBKゾーンへようこそ！" 
 
       # The description of your website. It will be displayed in the home page
-      mainpagedesc = "This website is a repository of information about Tobokegao. Check the links below to access the posts. このサイトは、とぼけがおに関する情報を集めたものです。各リンクから投稿にアクセスできます。"
+      mainpagedesc = "This website is a repository of information about Tobokegao.<br>Check the links below to access the posts.<br>このサイトは、とぼけがおに関する情報を集めたものです。<br>各リンクから投稿にアクセスできます。"
 
       # The name to display in the copyright section in the footer
       copyrightname = "Tobokegao"
@@ -74,7 +74,7 @@ DefaultContentLanguage = "en"
     [[menu.main]]
       identifier = "about" # An unique identifier for the button
       name = "About"       # A display name for the button
-      url = "/post/about/"      # The path to the content. It can lead to a single page (like here)
+      url = "about/"      # The path to the content. It can lead to a single page (like here)
       weight = 10          # A number to order the buttons in the navbar
 
     [[menu.main]]
