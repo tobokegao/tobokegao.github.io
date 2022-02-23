@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>index on Tobokegao Official Home Page</title>
-    <link>/ja/tags/index/</link>
-    <description>Recent content in index on Tobokegao Official Home Page</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/ja/tags/index/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Posts</title>
-      <link>/ja/post/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/ja/post/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>index on Tobokegao Official Home Page</title><link>/ja/tags/index/</link><description>Recent content in index on Tobokegao Official Home Page</description><generator>Hugo -- gohugo.io</generator><atom:link href="/ja/tags/index/index.xml" rel="self" type="application/rss+xml"/><item><title>Posts</title><link>/ja/post/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>/ja/post/</guid><description/></item></channel></rss>
