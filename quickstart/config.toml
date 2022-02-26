@@ -1,5 +1,9 @@
 [minify]
   disableSVG = true
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = true
 
 baseURL = "https://tobokegao.github.io/"
 languageCode = "en"
@@ -20,13 +24,13 @@ DefaultContentLanguage = "en"
 
   [params]
       # The name to display as main title in the home page
-      mainpagetitle = "Tobokegao Official Home Page!  とぼけがおオフィシャルホームページ！"
+      mainpagetitle = "Tobokegao Official Home Page!   とぼけがおオフィシャルホームページ！"
 
       # The subtitle to display under the title in the home page
-      mainpagesubtitle = "Welcome to TBK zone!  TBKゾーンへようこそ！" 
+      mainpagesubtitle = "Welcome to TBK zone!   TBKゾーンへようこそ！" 
 
       # The description of your website. It will be displayed in the home page
-      mainpagedesc = "This website is a repository of information about Tobokegao.  Check the links below to access the posts.  このサイトは、とぼけがおに関する情報を集めたものです。  各リンクから投稿にアクセスできます。"
+      mainpagedesc = "This website is a repository of information about Tobokegao.   Check the links below to access the posts.   このサイトは、とぼけがおに関する情報を集めたものです。   各リンクから投稿にアクセスできます。"
 
       # The name to display in the copyright section in the footer
       copyrightname = "Tobokegao"
@@ -114,6 +118,3 @@ DefaultContentLanguage = "en"
 
     [services.twitter]
       disableInlineCSS = true
-
-  [markup.goldmark.renderer]
-    unsafe = true
