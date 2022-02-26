@@ -84,7 +84,7 @@ DefaultContentLanguage = "en"
     [[menu.main]]
       identifier = "posts"
       name = "All posts"
-      url = "/post/"       # The path can lead to a content folder too.
+      url = "post/"       # The path can lead to a content folder too.
       weight = 20
 
   [taxonomies]
