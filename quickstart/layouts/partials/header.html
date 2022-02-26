@@ -25,13 +25,13 @@
                             <ul class="sub-menu">
                                 {{ range .Children }}
                                     <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-                                        <a href="{{ "" | relURL }}">{{ .URL }}</a>
+                                        <a href="{{ .URL | absLangURL }}"></a>
                                     </li>
                                 {{ end }}
                             </ul>
                         {{ else }}
                             <li>
-                                <a href="{{ "about/" | relURL }}">
+                                <a href="{{ .URL | absLangURL }}">
                                     {{ .Pre }}
                                     <span>{{ .Name }}</span>
                                 </a>
