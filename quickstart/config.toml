@@ -3,6 +3,7 @@
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
+      unsafe = true
       hardWraps = true
 
 baseURL = "https://tobokegao.github.io/"
@@ -48,7 +49,7 @@ DefaultContentLanguageInSubdir = true
       loadfastload = false
 
       # Sets the speed for the page loading effect. Default is 1.0.
-      loadspeedfactor = 1.8
+      loadspeedfactor = 0.8
 
       # Enables or disables the second flyby cursor. Default is false.
       loadonepass = false
@@ -94,7 +95,7 @@ DefaultContentLanguageInSubdir = true
       loadfastload = false
 
       # Sets the speed for the page loading effect. Default is 1.0.
-      loadspeedfactor = 1.8
+      loadspeedfactor = 2.0
 
       # Enables or disables the second flyby cursor. Default is false.
       loadonepass = false
