@@ -8,7 +8,7 @@
 
 baseURL = "https://tobokegao.github.io/"
 DefaultContentLanguage = "en"
-DefaultContentLanguageInSubdir = true
+DefaultContentLanguageInSubdir = false
     [languages.en]
       languageName = "En"
       languageCode = "en"
