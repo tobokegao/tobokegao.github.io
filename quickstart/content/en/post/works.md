@@ -23,7 +23,7 @@ aliases = ["/post/works/"]
 
 2018/02/09 : Participated in "Shibuya-Kei Chiptune Cover Compilation" by OMOIDE LABEL x Bytedoll Records with "TWEEDEES - Baby, Baby (tobokegao Gameboy Cover)
 
-2017/12/27 : Participated in "Gameboy Noise Jam 002 (Circuit Bent)" in the compilation "reversible chance operation", which is a one-of-a-kind compilation with different sound effects as a result of randomly skipping oil on each CD
+2017/12/27 : Participated in 地獄でなぜサグい's project "Gameboy Noise Jam 002 (Circuit Bent)" in the compilation "reversible chance operation", which is a one-of-a-kind compilation with different sound effects as a result of randomly skipping oil on each CD
 
 2017/09/16 : (LIVE) Participated in "Square Sounds Tokyo 2017"
 
