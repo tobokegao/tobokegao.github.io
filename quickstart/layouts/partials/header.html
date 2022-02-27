@@ -4,7 +4,7 @@
     <div class="navbar-inner">
         <div class="container">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
-                        <a class="brand" href="{{ .Lang | absLangURL }} ">{{ .Site.Title }}</a>
+                        <a class="brand" href="{{ "" | absURL }}">{{ .Site.Title }}</a>
                 {{ if .IsTranslated }}
                             <span class="tab__btn--item_current-lang">{{ .Site.Language.LanguageName }}</span>
                         {{ range .Translations }}
