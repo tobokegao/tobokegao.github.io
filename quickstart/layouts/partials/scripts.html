@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="{{ "/css/bootstrap-responsive.css" | relURL }}">
 <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
 {{ range .Site.Params.customCSS -}}
-<link rel="stylesheet" href="https://tobokegao.github.io{{ .Lang | absLangURL }} ">
+<link rel="stylesheet" href="{{ .URL | absLangURL }}">
 {{- end }}
 <script src="{{ "/js/jquery.js" | relURL }}"></script>
 <script src="{{ "/js/bootstrap-386.js" | relURL }}"></script>
@@ -32,5 +32,5 @@
     };
 </script>
 {{- range .Site.Params.customJS }}
-<script src="https://tobokegao.github.io{{ .Lang | absLangURL }} "></script>
+<script src="{{ .URL | absLangURL }}"></script>
 {{- end }}
