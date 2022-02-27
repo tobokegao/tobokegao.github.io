@@ -17,7 +17,9 @@ series = ["tobokegao"]
 aliases = ["/ja/post/works/"]
 +++
 
-## Works (工事中)
+# Works (工事中)
+
+**その後の詳細はサイト下部のbandcampやsoundcloudページ、または[about](https://tobokegao.github.io/ja/about/)へ**
 
 2018/02/09 : OMOIDE LABEL × Bytedoll Records 企画の「Shibuya-Kei Chiptune Cover Compilation」 に「TWEEDEES - Baby, Baby(tobokegao Gameboy Cover)」で参加
 
