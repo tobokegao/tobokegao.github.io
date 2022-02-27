@@ -72,4 +72,4 @@ aliases = ["/post/works/"]
 2014/06/01 : Started LSDj
 
 **damifortune (HVB), thanks for helping with the translation!**
-**SDHizumi, thanks for helping with the debugging!**
+**sdhizumi, thanks for helping with the debugging!**
