@@ -6,31 +6,23 @@
       hardWraps = true
 
 baseURL = "https://tobokegao.github.io/"
-languageCode = "en"
 DefaultContentLanguage = "en"
+DefaultContentLanguageInSubdir = true
     [languages.en]
       languageName = "En"
+      languageCode = "en"
       weight = 10
       title = "Tobokegao Official Home Page"
       contentDir = "content/en"
-    [languages.ja]
-      languageName = "Jp"
-      weight = 10
-      title = "Tobokegao Official Home Page"
-      contentDir = "content/ja"
-      
-  theme = "hugo.386"
-  preserveTaxonomyNames = true
-
-  [params]
+      [languages.en.params]
       # The name to display as main title in the home page
-      mainpagetitle = "Tobokegao Official Home Page!  とぼけがおオフィシャルホームページ！"
+      mainpagetitle = "Tobokegao Official Home Page!"
 
       # The subtitle to display under the title in the home page
-      mainpagesubtitle = "Welcome to TBK zone!  TBKゾーンへようこそ！" 
+      mainpagesubtitle = "Welcome to TBK zone!" 
 
       # The description of your website. It will be displayed in the home page
-      mainpagedesc = "This website is a repository of information about Tobokegao.  Check the links below to access the posts.  このサイトは、とぼけがおに関する情報を集めたものです。  各リンクから投稿にアクセスできます。"
+      mainpagedesc = "This website is a repository of information about Tobokegao.  Check the links below to access the posts."
 
       # The name to display in the copyright section in the footer
       copyrightname = "Tobokegao"
@@ -61,6 +53,55 @@ DefaultContentLanguage = "en"
       # Enables or disables the second flyby cursor. Default is false.
       loadonepass = false
 
+    [languages.ja]
+      languageName = "Jp"
+      languageCode = "ja"
+      weight = 20
+      title = "Tobokegao Official Home Page"
+      contentDir = "content/ja"
+      [languages.ja.params]
+      
+      # The name to display as main title in the home page
+      mainpagetitle = "とぼけがおオフィシャルホームページ！"
+
+      # The subtitle to display under the title in the home page
+      mainpagesubtitle = "TBKゾーンへようこそ！" 
+
+      # The description of your website. It will be displayed in the home page
+      mainpagedesc = "このサイトは、とぼけがおに関する情報を集めたものです。  各リンクから投稿にアクセスできます。"
+
+      # The name to display in the copyright section in the footer
+      copyrightname = "Tobokegao"
+
+      # The url to use as link in the copyright name in the footer. Leave empty to use none.
+      copyrighturl = "https://tobokegao.github.io/about/ja/"
+
+      # Show the "built on Hugo" disclaimer
+      showhugo = true
+
+      # Urls for social networks
+      twitter = "https://twitter.com/to6okegao"
+      facebook = "https://www.facebook.com/to6okegao"
+      bandcamp = "https://tobokegao.bandcamp.com/"
+      soundcloud = "https://soundcloud.com/tobokegao"
+      apple_music = "https://music.apple.com/jp/artist/tobokegao/1532385760"
+      spotify = "https://open.spotify.com/artist/2ZW0H3Dntod1TN6dUFKY3v"
+      youtube = "https://www.youtube.com/c/to6okegao"
+      github = "https://github.com/tobokegao"
+      contact = "mailto:to6okegao@gmail.com"
+
+      # Enables or disables the loading animations. false activates them. Default is false.
+      loadfastload = false
+
+      # Sets the speed for the page loading effect. Default is 1.0.
+      loadspeedfactor = 1.5
+
+      # Enables or disables the second flyby cursor. Default is false.
+      loadonepass = false
+      
+  theme = "hugo.386"
+  preserveTaxonomyNames = true
+
   [params.copyright]
       name = "Tobokegao"
 
@@ -73,19 +114,33 @@ DefaultContentLanguage = "en"
       # Text to go between copyright and hugo disclaimer (if enabled)
       suffix = "TBK site"
 
-  [menu]
-    # This displays buttons in the navbar to access your contents
-    [[menu.main]]
-      identifier = "about" # An unique identifier for the button
-      name = "About"       # A display name for the button
-      url = "https://tobokegao.github.io/about/"      # The path to the content. It can lead to a single page (like here)
-      weight = 10          # A number to order the buttons in the navbar
 
-    [[menu.main]]
-      identifier = "posts"
-      name = "All posts"
-      url = "https://tobokegao.github.io/post/"       # The path can lead to a content folder too.
-      weight = 20
+    [languages.en.menu]
+      # This displays buttons in the navbar to access your contents
+      [[languages.en.menu.main]]
+        identifier = "about" # An unique identifier for the button
+        name = "About"       # A display name for the button
+        url = "https://tobokegao.github.io/about/"      # The path to the content. It can lead to a single page (like here)
+        weight = 10          # A number to order the buttons in the navbar
+
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        name = "All posts"
+        url = "https://tobokegao.github.io/post/"       # The path can lead to a content folder too.
+        weight = 20
+    [languages.ja.menu]
+      # This displays buttons in the navbar to access your contents
+      [[languages.ja.menu.main]]
+        identifier = "about" # An unique identifier for the button
+        name = "About"       # A display name for the button
+        url = "https://tobokegao.github.io/ja/about/"      # The path to the content. It can lead to a single page (like here)
+        weight = 10          # A number to order the buttons in the navbar
+
+      [[languages.ja.menu.main]]
+        identifier = "posts"
+        name = "All posts"
+        url = "https://tobokegao.github.io/ja/post/"       # The path can lead to a content folder too.
+        weight = 20
 
   [taxonomies]
   category = "categories"
