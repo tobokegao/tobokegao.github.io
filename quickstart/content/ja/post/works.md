@@ -53,20 +53,22 @@ aliases = ["/ja/post/works/"]
 
 2016/05/04 : Cheapbeatsから1st album「Picnic」をrelease
 
-2016/04/01 : MADMILKY RECORDSからreleaseされたSkyboxさんのEP Stardust EP に2曲目「æther (feat. Tobokegao)」で参加
+2016/04/01 : MADMILKY RECORDSからreleaseされたSkyboxさんのEP「Stardust EP」に2曲目「æther (feat. Tobokegao)」で参加
 
-2016/03/05 : ESC TRAXから1st EP「Wave Chords EP 」をrelease
+2016/03/05 : ESC TRAXから1st EP「Wave Chords EP」をrelease
 
 2016/01/15 : OMOIDE LABELからreleaseされたHaritoさんのalbum「Trash Toys Dream」に1曲「Trash toys dream (to6okegao’s goodnight chiptune ver)」で参加
 
-2015/07/17 : ああああさん企画の「デデデ大王のテーマ をまったり楽しく編曲リレー！」に参加
+2015/07/17 : ああああさん企画の「デデデ大王のテーマをまったり楽しく編曲リレー！」に参加
 
 2015/05/05 : Electric Yakuzaさんのsingle 「魔法の戦闘少女: Splendr」に5曲目「Splendr (Bitpop Remix)」で参加
 
-2015/04/26 : 胸毛レコーズからreleaseされた古町MOIさんのmini album 何奴砂漠は井原美知 に7曲目「ハピイバスデ とぼけがお 8bit remix」で参加
+2015/04/26 : 胸毛レコーズからreleaseされた古町MOIさんのmini album「何奴砂漠は井原美知」に7曲目「ハピイバスデ とぼけがお 8bit remix」で参加
 
 2014/12/20 : Compilation album「Merry Chipmas 2014」に8曲目「サンタクロース・アリガト (Santa Claus Arigato) 」で参加
 
 2014/09/26 : Compilation album「CheapBeats = WIN」に6曲目「矩形波ちゃんの大冒険 」で参加
 
 2014/06/01 : LSDjを始める
+
+**SDHizumiへ, デバックの手伝いをしてくれてありがとう！**

@@ -47,26 +47,29 @@ aliases = ["/post/works/"]
 
 2016/10/15 : (LIVE) Participated in "Technique Vol.69"
 
-2016/07/20 : Participated in "Weezer Tribute album Weezer - The Second 8-bit Album" released by Pterodactyl Squad with the 11 track "Homely Girl".
+2016/07/20 : Participated in "Weezer Tribute album Weezer - The Second 8-bit Album" released by Pterodactyl Squad with the track 11 "Homely Girl".
 
 25/06/2016 : (LIVE) Participated in "Lo-Bit Freedom Ver.4"
 
 2016/05/04 : First album "Picnic" released from Cheapbeats
 
-2016/04/01 : Participated in Skybox's EP "Stardust EP" released from MADMILKY RECORDS with the second song "æther (feat. Tobokegao)"
+2016/04/01 : Participated in Skybox's EP "Stardust EP" released from MADMILKY RECORDS with the track 2 "æther (feat. Tobokegao)"
 
 2016/03/05 : First EP "Wave Chords EP" released from ESC TRAX.
 
-2016/01/15 : Participated in the first song "Trash toys dream (to6okegao's goodnight chiptune ver)" on Harito's album "Trash Toys Dream" released from OMOIDE LABEL
+2016/01/15 : Participated in the track 1 "Trash toys dream (to6okegao's goodnight chiptune ver)" on Harito's album "Trash Toys Dream" released from OMOIDE LABEL
 
 2015/07/17 : Participated in AAAA's project "デデデ大王のテーマをまったり楽しく編曲リレー！"
 
-2015/05/05 : Participated in Electric Yakuza's single "魔法の戦闘少女: Splendr" with the 5 track "Splendr (Bitpop Remix)"
+2015/05/05 : Participated in Electric Yakuza's single "魔法の戦闘少女: Splendr" with the track 5 "Splendr (Bitpop Remix)"
 
-2015/04/26 : Participated in Furumachi MOI's mini album "What a guy desert is Michi Ihara" released by Chest Hair Records with 7 track "ハピイバスデ とぼけがお 8bit remix"
+2015/04/26 : Participated in Furumachi MOI's mini album "何奴砂漠は井原美知" released by 胸毛レコーズ with the track 7 "ハピイバスデ とぼけがお 8bit remix"
 
-2014/12/20 : Participated in Compilation album "Merry Chipmas 2014" with the 8 track "サンタクロース・アリガト(Santa Claus Arigato)".
+2014/12/20 : Participated in Compilation album "Merry Chipmas 2014" with the track 8 "サンタクロース・アリガト(Santa Claus Arigato)".
 
-2014/09/26 : Participated in the Compilation album "CheapBeats = WIN" with the 6 track "矩形波ちゃんの大冒険"
+2014/09/26 : Participated in the Compilation album "CheapBeats = WIN" with the track 6 "矩形波ちゃんの大冒険"
 
 2014/06/01 : Started LSDj
+
+**damifortune (HVB), thanks for helping with the translation!**
+**SDHizumi, thanks for helping with the debugging!**
