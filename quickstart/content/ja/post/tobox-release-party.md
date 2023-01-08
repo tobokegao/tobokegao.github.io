@@ -38,7 +38,7 @@ aliases = ["/ja/post/tobox-release-party/"]
 
 **うみのひやけ**
 
-<img src="/img/uminohiyake.png" width="320" height="320" />
+<img src="/img/uminohiyake.jpg" width="320" height="320" />
 
 chiptune黎明期から活動しているGAMEBOYを扱った道民chiptunerであり、VGMDJイベントの88niteでも楽曲がプレイされたことからお誘いしたいと思いお声がけしました！
 
@@ -257,7 +257,7 @@ NES BANDのnoise ch担当であるホソタケさんも出演です！
 
 **Rei8bit**
 
-<img src="/img/rei8bit.png" width="320" height="320" />
+<img src="/img/rei8bit.jpg" width="320" height="320" />
 
 僕の個人レーベルからリリースしてもらった日本人第2号であるReiさんも出演！
 
@@ -270,7 +270,7 @@ NES BANDのnoise ch担当であるホソタケさんも出演です！
 
 **60 Million Reserve**
 
-<img src="/img/60millionreserve.png" width="320" height="320" />
+<img src="/img/60millionreserve.jpg" width="320" height="320" />
 
 TBKgaoからリリースした僕提唱のPure MIDIコンピにも参加してくれた、僕以上にPure MIDIを愛するかもしれないフルノさんにも参加してもらうことにしました！
 

@@ -37,7 +37,7 @@ One of my influences as a digger!
 
 **うみのひやけ**
 
-<img src="/img/uminohiyake.png" width="320" height="320" />
+<img src="/img/uminohiyake.jpg" width="320" height="320" />
 
 He is a roadside chiptuner who has been active in GAMEBOY since the dawn of chiptune, and since his music was played at the VGMDJ event 88nite, I wanted to invite him to join us!
 
@@ -259,7 +259,7 @@ Can't wait to see what the live show will be like!
 
 **Rei8bit**
 
-<img src="/img/rei8bit.png" width="320" height="320" />
+<img src="/img/rei8bit.jpg" width="320" height="320" />
 
 Rei, the second Japanese artist to be released on my personal label, will also be performing!
 
@@ -272,7 +272,7 @@ Rei is quickly making a name for himself as a new-generation chiptuner, and we w
 
 **60 Million Reserve**
 
-<img src="/img/60millionreserve.png" width="320" height="320" />
+<img src="/img/60millionreserve.jpg" width="320" height="320" />
 
 I've decided to have Furuno-san, who participated in my Pure MIDI compilation released by TBKgao and who may love Pure MIDI even more than I do, join us!
 
