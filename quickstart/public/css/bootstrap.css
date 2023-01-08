@@ -655,7 +655,6 @@ a:focus {
   clear: both;
 }
 
-/*
 img {
   -webkit-filter: contrast(800%);
      -moz-filter: contrast(1000%);
@@ -663,7 +662,6 @@ img {
        -o-filter: contrast(800%);
           filter: contrast(1000%);
 }
-*/
 
 p {
   margin: 0 0 20px;
