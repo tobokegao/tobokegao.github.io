@@ -1,6 +1,6 @@
 +++
 author = "Hugo Authors"
-title = "TOBOX Release Party Special Site"
+title = "TOBOX Release Party 特設サイト"
 date = "2023-01-09"
 description = "出演者紹介"
 tags = [
