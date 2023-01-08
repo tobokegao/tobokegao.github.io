@@ -5,22 +5,32 @@
     <link>/ja/categories/</link>
     <description>Recent content in Categories on Tobokegao Official Home Page</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="/ja/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>ja</language>
+    <lastBuildDate>Sun, 08 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/ja/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>syntax</title>
-      <link>/ja/categories/syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Special Site</title>
+      <link>/ja/categories/special-site/</link>
+      <pubDate>Sun, 08 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>/ja/categories/syntax/</guid>
+      <guid>/ja/categories/special-site/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>themes</title>
-      <link>/ja/categories/themes/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>tobokegao</title>
+      <link>/ja/categories/tobokegao/</link>
+      <pubDate>Sun, 08 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>/ja/categories/themes/</guid>
+      <guid>/ja/categories/tobokegao/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>works</title>
+      <link>/ja/categories/works/</link>
+      <pubDate>Sun, 27 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/ja/categories/works/</guid>
       <description></description>
     </item>
     
