@@ -1,7 +1,7 @@
 +++
 author = "Hugo Authors"
 title = "TOBOX Release Party Special Site"
-date = "2023-01-09"
+date = "2023-01-08"
 description = "Meet the Performers"
 tags = [
     "TOBOX",
@@ -14,7 +14,7 @@ categories = [
     "tobokegao",
 ]
 series = ["tobokegao"]
-aliases = ["/post/tobox/"]
+aliases = ["/post/tobox-release-party/"]
 +++
 
 <img src="/img/TOBOX Release Party Flyer.png" width="447" height="630" />

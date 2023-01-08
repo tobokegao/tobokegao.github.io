@@ -1,7 +1,7 @@
 +++
 author = "Hugo Authors"
 title = "TOBOX Release Party 特設サイト"
-date = "2023-01-09"
+date = "2023-01-08"
 description = "出演者紹介"
 tags = [
     "TOBOX",
@@ -14,7 +14,7 @@ categories = [
     "tobokegao",
 ]
 series = ["tobokegao"]
-aliases = ["/ja/post/tobox/"]
+aliases = ["/ja/post/tobox-release-party/"]
 +++
 
 <img src="/img/TOBOX Release Party Flyer.png" width="447" height="630" />
