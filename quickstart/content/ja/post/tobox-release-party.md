@@ -1,6 +1,6 @@
 +++
 author = "Hugo Authors"
-title = "TOBOX Release Party 特設サイト"
+title = "TOBOX Release Party Special Site"
 date = "2023-01-08"
 description = "出演者紹介"
 tags = [
@@ -19,6 +19,53 @@ aliases = ["/ja/post/tobox-release-party/"]
 
 <img src="/img/TOBOX Release Party Flyer.png" width="447" height="630" />
 
+twiplaで参加表明するとADV価格で入場できます。
+  
+Tokyo
+Venue: Koenji Fourth Floor Ⅱ
+〒166-0003 東京都杉並区高円寺南4-6-7 第5日東ビルB1
+2023 Sat, Feb 18, 13:00-18:00
+ADV 2500 YEN
+DOOR 3500 YEN
+→ twipla https://twipla.jp/events/542883
+→ stream https://streamlabs.com/tobokegao/home
+  
+Timetable
+13:00-13:30 AVGN Crew(DJ)
+13:30-14:00 hosotake(DJ)
+14:00-14:30 ヤギシロ(LIVE)
+14:30-15:00 Rei8bit(LIVE)
+15:00-15:30 ツポールヌ(LIVE)
+15:30-16:00 60 Million Reserve(LIVE)
+16:00-16:30 sdhizumi(LIVE)
+16:30-17:00 Tobokegao(LIVE)
+17:00-17:30 konamiscc(DJ)
+17:30-18:00 葛飾出身(LIVE)
+  
+  
+Sapporo
+Venue: Plastic Theater
+〒064-0805 北海道札幌市中央区南5条西1丁目1−23 北一ビル
+2023 Sat, Feb 25, 15:00-21:00
+ADV 2500 YEN
+DOOR 3500 YEN
+→ twipla https://twipla.jp/events/542886
+→ stream https://streamlabs.com/plastictheater/home
+  
+Timetable
+15:00-15:30 さうすまうぅん(DJ)
+15:30-15:50 豊平区民(映像上映)
+15:50-16:20 tktc szk(LIVE)
+16:20-16:50 シロシビンズ(LIVE)
+16:50-17:20 cvel(DJ)
+17:20-17:50 梅本佑利(LIVE)
+17:50-18:20 Ca5(LIVE)
+18:20-18:50 うみのひやけ(LIVE)
+18:50-19:20 嶽本サライ(DJ) 
+19:20-19:50 赤帯(DJ)
+19:50-20:20 Tobokegao(DJ)
+20:20-20:50 hally(DJ)
+  
 **赤帯**
 <img src="/img/akaobi.png" width="320" height="320" />
 
