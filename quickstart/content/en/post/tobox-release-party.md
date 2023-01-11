@@ -18,6 +18,8 @@ aliases = ["/post/tobox-release-party/"]
 +++
 
 <img src="/img/TOBOX Release Party Flyer.png" width="447" height="630" />
+
+  
 　  
 　  
 If you announce your participation on twipla, you can enter at the ADV price.
