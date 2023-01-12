@@ -104,7 +104,7 @@ He is a roadside chiptuner who has been active in GAMEBOY since the dawn of chip
 <img src="/img/yuriumemoto.png" width="320" height="320" />
 
   
-I asked Umemoto san to join the event after learning that Umemoto san had created a chiptune and recreated it with a cello performance...!(https://youtube.com/watch?v=OdEGftdC2jE ) I am one of those who are very much looking forward to the performance on the day of the event.
+I asked Umemoto san to join the event after learning that Umemoto san had created a chiptune and recreated it with a cello performance…!(https://youtube.com/watch?v=OdEGftdC2jE ) I am one of those who are very much looking forward to the performance on the day of the event.
 
 [linktree](https://linktr.ee/yuriumemoto)
 
@@ -161,7 +161,7 @@ One of the organizers of ESC TRAX (my first EP was released here), ca5 san, who 
 　  
 The band set also includes a man from Katsushika, whose official remix of the ending of POP TEAM EPIC has been getting a lot of attention lately!
 
-I'm so glad they decided to participate because their Animal Crossing-ish vocals, treatment of square wave melodies, and GS band sound really hit the spot...
+I’m so glad they decided to participate because their Animal Crossing-ish vocals, treatment of square wave melodies, and GS band sound really hit the spot...
 
 [twitter](https://twitter.com/ahtamaraneze)
 [YouTube](https://www.youtube.com/@katsushikashusshin5712/videos)
@@ -173,7 +173,7 @@ I'm so glad they decided to participate because their Animal Crossing-ish vocals
 <img src="/img/konamiscc.png" width="320" height="320" />
 
 　  
-memowave, who also participated in [+TEK's FM arrangement compilation](http://plustek.bandcamp.com/track/xepheria), will make an emergency visit to Japan from Spain as konamiscc!
+memowave, who also participated in [+TEK’s FM arrangement compilation](http://plustek.bandcamp.com/track/xepheria), will make an emergency visit to Japan from Spain as konamiscc!
 
 This time, he will be DJing and singing mainly European demoscene songs, so please look forward to it...!
 
@@ -211,9 +211,9 @@ And when I heard that cvel originally started his music from the futurebass dire
 <img src="/img/shiroshibins.png" width="320" height="320" />
 
 　  
-A tabla player I learned about through a tweet from Chantibooks.
+A tabla player I learned about through a tweet from Chanti books.
 The music drew me in with its techno square wave and vapor wave vibe!
-The performer, tktc szk, and I recently formed the Coyote Man Show, and I felt some kind of connection and asked him to perform!
+The performer, tktc szk, and he recently formed the Coyote Man Show, and I felt some kind of connection and asked him to perform!
 
 [tunecore](https://www.tunecore.co.jp/artists?id=689339)
 
@@ -223,9 +223,9 @@ The performer, tktc szk, and I recently formed the Coyote Man Show, and I felt s
 <img src="/img/saraitakemoto.png" width="320" height="320" />
 
 　  
-Actually, I'd like to invite Sarai Takemoto, who has been helping me in the way of digs for many years... and I've invited her!
+Actually, I’d like to invite Sarai Takemoto, who has been helping me in the way of digs for many years... and I’ve invited her!
 
-I respect Takemoto because he has a great relationship with the art Takemoto produces, and Takemoto is very active in many fields, such as dense DJ music selection and composing music for nanoloop, etc...!
+I respect Takemoto because she has a great relationship with the art Takemoto produces, and Takemoto is very active in many fields, such as dense DJ music selection and composing music for nanoloop, etc...!
 
 [homepage](https://www.saraitakemoto.com/)
 
@@ -250,7 +250,7 @@ They will be performing with heavy equipment...!
 <img src="/img/tsuporunu.png" width="320" height="320" />
 
 　  
-I've asked Sophei Kobayashi, who plays on a modified NES and paints along with a wide variety of musical projects, to join us as one of his names, ツポールヌ!
+I’ve asked Ryohei Kobayashi, who plays on a modified NES and paints along with a wide variety of musical projects, to join us as one of his names, ツポールヌ!
 
 If you want to know more, I recommend you to read this article!
 https://bijutsutecho.com/magazine/series/s6/24289
@@ -264,7 +264,7 @@ https://bijutsutecho.com/magazine/series/s6/24289
 <img src="/img/tobokegao.png" width="320" height="320" />
 
 　  
-It's me!!! I'm thinking of doing a live show around this album songs and making GAMEBOY covers of the songs that influenced me in the making of this album to challenge DJs!
+It’s me!!! I’m thinking of doing a live show around this album songs and making GAMEBOY covers of the songs that influenced me in the making of this album to challenge DJs!
 
 [homepage](https://tobokegao.github.io/)
 
@@ -276,7 +276,7 @@ It's me!!! I'm thinking of doing a live show around this album songs and making 
 　  
 I thought vaporwave and chiptune had an affinity in terms of fictional nostalgia, and when I had the chance to meet them a few times, I asked them to appear!
 
-I'm looking forward to seeing the video work they will be showing this time...!
+I’m looking forward to seeing the video work they will be showing this time...!
 
 [twitter](https://twitter.com/toyo_traffic)
 [instagram](https://www.instagram.com/clara_tape_store/)
@@ -290,7 +290,7 @@ I'm looking forward to seeing the video work they will be showing this time...!
 　  
 He is a game music historian, game history researcher, game musician, and a chiptune musician, and an important figure in spreading the concept of chiptune in Japan.
 
-I felt I couldn't not invite such a man, Harry, to this event, so I asked him to appear!
+I felt I couldn’t not invite such a man, Hally, to this event, so I asked him to appear!
 
 [twitter](https://twitter.com/hallyvorc)
 [SoundCloud](https://soundcloud.com/haruhisa-hally-tanaka)
@@ -303,7 +303,7 @@ I felt I couldn't not invite such a man, Harry, to this event, so I asked him to
 <img src="/img/hosotake.png" width="320" height="320" />
 
 　  
-Hosotake, the noise ch. of NES BAND, will also be on the bill!
+hosotake, the noise ch. of NES BAND, will also be on the bill!
 
 He has been paying attention to my VGMDJ-related events and actually listening to them, and it seems like our DJ connection has deepened, so I invited him as a DJ!
 
@@ -320,7 +320,7 @@ Yagishiro, the first Japanese artist to be released on my personal label, TBKgao
 
 His songs are wonderful, blending Vocaloids with hip elements and gently conveying feelings....
 
-Can't wait to see what the live show will be like!
+Can’t wait to see what the live show will be like!
 
 [tunecore](https://www.tunecore.co.jp/artists/yagishiro?lang=ja)
 [niconico](https://www.nicovideo.jp/user/81601195)
@@ -345,10 +345,14 @@ Rei is quickly making a name for himself as a new-generation chiptuner, and we w
 <img src="/img/60millionreserve.jpg" width="320" height="320" />
 
   
-I've decided to have Furuno-san, who participated in my Pure MIDI compilation released by TBKgao and who may love Pure MIDI even more than I do, join us!
+I’ve decided to have Furuno san, who participated in my Pure MIDI compilation released by TBKgao and who may love Pure MIDI even more than I do, join us!
 
 Of course, he will be performing a Pure MIDI set...!
 
 [twitter](https://twitter.com/kwc_in_BLUER)
 [soundcloud](https://soundcloud.com/kwcinbluer)
 [bandcamp](https://60millionreserve.bandcamp.com/)
+
+　  
+　  
+**Doc & Tommy Pedrini, thanks for helping with the translation!**
