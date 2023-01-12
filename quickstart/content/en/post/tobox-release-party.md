@@ -355,4 +355,4 @@ Of course, he will be performing a Pure MIDI set...!
 
 　  
 　  
-**Doc & Tommy Pedrini, thanks for helping with the translation!**
+**40Nix, Doc, hardmint & Tommy Pedrini, thanks for helping with the translation!**
