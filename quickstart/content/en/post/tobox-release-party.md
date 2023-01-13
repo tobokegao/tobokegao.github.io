@@ -76,9 +76,9 @@ Timetable
 ©unexpected bowtie
   
 　  
-For me, he is the one who gave me the opportunity to know about Commodore 64 and has been very helpful with the history of chiptune and many helpful articles, translations and information...
+For me, he is the one who gave me the opportunity to know about Commodore 64 and has been very helpful with the history of chiptune and many helpful articles, translations and information…
 
-One of my influences as a digger!
+One of my influences as a chiptune historian!
 
 [SID Media Lab](https://akaobi.wordpress.com/)
 [SoundCloud](https://soundcloud.com/akaobi)
@@ -104,7 +104,7 @@ He is a roadside chiptuner who has been active in GAMEBOY since the dawn of chip
 <img src="/img/yuriumemoto.png" width="320" height="320" />
 
   
-I asked Umemoto san to join the event after learning that Umemoto san had created a chiptune and recreated it with a cello performance…!(https://youtube.com/watch?v=OdEGftdC2jE ) I am one of those who are very much looking forward to the performance on the day of the event.
+I asked Umemoto-san to join the event after learning that they had created a chiptune and recreated it with a cello performance…!(https://youtube.com/watch?v=OdEGftdC2jE ) umemoto-san’s is one of the performances i’m most looking forward to (on that day)
 
 [linktree](https://linktr.ee/yuriumemoto)
 
@@ -146,7 +146,7 @@ IK:
 **Ca5**
 <img src="/img/ca5.png" width="320" height="320" />
 
-One of the organizers of ESC TRAX (my first EP was released here), ca5 san, who is also a major figure in chipbreak, is actually from Sapporo! So I decided to have someone from Sapporo join us...!
+One of the organizers of ESC TRAX (my first EP was released there), ca5 san, who is also a major figure in chipbreak, is actually from Sapporo! So I decided to have someone from Sapporo join us…!
 
 [twitter](https://twitter.com/Ca5)
 [MixCloud](https://www.mixcloud.com/ca54makske)
@@ -161,7 +161,7 @@ One of the organizers of ESC TRAX (my first EP was released here), ca5 san, who 
 　  
 The band set also includes a man from Katsushika, whose official remix of the ending of POP TEAM EPIC has been getting a lot of attention lately!
 
-I&#x0027;m so glad they decided to participate because their Animal Crossing-ish vocals, treatment of square wave melodies, and GS band sound really hit the spot...
+I&#x0027;m so glad they decided to participate because their Animal Crossing-ish vocals, treatment of square wave melodies, and GS band sound really hit the spot…
 
 [twitter](https://twitter.com/ahtamaraneze)
 [YouTube](https://www.youtube.com/@katsushikashusshin5712/videos)
@@ -175,7 +175,7 @@ I&#x0027;m so glad they decided to participate because their Animal Crossing-ish
 　  
 memowave, who also participated in [+TEK&#x0027;s FM arrangement compilation](http://plustek.bandcamp.com/track/xepheria), will make an emergency visit to Japan from Spain as konamiscc!
 
-This time, he will be DJing and singing mainly European demoscene songs, so please look forward to it...!
+This time, he will be DJing and singing mainly European demoscene songs, so please look forward to it…!
 
 [SoundCloud](https://soundcloud.com/memowave)
 [YouTube](https://www.youtube.com/@Jankock767)
@@ -225,7 +225,7 @@ The performer, tktc szk, and he recently formed the Coyote Man Show, and I felt 
 　  
 Actually, I&#x0027;d like to invite Sarai Takemoto, who has been helping me in the way of digs for many years... and I&#x0027;ve invited her!
 
-I respect Takemoto because she has a great relationship with the art Takemoto produces, and Takemoto is very active in many fields, such as dense DJ music selection and composing music for nanoloop, etc...!
+I respect Takemoto because she has a great relationship with the art Takemoto produces, and Takemoto is very active in many fields, such as dense DJ music selection and composing music for nanoloop, etc…!
 
 [homepage](https://www.saraitakemoto.com/)
 
@@ -237,7 +237,7 @@ I respect Takemoto because she has a great relationship with the art Takemoto pr
 　  
 Takatoshi was a member of lakeboats who was a co-star of my first live show in the early days when I performed with guitar, GAMEBOY and live vocals. Since we wanted to perform together again, we decided to have Takatoshi perform in the Pure MIDI slot!
 
-They will be performing with heavy equipment...!
+They will be performing with heavy equipment…!
 
 [blog](https://blog.tktcszk.org/)
 [twitter](https://twitter.com/tktc_szk)
@@ -264,7 +264,7 @@ https://bijutsutecho.com/magazine/series/s6/24289
 <img src="/img/tobokegao.png" width="320" height="320" />
 
 　  
-It&#x0027;s me!!! I&#x0027;m thinking of doing a live show around this album songs and making GAMEBOY covers of the songs that influenced me in the making of this album to challenge DJs!
+It&#x0027;s me!!! While making this album, I was always thinking about challenging DJs to do a live show based on its tracks!
 
 [homepage](https://tobokegao.github.io/)
 
@@ -274,7 +274,7 @@ It&#x0027;s me!!! I&#x0027;m thinking of doing a live show around this album son
 <img src="/img/toyohirakumin.png" width="320" height="320" />
 
 　  
-I thought vaporwave and chiptune had an affinity in terms of fictional nostalgia, and when I had the chance to meet them a few times, I asked them to appear!
+I think vaporwave and chiptune had an affinity in terms of fictional nostalgia, so when I had the chance to meet them a few times, I asked them to appear!
 
 I&#x0027;m looking forward to seeing the video work they will be showing this time...!
 
@@ -290,7 +290,7 @@ I&#x0027;m looking forward to seeing the video work they will be showing this ti
 　  
 He is a game music historian, game history researcher, game musician, and a chiptune musician, and an important figure in spreading the concept of chiptune in Japan.
 
-I felt I couldn&#x0027;t not invite such a man, Hally, to this event, so I asked him to appear!
+I felt I couldn&#x0027;t *not* invite such a man this event, so I asked him to appear!
 
 [twitter](https://twitter.com/hallyvorc)
 [SoundCloud](https://soundcloud.com/haruhisa-hally-tanaka)
@@ -318,7 +318,7 @@ He has been paying attention to my VGMDJ-related events and actually listening t
 　  
 Yagishiro, the first Japanese artist to be released on my personal label, TBKgao, will also be performing!
 
-His songs are wonderful, blending Vocaloids with hip elements and gently conveying feelings....
+His songs are wonderful, blending Vocaloids with hip elements and gently conveying feelings…
 
 Can&#x0027;t wait to see what the live show will be like!
 
@@ -347,7 +347,7 @@ Rei is quickly making a name for himself as a new-generation chiptuner, and we w
   
 I&#x0027;ve decided to have Furuno san, who participated in my Pure MIDI compilation released by TBKgao and who may love Pure MIDI even more than I do, join us!
 
-Of course, he will be performing a Pure MIDI set...!
+Of course, he will be performing a Pure MIDI set…!
 
 [twitter](https://twitter.com/kwc_in_BLUER)
 [soundcloud](https://soundcloud.com/kwcinbluer)
@@ -355,4 +355,4 @@ Of course, he will be performing a Pure MIDI set...!
 
 　  
 　  
-**40Nix, Doc, hardmint & Tommy Pedrini, thanks for helping with the translation!**
+**40Nix, Doc, hardmint, jneen-collective, Tommy Pedrini & Nota , thanks for helping with the translation!**
