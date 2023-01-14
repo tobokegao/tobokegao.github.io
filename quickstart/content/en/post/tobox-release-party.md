@@ -104,7 +104,7 @@ He is a roadside chiptuner who has been active in GAMEBOY since the dawn of chip
 <img src="/img/yuriumemoto.png" width="320" height="320" />
 
   
-I asked Umemoto-san to join the event after learning that they had created a chiptune and recreated it with a cello performance…!(https://youtube.com/watch?v=OdEGftdC2jE ) umemoto-san’s is one of the performances i’m most looking forward to (on that day)
+I asked Umemoto-san to join the event after learning that they had created a chiptune and recreated it with a cello performance…!(https://youtube.com/watch?v=OdEGftdC2jE ) umemoto-san&#x0027;s is one of the performances i&#x0027;m most looking forward to (on that day)
 
 [linktree](https://linktr.ee/yuriumemoto)
 
