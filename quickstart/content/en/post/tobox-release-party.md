@@ -328,7 +328,7 @@ Can&#x0027;t wait to see what the live show will be like!
 　  
 　  
 **Rei8bit**
-<img src="/img/rei8bit.jpg" width="320" height="320" />
+<img src="/img/rei8bit.png" width="320" height="320" />
 
 　  
 Rei, the second Japanese artist to be released on my personal label, will also be performing!

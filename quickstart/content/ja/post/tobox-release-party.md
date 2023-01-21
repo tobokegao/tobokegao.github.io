@@ -327,7 +327,7 @@ NES BANDのnoise ch担当であるホソタケさんも出演です！
 　  
 　  
 **Rei8bit**
-<img src="/img/rei8bit.jpg" width="320" height="320" />
+<img src="/img/rei8bit.png" width="320" height="320" />
 
 　  
 僕の個人レーベルからリリースしてもらった日本人第2号であるReiさんも出演！
