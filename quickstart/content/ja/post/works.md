@@ -17,9 +17,61 @@ series = ["tobokegao"]
 aliases = ["/ja/post/works/"]
 +++
 
-# Works (工事中)
+# Works
 
 **その後の詳細はサイト下部のbandcampやsoundcloudページ、または[about](https://tobokegao.github.io/ja/about/)へ**
+
+
+
+2022/10/30 : 3st album「TOBOX」をリリース
+
+2022/08/17 : 4th single 「やるきがでないときのうた」をリリース
+
+2022/05/06 : 4th EP 「Scythe - そんな日もあるよね (Tobokegao Vocal Cover) 」をリリース
+
+2022/03/26 : 1st Live album 「20220326 Chipfest Cyberspace 15 LIVE」をリリース
+
+2022/04/02 : 「RESOFORCE - Rivals of Aether: RESONANT MIXES 3」に「Elusive Master of Toxin (Tobokegao M8 Remix)」で参加
+
+2022/03/04 : 3rd EP 「DA​-​LA​-​LA (Vocal Version)」をリリース
+
+2022/02/04 : 2nd EP 「孤独なフルーツ(Vocal Version)」をリリース
+
+2021/11/24 : 「MUTRON - Future Sushi」に「MUTRON - Future Sushi (Tobokegao FM Remix)」で参加
+
+2021/08/06 : 3st single「黄泉で足踏み(Vocal Version)」をリリース
+
+2021/04/02 : 「RESOFORCE - Rivals of Aether: RESONANT MIXES 2」に「Tetherball Versus (Tobokegao GB Remix)」で参加
+
+2021/01/17 : 447 Records所属のバグによってゲーム世界から飛び出したVsinger、Lily lemonade Moneのトーク中bgmを提供
+
+2020/12/04 : 2st album「Room To Room」をリリース
+
+2020/10/02 : 1st EP「SE Music EP」をリリース
+
+2020/10/02 : 2st single「Being Rusty (Tanashii Mainichi)」をリリース
+
+2020/08/07 : 1st single「○○○○」をリリース
+
+2020/06/19 : 1st mini albumのDeluxe版「Picnic (Deluxe Edition)」をリリース
+
+2020/05/01 : 1st collab album 「Collab Works 01」をリリース
+
+2020/04/25 : コンピレーションアルバム「Pterodactyl Squad - ひきこもり・Hikikomori」に「J-Pop Is Ready For Love (GB 2step Ver)」で参加
+
+2020/04/01 : Dochakuso Recordsのコンピレーションアルバム「FOOTCORE COMPILATION 2」に「LSDj v8_2_2 Bコマンドテスト」で参加
+
+2020/03/20 : 1st album 「B (Albert comes over to me)」をリリース
+
+2020/01/25 : コンピレーションアルバム「ESC TRAX 5th Anniversary」に「Caravan Boomer Track (素YM2413 TV DEMO ver)」で参加
+
+2019/09/20 : 自主レーベル「TBKgao」を設立
+
+2019/08/13 : KlirreさんのEP「Phlox」に	「tobokegao feat. Klirre - 船・宇宙・ユンカース・ユモ」で参加
+
+2019/07/05 : MSX2ソフト「キャラバンブーマー」にbgmを提供
+
+2019/03/03 : しのりゅーさん主催の「光​の​チ​ッ​プ​チ​ュ​ー​ン​VS​闇​の​チ​ッ​プ​チ​ュ​ー​ン 対​決​コ​ン​ピ​レ​ー​シ​ョ​ン」の-Light Side-に「Sunshine, Sunrise, Sunset」で参加
 
 2018/02/09 : OMOIDE LABEL × Bytedoll Records 企画の「Shibuya-Kei Chiptune Cover Compilation」 に「TWEEDEES - Baby, Baby(tobokegao Gameboy Cover)」で参加
 
@@ -51,7 +103,7 @@ aliases = ["/ja/post/works/"]
 
 2016/06/25 : (LIVE)「Lo-Bit Freedom Ver.4」に参加
 
-2016/05/04 : Cheapbeatsから1st album「Picnic」をrelease
+2016/05/04 : Cheapbeatsから1st mini album「Picnic」をrelease
 
 2016/04/01 : MADMILKY RECORDSからreleaseされたSkyboxさんのEP「Stardust EP」に2曲目「æther (feat. Tobokegao)」で参加
 
