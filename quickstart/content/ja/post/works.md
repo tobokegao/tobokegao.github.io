@@ -23,15 +23,23 @@ aliases = ["/ja/post/works/"]
 
 
 
+2023/02/25 : (LIVE)「TOBOX Release Party in Sapporo」に参加
+
+2023/02/18 : (LIVE)「TOBOX Release Party in Tokyo」に参加
+
 2022/10/30 : 3st album「TOBOX」をリリース
+
+2022/10/07 : TBKgaoからreleaseされたコンピレーションアルバム「PURE MIDI Volume 1」に14曲目「PURE」で参加
 
 2022/08/17 : 4th single 「やるきがでないときのうた」をリリース
 
 2022/05/06 : 4th EP 「Scythe - そんな日もあるよね (Tobokegao Vocal Cover) 」をリリース
 
-2022/03/26 : 1st Live album 「20220326 Chipfest Cyberspace 15 LIVE」をリリース
-
 2022/04/02 : 「RESOFORCE - Rivals of Aether: RESONANT MIXES 3」に「Elusive Master of Toxin (Tobokegao M8 Remix)」で参加
+
+2022/03/28 : 1st Live album 「20220326 Chipfest Cyberspace 15 LIVE」をリリース
+
+2022/03/26 : (LIVE)「CHIPFEST CYBERSPACE 15」に参加
 
 2022/03/04 : 3rd EP 「DA​-​LA​-​LA (Vocal Version)」をリリース
 
@@ -45,15 +53,23 @@ aliases = ["/ja/post/works/"]
 
 2021/01/17 : 447 Records所属のバグによってゲーム世界から飛び出したVsinger、Lily lemonade Moneのトーク中bgmを提供
 
+2020/12/28 : (LIVE)「Once Super Portable」に参加
+
 2020/12/04 : 2st album「Room To Room」をリリース
 
 2020/10/02 : 1st EP「SE Music EP」をリリース
 
 2020/10/02 : 2st single「Being Rusty (Tanashii Mainichi)」をリリース
 
+2020/08/30 : (LIVE)「Micromusic Italy Sunday Jam」に参加
+
 2020/08/07 : 1st single「○○○○」をリリース
 
+2020/07/13 : (LIVE)「Metazoa」に参加
+
 2020/06/19 : 1st mini albumのDeluxe版「Picnic (Deluxe Edition)」をリリース
+
+2020/06/05 : (LIVE)「ISO CHIP 2」に参加
 
 2020/05/01 : 1st collab album 「Collab Works 01」をリリース
 
@@ -117,9 +133,9 @@ aliases = ["/ja/post/works/"]
 
 2015/04/26 : 胸毛レコーズからreleaseされた古町MOIさんのmini album「何奴砂漠は井原美知」に7曲目「ハピイバスデ とぼけがお 8bit remix」で参加
 
-2014/12/20 : Compilation album「Merry Chipmas 2014」に8曲目「サンタクロース・アリガト (Santa Claus Arigato) 」で参加
+2014/12/20 : コンピレーションアルバム「Merry Chipmas 2014」に8曲目「サンタクロース・アリガト (Santa Claus Arigato) 」で参加
 
-2014/09/26 : Compilation album「CheapBeats = WIN」に6曲目「矩形波ちゃんの大冒険 」で参加
+2014/09/26 : コンピレーションアルバム「CheapBeats = WIN」に6曲目「矩形波ちゃんの大冒険 」で参加
 
 2014/06/01 : LSDjを始める
 

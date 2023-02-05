@@ -2,7 +2,7 @@
 author = "Hugo Authors"
 title = "Works"
 date = "2022-02-27"
-description = "Works I&#x0027;ve been involved in"
+description = "Works I've been involved in"
 tags = [
     "works",
     "music",
@@ -28,6 +28,8 @@ aliases = ["/post/works/"]
 2023/02/18 : (LIVE)Participated in &#x0022;TOBOX Release Party in Tokyo&#x0022;
 
 2022/10/30 : 3rd album &#x0022;TOBOX&#x0022; is released
+
+2022/10/07 : participate in &#x0022;PURE MIDI Volume 1&#x0022; released by TBKgao with the track &#x0022;PURE&#x0022; on track 14
 
 2022/08/17 : 4th single &#x0022;Yaruki Ga Denai Toki No Uta&#x0022; is released
 
@@ -105,9 +107,9 @@ aliases = ["/post/works/"]
 
 2016/12/18 : Participated in (LIVE) &#x0022;Yuru-Tune-Lounge&#x0022;
 
-2016/11/11 : Participated in Kouki Ish&#x0027;s EP &#x0022;OMOIDE HOUSE&#x0022; released from OMOIDE LABEL with the first song &#x0022;OMOIDE HOUSE (tobokegao 2stepish chiptune remix)&#x0022;
+2016/11/11 : Participated in Kouki Ish&#x0027;s EP &#x0022;OMOIDE HOUSE&#x0022; released from OMOIDE LABEL with the first track &#x0022;OMOIDE HOUSE (tobokegao 2stepish chiptune remix)&#x0022;
 
-2016/10/30 : Participated in &#x0022;シャイニング オリュンポス&#x0022; released by musiclap with the song &#x0022;ウォータースライダー&#x0022; on track 14
+2016/10/30 : Participated in &#x0022;シャイニング オリュンポス&#x0022; released by musiclap with the track &#x0022;ウォータースライダー&#x0022; on track 14
 
 2016/10/22 : (LIVE) Participated in &#x0022;トゥナイト通信&#x0022;
 
