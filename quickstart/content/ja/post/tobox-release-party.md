@@ -34,14 +34,14 @@ DOOR 3500 YEN
 → stream https://streamlabs.com/tobokegao/home
   
 Timetable
-13:00-13:30 AVGN Crew(DJ)
-13:30-14:00 hosotake(DJ)
-14:00-14:30 ヤギシロ(LIVE)
-14:30-15:00 Rei8bit(LIVE)
-15:00-15:30 ツポールヌ(LIVE)
-15:30-16:00 60 Million Reserve(LIVE)
-16:00-16:30 sdhizumi(LIVE)
-16:30-17:00 Tobokegao(LIVE)
+13:00-13:30 Tobokegao(DJ)
+13:30-14:00 AVGN Crew (DJ)
+14:00-14:30 hosotake (DJ)
+14:30-15:00 ヤギシロ (LIVE)
+15:00-15:30 Rei8bit (LIVE)
+15:30-16:00 ツポールヌ (LIVE)
+16:00-16:30 sdhizumi (LIVE)
+16:30-17:00 Tobokegao (LIVE)
 17:00-17:30 konamiscc(DJ)
 17:30-18:00 葛飾出身(LIVE)
   
@@ -57,15 +57,15 @@ DOOR 3500 YEN
   
 Timetable
 15:00-15:30 さうすまうぅん(DJ)
-15:30-15:50 豊平区民(映像上映)
-15:50-16:20 tktc szk(LIVE)
+15:30-16:00 tktc szk(LIVE)
+16:00-16:20 豊平区民(映像上映)
 16:20-16:50 シロシビンズ(LIVE)
 16:50-17:20 cvel(DJ)
 17:20-17:50 梅本佑利(LIVE)
-17:50-18:20 Ca5(LIVE)
-18:20-18:50 うみのひやけ(LIVE)
-18:50-19:20 嶽本サライ(DJ) 
-19:20-19:50 赤帯(DJ)
+17:50-18:20 嶽本サライ(DJ)
+18:20-18:50 Ca5(LIVE)
+18:50-19:20 赤帯(DJ)
+19:20-19:50 うみのひやけ(LIVE)
 19:50-20:20 Tobokegao(DJ)
 20:20-20:50 hally(DJ)
 　  
@@ -73,7 +73,7 @@ Timetable
 **赤帯**
 <img src="/img/akaobi.png" width="320" height="320" />
 
-©unexpected bowtie
+©Stephen McLeod Blythe aka unexpected bowtie
 
 　  
 僕にとってはCommodore 64について知るきっかけを与えてくださった方であり、chiptuneの歴史や参考になる多くの記事や翻訳、情報を得られてとても助かっています…
