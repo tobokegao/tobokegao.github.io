@@ -1,0 +1,25 @@
+{
+  "name": "site-video-kit",
+  "private": true,
+  "version": "0.1.0",
+  "description": "サイトの動きを 1 コマずつ撮って短い動画にする（Playwright + Remotion）",
+  "type": "module",
+  "scripts": {
+    "capture": "node capture.mjs",
+    "render": "node render.mjs",
+    "render:tall": "node render.mjs all --tall",
+    "list": "node capture.mjs --list",
+    "studio": "remotion studio src/index.ts"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.526",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.526"
+  },
+  "devDependencies": {
+    "@types/react": "19.0.0",
+    "playwright": "1.63.0",
+    "typescript": "5.8.3"
+  }
+}
