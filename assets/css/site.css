@@ -1,0 +1,553 @@
+/* C:\TBK — Tobokegao site
+   A DOS text-mode shell: double-line windows, hard shadows, square corners
+   everywhere. "Day" is the Tobokegao scheme (the logo's blue and yellow) and is
+   the default; "Night" is the EGA blue of a real DOS screen.
+   Type follows TRACKMENTO: dot fonts drawn one dot = one pixel, JF Dot M+ 12
+   at 12px on phones and "TM Dot PC" (Galmuri14 + Shinonome 14) at 15px on PCs.
+   Long reading text uses IBM Plex Sans JP. */
+
+@font-face {
+  font-family: "JF Dot MPlus12";
+  src: url("/fonts/gen/dot12.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "TM Dot PC";
+  src: url("/fonts/gen/pc-latin.woff2") format("woff2");
+  unicode-range: U+0020-007E;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TM Dot PC";
+  src: url("/fonts/gen/pc-ja.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TBK Blocks";   /* CP437 block characters for the ANSI banner (scripts/subset_fonts.py) */
+  src: url("/fonts/gen/blocks.woff2") format("woff2");
+  unicode-range: U+0020, U+2580, U+2584, U+2588, U+2591-2593;
+}
+
+/* ---------- Day: the Tobokegao scheme (default) ----------
+   The palette of the first preview: pale dotted desk, white windows with navy
+   frames and shadows, the logo's blue for the bars and its yellow for highlights. */
+:root {
+  --desk: #e4e9ef;
+  --desk-dot: #cfd7e0;
+  --win: #ffffff;
+  --win-2: #f1f4f7;
+  --ink: #0d2233;
+  --ink-dim: #4f6475;
+  --hi: #000000;
+  --accent: #006599;        /* logo blue */
+  --accent-ink: #ffffff;
+  --mark: #ffcc00;          /* logo yellow */
+  --mark-ink: #0d2233;
+  --bar: #006599;
+  --bar-ink: #ffffff;
+  --bar-key: #ffcc00;
+  --frame: #0d2233;
+  --shadow: #0d2233;
+  --bevel-lt: #ece4c4;   /* lit edges catch a little of the yellow light from below */
+  --bevel-dk: #8a9aa8;
+  --bevel-md: #c4ccd4;
+  --px-outline: transparent;  /* icons read fine on light grounds; the ring is for night */
+  --ansi-0: #8f8aa8; --ansi-1: #3a1d7a; --ansi-2: #2c3690; --ansi-3: #006599; --ansi-4: #5b8f5a; --ansi-5: #e0b000;
+  --px-sh1: #3b3752;          /* the large icons' cast shadow on the page: next to the icon */
+  --px-sh2: #a9a6ba;          /* ...and further out */
+  --live: #b3261e;
+  --release: #006599;
+  --feature: #6b3fa0;
+  --news: #9a6f00;
+  --other: #4f6475;
+  --focus: #e0a800;
+
+  --f-dot: "JF Dot MPlus12", "MS Gothic", "Osaka-Mono", monospace;
+  --dot: 12px;              /* one dot = one pixel; UI text is --dot or 2x --dot */
+  --f-body: "IBM Plex Sans JP", "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif;
+  --gutter: 16px;
+  color-scheme: light;
+}
+@media (min-width: 60rem) {
+  :root { --f-dot: "TM Dot PC", "JF Dot MPlus12", "MS Gothic", monospace; --dot: 15px; }
+}
+
+/* ---------- Night: TRACKMENTO's night palette ----------
+   Cool graphite grounds (its oklch 20-36% greys), off-white ink, sky links and
+   lemon highlights, converted to hex. */
+:root[data-scheme="night"] {
+  --desk: #12171b;
+  --desk-dot: #1f252a;
+  --win: #1b2025;
+  --win-2: #292e34;
+  --ink: #efeeeb;
+  --ink-dim: #9399a0;
+  --hi: #ffffff;
+  --accent: #87d4ff;        /* sky */
+  --accent-ink: #12171b;
+  --mark: #fbd743;          /* lemon */
+  --mark-ink: #1b2430;
+  --bar: #3e4348;
+  --bar-ink: #efeeeb;
+  --bar-key: #fbd743;
+  --frame: #a6abb1;
+  --shadow: #000000;
+  --bevel-lt: #48463b;
+  --bevel-dk: #12171b;
+  --bevel-md: #2f3439;
+  --px-outline: #efeeeb;
+  --ansi-0: #3e4348; --ansi-1: #4a2f8f; --ansi-2: #3f4fb0; --ansi-3: #4f7fc0; --ansi-4: #8ea69a; --ansi-5: #d8bd6a;
+  --px-sh1: #06070a;
+  --px-sh2: #0e1115;
+  --focus: #fbd743;
+  color-scheme: dark;
+}
+
+/* ---------- language: every page carries both, CSS shows one ---------- */
+:root:not([data-lang="en"]) [data-l="en"],
+:root[data-lang="en"] [data-l="ja"] { display: none !important; }
+
+/* ---------- base ---------- */
+*, *::before, *::after { box-sizing: border-box; border-radius: 0; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--desk);
+  background-image: radial-gradient(var(--desk-dot) 1px, transparent 1.5px);
+  background-size: 4px 4px;
+  color: var(--ink);
+  font: 400 15px/1.75 var(--f-body);
+  /* Japanese typesetting, borrowed from kiso.css (MIT, github.com/tak-dcxi/kiso.css) as in
+     TRACKMENTO: trim brackets at line start, 1/8em between kana and Latin, strict breaks. */
+  text-spacing-trim: trim-start;
+  text-autospace: normal;
+  line-break: strict;
+}
+/* The 1/8em autospace falls between pixels and blurs dot fonts, so it stays off wherever
+   the dot font is used (and on form controls). */
+button, input, select, textarea,
+.menubar, .statusbar, .seg__opt, .win__title, .win__caption, .btn, .tag, .src,
+.jacket__info, .video__meta, .log, .sub, .posts time, .doc__title, .doc__date, .doc__lead,
+.prose h1, .prose h2, .prose h3, .prose blockquote p:last-child, .prose pre, .error__msg, .skip {
+  text-autospace: no-autospace;
+}
+.log__text { text-autospace: normal; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:hover { background: var(--accent); color: var(--accent-ink); text-decoration: none; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+::selection { background: var(--mark); color: var(--mark-ink); }
+time { font-variant-numeric: tabular-nums; }
+.vh { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.px { width: 18px; height: 18px; flex: none; }
+.px__o { fill: var(--px-outline); }
+.px__sh1 { fill: var(--px-sh1); }
+.px__m { fill: var(--px-mono, #efeeeb); }  /* night line-art icons */
+.px__sh2 { fill: var(--px-sh2); }
+
+.skip { position: absolute; left: -999px; top: 0; background: var(--mark); color: var(--mark-ink); padding: 8px 12px; z-index: 10; font: var(--dot)/1 var(--f-dot); }
+.skip:focus { left: 8px; }
+
+/* ---------- menubar (DOS EDIT style) ---------- */
+.menubar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 4px 16px;
+  flex-wrap: wrap;
+  padding: 4px var(--gutter);
+  background: var(--bar);
+  color: var(--bar-ink);
+  font: var(--dot)/calc(var(--dot) * 2) var(--f-dot);
+}
+/* DOS EDIT / DOSSHELL conventions: items padded by one character, the hotkey letter
+   picked out, the current item in inverse video; holding Alt lights up every hotkey
+   (Alt+letter jumps there, F10 focuses the menu). */
+/* spacing in whole pixels: a 1ch (7.5px) pad would put the dot glyphs between pixels and blur them */
+.menubar a { color: inherit; text-decoration: none; padding: 0 8px; }
+.menubar a:focus-visible { outline: none; background: var(--bar-ink); color: var(--bar); }
+.menubar.is-alt u { background: var(--bar-key); color: var(--bar); }
+.menubar a:hover, .menubar a[aria-current="page"] { background: var(--bar-ink); color: var(--bar); }
+.menubar u { text-decoration: none; }   /* the yellow icons lead each item now; the hotkey shows while Alt is held */
+.menubar a:hover u, .menubar a[aria-current="page"] u { color: inherit; }
+/* a 16px pixel icon before each item, in the logo yellow like the hotkeys; in inverse
+   video it takes the text color */
+.menubar__ico { color: var(--bar-key); margin-right: 4px; }
+.menubar__ico .px { display: inline-block; vertical-align: -4px; }
+.menubar a:hover .menubar__ico, .menubar a[aria-current="page"] .menubar__ico { color: inherit; }
+.menubar__brand span { display: inline-block; width: 24px; overflow: hidden; vertical-align: top; }   /* the block characters, snapped to whole pixels */
+/* the mini TOBOKEGAO banner (other pages): lit from below, white at the top to the
+   logo yellow at the bottom, the shadow screen above it */
+.menubar__logo { display: flex; align-items: center; height: calc(var(--dot) * 2); padding: 0 4px; }
+.bmini { display: block; margin-top: -4px; }   /* the 4px shadow row hangs above: the letters themselves are centred */
+.bmini .bm0 { fill: var(--bar-ink); }
+.bmini .bm1 { fill: color-mix(in srgb, var(--bar-ink) 75%, var(--bar-key)); }
+.bmini .bm2 { fill: color-mix(in srgb, var(--bar-ink) 50%, var(--bar-key)); }
+.bmini .bm3 { fill: color-mix(in srgb, var(--bar-ink) 25%, var(--bar-key)); }
+.bmini .bm4 { fill: var(--bar-key); }
+.bmini .bms { fill: var(--bar-ink); opacity: .55; }
+.menubar__logo:hover .bmini path, .menubar__logo:focus-visible .bmini path { fill: var(--bar); opacity: 1; }
+.menubar__nav { display: flex; flex-wrap: wrap; gap: 0 4px; }
+.menubar__tools { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+
+/* segmented toggles: language and day/night */
+.seg {
+  display: flex; padding: 0; border: 1px solid currentColor;
+  font: var(--dot)/1 var(--f-dot); color: inherit; background: none; cursor: pointer;
+}
+.seg__opt {
+  display: flex; align-items: center; justify-content: center;
+  height: calc(var(--dot) * 2); padding: 0 calc(var(--dot) - 9px);   /* 18px icons: side gap = top gap */
+}
+.seg__opt + .seg__opt { border-left: 1px solid currentColor; }
+/* JP / EN: the gap beside the letters matches the gap above and below them */
+.seg--lang .seg__opt { padding: 0 calc(var(--dot) * 2 / 3 - 1px) 0 calc(var(--dot) * 2 / 3); }   /* 10px at 15px (cap 10), 8px at 12px (cap 8); the last letter's 1px bearing counts on the right */
+.seg:hover .seg__opt:not(.is-on), .seg:focus-visible .seg__opt:not(.is-on) { background: var(--bar-ink); color: var(--bar); }
+.seg:focus-visible { outline: 1px dotted var(--bar-key); outline-offset: 2px; }
+.seg__opt.is-on { background: var(--mark); color: var(--mark-ink); }
+
+/* ---------- desk ---------- */
+.desk {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 36px var(--gutter) 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+.split { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 44px; align-items: start; }
+
+/* ---------- window: double-line frame, title set into the border ----------
+   The whole site is lit from below (like the link icons): shadows fall straight up,
+   bevels are light on the bottom edge and dark on the top. */
+.win {
+  position: relative;
+  background: var(--win);
+  border: 6px double var(--frame);
+  --shadow-h: 10px;  /* lit from below: the shadow falls straight up, as a screentone */
+  padding: 30px 24px 24px;
+  margin-top: 10px;   /* room for the shadow */
+  min-width: 0;
+}
+.win::before, .prose blockquote::after {
+  content: "";
+  position: absolute;
+  left: -6px; right: -6px;
+  top: calc(-6px - var(--shadow-h));
+  height: var(--shadow-h);
+  background: repeating-conic-gradient(var(--shadow) 0 25%, transparent 0 50%) 0 0 / 4px 4px;
+  pointer-events: none;
+}
+.win__title {
+  position: absolute;
+  top: calc(var(--dot) * -1 - 5px);
+  left: 0; right: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  font: 400 var(--dot)/calc(var(--dot) * 2) var(--f-dot);
+}
+.win__title span {
+  position: relative;
+  background: var(--win);
+  color: var(--hi);
+  padding: 0 10px;
+  max-width: calc(100% - 32px);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.win__title span::before { content: "[ "; color: var(--ink-dim); }
+.win__title span::after  { content: " ]"; color: var(--ink-dim); }
+.win__caption { margin: 0 0 20px; font: var(--dot)/1.6 var(--f-dot); color: var(--ink-dim); }
+.win__caption::before { content: "■ "; color: var(--mark); }
+:root[data-scheme="night"] .win__caption::before { color: var(--mark); }
+.win__more { margin: 24px 0 0; display: flex; justify-content: flex-end; }
+
+/* Escapes like  a0 get mangled by the minifier, so these use the characters themselves. */
+/* ---------- buttons: text-mode, no bevels or drop shadows ----------
+   Actions read like a DOS dialog, "< Label >"; filters are radio items "( ) / (•)";
+   hover and the current choice are shown in inverse video. */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  font: var(--dot)/calc(var(--dot) * 2) var(--f-dot);
+  padding: 0 2px;
+  color: var(--accent);
+  background: none;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn::before { content: "< "; }
+.btn::after { content: " >"; }
+.btn:hover, .btn:focus-visible { background: var(--accent); color: var(--accent-ink); }
+.chip { color: var(--ink); }
+.chip::before { content: "( ) "; }
+.chip::after { content: none; }
+.chip[aria-pressed="true"] { color: var(--hi); }
+.chip[aria-pressed="true"]::before { content: "(•) "; color: var(--accent); }
+.chip:hover .count, .chip[aria-pressed="true"]:hover::before { color: inherit; }
+.btn--link { padding: 6px; background: none; }
+.btn--link .px--hd { width: 60px; height: 60px; }
+.btn--link::before, .btn--link::after { content: none; }
+.btn--link:hover, .btn--link:focus-visible { background: var(--mark); }
+.tag {
+  font: var(--dot)/1 var(--f-dot);
+  padding: 2px 4px;
+  border: 1px solid currentColor;
+  color: var(--ink-dim);
+}
+
+/* ---------- hero: README.TXT with the two logos ---------- */
+.hero { display: flex; flex-direction: column; gap: 28px; }
+
+/* ANSI-art banner (scripts/banner.py): blocks lit from below, so each row is lighter
+   than the one above, and a light-shade shadow sits on top of every letter */
+.ansi {
+  margin: 0 auto;
+  font: 400 clamp(11px, 3.4vw, 22px)/1 "TBK Blocks", monospace;
+  white-space: pre;
+  max-width: 100%;
+  overflow: hidden;
+}
+.ansi__row { display: block; }
+/* page titles: 8px blocks on phones, 16px on wider screens (whole-pixel shade dots) */
+.ansi--title { font-size: 8px; width: fit-content; margin: 4px auto 26px; }
+@media (min-width: 40rem) { .ansi--title { font-size: 16px; } }
+.ansi__row:nth-child(1) { color: var(--ansi-0); }
+.ansi__row:nth-child(2) { color: var(--ansi-1); }
+.ansi__row:nth-child(3) { color: var(--ansi-2); }
+.ansi__row:nth-child(4) { color: var(--ansi-3); }
+.ansi__row:nth-child(5) { color: var(--ansi-4); }
+.ansi__row:nth-child(6) { color: var(--ansi-5); }
+.hero__logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(20px, 6vw, 72px);
+  flex-wrap: wrap;
+  padding: 8px 0;
+}
+.logo--night { display: none; }
+:root[data-scheme="night"] .logo--night { display: block; }
+:root[data-scheme="night"] .logo--day { display: none; }
+.hero__logo { display: block; }
+.hero__logo:hover { background: none; outline: 3px solid var(--mark); outline-offset: 6px; }
+.hero__logo--tbk { width: min(230px, 38%); }
+.hero__logo--label { width: min(210px, 34%); }
+.hero__logo--label img, .doc__art--label img { width: 100%; }
+.links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+
+/* ---------- grids ---------- */
+.grid { display: grid; gap: 28px 20px; }
+.grid--jackets { grid-template-columns: repeat(auto-fill, minmax(min(100%, 170px), 1fr)); }
+.grid--videos { grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); }
+
+/* jacket (TRACKMENTO bevel) */
+.jacket { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.jacket[hidden] { display: none; }
+.jacket__art {
+  position: relative;
+  display: block;
+  aspect-ratio: 1;
+  max-width: 100%;
+  padding: 4px;
+  background: var(--win-2);
+  border: 2px solid;
+  border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md);
+}
+.jacket__art:hover { background: var(--mark); }
+/* designs: flyers keep their own proportions */
+.grid--designs { align-items: start; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); }
+.design { display: flex; flex-direction: column; gap: 10px; min-width: 0; margin: 0; }
+.design__art {
+  display: block; padding: 4px; background: var(--win-2);
+  border: 2px solid; border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md);
+}
+.design__art:hover { background: var(--mark); }
+.design__art img { display: block; width: 100%; height: auto; }
+.jacket__art img { width: 100%; height: 100%; object-fit: cover; }
+.jacket__play {
+  position: absolute; left: 8px; bottom: 8px;
+  display: grid; place-items: center;
+  width: 28px; height: 28px;
+  background: var(--mark); color: var(--mark-ink);
+}
+.jacket__play .px { width: 27px; height: 27px; }
+.jacket__meta { display: flex; flex-direction: column; gap: 3px; }
+.jacket__title { margin: 0; font: 700 14px/1.45 var(--f-body); overflow-wrap: anywhere; }
+.jacket__title a { color: var(--hi); text-decoration: none; }
+.jacket__title a:hover { color: var(--accent-ink); }
+.jacket__artist { margin: 0; font-size: 12px; color: var(--ink-dim); overflow-wrap: anywhere; }
+.jacket__info { margin: 2px 0 0; font: var(--dot)/1.8 var(--f-dot); color: var(--ink-dim); display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.jacket__links { margin: 4px 0 0; display: flex; flex-wrap: wrap; gap: 6px; }
+
+.src { display: inline-flex; align-items: center; gap: 6px; padding: 0; color: var(--ink-dim); text-decoration: none; font: var(--dot)/1 var(--f-dot); }
+.src .px { width: 22px; height: 22px; }
+a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 1px; }
+
+/* videos */
+.video { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.video__thumb {
+  display: block; aspect-ratio: 16 / 9; max-width: 100%; padding: 4px;
+  background: var(--win-2);
+  border: 2px solid; border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md);
+}
+.video__thumb:hover { background: var(--mark); }
+.video__thumb img { width: 100%; height: 100%; object-fit: cover; }
+.video__title { margin: 0; font: 700 14px/1.5 var(--f-body); overflow-wrap: anywhere; }
+.video__title a { color: var(--hi); text-decoration: none; }
+.video__title a:hover { color: var(--accent-ink); }
+.video__meta { margin: 0; font: var(--dot)/1.8 var(--f-dot); color: var(--ink-dim); display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.video__meta .px { width: 18px; height: 18px; }
+
+/* NEWS.LOG (tracker pattern rows) */
+.log { list-style: none; margin: 0; padding: 0; font: var(--dot)/calc(var(--dot) * 2) var(--f-dot); }
+.log__row { display: grid; grid-template-columns: 2.4em 7em 5.8em 1fr; gap: 0 10px; padding: 3px 6px; align-items: baseline; }
+.log__row:nth-child(4n+1) { background: var(--win-2); } /* beat highlight, as in a tracker */
+.log__idx, .log__date { color: var(--ink-dim); white-space: nowrap; }
+/* Kind chips: TRACKMENTO's palette as a flat pale tint (no outline).
+   Day uses charcoal text, night off-white, so the label always reads. */
+.log__kind { --k: #9399a0; justify-self: start; align-self: center; padding: 0 6px; line-height: 1.6;
+  color: #1b2430; background: color-mix(in srgb, var(--k) 38%, #ffffff); }
+:root[data-scheme="night"] .log__kind { color: #efeeeb; background: color-mix(in srgb, var(--k) 38%, #1b2025); }
+.log__row--live .log__kind { --k: #f0535a; }     /* coral */
+.log__row--release .log__kind { --k: #58a6ff; }  /* azure */
+.log__row--feature .log__kind { --k: #ff5ec4; }  /* magenta */
+.log__row--news .log__kind { --k: #fbd743; }     /* lemon */
+.log__row--other .log__kind { --k: #3ddc97; }    /* jade */
+.log__text { font: 14px/1.6 var(--f-body); color: var(--ink); overflow-wrap: anywhere; }
+.log__text a { color: inherit; text-decoration: none; }
+.log__text a:hover { color: var(--accent-ink); }
+/* the whole row is the link to the row's page */
+.log__row { position: relative; }
+.log__text a::after { content: ""; position: absolute; inset: 0; }
+.log__row:hover { outline: 1px solid var(--mark); outline-offset: -1px; }
+
+/* lists & docs */
+.sub { font: var(--dot)/2 var(--f-dot); color: var(--hi); margin: 8px 0 10px; }
+.sub::before { content: "■ "; color: var(--mark); }
+.sub:not(:first-of-type) { margin-top: 32px; }
+.posts { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.posts time { font: var(--dot) var(--f-dot); color: var(--ink-dim); margin-right: 12px; }
+.filters { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 0 0 28px; }
+.filters--log { margin-bottom: 16px; }
+.chip .count { margin-left: 6px; opacity: .7; }
+.search { display: flex; align-items: center; gap: 8px; margin: 0 0 22px; font: var(--dot)/1 var(--f-dot); }
+.search label { color: var(--ink-dim); white-space: nowrap; }
+.search input {
+  flex: 1; min-width: 0; max-width: 360px;
+  font: 15px/1.6 var(--f-body); color: var(--ink);
+  background: var(--win-2); border: 2px solid; border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md);   /* lit edge at the bottom, as everywhere */
+  padding: 4px 8px;
+}
+.search output { color: var(--ink-dim); white-space: nowrap; }
+.log__row[hidden] { display: none; }
+.log__empty { margin: 16px 0 0; font: var(--dot)/2 var(--f-dot); color: var(--ink-dim); }
+
+.win--doc { max-width: 860px; width: 100%; margin-inline: auto; }
+.doc__art { width: min(260px, 70%); margin: 4px auto 20px; }
+.doc__art--label { width: min(220px, 60%); }
+.doc__title { margin: 0; text-align: center; font: 400 calc(var(--dot) * 2)/1.4 var(--f-dot); color: var(--hi); text-wrap: balance; }
+.doc__date { margin: 4px 0 0; text-align: center; font: var(--dot) var(--f-dot); color: var(--ink-dim); }
+.doc__lead { margin: 6px 0 24px; text-align: center; font: var(--dot)/1.8 var(--f-dot); color: var(--ink-dim); }
+
+.prose { max-width: 68ch; margin-inline: auto; }
+.prose > :first-child, .prose > [data-l] > :first-child { margin-top: 0; }
+.prose h1, .prose h2, .prose h3 { font: 400 calc(var(--dot) * 2)/1.4 var(--f-dot); color: var(--hi); text-wrap: balance; }
+.prose h2 { margin-top: 2.2em; padding-bottom: 4px; border-bottom: 3px double var(--frame); }
+.prose h2::before { content: "■ "; color: var(--mark); }
+.prose h3 { font-size: var(--dot); }
+.prose p { margin: 0 0 1.2em; }
+.prose img { margin: 1em auto; border: 2px solid; border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md); }
+/* Quotes are DOS message boxes: a title bar, a double frame, a hard shadow,
+   and the speaker on a status line at the bottom. */
+.prose blockquote {
+  margin: 12px 0 28px;
+  padding: 0;
+  background: var(--win);
+  border: 4px double var(--frame);
+  position: relative;
+  --shadow-h: 6px;
+}
+.prose blockquote::after { left: -4px; right: -4px; top: calc(-4px - var(--shadow-h)); }
+.prose blockquote::before {
+  content: "■ MESSAGE";
+  display: block;
+  padding: 2px 10px;
+  background: var(--bar);
+  color: var(--bar-ink);
+  font: var(--dot)/calc(var(--dot) * 2) var(--f-dot);
+}
+.prose blockquote p { margin: 0; padding: 12px 16px 4px; }
+.prose blockquote p:last-child {
+  margin-top: 8px;
+  padding: 2px 10px;
+  border-top: 1px dashed var(--bevel-dk);
+  background: var(--win-2);
+  font: var(--dot)/calc(var(--dot) * 2) var(--f-dot);
+  color: var(--ink-dim);
+}
+.prose blockquote p:last-child::before { content: "FROM: "; color: var(--accent); }
+.prose table { display: block; overflow-x: auto; border-collapse: collapse; }
+.prose th, .prose td { border: 1px solid var(--bevel-dk); padding: 4px 10px; }
+.prose pre { overflow-x: auto; background: var(--win-2); padding: 12px; font-family: var(--f-dot); }
+.prose small { color: var(--ink-dim); }
+
+.win--error { max-width: 560px; margin-inline: auto; width: 100%; }
+.error__msg { font: calc(var(--dot) * 2)/1.5 var(--f-dot); color: var(--hi); margin: 0; }
+
+/* ---------- statusbar ---------- */
+.statusbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 24px;
+  padding: 6px var(--gutter);
+  background: var(--bar);
+  color: var(--bar-ink);
+  font: var(--dot)/calc(var(--dot) * 2) var(--f-dot);
+}
+.statusbar__keys, .statusbar__meta { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.statusbar a { color: inherit; text-decoration: none; }
+.statusbar a:hover { background: var(--bar-ink); color: var(--bar); }
+.statusbar kbd { font: inherit; color: var(--bar-key); margin-right: 4px; }
+.statusbar a:hover kbd { color: inherit; }
+
+/* ---------- phones ---------- */
+@media (max-width: 640px) {
+  .desk { gap: 40px; padding-top: 30px; }
+  .win { padding: 26px 14px 18px; --shadow-h: 6px; margin-top: 6px; }
+  .hero__logo--tbk { width: 40%; }
+  .hero__logo--label { width: 36%; }
+  .links { gap: 4px; }
+  .grid--jackets, .grid--designs { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 14px; }
+  .log__row { grid-template-columns: 7em 1fr; }
+  .log__idx { display: none; }
+  .log__text { grid-column: 1 / -1; }
+  .menubar { gap: 4px; flex-wrap: nowrap; padding-inline: 6px; }
+  .menubar__brand { display: none; }
+  .menubar__logo { display: flex; padding: 0; }   /* the mini banner stays on the other pages */
+  .menubar__nav { flex-wrap: nowrap; gap: 0; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+  /* icons only: the item names stay for screen readers and the title tooltip */
+  .menubar__nav a { display: flex; align-items: center; height: calc(var(--dot) * 2); padding: 0; }
+  .menubar__nav a > span[lang] { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .menubar__ico { margin-right: 0; }
+  .menubar__ico .px { display: block; }
+  .menubar__tools { gap: 4px; flex: none; }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn:active { transform: none; }
+}

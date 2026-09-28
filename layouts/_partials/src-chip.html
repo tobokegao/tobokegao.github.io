@@ -1,0 +1,8 @@
+{{- /* Platform chip with its pixel icon. Context: dict "source" "url" "label" (bool) */ -}}
+{{- $name := partial "source-name.html" .source -}}
+{{- $icon := cond (eq .source "x") "x" .source -}}
+{{- if .url -}}
+<a class="src" href="{{ .url }}" rel="noopener" target="_blank" title="{{ $name }}">{{ partial (printf "icons/%s.html" $icon) . }}{{ if .label }}<span>{{ $name }}</span>{{ else }}<span class="vh">{{ $name }}</span>{{ end }}</a>
+{{- else -}}
+<span class="src" title="{{ $name }}">{{ partial (printf "icons/%s.html" $icon) . }}{{ if .label }}<span>{{ $name }}</span>{{ else }}<span class="vh">{{ $name }}</span>{{ end }}</span>
+{{- end -}}

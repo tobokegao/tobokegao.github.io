@@ -1,0 +1,4 @@
+{
+ "_comment": "Google Alerts RSS feed URLs (google.com/alerts -> alert options -> Deliver to: RSS feed). One per alert.",
+ "google_alerts": []
+}

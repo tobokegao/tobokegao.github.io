@@ -1,0 +1,19 @@
+{{ define "main" }}
+{{- /* One activity-log row (pages made by content/news/_content.gotmpl). */ -}}
+{{ $r := .Params.row }}
+<article class="win win--doc" aria-labelledby="page-t">
+  {{ partial "win.html" (dict "file" (printf `C:\TBK\NEWS\%s.TXT` (replace $r.date "-" "")) "id" "page-t-file") }}
+  <p class="doc__date log__row--{{ $r.kind }}"><time datetime="{{ $r.date }}">{{ replace $r.date "-" "." }}</time> <span class="log__kind">{{ partial "t.html" (printf "kind_%s" $r.kind) }}</span></p>
+  <h1 class="doc__title" id="page-t">{{ partial "bi.html" (dict "ja" $r.ja "en" $r.en) }}</h1>
+  {{ with $r.url }}
+  <p><a class="btn" href="{{ . }}" rel="noopener" target="_blank">{{ partial "t.html" "openLink" }}: {{ (urls.Parse .).Host }}</a></p>
+  {{ end }}
+  {{ $related := slice }}
+  {{ with $r.url }}{{ $u := . }}{{ range hugo.Data.releases }}{{ if where .links "url" $u }}{{ $related = $related | append . }}{{ end }}{{ end }}{{ end }}
+  {{ with $related }}
+  <h2 class="sub">{{ partial "t.html" "related" }}</h2>
+  <div class="grid grid--jackets">{{ range first 1 . }}{{ partial "release-card.html" . }}{{ end }}</div>
+  {{ end }}
+  <p class="win__more"><a class="btn" href="{{ "/news/" | relURL }}">{{ partial "t.html" "backNews" }}</a></p>
+</article>
+{{ end }}

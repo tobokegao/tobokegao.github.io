@@ -1,0 +1,58 @@
+baseURL = "https://tobokegao.github.io/"
+title = "とぼけがお Tobokegao"
+locale = "ja"
+defaultContentLanguage = "ja"
+enableRobotsTXT = true
+
+disableKinds = ["taxonomy", "term"]
+timeZone = "Asia/Tokyo"
+
+[markup.goldmark.renderer]
+  unsafe = true
+  hardWraps = true
+
+[params]
+  artist = "Tobokegao"
+  label = "TBKgao"
+
+  # Order here is the order of the link buttons on the home page.
+  [[params.links]]
+    name = "Twitter(X)"
+    icon = "x"
+    url = "https://x.com/to6okegao"
+  [[params.links]]
+    name = "Bluesky"
+    icon = "bluesky"
+    url = "https://bsky.app/profile/tobokegao.bsky.social"
+  [[params.links]]
+    name = "YouTube"
+    icon = "youtube"
+    url = "https://www.youtube.com/c/to6okegao"
+  [[params.links]]
+    name = "niconico"
+    icon = "niconico"
+    url = "https://www.nicovideo.jp/user/12289597"
+  [[params.links]]
+    name = "SoundCloud"
+    icon = "soundcloud"
+    url = "https://soundcloud.com/tobokegao"
+  [[params.links]]
+    name = "Bandcamp"
+    icon = "bandcamp"
+    url = "https://tbkgao.bandcamp.com/music"
+  [[params.links]]
+    name = "Spotify"
+    icon = "spotify"
+    url = "https://open.spotify.com/artist/2ZW0H3Dntod1TN6dUFKY3v"
+  [[params.links]]
+    name = "Apple Music"
+    icon = "apple"
+    url = "https://music.apple.com/jp/artist/tobokegao/1532385760"
+  [[params.links]]
+    name = "Battle of the Bits"
+    icon = "botb"
+    url = "https://battleofthebits.com/barracks/Profile/tobokegao/"
+  [[params.links]]
+    name = "GitHub"
+    icon = "github"
+    url = "https://github.com/tobokegao"

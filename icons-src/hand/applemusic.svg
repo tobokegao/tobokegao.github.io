@@ -1,0 +1,11 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<!-- Apple Music: rounded square with a beamed note, drawn on whole-pixel coordinates
+     (the official note's stems are thinner than a pixel at 24px). -->
+<style>.w{fill:#fff!important}</style>
+<rect x="0" y="0" width="24" height="24" rx="6"/>
+<polygon class="w" points="9,6.5 18,4.5 18,7 9,9"/>
+<rect class="w" x="9" y="7" width="2" height="9.5"/>
+<rect class="w" x="16" y="5" width="2" height="9.5"/>
+<ellipse class="w" cx="7.6" cy="16.5" rx="2.6" ry="2.1"/>
+<ellipse class="w" cx="14.6" cy="14.5" rx="2.6" ry="2.1"/>
+</svg>

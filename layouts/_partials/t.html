@@ -1,0 +1,3 @@
+{{- /* A UI string in both languages; CSS shows the active one. Context: key in data/strings.toml */ -}}
+{{- $s := index hugo.Data.strings . -}}
+<span data-l="ja">{{ $s.ja }}</span><span data-l="en" lang="en">{{ $s.en }}</span>

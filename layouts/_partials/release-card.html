@@ -1,0 +1,15 @@
+{{/* A release grouped across platforms. Context: map from data/releases.json */}}
+{{ $own := findRE `(?i)tobokegao|とぼけがお` .artist }}
+{{ $main := index .links 0 }}
+<article class="jacket" data-owner="{{ cond (gt (len $own) 0) "own" "label" }}">
+  <a class="jacket__art" href="{{ $main.url }}" rel="noopener" target="_blank" tabindex="-1" aria-hidden="true">
+    {{ with .image }}<img src="{{ . }}" alt="" loading="lazy" width="300" height="300">{{ end }}
+    {{ if eq .type "song" }}<span class="jacket__play" aria-hidden="true">{{ partial "icons/play.html" . }}</span>{{ end }}
+  </a>
+  <div class="jacket__meta">
+    <h3 class="jacket__title"><a href="{{ $main.url }}" rel="noopener" target="_blank">{{ .title }}</a></h3>
+    {{ if not (findRE `(?i)^tobokegao$|^とぼけがお$` .artist) }}<p class="jacket__artist">{{ .artist }}</p>{{ end }}
+    <p class="jacket__info"><time datetime="{{ .date }}">{{ replace .date "-" "." }}</time><span class="tag">{{ partial "t.html" (printf "type_%s" .type) }}</span></p>
+    <p class="jacket__links">{{ range .links }}{{ partial "src-chip.html" (dict "source" .source "url" .url) }}{{ end }}</p>
+  </div>
+</article>

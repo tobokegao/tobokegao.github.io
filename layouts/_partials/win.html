@@ -1,0 +1,6 @@
+{{- /* Window title set into the double border. Context: dict "file" "id" "tag" (h1/h2) */ -}}
+{{- if eq .tag "h1" -}}
+<h1 class="win__title" id="{{ .id }}"><span>{{ .file }}</span></h1>
+{{- else -}}
+<h2 class="win__title" id="{{ .id }}"><span>{{ .file }}</span></h2>
+{{- end -}}

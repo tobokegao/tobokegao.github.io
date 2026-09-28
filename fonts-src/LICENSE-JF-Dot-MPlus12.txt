@@ -1,0 +1,14 @@
+JFドット M+ 12（JF-Dot-MPlus12）
+配布元: 自家製フォント工房 http://jikasei.me/font/jf-dotfont/ （jfdotfont-20150527.zip）
+元の字: M+ BITMAP FONTS（森下浩司氏 / M+ FONTS PROJECT）
+
+M+ FONTS                                Copyright (C) 2002-2013 M+ FONTS PROJECT
+
+These fonts are free software.
+Unlimited permission is granted to use, copy, and distribute them, with
+or without modification, either commercially or noncommercially.
+THESE FONTS ARE PROVIDED "AS IS" WITHOUT WARRANTY.
+
+http://mplus-fonts.sourceforge.jp/mplus-outline-fonts/
+
+TRACKMENTO では運用ボード（scripts/board/index.html）に、使う字だけに刈り込み、半角の英数記号を 1 目上げて埋め込んでいる（scripts/board_font.py）。

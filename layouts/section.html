@@ -1,0 +1,52 @@
+{{ define "main" }}
+{{ $files := dict "releases" "RELEASES.M3U" "videos" "VIDEOS.MP4" "designs" `DESIGNS\` "news" "NEWS.LOG" "post" `POSTS\` }}
+<section class="win" aria-labelledby="page-t">
+  {{ partial "win.html" (dict "file" (printf `C:\TBK\%s` (index $files .Section)) "id" "page-t" "tag" "h1") }}
+  {{/* the page title as ANSI art (scripts/banner.py); the words stay for screen readers */}}
+  {{ partial (printf "banners/%s.html" .Section) . }}
+  <p class="vh">{{ partial "bi.html" (dict "ja" .Title "en" .Params.title_en) }}</p>
+
+  {{ if eq .Section "releases" }}
+    <div class="filters" role="group" aria-label="Filter">
+      <button type="button" class="btn chip" data-filter="all" aria-pressed="true">{{ partial "t.html" "all" }}</button>
+      <button type="button" class="btn chip" data-filter="own" aria-pressed="false">{{ partial "t.html" "own" }}</button>
+      <button type="button" class="btn chip" data-filter="label" aria-pressed="false">{{ partial "t.html" "label" }}</button>
+    </div>
+    <div class="grid grid--jackets" id="release-grid">
+      {{ range hugo.Data.releases }}{{ partial "release-card.html" . }}{{ end }}
+    </div>
+
+  {{ else if eq .Section "videos" }}
+    <div class="grid grid--videos">
+      {{ range where hugo.Data.items "type" "video" }}{{ partial "video-card.html" . }}{{ end }}
+    </div>
+
+  {{ else if eq .Section "designs" }}
+    <div class="grid grid--designs">
+      {{ range sort hugo.Data.designs "date" "desc" }}{{ partial "design-card.html" . }}{{ end }}
+    </div>
+
+  {{ else if eq .Section "news" }}
+    {{ $rows := partial "timeline.html" . }}
+    <div class="filters filters--log" role="group" aria-label="{{ partial "tt.html" "kinds" }}">
+      <button type="button" class="btn chip" data-kind="all" aria-pressed="true">{{ partial "t.html" "all" }}<span class="count">{{ len $rows }}</span></button>
+      {{ range slice "release" "live" "feature" "news" "other" }}
+        {{ $n := len (where $rows "kind" .) }}
+        {{ if $n }}<button type="button" class="btn chip" data-kind="{{ . }}" aria-pressed="false">{{ partial "t.html" (printf "kind_%s" .) }}<span class="count">{{ $n }}</span></button>{{ end }}
+      {{ end }}
+    </div>
+    <div class="search">
+      <label for="log-search">{{ partial "t.html" "search" }}</label>
+      <input id="log-search" type="search" autocomplete="off">
+      <output for="log-search" id="log-count"></output>
+    </div>
+    {{ partial "log.html" (dict "rows" $rows "limit" 9999) }}
+    <p class="log__empty" id="log-empty" hidden>{{ partial "t.html" "noResults" }}</p>
+
+  {{ else }}
+    <ul class="posts">
+      {{ range .RegularPages }}<li><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time> <a href="{{ .RelPermalink }}">{{ partial "bi.html" (dict "ja" .Title "en" .Params.title_en) }}</a></li>{{ end }}
+    </ul>
+  {{ end }}
+</section>
+{{ end }}

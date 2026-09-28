@@ -1,0 +1,119 @@
+[
+ {
+  "id": "bluesky:3mw45nrckj22e",
+  "source": "bluesky",
+  "url": "https://bsky.app/profile/tobokegao.bsky.social/post/3mw45nrckj22e",
+  "date": "2026-09-22",
+  "title": "",
+  "text": "new updates #TRACKMENTO [contains quote post or other embedded content]",
+  "status": "new"
+ },
+ {
+  "id": "bluesky:3mvj2sxdeq224",
+  "source": "bluesky",
+  "url": "https://bsky.app/profile/tobokegao.bsky.social/post/3mvj2sxdeq224",
+  "date": "2026-09-15",
+  "title": "",
+  "text": "Topsters 3 only lets you pick full albums, so I made a site where you can choose individual tracks! trackmento.onrender.com?lang=en",
+  "status": "new"
+ },
+ {
+  "id": "bluesky:3mqfh2ezokc2r",
+  "source": "bluesky",
+  "url": "https://bsky.app/profile/tobokegao.bsky.social/post/3mqfh2ezokc2r",
+  "date": "2026-07-12",
+  "title": "",
+  "text": "Reaper DAW but it works like DJ software",
+  "status": "new"
+ },
+ {
+  "id": "bluesky:3murrhgnq722m",
+  "source": "bluesky",
+  "url": "https://bsky.app/profile/tobokegao.bsky.social/post/3murrhgnq722m",
+  "date": "2026-09-06",
+  "title": "",
+  "text": "I've finally realized recently that rather than focusing mainly on chiptune, it suits me better to use chiptune just as an element and dive into various genres… I've also realized that there are communities out there that fit me even better!",
+  "status": "new"
+ },
+ {
+  "id": "musicbrainz:arranger:75def62d-425e-4368-9c14-52d68130e5ab",
+  "source": "musicbrainz",
+  "url": "https://musicbrainz.org/recording/75def62d-425e-4368-9c14-52d68130e5ab",
+  "date": "",
+  "title": "Develop (Vocal version)",
+  "text": "Credit: arranger on \"Develop (Vocal version)\"",
+  "status": "new"
+ },
+ {
+  "id": "musicbrainz:mix:75def62d-425e-4368-9c14-52d68130e5ab",
+  "source": "musicbrainz",
+  "url": "https://musicbrainz.org/recording/75def62d-425e-4368-9c14-52d68130e5ab",
+  "date": "",
+  "title": "Develop (Vocal version)",
+  "text": "Credit: mix on \"Develop (Vocal version)\"",
+  "status": "new"
+ },
+ {
+  "id": "musicbrainz:performer:9e117d78-ba2d-41b9-8f47-04fab8823b7e",
+  "source": "musicbrainz",
+  "url": "https://musicbrainz.org/recording/9e117d78-ba2d-41b9-8f47-04fab8823b7e",
+  "date": "",
+  "title": "æther",
+  "text": "Credit: performer on \"æther\"",
+  "status": "new"
+ },
+ {
+  "id": "musicbrainz:producer:75def62d-425e-4368-9c14-52d68130e5ab",
+  "source": "musicbrainz",
+  "url": "https://musicbrainz.org/recording/75def62d-425e-4368-9c14-52d68130e5ab",
+  "date": "",
+  "title": "Develop (Vocal version)",
+  "text": "Credit: producer on \"Develop (Vocal version)\"",
+  "status": "new"
+ },
+ {
+  "id": "musicbrainz:programming:75def62d-425e-4368-9c14-52d68130e5ab",
+  "source": "musicbrainz",
+  "url": "https://musicbrainz.org/recording/75def62d-425e-4368-9c14-52d68130e5ab",
+  "date": "",
+  "title": "Develop (Vocal version)",
+  "text": "Credit: programming on \"Develop (Vocal version)\"",
+  "status": "new"
+ },
+ {
+  "id": "musicbrainz:remixer:9a145aca-8d2e-49f1-9436-5cef9cc4afc2",
+  "source": "musicbrainz",
+  "url": "https://musicbrainz.org/recording/9a145aca-8d2e-49f1-9436-5cef9cc4afc2",
+  "date": "",
+  "title": "OMOIDE HOUSE (tobokegao 2stepish chiptune remix)",
+  "text": "Credit: remixer on \"OMOIDE HOUSE (tobokegao 2stepish chiptune remix)\"",
+  "status": "new"
+ },
+ {
+  "id": "musicbrainz:remixer:888010d1-794c-413b-a855-7f6f5dd8d76d",
+  "source": "musicbrainz",
+  "url": "https://musicbrainz.org/recording/888010d1-794c-413b-a855-7f6f5dd8d76d",
+  "date": "",
+  "title": "Press On [Tobokegao's Y2K VGM Vibes Jungle Remix]",
+  "text": "Credit: remixer on \"Press On [Tobokegao's Y2K VGM Vibes Jungle Remix]\"",
+  "status": "new"
+ },
+ {
+  "id": "musicbrainz:remixer:58ec032a-9ffa-43d6-9e0b-79bbfbdbcc45",
+  "source": "musicbrainz",
+  "url": "https://musicbrainz.org/recording/58ec032a-9ffa-43d6-9e0b-79bbfbdbcc45",
+  "date": "",
+  "title": "Radiant Revival (とぼけがお Remix)",
+  "text": "Credit: remixer on \"Radiant Revival (とぼけがお Remix)\"",
+  "status": "new"
+ },
+ {
+  "id": "musicbrainz:remixer:b6953ea1-320b-407e-9609-201505d7838f",
+  "source": "musicbrainz",
+  "url": "https://musicbrainz.org/recording/b6953ea1-320b-407e-9609-201505d7838f",
+  "date": "",
+  "title": "Trash Toys Dream (To6okegao’s Goodnight Chiptune Ver)",
+  "text": "Credit: remixer on \"Trash Toys Dream (To6okegao’s Goodnight Chiptune Ver)\"",
+  "status": "new"
+ }
+]

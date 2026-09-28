@@ -1,0 +1,13 @@
+{{/* NEWS.LOG as tracker rows. Context: dict "rows" slice "limit" int */}}
+<ol class="log">
+  {{ range $i, $r := first .limit .rows }}
+  <li class="log__row log__row--{{ $r.kind }}" data-kind="{{ $r.kind }}">
+    <span class="log__idx" aria-hidden="true">{{ printf "%02X" $i }}</span>
+    <time class="log__date" datetime="{{ $r.date }}">{{ replace $r.date "-" "." }}</time>
+    <span class="log__kind">{{ partial "t.html" (printf "kind_%s" $r.kind) }}</span>
+    {{- /* the whole row opens the row's own page (articles: the article) */}}
+    {{- $href := $r.page | default $r.url }}
+    <span class="log__text">{{ with $href }}<a href="{{ . }}"{{ if hasPrefix . "http" }} rel="noopener" target="_blank"{{ end }}>{{ end }}{{ partial "bi.html" (dict "ja" $r.ja "en" $r.en) }}{{ with $href }}</a>{{ end }}</span>
+  </li>
+  {{ end }}
+</ol>

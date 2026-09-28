@@ -1,0 +1,12 @@
+{{- /* One design (flyer etc.) from data/designs.json: the picture at its own proportions in
+   the bevel frame, linking to the full-size file; a title, date and kind below. */ -}}
+{{- $img := .image | relURL -}}
+<figure class="design">
+  <a class="design__art" href="{{ $img }}" target="_blank" rel="noopener">
+    <img src="{{ $img }}" alt="{{ .title }}" loading="lazy" decoding="async">
+  </a>
+  <figcaption class="jacket__meta">
+    <p class="jacket__title">{{ with .url }}<a href="{{ . | relURL }}">{{ $.title }}</a>{{ else }}{{ .title }}{{ end }}</p>
+    <p class="jacket__info"><time datetime="{{ .date }}">{{ replace .date "-" "." }}</time><span class="tag">{{ partial "t.html" (printf "kind_%s" .kind) }}</span></p>
+  </figcaption>
+</figure>

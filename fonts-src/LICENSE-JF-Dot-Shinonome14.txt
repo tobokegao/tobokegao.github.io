@@ -1,0 +1,12 @@
+JFドット東雲ゴシック14（JF-Dot-Shinonome14）Version 1.00.20150527
+配布元: 自家製フォント工房 http://jikasei.me/font/jf-dotfont/ （jfdotfont-20150527.zip）
+元の字: 東雲ビットマップフォントファミリー（The Electronic Font Open Laboratory）
+
+フォントに入っているライセンス（name テーブルの 13 番）:
+  このアーカイブに含まれるすべてのフォントデータ、ドキュメント、スクリプト類はすべて Public Domain で提供されています。
+  但し、日本に於いては現時点で著作権を放棄することは法律上不可能であり、AUTHORS に列挙されている作者がその権利を
+  行使しないと宣言することで実質的な Public Domain であるとします。
+  自由な改造、他フォーマットへの変換、組込み、再配布を行うことができます。
+  同時に、これらはすべて完全に無保証です。
+
+TRACKMENTO では PC の操作部品の英数字に使う（scripts/build_fonts.py が英数字だけに刈り込み、size-adjust で 14px にして配る）。

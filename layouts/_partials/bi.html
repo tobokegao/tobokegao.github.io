@@ -1,0 +1,4 @@
+{{- /* Two strings, one per language. Context: dict "ja" "en" (en falls back to ja) */ -}}
+{{- if and .en (ne .en .ja) -}}
+<span data-l="ja">{{ .ja }}</span><span data-l="en" lang="en">{{ .en }}</span>
+{{- else -}}{{ .ja }}{{- end -}}

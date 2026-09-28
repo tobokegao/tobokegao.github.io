@@ -1,0 +1,25 @@
+{{ $cur := cond (eq .Section "post") "news" .Section }}
+{{ if and .File (eq .File.ContentBaseName "about") }}{{ $cur = "about" }}{{ end }}
+<header class="menubar">
+  {{ if .IsHome }}
+  <a class="menubar__brand" href="{{ "/" | relURL }}"><span aria-hidden="true">▓▒░</span> C:\TBK</a>
+  {{ else }}
+  {{/* the README banner in miniature: back to the top page */}}
+  <a class="menubar__brand menubar__logo" href="{{ "/" | relURL }}" aria-label="Tobokegao — {{ partial "tt.html" "home" }}" title="{{ partial "tt.html" "home" }}">{{ partial "banner-mini.html" . }}</a>
+  {{ end }}
+  <nav class="menubar__nav" aria-label="{{ partial "tt.html" "nav" }}">
+    {{ range slice "releases" "videos" "designs" "news" "post" "about" }}
+      {{ $s := index hugo.Data.strings . }}
+      <a href="{{ printf "/%s/" . | relURL }}" accesskey="{{ lower (substr $s.en 0 1) }}" aria-keyshortcuts="Alt+{{ upper (substr $s.en 0 1) }}" title="{{ $s.en }}"{{ if eq $cur . }} aria-current="page"{{ end }}><span class="menubar__ico">{{ partial (printf "icons/tab-%s.html" .) }}</span><span lang="en"><u>{{ substr $s.en 0 1 }}</u>{{ substr $s.en 1 }}</span></a>
+    {{ end }}
+  </nav>
+  <div class="menubar__tools">
+    {{/* each pair is one button (one big tap target on phones): a tap switches to the other side */}}
+    <button class="seg seg--lang" type="button" data-toggle="lang" aria-label="Language / 言語: JP / EN">
+      <span class="seg__opt" data-opt="ja" lang="ja">JP</span><span class="seg__opt" data-opt="en" lang="en">EN</span>
+    </button>
+    <button class="seg" type="button" data-toggle="scheme" aria-label="{{ partial "tt.html" "theme" }}">
+      <span class="seg__opt" data-opt="day" title="{{ partial "tt.html" "day" }}">{{ partial "icons/sun.html" . }}</span><span class="seg__opt" data-opt="night" title="{{ partial "tt.html" "night" }}">{{ partial "icons/moon.html" . }}</span>
+    </button>
+  </div>
+</header>

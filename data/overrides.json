@@ -1,0 +1,6 @@
+{
+ "_comment": "Manual fixes for scripts/fetch_feeds.py. Use item ids from data/items.json (e.g. youtube:XXXX, niconico:smXXXX). song = count this video as a song release, not_song = never count it, hide = drop the item from releases.",
+ "song": [],
+ "not_song": [],
+ "hide": []
+}

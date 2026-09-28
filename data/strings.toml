@@ -1,0 +1,189 @@
+# UI strings in both languages. Pages carry both; the JP/EN switch only changes which is shown.
+
+[releases]
+ja = "リリース"
+en = "Releases"
+
+[videos]
+ja = "動画"
+en = "Videos"
+
+[news]
+ja = "ニュース"
+en = "News"
+
+[designs]
+ja = "デザイン"
+en = "Designs"
+
+[kind_flyer]
+ja = "フライヤー"
+en = "Flyer"
+
+[post]
+ja = "記事"
+en = "Posts"
+
+[backNews]
+ja = "ニュースへ戻る"
+en = "Back to News"
+
+[openLink]
+ja = "リンク先を開く"
+en = "Open link"
+
+[related]
+ja = "関連リリース"
+en = "Related release"
+
+[about]
+ja = "プロフィール"
+en = "About"
+
+[latest]
+ja = "最新リリース"
+en = "Latest releases"
+
+[latestVideos]
+ja = "最新動画"
+en = "Latest videos"
+
+[log]
+ja = "活動ログ"
+en = "Activity log"
+
+[allReleases]
+ja = "すべてのリリース"
+en = "All releases"
+
+[allVideos]
+ja = "すべての動画"
+en = "All videos"
+
+[allNews]
+ja = "すべてのニュース"
+en = "All news"
+
+[posts]
+ja = "記事"
+en = "Articles"
+
+[all]
+ja = "すべて"
+en = "All"
+
+[own]
+ja = "とぼけがお"
+en = "Tobokegao"
+
+[label]
+ja = "TBKgaoレーベル"
+en = "TBKgao label"
+
+[lastSync]
+ja = "最終同期"
+en = "Last sync"
+
+[theme]
+ja = "朝と夜"
+en = "Day and night"
+
+[backHome]
+ja = "ホームへ戻る"
+en = "Back to home"
+
+[kind_live]
+ja = "ライブ"
+en = "Live"
+
+[kind_release]
+ja = "リリース"
+en = "Release"
+
+[kind_feature]
+ja = "参加"
+en = "Feature"
+
+[kind_other]
+ja = "情報"
+en = "Info"
+
+[kind_news]
+ja = "ニュース"
+en = "News"
+
+[type_album]
+ja = "アルバム"
+en = "Album"
+
+[type_ep]
+ja = "EP"
+en = "EP"
+
+[type_single]
+ja = "シングル"
+en = "Single"
+
+[type_track]
+ja = "トラック"
+en = "Track"
+
+[type_video]
+ja = "動画"
+en = "Video"
+
+[listen]
+ja = "聴く"
+en = "Listen on"
+
+[home]
+ja = "ホーム"
+en = "Home"
+
+[skip]
+ja = "本文へ移動"
+en = "Skip to content"
+
+[nav]
+ja = "ページ"
+en = "Pages"
+
+[day]
+ja = "朝"
+en = "Day"
+
+[night]
+ja = "夜"
+en = "Night"
+
+[type_song]
+ja = "楽曲"
+en = "Song"
+
+[profile]
+ja = "プロフィール"
+en = "Profile"
+
+[links]
+ja = "リンク"
+en = "Links"
+
+[labelReleases]
+ja = "レーベルのリリース"
+en = "Label releases"
+
+[kinds]
+ja = "種別"
+en = "Kinds"
+
+[search]
+ja = "検索"
+en = "Search"
+
+[noResults]
+ja = "見つかりませんでした"
+en = "No matches"
+
+[hits]
+ja = "件"
+en = "items"

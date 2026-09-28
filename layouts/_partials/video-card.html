@@ -1,0 +1,7 @@
+<article class="video">
+  <a class="video__thumb" href="{{ .url }}" rel="noopener" target="_blank" tabindex="-1" aria-hidden="true">
+    {{ with .image }}<img src="{{ . }}" alt="" loading="lazy" width="320" height="180">{{ end }}
+  </a>
+  <h3 class="video__title"><a href="{{ .url }}" rel="noopener" target="_blank">{{ .title }}</a></h3>
+  <p class="video__meta"><time datetime="{{ .date }}">{{ replace .date "-" "." }}</time>{{ partial "src-chip.html" (dict "source" .source "label" true) }}</p>
+</article>

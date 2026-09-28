@@ -1,0 +1,14 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<!-- Spotify, angular on purpose: each arc is a 2-row bar whose ends step down a row. -->
+<style>.w{fill:#fff!important}</style>
+<circle cx="12" cy="12" r="11"/>
+<rect class="w" x="7" y="7" width="10" height="2"/>
+<rect class="w" x="5" y="8" width="2" height="2"/>
+<rect class="w" x="17" y="8" width="2" height="2"/>
+<rect class="w" x="8" y="11" width="8" height="2"/>
+<rect class="w" x="6" y="12" width="2" height="2"/>
+<rect class="w" x="16" y="12" width="2" height="2"/>
+<rect class="w" x="10" y="15" width="4" height="2"/>
+<rect class="w" x="8" y="16" width="2" height="2"/>
+<rect class="w" x="14" y="16" width="2" height="2"/>
+</svg>

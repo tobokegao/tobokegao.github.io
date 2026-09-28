@@ -1,0 +1,5 @@
+<ul class="links">
+  {{ range site.Params.links }}
+  <li><a class="link" href="{{ .url }}" rel="noopener me" target="_blank">{{ partial (printf "icons/%s.html" .icon) . }}<span>{{ .name }}</span></a></li>
+  {{ end }}
+</ul>

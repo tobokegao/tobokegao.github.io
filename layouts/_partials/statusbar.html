@@ -1,0 +1,11 @@
+<footer class="statusbar">
+  <div class="statusbar__keys">
+    {{ range $i, $k := slice "releases" "videos" "designs" "news" "post" "about" }}
+    <a href="{{ printf "/%s/" $k | relURL }}" data-key="F{{ add $i 1 }}"><kbd>F{{ add $i 1 }}</kbd><span lang="en">{{ (index hugo.Data.strings $k).en }}</span></a>
+    {{ end }}
+  </div>
+  <div class="statusbar__meta">
+    <span>{{ partial "t.html" "lastSync" }} {{ now.Format "2006-01-02 15:04" }}</span>
+    <span>© {{ now.Year }} {{ site.Params.artist }} / {{ site.Params.label }}</span>
+  </div>
+</footer>

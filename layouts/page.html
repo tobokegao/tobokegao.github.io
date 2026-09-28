@@ -1,0 +1,23 @@
+{{ define "main" }}
+{{ $file := cond (eq .Section "post") (printf `C:\TBK\POSTS\%s.MD` (upper .File.ContentBaseName)) `C:\TBK\PROFILE.TXT` }}
+{{ if eq .File.ContentBaseName "tbkgao" }}{{ $file = `C:\TBK\LABEL.TXT` }}{{ end }}
+<article class="win win--doc" aria-labelledby="page-t">
+  {{ partial "win.html" (dict "file" $file "id" "page-t-file") }}
+  {{ if eq .File.ContentBaseName "about" }}
+  <div class="doc__art">{{ partial "logo-tobokegao.html" . }}</div>
+  {{ else if eq .File.ContentBaseName "tbkgao" }}
+  <div class="doc__art doc__art--label">{{ partial "logo-tbkgao.html" . }}</div>
+  {{ end }}
+  <h1 class="doc__title" id="page-t">{{ partial "bi.html" (dict "ja" .Title "en" .Params.title_en) }}</h1>
+  {{ if eq .Section "post" }}<p class="doc__date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time></p>{{ end }}
+  {{ with .Description }}<p class="doc__lead">{{ partial "bi.html" (dict "ja" . "en" $.Params.description_en) }}</p>{{ end }}
+  <div class="prose">{{ .Content }}</div>
+  {{ if eq .File.ContentBaseName "tbkgao" }}
+  {{ $label := slice }}
+  {{ range $r := hugo.Data.releases }}{{ if where $r.links "source" "bandcamp" }}{{ $label = $label | append $r }}{{ end }}{{ end }}
+  <h2 class="sub">{{ partial "t.html" "labelReleases" }}</h2>
+  <div class="grid grid--jackets">{{ range $label }}{{ partial "release-card.html" . }}{{ end }}</div>
+  {{ end }}
+  <p class="win__more"><a class="btn" href="{{ "/" | relURL }}">{{ partial "t.html" "backHome" }}</a></p>
+</article>
+{{ end }}

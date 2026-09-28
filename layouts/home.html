@@ -1,0 +1,46 @@
+{{ define "main" }}
+<section class="win win--hero" aria-labelledby="hero-t">
+  {{ partial "win.html" (dict "file" `C:\TBK\README.TXT` "id" "hero-t" "tag" "h1") }}
+  <div class="hero">
+    {{ partial "banner.html" . }}
+    <div class="hero__logos">
+      <a class="hero__logo hero__logo--tbk" href="{{ "/about/" | relURL }}" title="{{ partial "tt.html" "profile" }}">{{ partial "logo-tobokegao.html" . }}</a>
+      <a class="hero__logo hero__logo--label" href="{{ "/tbkgao/" | relURL }}" title="TBKgao">{{ partial "logo-tbkgao.html" . }}</a>
+    </div>
+    <ul class="links" aria-label="{{ partial "tt.html" "links" }}">
+      {{ range site.Params.links }}
+      <li><a class="btn btn--link" href="{{ .url }}" rel="noopener me" target="_blank" title="{{ .name }}" aria-label="{{ .name }}"><span class="logo--day">{{ partial (printf "icons-hd/%s.html" .icon) . }}</span><span class="logo--night">{{ partial (printf "icons-hd-night/%s.html" .icon) . }}</span></a></li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+
+{{ $own := slice }}
+{{ range hugo.Data.releases }}{{ if findRE `(?i)tobokegao|とぼけがお` .artist }}{{ $own = $own | append . }}{{ end }}{{ end }}
+<section class="win" aria-labelledby="latest-t">
+  {{ partial "win.html" (dict "file" "RELEASES.M3U" "id" "latest-t") }}
+  <p class="win__caption">{{ partial "t.html" "latest" }}</p>
+  <div class="grid grid--jackets">
+    {{ range first 10 $own }}{{ partial "release-card.html" . }}{{ end }}
+  </div>
+  <p class="win__more"><a class="btn" href="{{ "/releases/" | relURL }}">{{ partial "t.html" "allReleases" }}</a></p>
+</section>
+
+<div class="split">
+  <section class="win" aria-labelledby="videos-t">
+    {{ partial "win.html" (dict "file" "VIDEOS.MP4" "id" "videos-t") }}
+    <p class="win__caption">{{ partial "t.html" "latestVideos" }}</p>
+    <div class="grid grid--videos">
+      {{ range first 4 (where hugo.Data.items "type" "video") }}{{ partial "video-card.html" . }}{{ end }}
+    </div>
+    <p class="win__more"><a class="btn" href="{{ "/videos/" | relURL }}">{{ partial "t.html" "allVideos" }}</a></p>
+  </section>
+
+  <section class="win" aria-labelledby="log-t">
+    {{ partial "win.html" (dict "file" "NEWS.LOG" "id" "log-t") }}
+    <p class="win__caption">{{ partial "t.html" "log" }}</p>
+    {{ partial "log.html" (dict "rows" (partial "timeline.html" .) "limit" 12) }}
+    <p class="win__more"><a class="btn" href="{{ "/news/" | relURL }}">{{ partial "t.html" "allNews" }}</a></p>
+  </section>
+</div>
+{{ end }}

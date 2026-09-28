@@ -1,0 +1,48 @@
+name: Update releases and news
+
+# Semi-automatic: runs only when started by hand (Actions tab -> Update releases and news
+# -> Run workflow, also from the GitHub mobile app). The result arrives as a pull request;
+# merging it publishes the site, closing it discards the update.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install Python packages
+        run: pip install anthropic
+
+      - name: Fetch releases and videos
+        run: python scripts/fetch_feeds.py
+
+      - name: Collect news candidates
+        run: python scripts/collect_news.py
+
+      - name: Classify news with Claude
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/classify_news.py
+
+      - name: Open a pull request for review
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: data/update
+          delete-branch: true
+          add-paths: data
+          commit-message: "data: update releases and news"
+          title: "Releases and news update"
+          body: |
+            New releases and videos (`fetch_feeds.py`) and news chosen by Claude
+            (`collect_news.py` + `classify_news.py`). Check `data/releases.json` and
+            `data/news.json` in the Files tab. Merge to publish, close to discard.
