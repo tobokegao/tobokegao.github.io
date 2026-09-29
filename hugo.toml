@@ -16,6 +16,7 @@ timeZone = "Asia/Tokyo"
   label = "TBKgao"
 
   # Order here is the order of the link buttons on the home page.
+  # grouped: social, video, music, communities
   [[params.links]]
     name = "Twitter(X)"
     icon = "x"
@@ -24,6 +25,10 @@ timeZone = "Asia/Tokyo"
     name = "Bluesky"
     icon = "bluesky"
     url = "https://bsky.app/profile/tobokegao.bsky.social"
+  [[params.links]]
+    name = "Instagram"
+    icon = "instagram"
+    url = "https://www.instagram.com/tobokegao/"
   [[params.links]]
     name = "YouTube"
     icon = "youtube"
@@ -37,6 +42,10 @@ timeZone = "Asia/Tokyo"
     icon = "soundcloud"
     url = "https://soundcloud.com/tobokegao"
   [[params.links]]
+    name = "Mixcloud"
+    icon = "mixcloud"
+    url = "https://www.mixcloud.com/%E3%81%A8%E3%81%BC%E3%81%91%E3%81%8C%E3%81%8A/"
+  [[params.links]]
     name = "Bandcamp"
     icon = "bandcamp"
     url = "https://tbkgao.bandcamp.com/music"
@@ -48,6 +57,10 @@ timeZone = "Asia/Tokyo"
     name = "Apple Music"
     icon = "apple"
     url = "https://music.apple.com/jp/artist/tobokegao/1532385760"
+  [[params.links]]
+    name = "Weeklybeats"
+    icon = "weeklybeats"
+    url = "https://weeklybeats.com/tobokegao"
   [[params.links]]
     name = "Battle of the Bits"
     icon = "botb"

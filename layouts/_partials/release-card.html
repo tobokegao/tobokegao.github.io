@@ -4,7 +4,7 @@
 <article class="jacket" data-owner="{{ cond (gt (len $own) 0) "own" "label" }}">
   <a class="jacket__art" href="{{ $main.url }}" rel="noopener" target="_blank" tabindex="-1" aria-hidden="true">
     {{ with .image }}<img src="{{ . }}" alt="" loading="lazy" width="300" height="300">{{ end }}
-    {{ if eq .type "song" }}<span class="jacket__play" aria-hidden="true">{{ partial "icons/play.html" . }}</span>{{ end }}
+    {{ if eq .type "song" }}<span class="jacket__play" aria-hidden="true">{{ partial "icon.html" "play" }}</span>{{ end }}
   </a>
   <div class="jacket__meta">
     <h3 class="jacket__title"><a href="{{ $main.url }}" rel="noopener" target="_blank">{{ .title }}</a></h3>

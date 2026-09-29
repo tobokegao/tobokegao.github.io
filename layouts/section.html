@@ -18,7 +18,7 @@
 
   {{ else if eq .Section "videos" }}
     <div class="grid grid--videos">
-      {{ range where hugo.Data.items "type" "video" }}{{ partial "video-card.html" . }}{{ end }}
+      {{ range partial "videos.html" . }}{{ partial "video-card.html" . }}{{ end }}
     </div>
 
   {{ else if eq .Section "designs" }}

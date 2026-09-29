@@ -2,9 +2,9 @@
  {
   "date": "2026-08-25",
   "kind": "release",
-  "ja": "「あと数秒の逃避(feat. 月読アイ)」をniconico / YouTubeで公開",
-  "en": "\"あと数秒の逃避(feat. 月読アイ)\" released on niconico / YouTube",
-  "url": "https://www.nicovideo.jp/watch/sm46720404",
+  "ja": "「あと数秒の逃避(feat. 月読アイ)」をSoundCloud / niconico / YouTubeで公開",
+  "en": "\"あと数秒の逃避(feat. 月読アイ)\" released on SoundCloud / niconico / YouTube",
+  "url": "https://soundcloud.com/tobokegao/a-few-more-seconds-of-escape",
   "source": "feed",
   "own": true
  },
@@ -16,6 +16,15 @@
   "url": "https://tbkgao.bandcamp.com/track/nice-fruit-mellmell-x-pure-midi-x-voice-synthesis-arrange-compilation-preview",
   "source": "feed",
   "own": false
+ },
+ {
+  "date": "2025-11-21",
+  "kind": "release",
+  "ja": "「To Be Kontinued vol.25 Pure MIDI-ish Mix」をSoundCloudで公開",
+  "en": "\"To Be Kontinued vol.25 Pure MIDI-ish Mix\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/to-be-kontinued-vol-25-pure",
+  "source": "feed",
+  "own": true
  },
  {
   "date": "2025-09-01",
@@ -74,9 +83,9 @@
  {
   "date": "2025-02-23",
   "kind": "release",
-  "ja": "「向き不向きのうた (feat. 重音テトSV)」をniconico / YouTubeで公開",
-  "en": "\"向き不向きのうた (feat. 重音テトSV)\" released on niconico / YouTube",
-  "url": "https://www.nicovideo.jp/watch/sm44688211",
+  "ja": "「向き不向きのうた (feat. 重音テトSV)」をSoundCloud / niconico / YouTubeで公開",
+  "en": "\"向き不向きのうた (feat. 重音テトSV)\" released on SoundCloud / niconico / YouTube",
+  "url": "https://soundcloud.com/tobokegao/feat-sv",
   "source": "feed",
   "own": true
  },
@@ -90,6 +99,15 @@
   "own": true
  },
  {
+  "date": "2024-12-18",
+  "kind": "release",
+  "ja": "「原口沙輔(Sasuke Haraguchi) - イガク(Igaku) (Tobokegao Gameboy Cover)」をYouTubeで公開",
+  "en": "\"原口沙輔(Sasuke Haraguchi) - イガク(Igaku) (Tobokegao Gameboy Cover)\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=VtT9YCqRykM",
+  "source": "feed",
+  "own": true
+ },
+ {
   "date": "2024-11-08",
   "kind": "release",
   "ja": "Various Artists 「Y2K VGM Vibes Jungle Compilation」をBandcampで公開",
@@ -99,10 +117,19 @@
   "own": false
  },
  {
+  "date": "2024-10-18",
+  "kind": "release",
+  "ja": "「To Be Kontinued vol.12 (Tobokegao ambient & noise live)」をSoundCloudで公開",
+  "en": "\"To Be Kontinued vol.12 (Tobokegao ambient & noise live)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/to-be-kontinued-vol-12",
+  "source": "feed",
+  "own": true
+ },
+ {
   "date": "2024-08-31",
   "kind": "release",
-  "ja": "「BAKA GA GO」をBandcampで公開",
-  "en": "\"BAKA GA GO\" released on Bandcamp",
+  "ja": "「BAKA GA GO」をBandcamp / SoundCloudで公開",
+  "en": "\"BAKA GA GO\" released on Bandcamp / SoundCloud",
   "url": "https://tbkgao.bandcamp.com/track/baka-ga-go",
   "source": "feed",
   "own": true
@@ -119,8 +146,8 @@
  {
   "date": "2024-08-17",
   "kind": "release",
-  "ja": "「Wedding Bell」をBandcampで公開",
-  "en": "\"Wedding Bell\" released on Bandcamp",
+  "ja": "「Wedding Bell」をBandcamp / SoundCloudで公開",
+  "en": "\"Wedding Bell\" released on Bandcamp / SoundCloud",
   "url": "https://tbkgao.bandcamp.com/album/wedding-bell",
   "source": "feed",
   "own": true
@@ -128,9 +155,81 @@
  {
   "date": "2024-08-10",
   "kind": "release",
-  "ja": "「Okane Ga Tarinai Toki No Uta」をBandcampで公開",
-  "en": "\"Okane Ga Tarinai Toki No Uta\" released on Bandcamp",
+  "ja": "「Okane Ga Tarinai Toki No Uta」をBandcamp / SoundCloudで公開",
+  "en": "\"Okane Ga Tarinai Toki No Uta\" released on Bandcamp / SoundCloud",
   "url": "https://tbkgao.bandcamp.com/album/okane-ga-tarinai-toki-no-uta",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2024-07-26",
+  "kind": "release",
+  "ja": "「ToBeKontinued Vol.9 Otoge Chiptune」をSoundCloudで公開",
+  "en": "\"ToBeKontinued Vol.9 Otoge Chiptune\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/to-be-kontinued-vol9-otoge-chiptune",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2024-06-22",
+  "kind": "release",
+  "ja": "「ToBeKontinued Vol.8 chiptune/digital fusion VOCALOID mix」をSoundCloudで公開",
+  "en": "\"ToBeKontinued Vol.8 chiptune/digital fusion VOCALOID mix\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/tobekontinued-vol8-chiptunedigital-fusion-vocaloid-mix",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2024-03-22",
+  "kind": "release",
+  "ja": "「ToBeKontinued Vol.5 (TQ-Jam特集)」をSoundCloudで公開",
+  "en": "\"ToBeKontinued Vol.5 (TQ-Jam特集)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/tobekontinued-vol5-tq-jam",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2024-02-16",
+  "kind": "release",
+  "ja": "「To Be Kontinued vol.4 (Y2K VGM Vibes Jungle Mix)」をSoundCloudで公開",
+  "en": "\"To Be Kontinued vol.4 (Y2K VGM Vibes Jungle Mix)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/to-be-kontinued-vol4-y2k-vgm-vibes-jungle-mix",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2024-01-25",
+  "kind": "release",
+  "ja": "「To Be Kontinued Vol.3」をSoundCloudで公開",
+  "en": "\"To Be Kontinued Vol.3\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/to-be-kontinued-vol3",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2024-01-22",
+  "kind": "release",
+  "ja": "「Y2K select theme」をSoundCloudで公開",
+  "en": "\"Y2K select theme\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/2024_tobokegao_weeklybeats",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-12-15",
+  "kind": "release",
+  "ja": "「20231214 To Be Kontinued Volume 02」をSoundCloudで公開",
+  "en": "\"20231214 To Be Kontinued Volume 02\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/20231214-to-be-kontinued-volume-02",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-11-16",
+  "kind": "release",
+  "ja": "「20231116 To Be Kontinued Volume 01」をSoundCloudで公開",
+  "en": "\"20231116 To Be Kontinued Volume 01\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/20231116-to-be-kontinue-volume-01",
   "source": "feed",
   "own": true
  },
@@ -144,6 +243,96 @@
   "own": false
  },
  {
+  "date": "2023-10-12",
+  "kind": "release",
+  "ja": "「Pure MIDI Volume 2 (tester)」をSoundCloudで公開",
+  "en": "\"Pure MIDI Volume 2 (tester)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/pure-midi-volume-2-tester",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-09-02",
+  "kind": "release",
+  "ja": "「3xBlast - For The Love Of Tax! (Tobokegao Cover)」をYouTubeで公開",
+  "en": "\"3xBlast - For The Love Of Tax! (Tobokegao Cover)\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=uU7xQQrFEn0",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-08-19",
+  "kind": "release",
+  "ja": "「COIL - これでいいのだ/それでいいのか？ (Tobokegao Cover)」をYouTubeで公開",
+  "en": "\"COIL - これでいいのだ/それでいいのか？ (Tobokegao Cover)\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=Npt9pHfr8h4",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-08-02",
+  "kind": "release",
+  "ja": "「Guitar Vader - やわらかい (Tobokegao Cover)」をSoundCloud / YouTubeで公開",
+  "en": "\"Guitar Vader - やわらかい (Tobokegao Cover)\" released on SoundCloud / YouTube",
+  "url": "https://soundcloud.com/tobokegao/guitar-vader-tobokegao-cover",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-06-11",
+  "kind": "release",
+  "ja": "「SURFACE - ゴーイング My 上へ (Tobokegao Cover)」をYouTubeで公開",
+  "en": "\"SURFACE - ゴーイング My 上へ (Tobokegao Cover)\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=WP4F6Db_bOg",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-05-27",
+  "kind": "release",
+  "ja": "「下川みくに   2000EXPRESS Tobokegao Cover」をYouTubeで公開",
+  "en": "\"下川みくに   2000EXPRESS Tobokegao Cover\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=cKE8lbuYsWc",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-05-23",
+  "kind": "release",
+  "ja": "「グミ - ヒトリジメ (Tobokegao Cover)」をYouTubeで公開",
+  "en": "\"グミ - ヒトリジメ (Tobokegao Cover)\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=JAN-6qRPkZA",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-05-16",
+  "kind": "release",
+  "ja": "「長沢有起   もう泣いてなんかいられない Tobokegao Cover」をYouTubeで公開",
+  "en": "\"長沢有起   もう泣いてなんかいられない Tobokegao Cover\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=oNrYZ1t0frw",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-05-15",
+  "kind": "release",
+  "ja": "「長沢有起 - ふたりでいたから (Tobokegao Cover)」をYouTubeで公開",
+  "en": "\"長沢有起 - ふたりでいたから (Tobokegao Cover)\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=DyQsJWePcY4",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-05-12",
+  "kind": "release",
+  "ja": "「SASUKE - Part. 2 (Tobokegao Cover)」をYouTubeで公開",
+  "en": "\"SASUKE - Part. 2 (Tobokegao Cover)\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=i-26qIObvfI",
+  "source": "feed",
+  "own": true
+ },
+ {
   "date": "2023-05-11",
   "kind": "release",
   "ja": "「事情を知らない転校生がグイグイくる。 ED 「Kitri - ココロネ」8bitアレンジ (カラオケバージョン)」をniconicoで公開",
@@ -153,11 +342,182 @@
   "own": true
  },
  {
+  "date": "2023-05-10",
+  "kind": "release",
+  "ja": "「Kitri - Kokorone (Tobokegao Gameboy Remix) Karaoke Version」をYouTubeで公開",
+  "en": "\"Kitri - Kokorone (Tobokegao Gameboy Remix) Karaoke Version\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=XMfE0ZXU23E",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-05-10",
+  "kind": "release",
+  "ja": "「市井由理 - 恋がしたかった (Tobokegao Cover)」をYouTubeで公開",
+  "en": "\"市井由理 - 恋がしたかった (Tobokegao Cover)\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=ChIMWbC4KOY",
+  "source": "feed",
+  "own": true
+ },
+ {
   "date": "2023-05-09",
   "kind": "release",
-  "ja": "「Kitri - ココロネ (Tobokegao Gameboy Remix)」をniconicoで公開",
-  "en": "\"Kitri - ココロネ (Tobokegao Gameboy Remix)\" released on niconico",
-  "url": "https://www.nicovideo.jp/watch/sm42198829",
+  "ja": "「Kitri - ココロネ (Tobokegao Gameboy Remix)」をSoundCloud / niconico / YouTubeで公開",
+  "en": "\"Kitri - ココロネ (Tobokegao Gameboy Remix)\" released on SoundCloud / niconico / YouTube",
+  "url": "https://soundcloud.com/tobokegao/kitri-kokorone-tobokegao-gameboy-remix",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-05-08",
+  "kind": "release",
+  "ja": "「須賀響子 - LOVE, TWO LOVE(Tobokegao Cover)」をYouTubeで公開",
+  "en": "\"須賀響子 - LOVE, TWO LOVE(Tobokegao Cover)\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=8QjuyUgzPrE",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-05-06",
+  "kind": "release",
+  "ja": "「GREAT 3 - Glass Roots (Tobokegao Cover)」をYouTubeで公開",
+  "en": "\"GREAT 3 - Glass Roots (Tobokegao Cover)\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=62esFH9KLSY",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-05-05",
+  "kind": "release",
+  "ja": "「[#TBKgao (label)] OMOI by Giant Chess Men [TBK-026]」をSoundCloudで公開",
+  "en": "\"[#TBKgao (label)] OMOI by Giant Chess Men [TBK-026]\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/tbkgao-label-omoi-by-giant-chess-men-tbk-026",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-05-05",
+  "kind": "release",
+  "ja": "「[#TBKgao (label)] P8's by Notehead [TBK-025]」をSoundCloudで公開",
+  "en": "\"[#TBKgao (label)] P8's by Notehead [TBK-025]\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/tbkgao-label-p8s-by-notehead-tbk-025",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-05-01",
+  "kind": "release",
+  "ja": "「GiRLPOP Mix (20230430 HEY! POP CITY AVENUE)」をSoundCloudで公開",
+  "en": "\"GiRLPOP Mix (20230430 HEY! POP CITY AVENUE)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/girlpop-mix-20230430-hey-pop-city-avenue",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-04-28",
+  "kind": "release",
+  "ja": "「片寄明人 feat. Chocolat - Veranda (Tobokegao & Tobokegao-chan Cover)」をYouTubeで公開",
+  "en": "\"片寄明人 feat. Chocolat - Veranda (Tobokegao & Tobokegao-chan Cover)\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=fDDzS2ir1MM",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-04-23",
+  "kind": "release",
+  "ja": "「Karaoke Live at 20230416 Let's Play With Impbox」をSoundCloudで公開",
+  "en": "\"Karaoke Live at 20230416 Let's Play With Impbox\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/karaoke-live-at-20230416-lets-play-with-impbox",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-04-13",
+  "kind": "release",
+  "ja": "「Cheryl Porter - Mimema (Tobokegao Cover)」をYouTubeで公開",
+  "en": "\"Cheryl Porter - Mimema (Tobokegao Cover)\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=o4JuZQFt-iM",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-04-10",
+  "kind": "release",
+  "ja": "「chieco - KISS³ (Tobokegao Cover)」をYouTubeで公開",
+  "en": "\"chieco - KISS³ (Tobokegao Cover)\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=gUdLG1Vp-Lo",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-04-06",
+  "kind": "release",
+  "ja": "「塔もこ(Tou Moco) - 抱きしめたいよ(Dakishimetaiyo) (Tobokegao Cover)」をYouTubeで公開",
+  "en": "\"塔もこ(Tou Moco) - 抱きしめたいよ(Dakishimetaiyo) (Tobokegao Cover)\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=MU10px6O63c",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-03-31",
+  "kind": "release",
+  "ja": "「元田恵美(Emi Genda) - 君のままで(Kimi No Mama De) (Tobokegao Cover)」をYouTubeで公開",
+  "en": "\"元田恵美(Emi Genda) - 君のままで(Kimi No Mama De) (Tobokegao Cover)\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=XKKdnmGmYMo",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-03-04",
+  "kind": "release",
+  "ja": "「[#TBKgao (label)] YAGITUNE​!​! by Yagishiro [TBK-024]」をSoundCloudで公開",
+  "en": "\"[#TBKgao (label)] YAGITUNE​!​! by Yagishiro [TBK-024]\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/yaghisiro-yagitune",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-02-26",
+  "kind": "release",
+  "ja": "「20230225 TOBOX Release Party In Sapporo」をSoundCloudで公開",
+  "en": "\"20230225 TOBOX Release Party In Sapporo\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/20230225-tobox-release-party-in-sapporo",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2023-02-19",
+  "kind": "release",
+  "ja": "「20230218 TOBOX Release Party Tobokegao Pure MIDI Mix」をSoundCloudで公開",
+  "en": "\"20230218 TOBOX Release Party Tobokegao Pure MIDI Mix\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/20230218-tobox-release-party",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-11-05",
+  "kind": "release",
+  "ja": "「[#TBKgao (label)] Late Night 2-Hours Chiptune by Rei8bit [TBK-022] XFD」をSoundCloudで公開",
+  "en": "\"[#TBKgao (label)] Late Night 2-Hours Chiptune by Rei8bit [TBK-022] XFD\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/late-night-2-hours-chiptune",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-11-05",
+  "kind": "release",
+  "ja": "「[#TBKgao (label)] Oha Chiptune! by Rei8bit [TBK-021] XFD」をSoundCloudで公開",
+  "en": "\"[#TBKgao (label)] Oha Chiptune! by Rei8bit [TBK-021] XFD\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/rei8bit-oha-chiptune-xfd",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-11-04",
+  "kind": "release",
+  "ja": "「[#TBKgao (label)] 証明 by Yagishiro [TBK-020] XFD」をSoundCloudで公開",
+  "en": "\"[#TBKgao (label)] 証明 by Yagishiro [TBK-020] XFD\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/tbkgao-label-by-yagishiro-tbk-020-xfd",
   "source": "feed",
   "own": true
  },
@@ -171,6 +531,123 @@
   "own": true
  },
  {
+  "date": "2022-10-27",
+  "kind": "release",
+  "ja": "「DA-LA-LA (TOBOX Version)」をSoundCloudで公開",
+  "en": "\"DA-LA-LA (TOBOX Version)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/da-la-la",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-10-27",
+  "kind": "release",
+  "ja": "「Kodoku Na Fruits (Remastered)」をSoundCloudで公開",
+  "en": "\"Kodoku Na Fruits (Remastered)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/kodoku-na-fruits-1",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-10-27",
+  "kind": "release",
+  "ja": "「so you say」をSoundCloudで公開",
+  "en": "\"so you say\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/so-you-say-1",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-10-27",
+  "kind": "release",
+  "ja": "「Falling into a Dream」をSoundCloudで公開",
+  "en": "\"Falling into a Dream\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/falling-into-a-dream",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-10-27",
+  "kind": "release",
+  "ja": "「Being Rusty (Tanashii Mainichi) (New Recording)」をSoundCloudで公開",
+  "en": "\"Being Rusty (Tanashii Mainichi) (New Recording)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/being-rusty-tanashii-1",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-10-27",
+  "kind": "release",
+  "ja": "「Halleluiah」をSoundCloudで公開",
+  "en": "\"Halleluiah\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/halleluiah",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-10-27",
+  "kind": "release",
+  "ja": "「Quibbles」をSoundCloudで公開",
+  "en": "\"Quibbles\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/quibbles-1",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-10-27",
+  "kind": "release",
+  "ja": "「Yomi De Ashibumi (Remastered)」をSoundCloudで公開",
+  "en": "\"Yomi De Ashibumi (Remastered)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/yomi-de-ashibumi-remastered",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-10-27",
+  "kind": "release",
+  "ja": "「Tail Lamp」をSoundCloudで公開",
+  "en": "\"Tail Lamp\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/tail-lamp",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-10-27",
+  "kind": "release",
+  "ja": "「Tired Face (The Game Never Ends) (Remastered)」をSoundCloudで公開",
+  "en": "\"Tired Face (The Game Never Ends) (Remastered)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/tired-face-the-game-never-ends",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-10-23",
+  "kind": "release",
+  "ja": "「TOBOX Trailer」をSoundCloudで公開",
+  "en": "\"TOBOX Trailer\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/tobox-trailer",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-10-15",
+  "kind": "release",
+  "ja": "「To Quit (feat. Hey, Ily!)」をSoundCloudで公開",
+  "en": "\"To Quit (feat. Hey, Ily!)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/to-quit-feat-hey-ily",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-10-09",
+  "kind": "release",
+  "ja": "「PURE」をSoundCloudで公開",
+  "en": "\"PURE\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/pure",
+  "source": "feed",
+  "own": true
+ },
+ {
   "date": "2022-10-07",
   "kind": "release",
   "ja": "Various Artists 「PURE MIDI Volume 1」をBandcampで公開",
@@ -178,6 +655,24 @@
   "url": "https://tbkgao.bandcamp.com/album/pure-midi-volume-1",
   "source": "feed",
   "own": false
+ },
+ {
+  "date": "2022-10-06",
+  "kind": "release",
+  "ja": "「Dot Matrix Clock (feat. PROJECT V/R Converters)」をSoundCloudで公開",
+  "en": "\"Dot Matrix Clock (feat. PROJECT V/R Converters)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/dot-matrix-clock-feat-project-vr-converters",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-09-23",
+  "kind": "release",
+  "ja": "「PURE MIDI Volume 1 XFD」をSoundCloudで公開",
+  "en": "\"PURE MIDI Volume 1 XFD\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/pure-midi-volume-1-xfd",
+  "source": "feed",
+  "own": true
  },
  {
   "date": "2022-08-17",
@@ -189,11 +684,65 @@
   "own": true
  },
  {
+  "date": "2022-08-17",
+  "kind": "release",
+  "ja": "「やるきがでないときのうた」をSoundCloudで公開",
+  "en": "\"やるきがでないときのうた\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/xvjcz49m0nlf",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-06-06",
+  "kind": "release",
+  "ja": "「TAMANNAI」をSoundCloudで公開",
+  "en": "\"TAMANNAI\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/tamannai",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-05-16",
+  "kind": "release",
+  "ja": "「fusoxide - Future Is In The Past(Tobokegao M8 RMX) [maj7jam  ESCAPE FROM WIP CITY]」をSoundCloudで公開",
+  "en": "\"fusoxide - Future Is In The Past(Tobokegao M8 RMX) [maj7jam  ESCAPE FROM WIP CITY]\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/fusoxide-future-is-in-the-pasttobokegao-m8-rmx-maj7jam-escape-from-wip-city",
+  "source": "feed",
+  "own": true
+ },
+ {
   "date": "2022-05-06",
   "kind": "release",
-  "ja": "「Scythe - Sonna Hi Mo Aru Yone (Tobokegao Vocal Cover) EP」をBandcampで公開",
-  "en": "\"Scythe - Sonna Hi Mo Aru Yone (Tobokegao Vocal Cover) EP\" released on Bandcamp",
+  "ja": "「Scythe - Sonna Hi Mo Aru Yone (Tobokegao Vocal Cover) EP」をBandcamp / SoundCloudで公開",
+  "en": "\"Scythe - Sonna Hi Mo Aru Yone (Tobokegao Vocal Cover) EP\" released on Bandcamp / SoundCloud",
   "url": "https://tbkgao.bandcamp.com/album/scythe-sonna-hi-mo-aru-yone-tobokegao-vocal-cover-ep",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-04-12",
+  "kind": "release",
+  "ja": "「START」をSoundCloudで公開",
+  "en": "\"START\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/start",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-04-04",
+  "kind": "release",
+  "ja": "「TBK Ambient」をSoundCloudで公開",
+  "en": "\"TBK Ambient\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/tbk-ambient",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-03-29",
+  "kind": "release",
+  "ja": "「Blueberry Pie (Vocal Version)」をSoundCloudで公開",
+  "en": "\"Blueberry Pie (Vocal Version)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/blueberry-pie-vocal-version",
   "source": "feed",
   "own": true
  },
@@ -207,29 +756,191 @@
   "own": true
  },
  {
+  "date": "2022-03-21",
+  "kind": "release",
+  "ja": "「FUNKY TBK」をSoundCloudで公開",
+  "en": "\"FUNKY TBK\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/funky-tbk",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-03-14",
+  "kind": "release",
+  "ja": "「TBK Noise 01」をSoundCloudで公開",
+  "en": "\"TBK Noise 01\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/tbk-noise-01",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-03-07",
+  "kind": "release",
+  "ja": "「UZ」をSoundCloudで公開",
+  "en": "\"UZ\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/uz-1",
+  "source": "feed",
+  "own": true
+ },
+ {
   "date": "2022-03-04",
   "kind": "release",
-  "ja": "「DA-LA-LA (Vocal Version) EP」をBandcampで公開",
-  "en": "\"DA-LA-LA (Vocal Version) EP\" released on Bandcamp",
+  "ja": "「DA-LA-LA (Vocal Version) EP」をBandcamp / SoundCloudで公開",
+  "en": "\"DA-LA-LA (Vocal Version) EP\" released on Bandcamp / SoundCloud",
   "url": "https://tbkgao.bandcamp.com/album/da-la-la-vocal-version-ep",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-02-19",
+  "kind": "release",
+  "ja": "「The Perfect Relationship」をSoundCloudで公開",
+  "en": "\"The Perfect Relationship\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/the-perfect-relationship",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-02-14",
+  "kind": "release",
+  "ja": "「Quibbles」をSoundCloudで公開",
+  "en": "\"Quibbles\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/quibbles",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-02-07",
+  "kind": "release",
+  "ja": "「So You Say」をSoundCloudで公開",
+  "en": "\"So You Say\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/so-you-say",
   "source": "feed",
   "own": true
  },
  {
   "date": "2022-02-04",
   "kind": "release",
-  "ja": "「Kodoku Na Fruits (Vocal Version) EP」をBandcampで公開",
-  "en": "\"Kodoku Na Fruits (Vocal Version) EP\" released on Bandcamp",
+  "ja": "「Kodoku Na Fruits (Vocal Version) EP」をBandcamp / SoundCloudで公開",
+  "en": "\"Kodoku Na Fruits (Vocal Version) EP\" released on Bandcamp / SoundCloud",
   "url": "https://tbkgao.bandcamp.com/album/kodoku-na-fruits-vocal-version-ep",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-01-31",
+  "kind": "release",
+  "ja": "「孤独なフルーツ」をSoundCloudで公開",
+  "en": "\"孤独なフルーツ\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/kodoku-na-fruits",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-01-24",
+  "kind": "release",
+  "ja": "「Hanasana」をSoundCloudで公開",
+  "en": "\"Hanasana\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/hanasana",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-01-17",
+  "kind": "release",
+  "ja": "「Let Me Know/Cry」をSoundCloudで公開",
+  "en": "\"Let Me Know/Cry\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/let-me-knowcry",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2022-01-10",
+  "kind": "release",
+  "ja": "「Moving Back」をSoundCloudで公開",
+  "en": "\"Moving Back\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/moving-back",
   "source": "feed",
   "own": true
  },
  {
   "date": "2021-08-06",
   "kind": "release",
-  "ja": "「Yomi De Ashibumi(Vocal Version)」をBandcamp / Apple Musicで公開",
-  "en": "\"Yomi De Ashibumi(Vocal Version)\" released on Bandcamp / Apple Music",
+  "ja": "「Yomi De Ashibumi(Vocal Version)」をBandcamp / SoundCloud / Apple Musicで公開",
+  "en": "\"Yomi De Ashibumi(Vocal Version)\" released on Bandcamp / SoundCloud / Apple Music",
   "url": "https://tbkgao.bandcamp.com/album/yomi-de-ashibumi-vocal-version",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2021-06-23",
+  "kind": "release",
+  "ja": "「渋谷系チップチューンカバーコンピレーション (Unofficial MV)」をYouTubeで公開",
+  "en": "\"渋谷系チップチューンカバーコンピレーション (Unofficial MV)\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=WMDiSrCifmU",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-12-28",
+  "kind": "release",
+  "ja": "「20201228 Once Super Portable live」をYouTubeで公開",
+  "en": "\"20201228 Once Super Portable live\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=rq5z4ypSNZw",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-12-25",
+  "kind": "release",
+  "ja": "「アレルギー(Allergy) feat. DEFENSE MECHANISM」をSoundCloud / YouTubeで公開",
+  "en": "\"アレルギー(Allergy) feat. DEFENSE MECHANISM\" released on SoundCloud / YouTube",
+  "url": "https://soundcloud.com/tobokegao/allergy-feat-defense-mechanism",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-12-19",
+  "kind": "release",
+  "ja": "「幽霊へ(Dear Ghost)」をSoundCloudで公開",
+  "en": "\"幽霊へ(Dear Ghost)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/dear-ghost",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-12-11",
+  "kind": "release",
+  "ja": "「トゥナイト通信(Tonight)」をSoundCloudで公開",
+  "en": "\"トゥナイト通信(Tonight)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/tonight",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-12-05",
+  "kind": "release",
+  "ja": "「SE MUSIC EP (MV)」をYouTubeで公開",
+  "en": "\"SE MUSIC EP (MV)\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=zGeQMpNuNeE",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-12-05",
+  "kind": "release",
+  "ja": "「Room To Room MV」をYouTubeで公開",
+  "en": "\"Room To Room MV\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=hem0NBcBT38",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-12-05",
+  "kind": "release",
+  "ja": "「○○○○（Skip/Stop - single) MV」をYouTubeで公開",
+  "en": "\"○○○○（Skip/Stop - single) MV\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=f6frdRlxFi4",
   "source": "feed",
   "own": true
  },
@@ -243,6 +954,51 @@
   "own": true
  },
  {
+  "date": "2020-12-04",
+  "kind": "release",
+  "ja": "「Shampoo」をSoundCloudで公開",
+  "en": "\"Shampoo\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/shampoo",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-11-30",
+  "kind": "release",
+  "ja": "「Maxo - Reach You(Tobokegao Gameboy Short Cover)」をSoundCloudで公開",
+  "en": "\"Maxo - Reach You(Tobokegao Gameboy Short Cover)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/maxo-reach-youtobokegao-gameboy-short-cover",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-11-20",
+  "kind": "release",
+  "ja": "「イヌぞりレース メニュー画面のテーマ（Dogsled Race Menu Theme）」をSoundCloudで公開",
+  "en": "\"イヌぞりレース メニュー画面のテーマ（Dogsled Race Menu Theme）\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/dogsled-race-menu-theme",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-11-13",
+  "kind": "release",
+  "ja": "「I Like Nate Mercereau」をSoundCloudで公開",
+  "en": "\"I Like Nate Mercereau\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/i-like-nate-mercereau",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-11-07",
+  "kind": "release",
+  "ja": "「Telephone Funk Octravia(Game Loop Version)」をSoundCloudで公開",
+  "en": "\"Telephone Funk Octravia(Game Loop Version)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/telephone-funk-octraviagame-loop-version",
+  "source": "feed",
+  "own": true
+ },
+ {
   "date": "2020-11-06",
   "kind": "release",
   "ja": "「SE Music EP」をBandcamp / Apple Musicで公開",
@@ -252,11 +1008,65 @@
   "own": true
  },
  {
+  "date": "2020-10-27",
+  "kind": "release",
+  "ja": "「LSDj x Output Portal Demo (effect - TIME SUSPENSION, PARTICLE REDUCTION)」をSoundCloudで公開",
+  "en": "\"LSDj x Output Portal Demo (effect - TIME SUSPENSION, PARTICLE REDUCTION)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-time-suspension-particle-reduction",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-10-22",
+  "kind": "release",
+  "ja": "「LSDj x Output Portal Demo (effect - SHIPPING BASS, DOWN THE TUBE)」をSoundCloudで公開",
+  "en": "\"LSDj x Output Portal Demo (effect - SHIPPING BASS, DOWN THE TUBE)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-shipping-bass-down-the-tube",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-10-18",
+  "kind": "release",
+  "ja": "「くま井ゆう子(Yuko Kumai) - みつあみ引っ張って(Mitsuami Hippatte) Tobokegao 8-Bit Gameboy Cover」をSoundCloudで公開",
+  "en": "\"くま井ゆう子(Yuko Kumai) - みつあみ引っ張って(Mitsuami Hippatte) Tobokegao 8-Bit Gameboy Cover\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/yuko-kumai-mitsuami-hippatte-tobokegao-8-bit-gameboy-cover",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-10-18",
+  "kind": "release",
+  "ja": "「くま井ゆう子(Yuko Kumai) - みつあみ引っ張って(Mitsuami Hippatte) Tobokegao 8-Bit Gameboy Cover 1 Hour Video」をYouTubeで公開",
+  "en": "\"くま井ゆう子(Yuko Kumai) - みつあみ引っ張って(Mitsuami Hippatte) Tobokegao 8-Bit Gameboy Cover 1 Hour Video\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=V7ccJTY39pI",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-10-13",
+  "kind": "release",
+  "ja": "「LSDj x Output Portal Demo (effect - FILTH DIVIDE, DRIP ON BY)」をSoundCloudで公開",
+  "en": "\"LSDj x Output Portal Demo (effect - FILTH DIVIDE, DRIP ON BY)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-filth-divide-drip-on-by",
+  "source": "feed",
+  "own": true
+ },
+ {
   "date": "2020-10-02",
   "kind": "release",
-  "ja": "「Being Rusty (Tanashii Mainichi)」をBandcamp / Apple Musicで公開",
-  "en": "\"Being Rusty (Tanashii Mainichi)\" released on Bandcamp / Apple Music",
+  "ja": "「Being Rusty (Tanashii Mainichi)」をBandcamp / SoundCloud / Apple Musicで公開",
+  "en": "\"Being Rusty (Tanashii Mainichi)\" released on Bandcamp / SoundCloud / Apple Music",
   "url": "https://tbkgao.bandcamp.com/album/being-rusty-tanashii-mainichi",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-10-02",
+  "kind": "release",
+  "ja": "「Being Rusty (Tanashii Mainichi) (Vocal & Guitar Version) Feat. AntiChiptuneChiptuneClub」をSoundCloudで公開",
+  "en": "\"Being Rusty (Tanashii Mainichi) (Vocal & Guitar Version) Feat. AntiChiptuneChiptuneClub\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/being-rusty-tanashii-mainichi-vocal-guitar-version-feat-antichiptunechiptuneclub",
   "source": "feed",
   "own": true
  },
@@ -270,20 +1080,308 @@
   "own": true
  },
  {
+  "date": "2020-10-02",
+  "kind": "release",
+  "ja": "「[8bit Animation] \" Being Rusty\" by Tobokegao (MV: migmint)」をYouTubeで公開",
+  "en": "\"[8bit Animation] \" Being Rusty\" by Tobokegao (MV: migmint)\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=HCj7VwCL8AA",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-10-01",
+  "kind": "release",
+  "ja": "「LSDj x Output Portal Demo (effect - GRAIN RUNNER, BACKSLIDING)」をSoundCloudで公開",
+  "en": "\"LSDj x Output Portal Demo (effect - GRAIN RUNNER, BACKSLIDING)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/grain-runner-backsliding",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-09-26",
+  "kind": "release",
+  "ja": "「LSDj x Output Portal Demo (effect - NOT EVEN)」をSoundCloudで公開",
+  "en": "\"LSDj x Output Portal Demo (effect - NOT EVEN)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-not-even",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-09-21",
+  "kind": "release",
+  "ja": "「Being Rusty [LSDj & vocal version] (Call for ideas for guitar and other parts)」をSoundCloudで公開",
+  "en": "\"Being Rusty [LSDj & vocal version] (Call for ideas for guitar and other parts)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/being-rusty-lsdj-vocal-version-call-for-ideas-for-guitar-and-other-parts",
+  "source": "feed",
+  "own": true
+ },
+ {
   "date": "2020-09-04",
   "kind": "release",
-  "ja": "「○○○○」をBandcamp / Apple Musicで公開",
-  "en": "\"○○○○\" released on Bandcamp / Apple Music",
+  "ja": "「○○○○」をBandcampで公開",
+  "en": "\"○○○○\" released on Bandcamp",
   "url": "https://tbkgao.bandcamp.com/album/-",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-09-04",
+  "kind": "release",
+  "ja": "「Skip」をApple Music / SoundCloudで公開",
+  "en": "\"Skip\" released on Apple Music / SoundCloud",
+  "url": "https://music.apple.com/jp/album/skip-single/1532520758",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-08-31",
+  "kind": "release",
+  "ja": "「Gameboy LSDj 8bit GiRLPOP Cover WIP Collection (Micromusic Italy Sunday Jam)」をSoundCloudで公開",
+  "en": "\"Gameboy LSDj 8bit GiRLPOP Cover WIP Collection (Micromusic Italy Sunday Jam)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/gameboy-lsdj-8bit-girlpop-cover-wip-collection-micromusic-italy-sunday-jam",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-08-31",
+  "kind": "release",
+  "ja": "「[Gameboy LSDj 8bit GiRLPOP Cover WIP Collection] Micromusic Italy Sunday Jam Tobokegao [LIVE STREAM]」をYouTubeで公開",
+  "en": "\"[Gameboy LSDj 8bit GiRLPOP Cover WIP Collection] Micromusic Italy Sunday Jam Tobokegao [LIVE STREAM]\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=pEKZbRCufn4",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-08-15",
+  "kind": "release",
+  "ja": "「Stop」をSoundCloudで公開",
+  "en": "\"Stop\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/stop",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-08-11",
+  "kind": "release",
+  "ja": "「LSDj x Output Portal Demo (effect - Feedback Drum, Sifter Delay)」をSoundCloudで公開",
+  "en": "\"LSDj x Output Portal Demo (effect - Feedback Drum, Sifter Delay)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-feedback-drum-sifter-delay-1",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-08-05",
+  "kind": "release",
+  "ja": "「LSDj x Output Portal Demo (effect - FRACTURED)」をSoundCloudで公開",
+  "en": "\"LSDj x Output Portal Demo (effect - FRACTURED)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-fractured-1",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-07-31",
+  "kind": "release",
+  "ja": "「LSDj 8.8.0 Pulse x2 ADSR」をSoundCloudで公開",
+  "en": "\"LSDj 8.8.0 Pulse x2 ADSR\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/lsdj-880-pulse-x2-adsr",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-07-26",
+  "kind": "release",
+  "ja": "「Why」をSoundCloudで公開",
+  "en": "\"Why\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/why",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-07-22",
+  "kind": "release",
+  "ja": "「LSDj x Output Portal Demo (effect - Ambient Lake, Such a Drug)」をSoundCloudで公開",
+  "en": "\"LSDj x Output Portal Demo (effect - Ambient Lake, Such a Drug)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-ambient-lake-such-a-drug",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-07-21",
+  "kind": "release",
+  "ja": "「LSDj x Output Portal Demo (effect -Vox Motion)」をSoundCloudで公開",
+  "en": "\"LSDj x Output Portal Demo (effect -Vox Motion)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-vox-motion",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-07-16",
+  "kind": "release",
+  "ja": "「ぼのぼの ED1 - 近道したい (tobokegao gameboy cover)」をYouTubeで公開",
+  "en": "\"ぼのぼの ED1 - 近道したい (tobokegao gameboy cover)\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=Ie48Ky2cyz0",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-07-13",
+  "kind": "release",
+  "ja": "「Bonobono ED1 - Chikamichi Shitai(tobokegao gameboy cover)」をSoundCloudで公開",
+  "en": "\"Bonobono ED1 - Chikamichi Shitai(tobokegao gameboy cover)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/suga-kyoko-chikamichi-shitai-tobokegao-lsdj-gb-cover",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-07-13",
+  "kind": "release",
+  "ja": "「2020 July 13 Metazoa live video (Tobokegao Picnic Deluxe Edition commemorative + α set)」をSoundCloudで公開",
+  "en": "\"2020 July 13 Metazoa live video (Tobokegao Picnic Deluxe Edition commemorative + α set)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/2020-july-13-metazoa-live-video-tobokegao-picnic-deluxe-edition-commemorative-set",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-07-11",
+  "kind": "release",
+  "ja": "「Sherbet」をSoundCloudで公開",
+  "en": "\"Sherbet\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/sherbet",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-07-11",
+  "kind": "release",
+  "ja": "「LSDj x Output Portal Demo (effect - THYTHM SWITCH, TRANQUILITY GARDEN)」をSoundCloudで公開",
+  "en": "\"LSDj x Output Portal Demo (effect - THYTHM SWITCH, TRANQUILITY GARDEN)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-thythm-switch-tranquility-garden",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-07-05",
+  "kind": "release",
+  "ja": "「Birthday Party」をSoundCloudで公開",
+  "en": "\"Birthday Party\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/birthday-party",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-07-04",
+  "kind": "release",
+  "ja": "「exileFaker - parallel experiments LSDJ(Preview)」をSoundCloudで公開",
+  "en": "\"exileFaker - parallel experiments LSDJ(Preview)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/exilefaker-parallel-experiments-lsdjpreview",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-07-02",
+  "kind": "release",
+  "ja": "「LSDj x Output Portal Demo (effect - PITCHED AND GLITCHED, REPEATER BASS)」をSoundCloudで公開",
+  "en": "\"LSDj x Output Portal Demo (effect - PITCHED AND GLITCHED, REPEATER BASS)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-pitched-and-glitched-repeater-bass",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-06-28",
+  "kind": "release",
+  "ja": "「Develop」をSoundCloudで公開",
+  "en": "\"Develop\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/develop",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-06-20",
+  "kind": "release",
+  "ja": "「J-POP Strings Pulse #1 (full version)」をSoundCloudで公開",
+  "en": "\"J-POP Strings Pulse #1 (full version)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/j-pop-strings-pulse-1-full-version",
   "source": "feed",
   "own": true
  },
  {
   "date": "2020-06-19",
   "kind": "release",
-  "ja": "「Picnic (Deluxe Edition)」をBandcamp / Apple Musicで公開",
-  "en": "\"Picnic (Deluxe Edition)\" released on Bandcamp / Apple Music",
+  "ja": "「Picnic (Deluxe Edition)」をBandcamp / Apple Music / SoundCloudで公開",
+  "en": "\"Picnic (Deluxe Edition)\" released on Bandcamp / Apple Music / SoundCloud",
   "url": "https://tbkgao.bandcamp.com/album/picnic-deluxe-edition",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-06-14",
+  "kind": "release",
+  "ja": "「Dynamite Q(chipcrusher test)」をSoundCloudで公開",
+  "en": "\"Dynamite Q(chipcrusher test)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/dynamite-qchipcrusher-test",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-06-11",
+  "kind": "release",
+  "ja": "「LSDj x Output Portal Demo (effect - Exponential Space)」をSoundCloudで公開",
+  "en": "\"LSDj x Output Portal Demo (effect - Exponential Space)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-exponential-space",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-06-06",
+  "kind": "release",
+  "ja": "「Live Video: Tobokegao - ISO CHIP 2」をSoundCloudで公開",
+  "en": "\"Live Video: Tobokegao - ISO CHIP 2\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/live-video-tobokegao-iso-chip-2",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-05-18",
+  "kind": "release",
+  "ja": "「Hamasaki Ayumi - M (Gameboy BreakJukeGabbaSchranzCore Remix)」をSoundCloud / YouTubeで公開",
+  "en": "\"Hamasaki Ayumi - M (Gameboy BreakJukeGabbaSchranzCore Remix)\" released on SoundCloud / YouTube",
+  "url": "https://soundcloud.com/tobokegao/hamasaki-ayumi-m-gameboy-breakjukegabbaschranzcore-remix",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-05-12",
+  "kind": "release",
+  "ja": "「Recovery Girl - Recovery Girl (tobokegao GB Remix)」をSoundCloudで公開",
+  "en": "\"Recovery Girl - Recovery Girl (tobokegao GB Remix)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/recovery-girl-recovery-girl-tobokegao-gb-remix",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-05-12",
+  "kind": "release",
+  "ja": "「Recovery Girl - Recovery Girl (tobokegao LSDj GB Remix)」をYouTubeで公開",
+  "en": "\"Recovery Girl - Recovery Girl (tobokegao LSDj GB Remix)\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=XhXZbDR6JPE",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-05-09",
+  "kind": "release",
+  "ja": "「LSDj x Output Portal Demo (effect - GRACIERS)」をSoundCloudで公開",
+  "en": "\"LSDj x Output Portal Demo (effect - GRACIERS)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-graciers",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-05-04",
+  "kind": "release",
+  "ja": "「Mall Boyz - Cool running (feat. SEEDA)(GB Filter House Bootleg)」をSoundCloudで公開",
+  "en": "\"Mall Boyz - Cool running (feat. SEEDA)(GB Filter House Bootleg)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/mall-boyz-cool-running-feat-seedagb-filter-house-bootleg",
   "source": "feed",
   "own": true
  },
@@ -297,11 +1395,164 @@
   "own": true
  },
  {
+  "date": "2020-04-24",
+  "kind": "release",
+  "ja": "「J-Pop Is Ready For Love (GB 2step Ver)([PTE077] Pterodactyl Squad Compilation - ひきこもり・Hikikomori)」をSoundCloudで公開",
+  "en": "\"J-Pop Is Ready For Love (GB 2step Ver)([PTE077] Pterodactyl Squad Compilation - ひきこもり・Hikikomori)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/j-pop-is-ready-for-love-gb-2step-ver-pte077-pterodactyl-squad-compilation-hikikomori",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-04-21",
+  "kind": "release",
+  "ja": "「LSDj x Output Portal Demo (effect - SCANNER)」をSoundCloudで公開",
+  "en": "\"LSDj x Output Portal Demo (effect - SCANNER)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-scanner",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-04-10",
+  "kind": "release",
+  "ja": "「jingle #8 (#うちで踊ろう) (LSDj Vocaloid test)」をSoundCloudで公開",
+  "en": "\"jingle #8 (#うちで踊ろう) (LSDj Vocaloid test)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/jingle-8-lsdj-vocaloid-test",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-04-01",
+  "kind": "release",
+  "ja": "「Dochakuso Records [DCKS-0093] tobokegao - LSDj V8_2_2 B Command Test (V.A. - FOOTCORE COMPILATION 2)」をSoundCloudで公開",
+  "en": "\"Dochakuso Records [DCKS-0093] tobokegao - LSDj V8_2_2 B Command Test (V.A. - FOOTCORE COMPILATION 2)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/12-tobokegao-lsdj-v8_2_2-b-command-test",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-03-30",
+  "kind": "release",
+  "ja": "「TIC-80'S FIRST WAVETABLE SYNTH? test (Weeklybeats #13)」をSoundCloudで公開",
+  "en": "\"TIC-80'S FIRST WAVETABLE SYNTH? test (Weeklybeats #13)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/tic-80s-first-wavetable-synth-weeklybeats-13",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-03-27",
+  "kind": "release",
+  "ja": "「LSDj x Output Portal Demo (effect - GRAIN SWELLS, BLURRED 5THS)」をSoundCloudで公開",
+  "en": "\"LSDj x Output Portal Demo (effect - GRAIN SWELLS, BLURRED 5THS)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-grain-swells-blurred-5ths",
+  "source": "feed",
+  "own": true
+ },
+ {
   "date": "2020-03-20",
   "kind": "release",
   "ja": "「B (Albert comes over to me)」をBandcampで公開",
   "en": "\"B (Albert comes over to me)\" released on Bandcamp",
   "url": "https://tbkgao.bandcamp.com/album/b-albert-comes-over-to-me",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-03-16",
+  "kind": "release",
+  "ja": "「Jingle #7 (GB meme mashup)」をSoundCloudで公開",
+  "en": "\"Jingle #7 (GB meme mashup)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/jingle-7-gb-meme-mushup",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-03-02",
+  "kind": "release",
+  "ja": "「ACID WAVE TEST #2」をSoundCloudで公開",
+  "en": "\"ACID WAVE TEST #2\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/acid-wave-test-2",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-02-27",
+  "kind": "release",
+  "ja": "「LSDj x Output Portal x Melodyne Demo (effect - PARTIAL DIVIDE)」をSoundCloudで公開",
+  "en": "\"LSDj x Output Portal x Melodyne Demo (effect - PARTIAL DIVIDE)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-x-melodyne-demo-effect-partial-divide",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-02-03",
+  "kind": "release",
+  "ja": "「黄泉で足踏み Yomi De Ashibumi (Caravan Boomer VGM GB TV Ver)」をSoundCloudで公開",
+  "en": "\"黄泉で足踏み Yomi De Ashibumi (Caravan Boomer VGM GB TV Ver)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/yomi-de-ashibumi-caravan-boomer-vgm-gb-tv-ver",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-01-27",
+  "kind": "release",
+  "ja": "「LSDj x Output Portal Demo (effect - DIGITAL TAPE TOYS)」をSoundCloudで公開",
+  "en": "\"LSDj x Output Portal Demo (effect - DIGITAL TAPE TOYS)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-digital-tape-toys",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-01-26",
+  "kind": "release",
+  "ja": "「tobokegao - Caravan Boomer Track (素YM2413 TV DEMO ver)」をSoundCloudで公開",
+  "en": "\"tobokegao - Caravan Boomer Track (素YM2413 TV DEMO ver)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/tobokegao-caravan-boomer-track-ym2413-tv-demo-ver",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-01-20",
+  "kind": "release",
+  "ja": "「Shangaan Singeli Chiptune(AssAssTity)」をSoundCloudで公開",
+  "en": "\"Shangaan Singeli Chiptune(AssAssTity)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/shangaan-singeli-chiptuneassasstity",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-01-13",
+  "kind": "release",
+  "ja": "「Jingle #9」をSoundCloudで公開",
+  "en": "\"Jingle #9\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/jingle-9",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2020-01-06",
+  "kind": "release",
+  "ja": "「LSDj x Output Portal Demo (effect - The Great Slowness)」をSoundCloudで公開",
+  "en": "\"LSDj x Output Portal Demo (effect - The Great Slowness)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/the-great-slowness",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2019-08-14",
+  "kind": "release",
+  "ja": "「[2xLSDj] tobokegao feat. Klirre - 船・宇宙・ユンカース・ユモ 004」をSoundCloudで公開",
+  "en": "\"[2xLSDj] tobokegao feat. Klirre - 船・宇宙・ユンカース・ユモ 004\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/2xlsdj-tobokegao-feat-klirre-phlox-004",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2019-08-14",
+  "kind": "release",
+  "ja": "「[2xLSDj, Gameboy] tobokegao feat. Klirre - 船・宇宙・ユンカース・ユモ 004」をYouTubeで公開",
+  "en": "\"[2xLSDj, Gameboy] tobokegao feat. Klirre - 船・宇宙・ユンカース・ユモ 004\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=po1KR9UMdyc",
   "source": "feed",
   "own": true
  },
@@ -315,11 +1566,200 @@
   "own": true
  },
  {
+  "date": "2019-02-17",
+  "kind": "release",
+  "ja": "「tobokegao - SKWEEEEE B4 (Milwauskweee Vol. 4 | Innocuous Records )」をSoundCloud / YouTubeで公開",
+  "en": "\"tobokegao - SKWEEEEE B4 (Milwauskweee Vol. 4 | Innocuous Records )\" released on SoundCloud / YouTube",
+  "url": "https://soundcloud.com/tobokegao/skweeeee-b4",
+  "source": "feed",
+  "own": true
+ },
+ {
   "date": "2019-01-06",
   "kind": "release",
   "ja": "「O×T - UNION : SSSS.GRIDMAN OP (tobokegao Gameboy Cover)」をniconicoで公開",
   "en": "\"O×T - UNION : SSSS.GRIDMAN OP (tobokegao Gameboy Cover)\" released on niconico",
   "url": "https://www.nicovideo.jp/watch/sm34436718",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2018-12-31",
+  "kind": "release",
+  "ja": "「O×T - UNION (tobokegao Gameboy Cover)」をSoundCloud / YouTubeで公開",
+  "en": "\"O×T - UNION (tobokegao Gameboy Cover)\" released on SoundCloud / YouTube",
+  "url": "https://soundcloud.com/tobokegao/ot-union-tobokegao-gameboy-cover",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2018-12-16",
+  "kind": "release",
+  "ja": "「Louis Cole - Bank Account (tobokegao Gameboy Ver) :movie https://www.youtube.com/watch?v=A8SOMETetpM」をSoundCloudで公開",
+  "en": "\"Louis Cole - Bank Account (tobokegao Gameboy Ver) :movie https://www.youtube.com/watch?v=A8SOMETetpM\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/louis-cole-bank-account-tobokegao-gameboy-ver",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2018-11-26",
+  "kind": "release",
+  "ja": "「BMX Matatabi Grand Prix Theme BGM (2 Loop Mix)」をSoundCloudで公開",
+  "en": "\"BMX Matatabi Grand Prix Theme BGM (2 Loop Mix)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/bmx-matatabi-grand-prix-theme-bgm-2-loop-mix",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2018-11-17",
+  "kind": "release",
+  "ja": "「HCCT(Scythe, yukkerom, tobokegao) - 3DOUGIRI」をSoundCloudで公開",
+  "en": "\"HCCT(Scythe, yukkerom, tobokegao) - 3DOUGIRI\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/hcctscythe-yukkerom-tobokegao-3dougiri",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2018-09-17",
+  "kind": "release",
+  "ja": "「SHADY MONK -  Splitting Hairs (feat. tobokegao) (tobokegao LSDj Remix)」をSoundCloud / YouTubeで公開",
+  "en": "\"SHADY MONK -  Splitting Hairs (feat. tobokegao) (tobokegao LSDj Remix)\" released on SoundCloud / YouTube",
+  "url": "https://soundcloud.com/tobokegao/splitting-hairs-feat-tobokegaotobokegao-lsdj-remix",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2018-09-14",
+  "kind": "release",
+  "ja": "「Square Sounds Tokyo 2017 tobokegao Mix out now(Buy link = youtube full streaming)(Free)」をSoundCloudで公開",
+  "en": "\"Square Sounds Tokyo 2017 tobokegao Mix out now(Buy link = youtube full streaming)(Free)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/square-sounds-tokyo-2017-tobokegao-mix-out-now",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2018-07-02",
+  "kind": "release",
+  "ja": "「Develop (Short ver)」をSoundCloudで公開",
+  "en": "\"Develop (Short ver)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/develop-short-ver",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2018-06-18",
+  "kind": "release",
+  "ja": "「Tobokegao × Xe - 泡とともに part1」をSoundCloudで公開",
+  "en": "\"Tobokegao × Xe - 泡とともに part1\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/tobokegao-xe",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2018-06-04",
+  "kind": "release",
+  "ja": "「Groove C&C Part 2」をSoundCloudで公開",
+  "en": "\"Groove C&C Part 2\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/groove-cc-part-2",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2018-05-14",
+  "kind": "release",
+  "ja": "「Nesugoshi(No Noise Song #2)(I missed Weeklybeats)」をSoundCloudで公開",
+  "en": "\"Nesugoshi(No Noise Song #2)(I missed Weeklybeats)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/nesugoshino-noise-song-2",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2018-05-09",
+  "kind": "release",
+  "ja": "「Seinfeld Theme (Gameboy Cover)」をSoundCloud / YouTubeで公開",
+  "en": "\"Seinfeld Theme (Gameboy Cover)\" released on SoundCloud / YouTube",
+  "url": "https://soundcloud.com/tobokegao/seinfeld-theme-gameboy-cover",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2018-05-07",
+  "kind": "release",
+  "ja": "「E Funk Slap Bass Menu #1」をSoundCloudで公開",
+  "en": "\"E Funk Slap Bass Menu #1\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/e-funk-slap-bass-menu-1",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2018-04-29",
+  "kind": "release",
+  "ja": "「Sunday #1(This track has no noise ch ver)」をSoundCloudで公開",
+  "en": "\"Sunday #1(This track has no noise ch ver)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/sunday-1this-track-has-no-noise-ch-ver",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2018-04-23",
+  "kind": "release",
+  "ja": "「J-POP Strings Pulse #1(short 2loop ver)」をSoundCloudで公開",
+  "en": "\"J-POP Strings Pulse #1(short 2loop ver)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/j-pop-strings-pulse-1",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2018-04-02",
+  "kind": "release",
+  "ja": "「Battle Of The Bits (Part 2)」をSoundCloudで公開",
+  "en": "\"Battle Of The Bits (Part 2)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/battle-of-the-bits-part-2",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2018-02-25",
+  "kind": "release",
+  "ja": "「tobokegao × DBOYD - Last Song [Collab Tracks Album coming soon]」をSoundCloudで公開",
+  "en": "\"tobokegao × DBOYD - Last Song [Collab Tracks Album coming soon]\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/tobokegao-dboyd-last-song",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2018-02-19",
+  "kind": "release",
+  "ja": "「To Quit」をSoundCloudで公開",
+  "en": "\"To Quit\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/to-quit",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2018-02-09",
+  "kind": "release",
+  "ja": "「TWEEDEES - Baby, Baby(tobokegao Gameboy Cover)」をSoundCloudで公開",
+  "en": "\"TWEEDEES - Baby, Baby(tobokegao Gameboy Cover)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/tweedees-baby-babytobokegao-gameboy-cover",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2017-11-12",
+  "kind": "release",
+  "ja": "「Intro」をSoundCloudで公開",
+  "en": "\"Intro\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/intro",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2017-06-27",
+  "kind": "release",
+  "ja": "「Pico*2 Magic Canvas! 2017.05.28(SUN)LIVE GBASP NOISE JAM 45 min 1 Isdsng(Buy link=Mixcloud)」をSoundCloudで公開",
+  "en": "\"Pico*2 Magic Canvas! 2017.05.28(SUN)LIVE GBASP NOISE JAM 45 min 1 Isdsng(Buy link=Mixcloud)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/pico-2-magic-canvas-2017-05-28",
   "source": "feed",
   "own": true
  },
@@ -333,11 +1773,218 @@
   "own": true
  },
  {
+  "date": "2017-03-31",
+  "kind": "release",
+  "ja": "「Kemono Friends OP ようこそジャパリパークへ（Tobokegao GAMEBOY Kirby-ish Cover）」をYouTubeで公開",
+  "en": "\"Kemono Friends OP ようこそジャパリパークへ（Tobokegao GAMEBOY Kirby-ish Cover）\" released on YouTube",
+  "url": "https://www.youtube.com/watch?v=VPBmK4C9NXI",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2017-03-29",
+  "kind": "release",
+  "ja": "「どうぶつビスケッツ×PPP - ようこそジャパリパークへ（Tobokegao GAMEBOY Cover）」をSoundCloudで公開",
+  "en": "\"どうぶつビスケッツ×PPP - ようこそジャパリパークへ（Tobokegao GAMEBOY Cover）\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/kemono-friends-op-tobokegao-gameboy-cover",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2016-11-12",
+  "kind": "release",
+  "ja": "「Kouki Ish - OMOIDE HOUSE (tobokegao 2stepish chiptune remix)」をSoundCloudで公開",
+  "en": "\"Kouki Ish - OMOIDE HOUSE (tobokegao 2stepish chiptune remix)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/omoide-house-tobokegao-2stepish-chiptune-remix",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2016-07-23",
+  "kind": "release",
+  "ja": "「Scott & Rivers - HOMELY GIRL(tobokegao Gameboy Cover)」をSoundCloudで公開",
+  "en": "\"Scott & Rivers - HOMELY GIRL(tobokegao Gameboy Cover)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/homely-girl",
+  "source": "feed",
+  "own": true
+ },
+ {
   "date": "2016-05-04",
   "kind": "release",
   "ja": "「Picnic」をBandcampで公開",
   "en": "\"Picnic\" released on Bandcamp",
   "url": "https://tbkgao.bandcamp.com/album/picnic",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2016-03-27",
+  "kind": "release",
+  "ja": "「Lo-bit Space Invaders 3 (Lo-bit Freedom Ver.3のために作った曲)」をSoundCloudで公開",
+  "en": "\"Lo-bit Space Invaders 3 (Lo-bit Freedom Ver.3のために作った曲)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/lo-bit-space-invaders-3",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2016-02-28",
+  "kind": "release",
+  "ja": "「Sandbag」をSoundCloudで公開",
+  "en": "\"Sandbag\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/esc-002-wave-chords-ep-03-sandbag",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2016-02-20",
+  "kind": "release",
+  "ja": "「Azure Fields(100 Years Ago)」をSoundCloudで公開",
+  "en": "\"Azure Fields(100 Years Ago)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/esc-002-wave-chords-ep-02-azure-fields-100-years-ago",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2016-02-13",
+  "kind": "release",
+  "ja": "「Blueberry Pie」をSoundCloudで公開",
+  "en": "\"Blueberry Pie\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/esc-002-wave-chords-ep-01-blueberry-pie",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2016-01-15",
+  "kind": "release",
+  "ja": "「Harito - Trash Toys Dream (to6okegao's Goodnight Chiptune Ver)」をSoundCloudで公開",
+  "en": "\"Harito - Trash Toys Dream (to6okegao's Goodnight Chiptune Ver)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/harito-trash-toys-dream-to6okegaos-goodnight-chiptune-ver",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2015-10-18",
+  "kind": "release",
+  "ja": "「Snail's House - Pixel Dream(Gameboy LSDj Cover)」をSoundCloudで公開",
+  "en": "\"Snail's House - Pixel Dream(Gameboy LSDj Cover)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/snails-house-pixel-dream-gameboy-lsdj-cover",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2015-09-25",
+  "kind": "release",
+  "ja": "「Irûmu Beats[LSDj Demo] (Thank you for 1111 followers)」をSoundCloudで公開",
+  "en": "\"Irûmu Beats[LSDj Demo] (Thank you for 1111 followers)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/irumu-beats",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2015-06-14",
+  "kind": "release",
+  "ja": "「Splatoon - Ink or Sink[GB LSDj Remix]」をSoundCloudで公開",
+  "en": "\"Splatoon - Ink or Sink[GB LSDj Remix]\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/splatoon-8bit-lsdj-remix",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2015-06-04",
+  "kind": "release",
+  "ja": "「古町MOI - ハピイバスデ[GB LSDj Remix]」をSoundCloudで公開",
+  "en": "\"古町MOI - ハピイバスデ[GB LSDj Remix]\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/moi-happy-birthday-8bit-lsdj-remix",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2015-05-07",
+  "kind": "release",
+  "ja": "「Electric Yakuza - Splendr [GB Bitpop Remix]」をSoundCloudで公開",
+  "en": "\"Electric Yakuza - Splendr [GB Bitpop Remix]\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/electric-yakuza-splendr-tobokegao-bitpop-remix-1",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2015-02-14",
+  "kind": "release",
+  "ja": "「とぼけがお - イヌぞりレース リプレイのテーマ(Buy link = lsdsng.com)」をSoundCloudで公開",
+  "en": "\"とぼけがお - イヌぞりレース リプレイのテーマ(Buy link = lsdsng.com)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/dog_sled-replay_theme",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2015-01-08",
+  "kind": "release",
+  "ja": "「In the blue shirt - Emerald Light[GB LSDj 1 loop Remix]」をSoundCloudで公開",
+  "en": "\"In the blue shirt - Emerald Light[GB LSDj 1 loop Remix]\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/emerald-light-8-bit-lsdj-remix",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2014-12-21",
+  "kind": "release",
+  "ja": "「とぼけがお - サンタクロース・アリガト (Santa Claus Arigato)」をSoundCloudで公開",
+  "en": "\"とぼけがお - サンタクロース・アリガト (Santa Claus Arigato)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/santa-claus-arigato",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2014-11-24",
+  "kind": "release",
+  "ja": "「高瀬麻里子 - 君のぶぶチャチャ[GB LSDj remix]」をSoundCloudで公開",
+  "en": "\"高瀬麻里子 - 君のぶぶチャチャ[GB LSDj remix]\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/kimi_no_bubu_chacha_8bit_lsdj_remix",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2014-11-02",
+  "kind": "release",
+  "ja": "「音作り練習 001(LSDJ Practice)[Buy link=.sav File]」をSoundCloudで公開",
+  "en": "\"音作り練習 001(LSDJ Practice)[Buy link=.sav File]\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/001-lsdj-practice",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2014-10-25",
+  "kind": "release",
+  "ja": "「とぼけがお - つかれた顔(ゲームは終わらない)[+guitar&vocal remix]」をSoundCloudで公開",
+  "en": "\"とぼけがお - つかれた顔(ゲームは終わらない)[+guitar&vocal remix]\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/tired-face",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2014-09-28",
+  "kind": "release",
+  "ja": "「とぼけがお - 矩形波ちゃんの大冒険(kukeiha chan no daibouken)」をSoundCloudで公開",
+  "en": "\"とぼけがお - 矩形波ちゃんの大冒険(kukeiha chan no daibouken)\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/kukeiha-chan-no-daibouken",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2014-09-08",
+  "kind": "release",
+  "ja": "「とぼけがお - つかれた顔(ゲームは終わらない)[GB LSDj remix]」をSoundCloudで公開",
+  "en": "\"とぼけがお - つかれた顔(ゲームは終わらない)[GB LSDj remix]\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/tsukareta_kao",
+  "source": "feed",
+  "own": true
+ },
+ {
+  "date": "2014-08-08",
+  "kind": "release",
+  "ja": "「パーキッツ - 愛はカッコわるい[GB LSDj remix]」をSoundCloudで公開",
+  "en": "\"パーキッツ - 愛はカッコわるい[GB LSDj remix]\" released on SoundCloud",
+  "url": "https://soundcloud.com/tobokegao/parquets-ai_ha_kakkowarui-8-bit-lsdj-remix",
   "source": "feed",
   "own": true
  }

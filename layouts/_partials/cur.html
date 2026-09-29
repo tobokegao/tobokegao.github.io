@@ -1,0 +1,4 @@
+{{- /* The menu key of the current page (releases, news, post, about, ...), shared by the menubar and the statusbar */ -}}
+{{- $cur := .Section -}}
+{{- if and .File (eq .File.ContentBaseName "about") }}{{ $cur = "about" }}{{ end -}}
+{{- return $cur -}}

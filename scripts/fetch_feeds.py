@@ -1,6 +1,6 @@
 """Collect Tobokegao's releases and videos from public feeds into data/items.json.
 
-Sources: YouTube RSS, SoundCloud RSS, niconico (nvapi), Bandcamp (TBKgao label page),
+Sources: YouTube RSS plus the full upload list (fetch_youtube_all), SoundCloud RSS plus every track (fetch_soundcloud_all), niconico (nvapi), Bandcamp (TBKgao label page),
 Apple Music (iTunes lookup). Standard library only so it runs anywhere without setup.
 
 Items are merged into the existing file and never dropped, because RSS feeds only
@@ -90,6 +90,79 @@ def fetch_youtube() -> list[dict]:
     return items
 
 
+def fetch_youtube_all(known: dict[str, dict]) -> list[dict]:
+    """Every upload, not just the feed's latest 15: the channel's Videos and Shorts tabs,
+    paged through YouTube's own web endpoint (no API key). A list entry has no date, so
+    only videos not yet in data/items.json get their watch page fetched for it."""
+    ua = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                        "(KHTML, like Gecko) Chrome/130 Safari/537.36", "Accept-Language": "ja"}
+    found: dict[str, str] = {}
+
+    def walk(o, conts):
+        if isinstance(o, dict):
+            lock = o.get("lockupViewModel")
+            if lock and lock.get("contentType") == "LOCKUP_CONTENT_TYPE_VIDEO":
+                found.setdefault(lock["contentId"], lock["metadata"]["lockupMetadataViewModel"]["title"]["content"])
+            short = o.get("shortsLockupViewModel")
+            if short and short.get("onTap"):
+                vid = short["onTap"]["innertubeCommand"].get("reelWatchEndpoint", {}).get("videoId")
+                if vid:
+                    found.setdefault(vid, short.get("overlayMetadata", {}).get("primaryText", {}).get("content", ""))
+            for k, v in o.items():
+                if k == "continuationCommand":
+                    conts.append(v["token"])
+                walk(v, conts)
+        elif isinstance(o, list):
+            for v in o:
+                walk(v, conts)
+
+    for tab in ("videos", "shorts"):
+        page = get(f"https://www.youtube.com/channel/{YOUTUBE_CHANNEL_ID}/{tab}", ua).decode("utf-8")
+        key = re.search(r'"INNERTUBE_API_KEY":"([^"]+)"', page).group(1)
+        ver = re.search(r'"INNERTUBE_CLIENT_VERSION":"([^"]+)"', page).group(1)
+        conts: list[str] = []
+        walk(json.loads(re.search(r"var ytInitialData = (\{.*?\});</script>", page, re.S).group(1)), conts)
+        seen = set()
+        while conts:
+            tok = conts.pop()
+            if tok in seen:
+                continue
+            seen.add(tok)
+            body = json.dumps({"context": {"client": {"clientName": "WEB", "clientVersion": ver, "hl": "ja"}},
+                               "continuation": tok}).encode()
+            req = urllib.request.Request(f"https://www.youtube.com/youtubei/v1/browse?key={key}", data=body,
+                                         headers={**ua, "Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=30) as res:
+                walk(json.loads(res.read()), conts)
+
+    items = []
+    for vid, title in found.items():
+        old = known.get(f"youtube:{vid}")
+        if old:
+            items.append(old)
+            continue
+        watch = get(f"https://www.youtube.com/watch?v={vid}", ua).decode("utf-8")
+        m = re.search(r'itemprop="(?:datePublished|uploadDate)" content="([^"]+)"', watch) \
+            or re.search(r'"(?:publishDate|uploadDate)":"([^"]+)"', watch)
+        if not m:
+            continue
+        if not title:
+            t = re.search(r'<meta name="title" content="([^"]*)"', watch)
+            title = html.unescape(t.group(1)) if t else vid
+        items.append({
+            "id": f"youtube:{vid}",
+            "source": "youtube",
+            "type": "video",
+            "title": title,
+            "artist": "Tobokegao",
+            "date": iso_date(m.group(1)),
+            "url": f"https://www.youtube.com/watch?v={vid}",
+            "image": f"https://i.ytimg.com/vi/{vid}/mqdefault.jpg",
+        })
+        time.sleep(0.3)
+    return items
+
+
 def fetch_soundcloud() -> list[dict]:
     url = f"https://feeds.soundcloud.com/users/soundcloud:users:{SOUNDCLOUD_USER_ID}/sounds.rss"
     root = ET.fromstring(get(url))
@@ -107,6 +180,43 @@ def fetch_soundcloud() -> list[dict]:
             "url": e.findtext("link"),
             "image": img.get("href") if img is not None else None,
         })
+    return items
+
+
+def fetch_soundcloud_all() -> list[dict]:
+    """Every track, not just the RSS feed's latest few: SoundCloud's own web API, with the
+    public client id its web player carries in one of its script files."""
+    ua = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                        "(KHTML, like Gecko) Chrome/130 Safari/537.36"}
+    page = get(f"https://soundcloud.com/tobokegao", ua).decode("utf-8", "replace")
+    cid = None
+    for js in reversed(re.findall(r'<script crossorigin src="(https://a-v2\.sndcdn\.com/assets/[^"]+\.js)"', page)):
+        m = re.search(r'client_id:"([A-Za-z0-9]{32})"', get(js, ua).decode("utf-8", "replace"))
+        if m:
+            cid = m.group(1)
+            break
+    if not cid:
+        raise RuntimeError("no SoundCloud client id found")
+    url = (f"https://api-v2.soundcloud.com/users/{SOUNDCLOUD_USER_ID}/tracks"
+           f"?limit=200&linked_partitioning=1&client_id={cid}")
+    items = []
+    while url:
+        data = json.loads(get(url, ua))
+        for t in data["collection"]:
+            art = t.get("artwork_url") or (t.get("user") or {}).get("avatar_url")
+            items.append({
+                "id": f"soundcloud:{t['id']}",
+                "source": "soundcloud",
+                "type": "track",
+                "title": t["title"],
+                "artist": "Tobokegao",
+                "date": iso_date(t["created_at"]),
+                "url": t["permalink_url"],
+                "image": art.replace("-large.", "-t500x500.") if art else None,
+            })
+        url = data.get("next_href")
+        if url:
+            url += f"&client_id={cid}"
     return items
 
 
@@ -227,6 +337,10 @@ def build_releases(items: list[dict], overrides: dict) -> list[dict]:
         return datetime.fromisoformat(d).toordinal()
 
     order = {"bandcamp": 0, "apple": 1, "soundcloud": 2, "niconico": 3, "youtube": 4}
+    # overrides "same_release": uploads of one work under different titles (e.g. an English
+    # title on SoundCloud); the first id's title names the release
+    same = {i: n for n, ids in enumerate(overrides.get("same_release", [])) for i in ids}
+    by_id = {it["id"]: it for it in items}
     groups: dict[str, dict] = {}
     for it in sorted(items, key=lambda x: order.get(x["source"], 9)):
         if it["source"] not in order or it["id"] in overrides.get("hide", []):
@@ -234,13 +348,17 @@ def build_releases(items: list[dict], overrides: dict) -> list[dict]:
         if it["type"] == "video" and not is_song_video(it, overrides):
             continue
         key = title_key(it["title"]) or it["id"]
+        if it["id"] in same:
+            ids = overrides["same_release"][same[it["id"]]]
+            key = title_key(by_id[ids[0]]["title"]) if ids[0] in by_id else f"same:{same[it['id']]}"
         # The same title half a year apart is a new version (e.g. a 2025 vocal remake of
         # a 2020 song), not another link to the old release.
         if key in groups and abs(day(groups[key]["date"]) - day(it["date"])) > 180:
             key = f"{key}@{it['date'][:7]}"
         g = groups.get(key)
         if g is None:
-            title = re.sub(r"^Tobokegao\s*-\s*", "", it["title"]) if it["type"] == "video" else it["title"]
+            src = by_id.get(overrides["same_release"][same[it["id"]]][0], it) if it["id"] in same else it
+            title = re.sub(r"^Tobokegao\s*-\s*", "", src["title"]) if src["type"] == "video" else src["title"]
             g = groups[key] = {
                 "key": key, "title": title, "artist": it["artist"],
                 "type": "song" if it["type"] == "video" else it["type"],
@@ -301,7 +419,9 @@ def main() -> int:
 
     fetchers = {
         "youtube": fetch_youtube,
+        "youtube-all": lambda: fetch_youtube_all(known),
         "soundcloud": fetch_soundcloud,
+        "soundcloud-all": fetch_soundcloud_all,
         "niconico": fetch_niconico,
         "bandcamp": lambda: fetch_bandcamp(known),
         "apple": fetch_apple,

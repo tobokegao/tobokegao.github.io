@@ -187,3 +187,11 @@ en = "No matches"
 [hits]
 ja = "件"
 en = "items"
+
+[fold]
+ja = "窓をたたむ・ひらく"
+en = "Fold or unfold the window"
+
+[rowLinks]
+ja = "リンク"
+en = "Links"

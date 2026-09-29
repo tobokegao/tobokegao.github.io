@@ -178,6 +178,22 @@ time { font-variant-numeric: tabular-nums; }
 .menubar a:hover u, .menubar a[aria-current="page"] u { color: inherit; }
 /* a 16px pixel icon before each item, in the logo yellow like the hotkeys; in inverse
    video it takes the text color */
+/* the About figure (scripts/pixel_icons.py SPIN): faces front at rest, turns round while
+   its link is hovered or focused; the face is the same color, dimmer */
+.px__dim { opacity: .5; }
+.px--spin .spin__f { visibility: hidden; }
+.px--spin .spin__f:first-child { visibility: visible; }
+/* one turn in .6s over the 10 frames (the minifier glues "var(...) steps()" together, so
+   the timing is written out in longhands) */
+a:hover .px--spin .spin__f, a:focus-visible .px--spin .spin__f {
+  animation-name: spin-frame;
+  animation-duration: .6s;
+  animation-timing-function: steps(1, end);
+  animation-iteration-count: infinite;
+  animation-delay: calc(var(--i) * .06s - .6s);
+}
+@keyframes spin-frame { 0% { visibility: visible; } 10%, 100% { visibility: hidden; } }
+@media (prefers-reduced-motion: reduce) { a:hover .px--spin .spin__f, a:focus-visible .px--spin .spin__f { animation: none; } }
 .menubar__ico { color: var(--bar-key); margin-right: 4px; }
 .menubar__ico .px { display: inline-block; vertical-align: -4px; }
 .menubar a:hover .menubar__ico, .menubar a[aria-current="page"] .menubar__ico { color: inherit; }
@@ -223,7 +239,12 @@ time { font-variant-numeric: tabular-nums; }
   flex-direction: column;
   gap: 44px;
 }
-.split { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 44px; align-items: start; }
+.split { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 44px; align-items: stretch; }
+/* side by side, both windows take the taller one's height and keep their "all ..." button
+   on the bottom edge; a folded window stays folded */
+.split > .win { display: flex; flex-direction: column; }
+.split > .win > .win__more { margin-top: auto; padding-top: 24px; }
+.split > .win.is-folded { align-self: start; }
 
 /* ---------- window: double-line frame, title set into the border ----------
    The whole site is lit from below (like the link icons): shadows fall straight up,
@@ -267,6 +288,24 @@ time { font-variant-numeric: tabular-nums; }
 .win__title span::before { content: "[ "; color: var(--ink-dim); }
 .win__title span::after  { content: " ]"; color: var(--ink-dim); }
 .win__caption { margin: 0 0 20px; font: var(--dot)/1.6 var(--f-dot); color: var(--ink-dim); }
+/* the fold box at the right end of the top border (home windows): [-] open, [+] folded */
+.win__toggle {
+  position: absolute;
+  top: calc(var(--dot) * -1 - 5px);
+  right: 16px;
+  z-index: 1;
+  padding: 0 4px;
+  border: 0;
+  background: var(--win);
+  color: var(--hi);
+  font: 400 var(--dot)/calc(var(--dot) * 2) var(--f-dot);
+  cursor: pointer;
+}
+.win__toggle::before { content: "[-]"; }
+.win__toggle[aria-expanded="false"]::before { content: "[+]"; }
+.win__toggle:hover { background: var(--accent); color: var(--accent-ink); }
+.win.is-folded { padding-block: 10px 0; }
+.win.is-folded > :not(.win__title):not(.win__toggle) { display: none; }
 .win__caption::before { content: "■ "; color: var(--mark); }
 :root[data-scheme="night"] .win__caption::before { color: var(--mark); }
 .win__more { margin: 24px 0 0; display: flex; justify-content: flex-end; }
@@ -296,11 +335,17 @@ time { font-variant-numeric: tabular-nums; }
 .chip::after { content: none; }
 .chip[aria-pressed="true"] { color: var(--hi); }
 .chip[aria-pressed="true"]::before { content: "(•) "; color: var(--accent); }
-.chip:hover .count, .chip[aria-pressed="true"]:hover::before { color: inherit; }
+.chip:hover, .chip:focus-visible { color: var(--accent-ink); }
+.chip:hover .count, .chip[aria-pressed="true"]:hover::before, .chip[aria-pressed="true"]:focus-visible::before { color: inherit; }
 .btn--link { padding: 6px; background: none; }
-.btn--link .px--hd { width: 60px; height: 60px; }
+.btn--link .px--hd { display: block; width: 60px; height: 60px; }   /* inline, the svg sat on a text baseline and left a gap below it */
 .btn--link::before, .btn--link::after { content: none; }
-.btn--link:hover, .btn--link:focus-visible { background: var(--mark); }
+.btn--link .logo--day { display: block; }
+/* hover: no box. The icon itself catches more of the yellow light from below
+   (scripts/hd_icons.py draws that as a hidden layer, .px__hl) */
+.btn--link:hover, .btn--link:focus-visible { background: none; }
+.px__hl { display: none; }
+.btn--link:hover .px__hl, .btn--link:focus-visible .px__hl { display: inline; }
 .tag {
   font: var(--dot)/1 var(--f-dot);
   padding: 2px 4px;
@@ -414,7 +459,7 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 /* NEWS.LOG (tracker pattern rows) */
 .log { list-style: none; margin: 0; padding: 0; font: var(--dot)/calc(var(--dot) * 2) var(--f-dot); }
 .log__row { display: grid; grid-template-columns: 2.4em 7em 5.8em 1fr; gap: 0 10px; padding: 3px 6px; align-items: baseline; }
-.log__row:nth-child(4n+1) { background: var(--win-2); } /* beat highlight, as in a tracker */
+.log__row--page { background: var(--win-2); } /* opens a page on this site; white rows go to another site */
 .log__idx, .log__date { color: var(--ink-dim); white-space: nowrap; }
 /* Kind chips: TRACKMENTO's palette as a flat pale tint (no outline).
    Day uses charcoal text, night off-white, so the label always reads. */
@@ -433,6 +478,10 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .log__row { position: relative; }
 .log__text a::after { content: ""; position: absolute; inset: 0; }
 .log__row:hover { outline: 1px solid var(--mark); outline-offset: -1px; }
+/* platform links at the end of a row sit above the row-wide link */
+.log__links { position: relative; z-index: 1; display: inline-flex; gap: 6px; margin-left: 8px; vertical-align: -3px; }
+.log__links .px { width: 18px; height: 18px; }
+.doc__links { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 0 0 8px; }
 
 /* lists & docs */
 .sub { font: var(--dot)/2 var(--f-dot); color: var(--hi); margin: 8px 0 10px; }
@@ -523,6 +572,9 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .statusbar a:hover { background: var(--bar-ink); color: var(--bar); }
 .statusbar kbd { font: inherit; color: var(--bar-key); margin-right: 4px; }
 .statusbar a:hover kbd { color: inherit; }
+.statusbar a[aria-current="page"] { background: var(--bar-ink); color: var(--bar); }
+.statusbar a[aria-current="page"] kbd { color: inherit; }
+.statusbar__ico { display: none; }   /* phones only: there the keys become the tab bar */
 
 /* ---------- phones ---------- */
 @media (max-width: 640px) {
@@ -536,9 +588,24 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
   .log__idx { display: none; }
   .log__text { grid-column: 1 / -1; }
   .menubar { gap: 4px; flex-wrap: nowrap; padding-inline: 6px; }
-  .menubar__brand { display: none; }
+  /* the home page's "C:\TBK" fits again now that the menu lives in the bottom tab bar */
   .menubar__logo { display: flex; padding: 0; }   /* the mini banner stays on the other pages */
-  .menubar__nav { flex-wrap: nowrap; gap: 0; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+  /* the menu moves to a tab bar at the bottom: 18px icons were too small to tap up here */
+  .menubar__nav { display: none; }
+  .menubar { justify-content: space-between; }
+  body { padding-bottom: calc(48px + env(safe-area-inset-bottom, 0px)); }
+  .statusbar__keys {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 5;
+    display: grid; grid-template-columns: repeat(6, 1fr); gap: 0;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    background: var(--bar); border-top: 1px solid var(--bar-ink);
+  }
+  .statusbar__keys a { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 48px; line-height: var(--dot); gap: 4px; min-width: 0; }
+  .statusbar__keys kbd { display: none; }
+  .statusbar__keys span[lang] { overflow: hidden; max-width: 100%; }
+  .statusbar__ico { display: block; color: var(--bar-key); }
+  .statusbar__ico .px { display: block; }
+  .statusbar__keys a:hover .statusbar__ico, .statusbar__keys a[aria-current="page"] .statusbar__ico { color: inherit; }
   /* icons only: the item names stay for screen readers and the title tooltip */
   .menubar__nav a { display: flex; align-items: center; height: calc(var(--dot) * 2); padding: 0; }
   .menubar__nav a > span[lang] { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

@@ -1,415 +1,883 @@
 [
- {
-  "date": "2024-09-10",
-  "kind": "feature",
-  "ja": "ATARI / WayForward 制作の Nintendo Switch 用ゲーム「YARS RISING」に楽曲「Nouveau Monde」を提供（歌唱・主旋律作曲・作詞）",
-  "en": "Contributed \"Nouveau Monde\" to YARS RISING (ATARI / WayForward, Nintendo Switch): vocals, main melody and lyrics",
-  "source": "about"
- },
- {
-  "date": "2023-02-25",
-  "kind": "live",
-  "ja": "「TOBOX Release Party in Sapporo」に参加",
-  "en": "Participated in \"TOBOX Release Party in Sapporo\"",
-  "source": "works"
- },
- {
-  "date": "2023-02-18",
-  "kind": "live",
-  "ja": "「TOBOX Release Party in Tokyo」に参加",
-  "en": "Participated in \"TOBOX Release Party in Tokyo\"",
-  "source": "works"
- },
- {
-  "date": "2022-10-30",
-  "kind": "release",
-  "ja": "3st album「TOBOX」をリリース",
-  "en": "3rd album \"TOBOX\" is released",
-  "source": "works"
- },
- {
-  "date": "2022-10-07",
-  "kind": "feature",
-  "ja": "TBKgaoからreleaseされたコンピレーションアルバム「PURE MIDI Volume 1」に14曲目「PURE」で参加",
-  "en": "participate in \"PURE MIDI Volume 1\" released by TBKgao with the track \"PURE\" on track 14",
-  "source": "works"
- },
- {
-  "date": "2022-08-17",
-  "kind": "release",
-  "ja": "4th single 「やるきがでないときのうた」をリリース",
-  "en": "4th single \"Yaruki Ga Denai Toki No Uta\" is released",
-  "source": "works"
- },
- {
-  "date": "2022-05-06",
-  "kind": "release",
-  "ja": "4th EP 「Scythe - そんな日もあるよね (Tobokegao Vocal Cover) 」をリリース",
-  "en": "4th EP \"Scythe - Sonna Hi Mo Aru Yone (Tobokegao Vocal Cover)\" is released",
-  "source": "works"
- },
- {
-  "date": "2022-04-02",
-  "kind": "feature",
-  "ja": "「RESOFORCE - Rivals of Aether: RESONANT MIXES 3」に「Elusive Master of Toxin (Tobokegao M8 Remix)」で参加",
-  "en": "Participate in \"RESOFORCE - Rivals of Aether: RESONANT MIXES 3\" with \"Elusive Master of Toxin (Tobokegao M8 Remix)\"",
-  "source": "works"
- },
- {
-  "date": "2022-03-28",
-  "kind": "release",
-  "ja": "1st Live album 「20220326 Chipfest Cyberspace 15 LIVE」をリリース",
-  "en": "1st Live album \"20220326 Chipfest Cyberspace 15 LIVE\" is released",
-  "source": "works"
- },
- {
-  "date": "2022-03-26",
-  "kind": "live",
-  "ja": "「CHIPFEST CYBERSPACE 15」に参加",
-  "en": "Participated in \"CHIPFEST CYBERSPACE 15\"",
-  "source": "works"
- },
- {
-  "date": "2022-03-04",
-  "kind": "release",
-  "ja": "3rd EP 「DA​-​LA​-​LA (Vocal Version)」をリリース",
-  "en": "3rd EP \"DA-LA-LA (Vocal Version)\" is released",
-  "source": "works"
- },
- {
-  "date": "2022-02-04",
-  "kind": "release",
-  "ja": "2nd EP 「孤独なフルーツ(Vocal Version)」をリリース",
-  "en": "2nd EP \"Kodoku Na Fruits (Vocal Version)\" is released",
-  "source": "works"
- },
- {
-  "date": "2021-11-24",
-  "kind": "feature",
-  "ja": "「MUTRON - Future Sushi」に「MUTRON - Future Sushi (Tobokegao FM Remix)」で参加",
-  "en": "Participate in \"MUTRON - Future Sushi\" with \"MUTRON - Future Sushi (Tobokegao FM Remix)\"",
-  "source": "works"
- },
- {
-  "date": "2021-08-06",
-  "kind": "release",
-  "ja": "3st single「黄泉で足踏み(Vocal Version)」をリリース",
-  "en": "3rd single \"Yomi De Ashibumi (Vocal Version)\" is released",
-  "source": "works"
- },
- {
-  "date": "2021-04-02",
-  "kind": "feature",
-  "ja": "「RESOFORCE - Rivals of Aether: RESONANT MIXES 2」に「Tetherball Versus (Tobokegao GB Remix)」で参加",
-  "en": "Participate in \"RESOFORCE - Rivals of Aether: RESONANT MIXES 2\" with \"Tetherball Versus (Tobokegao GB Remix)\"",
-  "source": "works"
- },
- {
-  "date": "2021-01-17",
-  "kind": "other",
-  "ja": "447 Records所属のバグによってゲーム世界から飛び出したVsinger、Lily lemonade Moneのトーク中bgmを提供",
-  "en": "Provided the bgm during the talk of Lily lemonade Mone, a Vsinger who jumped out of the game world by a bug belonging to 447 Records.",
-  "source": "works"
- },
- {
-  "date": "2020-12-28",
-  "kind": "live",
-  "ja": "「Once Super Portable」に参加",
-  "en": "Participated in \"Once Super Portable\"",
-  "source": "works"
- },
- {
-  "date": "2020-12-04",
-  "kind": "release",
-  "ja": "2st album「Room To Room」をリリース",
-  "en": "2nd album \"Room To Room\" is released.",
-  "source": "works"
- },
- {
-  "date": "2020-10-02",
-  "kind": "release",
-  "ja": "1st EP「SE Music EP」をリリース",
-  "en": "1st EP \"SE Music EP\" is released",
-  "source": "works"
- },
- {
-  "date": "2020-10-02",
-  "kind": "release",
-  "ja": "2st single「Being Rusty (Tanashii Mainichi)」をリリース",
-  "en": "2nd single \"Being Rusty (Tanashii Mainichi)\" is released",
-  "source": "works"
- },
- {
-  "date": "2020-08-30",
-  "kind": "live",
-  "ja": "「Micromusic Italy Sunday Jam」に参加",
-  "en": "Participated in \"Micromusic Italy Sunday Jam\"",
-  "source": "works"
- },
- {
-  "date": "2020-08-07",
-  "kind": "release",
-  "ja": "1st single「○○○○」をリリース",
-  "en": "1st single \"○○○○\" is released",
-  "source": "works"
- },
- {
-  "date": "2020-07-13",
-  "kind": "live",
-  "ja": "「Metazoa」に参加",
-  "en": "Participated in \"Metazoa\"",
-  "source": "works"
- },
- {
-  "date": "2020-06-19",
-  "kind": "release",
-  "ja": "1st mini albumのDeluxe版「Picnic (Deluxe Edition)」をリリース",
-  "en": "1st mini album Deluxe Edition \"Picnic (Deluxe Edition)\" is released",
-  "source": "works"
- },
- {
-  "date": "2020-06-05",
-  "kind": "live",
-  "ja": "「ISO CHIP 2」に参加",
-  "en": "Participated in \"ISO CHIP 2\"",
-  "source": "works"
- },
- {
-  "date": "2020-05-01",
-  "kind": "release",
-  "ja": "1st collab album 「Collab Works 01」をリリース",
-  "en": "1st collab album \"Collab Works 01\" is released",
-  "source": "works"
- },
- {
-  "date": "2020-04-25",
-  "kind": "feature",
-  "ja": "コンピレーションアルバム「Pterodactyl Squad - ひきこもり・Hikikomori」に「J-Pop Is Ready For Love (GB 2step Ver)」で参加",
-  "en": "Participates in compilation album \"Pterodactyl Squad - Hikikomori\" with \"J-Pop Is Ready For Love (GB 2step Ver)\"",
-  "source": "works"
- },
- {
-  "date": "2020-04-01",
-  "kind": "feature",
-  "ja": "Dochakuso Recordsのコンピレーションアルバム「FOOTCORE COMPILATION 2」に「LSDj v8_2_2 Bコマンドテスト」で参加",
-  "en": "Participates in Dochakuso Records's compilation album \"FOOTCORE COMPILATION 2\" with \"LSDj v8_2_2 B command test\"",
-  "source": "works"
- },
- {
-  "date": "2020-03-20",
-  "kind": "release",
-  "ja": "1st album 「B (Albert comes over to me)」をリリース",
-  "en": "1st album \"B (Albert comes over to me)\" is released",
-  "source": "works"
- },
- {
-  "date": "2020-01-25",
-  "kind": "feature",
-  "ja": "コンピレーションアルバム「ESC TRAX 5th Anniversary」に「Caravan Boomer Track (素YM2413 TV DEMO ver)」で参加",
-  "en": "Participated in compilation album \"ESC TRAX 5th Anniversary\" with \"Caravan Boomer Track (素YM2413 TV DEMO ver)\"",
-  "source": "works"
- },
- {
-  "date": "2019-09-20",
-  "kind": "other",
-  "ja": "自主レーベル「TBKgao」を設立",
-  "en": "Establish own label \"TBKgao\"",
-  "source": "works"
- },
- {
-  "date": "2019-08-13",
-  "kind": "feature",
-  "ja": "KlirreさんのEP「Phlox」に\t「tobokegao feat. Klirre - 船・宇宙・ユンカース・ユモ」で参加",
-  "en": "Participated in Klirre's EP \"Phlox\" with \"tobokegao feat. Klirre - 船・宇宙・ユンカース・ユモ\"",
-  "source": "works"
- },
- {
-  "date": "2019-07-05",
-  "kind": "other",
-  "ja": "MSX2ソフト「キャラバンブーマー」にbgmを提供",
-  "en": "Provided bgm for MSX2 software \"Caravan Boomer",
-  "source": "works"
- },
- {
-  "date": "2019-03-03",
-  "kind": "feature",
-  "ja": "しのりゅーさん主催の「光​の​チ​ッ​プ​チ​ュ​ー​ン​VS​闇​の​チ​ッ​プ​チ​ュ​ー​ン 対​決​コ​ン​ピ​レ​ー​シ​ョ​ン」の-Light Side-に「Sunshine, Sunrise, Sunset」で参加",
-  "en": "Participated in \"Sunshine, Sunrise, Sunset\" for -Light Side- of \"Chiptune of Light vs Chiptune of Darkness\" hosted by Sinoryu",
-  "source": "works"
- },
- {
-  "date": "2018-02-09",
-  "kind": "feature",
-  "ja": "OMOIDE LABEL × Bytedoll Records 企画の「Shibuya-Kei Chiptune Cover Compilation」 に「TWEEDEES - Baby, Baby(tobokegao Gameboy Cover)」で参加",
-  "en": "Participated in \"Shibuya-Kei Chiptune Cover Compilation\" by OMOIDE LABEL x Bytedoll Records with \"TWEEDEES - Baby, Baby (tobokegao Gameboy Cover)\"",
-  "source": "works"
- },
- {
-  "date": "2017-12-27",
-  "kind": "feature",
-  "ja": "地獄でなぜサグい 企画、頒布するCD一枚一枚に油をランダムに飛ばした結果、聞こえ方が一枚一枚異なる全て一点もののコンピ「reversible chance operation 」 に「Gameboy Noise Jam 002 (Circuit Bent)」 で参加",
-  "en": "Participated in 地獄でなぜサグい's project \"Gameboy Noise Jam 002 (Circuit Bent)\" in the compilation \"reversible chance operation\", which is a one-of-a-kind compilation with different sound effects as a result of randomly skipping oil on each CD",
-  "source": "works"
- },
- {
-  "date": "2017-09-16",
-  "kind": "live",
-  "ja": "「Square Sounds Tokyo 2017」に参加",
-  "en": "Participated in \"Square Sounds Tokyo 2017\"",
-  "source": "works"
- },
- {
-  "date": "2017-09-15",
-  "kind": "feature",
-  "ja": "Participated in Ange;art's EP \"Chocolat EP\" released from OMOIDE LABEL with the first song \"intro\"",
-  "en": "Participated in Ange;art's EP \"Chocolat EP\" released from OMOIDE LABEL with the first song \"intro\"",
-  "source": "works"
- },
- {
-  "date": "2017-08-11",
-  "kind": "feature",
-  "ja": "ああ…翡翠茶漬け…プロデュースのピコピココンピレーション「Chippin’ Party #02」 に「BMX Matatabi Grand Prix Theme BGM (2 Loop Mix)」 で参加",
-  "en": "Participated in the pico-pico compilation \"Chippin' Party #02\" produced by ああ…翡翠茶漬け… with \"BMX Matatabi Grand Prix Theme BGM (2 Loop Mix)\"",
-  "source": "works"
- },
- {
-  "date": "2017-05-29",
-  "kind": "live",
-  "ja": "「Pico*2 Magic Canvas!」に参加",
-  "en": "Participated in \"Pico*2 Magic Canvas!\"",
-  "source": "works"
- },
- {
-  "date": "2017-05-11",
-  "kind": "feature",
-  "ja": "Relay Bros企画の「Blaster Master」 に参加",
-  "en": "Participated in \"Blaster Master\" by Relay Bros",
-  "source": "works"
- },
- {
-  "date": "2017-03-27",
-  "kind": "feature",
-  "ja": "Cheapbeats からreleaseされたalbum「Cheapbeats x Cheapbeats VOL01」に The Chunderfins によるCover「Tobokegao - Blueberry Pie (The Chunderfins Cover)」が収録されました",
-  "en": "The Chunderfins cover of \"Tobokegao - Blueberry Pie (The Chunderfins Cover)\" was included in the album \"Cheapbeats x Cheapbeats VOL01\" released by Cheapbeats",
-  "source": "works"
- },
- {
-  "date": "2016-12-18",
-  "kind": "live",
-  "ja": "「ゆるちゅーんらうんじ」に参加",
-  "en": "Participated in (LIVE) \"Yuru-Tune-Lounge\"",
-  "source": "works"
- },
- {
-  "date": "2016-11-11",
-  "kind": "feature",
-  "ja": "OMOIDE LABELからreleaseされたKouki IshさんのEP「OMOIDE HOUSE」に1曲目「OMOIDE HOUSE (tobokegao 2stepish chiptune remix)」で参加",
-  "en": "Participated in Kouki Ish's EP \"OMOIDE HOUSE\" released from OMOIDE LABEL with the first track \"OMOIDE HOUSE (tobokegao 2stepish chiptune remix)\"",
-  "source": "works"
- },
- {
-  "date": "2016-10-30",
-  "kind": "feature",
-  "ja": "musiclap からreleaseされた「シャイニング オリュンポス」に14曲目「ウォータースライダー」で参加",
-  "en": "Participated in \"シャイニング オリュンポス\" released by musiclap with the track \"ウォータースライダー\" on track 14",
-  "source": "works"
- },
- {
-  "date": "2016-10-22",
-  "kind": "live",
-  "ja": "「トゥナイト通信」に参加",
-  "en": "Participated in \"トゥナイト通信\"",
-  "source": "works"
- },
- {
-  "date": "2016-10-15",
-  "kind": "live",
-  "ja": "「Technique Vol.69」に参加",
-  "en": "Participated in \"Technique Vol.69\"",
-  "source": "works"
- },
- {
-  "date": "2016-07-20",
-  "kind": "feature",
-  "ja": "Pterodactyl Squadからreleaseされた「Weezer Tribute album Weezer - The Second 8-bit Album」に11曲目「Homely Girl」で参加",
-  "en": "Participated in \"Weezer Tribute album Weezer - The Second 8-bit Album\" released by Pterodactyl Squad with the track 11 \"Homely Girl\".",
-  "source": "works"
- },
- {
-  "date": "2016-06-25",
-  "kind": "live",
-  "ja": "「Lo-Bit Freedom Ver.4」に参加",
-  "en": "「Lo-Bit Freedom Ver.4」に参加",
-  "source": "works"
- },
- {
-  "date": "2016-05-04",
-  "kind": "other",
-  "ja": "Cheapbeatsから1st mini album「Picnic」をrelease",
-  "en": "First album \"Picnic\" released from Cheapbeats",
-  "source": "works"
- },
- {
-  "date": "2016-04-01",
-  "kind": "feature",
-  "ja": "MADMILKY RECORDSからreleaseされたSkyboxさんのEP「Stardust EP」に2曲目「æther (feat. Tobokegao)」で参加",
-  "en": "Participated in Skybox's EP \"Stardust EP\" released from MADMILKY RECORDS with the track 2 \"æther (feat. Tobokegao)\"",
-  "source": "works"
- },
- {
-  "date": "2016-03-05",
-  "kind": "other",
-  "ja": "ESC TRAXから1st EP「Wave Chords EP」をrelease",
-  "en": "First EP \"Wave Chords EP\" released from ESC TRAX.",
-  "source": "works"
- },
- {
-  "date": "2016-01-15",
-  "kind": "feature",
-  "ja": "OMOIDE LABELからreleaseされたHaritoさんのalbum「Trash Toys Dream」に1曲「Trash toys dream (to6okegao’s goodnight chiptune ver)」で参加",
-  "en": "Participated in the track 1 \"Trash toys dream (to6okegao's goodnight chiptune ver)\" on Harito's album \"Trash Toys Dream\" released from OMOIDE LABEL",
-  "source": "works"
- },
- {
-  "date": "2015-07-17",
-  "kind": "feature",
-  "ja": "ああああさん企画の「デデデ大王のテーマをまったり楽しく編曲リレー！」に参加",
-  "en": "Participated in AAAA's project \"デデデ大王のテーマをまったり楽しく編曲リレー！\"",
-  "source": "works"
- },
- {
-  "date": "2015-05-05",
-  "kind": "feature",
-  "ja": "Electric Yakuzaさんのsingle 「魔法の戦闘少女: Splendr」に5曲目「Splendr (Bitpop Remix)」で参加",
-  "en": "Participated in Electric Yakuza's single \"魔法の戦闘少女: Splendr\" with the track 5 \"Splendr (Bitpop Remix)\"",
-  "source": "works"
- },
- {
-  "date": "2015-04-26",
-  "kind": "feature",
-  "ja": "胸毛レコーズからreleaseされた古町MOIさんのmini album「何奴砂漠は井原美知」に7曲目「ハピイバスデ とぼけがお 8bit remix」で参加",
-  "en": "Participated in Furumachi MOI's mini album \"何奴砂漠は井原美知\" released by 胸毛レコーズ with the track 7 \"ハピイバスデ とぼけがお 8bit remix\"",
-  "source": "works"
- },
- {
-  "date": "2014-12-20",
-  "kind": "feature",
-  "ja": "コンピレーションアルバム「Merry Chipmas 2014」に8曲目「サンタクロース・アリガト (Santa Claus Arigato) 」で参加",
-  "en": "Participated in Compilation album \"Merry Chipmas 2014\" with the track 8 \"サンタクロース・アリガト(Santa Claus Arigato)\".",
-  "source": "works"
- },
- {
-  "date": "2014-09-26",
-  "kind": "feature",
-  "ja": "コンピレーションアルバム「CheapBeats = WIN」に6曲目「矩形波ちゃんの大冒険 」で参加",
-  "en": "Participated in the Compilation album \"CheapBeats = WIN\" with the track 6 \"矩形波ちゃんの大冒険\"",
-  "source": "works"
- },
- {
-  "date": "2014-06-01",
-  "kind": "other",
-  "ja": "LSDjを始める",
-  "en": "Started LSDj",
-  "source": "works"
- }
+  {
+    "date": "2024-09-10",
+    "kind": "feature",
+    "ja": "ATARI / WayForward 制作の Nintendo Switch 用ゲーム「YARS RISING」に楽曲「Nouveau Monde」を提供（歌唱・主旋律作曲・作詞）",
+    "en": "Contributed \"Nouveau Monde\" to YARS RISING (ATARI / WayForward, Nintendo Switch): vocals, main melody and lyrics",
+    "source": "about",
+    "links": [
+      {
+        "source": "web",
+        "url": "https://store.steampowered.com/app/3226170/The_Sound_of_Yars_Rising__Official_Soundtrack/"
+      },
+      {
+        "source": "spotify",
+        "url": "https://open.spotify.com/album/5ZmrKAzZpWlXYm9P44qkHX"
+      },
+      {
+        "source": "web",
+        "url": "https://www.nintendo.com/us/store/products/yars-rising-switch/"
+      }
+    ]
+  },
+  {
+    "date": "2023-02-25",
+    "kind": "live",
+    "ja": "「TOBOX Release Party in Sapporo」に参加",
+    "en": "Participated in \"TOBOX Release Party in Sapporo\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "web",
+        "url": "https://twipla.jp/events/542886"
+      },
+      {
+        "source": "web",
+        "url": "/post/tobox-release-party/"
+      }
+    ]
+  },
+  {
+    "date": "2023-02-18",
+    "kind": "live",
+    "ja": "「TOBOX Release Party in Tokyo」に参加",
+    "en": "Participated in \"TOBOX Release Party in Tokyo\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "web",
+        "url": "https://twipla.jp/events/542883"
+      },
+      {
+        "source": "web",
+        "url": "/post/tobox-release-party/"
+      }
+    ]
+  },
+  {
+    "date": "2022-10-30",
+    "kind": "release",
+    "ja": "3st album「TOBOX」をリリース",
+    "en": "3rd album \"TOBOX\" is released",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com/album/tobox"
+      },
+      {
+        "source": "apple",
+        "url": "https://music.apple.com/jp/album/tobox/1651746158"
+      }
+    ]
+  },
+  {
+    "date": "2022-10-07",
+    "kind": "feature",
+    "ja": "TBKgaoからreleaseされたコンピレーションアルバム「PURE MIDI Volume 1」に14曲目「PURE」で参加",
+    "en": "participate in \"PURE MIDI Volume 1\" released by TBKgao with the track \"PURE\" on track 14",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com/album/pure-midi-volume-1"
+      }
+    ]
+  },
+  {
+    "date": "2022-08-17",
+    "kind": "release",
+    "ja": "4th single 「やるきがでないときのうた」をリリース",
+    "en": "4th single \"Yaruki Ga Denai Toki No Uta\" is released",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com/track/yaruki-ga-denai-toki-no-uta"
+      }
+    ]
+  },
+  {
+    "date": "2022-05-06",
+    "kind": "release",
+    "ja": "4th EP 「Scythe - そんな日もあるよね (Tobokegao Vocal Cover) 」をリリース",
+    "en": "4th EP \"Scythe - Sonna Hi Mo Aru Yone (Tobokegao Vocal Cover)\" is released",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com/album/scythe-sonna-hi-mo-aru-yone-tobokegao-vocal-cover-ep"
+      }
+    ]
+  },
+  {
+    "date": "2022-04-02",
+    "kind": "feature",
+    "ja": "「RESOFORCE - Rivals of Aether: RESONANT MIXES 3」に「Elusive Master of Toxin (Tobokegao M8 Remix)」で参加",
+    "en": "Participate in \"RESOFORCE - Rivals of Aether: RESONANT MIXES 3\" with \"Elusive Master of Toxin (Tobokegao M8 Remix)\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://resoforce.bandcamp.com/album/rivals-of-aether-resonant-mixes-3"
+      }
+    ]
+  },
+  {
+    "date": "2022-03-28",
+    "kind": "release",
+    "ja": "1st Live album 「20220326 Chipfest Cyberspace 15 LIVE」をリリース",
+    "en": "1st Live album \"20220326 Chipfest Cyberspace 15 LIVE\" is released",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com/album/20220326-chipfest-cyberspace-15-live"
+      }
+    ]
+  },
+  {
+    "date": "2022-03-26",
+    "kind": "live",
+    "ja": "「CHIPFEST CYBERSPACE 15」に参加",
+    "en": "Participated in \"CHIPFEST CYBERSPACE 15\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/playlist?list=PL_2fr4Tahm58Qcd2tNSl75ou8FXHeg6C4"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com/album/20220326-chipfest-cyberspace-15-live"
+      }
+    ]
+  },
+  {
+    "date": "2022-03-04",
+    "kind": "release",
+    "ja": "3rd EP 「DA​-​LA​-​LA (Vocal Version)」をリリース",
+    "en": "3rd EP \"DA-LA-LA (Vocal Version)\" is released",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com/album/da-la-la-vocal-version-ep"
+      }
+    ]
+  },
+  {
+    "date": "2022-02-04",
+    "kind": "release",
+    "ja": "2nd EP 「孤独なフルーツ(Vocal Version)」をリリース",
+    "en": "2nd EP \"Kodoku Na Fruits (Vocal Version)\" is released",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com/album/kodoku-na-fruits-vocal-version-ep"
+      }
+    ]
+  },
+  {
+    "date": "2021-11-24",
+    "kind": "feature",
+    "ja": "「MUTRON - Future Sushi」に「MUTRON - Future Sushi (Tobokegao FM Remix)」で参加",
+    "en": "Participate in \"MUTRON - Future Sushi\" with \"MUTRON - Future Sushi (Tobokegao FM Remix)\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://codona.bandcamp.com/album/future-sushi"
+      },
+      {
+        "source": "spotify",
+        "url": "https://open.spotify.com/album/4B0iCXmJOCL7lOWGnL5eWP"
+      }
+    ]
+  },
+  {
+    "date": "2021-08-06",
+    "kind": "release",
+    "ja": "3st single「黄泉で足踏み(Vocal Version)」をリリース",
+    "en": "3rd single \"Yomi De Ashibumi (Vocal Version)\" is released",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com/album/yomi-de-ashibumi-vocal-version"
+      },
+      {
+        "source": "apple",
+        "url": "https://music.apple.com/jp/album/yomi-de-ashibumi-single/1580282960"
+      }
+    ]
+  },
+  {
+    "date": "2021-04-02",
+    "kind": "feature",
+    "ja": "「RESOFORCE - Rivals of Aether: RESONANT MIXES 2」に「Tetherball Versus (Tobokegao GB Remix)」で参加",
+    "en": "Participate in \"RESOFORCE - Rivals of Aether: RESONANT MIXES 2\" with \"Tetherball Versus (Tobokegao GB Remix)\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://resoforce.bandcamp.com/album/rivals-of-aether-resonant-mixes-2"
+      }
+    ]
+  },
+  {
+    "date": "2021-01-17",
+    "kind": "other",
+    "ja": "447 Records所属のバグによってゲーム世界から飛び出したVsinger、Lily lemonade Moneのトーク中bgmを提供",
+    "en": "Provided the bgm during the talk of Lily lemonade Mone, a Vsinger who jumped out of the game world by a bug belonging to 447 Records.",
+    "source": "works",
+    "links": [
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/channel/UC3WcNQ2BHeH9HB2umAMJtdw"
+      }
+    ]
+  },
+  {
+    "date": "2020-12-28",
+    "kind": "live",
+    "ja": "「Once Super Portable」に参加",
+    "en": "Participated in \"Once Super Portable\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=rq5z4ypSNZw"
+      }
+    ]
+  },
+  {
+    "date": "2020-12-04",
+    "kind": "release",
+    "ja": "2st album「Room To Room」をリリース",
+    "en": "2nd album \"Room To Room\" is released.",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com/album/room-to-room"
+      },
+      {
+        "source": "apple",
+        "url": "https://music.apple.com/jp/album/room-to-room/1546748346"
+      }
+    ]
+  },
+  {
+    "date": "2020-10-02",
+    "kind": "release",
+    "ja": "1st EP「SE Music EP」をリリース",
+    "en": "1st EP \"SE Music EP\" is released",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com/album/se-music-ep"
+      },
+      {
+        "source": "apple",
+        "url": "https://music.apple.com/jp/album/se-music-ep/1546744903"
+      }
+    ]
+  },
+  {
+    "date": "2020-10-02",
+    "kind": "release",
+    "ja": "2st single「Being Rusty (Tanashii Mainichi)」をリリース",
+    "en": "2nd single \"Being Rusty (Tanashii Mainichi)\" is released",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com/album/being-rusty-tanashii-mainichi"
+      },
+      {
+        "source": "niconico",
+        "url": "https://www.nicovideo.jp/watch/sm37609199"
+      },
+      {
+        "source": "apple",
+        "url": "https://music.apple.com/jp/album/being-rusty-single/1546743248"
+      }
+    ]
+  },
+  {
+    "date": "2020-08-30",
+    "kind": "live",
+    "ja": "「Micromusic Italy Sunday Jam」に参加",
+    "en": "Participated in \"Micromusic Italy Sunday Jam\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/gameboy-lsdj-8bit-girlpop-cover-wip-collection-micromusic-italy-sunday-jam"
+      }
+    ]
+  },
+  {
+    "date": "2020-08-07",
+    "kind": "release",
+    "ja": "1st single「○○○○」をリリース",
+    "en": "1st single \"○○○○\" is released",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com/album/-"
+      }
+    ]
+  },
+  {
+    "date": "2020-07-13",
+    "kind": "live",
+    "ja": "「Metazoa」に参加",
+    "en": "Participated in \"Metazoa\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1278175790073442306"
+      }
+    ]
+  },
+  {
+    "date": "2020-06-19",
+    "kind": "release",
+    "ja": "1st mini albumのDeluxe版「Picnic (Deluxe Edition)」をリリース",
+    "en": "1st mini album Deluxe Edition \"Picnic (Deluxe Edition)\" is released",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com/album/picnic-deluxe-edition"
+      },
+      {
+        "source": "apple",
+        "url": "https://music.apple.com/jp/album/picnic-deluxe-edition/1523875938"
+      }
+    ]
+  },
+  {
+    "date": "2020-06-05",
+    "kind": "live",
+    "ja": "「ISO CHIP 2」に参加",
+    "en": "Participated in \"ISO CHIP 2\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=FUtxuwwFmqI"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/live-video-tobokegao-iso-chip-2"
+      }
+    ]
+  },
+  {
+    "date": "2020-05-01",
+    "kind": "release",
+    "ja": "1st collab album 「Collab Works 01」をリリース",
+    "en": "1st collab album \"Collab Works 01\" is released",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com/album/collab-works-01"
+      }
+    ]
+  },
+  {
+    "date": "2020-04-25",
+    "kind": "feature",
+    "ja": "コンピレーションアルバム「Pterodactyl Squad - ひきこもり・Hikikomori」に「J-Pop Is Ready For Love (GB 2step Ver)」で参加",
+    "en": "Participates in compilation album \"Pterodactyl Squad - Hikikomori\" with \"J-Pop Is Ready For Love (GB 2step Ver)\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://ptesquad.bandcamp.com/album/hikikomori"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/j-pop-is-ready-for-love-gb-2step-ver-pte077-pterodactyl-squad-compilation-hikikomori"
+      }
+    ]
+  },
+  {
+    "date": "2020-04-01",
+    "kind": "feature",
+    "ja": "Dochakuso Recordsのコンピレーションアルバム「FOOTCORE COMPILATION 2」に「LSDj v8_2_2 Bコマンドテスト」で参加",
+    "en": "Participates in Dochakuso Records's compilation album \"FOOTCORE COMPILATION 2\" with \"LSDj v8_2_2 B command test\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=ZmmAqMPYygc"
+      },
+      {
+        "source": "web",
+        "url": "https://vgmdb.net/album/139711"
+      }
+    ]
+  },
+  {
+    "date": "2020-03-20",
+    "kind": "release",
+    "ja": "1st album 「B (Albert comes over to me)」をリリース",
+    "en": "1st album \"B (Albert comes over to me)\" is released",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com/album/b-albert-comes-over-to-me"
+      }
+    ]
+  },
+  {
+    "date": "2020-01-25",
+    "kind": "feature",
+    "ja": "コンピレーションアルバム「ESC TRAX 5th Anniversary」に「Caravan Boomer Track (素YM2413 TV DEMO ver)」で参加",
+    "en": "Participated in compilation album \"ESC TRAX 5th Anniversary\" with \"Caravan Boomer Track (素YM2413 TV DEMO ver)\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://esctrax.bandcamp.com/album/esc-012-esc-trax-5th-anniversary"
+      }
+    ]
+  },
+  {
+    "date": "2019-09-20",
+    "kind": "other",
+    "ja": "自主レーベル「TBKgao」を設立",
+    "en": "Establish own label \"TBKgao\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com"
+      }
+    ]
+  },
+  {
+    "date": "2019-08-13",
+    "kind": "feature",
+    "ja": "KlirreさんのEP「Phlox」に\t「tobokegao feat. Klirre - 船・宇宙・ユンカース・ユモ」で参加",
+    "en": "Participated in Klirre's EP \"Phlox\" with \"tobokegao feat. Klirre - 船・宇宙・ユンカース・ユモ\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://klirre.bandcamp.com/album/phlox"
+      }
+    ]
+  },
+  {
+    "date": "2019-07-05",
+    "kind": "other",
+    "ja": "MSX2ソフト「キャラバンブーマー」にbgmを提供",
+    "en": "Provided bgm for MSX2 software \"Caravan Boomer",
+    "source": "works",
+    "links": [
+      {
+        "source": "web",
+        "url": "https://sweeprecord.com/srin-1177/"
+      },
+      {
+        "source": "web",
+        "url": "https://akiba-pc.watch.impress.co.jp/docs/wakiba/find/1211090.html"
+      }
+    ]
+  },
+  {
+    "date": "2019-03-03",
+    "kind": "feature",
+    "ja": "しのりゅーさん主催の「光​の​チ​ッ​プ​チ​ュ​ー​ン​VS​闇​の​チ​ッ​プ​チ​ュ​ー​ン 対​決​コ​ン​ピ​レ​ー​シ​ョ​ン」の-Light Side-に「Sunshine, Sunrise, Sunset」で参加",
+    "en": "Participated in \"Sunshine, Sunrise, Sunset\" for -Light Side- of \"Chiptune of Light vs Chiptune of Darkness\" hosted by Sinoryu",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://novtos.bandcamp.com/album/vs-light-side"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/sunshine-sunrise-sunset_chipvs_light_dark-compilation"
+      }
+    ]
+  },
+  {
+    "date": "2018-02-09",
+    "kind": "feature",
+    "ja": "OMOIDE LABEL × Bytedoll Records 企画の「Shibuya-Kei Chiptune Cover Compilation」 に「TWEEDEES - Baby, Baby(tobokegao Gameboy Cover)」で参加",
+    "en": "Participated in \"Shibuya-Kei Chiptune Cover Compilation\" by OMOIDE LABEL x Bytedoll Records with \"TWEEDEES - Baby, Baby (tobokegao Gameboy Cover)\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://omoidelabel.bandcamp.com/album/--23"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/omoidelabel/sets/5g4eiriyrnrj"
+      }
+    ]
+  },
+  {
+    "date": "2017-12-27",
+    "kind": "feature",
+    "ja": "地獄でなぜサグい 企画、頒布するCD一枚一枚に油をランダムに飛ばした結果、聞こえ方が一枚一枚異なる全て一点もののコンピ「reversible chance operation 」 に「Gameboy Noise Jam 002 (Circuit Bent)」 で参加",
+    "en": "Participated in 地獄でなぜサグい's project \"Gameboy Noise Jam 002 (Circuit Bent)\" in the compilation \"reversible chance operation\", which is a one-of-a-kind compilation with different sound effects as a result of randomly skipping oil on each CD",
+    "source": "works",
+    "links": [
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/user-971214982/02-gameboy-noise-jam-002-circuit-bent"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/945972752321716224"
+      }
+    ]
+  },
+  {
+    "date": "2017-09-16",
+    "kind": "live",
+    "ja": "「Square Sounds Tokyo 2017」に参加",
+    "en": "Participated in \"Square Sounds Tokyo 2017\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/square-sounds-tokyo-2017-tobokegao-mix-out-now"
+      },
+      {
+        "source": "web",
+        "url": "https://www.facebook.com/events/koenji-high/square-sounds-tokyo-2017/1345018815584436/"
+      }
+    ]
+  },
+  {
+    "date": "2017-09-15",
+    "kind": "feature",
+    "ja": "Participated in Ange;art's EP \"Chocolat EP\" released from OMOIDE LABEL with the first song \"intro\"",
+    "en": "Participated in Ange;art's EP \"Chocolat EP\" released from OMOIDE LABEL with the first song \"intro\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://omoidelabel.bandcamp.com/album/chocolat-ep"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://omoidelabel.bandcamp.com/track/intro-by-to6okegao"
+      }
+    ]
+  },
+  {
+    "date": "2017-08-11",
+    "kind": "feature",
+    "ja": "ああ…翡翠茶漬け…プロデュースのピコピココンピレーション「Chippin’ Party #02」 に「BMX Matatabi Grand Prix Theme BGM (2 Loop Mix)」 で参加",
+    "en": "Participated in the pico-pico compilation \"Chippin' Party #02\" produced by ああ…翡翠茶漬け… with \"BMX Matatabi Grand Prix Theme BGM (2 Loop Mix)\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/hino-isuka/cpp2xfd"
+      },
+      {
+        "source": "web",
+        "url": "https://www.discogs.com/release/10849933-Various-Chippin-Party-02"
+      }
+    ]
+  },
+  {
+    "date": "2017-05-28",
+    "kind": "live",
+    "ja": "「Pico*2 Magic Canvas!」に出演予定だったが当日は行けず、ノイズの演奏データを sdhizumi さんに代わりに演奏してもらった",
+    "en": "Booked for \"Pico*2 Magic Canvas!\" but couldn't be there; sdhizumi played my noise performance data in my place",
+    "source": "works",
+    "links": [
+      {
+        "source": "web",
+        "url": "https://twvt.me/MAGICAN01"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/868948457586806784"
+      }
+    ]
+  },
+  {
+    "date": "2017-05-11",
+    "kind": "feature",
+    "ja": "Relay Bros企画の「Blaster Master」 に参加",
+    "en": "Participated in \"Blaster Master\" by Relay Bros",
+    "source": "works",
+    "links": [
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/relaybros/blaster-master"
+      }
+    ]
+  },
+  {
+    "date": "2017-03-27",
+    "kind": "feature",
+    "ja": "Cheapbeats からreleaseされたalbum「Cheapbeats x Cheapbeats VOL01」に The Chunderfins によるCover「Tobokegao - Blueberry Pie (The Chunderfins Cover)」が収録されました",
+    "en": "The Chunderfins cover of \"Tobokegao - Blueberry Pie (The Chunderfins Cover)\" was included in the album \"Cheapbeats x Cheapbeats VOL01\" released by Cheapbeats",
+    "source": "works",
+    "links": [
+      {
+        "source": "spotify",
+        "url": "https://open.spotify.com/album/3lVD78zO6yuBKMOrZNChbV"
+      }
+    ]
+  },
+  {
+    "date": "2016-12-18",
+    "kind": "live",
+    "ja": "「ゆるちゅーんらうんじ」に参加",
+    "en": "Participated in (LIVE) \"Yuru-Tune-Lounge\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/sdhizumi/status/805412110314311682"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/810514139114127360"
+      }
+    ]
+  },
+  {
+    "date": "2016-11-11",
+    "kind": "feature",
+    "ja": "OMOIDE LABELからreleaseされたKouki IshさんのEP「OMOIDE HOUSE」に1曲目「OMOIDE HOUSE (tobokegao 2stepish chiptune remix)」で参加",
+    "en": "Participated in Kouki Ish's EP \"OMOIDE HOUSE\" released from OMOIDE LABEL with the first track \"OMOIDE HOUSE (tobokegao 2stepish chiptune remix)\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://omoidelabel.bandcamp.com/album/omoide-house"
+      }
+    ]
+  },
+  {
+    "date": "2016-10-30",
+    "kind": "feature",
+    "ja": "musiclap からreleaseされた「シャイニング オリュンポス」に14曲目「ウォータースライダー」で参加",
+    "en": "Participated in \"シャイニング オリュンポス\" released by musiclap with the track \"ウォータースライダー\" on track 14",
+    "source": "works",
+    "links": [
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/musiclap/xfd"
+      }
+    ]
+  },
+  {
+    "date": "2016-10-22",
+    "kind": "live",
+    "ja": "「トゥナイト通信」に参加",
+    "en": "Participated in \"トゥナイト通信\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/789854240608890880"
+      }
+    ]
+  },
+  {
+    "date": "2016-10-15",
+    "kind": "live",
+    "ja": "「Technique Vol.69」に参加",
+    "en": "Participated in \"Technique Vol.69\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/787244140526305281"
+      }
+    ]
+  },
+  {
+    "date": "2016-07-20",
+    "kind": "feature",
+    "ja": "Pterodactyl Squadからreleaseされた「Weezer Tribute album Weezer - The Second 8-bit Album」に11曲目「Homely Girl」で参加",
+    "en": "Participated in \"Weezer Tribute album Weezer - The Second 8-bit Album\" released by Pterodactyl Squad with the track 11 \"Homely Girl\".",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://ptesquad.bandcamp.com/album/weezer-the-second-8-bit-album"
+      }
+    ]
+  },
+  {
+    "date": "2016-06-25",
+    "kind": "live",
+    "ja": "「Lo-Bit Freedom Ver.4」に参加",
+    "en": "「Lo-Bit Freedom Ver.4」に参加",
+    "source": "works",
+    "links": [
+      {
+        "source": "web",
+        "url": "https://lo-bit-freedom.connpass.com/event/33389/"
+      }
+    ]
+  },
+  {
+    "date": "2016-05-04",
+    "kind": "other",
+    "ja": "Cheapbeatsから1st mini album「Picnic」をrelease",
+    "en": "First album \"Picnic\" released from Cheapbeats",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com/album/picnic"
+      }
+    ]
+  },
+  {
+    "date": "2016-04-01",
+    "kind": "feature",
+    "ja": "MADMILKY RECORDSからreleaseされたSkyboxさんのEP「Stardust EP」に2曲目「æther (feat. Tobokegao)」で参加",
+    "en": "Participated in Skybox's EP \"Stardust EP\" released from MADMILKY RECORDS with the track 2 \"æther (feat. Tobokegao)\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/madmilky-records/sets/skybox-stardust-ep"
+      }
+    ]
+  },
+  {
+    "date": "2016-03-05",
+    "kind": "other",
+    "ja": "ESC TRAXから1st EP「Wave Chords EP」をrelease",
+    "en": "First EP \"Wave Chords EP\" released from ESC TRAX.",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://esctrax.bandcamp.com/album/esc-002-wave-chords-ep"
+      }
+    ]
+  },
+  {
+    "date": "2016-01-15",
+    "kind": "feature",
+    "ja": "OMOIDE LABELからreleaseされたHaritoさんのalbum「Trash Toys Dream」に1曲「Trash toys dream (to6okegao’s goodnight chiptune ver)」で参加",
+    "en": "Participated in the track 1 \"Trash toys dream (to6okegao's goodnight chiptune ver)\" on Harito's album \"Trash Toys Dream\" released from OMOIDE LABEL",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://omoidelabel.bandcamp.com/album/trash-toys-dream"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://omoidelabel.bandcamp.com/track/trash-toys-dream-to6okegao-s-goodnight-chiptune-ver"
+      }
+    ]
+  },
+  {
+    "date": "2015-07-17",
+    "kind": "feature",
+    "ja": "ああああさん企画の「デデデ大王のテーマをまったり楽しく編曲リレー！」に参加",
+    "en": "Participated in AAAA's project \"デデデ大王のテーマをまったり楽しく編曲リレー！\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/ricora/c0efcs9f5ldr"
+      }
+    ]
+  },
+  {
+    "date": "2015-05-05",
+    "kind": "feature",
+    "ja": "Electric Yakuzaさんのsingle 「魔法の戦闘少女: Splendr」に5曲目「Splendr (Bitpop Remix)」で参加",
+    "en": "Participated in Electric Yakuza's single \"魔法の戦闘少女: Splendr\" with the track 5 \"Splendr (Bitpop Remix)\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/electric-yakuza-splendr-tobokegao-bitpop-remix-1"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com/track/splendr-tobokegao-bitpop-remix-remaster"
+      }
+    ]
+  },
+  {
+    "date": "2015-04-26",
+    "kind": "feature",
+    "ja": "胸毛レコーズからreleaseされた古町MOIさんのmini album「何奴砂漠は井原美知」に7曲目「ハピイバスデ とぼけがお 8bit remix」で参加",
+    "en": "Participated in Furumachi MOI's mini album \"何奴砂漠は井原美知\" released by 胸毛レコーズ with the track 7 \"ハピイバスデ とぼけがお 8bit remix\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/hurumachimoi/eo7qbr7zusvo"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/moi-happy-birthday-8bit-lsdj-remix"
+      },
+      {
+        "source": "web",
+        "url": "https://munagerecords.tumblr.com/post/116532974936/mng025-moi-by"
+      }
+    ]
+  },
+  {
+    "date": "2014-12-20",
+    "kind": "feature",
+    "ja": "コンピレーションアルバム「Merry Chipmas 2014」に8曲目「サンタクロース・アリガト (Santa Claus Arigato) 」で参加",
+    "en": "Participated in Compilation album \"Merry Chipmas 2014\" with the track 8 \"サンタクロース・アリガト(Santa Claus Arigato)\".",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://ucollective.bandcamp.com/album/merry-chipmas-2014"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/santa-claus-arigato"
+      }
+    ]
+  },
+  {
+    "date": "2014-09-26",
+    "kind": "feature",
+    "ja": "コンピレーションアルバム「CheapBeats = WIN」に6曲目「矩形波ちゃんの大冒険 」で参加",
+    "en": "Participated in the Compilation album \"CheapBeats = WIN\" with the track 6 \"矩形波ちゃんの大冒険\"",
+    "source": "works",
+    "links": [
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=urYFx92cvrg"
+      }
+    ]
+  },
+  {
+    "date": "2014-06-01",
+    "kind": "other",
+    "ja": "LSDjを始める",
+    "en": "Started LSDj",
+    "source": "works"
+  }
 ]

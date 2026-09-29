@@ -1,4 +1,4 @@
-{{- /* One page per activity-log row (data/timeline.json, news.json, autolog.json), so each
+{{- /* One page per hand-written activity-log row (data/timeline.json, news.json), so each
    row of NEWS.LOG opens its own page at /news/<yyyymmdd>-<hash>/. The same rows and the
    same id are built in layouts/_partials/timeline.html. Articles (content/post) are
    pages already and are not repeated here. */ -}}
@@ -7,7 +7,8 @@
 {{- $rows := slice -}}
 {{- range hugo.Data.timeline }}{{ $rows = $rows | append . }}{{ end -}}
 {{- range hugo.Data.news }}{{ $rows = $rows | append . }}{{ end -}}
-{{- range hugo.Data.autolog }}{{ if not (in $manual .date) }}{{ $rows = $rows | append . }}{{ end }}{{ end -}}
+{{- /* feed rows (autolog.json) get no page: they only repeat the release, so the log row
+   opens the release itself (see _partials/timeline.html) */ -}}
 {{- range $rows -}}
   {{- $id := printf "%s-%s" (replace .date "-" "") (substr (md5 .ja) 0 6) -}}
   {{- $.AddPage (dict

@@ -1,6 +1,11 @@
-{{- /* Window title set into the double border. Context: dict "file" "id" "tag" (h1/h2) */ -}}
+{{- /* Window title set into the double border. Context: dict "file" "id" "tag" (h1/h2)
+   "toggle" (bool: a [-]/[+] box at the right end of the border folds the window up;
+   hidden until site.js wires it, so without scripts every window stays open) */ -}}
 {{- if eq .tag "h1" -}}
 <h1 class="win__title" id="{{ .id }}"><span>{{ .file }}</span></h1>
 {{- else -}}
 <h2 class="win__title" id="{{ .id }}"><span>{{ .file }}</span></h2>
+{{- end -}}
+{{- if .toggle -}}
+<button type="button" class="win__toggle" data-win="{{ .id }}" aria-expanded="true" aria-describedby="{{ .id }}" hidden><span class="vh">{{ partial "tt.html" "fold" }}</span></button>
 {{- end -}}

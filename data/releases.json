@@ -3,10 +3,14 @@
   "key": "あと数秒の逃避",
   "title": "あと数秒の逃避(feat. 月読アイ)",
   "artist": "Tobokegao",
-  "type": "song",
+  "type": "track",
   "date": "2026-08-25",
-  "image": "https://i.ytimg.com/vi/lrneussLfRI/mqdefault.jpg",
+  "image": "https://i1.sndcdn.com/artworks-hKXrVi2iN45QhGfu-Xhnfnw-t500x500.jpg",
   "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/a-few-more-seconds-of-escape"
+   },
    {
     "source": "niconico",
     "url": "https://www.nicovideo.jp/watch/sm46720404"
@@ -28,6 +32,20 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/track/nice-fruit-mellmell-x-pure-midi-x-voice-synthesis-arrange-compilation-preview"
+   }
+  ]
+ },
+ {
+  "key": "tobekontinuedvol25puremidiishmix",
+  "title": "To Be Kontinued vol.25 Pure MIDI-ish Mix",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2025-11-21",
+  "image": "https://i1.sndcdn.com/artworks-5TbuWyjVV3zJ0zn6-sR9Mrg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/to-be-kontinued-vol-25-pure"
    }
   ]
  },
@@ -69,7 +87,7 @@
   "artist": "Tobokegao",
   "type": "track",
   "date": "2025-06-22",
-  "image": "https://i1.sndcdn.com/artworks-EOCee89U6GartKRy-BQhKhg-t3000x3000.png",
+  "image": "https://i1.sndcdn.com/artworks-EOCee89U6GartKRy-BQhKhg-t500x500.png",
   "links": [
    {
     "source": "soundcloud",
@@ -97,7 +115,7 @@
   "artist": "Tobokegao",
   "type": "track",
   "date": "2025-05-16",
-  "image": "https://i1.sndcdn.com/artworks-zgJnsHKEZSSdTtrn-IS2kDg-t3000x3000.png",
+  "image": "https://i1.sndcdn.com/artworks-zgJnsHKEZSSdTtrn-IS2kDg-t500x500.png",
   "links": [
    {
     "source": "soundcloud",
@@ -155,10 +173,14 @@
   "key": "向き不向きのうた",
   "title": "向き不向きのうた (feat. 重音テトSV)",
   "artist": "Tobokegao",
-  "type": "song",
+  "type": "track",
   "date": "2025-02-23",
-  "image": "https://i.ytimg.com/vi/WaByp32oKAk/mqdefault.jpg",
+  "image": "https://i1.sndcdn.com/artworks-xIrqwJxNraoDDZ1B-1UQqzA-t500x500.jpg",
   "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/feat-sv"
+   },
    {
     "source": "niconico",
     "url": "https://www.nicovideo.jp/watch/sm44688211"
@@ -189,11 +211,25 @@
   "artist": "Tobokegao",
   "type": "track",
   "date": "2024-12-18",
-  "image": "https://i1.sndcdn.com/avatars-rSsBZpoxwIh3DbvH-to1LJw-original.jpg",
+  "image": "https://i1.sndcdn.com/avatars-rSsBZpoxwIh3DbvH-to1LJw-t500x500.jpg",
   "links": [
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/sasuke-haraguchi-igaku-gameboy"
+   }
+  ]
+ },
+ {
+  "key": "原口沙輔sasukeharaguchiイガクigakutobokegaogameboycover",
+  "title": "原口沙輔(Sasuke Haraguchi) - イガク(Igaku) (Tobokegao Gameboy Cover)",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2024-12-18",
+  "image": "https://i.ytimg.com/vi/VtT9YCqRykM/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=VtT9YCqRykM"
    }
   ]
  },
@@ -226,6 +262,20 @@
   ]
  },
  {
+  "key": "tobekontinuedvol12tobokegaoambientnoiselive",
+  "title": "To Be Kontinued vol.12 (Tobokegao ambient & noise live)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2024-10-18",
+  "image": "https://i1.sndcdn.com/artworks-UjmXMRU1z6IFFfvC-IGCaJg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/to-be-kontinued-vol-12"
+   }
+  ]
+ },
+ {
   "key": "bakagago",
   "title": "BAKA GA GO",
   "artist": "Tobokegao",
@@ -236,6 +286,10 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/track/baka-ga-go"
+   },
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/baka-ga-go"
    }
   ]
  },
@@ -264,6 +318,10 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/album/wedding-bell"
+   },
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/wedding-bell"
    }
   ]
  },
@@ -278,6 +336,24 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/album/okane-ga-tarinai-toki-no-uta"
+   },
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/okane-ga-tarinai-toki-no-uta"
+   }
+  ]
+ },
+ {
+  "key": "tobekontinuedvol9otogechiptune",
+  "title": "ToBeKontinued Vol.9 Otoge Chiptune",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2024-07-26",
+  "image": "https://i1.sndcdn.com/artworks-jXTFJNSQVpeLRleb-ZwLWTg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/to-be-kontinued-vol9-otoge-chiptune"
    }
   ]
  },
@@ -296,6 +372,34 @@
   ]
  },
  {
+  "key": "tobekontinuedvol8chiptunedigitalfusionvocaloidmix",
+  "title": "ToBeKontinued Vol.8 chiptune/digital fusion VOCALOID mix",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2024-06-22",
+  "image": "https://i1.sndcdn.com/artworks-eQ74Xl8DxOBwQlyh-u4z5sg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/tobekontinued-vol8-chiptunedigital-fusion-vocaloid-mix"
+   }
+  ]
+ },
+ {
+  "key": "tobekontinuedvol5tqjam特集",
+  "title": "ToBeKontinued Vol.5 (TQ-Jam特集)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2024-03-22",
+  "image": "https://i1.sndcdn.com/artworks-n1Afpzf6Eb1TsItf-2tdNMQ-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/tobekontinued-vol5-tq-jam"
+   }
+  ]
+ },
+ {
   "key": "sig",
   "title": "SIG (feat. Tobokegao)",
   "artist": "JAWZZ",
@@ -306,6 +410,76 @@
    {
     "source": "apple",
     "url": "https://music.apple.com/jp/album/sig-feat-tobokegao-single/1870409284"
+   }
+  ]
+ },
+ {
+  "key": "tobekontinuedvol4y2kvgmvibesjunglemix",
+  "title": "To Be Kontinued vol.4 (Y2K VGM Vibes Jungle Mix)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2024-02-16",
+  "image": "https://i1.sndcdn.com/artworks-y9IOU4vy1ch7gIyz-KGUYjw-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/to-be-kontinued-vol4-y2k-vgm-vibes-jungle-mix"
+   }
+  ]
+ },
+ {
+  "key": "tobekontinuedvol3",
+  "title": "To Be Kontinued Vol.3",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2024-01-25",
+  "image": "https://i1.sndcdn.com/artworks-K3VtNgzzX36BE3D9-HbO0xA-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/to-be-kontinued-vol3"
+   }
+  ]
+ },
+ {
+  "key": "y2kselecttheme",
+  "title": "Y2K select theme",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2024-01-22",
+  "image": "https://i1.sndcdn.com/artworks-21shlTSOyL9ouBYS-uxvd9Q-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/2024_tobokegao_weeklybeats"
+   }
+  ]
+ },
+ {
+  "key": "20231214tobekontinuedvolume02",
+  "title": "20231214 To Be Kontinued Volume 02",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2023-12-15",
+  "image": "https://i1.sndcdn.com/artworks-Io0bs5nwYTlNFlw3-O57p4w-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/20231214-to-be-kontinued-volume-02"
+   }
+  ]
+ },
+ {
+  "key": "20231116tobekontinuedvolume01",
+  "title": "20231116 To Be Kontinued Volume 01",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2023-11-16",
+  "image": "https://i1.sndcdn.com/artworks-AcNAKzBBeZ9x8aaB-uOongw-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/20231116-to-be-kontinue-volume-01"
    }
   ]
  },
@@ -324,6 +498,48 @@
   ]
  },
  {
+  "key": "puremidivolume2tester",
+  "title": "Pure MIDI Volume 2 (tester)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2023-10-12",
+  "image": "https://i1.sndcdn.com/artworks-hMcItDMIHFHSunLz-286DZg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/pure-midi-volume-2-tester"
+   }
+  ]
+ },
+ {
+  "key": "3xblastfortheloveoftaxtobokegaocover",
+  "title": "3xBlast - For The Love Of Tax! (Tobokegao Cover)",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2023-09-02",
+  "image": "https://i.ytimg.com/vi/uU7xQQrFEn0/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=uU7xQQrFEn0"
+   }
+  ]
+ },
+ {
+  "key": "coilこれでいいのだそれでいいのかtobokegaocover",
+  "title": "COIL - これでいいのだ/それでいいのか？ (Tobokegao Cover)",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2023-08-19",
+  "image": "https://i.ytimg.com/vi/Npt9pHfr8h4/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=Npt9pHfr8h4"
+   }
+  ]
+ },
+ {
   "key": "toursemifiction",
   "title": "tour (semi-fiction) (preview)",
   "artist": "もちうめ",
@@ -338,6 +554,108 @@
   ]
  },
  {
+  "key": "guitarvaderやわらかいtobokegaocover",
+  "title": "Guitar Vader - やわらかい (Tobokegao Cover)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2023-08-02",
+  "image": "https://i1.sndcdn.com/artworks-0qBj1TGQTi3DETOz-AI1pzQ-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/guitar-vader-tobokegao-cover"
+   },
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=hlTxbLKamuk"
+   }
+  ]
+ },
+ {
+  "key": "surfaceゴーイングmy上へtobokegaocover",
+  "title": "SURFACE - ゴーイング My 上へ (Tobokegao Cover)",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2023-06-11",
+  "image": "https://i.ytimg.com/vi/WP4F6Db_bOg/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=WP4F6Db_bOg"
+   }
+  ]
+ },
+ {
+  "key": "下川みくに2000expresstobokegaocover",
+  "title": "下川みくに   2000EXPRESS Tobokegao Cover",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2023-05-27",
+  "image": "https://i.ytimg.com/vi/cKE8lbuYsWc/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=cKE8lbuYsWc"
+   }
+  ]
+ },
+ {
+  "key": "グミヒトリジメtobokegaocover",
+  "title": "グミ - ヒトリジメ (Tobokegao Cover)",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2023-05-23",
+  "image": "https://i.ytimg.com/vi/JAN-6qRPkZA/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=JAN-6qRPkZA"
+   }
+  ]
+ },
+ {
+  "key": "長沢有起もう泣いてなんかいられないtobokegaocover",
+  "title": "長沢有起   もう泣いてなんかいられない Tobokegao Cover",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2023-05-16",
+  "image": "https://i.ytimg.com/vi/oNrYZ1t0frw/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=oNrYZ1t0frw"
+   }
+  ]
+ },
+ {
+  "key": "長沢有起ふたりでいたからtobokegaocover",
+  "title": "長沢有起 - ふたりでいたから (Tobokegao Cover)",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2023-05-15",
+  "image": "https://i.ytimg.com/vi/DyQsJWePcY4/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=DyQsJWePcY4"
+   }
+  ]
+ },
+ {
+  "key": "sasukepart2tobokegaocover",
+  "title": "SASUKE - Part. 2 (Tobokegao Cover)",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2023-05-12",
+  "image": "https://i.ytimg.com/vi/i-26qIObvfI/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=i-26qIObvfI"
+   }
+  ]
+ },
+ {
   "key": "事情を知らない転校生がグイグイくるedkitriココロネ8bitアレンジカラオケバージョン",
   "title": "事情を知らない転校生がグイグイくる。 ED 「Kitri - ココロネ」8bitアレンジ (カラオケバージョン)",
   "artist": "Tobokegao",
@@ -348,6 +666,34 @@
    {
     "source": "niconico",
     "url": "https://www.nicovideo.jp/watch/sm42205949"
+   }
+  ]
+ },
+ {
+  "key": "kitrikokoronetobokegaogameboyremixkaraokeversion",
+  "title": "Kitri - Kokorone (Tobokegao Gameboy Remix) Karaoke Version",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2023-05-10",
+  "image": "https://i.ytimg.com/vi/XMfE0ZXU23E/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=XMfE0ZXU23E"
+   }
+  ]
+ },
+ {
+  "key": "市井由理恋がしたかったtobokegaocover",
+  "title": "市井由理 - 恋がしたかった (Tobokegao Cover)",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2023-05-10",
+  "image": "https://i.ytimg.com/vi/ChIMWbC4KOY/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=ChIMWbC4KOY"
    }
   ]
  },
@@ -369,13 +715,147 @@
   "key": "kitriココロネtobokegaogameboyremix",
   "title": "Kitri - ココロネ (Tobokegao Gameboy Remix)",
   "artist": "Tobokegao",
-  "type": "song",
+  "type": "track",
   "date": "2023-05-09",
-  "image": "https://nicovideo.cdn.nimg.jp/thumbnails/42198829/42198829.92038885.L",
+  "image": "https://i1.sndcdn.com/artworks-MSWN4b7RrXmUKJAv-kIqWYw-t500x500.jpg",
   "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/kitri-kokorone-tobokegao-gameboy-remix"
+   },
    {
     "source": "niconico",
     "url": "https://www.nicovideo.jp/watch/sm42198829"
+   },
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=8uYv5fQwXsA"
+   }
+  ]
+ },
+ {
+  "key": "須賀響子lovetwolovetobokegaocover",
+  "title": "須賀響子 - LOVE, TWO LOVE(Tobokegao Cover)",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2023-05-08",
+  "image": "https://i.ytimg.com/vi/8QjuyUgzPrE/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=8QjuyUgzPrE"
+   }
+  ]
+ },
+ {
+  "key": "great3glassrootstobokegaocover",
+  "title": "GREAT 3 - Glass Roots (Tobokegao Cover)",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2023-05-06",
+  "image": "https://i.ytimg.com/vi/62esFH9KLSY/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=62esFH9KLSY"
+   }
+  ]
+ },
+ {
+  "key": "labelomoibygiantchessmentbk026",
+  "title": "[#TBKgao (label)] OMOI by Giant Chess Men [TBK-026]",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2023-05-05",
+  "image": "https://i1.sndcdn.com/artworks-OR7EBkAwR4I8myVF-4B1ZVw-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/tbkgao-label-omoi-by-giant-chess-men-tbk-026"
+   }
+  ]
+ },
+ {
+  "key": "labelp8sbynoteheadtbk025",
+  "title": "[#TBKgao (label)] P8's by Notehead [TBK-025]",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2023-05-05",
+  "image": "https://i1.sndcdn.com/artworks-twmiM1q1ckDynsNh-yusryA-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/tbkgao-label-p8s-by-notehead-tbk-025"
+   }
+  ]
+ },
+ {
+  "key": "girlpopmix20230430heypopcityavenue",
+  "title": "GiRLPOP Mix (20230430 HEY! POP CITY AVENUE)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2023-05-01",
+  "image": "https://i1.sndcdn.com/artworks-xa77xiPuH1mzM0tt-KwmvGw-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/girlpop-mix-20230430-hey-pop-city-avenue"
+   }
+  ]
+ },
+ {
+  "key": "片寄明人",
+  "title": "片寄明人 feat. Chocolat - Veranda (Tobokegao & Tobokegao-chan Cover)",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2023-04-28",
+  "image": "https://i.ytimg.com/vi/fDDzS2ir1MM/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=fDDzS2ir1MM"
+   }
+  ]
+ },
+ {
+  "key": "karaokeliveat20230416letsplaywithimpbox",
+  "title": "Karaoke Live at 20230416 Let's Play With Impbox",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2023-04-23",
+  "image": "https://i1.sndcdn.com/avatars-rSsBZpoxwIh3DbvH-to1LJw-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/karaoke-live-at-20230416-lets-play-with-impbox"
+   }
+  ]
+ },
+ {
+  "key": "cherylportermimematobokegaocover",
+  "title": "Cheryl Porter - Mimema (Tobokegao Cover)",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2023-04-13",
+  "image": "https://i.ytimg.com/vi/o4JuZQFt-iM/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=o4JuZQFt-iM"
+   }
+  ]
+ },
+ {
+  "key": "chiecokiss3tobokegaocover",
+  "title": "chieco - KISS³ (Tobokegao Cover)",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2023-04-10",
+  "image": "https://i.ytimg.com/vi/gUdLG1Vp-Lo/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=gUdLG1Vp-Lo"
    }
   ]
  },
@@ -394,6 +874,34 @@
   ]
  },
  {
+  "key": "塔もこtoumoco抱きしめたいよdakishimetaiyotobokegaocover",
+  "title": "塔もこ(Tou Moco) - 抱きしめたいよ(Dakishimetaiyo) (Tobokegao Cover)",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2023-04-06",
+  "image": "https://i.ytimg.com/vi/MU10px6O63c/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=MU10px6O63c"
+   }
+  ]
+ },
+ {
+  "key": "元田恵美emigenda君のままでkiminomamadetobokegaocover",
+  "title": "元田恵美(Emi Genda) - 君のままで(Kimi No Mama De) (Tobokegao Cover)",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2023-03-31",
+  "image": "https://i.ytimg.com/vi/XKKdnmGmYMo/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=XKKdnmGmYMo"
+   }
+  ]
+ },
+ {
   "key": "yagitune",
   "title": "YAGITUNE!! (preview)",
   "artist": "Yagishiro",
@@ -404,6 +912,48 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/track/yagitune-preview"
+   }
+  ]
+ },
+ {
+  "key": "labelyagitunebyyagishirotbk024",
+  "title": "[#TBKgao (label)] YAGITUNE​!​! by Yagishiro [TBK-024]",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2023-03-04",
+  "image": "https://i1.sndcdn.com/artworks-AuCMxwZNcX8pWMzY-qaME3A-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/yaghisiro-yagitune"
+   }
+  ]
+ },
+ {
+  "key": "20230225toboxreleasepartyinsapporo",
+  "title": "20230225 TOBOX Release Party In Sapporo",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2023-02-26",
+  "image": "https://i1.sndcdn.com/artworks-aQ4T9N16synEMbKu-hJ4yrg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/20230225-tobox-release-party-in-sapporo"
+   }
+  ]
+ },
+ {
+  "key": "20230218toboxreleasepartytobokegaopuremidimix",
+  "title": "20230218 TOBOX Release Party Tobokegao Pure MIDI Mix",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2023-02-19",
+  "image": "https://i1.sndcdn.com/artworks-zZcNR4YF7Ls3ETYI-3eh6GA-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/20230218-tobox-release-party"
    }
   ]
  },
@@ -422,6 +972,34 @@
   ]
  },
  {
+  "key": "labellatenight2hourschiptunebyrei8bittbk022xfd",
+  "title": "[#TBKgao (label)] Late Night 2-Hours Chiptune by Rei8bit [TBK-022] XFD",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-11-05",
+  "image": "https://i1.sndcdn.com/artworks-MwscohTTQ6lEbG5r-DcOpuQ-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/late-night-2-hours-chiptune"
+   }
+  ]
+ },
+ {
+  "key": "labelohachiptunebyrei8bittbk021xfd",
+  "title": "[#TBKgao (label)] Oha Chiptune! by Rei8bit [TBK-021] XFD",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-11-05",
+  "image": "https://i1.sndcdn.com/artworks-QX7kjwLt19H6Jj6u-HRUHaA-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/rei8bit-oha-chiptune-xfd"
+   }
+  ]
+ },
+ {
   "key": "shoumeixfd",
   "title": "Shoumei XFD",
   "artist": "Yagishiro",
@@ -432,6 +1010,20 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/track/shoumei-xfd"
+   }
+  ]
+ },
+ {
+  "key": "label証明byyagishirotbk020xfd",
+  "title": "[#TBKgao (label)] 証明 by Yagishiro [TBK-020] XFD",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-11-04",
+  "image": "https://i1.sndcdn.com/artworks-U9jygDfQ4kOLbNmv-jfKgUg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/tbkgao-label-by-yagishiro-tbk-020-xfd"
    }
   ]
  },
@@ -482,6 +1074,188 @@
   ]
  },
  {
+  "key": "dalalatoboxversion",
+  "title": "DA-LA-LA (TOBOX Version)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-10-27",
+  "image": "https://i1.sndcdn.com/artworks-cz3gIUoSKVmMvLk1-2tgbOg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/da-la-la"
+   }
+  ]
+ },
+ {
+  "key": "kodokunafruitsremastered",
+  "title": "Kodoku Na Fruits (Remastered)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-10-27",
+  "image": "https://i1.sndcdn.com/artworks-cz3gIUoSKVmMvLk1-2tgbOg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/kodoku-na-fruits-1"
+   }
+  ]
+ },
+ {
+  "key": "soyousay",
+  "title": "so you say",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-10-27",
+  "image": "https://i1.sndcdn.com/artworks-cz3gIUoSKVmMvLk1-2tgbOg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/so-you-say-1"
+   }
+  ]
+ },
+ {
+  "key": "fallingintoadream",
+  "title": "Falling into a Dream",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-10-27",
+  "image": "https://i1.sndcdn.com/artworks-cz3gIUoSKVmMvLk1-2tgbOg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/falling-into-a-dream"
+   }
+  ]
+ },
+ {
+  "key": "beingrustytanashiimainichinewrecording",
+  "title": "Being Rusty (Tanashii Mainichi) (New Recording)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-10-27",
+  "image": "https://i1.sndcdn.com/artworks-cz3gIUoSKVmMvLk1-2tgbOg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/being-rusty-tanashii-1"
+   }
+  ]
+ },
+ {
+  "key": "halleluiah",
+  "title": "Halleluiah",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-10-27",
+  "image": "https://i1.sndcdn.com/artworks-cz3gIUoSKVmMvLk1-2tgbOg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/halleluiah"
+   }
+  ]
+ },
+ {
+  "key": "quibbles",
+  "title": "Quibbles",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-10-27",
+  "image": "https://i1.sndcdn.com/artworks-cz3gIUoSKVmMvLk1-2tgbOg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/quibbles-1"
+   }
+  ]
+ },
+ {
+  "key": "yomideashibumiremastered",
+  "title": "Yomi De Ashibumi (Remastered)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-10-27",
+  "image": "https://i1.sndcdn.com/artworks-cz3gIUoSKVmMvLk1-2tgbOg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/yomi-de-ashibumi-remastered"
+   }
+  ]
+ },
+ {
+  "key": "taillamp",
+  "title": "Tail Lamp",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-10-27",
+  "image": "https://i1.sndcdn.com/artworks-cz3gIUoSKVmMvLk1-2tgbOg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/tail-lamp"
+   }
+  ]
+ },
+ {
+  "key": "tiredfacethegameneverendsremastered",
+  "title": "Tired Face (The Game Never Ends) (Remastered)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-10-27",
+  "image": "https://i1.sndcdn.com/artworks-cz3gIUoSKVmMvLk1-2tgbOg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/tired-face-the-game-never-ends"
+   }
+  ]
+ },
+ {
+  "key": "toboxtrailer",
+  "title": "TOBOX Trailer",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-10-23",
+  "image": "https://i1.sndcdn.com/artworks-AqlysXpdOkRKnBQg-xPAL5A-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/tobox-trailer"
+   }
+  ]
+ },
+ {
+  "key": "toquit",
+  "title": "To Quit (feat. Hey, Ily!)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-10-15",
+  "image": "https://i1.sndcdn.com/artworks-kUyufyeUzEcPRtdu-IHzXOA-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/to-quit-feat-hey-ily"
+   }
+  ]
+ },
+ {
+  "key": "pure",
+  "title": "PURE",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-10-09",
+  "image": "https://i1.sndcdn.com/artworks-y6pzF7Fs8YeBK2yA-nxI6xw-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/pure"
+   }
+  ]
+ },
+ {
   "key": "puremidivolume1",
   "title": "PURE MIDI Volume 1",
   "artist": "Various Artists",
@@ -492,6 +1266,34 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/album/pure-midi-volume-1"
+   }
+  ]
+ },
+ {
+  "key": "dotmatrixclock",
+  "title": "Dot Matrix Clock (feat. PROJECT V/R Converters)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-10-06",
+  "image": "https://i1.sndcdn.com/artworks-cz3gIUoSKVmMvLk1-2tgbOg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/dot-matrix-clock-feat-project-vr-converters"
+   }
+  ]
+ },
+ {
+  "key": "puremidivolume1xfd",
+  "title": "PURE MIDI Volume 1 XFD",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-09-23",
+  "image": "https://i1.sndcdn.com/artworks-BR2QItUaaAOa1a4r-OVSZ4g-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/pure-midi-volume-1-xfd"
    }
   ]
  },
@@ -510,6 +1312,20 @@
   ]
  },
  {
+  "key": "やるきがでないときのうた",
+  "title": "やるきがでないときのうた",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-08-17",
+  "image": "https://i1.sndcdn.com/artworks-QeoNkWxTTQN9TVNY-1zxX7w-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/xvjcz49m0nlf"
+   }
+  ]
+ },
+ {
   "key": "aboutimageinfo",
   "title": "About Image Info (preview)",
   "artist": "MLTEK",
@@ -524,6 +1340,34 @@
   ]
  },
  {
+  "key": "tamannai",
+  "title": "TAMANNAI",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-06-06",
+  "image": "https://i1.sndcdn.com/artworks-7ilg7peSoEjulZ8V-Xx94mQ-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/tamannai"
+   }
+  ]
+ },
+ {
+  "key": "fusoxidefutureisinthepasttobokegaom8rmxmaj7jamescapefromwipcity",
+  "title": "fusoxide - Future Is In The Past(Tobokegao M8 RMX) [maj7jam  ESCAPE FROM WIP CITY]",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-05-16",
+  "image": "https://i1.sndcdn.com/artworks-rz6zDlSJNrLGzxkX-cuBAuA-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/fusoxide-future-is-in-the-pasttobokegao-m8-rmx-maj7jam-escape-from-wip-city"
+   }
+  ]
+ },
+ {
   "key": "scythesonnahimoaruyonetobokegaovocalcover",
   "title": "Scythe - Sonna Hi Mo Aru Yone (Tobokegao Vocal Cover) EP",
   "artist": "Tobokegao",
@@ -534,6 +1378,52 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/album/scythe-sonna-hi-mo-aru-yone-tobokegao-vocal-cover-ep"
+   },
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/scythe-sonna-hi-mo-aru-yonetobokegao-vocal-cover"
+   }
+  ]
+ },
+ {
+  "key": "start",
+  "title": "START",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-04-12",
+  "image": "https://i1.sndcdn.com/artworks-hfpfhOgBWrOJaZZu-pNn9Qg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/start"
+   }
+  ]
+ },
+ {
+  "key": "tbkambient",
+  "title": "TBK Ambient",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-04-04",
+  "image": "https://i1.sndcdn.com/artworks-7ExfnTrjWaby6ykr-zX58cw-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/tbk-ambient"
+   }
+  ]
+ },
+ {
+  "key": "blueberrypievocalversion",
+  "title": "Blueberry Pie (Vocal Version)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-03-29",
+  "image": "https://i1.sndcdn.com/artworks-dk53emzMsGW5jSgY-0fEomg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/blueberry-pie-vocal-version"
    }
   ]
  },
@@ -552,6 +1442,48 @@
   ]
  },
  {
+  "key": "funkytbk",
+  "title": "FUNKY TBK",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-03-21",
+  "image": "https://i1.sndcdn.com/artworks-GyWZybULeTXD53eD-nyuK3g-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/funky-tbk"
+   }
+  ]
+ },
+ {
+  "key": "tbknoise01",
+  "title": "TBK Noise 01",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-03-14",
+  "image": "https://i1.sndcdn.com/artworks-WkuhYwVNzVLg1ntJ-C9rzag-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/tbk-noise-01"
+   }
+  ]
+ },
+ {
+  "key": "uz",
+  "title": "UZ",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-03-07",
+  "image": "https://i1.sndcdn.com/artworks-alKt78N3bhmPZG7b-8A8hqQ-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/uz-1"
+   }
+  ]
+ },
+ {
   "key": "dalalavocalversion",
   "title": "DA-LA-LA (Vocal Version) EP",
   "artist": "Tobokegao",
@@ -562,6 +1494,52 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/album/da-la-la-vocal-version-ep"
+   },
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/da-la-la-vocal-version"
+   }
+  ]
+ },
+ {
+  "key": "theperfectrelationship",
+  "title": "The Perfect Relationship",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-02-19",
+  "image": "https://i1.sndcdn.com/artworks-ojHyByWCyCZ2ycp8-lnd5aQ-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/the-perfect-relationship"
+   }
+  ]
+ },
+ {
+  "key": "quibbles@2022-02",
+  "title": "Quibbles",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-02-14",
+  "image": "https://i1.sndcdn.com/artworks-O2VBQpiBIRjyU3c9-JtnZ3Q-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/quibbles"
+   }
+  ]
+ },
+ {
+  "key": "soyousay@2022-02",
+  "title": "So You Say",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-02-07",
+  "image": "https://i1.sndcdn.com/artworks-3NYjJiUj5lUTsboS-9zEUuw-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/so-you-say"
    }
   ]
  },
@@ -576,6 +1554,66 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/album/kodoku-na-fruits-vocal-version-ep"
+   },
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/kodoku-na-fruits-vocal-version"
+   }
+  ]
+ },
+ {
+  "key": "孤独なフルーツ",
+  "title": "孤独なフルーツ",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-01-31",
+  "image": "https://i1.sndcdn.com/artworks-4qDoNwaZYAMUjMQX-EMC9OA-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/kodoku-na-fruits"
+   }
+  ]
+ },
+ {
+  "key": "hanasana",
+  "title": "Hanasana",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-01-24",
+  "image": "https://i1.sndcdn.com/artworks-JLQADuj5IpU07Jpl-MWxKMA-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/hanasana"
+   }
+  ]
+ },
+ {
+  "key": "letmeknowcry",
+  "title": "Let Me Know/Cry",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-01-17",
+  "image": "https://i1.sndcdn.com/artworks-cJB58Alki5BvApuV-cB4cYA-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/let-me-knowcry"
+   }
+  ]
+ },
+ {
+  "key": "movingback",
+  "title": "Moving Back",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2022-01-10",
+  "image": "https://i1.sndcdn.com/artworks-hOJDPTxlz8b0WKFI-bT8Qkw-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/moving-back"
    }
   ]
  },
@@ -606,8 +1644,128 @@
     "url": "https://tbkgao.bandcamp.com/album/yomi-de-ashibumi-vocal-version"
    },
    {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/yomi-de-ashibumivocal-version"
+   },
+   {
     "source": "apple",
     "url": "https://music.apple.com/jp/album/yomi-de-ashibumi-single/1580282960"
+   }
+  ]
+ },
+ {
+  "key": "渋谷系チップチューンカバーコンピレーションunofficialmv",
+  "title": "渋谷系チップチューンカバーコンピレーション (Unofficial MV)",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2021-06-23",
+  "image": "https://i.ytimg.com/vi/WMDiSrCifmU/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=WMDiSrCifmU"
+   }
+  ]
+ },
+ {
+  "key": "20201228oncesuperportablelive",
+  "title": "20201228 Once Super Portable live",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2020-12-28",
+  "image": "https://i.ytimg.com/vi/rq5z4ypSNZw/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=rq5z4ypSNZw"
+   }
+  ]
+ },
+ {
+  "key": "アレルギーallergy",
+  "title": "アレルギー(Allergy) feat. DEFENSE MECHANISM",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-12-25",
+  "image": "https://i1.sndcdn.com/artworks-EiFdYJJhji7cJWII-RHe0vg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/allergy-feat-defense-mechanism"
+   },
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=-umrUCHXfYY"
+   }
+  ]
+ },
+ {
+  "key": "幽霊へdearghost",
+  "title": "幽霊へ(Dear Ghost)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-12-19",
+  "image": "https://i1.sndcdn.com/artworks-TWf1SpArncdlzX3t-ctpqWg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/dear-ghost"
+   }
+  ]
+ },
+ {
+  "key": "トゥナイト通信tonight",
+  "title": "トゥナイト通信(Tonight)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-12-11",
+  "image": "https://i1.sndcdn.com/artworks-TWf1SpArncdlzX3t-ctpqWg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/tonight"
+   }
+  ]
+ },
+ {
+  "key": "semusicmv",
+  "title": "SE MUSIC EP (MV)",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2020-12-05",
+  "image": "https://i.ytimg.com/vi/zGeQMpNuNeE/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=zGeQMpNuNeE"
+   }
+  ]
+ },
+ {
+  "key": "roomtoroommv",
+  "title": "Room To Room MV",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2020-12-05",
+  "image": "https://i.ytimg.com/vi/hem0NBcBT38/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=hem0NBcBT38"
+   }
+  ]
+ },
+ {
+  "key": "skipstopmv",
+  "title": "○○○○（Skip/Stop - single) MV",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2020-12-05",
+  "image": "https://i.ytimg.com/vi/f6frdRlxFi4/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=f6frdRlxFi4"
    }
   ]
  },
@@ -630,6 +1788,76 @@
   ]
  },
  {
+  "key": "shampoo",
+  "title": "Shampoo",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-12-04",
+  "image": "https://i1.sndcdn.com/artworks-TWf1SpArncdlzX3t-ctpqWg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/shampoo"
+   }
+  ]
+ },
+ {
+  "key": "maxoreachyoutobokegaogameboyshortcover",
+  "title": "Maxo - Reach You(Tobokegao Gameboy Short Cover)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-11-30",
+  "image": "https://i1.sndcdn.com/artworks-sS9LTl7m5KpmfefS-2WRd2g-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/maxo-reach-youtobokegao-gameboy-short-cover"
+   }
+  ]
+ },
+ {
+  "key": "イヌぞりレースメニュー画面のテーマdogsledracemenutheme",
+  "title": "イヌぞりレース メニュー画面のテーマ（Dogsled Race Menu Theme）",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-11-20",
+  "image": "https://i1.sndcdn.com/artworks-7L7QmrsZ0DSW9Kxv-25LOiQ-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/dogsled-race-menu-theme"
+   }
+  ]
+ },
+ {
+  "key": "ilikenatemercereau",
+  "title": "I Like Nate Mercereau",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-11-13",
+  "image": "https://i1.sndcdn.com/artworks-7L7QmrsZ0DSW9Kxv-25LOiQ-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/i-like-nate-mercereau"
+   }
+  ]
+ },
+ {
+  "key": "telephonefunkoctraviagameloopversion",
+  "title": "Telephone Funk Octravia(Game Loop Version)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-11-07",
+  "image": "https://i1.sndcdn.com/artworks-7L7QmrsZ0DSW9Kxv-25LOiQ-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/telephone-funk-octraviagame-loop-version"
+   }
+  ]
+ },
+ {
   "key": "semusic",
   "title": "SE Music EP",
   "artist": "Tobokegao",
@@ -648,6 +1876,76 @@
   ]
  },
  {
+  "key": "lsdjxoutputportaldemoeffecttimesuspensionparticlereduction",
+  "title": "LSDj x Output Portal Demo (effect - TIME SUSPENSION, PARTICLE REDUCTION)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-10-27",
+  "image": "https://i1.sndcdn.com/artworks-sLcLHla7bMYirSCz-96Tolg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-time-suspension-particle-reduction"
+   }
+  ]
+ },
+ {
+  "key": "lsdjxoutputportaldemoeffectshippingbassdownthetube",
+  "title": "LSDj x Output Portal Demo (effect - SHIPPING BASS, DOWN THE TUBE)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-10-22",
+  "image": "https://i1.sndcdn.com/artworks-sLcLHla7bMYirSCz-96Tolg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-shipping-bass-down-the-tube"
+   }
+  ]
+ },
+ {
+  "key": "くま井ゆう子yukokumaiみつあみ引っ張ってmitsuamihippattetobokegao8bitgameboycover",
+  "title": "くま井ゆう子(Yuko Kumai) - みつあみ引っ張って(Mitsuami Hippatte) Tobokegao 8-Bit Gameboy Cover",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-10-18",
+  "image": "https://i1.sndcdn.com/artworks-pumUeITJ3owoB4iY-rMhMeg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/yuko-kumai-mitsuami-hippatte-tobokegao-8-bit-gameboy-cover"
+   }
+  ]
+ },
+ {
+  "key": "くま井ゆう子yukokumaiみつあみ引っ張ってmitsuamihippattetobokegao8bitgameboycover1hourvideo",
+  "title": "くま井ゆう子(Yuko Kumai) - みつあみ引っ張って(Mitsuami Hippatte) Tobokegao 8-Bit Gameboy Cover 1 Hour Video",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2020-10-18",
+  "image": "https://i.ytimg.com/vi/V7ccJTY39pI/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=V7ccJTY39pI"
+   }
+  ]
+ },
+ {
+  "key": "lsdjxoutputportaldemoeffectfilthdividedriponby",
+  "title": "LSDj x Output Portal Demo (effect - FILTH DIVIDE, DRIP ON BY)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-10-13",
+  "image": "https://i1.sndcdn.com/artworks-aD9qesLEaIyBSsEw-0T42sw-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-filth-divide-drip-on-by"
+   }
+  ]
+ },
+ {
   "key": "beingrustytanashiimainichi",
   "title": "Being Rusty (Tanashii Mainichi)",
   "artist": "Tobokegao",
@@ -660,8 +1958,26 @@
     "url": "https://tbkgao.bandcamp.com/album/being-rusty-tanashii-mainichi"
    },
    {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/being-rusty-tanashii-mainichi"
+   },
+   {
     "source": "apple",
     "url": "https://music.apple.com/jp/album/being-rusty-single/1546743248"
+   }
+  ]
+ },
+ {
+  "key": "beingrustytanashiimainichivocalguitarversion",
+  "title": "Being Rusty (Tanashii Mainichi) (Vocal & Guitar Version) Feat. AntiChiptuneChiptuneClub",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-10-02",
+  "image": "https://i1.sndcdn.com/artworks-gmxHVpMip4qDMqFU-xFb36Q-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/being-rusty-tanashii-mainichi-vocal-guitar-version-feat-antichiptunechiptuneclub"
    }
   ]
  },
@@ -680,6 +1996,62 @@
   ]
  },
  {
+  "key": "8bitanimationbeingrustybytobokegaomvmigmint",
+  "title": "[8bit Animation] \" Being Rusty\" by Tobokegao (MV: migmint)",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2020-10-02",
+  "image": "https://i.ytimg.com/vi/HCj7VwCL8AA/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=HCj7VwCL8AA"
+   }
+  ]
+ },
+ {
+  "key": "lsdjxoutputportaldemoeffectgrainrunnerbacksliding",
+  "title": "LSDj x Output Portal Demo (effect - GRAIN RUNNER, BACKSLIDING)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-10-01",
+  "image": "https://i1.sndcdn.com/artworks-sLcLHla7bMYirSCz-96Tolg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/grain-runner-backsliding"
+   }
+  ]
+ },
+ {
+  "key": "lsdjxoutputportaldemoeffectnoteven",
+  "title": "LSDj x Output Portal Demo (effect - NOT EVEN)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-09-26",
+  "image": "https://i1.sndcdn.com/artworks-sLcLHla7bMYirSCz-96Tolg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-not-even"
+   }
+  ]
+ },
+ {
+  "key": "beingrustylsdjvocalversioncallforideasforguitarandotherparts",
+  "title": "Being Rusty [LSDj & vocal version] (Call for ideas for guitar and other parts)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-09-21",
+  "image": "https://i1.sndcdn.com/artworks-sLcLHla7bMYirSCz-96Tolg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/being-rusty-lsdj-vocal-version-call-for-ideas-for-guitar-and-other-parts"
+   }
+  ]
+ },
+ {
   "key": "bandcamp:/album/-",
   "title": "○○○○",
   "artist": "Tobokegao",
@@ -690,10 +2062,248 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/album/-"
-   },
+   }
+  ]
+ },
+ {
+  "key": "skip",
+  "title": "Skip",
+  "artist": "Tobokegao",
+  "type": "single",
+  "date": "2020-09-04",
+  "image": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/a2/d3/fe/a2d3fea4-6e37-6add-3024-3a009634808e/053000726791_cover.jpg/600x600bb.jpg",
+  "links": [
    {
     "source": "apple",
     "url": "https://music.apple.com/jp/album/skip-single/1532520758"
+   },
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/skip"
+   }
+  ]
+ },
+ {
+  "key": "gameboylsdj8bitgirlpopcoverwipcollectionmicromusicitalysundayjam",
+  "title": "Gameboy LSDj 8bit GiRLPOP Cover WIP Collection (Micromusic Italy Sunday Jam)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-08-31",
+  "image": "https://i1.sndcdn.com/artworks-soXh95IiEzDGYjZp-05wuDQ-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/gameboy-lsdj-8bit-girlpop-cover-wip-collection-micromusic-italy-sunday-jam"
+   }
+  ]
+ },
+ {
+  "key": "gameboylsdj8bitgirlpopcoverwipcollectionmicromusicitalysundayjamtobokegaolivestream",
+  "title": "[Gameboy LSDj 8bit GiRLPOP Cover WIP Collection] Micromusic Italy Sunday Jam Tobokegao [LIVE STREAM]",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2020-08-31",
+  "image": "https://i.ytimg.com/vi/pEKZbRCufn4/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=pEKZbRCufn4"
+   }
+  ]
+ },
+ {
+  "key": "stop",
+  "title": "Stop",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-08-15",
+  "image": "https://i1.sndcdn.com/artworks-9UArmrUMAZe22EOa-KDwowA-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/stop"
+   }
+  ]
+ },
+ {
+  "key": "lsdjxoutputportaldemoeffectfeedbackdrumsifterdelay",
+  "title": "LSDj x Output Portal Demo (effect - Feedback Drum, Sifter Delay)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-08-11",
+  "image": "https://i1.sndcdn.com/artworks-sLcLHla7bMYirSCz-96Tolg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-feedback-drum-sifter-delay-1"
+   }
+  ]
+ },
+ {
+  "key": "lsdjxoutputportaldemoeffectfractured",
+  "title": "LSDj x Output Portal Demo (effect - FRACTURED)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-08-05",
+  "image": "https://i1.sndcdn.com/artworks-sLcLHla7bMYirSCz-96Tolg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-fractured-1"
+   }
+  ]
+ },
+ {
+  "key": "lsdj880pulsex2adsr",
+  "title": "LSDj 8.8.0 Pulse x2 ADSR",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-07-31",
+  "image": "https://i1.sndcdn.com/artworks-sLcLHla7bMYirSCz-96Tolg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/lsdj-880-pulse-x2-adsr"
+   }
+  ]
+ },
+ {
+  "key": "why",
+  "title": "Why",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-07-26",
+  "image": "https://i1.sndcdn.com/artworks-SRHUc7QC0avAUvnc-VIs97g-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/why"
+   }
+  ]
+ },
+ {
+  "key": "lsdjxoutputportaldemoeffectambientlakesuchadrug",
+  "title": "LSDj x Output Portal Demo (effect - Ambient Lake, Such a Drug)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-07-22",
+  "image": "https://i1.sndcdn.com/artworks-sLcLHla7bMYirSCz-96Tolg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-ambient-lake-such-a-drug"
+   }
+  ]
+ },
+ {
+  "key": "lsdjxoutputportaldemoeffectvoxmotion",
+  "title": "LSDj x Output Portal Demo (effect -Vox Motion)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-07-21",
+  "image": "https://i1.sndcdn.com/artworks-sLcLHla7bMYirSCz-96Tolg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-vox-motion"
+   }
+  ]
+ },
+ {
+  "key": "ぼのぼのed1近道したいtobokegaogameboycover",
+  "title": "ぼのぼの ED1 - 近道したい (tobokegao gameboy cover)",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2020-07-16",
+  "image": "https://i.ytimg.com/vi/Ie48Ky2cyz0/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=Ie48Ky2cyz0"
+   }
+  ]
+ },
+ {
+  "key": "bonobonoed1chikamichishitaitobokegaogameboycover",
+  "title": "Bonobono ED1 - Chikamichi Shitai(tobokegao gameboy cover)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-07-13",
+  "image": "https://i1.sndcdn.com/artworks-ujaldNcjl7JiZTNc-Q3XtWA-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/suga-kyoko-chikamichi-shitai-tobokegao-lsdj-gb-cover"
+   }
+  ]
+ },
+ {
+  "key": "2020july13metazoalivevideotobokegaopicniccommemorativeαset",
+  "title": "2020 July 13 Metazoa live video (Tobokegao Picnic Deluxe Edition commemorative + α set)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-07-13",
+  "image": "https://i1.sndcdn.com/artworks-LqyTl66ZQqjyeVkG-utDJWQ-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/2020-july-13-metazoa-live-video-tobokegao-picnic-deluxe-edition-commemorative-set"
+   }
+  ]
+ },
+ {
+  "key": "sherbet",
+  "title": "Sherbet",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-07-11",
+  "image": "https://i1.sndcdn.com/artworks-SRHUc7QC0avAUvnc-VIs97g-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/sherbet"
+   }
+  ]
+ },
+ {
+  "key": "lsdjxoutputportaldemoeffectthythmswitchtranquilitygarden",
+  "title": "LSDj x Output Portal Demo (effect - THYTHM SWITCH, TRANQUILITY GARDEN)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-07-11",
+  "image": "https://i1.sndcdn.com/artworks-sLcLHla7bMYirSCz-96Tolg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-thythm-switch-tranquility-garden"
+   }
+  ]
+ },
+ {
+  "key": "birthdayparty",
+  "title": "Birthday Party",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-07-05",
+  "image": "https://i1.sndcdn.com/artworks-SRHUc7QC0avAUvnc-VIs97g-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/birthday-party"
+   }
+  ]
+ },
+ {
+  "key": "exilefakerparallelexperimentslsdj",
+  "title": "exileFaker - parallel experiments LSDJ(Preview)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-07-04",
+  "image": "https://i1.sndcdn.com/artworks-oTU2nwLSrgIzInIR-lsbB3A-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/exilefaker-parallel-experiments-lsdjpreview"
    }
   ]
  },
@@ -712,6 +2322,48 @@
   ]
  },
  {
+  "key": "lsdjxoutputportaldemoeffectpitchedandglitchedrepeaterbass",
+  "title": "LSDj x Output Portal Demo (effect - PITCHED AND GLITCHED, REPEATER BASS)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-07-02",
+  "image": "https://i1.sndcdn.com/artworks-sLcLHla7bMYirSCz-96Tolg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-pitched-and-glitched-repeater-bass"
+   }
+  ]
+ },
+ {
+  "key": "develop",
+  "title": "Develop",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-06-28",
+  "image": "https://i1.sndcdn.com/artworks-SRHUc7QC0avAUvnc-VIs97g-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/develop"
+   }
+  ]
+ },
+ {
+  "key": "jpopstringspulsefullversion",
+  "title": "J-POP Strings Pulse #1 (full version)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-06-20",
+  "image": "https://i1.sndcdn.com/artworks-DonWjIm2UKsqBOtC-gcnlMQ-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/j-pop-strings-pulse-1-full-version"
+   }
+  ]
+ },
+ {
   "key": "picnic",
   "title": "Picnic (Deluxe Edition)",
   "artist": "tobokegao",
@@ -726,6 +2378,126 @@
    {
     "source": "apple",
     "url": "https://music.apple.com/jp/album/picnic-deluxe-edition/1523875938"
+   },
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/picnic"
+   }
+  ]
+ },
+ {
+  "key": "dynamiteqchipcrushertest",
+  "title": "Dynamite Q(chipcrusher test)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-06-14",
+  "image": "https://i1.sndcdn.com/artworks-K2L4uSVBonMZPrxb-zWkudg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/dynamite-qchipcrusher-test"
+   }
+  ]
+ },
+ {
+  "key": "lsdjxoutputportaldemoeffectexponentialspace",
+  "title": "LSDj x Output Portal Demo (effect - Exponential Space)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-06-11",
+  "image": "https://i1.sndcdn.com/artworks-sLcLHla7bMYirSCz-96Tolg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-exponential-space"
+   }
+  ]
+ },
+ {
+  "key": "livevideotobokegaoisochip2",
+  "title": "Live Video: Tobokegao - ISO CHIP 2",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-06-06",
+  "image": "https://i1.sndcdn.com/artworks-pqEZ6vUP2hkXUAXk-AtYRGQ-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/live-video-tobokegao-iso-chip-2"
+   }
+  ]
+ },
+ {
+  "key": "hamasakiayumimgameboybreakjukegabbaschranzcoreremix",
+  "title": "Hamasaki Ayumi - M (Gameboy BreakJukeGabbaSchranzCore Remix)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-05-18",
+  "image": "https://i1.sndcdn.com/artworks-myLBLmyLTD8eh6Rz-7ncC0g-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/hamasaki-ayumi-m-gameboy-breakjukegabbaschranzcore-remix"
+   },
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=ims2qyfKUqo"
+   }
+  ]
+ },
+ {
+  "key": "recoverygirlrecoverygirltobokegaogbremix",
+  "title": "Recovery Girl - Recovery Girl (tobokegao GB Remix)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-05-12",
+  "image": "https://i1.sndcdn.com/artworks-wjDYBQ43jaSKkyaK-b1XV7A-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/recovery-girl-recovery-girl-tobokegao-gb-remix"
+   }
+  ]
+ },
+ {
+  "key": "recoverygirlrecoverygirltobokegaolsdjgbremix",
+  "title": "Recovery Girl - Recovery Girl (tobokegao LSDj GB Remix)",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2020-05-12",
+  "image": "https://i.ytimg.com/vi/XhXZbDR6JPE/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=XhXZbDR6JPE"
+   }
+  ]
+ },
+ {
+  "key": "lsdjxoutputportaldemoeffectgraciers",
+  "title": "LSDj x Output Portal Demo (effect - GRACIERS)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-05-09",
+  "image": "https://i1.sndcdn.com/artworks-sLcLHla7bMYirSCz-96Tolg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-graciers"
+   }
+  ]
+ },
+ {
+  "key": "mallboyzcoolrunninggbfilterhousebootleg",
+  "title": "Mall Boyz - Cool running (feat. SEEDA)(GB Filter House Bootleg)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-05-04",
+  "image": "https://i1.sndcdn.com/artworks-sLcLHla7bMYirSCz-96Tolg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/mall-boyz-cool-running-feat-seedagb-filter-house-bootleg"
    }
   ]
  },
@@ -744,6 +2516,90 @@
   ]
  },
  {
+  "key": "jpopisreadyforlovegb2stepverpte077pterodactylsquadcompilationひきこもりhikikomori",
+  "title": "J-Pop Is Ready For Love (GB 2step Ver)([PTE077] Pterodactyl Squad Compilation - ひきこもり・Hikikomori)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-04-24",
+  "image": "https://i1.sndcdn.com/artworks-DT2wA3TapTJ5UtdJ-pfA4fQ-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/j-pop-is-ready-for-love-gb-2step-ver-pte077-pterodactyl-squad-compilation-hikikomori"
+   }
+  ]
+ },
+ {
+  "key": "lsdjxoutputportaldemoeffectscanner",
+  "title": "LSDj x Output Portal Demo (effect - SCANNER)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-04-21",
+  "image": "https://i1.sndcdn.com/artworks-sLcLHla7bMYirSCz-96Tolg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-scanner"
+   }
+  ]
+ },
+ {
+  "key": "jinglelsdjvocaloidtest",
+  "title": "jingle #8 (#うちで踊ろう) (LSDj Vocaloid test)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-04-10",
+  "image": "https://i1.sndcdn.com/artworks-Ci4ZquaTOw4UiXPo-UHbieA-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/jingle-8-lsdj-vocaloid-test"
+   }
+  ]
+ },
+ {
+  "key": "dochakusorecordsdcks0093tobokegaolsdjv822bcommandtestvafootcorecompilation2",
+  "title": "Dochakuso Records [DCKS-0093] tobokegao - LSDj V8_2_2 B Command Test (V.A. - FOOTCORE COMPILATION 2)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-04-01",
+  "image": "https://i1.sndcdn.com/artworks-pmzy08goLmzSzL71-HyvuNQ-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/12-tobokegao-lsdj-v8_2_2-b-command-test"
+   }
+  ]
+ },
+ {
+  "key": "tic80sfirstwavetablesynthtestweeklybeats",
+  "title": "TIC-80'S FIRST WAVETABLE SYNTH? test (Weeklybeats #13)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-03-30",
+  "image": "https://i1.sndcdn.com/artworks-XNjA6XyEMyaby6b4-hYE0Xw-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/tic-80s-first-wavetable-synth-weeklybeats-13"
+   }
+  ]
+ },
+ {
+  "key": "lsdjxoutputportaldemoeffectgrainswellsblurred5ths",
+  "title": "LSDj x Output Portal Demo (effect - GRAIN SWELLS, BLURRED 5THS)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-03-27",
+  "image": "https://i1.sndcdn.com/artworks-sLcLHla7bMYirSCz-96Tolg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-grain-swells-blurred-5ths"
+   }
+  ]
+ },
+ {
   "key": "balbertcomesovertome",
   "title": "B (Albert comes over to me)",
   "artist": "tobokegao",
@@ -758,6 +2614,132 @@
   ]
  },
  {
+  "key": "jinglegbmememashup",
+  "title": "Jingle #7 (GB meme mashup)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-03-16",
+  "image": "https://i1.sndcdn.com/artworks-Ee5LNU0LVF1AJtug-ztoXUA-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/jingle-7-gb-meme-mushup"
+   }
+  ]
+ },
+ {
+  "key": "acidwavetest",
+  "title": "ACID WAVE TEST #2",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-03-02",
+  "image": "https://i1.sndcdn.com/artworks-N9H3JRU4iudGlYeK-St61bA-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/acid-wave-test-2"
+   }
+  ]
+ },
+ {
+  "key": "lsdjxoutputportalxmelodynedemoeffectpartialdivide",
+  "title": "LSDj x Output Portal x Melodyne Demo (effect - PARTIAL DIVIDE)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-02-27",
+  "image": "https://i1.sndcdn.com/artworks-sLcLHla7bMYirSCz-96Tolg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-x-melodyne-demo-effect-partial-divide"
+   }
+  ]
+ },
+ {
+  "key": "黄泉で足踏みyomideashibumicaravanboomervgmgbtvver",
+  "title": "黄泉で足踏み Yomi De Ashibumi (Caravan Boomer VGM GB TV Ver)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-02-03",
+  "image": "https://i1.sndcdn.com/artworks-000679253680-idkz33-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/yomi-de-ashibumi-caravan-boomer-vgm-gb-tv-ver"
+   }
+  ]
+ },
+ {
+  "key": "lsdjxoutputportaldemoeffectdigitaltapetoys",
+  "title": "LSDj x Output Portal Demo (effect - DIGITAL TAPE TOYS)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-01-27",
+  "image": "https://i1.sndcdn.com/artworks-000674825632-5f1i4j-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-digital-tape-toys"
+   }
+  ]
+ },
+ {
+  "key": "caravanboomertrack素ym2413tvdemover",
+  "title": "tobokegao - Caravan Boomer Track (素YM2413 TV DEMO ver)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-01-26",
+  "image": "https://i1.sndcdn.com/artworks-000674510215-56atlx-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/tobokegao-caravan-boomer-track-ym2413-tv-demo-ver"
+   }
+  ]
+ },
+ {
+  "key": "shangaansingelichiptuneassasstity",
+  "title": "Shangaan Singeli Chiptune(AssAssTity)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-01-20",
+  "image": "https://i1.sndcdn.com/artworks-000670401874-s7lplx-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/shangaan-singeli-chiptuneassasstity"
+   }
+  ]
+ },
+ {
+  "key": "jingle",
+  "title": "Jingle #9",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-01-13",
+  "image": "https://i1.sndcdn.com/artworks-sLcLHla7bMYirSCz-96Tolg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/jingle-9"
+   }
+  ]
+ },
+ {
+  "key": "lsdjxoutputportaldemoeffectthegreatslowness",
+  "title": "LSDj x Output Portal Demo (effect - The Great Slowness)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2020-01-06",
+  "image": "https://i1.sndcdn.com/artworks-000663217375-uivjaq-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/the-great-slowness"
+   }
+  ]
+ },
+ {
   "key": "circuitbendinggb",
   "title": "Circuit Bending GB",
   "artist": "Bendelic Freaks",
@@ -768,6 +2750,34 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/album/circuit-bending-gb"
+   }
+  ]
+ },
+ {
+  "key": "2xlsdjtobokegao",
+  "title": "[2xLSDj] tobokegao feat. Klirre - 船・宇宙・ユンカース・ユモ 004",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2019-08-14",
+  "image": "https://i1.sndcdn.com/artworks-000581918852-fh10x7-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/2xlsdj-tobokegao-feat-klirre-phlox-004"
+   }
+  ]
+ },
+ {
+  "key": "2xlsdjgameboytobokegao",
+  "title": "[2xLSDj, Gameboy] tobokegao feat. Klirre - 船・宇宙・ユンカース・ユモ 004",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2019-08-14",
+  "image": "https://i.ytimg.com/vi/po1KR9UMdyc/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=po1KR9UMdyc"
    }
   ]
  },
@@ -791,11 +2801,29 @@
   "artist": "Tobokegao",
   "type": "track",
   "date": "2019-03-03",
-  "image": "https://i1.sndcdn.com/artworks-000497786535-xpvgas-t3000x3000.jpg",
+  "image": "https://i1.sndcdn.com/artworks-000497786535-xpvgas-t500x500.jpg",
   "links": [
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/sunshine-sunrise-sunset_chipvs_light_dark-compilation"
+   }
+  ]
+ },
+ {
+  "key": "skweeeeeb4milwauskweeevol4innocuousrecords",
+  "title": "tobokegao - SKWEEEEE B4 (Milwauskweee Vol. 4 | Innocuous Records )",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2019-02-17",
+  "image": "https://i1.sndcdn.com/artworks-000490354683-5kglij-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/skweeeee-b4"
+   },
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=LBpEp3o_VCo"
    }
   ]
  },
@@ -814,6 +2842,298 @@
   ]
  },
  {
+  "key": "otuniontobokegaogameboycover",
+  "title": "O×T - UNION (tobokegao Gameboy Cover)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2018-12-31",
+  "image": "https://i1.sndcdn.com/artworks-000465479556-u8yy35-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/ot-union-tobokegao-gameboy-cover"
+   },
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=5SyFlPhvtZg"
+   }
+  ]
+ },
+ {
+  "key": "louiscolebankaccounttobokegaogameboyvermoviehttpswwwyoutubecomwatchva8sometetpm",
+  "title": "Louis Cole - Bank Account (tobokegao Gameboy Ver) :movie https://www.youtube.com/watch?v=A8SOMETetpM",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2018-12-16",
+  "image": "https://i1.sndcdn.com/artworks-000470744979-re1qru-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/louis-cole-bank-account-tobokegao-gameboy-ver"
+   }
+  ]
+ },
+ {
+  "key": "bmxmatatabigrandprixthemebgm2loopmix",
+  "title": "BMX Matatabi Grand Prix Theme BGM (2 Loop Mix)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2018-11-26",
+  "image": "https://i1.sndcdn.com/artworks-000447080982-zc3d3a-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/bmx-matatabi-grand-prix-theme-bgm-2-loop-mix"
+   }
+  ]
+ },
+ {
+  "key": "hcctscytheyukkeromtobokegao3dougiri",
+  "title": "HCCT(Scythe, yukkerom, tobokegao) - 3DOUGIRI",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2018-11-17",
+  "image": "https://i1.sndcdn.com/artworks-000441347043-kev2mf-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/hcctscythe-yukkerom-tobokegao-3dougiri"
+   }
+  ]
+ },
+ {
+  "key": "shadymonksplittinghairstobokegaolsdjremix",
+  "title": "SHADY MONK -  Splitting Hairs (feat. tobokegao) (tobokegao LSDj Remix)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2018-09-17",
+  "image": "https://i1.sndcdn.com/artworks-000406565496-jwvijq-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/splitting-hairs-feat-tobokegaotobokegao-lsdj-remix"
+   },
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=KgSvHvx4lBM"
+   }
+  ]
+ },
+ {
+  "key": "squaresoundstokyo2017tobokegaomixoutnowbuylinkyoutubefullstreamingfree",
+  "title": "Square Sounds Tokyo 2017 tobokegao Mix out now(Buy link = youtube full streaming)(Free)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2018-09-14",
+  "image": "https://i1.sndcdn.com/artworks-000404853711-kir6nf-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/square-sounds-tokyo-2017-tobokegao-mix-out-now"
+   }
+  ]
+ },
+ {
+  "key": "developshortver",
+  "title": "Develop (Short ver)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2018-07-02",
+  "image": "https://i1.sndcdn.com/artworks-000533300868-5vsq0d-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/develop-short-ver"
+   }
+  ]
+ },
+ {
+  "key": "tobokegaoxe泡とともにpart1",
+  "title": "Tobokegao × Xe - 泡とともに part1",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2018-06-18",
+  "image": "https://i1.sndcdn.com/artworks-000361999131-dxd4u3-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/tobokegao-xe"
+   }
+  ]
+ },
+ {
+  "key": "grooveccpart2",
+  "title": "Groove C&C Part 2",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2018-06-04",
+  "image": "https://i1.sndcdn.com/artworks-000533300961-5dmnsi-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/groove-cc-part-2"
+   }
+  ]
+ },
+ {
+  "key": "nesugoshinonoisesongmissedweeklybeats",
+  "title": "Nesugoshi(No Noise Song #2)(I missed Weeklybeats)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2018-05-14",
+  "image": "https://i1.sndcdn.com/artworks-000347951061-c7230h-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/nesugoshino-noise-song-2"
+   }
+  ]
+ },
+ {
+  "key": "seinfeldthemegameboycover",
+  "title": "Seinfeld Theme (Gameboy Cover)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2018-05-09",
+  "image": "https://i1.sndcdn.com/artworks-000345730746-ca58uk-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/seinfeld-theme-gameboy-cover"
+   },
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=E6oREQ7fJhM"
+   }
+  ]
+ },
+ {
+  "key": "efunkslapbassmenu",
+  "title": "E Funk Slap Bass Menu #1",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2018-05-07",
+  "image": "https://i1.sndcdn.com/artworks-000533301102-gwxfwk-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/e-funk-slap-bass-menu-1"
+   }
+  ]
+ },
+ {
+  "key": "sundaytrackhasnonoisechver",
+  "title": "Sunday #1(This track has no noise ch ver)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2018-04-29",
+  "image": "https://i1.sndcdn.com/artworks-000533301249-xkiqxz-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/sunday-1this-track-has-no-noise-ch-ver"
+   }
+  ]
+ },
+ {
+  "key": "jpopstringspulse2loopver",
+  "title": "J-POP Strings Pulse #1(short 2loop ver)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2018-04-23",
+  "image": "https://i1.sndcdn.com/artworks-000533301339-wtrt9w-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/j-pop-strings-pulse-1"
+   }
+  ]
+ },
+ {
+  "key": "battleofthebitspart2",
+  "title": "Battle Of The Bits (Part 2)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2018-04-02",
+  "image": "https://i1.sndcdn.com/artworks-000533301414-60v9i3-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/battle-of-the-bits-part-2"
+   }
+  ]
+ },
+ {
+  "key": "tobokegaodboydlastsongcollabtracksalbumcomingsoon",
+  "title": "tobokegao × DBOYD - Last Song [Collab Tracks Album coming soon]",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2018-02-25",
+  "image": "https://i1.sndcdn.com/artworks-000307604631-rcqf51-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/tobokegao-dboyd-last-song"
+   }
+  ]
+ },
+ {
+  "key": "toquit@2018-02",
+  "title": "To Quit",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2018-02-19",
+  "image": "https://i1.sndcdn.com/artworks-000533301534-9z22m7-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/to-quit"
+   }
+  ]
+ },
+ {
+  "key": "tweedeesbabybabytobokegaogameboycover",
+  "title": "TWEEDEES - Baby, Baby(tobokegao Gameboy Cover)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2018-02-09",
+  "image": "https://i1.sndcdn.com/artworks-000303042690-vaosyy-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/tweedees-baby-babytobokegao-gameboy-cover"
+   }
+  ]
+ },
+ {
+  "key": "intro",
+  "title": "Intro",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2017-11-12",
+  "image": "https://i1.sndcdn.com/artworks-000254990222-d95zbm-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/intro"
+   }
+  ]
+ },
+ {
+  "key": "pico2magiccanvas20170528sunlivegbaspnoisejam45min1isdsngbuylinkmixcloud",
+  "title": "Pico*2 Magic Canvas! 2017.05.28(SUN)LIVE GBASP NOISE JAM 45 min 1 Isdsng(Buy link=Mixcloud)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2017-06-27",
+  "image": "https://i1.sndcdn.com/artworks-000230772299-zjkgs3-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/pico-2-magic-canvas-2017-05-28"
+   }
+  ]
+ },
+ {
   "key": "けものフレンズopようこそジャパリパークへgameboyカービィ風味cover",
   "title": "けものフレンズOP ようこそジャパリパークへ GAMEBOYカービィ風味Cover",
   "artist": "Tobokegao",
@@ -828,6 +3148,62 @@
   ]
  },
  {
+  "key": "kemonofriendsopようこそジャパリパークへtobokegaogameboykirbyishcover",
+  "title": "Kemono Friends OP ようこそジャパリパークへ（Tobokegao GAMEBOY Kirby-ish Cover）",
+  "artist": "Tobokegao",
+  "type": "song",
+  "date": "2017-03-31",
+  "image": "https://i.ytimg.com/vi/VPBmK4C9NXI/mqdefault.jpg",
+  "links": [
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=VPBmK4C9NXI"
+   }
+  ]
+ },
+ {
+  "key": "どうぶつビスケッツpppようこそジャパリパークへtobokegaogameboycover",
+  "title": "どうぶつビスケッツ×PPP - ようこそジャパリパークへ（Tobokegao GAMEBOY Cover）",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2017-03-29",
+  "image": "https://i1.sndcdn.com/artworks-000215229810-lasg0p-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/kemono-friends-op-tobokegao-gameboy-cover"
+   }
+  ]
+ },
+ {
+  "key": "koukiishomoidehousetobokegao2stepishchiptuneremix",
+  "title": "Kouki Ish - OMOIDE HOUSE (tobokegao 2stepish chiptune remix)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2016-11-12",
+  "image": "https://i1.sndcdn.com/artworks-000193089474-ip0zxn-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/omoide-house-tobokegao-2stepish-chiptune-remix"
+   }
+  ]
+ },
+ {
+  "key": "scottrivershomelygirltobokegaogameboycover",
+  "title": "Scott & Rivers - HOMELY GIRL(tobokegao Gameboy Cover)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2016-07-23",
+  "image": "https://i1.sndcdn.com/artworks-000172904027-5a9um2-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/homely-girl"
+   }
+  ]
+ },
+ {
   "key": "picnic@2016-05",
   "title": "Picnic",
   "artist": "tobokegao",
@@ -838,6 +3214,272 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/album/picnic"
+   }
+  ]
+ },
+ {
+  "key": "lobitspaceinvaders3lobitfreedomver3のために作った曲",
+  "title": "Lo-bit Space Invaders 3 (Lo-bit Freedom Ver.3のために作った曲)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2016-03-27",
+  "image": "https://i1.sndcdn.com/artworks-000154368009-cu67k2-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/lo-bit-space-invaders-3"
+   }
+  ]
+ },
+ {
+  "key": "sandbag",
+  "title": "Sandbag",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2016-02-28",
+  "image": "https://i1.sndcdn.com/artworks-000148948360-ryqxti-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/esc-002-wave-chords-ep-03-sandbag"
+   }
+  ]
+ },
+ {
+  "key": "azurefields100yearsago",
+  "title": "Azure Fields(100 Years Ago)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2016-02-20",
+  "image": "https://i1.sndcdn.com/artworks-000147900606-rukj3y-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/esc-002-wave-chords-ep-02-azure-fields-100-years-ago"
+   }
+  ]
+ },
+ {
+  "key": "blueberrypie",
+  "title": "Blueberry Pie",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2016-02-13",
+  "image": "https://i1.sndcdn.com/artworks-000146985871-irz6c4-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/esc-002-wave-chords-ep-01-blueberry-pie"
+   }
+  ]
+ },
+ {
+  "key": "haritotrashtoysdreamto6okegaosgoodnightchiptunever",
+  "title": "Harito - Trash Toys Dream (to6okegao's Goodnight Chiptune Ver)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2016-01-15",
+  "image": "https://i1.sndcdn.com/artworks-000143347770-967jcw-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/harito-trash-toys-dream-to6okegaos-goodnight-chiptune-ver"
+   }
+  ]
+ },
+ {
+  "key": "snailshousepixeldreamgameboylsdjcover",
+  "title": "Snail's House - Pixel Dream(Gameboy LSDj Cover)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2015-10-18",
+  "image": "https://i1.sndcdn.com/artworks-000133096071-m948yg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/snails-house-pixel-dream-gameboy-lsdj-cover"
+   }
+  ]
+ },
+ {
+  "key": "irûmubeatslsdjdemothankyoufor1111followers",
+  "title": "Irûmu Beats[LSDj Demo] (Thank you for 1111 followers)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2015-09-25",
+  "image": "https://i1.sndcdn.com/artworks-000130598225-5x9unl-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/irumu-beats"
+   }
+  ]
+ },
+ {
+  "key": "splatooninkorsinkgblsdjremix",
+  "title": "Splatoon - Ink or Sink[GB LSDj Remix]",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2015-06-14",
+  "image": "https://i1.sndcdn.com/artworks-000125440923-v6slq3-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/splatoon-8bit-lsdj-remix"
+   }
+  ]
+ },
+ {
+  "key": "古町moiハピイバスデgblsdjremix",
+  "title": "古町MOI - ハピイバスデ[GB LSDj Remix]",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2015-06-04",
+  "image": "https://i1.sndcdn.com/artworks-000119157101-r9o5so-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/moi-happy-birthday-8bit-lsdj-remix"
+   }
+  ]
+ },
+ {
+  "key": "electricyakuzasplendrgbbitpopremix",
+  "title": "Electric Yakuza - Splendr [GB Bitpop Remix]",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2015-05-07",
+  "image": "https://i1.sndcdn.com/artworks-000115934548-5j5wl7-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/electric-yakuza-splendr-tobokegao-bitpop-remix-1"
+   }
+  ]
+ },
+ {
+  "key": "とぼけがおイヌぞりレースリプレイのテーマbuylinklsdsngcom",
+  "title": "とぼけがお - イヌぞりレース リプレイのテーマ(Buy link = lsdsng.com)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2015-02-14",
+  "image": "https://i1.sndcdn.com/artworks-000106688909-rq2mr6-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/dog_sled-replay_theme"
+   }
+  ]
+ },
+ {
+  "key": "intheblueshirtemeraldlightgblsdj1loopremix",
+  "title": "In the blue shirt - Emerald Light[GB LSDj 1 loop Remix]",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2015-01-08",
+  "image": "https://i1.sndcdn.com/artworks-000102653538-5x16pq-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/emerald-light-8-bit-lsdj-remix"
+   }
+  ]
+ },
+ {
+  "key": "とぼけがおサンタクロースアリガトsantaclausarigato",
+  "title": "とぼけがお - サンタクロース・アリガト (Santa Claus Arigato)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2014-12-21",
+  "image": "https://i1.sndcdn.com/artworks-000100895358-qyibhp-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/santa-claus-arigato"
+   }
+  ]
+ },
+ {
+  "key": "高瀬麻里子君のぶぶチャチャgblsdjremix",
+  "title": "高瀬麻里子 - 君のぶぶチャチャ[GB LSDj remix]",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2014-11-24",
+  "image": "https://i1.sndcdn.com/artworks-4EkGtX2eBFUYIplI-fwYslg-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/kimi_no_bubu_chacha_8bit_lsdj_remix"
+   }
+  ]
+ },
+ {
+  "key": "音作り練習001lsdjpracticebuylinksavfile",
+  "title": "音作り練習 001(LSDJ Practice)[Buy link=.sav File]",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2014-11-02",
+  "image": "https://i1.sndcdn.com/artworks-000095855669-szkg9u-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/001-lsdj-practice"
+   }
+  ]
+ },
+ {
+  "key": "とぼけがおつかれた顔ゲームは終わらないguitarvocalremix",
+  "title": "とぼけがお - つかれた顔(ゲームは終わらない)[+guitar&vocal remix]",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2014-10-25",
+  "image": "https://i1.sndcdn.com/artworks-000095045700-v2yseu-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/tired-face"
+   }
+  ]
+ },
+ {
+  "key": "とぼけがお矩形波ちゃんの大冒険kukeihachannodaibouken",
+  "title": "とぼけがお - 矩形波ちゃんの大冒険(kukeiha chan no daibouken)",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2014-09-28",
+  "image": "https://i1.sndcdn.com/artworks-000092326931-2blmg3-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/kukeiha-chan-no-daibouken"
+   }
+  ]
+ },
+ {
+  "key": "とぼけがおつかれた顔ゲームは終わらないgblsdjremix",
+  "title": "とぼけがお - つかれた顔(ゲームは終わらない)[GB LSDj remix]",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2014-09-08",
+  "image": "https://i1.sndcdn.com/artworks-000090332137-dbiipw-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/tsukareta_kao"
+   }
+  ]
+ },
+ {
+  "key": "パーキッツ愛はカッコわるいgblsdjremix",
+  "title": "パーキッツ - 愛はカッコわるい[GB LSDj remix]",
+  "artist": "Tobokegao",
+  "type": "track",
+  "date": "2014-08-08",
+  "image": "https://i1.sndcdn.com/artworks-000087475677-5f66kj-t500x500.jpg",
+  "links": [
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/parquets-ai_ha_kakkowarui-8-bit-lsdj-remix"
    }
   ]
  }

@@ -100,6 +100,24 @@
     applyLog();
   }
 
+  // Home windows fold up with the [-] / [+] box on their border; each one is remembered
+  // per browser.
+  document.querySelectorAll(".win__toggle").forEach(function (b) {
+    var win = b.closest(".win");
+    var key = "tbk-fold-" + b.dataset.win;
+    var fold = function (on) {
+      win.classList.toggle("is-folded", on);
+      b.setAttribute("aria-expanded", String(!on));
+    };
+    try { fold(localStorage.getItem(key) === "1"); } catch (e) {}
+    b.hidden = false;
+    b.addEventListener("click", function () {
+      var on = !win.classList.contains("is-folded");
+      fold(on);
+      store(key, on ? "1" : "0");
+    });
+  });
+
   // Release filter: all / own / label.
   var grid = document.getElementById("release-grid");
   var chips = document.querySelectorAll(".chip[data-filter]");

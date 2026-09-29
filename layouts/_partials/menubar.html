@@ -1,5 +1,4 @@
-{{ $cur := cond (eq .Section "post") "news" .Section }}
-{{ if and .File (eq .File.ContentBaseName "about") }}{{ $cur = "about" }}{{ end }}
+{{ $cur := partial "cur.html" . }}
 <header class="menubar">
   {{ if .IsHome }}
   <a class="menubar__brand" href="{{ "/" | relURL }}"><span aria-hidden="true">▓▒░</span> C:\TBK</a>

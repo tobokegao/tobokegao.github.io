@@ -1,0 +1,10 @@
+{{- /* Where to hear or see one activity-log row: the row's own "links" (data/timeline.json),
+   else every platform of the release its url points at, else the bare url. Returns a
+   slice of dict "source" "url". */ -}}
+{{- $links := .links | default slice -}}
+{{- if and (not $links) .url -}}
+  {{- $u := .url -}}
+  {{- range hugo.Data.releases -}}{{- if and (not $links) (where .links "url" $u) -}}{{- $links = .links -}}{{- end -}}{{- end -}}
+  {{- if not $links -}}{{- $links = slice (dict "source" "web" "url" $u) -}}{{- end -}}
+{{- end -}}
+{{- return $links -}}

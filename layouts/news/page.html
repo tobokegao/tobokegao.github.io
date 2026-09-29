@@ -5,11 +5,13 @@
   {{ partial "win.html" (dict "file" (printf `C:\TBK\NEWS\%s.TXT` (replace $r.date "-" "")) "id" "page-t-file") }}
   <p class="doc__date log__row--{{ $r.kind }}"><time datetime="{{ $r.date }}">{{ replace $r.date "-" "." }}</time> <span class="log__kind">{{ partial "t.html" (printf "kind_%s" $r.kind) }}</span></p>
   <h1 class="doc__title" id="page-t">{{ partial "bi.html" (dict "ja" $r.ja "en" $r.en) }}</h1>
-  {{ with $r.url }}
-  <p><a class="btn" href="{{ . }}" rel="noopener" target="_blank">{{ partial "t.html" "openLink" }}: {{ (urls.Parse .).Host }}</a></p>
+  {{ $links := partial "row-links.html" $r }}
+  {{ with $links }}
+  <h2 class="sub">{{ partial "t.html" "rowLinks" }}</h2>
+  <p class="doc__links">{{ range . }}{{ partial "src-chip.html" (dict "source" .source "url" .url "label" true) }}{{ end }}</p>
   {{ end }}
   {{ $related := slice }}
-  {{ with $r.url }}{{ $u := . }}{{ range hugo.Data.releases }}{{ if where .links "url" $u }}{{ $related = $related | append . }}{{ end }}{{ end }}{{ end }}
+  {{ range $links }}{{ $u := .url }}{{ range hugo.Data.releases }}{{ if and (where .links "url" $u) (not (in $related .)) }}{{ $related = $related | append . }}{{ end }}{{ end }}{{ end }}
   {{ with $related }}
   <h2 class="sub">{{ partial "t.html" "related" }}</h2>
   <div class="grid grid--jackets">{{ range first 1 . }}{{ partial "release-card.html" . }}{{ end }}</div>

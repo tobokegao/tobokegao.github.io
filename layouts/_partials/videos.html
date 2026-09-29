@@ -1,0 +1,26 @@
+{{- /* The videos, grouped across platforms like the releases: the same title on niconico
+   and YouTube becomes one entry with a link for each. data/overrides.json can hide a
+   video ("hide") and join uploads whose titles differ ("same_video"). Newest first; the
+   first upload gives the title, date and thumbnail. Returns a slice of dicts. */ -}}
+{{- $o := hugo.Data.overrides -}}
+{{- $hide := $o.hide | default slice -}}
+{{- $all := slice -}}
+{{- range where hugo.Data.items "type" "video" -}}
+  {{- if not (in $hide .id) -}}
+    {{- $key := .title -}}
+    {{- $id := .id -}}
+    {{- range $o.same_video -}}{{- if in . $id -}}{{- $key = index . 0 -}}{{- end -}}{{- end -}}
+    {{- $all = $all | append (merge . (dict "key" $key)) -}}
+  {{- end -}}
+{{- end -}}
+{{- $groups := slice -}}
+{{- $seen := slice -}}
+{{- range $all -}}
+  {{- if not (in $seen .key) -}}
+    {{- $links := slice -}}
+    {{- range where $all "key" .key -}}{{- $links = $links | append (dict "source" .source "url" .url) -}}{{- end -}}
+    {{- $groups = $groups | append (dict "title" .title "date" .date "image" .image "url" .url "links" $links) -}}
+    {{- $seen = $seen | append .key -}}
+  {{- end -}}
+{{- end -}}
+{{- return $groups -}}

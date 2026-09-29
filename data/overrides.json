@@ -1,6 +1,25 @@
 {
- "_comment": "Manual fixes for scripts/fetch_feeds.py. Use item ids from data/items.json (e.g. youtube:XXXX, niconico:smXXXX). song = count this video as a song release, not_song = never count it, hide = drop the item from releases.",
+ "_comment": "Manual fixes. Use item ids from data/items.json (e.g. youtube:XXXX, niconico:smXXXX). song = count this video as a song release, not_song = never count it, hide = drop the item from releases and from the video list (e.g. not Tobokegao's own work), same_video = uploads of one video under different titles, shown as one card, same_release = uploads of one release under different titles, grouped as one (the first id names it).",
  "song": [],
  "not_song": [],
- "hide": []
+ "hide": [
+  "youtube:-bYDooxljz8"
+ ],
+ "same_video": [
+  [
+   "youtube:q9__j0OxCDg",
+   "niconico:sm46068978"
+  ],
+  [
+   "youtube:ZfWHHkZpIaw",
+   "niconico:sm46677862"
+  ]
+ ],
+ "same_release": [
+  [
+   "youtube:lrneussLfRI",
+   "niconico:sm46720404",
+   "soundcloud:2388702048"
+  ]
+ ]
 }

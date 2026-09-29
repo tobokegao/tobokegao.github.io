@@ -1,0 +1,6 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<!-- drawn for the 24px grid: two-pixel lines, fills only (the renderer fills every shape) -->
+<path fill-rule="evenodd" d="M8.5 4H15.5A4.5 4.5 0 0 1 20 8.5V15.5A4.5 4.5 0 0 1 15.5 20H8.5A4.5 4.5 0 0 1 4 15.5V8.5A4.5 4.5 0 0 1 8.5 4ZM8.8 6H15.2A2.8 2.8 0 0 1 18 8.8V15.2A2.8 2.8 0 0 1 15.2 18H8.8A2.8 2.8 0 0 1 6 15.2V8.8A2.8 2.8 0 0 1 8.8 6Z"/>
+<path fill-rule="evenodd" d="M12 8A4 4 0 1 1 12 16A4 4 0 1 1 12 8ZM12 9.9A2.1 2.1 0 1 0 12 14.1A2.1 2.1 0 1 0 12 9.9Z"/>
+<circle cx="16.1" cy="7.9" r="1.15"/>
+</svg>

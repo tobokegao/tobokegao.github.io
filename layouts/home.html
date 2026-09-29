@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section class="win win--hero" aria-labelledby="hero-t">
-  {{ partial "win.html" (dict "file" `C:\TBK\README.TXT` "id" "hero-t" "tag" "h1") }}
+  {{ partial "win.html" (dict "file" `C:\TBK\README.TXT` "id" "hero-t" "tag" "h1" "toggle" true) }}
   <div class="hero">
     {{ partial "banner.html" . }}
     <div class="hero__logos">
@@ -18,7 +18,7 @@
 {{ $own := slice }}
 {{ range hugo.Data.releases }}{{ if findRE `(?i)tobokegao|とぼけがお` .artist }}{{ $own = $own | append . }}{{ end }}{{ end }}
 <section class="win" aria-labelledby="latest-t">
-  {{ partial "win.html" (dict "file" "RELEASES.M3U" "id" "latest-t") }}
+  {{ partial "win.html" (dict "file" "RELEASES.M3U" "id" "latest-t" "toggle" true) }}
   <p class="win__caption">{{ partial "t.html" "latest" }}</p>
   <div class="grid grid--jackets">
     {{ range first 10 $own }}{{ partial "release-card.html" . }}{{ end }}
@@ -28,18 +28,18 @@
 
 <div class="split">
   <section class="win" aria-labelledby="videos-t">
-    {{ partial "win.html" (dict "file" "VIDEOS.MP4" "id" "videos-t") }}
+    {{ partial "win.html" (dict "file" "VIDEOS.MP4" "id" "videos-t" "toggle" true) }}
     <p class="win__caption">{{ partial "t.html" "latestVideos" }}</p>
     <div class="grid grid--videos">
-      {{ range first 4 (where hugo.Data.items "type" "video") }}{{ partial "video-card.html" . }}{{ end }}
+      {{ range first 8 (partial "videos.html" .) }}{{ partial "video-card.html" . }}{{ end }}
     </div>
     <p class="win__more"><a class="btn" href="{{ "/videos/" | relURL }}">{{ partial "t.html" "allVideos" }}</a></p>
   </section>
 
   <section class="win" aria-labelledby="log-t">
-    {{ partial "win.html" (dict "file" "NEWS.LOG" "id" "log-t") }}
+    {{ partial "win.html" (dict "file" "NEWS.LOG" "id" "log-t" "toggle" true) }}
     <p class="win__caption">{{ partial "t.html" "log" }}</p>
-    {{ partial "log.html" (dict "rows" (partial "timeline.html" .) "limit" 12) }}
+    {{ partial "log.html" (dict "rows" (partial "timeline.html" .) "limit" 13) }}
     <p class="win__more"><a class="btn" href="{{ "/news/" | relURL }}">{{ partial "t.html" "allNews" }}</a></p>
   </section>
 </div>

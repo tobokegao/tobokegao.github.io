@@ -1,0 +1,8 @@
+{{- /* The small pixel icons that repeat down the long lists (platform chips, the play mark),
+   defined once per page; each use is a <use> of the symbol (_partials/icon.html), so a list
+   of hundreds of rows no longer carries hundreds of copies of the same drawing. */ -}}
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+{{- range slice "bandcamp" "apple" "soundcloud" "youtube" "niconico" "spotify" "x" "bluesky" "web" "play" -}}
+<symbol id="i-{{ . }}" viewBox="0 0 18 18">{{ replaceRE `^\s*<svg[^>]*>|</svg>\s*$` "" (partial (printf "icons/%s.html" .) .) | safeHTML }}</symbol>
+{{- end -}}
+</defs></svg>

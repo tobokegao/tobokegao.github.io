@@ -20,7 +20,7 @@ description_en = "Meet the Performers"
 +++
 
 {{< lang ja >}}
-<img src="/img/TOBOX Release Party Flyer.png" width="447" height="630" />
+<img src="/img/TOBOX Release Party Flyer.webp" width="447" height="630" />
 
   
 　  
@@ -74,7 +74,7 @@ Timetable
 　  
 　  
 **赤帯**
-<img src="/img/akaobi.png" width="320" height="320" />
+<img src="/img/akaobi.webp" width="320" height="320" />
 
 ©Stephen McLeod Blythe aka unexpected bowtie
 
@@ -105,7 +105,7 @@ chiptune黎明期から活動しているGAMEBOYを扱った道民chiptunerで�
 　  
 　  
 **梅本佑利**
-<img src="/img/yuriumemoto.png" width="320" height="320" />
+<img src="/img/yuriumemoto.webp" width="320" height="320" />
 
 　  
 チップチューンの制作と、それをチェロによる演奏で再現していた(https://youtube.com/watch?v=OdEGftdC2jE )ことを知って急遽お声がけさせていただきました…！当日のパフォーマンスがとても楽しみな一人です。
@@ -127,7 +127,7 @@ chiptune黎明期から活動しているGAMEBOYを扱った道民chiptunerで�
 　  
 　  
 **AVGN crew**
-<img src="/img/AVGN.png" width="320" height="320" />
+<img src="/img/AVGN.webp" width="320" height="320" />
 
 　  
 AVGNのイベントに僕が参加させてもらい、それがすごい楽しかったのと、その時のVGMDJの雰囲気を採り入れたいなと思い、僕のイベントにも参加してもらおうとお声がけしました！
@@ -148,7 +148,7 @@ IK:
 　  
 　  
 **Ca5**
-<img src="/img/ca5.png" width="320" height="320" />
+<img src="/img/ca5.webp" width="320" height="320" />
 
 　  
 ESC TRAXの主催者の一人であり(僕の初EPもこちらからリリースしています)、chipbreakの主要人物というイメージもある、かごさんも実は出身は札幌！ということで札幌の方に参加してもらうことに…！
@@ -174,7 +174,7 @@ ESC TRAXの主催者の一人であり(僕の初EPもこちらからリリース
 　  
 　  
 **konamiscc a.k.a. memowave**
-<img src="/img/konamiscc.png" width="320" height="320" />
+<img src="/img/konamiscc.webp" width="320" height="320" />
 
 　  
 [+TEKさんのFM音源アレンジコンピ](http://plustek.bandcamp.com/track/xepheria)にも参加していたmemowaveさんがkonamisccとしてスペインから緊急来日！
@@ -187,7 +187,7 @@ ESC TRAXの主催者の一人であり(僕の初EPもこちらからリリース
 　  
 　  
 **さうすまうぅん**
-<img src="/img/sausumaulun.png" width="320" height="320" />
+<img src="/img/sausumaulun.webp" width="320" height="320" />
 
 　  
 ある時は理髪店/haircut VOX、またある時はレーベルショップLIKE A DREAMING GIRL(旧vox cassette store)のオーナーであるyosukeさんがDJ名義で参加です！
@@ -200,7 +200,7 @@ ESC TRAXの主催者の一人であり(僕の初EPもこちらからリリース
 　  
 　  
 **cvel**
-<img src="/img/cvel.png" width="320" height="320" />
+<img src="/img/cvel.webp" width="320" height="320" />
 
 　  
 札幌の音楽サークルprototypeのコンピに参加されていて、心の中に渦巻くものを具現化したような音楽を作っていて最高だったのと、元々futurebass方面から音楽を始めたと聞き、矩形波と親和性があるのではないか？と思いお誘いしました！
@@ -222,7 +222,7 @@ ESC TRAXの主催者の一人であり(僕の初EPもこちらからリリース
 　  
 　  
 **嶽本サライ**
-<img src="/img/saraitakemoto.png" width="320" height="320" />
+<img src="/img/saraitakemoto.webp" width="320" height="320" />
 
 　  
 実は長年ディグの仕方でお世話になっている嶽本サライさんも呼びたいな…と思いお誘いしました！
@@ -234,7 +234,7 @@ ESC TRAXの主催者の一人であり(僕の初EPもこちらからリリース
 　  
 　  
 **tktc szk**
-<img src="/img/tktcszk.png" width="320" height="320" />
+<img src="/img/tktcszk.webp" width="320" height="320" />
 
 　  
 僕がギターとGAMEBOYと生声のボーカルでライブをした初期の初ライブに対バンで出ていたlakeboatsのメンバーで、また共演したかったためPure MIDI枠でたかとしさんにも出演してもらうことに！
@@ -249,7 +249,7 @@ ESC TRAXの主催者の一人であり(僕の初EPもこちらからリリース
 　  
 　  
 **ツポールヌ**
-<img src="/img/tsuporunu.png" width="320" height="320" />
+<img src="/img/tsuporunu.webp" width="320" height="320" />
 
 　  
 改造ファミコンでの演奏や、多種多様な音楽プロジェクトとともに絵も描いている小林売平さんに、名義の一つであるツポールヌとして参加してもらうことになりました！
@@ -287,7 +287,7 @@ https://bijutsutecho.com/magazine/series/s6/24289
 　  
 　  
 **hally**
-<img src="/img/hally.png" width="320" height="320" />
+<img src="/img/hally.webp" width="320" height="320" />
 
 　  
 ゲーム音楽史、ゲーム史研究家、ゲーム音楽家、そしてchiptune音楽家でもある、日本にchiptuneの概念を広めた重要人物。
@@ -357,7 +357,7 @@ TBKgaoからリリースした僕提唱のPure MIDIコンピにも参加して�
 {{< /lang >}}
 
 {{< lang en >}}
-<img src="/img/TOBOX Release Party Flyer.png" width="447" height="630" />
+<img src="/img/TOBOX Release Party Flyer.webp" width="447" height="630" />
 
   
 　  
@@ -411,7 +411,7 @@ Timetable
   
 　  
 **赤帯**
-<img src="/img/akaobi.png" width="320" height="320" />
+<img src="/img/akaobi.webp" width="320" height="320" />
 
 ©Stephen McLeod Blythe aka unexpected bowtie
   
@@ -441,7 +441,7 @@ He is a roadside chiptuner who has been active in GAMEBOY since the dawn of chip
 　  
 　  
 **梅本佑利**
-<img src="/img/yuriumemoto.png" width="320" height="320" />
+<img src="/img/yuriumemoto.webp" width="320" height="320" />
 
   
 I asked Umemoto-san to join the event after learning that they had created a chiptune and recreated it with a cello performance…!(https://youtube.com/watch?v=OdEGftdC2jE ) umemoto-san&#x0027;s is one of the performances i&#x0027;m most looking forward to (on that day)
@@ -463,7 +463,7 @@ I also wanted to check out how we have evolved together, such as the increase in
 　  
 　  
 **AVGN crew**
-<img src="/img/AVGN.png" width="320" height="320" />
+<img src="/img/AVGN.webp" width="320" height="320" />
 
 　  
 I had the opportunity to participate in an AVGN event, which was a lot of fun, and I wanted to capture the atmosphere of the VGMDJ, so I asked them to participate in my event as well!
@@ -484,7 +484,7 @@ IK:
 　  
 　  
 **Ca5**
-<img src="/img/ca5.png" width="320" height="320" />
+<img src="/img/ca5.webp" width="320" height="320" />
 
 One of the organizers of ESC TRAX (my first EP was released there), ca5 san, who is also a major figure in chipbreak, is actually from Sapporo! So I decided to have someone from Sapporo join us…!
 
@@ -510,7 +510,7 @@ I&#x0027;m so glad they decided to participate because their Animal Crossing-ish
 　  
 　  
 **konamiscc a.k.a. memowave**
-<img src="/img/konamiscc.png" width="320" height="320" />
+<img src="/img/konamiscc.webp" width="320" height="320" />
 
 　  
 memowave, who also participated in [+TEK&#x0027;s FM arrangement compilation](http://plustek.bandcamp.com/track/xepheria), will make an emergency visit to Japan from Spain as konamiscc!
@@ -523,7 +523,7 @@ This time, he will be DJing and singing mainly European demoscene songs, so plea
 　  
 　  
 **さうすまうぅん**
-<img src="/img/sausumaulun.png" width="320" height="320" />
+<img src="/img/sausumaulun.webp" width="320" height="320" />
 
 　  
 Yosuke, owner of barbershop/haircut VOX and label store LIKE A DREAMING GIRL (former vox cassette store), will join us as a DJ!
@@ -536,7 +536,7 @@ I invited him to this event because I like his CDs and his assortment of indie-r
 　  
 　  
 **cvel**
-<img src="/img/cvel.png" width="320" height="320" />
+<img src="/img/cvel.webp" width="320" height="320" />
 
 　  
 cvel participated in a compilation by Sapporo music circle prototype.
@@ -560,7 +560,7 @@ The performer, tktc szk, and he recently formed the Coyote Man Show, and I felt 
 　  
 　  
 **嶽本サライ**
-<img src="/img/saraitakemoto.png" width="320" height="320" />
+<img src="/img/saraitakemoto.webp" width="320" height="320" />
 
 　  
 Actually, I&#x0027;d like to invite Sarai Takemoto, who has been helping me in the way of digs for many years... and I&#x0027;ve invited her!
@@ -572,7 +572,7 @@ I respect Takemoto because she has a great relationship with the art Takemoto pr
 　  
 　  
 **tktc szk**
-<img src="/img/tktcszk.png" width="320" height="320" />
+<img src="/img/tktcszk.webp" width="320" height="320" />
 
 　  
 Takatoshi was a member of lakeboats who was a co-star of my first live show in the early days when I performed with guitar, GAMEBOY and live vocals. Since we wanted to perform together again, we decided to have Takatoshi perform in the Pure MIDI slot!
@@ -587,7 +587,7 @@ They will be performing with heavy equipment…!
 　  
 　  
 **ツポールヌ**
-<img src="/img/tsuporunu.png" width="320" height="320" />
+<img src="/img/tsuporunu.webp" width="320" height="320" />
 
 　  
 I&#x0027;ve asked Ryohei Kobayashi, who plays on a modified NES and paints along with a wide variety of musical projects, to join us as one of his names, ツポールヌ!
@@ -625,7 +625,7 @@ I&#x0027;m looking forward to seeing the video work they will be showing this ti
 　  
 　  
 **hally**
-<img src="/img/hally.png" width="320" height="320" />
+<img src="/img/hally.webp" width="320" height="320" />
 
 　  
 He is a game music historian, game history researcher, game musician, and a chiptune musician, and an important figure in spreading the concept of chiptune in Japan.

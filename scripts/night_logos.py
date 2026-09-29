@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "icons-src" / "logos"
 OUT = ROOT / "static" / "img"
-RAMP = ["#c9ccd1", "#dcdad2", "#e6dcb4", "#e2c76a"]   # same as the night icons
+RAMP = ["#c9ccd1", "#d4d5d2", "#dcd9c8", "#e0d4a6"]   # same as the night icons at rest
 
 LOGOS = {"tobokegao-white.png": "tobokegao-logo-night.png", "tbkgao-white.png": "tbkgao-logo-night.png"}
 

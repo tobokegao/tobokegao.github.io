@@ -1,6 +1,8 @@
 """24x24 painterly pixel-art link icons for the home page (layouts/_partials/icons-hd/).
 
     python scripts/hd_icons.py
+    python scripts/hd_icons.py --from-grids   # redraw from icons-src/hd/*.txt only
+    python scripts/hd_icons.py --only instagram   # just these icons
 
 Each mark (official ones in icons-src/svg from simple-icons; redrawn ones in
 icons-src/hand) is drawn 8x larger in Edge, then every icon pixel is decided from how
@@ -24,6 +26,9 @@ outline -> fill -> 3D/shadow -> highlights -> details.
   pillow light from below-left (up-lighting, Jazz Jackrabbit 2) in a 5-tone hue-shifted ramp, band edges broken into
   2x2 brush clusters, and a soft cast shadow on the badge; anti-alias pixels blend toward the outline
   color, so edges look the same on the day and the night backgrounds
+- on hover the light turns up: a hidden layer (.px__hl) repaints the lower part of the
+  piece warmer in three dithered steps and a one-pixel yellow rim hugs the piece; at night
+  the lines take one step more light and the silhouette's outer edge turns lemon
 - anti-alias only on curves and long steps, never on 45-degree lines (Saint11), and no
   orphan pixels
 The pixel classes of each icon are also written to icons-src/hd/<name>.txt for reference.
@@ -62,6 +67,14 @@ ICONS = {
     "bandcamp":   dict(src=HAND / "bandcamp.svg",       kind="tile",  size=24, mark="#ffffff", tile="#1da0c3"),
     "spotify":    dict(src=HAND / "spotify.svg",        kind="hull",  size=24, mark="#1ed760", hole="#101010"),
     "apple":      dict(src=HAND / "applemusic.svg",     kind="hull",  size=24, mark="#fa2d48", hole="#ffffff"),
+    "instagram":  dict(src=HAND / "instagram.svg",      kind="tile",  size=24, mark="#ffffff", tile="#d62976"),
+    # the old cloud logo (until 2020), by request; drawn on the grid by
+    # icons-src/hand/mixcloud_grid.py (the official outline broke up at this size)
+    "mixcloud":   dict(src=OFFICIAL / "mixcloud-2014.svg", kind="tile", size=22, mark="#ffffff", tile="#314359",
+                       hand_grid=True),
+    # "WB" as on the Weeklybeats favicon, drawn on the grid by icons-src/hand/weeklybeats_grid.py
+    "weeklybeats": dict(src=HAND / "weeklybeats_grid.py", kind="tile", size=24, mark="#10161c", tile="#6ce9fc",
+                        flat_mark=True, hand_grid=True),
     "botb":       dict(src=HAND / "botb.svg",           kind="tile",  size=24, mark="#fff3d6", tile="#3d78b2",
                        flat_mark=True,            # poster letters: flat cream, no pillow volume
                        stack=("#e4502e", "#f28c28", "#f7c332"),    # the poster's stacked shadow
@@ -131,6 +144,13 @@ def coverage(cfg):
     shot = tmp / "s.png"
     subprocess.run([EDGE, "--headless=new", "--disable-gpu", "--hide-scrollbars", f"--user-data-dir={tmp / 'prof'}",
                     "--window-size=600,600", f"--screenshot={shot}", page.as_uri()], check=True, capture_output=True)
+    if not shot.exists():
+        # headless Edge sometimes exits without writing the file: let ImageMagick draw the
+        # mark instead (black on white, placed as on the page)
+        flat = tmp / "m.svg"
+        flat.write_text(svg.replace("<svg ", '<svg fill="#000" ', 1), "utf-8")
+        subprocess.run(["magick", "-size", f"{big}x{big}", "xc:white", "(", "-background", "none", str(flat), ")",
+                        "-geometry", f"+{off}+{off}", "-composite", str(shot)], check=True, capture_output=True)
     raw = subprocess.run(["magick", str(shot), "-crop", f"{big}x{big}+0+0", "-colorspace", "gray", "-depth", "8", "gray:-"],
                          check=True, capture_output=True).stdout
     dark = [[raw[y * big + x] < 128 for x in range(big)] for y in range(big)]
@@ -516,8 +536,30 @@ def to_svg(cfg, g):
     if "ring" in paths:
         body_svg.append(f'<path class="px__o" d="{runs(paths.pop("ring"))}"/>')
     body_svg += [f'<path fill="{c}" d="{runs(pts)}"/>' for c, pts in paths.items()]
+    # hover: the yellow light from below turns up. The lower part of the piece is repainted
+    # warmer, in three steps rising from the bottom, joined with the same 2x2 Bayer dither;
+    # the layer stays hidden (.px__hl) until the link is hovered or focused
+    dark = sum(_rgb(body_c)) / 765 <= 0.2
+    amounts = (0, 0.14, 0.28, 0.42) if dark else (0, 0.22, 0.4, 0.58)
+    hi = {}
+    for (y, x), c in fills.items():
+        k = hover_step(y, x, by0, by1)
+        if k and sum(_rgb(c)) / 765 > 0.1:   # near-black marks stay black (yellow on them turned muddy)
+            hi.setdefault(_mix(c, WARM, amounts[k]), []).append((y, x))
+    # and a one-pixel yellow rim hugs the piece (not its shadow), drawn over the shadow's first row
+    hi.setdefault(WARM, []).extend(ring)
+    body_svg.append('<g class="px__hl">' + "".join(f'<path fill="{c}" d="{runs(pts)}"/>' for c, pts in hi.items()) + "</g>")
     return (f'<svg class="px px--hd" viewBox="0 0 {size} {size}" width="{size * 2}" height="{size * 2}" '
             f'aria-hidden="true" focusable="false" shape-rendering="crispEdges">{"".join(body_svg)}</svg>')
+
+
+def hover_step(y, x, y0, y1):
+    """0..3: how much more light a pixel catches on hover. Nothing in the top quarter, then
+    rising to the bottom, the steps joined with a 2x2 Bayer dither."""
+    bayer = ((0.125, 0.625), (0.875, 0.375))
+    t = min(1.0, max(0.0, ((y - y0) / max(1, y1 - y0) - 0.25) / 0.75)) * 3
+    i = int(t)
+    return min(3, i + (1 if t - i > bayer[y % 2][x % 2] else 0))
 
 
 def to_mono_svg(cfg, g):
@@ -537,12 +579,21 @@ def to_mono_svg(cfg, g):
                 continue
             if v == glyph:
                 lit.add((y, x))
-            elif v == body and any(not (0 <= y + dy < N and 0 <= x + dx < N) or g[y + dy][x + dx] == "."
-                                   for dy, dx in ((1, 0), (-1, 0), (0, 1), (0, -1))):
-                lit.add((y, x))
+    if not (cfg.get("line_art") or cfg.get("night_fill")):
+        # the silhouette's line runs just OUTSIDE the badge, where the day outline sits, so
+        # the badge keeps its full size and the mark inside gets a pixel of air (drawn on the
+        # badge's own edge it looked small and cramped)
+        shape = {(y, x) for y in range(N) for x in range(N) if g[y][x] != "."}
+        for y in range(-1, N + 1):
+            for x in range(-1, N + 1):
+                if (y, x) not in shape and any((y + dy, x + dx) in shape
+                                               for dy, dx in ((1, 0), (-1, 0), (0, 1), (0, -1))):
+                    lit.add((y, x))
     # the night light is Tobokegao yellow from below too: the lines run from a dim grey at
     # the top to yellow at the bottom, four steps joined with 2x2 Bayer dithering
-    ramp_n = ["#c9ccd1", "#dcdad2", "#e6dcb4", "#e2c76a"]   # soft: the dark page makes yellow look stronger
+    # soft: the dark page makes yellow look stronger, and the resting state stays dim so the
+    # hover (one step up, ending in lemon) reads clearly
+    ramp_n = ["#c9ccd1", "#d4d5d2", "#dcd9c8", "#e0d4a6"]
     bayer = ((0.125, 0.625), (0.875, 0.375))
     y0 = min(y for y, _ in lit) if lit else 0
     y1 = max(y for y, _ in lit) if lit else 1
@@ -576,6 +627,23 @@ def to_mono_svg(cfg, g):
         return "".join(d)
 
     body = "".join(f'<path fill="{c}" d="{runs(pts)}"/>' for c, pts in by_color.items())
+    # hover: the lines take one step more light, and the lowest step turns lemon
+    ramp_hi = ["#dcdad2", "#e6dcb4", "#e2c76a", "#fbd743"]
+    hi = {}
+    for y, x in lit:
+        t = (y - y0) / max(1, y1 - y0) * 3
+        i = int(t)
+        k = min(3, i + (1 if t - i > bayer[y % 2][x % 2] else 0))
+        hi.setdefault(ramp_hi[k], []).append((y + P, x + P))
+    # and the outer edge of the silhouette turns lemon. The lines are already one pixel wide,
+    # so a rim drawn outside them read as a doubled, two-pixel frame and clogged the antennas
+    shape = {(y, x) for y in range(N) for x in range(N) if g[y][x] != "."}
+    edge = {(y + P, x + P) for (y, x) in lit
+            if (y, x) not in shape or any((y + dy, x + dx) not in shape for dy in (-1, 0, 1) for dx in (-1, 0, 1))}
+    for c in hi:
+        hi[c] = [p_ for p_ in hi[c] if p_ not in edge]
+    hi.setdefault("#fbd743", []).extend(edge)
+    body += '<g class="px__hl">' + "".join(f'<path fill="{c}" d="{runs(pts)}"/>' for c, pts in hi.items()) + "</g>"
     return (f'<svg class="px px--hd" viewBox="0 0 {size} {size}" width="{size * 2}" height="{size * 2}" '
             f'aria-hidden="true" focusable="false" shape-rendering="crispEdges">{body}</svg>')
 
@@ -591,7 +659,18 @@ def main():
         OUT = Path(sys.argv[sys.argv.index("--out") + 1])
     GRIDS.mkdir(parents=True, exist_ok=True)
     OUT.mkdir(parents=True, exist_ok=True)
+    only = sys.argv[sys.argv.index("--only") + 1].split(",") if "--only" in sys.argv else None
     for name, cfg in ICONS.items():
+        if only and name not in only:
+            continue
+        if "--from-grids" in sys.argv or cfg.get("hand_grid"):
+            # redraw from the saved pixel classes (no Edge or ImageMagick needed)
+            g = [list(r) for r in (GRIDS / f"{name}.txt").read_text("utf-8").splitlines()]
+            (OUT / f"{name}.html").write_text(to_svg(cfg, g), "utf-8")
+            night = OUT.parent / (OUT.name + "-night")
+            (night / f"{name}.html").write_text(to_mono_svg(cfg, g), "utf-8")
+            print("ok", name)
+            continue
         g = classify(coverage(cfg), cfg["kind"])
         if "mirror_rows" in cfg:
             g = mirror(g, cfg["mirror_rows"])

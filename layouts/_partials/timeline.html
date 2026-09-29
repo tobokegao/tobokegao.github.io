@@ -1,16 +1,17 @@
 {{/* All log rows, newest first: manual timeline, collected news, feed releases, articles. */}}
 {{ $rows := slice }}
 {{ $manual := slice }}
-{{/* each data row gets "page": its own page, made by content/news/_content.gotmpl with the same id */}}
+{{/* each hand-written row gets "page": its own page, made by content/news/_content.gotmpl with the same id */}}
 {{ range hugo.Data.timeline }}{{ if eq .kind "release" }}{{ $manual = $manual | append .date }}{{ end }}{{ end }}
 {{ $data := slice }}
 {{ range hugo.Data.timeline }}{{ $data = $data | append . }}{{ end }}
 {{ range hugo.Data.news }}{{ $data = $data | append . }}{{ end }}
-{{ range hugo.Data.autolog }}{{ if not (in $manual .date) }}{{ $data = $data | append . }}{{ end }}{{ end }}
 {{ range $data }}
   {{ $id := printf "%s-%s" (replace .date "-" "") (substr (md5 .ja) 0 6) }}
   {{ $rows = $rows | append (merge . (dict "page" (printf "/news/%s/" $id | relURL))) }}
 {{ end }}
+{{/* feed rows have no page of their own: the row opens the release (its url) */}}
+{{ range hugo.Data.autolog }}{{ if not (in $manual .date) }}{{ $rows = $rows | append . }}{{ end }}{{ end }}
 {{ range where site.RegularPages "Section" "post" }}
   {{ $rows = $rows | append (dict "date" (.Date.Format "2006-01-02") "kind" "news" "ja" .Title "en" (.Params.title_en | default .Title) "url" .RelPermalink) }}
 {{ end }}
