@@ -5,10 +5,30 @@
   {{ partial "win.html" (dict "file" (printf `C:\TBK\NEWS\%s.TXT` (replace $r.date "-" "")) "id" "page-t-file") }}
   <p class="doc__date log__row--{{ $r.kind }}"><time datetime="{{ $r.date }}">{{ replace $r.date "-" "." }}</time> <span class="log__kind">{{ partial "t.html" (printf "kind_%s" $r.kind) }}</span></p>
   <h1 class="doc__title" id="page-t">{{ partial "bi.html" (dict "ja" $r.ja "en" $r.en) }}</h1>
+  {{- /* The row's own write-up, when it has one: "article": "<name>" in the row points to
+     assets/news/<name>.ja.md and .en.md (a name of its own, as the page path changes with
+     the ja title). Headings start at ##. */ -}}
+  {{ with $r.article }}
+  <div class="prose doc__body">
+    {{ with resources.Get (printf "news/%s.ja.md" .) }}<div data-l="ja">{{ .Content | $.RenderString (dict "display" "block") }}</div>{{ end }}
+    {{ with resources.Get (printf "news/%s.en.md" .) }}<div data-l="en" lang="en">{{ .Content | $.RenderString (dict "display" "block") }}</div>{{ end }}
+  </div>
+  {{ end }}
   {{ $links := partial "row-links.html" $r }}
   {{ with $links }}
   <h2 class="sub">{{ partial "t.html" "rowLinks" }}</h2>
   <p class="doc__links">{{ range . }}{{ partial "src-chip.html" (dict "source" .source "url" .url "label" true) }}{{ end }}</p>
+  {{ end }}
+  {{- /* Flyers picked from the X archive (scripts/x_to_timeline.py). One copy per language
+     for the alt text; the hidden one is lazy, so it is never fetched. */ -}}
+  {{ with $r.images }}
+  {{ $f := index hugo.Data.strings "kind_flyer" }}
+  <div class="doc__flyers">
+    {{ range . }}
+    <span data-l="ja"><img src="{{ .src | relURL }}" width="{{ .w }}" height="{{ .h }}" alt="{{ $r.ja }} {{ $f.ja }}" loading="lazy"></span>
+    <span data-l="en" lang="en"><img src="{{ .src | relURL }}" width="{{ .w }}" height="{{ .h }}" alt="{{ $r.en }} {{ lower $f.en }}" loading="lazy"></span>
+    {{ end }}
+  </div>
   {{ end }}
   {{ $related := slice }}
   {{ range $links }}{{ $u := .url }}{{ range hugo.Data.releases }}{{ if and (where .links "url" $u) (not (in $related .)) }}{{ $related = $related | append . }}{{ end }}{{ end }}{{ end }}

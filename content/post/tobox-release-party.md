@@ -20,7 +20,7 @@ description_en = "Meet the Performers"
 +++
 
 {{< lang ja >}}
-<img src="/img/TOBOX Release Party Flyer.webp" width="447" height="630" />
+<img src="/img/TOBOX Release Party Flyer.webp" alt="TOBOX Release Party フライヤー" width="447" height="630" />
 
   
 　  
@@ -177,7 +177,7 @@ ESC TRAXの主催者の一人であり(僕の初EPもこちらからリリース
 <img src="/img/konamiscc.webp" width="320" height="320" />
 
 　  
-[+TEKさんのFM音源アレンジコンピ](http://plustek.bandcamp.com/track/xepheria)にも参加していたmemowaveさんがkonamisccとしてスペインから緊急来日！
+[+TEKさんのFM音源アレンジコンピ](https://plustek.bandcamp.com/track/xepheria)にも参加していたmemowaveさんがkonamisccとしてスペインから緊急来日！
 
 今回はヨーロッパのデモシーン楽曲を中心にDJをしたり、唄ったりしてくれるようですのでお楽しみに…！
 
@@ -357,7 +357,7 @@ TBKgaoからリリースした僕提唱のPure MIDIコンピにも参加して�
 {{< /lang >}}
 
 {{< lang en >}}
-<img src="/img/TOBOX Release Party Flyer.webp" width="447" height="630" />
+<img src="/img/TOBOX Release Party Flyer.webp" alt="TOBOX Release Party flyer" width="447" height="630" />
 
   
 　  
@@ -513,7 +513,7 @@ I&#x0027;m so glad they decided to participate because their Animal Crossing-ish
 <img src="/img/konamiscc.webp" width="320" height="320" />
 
 　  
-memowave, who also participated in [+TEK&#x0027;s FM arrangement compilation](http://plustek.bandcamp.com/track/xepheria), will make an emergency visit to Japan from Spain as konamiscc!
+memowave, who also participated in [+TEK&#x0027;s FM arrangement compilation](https://plustek.bandcamp.com/track/xepheria), will make an emergency visit to Japan from Spain as konamiscc!
 
 This time, he will be DJing and singing mainly European demoscene songs, so please look forward to it…!
 

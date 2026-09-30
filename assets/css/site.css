@@ -482,6 +482,8 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .log__links { position: relative; z-index: 1; display: inline-flex; gap: 6px; margin-left: 8px; vertical-align: -3px; }
 .log__links .px { width: 18px; height: 18px; }
 .doc__links { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 0 0 8px; }
+.doc__flyers { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin: 20px 0 8px; }
+.doc__flyers img { display: block; max-width: 100%; max-height: 80vh; width: auto; height: auto; border: 2px solid; border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md); }
 
 /* lists & docs */
 .sub { font: var(--dot)/2 var(--f-dot); color: var(--hi); margin: 8px 0 10px; }
@@ -510,13 +512,15 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .doc__title { margin: 0; text-align: center; font: 400 calc(var(--dot) * 2)/1.4 var(--f-dot); color: var(--hi); text-wrap: balance; }
 .doc__date { margin: 4px 0 0; text-align: center; font: var(--dot) var(--f-dot); color: var(--ink-dim); }
 .doc__lead { margin: 6px 0 24px; text-align: center; font: var(--dot)/1.8 var(--f-dot); color: var(--ink-dim); }
-
+.prose { max-width: 68ch; margin-inline: auto; overflow-wrap: anywhere; }
 .prose { max-width: 68ch; margin-inline: auto; }
 .prose > :first-child, .prose > [data-l] > :first-child { margin-top: 0; }
 .prose h1, .prose h2, .prose h3 { font: 400 calc(var(--dot) * 2)/1.4 var(--f-dot); color: var(--hi); text-wrap: balance; }
 .prose h2 { margin-top: 2.2em; padding-bottom: 4px; border-bottom: 3px double var(--frame); }
 .prose h2::before { content: "■ "; color: var(--mark); }
 .prose h3 { font-size: var(--dot); }
+.prose h4 { margin: 1.8em 0 .6em; font: 700 15px/1.6 var(--f-body); color: var(--ink); }
+.prose h4::before { content: "▶ "; color: var(--mark); }
 .prose p { margin: 0 0 1.2em; }
 .prose img { margin: 1em auto; border: 2px solid; border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md); }
 /* Quotes are DOS message boxes: a title bar, a double frame, a hard shadow,

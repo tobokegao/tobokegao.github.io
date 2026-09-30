@@ -20,6 +20,19 @@ en = "Designs"
 ja = "フライヤー"
 en = "Flyer"
 
+# Tobokegao's part in a design made with others (designs.json "role")
+[role_idea]
+ja = "アイデア出し"
+en = "Concept"
+
+[role_type]
+ja = "文字のならべかた"
+en = "Typography"
+
+[role_codesign]
+ja = "いっしょにデザイン"
+en = "Co-design"
+
 [post]
 ja = "記事"
 en = "Posts"

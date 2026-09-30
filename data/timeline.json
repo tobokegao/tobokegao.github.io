@@ -1,5 +1,672 @@
 [
   {
+    "date": "2026-09-17",
+    "kind": "feature",
+    "ja": "音MAD の合作「正岡子規合作」に参加",
+    "en": "Took part in the otoMAD collaboration \"正岡子規合作\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/2100575887590817800"
+      },
+      {
+        "source": "youtube",
+        "url": "https://youtu.be/o_JYK2tOVgg"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "kind": "live",
+    "ja": "「北大ボカロDJ vol.48」に出演",
+    "en": "Played at \"北大ボカロDJ vol.48\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/2080962118518767727"
+      },
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=ZfWHHkZpIaw"
+      },
+      {
+        "source": "niconico",
+        "url": "https://www.nicovideo.jp/watch/sm46677862"
+      }
+    ],
+    "article": "20260818-hokudai48"
+  },
+  {
+    "date": "2026-05-03",
+    "kind": "live",
+    "ja": "「Visualatch Audiotouch : Play the otoMAD Jam (音TOUCH)」を主催",
+    "en": "Organized \"Visualatch Audiotouch : Play the otoMAD Jam (音TOUCH)\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/2036043251249992095"
+      }
+    ],
+    "images": [
+      {
+        "src": "/img/designs/otouch-2026.webp",
+        "w": 1272,
+        "h": 1800
+      }
+    ],
+    "article": "20260503-otouch"
+  },
+  {
+    "date": "2026-03-21",
+    "kind": "live",
+    "ja": "「MAD ANIMATED DREAM」に音MAD-mix で出演",
+    "en": "Played an otoMAD mix at \"MAD ANIMATED DREAM\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/2034588637153960176"
+      },
+      {
+        "source": "niconico",
+        "url": "https://www.nicovideo.jp/watch/sm46084036"
+      }
+    ],
+    "article": "20260321-madream"
+  },
+  {
+    "date": "2026-02-06",
+    "kind": "release",
+    "ja": "コンピレーション「Nice Fruit - MellMell x Pure MIDI x Voice Synthesis Arrange Compilation」を TBKgao からリリース",
+    "en": "Released the compilation \"Nice Fruit - MellMell x Pure MIDI x Voice Synthesis Arrange Compilation\" on TBKgao",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/2019766028457353505"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://mellmell.bandcamp.com/album/nice-fruit-mellmell-x-pure-midi-x-voice-synthesis-arrange-compilation"
+      }
+    ]
+  },
+  {
+    "date": "2026-01-15",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.27」（ミニマルテクノ、第1期最終回）を主催",
+    "en": "Organized \"To Be Kontinued vol.27\" (minimal techno, last of season 1) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/2009286528384795116"
+      },
+      {
+        "source": "web",
+        "url": "https://livepocket.jp/e/to_be_kontinued_vol27"
+      }
+    ],
+    "article": "20260115-tbk27"
+  },
+  {
+    "date": "2026-01-11",
+    "kind": "live",
+    "ja": "「PLASTIC THEATER 32周年イベント」にライブで出演",
+    "en": "Played live at the PLASTIC THEATER 32nd anniversary event",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/2010282602092249101"
+      }
+    ]
+  },
+  {
+    "date": "2025-12-20",
+    "kind": "feature",
+    "ja": "音MAD の合作「ジェネリック一晩合作3」に参加",
+    "en": "Took part in the otoMAD collaboration \"ジェネリック一晩合作3\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/2002321912299434082"
+      },
+      {
+        "source": "niconico",
+        "url": "https://www.nicovideo.jp/watch/sm45742349"
+      }
+    ]
+  },
+  {
+    "date": "2025-12-18",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.26」（マッシュアップ回）を主催",
+    "en": "Organized \"To Be Kontinued vol.26\" (mashup) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1995567725331317080"
+      },
+      {
+        "source": "web",
+        "url": "https://livepocket.jp/e/to_be_kontinued_vol26"
+      },
+      {
+        "source": "niconico",
+        "url": "https://www.nicovideo.jp/watch/sm45732558"
+      },
+      {
+        "source": "web",
+        "url": "https://docs.google.com/spreadsheets/d/1AvwK2Jxqi742amVASkOmu2JWX0zA71lJ7FYQZYeiWLo/edit?usp=drivesdk"
+      }
+    ],
+    "article": "20251218-tbk26"
+  },
+  {
+    "date": "2025-12-01",
+    "kind": "feature",
+    "ja": "音MAD の合作「S2 スタダver」に参加",
+    "en": "Took part in the otoMAD collaboration \"S2 スタダver\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1995449394879975812"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-20",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.25」（カラオケ音源で演奏回）を主催",
+    "en": "Organized \"To Be Kontinued vol.25\" (performing over karaoke backing tracks) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1986404219453399186"
+      },
+      {
+        "source": "web",
+        "url": "https://t.livepocket.jp/e/to_be_kontinued_vol25"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/to-be-kontinued-vol-25-pure"
+      }
+    ],
+    "article": "20251120-tbk25"
+  },
+  {
+    "date": "2025-10-25",
+    "kind": "live",
+    "ja": "武蔵野美術大学 芸術祭の「MAD DRIFT2」に出演（音MAD-mix）",
+    "en": "Played an otoMAD mix at \"MAD DRIFT2\", Musashino Art University's festival",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1981965610830737475"
+      }
+    ],
+    "article": "20251025-maddrift2"
+  },
+  {
+    "date": "2025-10-16",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.24」（チップチューン＋αの音のライブ回）を主催",
+    "en": "Organized \"To Be Kontinued vol.24\" (chiptune plus other live sets) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1969376275359023189"
+      },
+      {
+        "source": "web",
+        "url": "https://t.livepocket.jp/e/to_be_kontinued_vol24"
+      }
+    ],
+    "article": "20251016-tbk24"
+  },
+  {
+    "date": "2025-09-18",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.23」（ガールポップ回）を主催",
+    "en": "Organized \"To Be Kontinued vol.23\" (girl pop) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1964521962870583347"
+      },
+      {
+        "source": "web",
+        "url": "https://t.livepocket.jp/e/to_be_kontinued_vol23"
+      }
+    ],
+    "article": "20250918-tbk23"
+  },
+  {
+    "date": "2025-09-11",
+    "kind": "live",
+    "ja": "「DigitalStars 2025 札幌編」にボカロと共にライブで出演",
+    "en": "Played live with Vocaloid at \"DigitalStars 2025 Sapporo\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1960945018811695352"
+      }
+    ],
+    "article": "20250911-digistars-sapporo"
+  },
+  {
+    "date": "2025-08-21",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.22」（手打ちビート回）を主催",
+    "en": "Organized \"To Be Kontinued vol.22\" (hand-played beats) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1948224855993663543"
+      },
+      {
+        "source": "web",
+        "url": "https://t.livepocket.jp/e/to_be_kontinued_vol22"
+      }
+    ],
+    "article": "20250821-tbk22"
+  },
+  {
+    "date": "2025-08-08",
+    "kind": "release",
+    "ja": "MellMell のアルバム「すてきな果実」を TBKgao からリリース",
+    "en": "Released MellMell's album \"Nice Fruit\" on TBKgao",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1953788293549642110"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://mellmell.bandcamp.com/album/nice-fruit"
+      }
+    ]
+  },
+  {
+    "date": "2025-07-17",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.21」（Tobokegao 6th EP リリースパーティー回）を主催",
+    "en": "Organized \"To Be Kontinued vol.21\" (Tobokegao 6th EP release party) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1935097902982119746"
+      },
+      {
+        "source": "web",
+        "url": "https://t.livepocket.jp/e/to_be_kontinued_vol21"
+      }
+    ],
+    "article": "20250717-tbk21"
+  },
+  {
+    "date": "2025-07-10",
+    "kind": "feature",
+    "ja": "「DigitalStars 2025 Compilation」に Jamie Page さんの「Radiant Revival」のリミックスで参加",
+    "en": "Participated in \"DigitalStars 2025 Compilation\" with a remix of Jamie Page's \"Radiant Revival\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1943149914961383638"
+      }
+    ]
+  },
+  {
+    "date": "2025-06-28",
+    "kind": "live",
+    "ja": "歌舞伎町の「LOLOLOLOVELOID x VOCABUKI」に VRChat のアバター姿でボカロ DJ として出演",
+    "en": "Performed a Vocaloid DJ set as a VRChat avatar at \"LOLOLOLOVELOID x VOCABUKI\" in Kabukicho",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1938896384104788357"
+      },
+      {
+        "source": "web",
+        "url": "https://twipla.jp/events/683952"
+      }
+    ],
+    "article": "20250628-vocabuki"
+  },
+  {
+    "date": "2025-06-12",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.20」（音MAD・YTPMV回）を主催",
+    "en": "Organized \"To Be Kontinued vol.20\" (otoMAD and YTPMV) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1925581978088480901"
+      },
+      {
+        "source": "web",
+        "url": "https://t.livepocket.jp/e/to_be_kontinued_vol_20"
+      },
+      {
+        "source": "web",
+        "url": "https://note.com/tobokegao/n/n188bb710ae66"
+      }
+    ],
+    "article": "20250612-tbk20"
+  },
+  {
+    "date": "2025-05-15",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.19」（90年代の邦楽ポップス回）を主催",
+    "en": "Organized \"To Be Kontinued vol.19\" (90s Japanese pop) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1916328214399770968"
+      },
+      {
+        "source": "web",
+        "url": "https://t.livepocket.jp/e/to_be_kontinued_vol19"
+      }
+    ],
+    "article": "20250515-tbk19"
+  },
+  {
+    "date": "2025-05-02",
+    "kind": "release",
+    "ja": "Giant Chess Men のアルバム「Arcology」を TBKgao からリリース",
+    "en": "Released Giant Chess Men's album \"Arcology\" on TBKgao",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1918287981322092843"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://giantchessmen.bandcamp.com/album/arcology"
+      }
+    ]
+  },
+  {
+    "date": "2025-04-17",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.18」（全員ゲームボーイでライブ回）を主催",
+    "en": "Organized \"To Be Kontinued vol.18\" (all Game Boy live) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1906182275026542811"
+      },
+      {
+        "source": "web",
+        "url": "https://t.livepocket.jp/e/to_be_kontinued_vol18"
+      }
+    ],
+    "article": "20250417-tbk18"
+  },
+  {
+    "date": "2025-03-26",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.17」（VOCALOID回）を主催",
+    "en": "Organized \"To Be Kontinued vol.17\" (VOCALOID) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1881651419029402035"
+      },
+      {
+        "source": "web",
+        "url": "https://t.livepocket.jp/e/to_be_kontinued_vol17"
+      }
+    ],
+    "article": "20250326-tbk17"
+  },
+  {
+    "date": "2025-02-21",
+    "kind": "release",
+    "ja": "Giant Chess Men「Cosmos」を TBKgao からリリース",
+    "en": "Released \"Cosmos\" by Giant Chess Men on TBKgao",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1892926080597504447"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://giantchessmen.bandcamp.com/track/cosmos-2"
+      }
+    ]
+  },
+  {
+    "date": "2025-02-20",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.16」（Y2K VGM Vibes回）を主催",
+    "en": "Organized \"To Be Kontinued vol.16\" (Y2K VGM Vibes) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1880451499979075957"
+      },
+      {
+        "source": "web",
+        "url": "https://t.livepocket.jp/e/to_be_kontinued_vol16"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/to-be-kontinued-vol16-y2k-vgm-vibes-1"
+      }
+    ],
+    "article": "20250220-tbk16"
+  },
+  {
+    "date": "2025-01-26",
+    "kind": "live",
+    "ja": "「PLASTIC THEATER 31周年イベント」にライブで出演",
+    "en": "Played live at the PLASTIC THEATER 31st anniversary event",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1874037988927398247"
+      }
+    ],
+    "article": "20250126-theater31"
+  },
+  {
+    "date": "2025-01-16",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.15」（FM音源チップチューン回）を主催",
+    "en": "Organized \"To Be Kontinued vol.15\" (FM chiptune) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1872840057931088231"
+      },
+      {
+        "source": "web",
+        "url": "https://t.livepocket.jp/e/to-be-kontinued-vol15"
+      }
+    ],
+    "article": "20250116-tbk15"
+  },
+  {
+    "date": "2024-12-19",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.14」（歪んだ音回）を主催",
+    "en": "Organized \"To Be Kontinued vol.14\" (distorted sounds) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1854826202659241992"
+      },
+      {
+        "source": "web",
+        "url": "https://t.livepocket.jp/e/to_be_kontinued_vol14"
+      }
+    ],
+    "article": "20241219-tbk14"
+  },
+  {
+    "date": "2024-11-30",
+    "kind": "live",
+    "ja": "「CNCT 2024」にライブで出演",
+    "en": "Played live at \"CNCT 2024\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1838539661192630395"
+      }
+    ],
+    "article": "20241130-cnct2024"
+  },
+  {
+    "date": "2024-11-17",
+    "kind": "other",
+    "ja": "ことにパトスで「ギター音出し研究会 presents エフェクターバザー」を開催",
+    "en": "Held \"ギター音出し研究会 presents エフェクターバザー\" (an effects pedal bazaar) at Kotoni Pathos",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1851050094742945847"
+      },
+      {
+        "source": "web",
+        "url": "https://note.com/tobokegao/n/nb16d6f398f5b?sub_rt=share_pb"
+      }
+    ],
+    "article": "20241117-effectorbazaar"
+  },
+  {
+    "date": "2024-11-14",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.13」（チップチューンポップスのライブ回）を主催",
+    "en": "Organized \"To Be Kontinued vol.13\" (chiptune pop live) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1847484623540146485"
+      },
+      {
+        "source": "web",
+        "url": "https://t.livepocket.jp/e/to_be_kontinued_vol13"
+      }
+    ],
+    "article": "20241114-tbk13"
+  },
+  {
+    "date": "2024-11-08",
+    "kind": "release",
+    "ja": "Giant Chess Men「Sunken Dreams」を TBKgao からリリース",
+    "en": "Released \"Sunken Dreams\" by Giant Chess Men on TBKgao",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1854826203275792574"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://giantchessmen.bandcamp.com/track/sunken-dreams"
+      }
+    ]
+  },
+  {
+    "date": "2024-10-19",
+    "kind": "feature",
+    "ja": "コンピレーション「CONNECT ME!!! 3.14」に「Dot Matrix Clock (Screwed version)」で参加",
+    "en": "Contributed \"Dot Matrix Clock (Screwed version)\" to the compilation \"CONNECT ME!!! 3.14\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1847499098737561811"
+      }
+    ]
+  },
+  {
+    "date": "2024-10-17",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.12」（ビート無しのアンビエント・ノイズ回）を主催",
+    "en": "Organized \"To Be Kontinued vol.12\" (beatless ambient and noise) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1836958004786385263"
+      },
+      {
+        "source": "web",
+        "url": "https://t.livepocket.jp/e/to_be_kontinued_vol_12"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://on.soundcloud.com/Ftf9q"
+      }
+    ],
+    "article": "20241017-tbk12"
+  },
+  {
+    "date": "2024-09-19",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.11」（M8 Tracker・チップチューン回）を主催",
+    "en": "Organized \"To Be Kontinued vol.11\" (M8 Tracker and chiptune) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1824409036391059745"
+      },
+      {
+        "source": "web",
+        "url": "https://t.livepocket.jp/e/to_be_kontinued_vol11"
+      }
+    ],
+    "article": "20240919-tbk11"
+  },
+  {
+    "date": "2024-09-11",
+    "kind": "live",
+    "ja": "オンライン DJ イベント「FUZZYFEST 2024」にチップチューンの DJ mix で出演",
+    "en": "Played a chiptune DJ mix at the online DJ event \"FUZZYFEST 2024\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1833655635084468305"
+      }
+    ]
+  },
+  {
     "date": "2024-09-10",
     "kind": "feature",
     "ja": "ATARI / WayForward 制作の Nintendo Switch 用ゲーム「YARS RISING」に楽曲「Nouveau Monde」を提供（歌唱・主旋律作曲・作詞）",
@@ -21,6 +688,443 @@
     ]
   },
   {
+    "date": "2024-09-07",
+    "kind": "live",
+    "ja": "CIRCUS TOKYO で「m8 fest」を開催、出演",
+    "en": "Organized and played at \"m8 fest\" at CIRCUS TOKYO",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1814278694141378709"
+      },
+      {
+        "source": "web",
+        "url": "https://t.livepocket.jp/e/m8fest"
+      }
+    ],
+    "article": "20240907-m8fest"
+  },
+  {
+    "date": "2024-09-01",
+    "kind": "live",
+    "ja": "札幌の「ALIVE! Vol.4」に音MAD-mix でビデオ出演",
+    "en": "Appeared by video with an otoMAD mix at \"ALIVE! Vol.4\" in Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1830453294910824952"
+      },
+      {
+        "source": "niconico",
+        "url": "https://www.nicovideo.jp/watch/sm44056026"
+      },
+      {
+        "source": "niconico",
+        "url": "https://sp.nicovideo.jp/watch/sm44056026"
+      }
+    ]
+  },
+  {
+    "date": "2024-08-15",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.10」（90年代ガールポップ回）を主催",
+    "en": "Organized \"To Be Kontinued vol.10\" (90s girl pop) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1817552927973838977"
+      },
+      {
+        "source": "web",
+        "url": "https://t.livepocket.jp/e/to_be_kontinued_vol10"
+      }
+    ],
+    "article": "20240815-tbk10"
+  },
+  {
+    "date": "2024-07-25",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.9」（チップチューン・音ゲー回）を主催",
+    "en": "Organized \"To Be Kontinued vol.9\" (chiptune and rhythm games) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1804433026027336088"
+      },
+      {
+        "source": "web",
+        "url": "https://t.livepocket.jp/e/to_be_kontinued_vol9"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://on.soundcloud.com/yb6Dm"
+      }
+    ],
+    "article": "20240725-tbk9"
+  },
+  {
+    "date": "2024-06-29",
+    "kind": "release",
+    "ja": "Giant Chess Men のシングル「Arcology」を TBKgao からリリース",
+    "en": "Released Giant Chess Men's single \"Arcology\" on TBKgao",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1807013686730756147"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://giantchessmen.bandcamp.com/album/arcology-single"
+      }
+    ]
+  },
+  {
+    "date": "2024-06-20",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.8」（VOCALOID回）を主催",
+    "en": "Organized \"To Be Kontinued vol.8\" (VOCALOID) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1792393240693613013"
+      },
+      {
+        "source": "web",
+        "url": "https://t.livepocket.jp/e/to_be_kontinued_vol_8"
+      }
+    ],
+    "article": "20240620-tbk8"
+  },
+  {
+    "date": "2024-05-26",
+    "kind": "other",
+    "ja": "札幌芸術の森で「ギター音出し研究会」を開催",
+    "en": "Held \"ギター音出し研究会\" (a guitar sound study meetup) at Sapporo Art Park",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1790132725220811200"
+      }
+    ],
+    "article": "20240526-guitar-lab"
+  },
+  {
+    "date": "2024-05-19",
+    "kind": "feature",
+    "ja": "企画「音スタダ作者30人+αに同じ素材と同じ曲を渡して音MADを作ってもらった」に参加",
+    "en": "Took part in a project where 30+ otoMAD makers each made an otoMAD from the same material and song",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1792139286181302522"
+      }
+    ]
+  },
+  {
+    "date": "2024-05-18",
+    "kind": "live",
+    "ja": "「otogroove」に音MAD-mix で出演",
+    "en": "Played an otoMAD mix at \"otogroove\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1791785980980248643"
+      }
+    ],
+    "article": "20240518-otogroove"
+  },
+  {
+    "date": "2024-05-16",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.7」（ゲームボーイのマシンライブ回）を主催",
+    "en": "Organized \"To Be Kontinued vol.7\" (Game Boy machine live) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1782485622416200154"
+      },
+      {
+        "source": "web",
+        "url": "https://t.livepocket.jp/e/to_be_kontinued_vol7"
+      }
+    ],
+    "article": "20240516-tbk7"
+  },
+  {
+    "date": "2024-05-11",
+    "kind": "feature",
+    "ja": "lambscope のアルバム「lambchips」に「孤独なフルーツ」の別ミックスで参加（TBKgao が協力）",
+    "en": "Contributed an alternate mix of \"Kodoku na Fruits\" to lambscope's album \"lambchips\" (with support from TBKgao)",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1789250831675719770"
+      }
+    ]
+  },
+  {
+    "date": "2024-04-18",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.6」（音MAD・YTPMV回）を主催",
+    "en": "Organized \"To Be Kontinued vol.6\" (otoMAD and YTPMV) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1771536875372622168"
+      }
+    ],
+    "article": "20240418-tbk6"
+  },
+  {
+    "date": "2024-04-12",
+    "kind": "live",
+    "ja": "「バーチャルチップチューンナイト 5」に出演",
+    "en": "Played at \"Virtual Chiptune Night 5\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1779003301453086871"
+      }
+    ]
+  },
+  {
+    "date": "2024-03-21",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.5」（チップチューン回）を主催",
+    "en": "Organized \"To Be Kontinued vol.5\" (chiptune) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1758474577989247282"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://on.soundcloud.com/bYPwT"
+      }
+    ],
+    "article": "20240321-tbk5"
+  },
+  {
+    "date": "2024-03-01",
+    "kind": "feature",
+    "ja": "JAWZZ さんの「SIG feat. Tobokegao」にボーカルで参加（Muse Dash に収録）",
+    "en": "Featured as a vocalist on JAWZZ's \"SIG feat. Tobokegao\" (included in Muse Dash)",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1761341224135397782"
+      }
+    ]
+  },
+  {
+    "date": "2024-02-15",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.4」（Y2K VGM ジャングル回）を主催",
+    "en": "Organized \"To Be Kontinued vol.4\" (Y2K VGM jungle) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1746840618121503155"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://on.soundcloud.com/CJ7XE"
+      }
+    ],
+    "article": "20240215-tbk4"
+  },
+  {
+    "date": "2024-01-25",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.3」（チップチューン回）を主催",
+    "en": "Organized \"To Be Kontinued vol.3\" (chiptune) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1742429524573421876"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://on.soundcloud.com/k3184"
+      }
+    ],
+    "article": "20240125-tbk3"
+  },
+  {
+    "date": "2024-01-04",
+    "kind": "other",
+    "ja": "Jeff Liu さんへのインタビュー「Jeff Liu × Tobokegao 喫茶店にてInterview」を公開",
+    "en": "Published an interview with Jeff Liu, \"Jeff Liu × Tobokegao: Interview at a Café\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1742852191709466925"
+      },
+      {
+        "source": "web",
+        "url": "https://note.com/tobokegao/n/nbb0f590d8568"
+      }
+    ]
+  },
+  {
+    "date": "2023-12-14",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.2」（Pure MIDI回）を主催",
+    "en": "Organized \"To Be Kontinued vol.2\" (Pure MIDI) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1726545315417969029"
+      }
+    ],
+    "article": "20231214-tbk2"
+  },
+  {
+    "date": "2023-11-16",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「To Be Kontinued vol.1」（チップチューン回）を主催",
+    "en": "Organized \"To Be Kontinued vol.1\" (chiptune) at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1713474611755761948"
+      },
+      {
+        "source": "web",
+        "url": "https://twipla.jp/events/583437"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://on.soundcloud.com/SRDR3"
+      }
+    ],
+    "article": "20231116-tbk1"
+  },
+  {
+    "date": "2023-09-17",
+    "kind": "live",
+    "ja": "「shibuya pixelart 2023」にライブで出演",
+    "en": "Played live at \"shibuya pixelart 2023\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1703719912664142041"
+      }
+    ]
+  },
+  {
+    "date": "2023-08-04",
+    "kind": "release",
+    "ja": "もちうめさんのアルバム「tour (semi-fiction)」を TBKgao からリリース（マスタリングを担当）",
+    "en": "Released Mochiume's album \"tour (semi-fiction)\" on TBKgao (mastered by Tobokegao)",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1687368608698224640"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://mochiume.bandcamp.com/album/tour-semi-fiction"
+      }
+    ]
+  },
+  {
+    "date": "2023-07-27",
+    "kind": "live",
+    "ja": "札幌 PLASTIC THEATER で「Tobokegao 30th Birthday Party」を主催",
+    "en": "Organized \"Tobokegao 30th Birthday Party\" at PLASTIC THEATER, Sapporo",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1664647899224092674"
+      },
+      {
+        "source": "web",
+        "url": "http://t.livepocket.jp/e/tobo30thbp"
+      },
+      {
+        "source": "web",
+        "url": "https://twipla.jp/events/569357"
+      }
+    ],
+    "article": "20230727-tobo30th"
+  },
+  {
+    "date": "2023-05-09",
+    "kind": "release",
+    "ja": "Giant Chess Men の EP「OMOI」を TBKgao からリリース",
+    "en": "Released Giant Chess Men's EP \"OMOI\" on TBKgao",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1654420622905339904"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://giantchessmen.bandcamp.com/album/omoi"
+      }
+    ]
+  },
+  {
+    "date": "2023-04-30",
+    "kind": "live",
+    "ja": "Haircut VOX の「HEY! POP CITY AVENUE」にガールポップだけの DJ で出演",
+    "en": "DJed a girl-pop-only set at \"HEY! POP CITY AVENUE\" at Haircut VOX",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1644551952100106242"
+      },
+      {
+        "source": "web",
+        "url": "https://instagram.com/chata_ni"
+      }
+    ],
+    "article": "20230430-heypopcity"
+  },
+  {
+    "date": "2023-03-04",
+    "kind": "release",
+    "ja": "ヤギシロさんのアルバム「YAGITUNE!!」を TBKgao からリリース",
+    "en": "Released Yagishiro's album \"YAGITUNE!!\" on TBKgao",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1631869713382010880"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://yagishiro.bandcamp.com/album/yagitune"
+      }
+    ]
+  },
+  {
     "date": "2023-02-25",
     "kind": "live",
     "ja": "「TOBOX Release Party in Sapporo」に参加",
@@ -34,6 +1138,10 @@
       {
         "source": "web",
         "url": "/post/tobox-release-party/"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://on.soundcloud.com/SajYn"
       }
     ]
   },
@@ -55,9 +1163,77 @@
     ]
   },
   {
+    "date": "2023-02-03",
+    "kind": "release",
+    "ja": "MLTEK「MIDI Science Intellectual Property」を TBKgao からリリース",
+    "en": "Released \"MIDI Science Intellectual Property\" by MLTEK on TBKgao",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1621493714790006788"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://mltek.bandcamp.com/album/midi-science-intellectual-property"
+      }
+    ]
+  },
+  {
+    "date": "2022-11-05",
+    "kind": "release",
+    "ja": "Rei8bit「Oha Chiptune!」を TBKgao からリリース",
+    "en": "Released \"Oha Chiptune!\" by Rei8bit on TBKgao",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1588574916583923713"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://rei8bit.bandcamp.com/album/oha-chiptune"
+      }
+    ]
+  },
+  {
+    "date": "2022-11-05",
+    "kind": "release",
+    "ja": "Rei8bit「Late Night 2-hours Chiptune Vol.1」を TBKgao からリリース",
+    "en": "Released \"Late Night 2-hours Chiptune Vol.1\" by Rei8bit on TBKgao",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1588733137122562049"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://rei8bit.bandcamp.com/album/late-night-2-hours-chiptune-vol-1"
+      }
+    ]
+  },
+  {
+    "date": "2022-11-04",
+    "kind": "release",
+    "ja": "ヤギシロさんの2ndアルバム「証明」を TBKgao からリリース",
+    "en": "Released Yagishiro's 2nd album \"Proof\" on TBKgao",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1587421884588896257"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://yagishiro.bandcamp.com/album/evidence"
+      }
+    ]
+  },
+  {
     "date": "2022-10-30",
     "kind": "release",
-    "ja": "3st album「TOBOX」をリリース",
+    "ja": "3rd album「TOBOX」をリリース",
     "en": "3rd album \"TOBOX\" is released",
     "source": "works",
     "links": [
@@ -69,7 +1245,22 @@
         "source": "apple",
         "url": "https://music.apple.com/jp/album/tobox/1651746158"
       }
-    ]
+    ],
+    "article": "20221030-tobox"
+  },
+  {
+    "date": "2022-10-30",
+    "kind": "other",
+    "ja": "M3 2022秋 に「TOBOX」と「PURE MIDI Volume 1」で出展",
+    "en": "Exhibited at M3 Autumn 2022 with \"TOBOX\" and \"PURE MIDI Volume 1\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1584004818112196609"
+      }
+    ],
+    "article": "20221030-m3-2022aut"
   },
   {
     "date": "2022-10-07",
@@ -81,6 +1272,20 @@
       {
         "source": "bandcamp",
         "url": "https://tbkgao.bandcamp.com/album/pure-midi-volume-1"
+      }
+    ],
+    "article": "20221007-puremidi1"
+  },
+  {
+    "date": "2022-09-22",
+    "kind": "feature",
+    "ja": "PROJECT V/R Converters のアルバム「The Executing Points」の特典オーディオコメンタリーに参加",
+    "en": "Took part in the bonus audio commentary for PROJECT V/R Converters' album \"The Executing Points\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1572883068717006848"
       }
     ]
   },
@@ -98,6 +1303,37 @@
     ]
   },
   {
+    "date": "2022-07-09",
+    "kind": "live",
+    "ja": "阿佐ヶ谷DRIFT の「Affected Video Game Nerd」に DJ で出演",
+    "en": "DJed at \"Affected Video Game Nerd\" at Asagaya DRIFT",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1544165643859410944"
+      }
+    ],
+    "article": "20220709-avgn"
+  },
+  {
+    "date": "2022-06-17",
+    "kind": "release",
+    "ja": "MLTEK「About Image Info」を TBKgao からリリース",
+    "en": "Released \"About Image Info\" by MLTEK on TBKgao",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1537769965159231493"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://mltek.bandcamp.com/album/about-image-info"
+      }
+    ]
+  },
+  {
     "date": "2022-05-06",
     "kind": "release",
     "ja": "4th EP 「Scythe - そんな日もあるよね (Tobokegao Vocal Cover) 」をリリース",
@@ -107,6 +1343,19 @@
       {
         "source": "bandcamp",
         "url": "https://tbkgao.bandcamp.com/album/scythe-sonna-hi-mo-aru-yone-tobokegao-vocal-cover-ep"
+      }
+    ]
+  },
+  {
+    "date": "2022-04-29",
+    "kind": "feature",
+    "ja": "hey, ily! のアルバム「Psychokinetic Love Songs」の1曲目に語りで参加",
+    "en": "Contributed spoken word to the first track of hey, ily!'s album \"Psychokinetic Love Songs\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1519521794394587137"
       }
     ]
   },
@@ -133,6 +1382,10 @@
       {
         "source": "bandcamp",
         "url": "https://tbkgao.bandcamp.com/album/20220326-chipfest-cyberspace-15-live"
+      },
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=EKpxPuAHY4E"
       }
     ]
   },
@@ -150,8 +1403,13 @@
       {
         "source": "bandcamp",
         "url": "https://tbkgao.bandcamp.com/album/20220326-chipfest-cyberspace-15-live"
+      },
+      {
+        "source": "web",
+        "url": "http://twitch.tv/calmdownkidder"
       }
-    ]
+    ],
+    "article": "20220326-chipfest15"
   },
   {
     "date": "2022-03-04",
@@ -164,7 +1422,8 @@
         "source": "bandcamp",
         "url": "https://tbkgao.bandcamp.com/album/da-la-la-vocal-version-ep"
       }
-    ]
+    ],
+    "article": "20220304-dalala"
   },
   {
     "date": "2022-02-04",
@@ -178,6 +1437,24 @@
         "url": "https://tbkgao.bandcamp.com/album/kodoku-na-fruits-vocal-version-ep"
       }
     ]
+  },
+  {
+    "date": "2021-12-26",
+    "kind": "live",
+    "ja": "オンライン DJ mix 視聴会「えちみっくす！」に出演",
+    "en": "Played at the online DJ mix listening party \"えちみっくす！\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1472853100134543360"
+      },
+      {
+        "source": "web",
+        "url": "https://twipla.jp/events/496957"
+      }
+    ],
+    "article": "20211226-echimix"
   },
   {
     "date": "2021-11-24",
@@ -197,9 +1474,26 @@
     ]
   },
   {
+    "date": "2021-10-01",
+    "kind": "release",
+    "ja": "MLTEK「Logical Positivism」を TBKgao からリリース",
+    "en": "Released \"Logical Positivism\" by MLTEK on TBKgao",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1443909503959789581"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://mltek.bandcamp.com/album/logical-positivism"
+      }
+    ]
+  },
+  {
     "date": "2021-08-06",
     "kind": "release",
-    "ja": "3st single「黄泉で足踏み(Vocal Version)」をリリース",
+    "ja": "3rd single「黄泉で足踏み(Vocal Version)」をリリース",
     "en": "3rd single \"Yomi De Ashibumi (Vocal Version)\" is released",
     "source": "works",
     "links": [
@@ -210,8 +1504,13 @@
       {
         "source": "apple",
         "url": "https://music.apple.com/jp/album/yomi-de-ashibumi-single/1580282960"
+      },
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=HNkV44xa7fs"
       }
-    ]
+    ],
+    "article": "20210806-yomi-vocal"
   },
   {
     "date": "2021-04-02",
@@ -223,6 +1522,40 @@
       {
         "source": "bandcamp",
         "url": "https://resoforce.bandcamp.com/album/rivals-of-aether-resonant-mixes-2"
+      }
+    ]
+  },
+  {
+    "date": "2021-03-06",
+    "kind": "feature",
+    "ja": "「キャラバンブーマー サウンドトラック」に「黄泉で足踏み」で参加",
+    "en": "Participated in \"Caravan Boomer Soundtrack\" with \"Yomi De Ashibumi\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1365512284349497356"
+      },
+      {
+        "source": "web",
+        "url": "https://sweeprecord.com/srin-1177/"
+      }
+    ]
+  },
+  {
+    "date": "2021-03-02",
+    "kind": "feature",
+    "ja": "Chilodisc のコンピレーション「Chilodisc vol.5 ( a s m r )」に「顔(gao)」名義で参加",
+    "en": "Contributed to Chilodisc's compilation \"Chilodisc vol.5 ( a s m r )\" under the name \"顔(gao)\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1366678340917059587"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://chilodisc.bandcamp.com/album/chilodisc-vol-5-a-s-m-r"
       }
     ]
   },
@@ -255,7 +1588,7 @@
   {
     "date": "2020-12-04",
     "kind": "release",
-    "ja": "2st album「Room To Room」をリリース",
+    "ja": "2nd album「Room To Room」をリリース",
     "en": "2nd album \"Room To Room\" is released.",
     "source": "works",
     "links": [
@@ -266,6 +1599,19 @@
       {
         "source": "apple",
         "url": "https://music.apple.com/jp/album/room-to-room/1546748346"
+      }
+    ]
+  },
+  {
+    "date": "2020-10-24",
+    "kind": "other",
+    "ja": "赤帯さんとの共同企画「おとのかたみち」（中古CDを送り合ってレビューする企画）に参加",
+    "en": "Joined \"おとのかたみち\", a project with Akaobi where we sent each other used CDs and reviewed them",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1319908879845658629"
       }
     ]
   },
@@ -289,7 +1635,7 @@
   {
     "date": "2020-10-02",
     "kind": "release",
-    "ja": "2st single「Being Rusty (Tanashii Mainichi)」をリリース",
+    "ja": "2nd single「Being Rusty (Tanashii Mainichi)」をリリース",
     "en": "2nd single \"Being Rusty (Tanashii Mainichi)\" is released",
     "source": "works",
     "links": [
@@ -317,8 +1663,13 @@
       {
         "source": "soundcloud",
         "url": "https://soundcloud.com/tobokegao/gameboy-lsdj-8bit-girlpop-cover-wip-collection-micromusic-italy-sunday-jam"
+      },
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=pEKZbRCufn4"
       }
-    ]
+    ],
+    "article": "20200830-micromusic"
   },
   {
     "date": "2020-08-07",
@@ -343,6 +1694,31 @@
       {
         "source": "x",
         "url": "https://x.com/to6okegao/status/1278175790073442306"
+      },
+      {
+        "source": "web",
+        "url": "http://www.twitch.tv/metazoatv"
+      },
+      {
+        "source": "web",
+        "url": "https://facebook.com/events/s/tobokegao-0r4-gwem-live/2957538044"
+      }
+    ]
+  },
+  {
+    "date": "2020-07-03",
+    "kind": "release",
+    "ja": "exilefaker「parallel experiments LSDJ」を TBKgao からリリース",
+    "en": "Released \"parallel experiments LSDJ\" by exilefaker on TBKgao",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1278949210004451328"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://exilefaker.bandcamp.com/album/parallel-experiments-lsdj"
       }
     ]
   },
@@ -361,7 +1737,8 @@
         "source": "apple",
         "url": "https://music.apple.com/jp/album/picnic-deluxe-edition/1523875938"
       }
-    ]
+    ],
+    "article": "20200619-picnic-dx"
   },
   {
     "date": "2020-06-05",
@@ -377,6 +1754,10 @@
       {
         "source": "soundcloud",
         "url": "https://soundcloud.com/tobokegao/live-video-tobokegao-iso-chip-2"
+      },
+      {
+        "source": "web",
+        "url": "https://www.twitch.tv/slcchip"
       }
     ]
   },
@@ -407,6 +1788,10 @@
       {
         "source": "soundcloud",
         "url": "https://soundcloud.com/tobokegao/j-pop-is-ready-for-love-gb-2step-ver-pte077-pterodactyl-squad-compilation-hikikomori"
+      },
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=y7KmrpHFPQY"
       }
     ]
   },
@@ -424,6 +1809,18 @@
       {
         "source": "web",
         "url": "https://vgmdb.net/album/139711"
+      },
+      {
+        "source": "web",
+        "url": "http://dochakuso.web.fc2.com/release/dcks-0093.html"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/12-tobokegao-lsdj-v8_2_2-b-command-test?in=tobokegao/sets/solo-original-tracks"
+      },
+      {
+        "source": "youtube",
+        "url": "https://youtu.be/ZmmAqMPYygc"
       }
     ]
   },
@@ -441,6 +1838,19 @@
     ]
   },
   {
+    "date": "2020-03-01",
+    "kind": "feature",
+    "ja": "チョロQのアレンジアルバム「Q-Covers」に4曲目（チョロQ2 ミドルサーキットのテーマ）で参加",
+    "en": "Contributed track 4 (the Middle Circuit theme from Choro Q2) to the Choro Q arrangement compilation \"Q-Covers\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1220677798815129602"
+      }
+    ]
+  },
+  {
     "date": "2020-01-25",
     "kind": "feature",
     "ja": "コンピレーションアルバム「ESC TRAX 5th Anniversary」に「Caravan Boomer Track (素YM2413 TV DEMO ver)」で参加",
@@ -450,6 +1860,18 @@
       {
         "source": "bandcamp",
         "url": "https://esctrax.bandcamp.com/album/esc-012-esc-trax-5th-anniversary"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://esctrax.bandcamp.com/track/caravan-boomer-track-ym2413-tv-demo-ver"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/tobokegao-caravan-boomer-track-ym2413-tv-demo-ver/s-CIClM"
+      },
+      {
+        "source": "web",
+        "url": "https://sites.google.com/view/caravanboomer-hp-english/"
       }
     ]
   },
@@ -464,7 +1886,8 @@
         "source": "bandcamp",
         "url": "https://tbkgao.bandcamp.com"
       }
-    ]
+    ],
+    "article": "20190920-tbkgao"
   },
   {
     "date": "2019-08-13",
@@ -497,6 +1920,23 @@
     ]
   },
   {
+    "date": "2019-06-13",
+    "kind": "feature",
+    "ja": "コンピレーション「#ChipVS_Light_Dark」に「Sunshine, Sunrise, Sunset」で参加",
+    "en": "Participated in the compilation \"#ChipVS_Light_Dark\" with \"Sunshine, Sunrise, Sunset\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1139155961539522561"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/sunshine-sunrise-sunset_chipvs_light_dark-compilation"
+      }
+    ]
+  },
+  {
     "date": "2019-03-03",
     "kind": "feature",
     "ja": "しのりゅーさん主催の「光​の​チ​ッ​プ​チ​ュ​ー​ン​VS​闇​の​チ​ッ​プ​チ​ュ​ー​ン 対​決​コ​ン​ピ​レ​ー​シ​ョ​ン」の-Light Side-に「Sunshine, Sunrise, Sunset」で参加",
@@ -510,6 +1950,23 @@
       {
         "source": "soundcloud",
         "url": "https://soundcloud.com/tobokegao/sunshine-sunrise-sunset_chipvs_light_dark-compilation"
+      }
+    ]
+  },
+  {
+    "date": "2019-02-16",
+    "kind": "feature",
+    "ja": "Innocuous Records のコンピレーション「Milwauskweee Vol. 4」に「SKWEEEEE B4」で参加",
+    "en": "Participated in Innocuous Records' compilation \"Milwauskweee Vol. 4\" with \"SKWEEEEE B4\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1096734585709301761"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://innocuous.bandcamp.com/album/milwauskweee-vol-4"
       }
     ]
   },
@@ -612,6 +2069,10 @@
       {
         "source": "x",
         "url": "https://x.com/to6okegao/status/868948457586806784"
+      },
+      {
+        "source": "web",
+        "url": "https://www.mixcloud.com/%E3%81%A8%E3%81%BC%E3%81%91%E3%81%8C%E3%81%8A/pico2-magic-canvas-20170528-sun-live-gbasp-noise-jam-45-min-1-lsdsng/"
       }
     ]
   },
@@ -655,6 +2116,23 @@
       {
         "source": "x",
         "url": "https://x.com/to6okegao/status/810514139114127360"
+      }
+    ]
+  },
+  {
+    "date": "2016-11-16",
+    "kind": "feature",
+    "ja": "Bandcamp Daily の日本のチップチューン特集記事で紹介",
+    "en": "Featured in a Bandcamp Daily article on Japanese chiptune",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1270272154513240065"
+      },
+      {
+        "source": "bandcamp",
+        "url": "https://daily.bandcamp.com/scene-report/japanese-chiptune-list"
       }
     ]
   },
@@ -840,6 +2318,14 @@
       {
         "source": "web",
         "url": "https://munagerecords.tumblr.com/post/116532974936/mng025-moi-by"
+      },
+      {
+        "source": "web",
+        "url": "http://tmblr.co/Z6Jiom1iZB3uv"
+      },
+      {
+        "source": "youtube",
+        "url": "https://youtu.be/6CsLOPTury8"
       }
     ]
   },
@@ -857,6 +2343,10 @@
       {
         "source": "soundcloud",
         "url": "https://soundcloud.com/tobokegao/santa-claus-arigato"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/546578844287639552"
       }
     ]
   },

@@ -54,6 +54,11 @@ aliases: ["/ja/about/"]
 > 概念
 >
 > — K-> (@K_fcm) 2022年2月21日
+
+## 手伝ってくれた人
+
+- damifortune (HVB) さん、英訳を手伝ってくれてありがとう！
+- sdhizumi さん、動作チェックを手伝ってくれてありがとう！
 {{< /lang >}}
 
 {{< lang en >}}
@@ -104,4 +109,9 @@ They are currently making music centered on VOCALOID and other voice synthesis, 
 > concept
 >
 > — K-> (@K_fcm), February 21, 2022
+
+## Thanks
+
+- damifortune (HVB), thanks for helping with the English translation!
+- sdhizumi, thanks for helping test the site!
 {{< /lang >}}
