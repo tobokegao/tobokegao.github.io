@@ -52,7 +52,15 @@ jobs:
       - name: Build
         env:
           TZ: Asia/Tokyo
-        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          BASE_URL: ${{ steps.pages.outputs.base_url }}
+        # A preview copy in another repository is served under a sub-path:
+        # it gets relative links, and search engines are asked to skip it.
+        run: |
+          if [ "$GITHUB_REPOSITORY" = "tobokegao/tobokegao.github.io" ]; then
+            hugo --minify --baseURL "$BASE_URL/"
+          else
+            HUGO_RELATIVEURLS=true HUGO_PARAMS_PREVIEW=true hugo --minify
+          fi
 
       - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4.0.0
         with:

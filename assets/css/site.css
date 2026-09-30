@@ -8,24 +8,24 @@
 
 @font-face {
   font-family: "JF Dot MPlus12";
-  src: url("/fonts/gen/dot12.woff2") format("woff2");
+  src: url("../fonts/gen/dot12.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "TM Dot PC";
-  src: url("/fonts/gen/pc-latin.woff2") format("woff2");
+  src: url("../fonts/gen/pc-latin.woff2") format("woff2");
   unicode-range: U+0020-007E;
   font-display: swap;
 }
 @font-face {
   font-family: "TM Dot PC";
-  src: url("/fonts/gen/pc-ja.woff2") format("woff2");
+  src: url("../fonts/gen/pc-ja.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: "TBK Blocks";   /* CP437 block characters for the ANSI banner (scripts/subset_fonts.py) */
-  src: url("/fonts/gen/blocks.woff2") format("woff2");
+  src: url("../fonts/gen/blocks.woff2") format("woff2");
   unicode-range: U+0020, U+2580, U+2584, U+2588, U+2591-2593;
 }
 

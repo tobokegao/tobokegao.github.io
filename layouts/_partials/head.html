@@ -8,6 +8,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' '{{ $early.Data.Integrity }}'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com https://*.sndcdn.com https://*.bcbits.com https://*.nimg.jp https://*.mzstatic.com https://i.scdn.co; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{{ if site.Params.preview }}<meta name="robots" content="noindex">{{ end }}
 {{ $title := cond .IsHome site.Title (printf "%s | %s" .Title site.Title) }}
 <title>{{ $title }}</title>
 {{ $desc := or .Description "とぼけがお (Tobokegao) — チップチューン、合成音声、音MAD、素のMIDI音源。" }}
