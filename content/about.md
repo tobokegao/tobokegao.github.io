@@ -86,7 +86,7 @@ They are currently making music centered on VOCALOID and other voice synthesis, 
 
 ## The name
 
-The name "Tobokegao" goes back to Tobokegao's band days. Back then, Tobokegao booked studio rehearsals under all sorts of made-up band names for fun, choosing five-character names that sounded good, like "Hanaregumi" or "Bachikaburi". For some reason, "Tobokegao" was the only one a studio staff member praised as a good band name. That made Tobokegao happy, and the name stuck.
+The name "Tobokegao" goes back to my band days. Back then, I booked studio rehearsals under all sorts of made-up band names for fun, choosing five-syllable names that sounded catchy, like "Hanaregumi" or "Bachikaburi." For some reason, "Tobokegao" was the only one a studio staff member praised as a good name. That made me happy, and the name stuck.
 
 ## Words from friends
 

@@ -14,7 +14,8 @@
         "source": "youtube",
         "url": "https://youtu.be/o_JYK2tOVgg"
       }
-    ]
+    ],
+    "article": "20260919-shiki"
   },
   {
     "date": "2026-08-18",
@@ -109,7 +110,8 @@
         "source": "web",
         "url": "http://www.plastictheater.com/schedule/2811.html"
       }
-    ]
+    ],
+    "article": "20260131-theater32"
   },
   {
     "date": "2026-01-15",
@@ -143,8 +145,13 @@
       {
         "source": "niconico",
         "url": "https://www.nicovideo.jp/watch/sm45742349"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/2002329987165344171"
       }
-    ]
+    ],
+    "article": "20251220-generic3"
   },
   {
     "date": "2025-12-18",
@@ -191,7 +198,8 @@
         "source": "niconico",
         "url": "https://www.nicovideo.jp/watch/sm45662175"
       }
-    ]
+    ],
+    "article": "20251203-s2-sutada"
   },
   {
     "date": "2025-11-20",
@@ -359,7 +367,8 @@
         "source": "youtube",
         "url": "https://www.youtube.com/watch?v=aR_sWcwE_FA"
       }
-    ]
+    ],
+    "article": "20250710-digistars-comp"
   },
   {
     "date": "2025-06-28",
@@ -667,7 +676,8 @@
         "source": "soundcloud",
         "url": "https://soundcloud.com/20-nov/xfdconnect-me-314-disc2"
       }
-    ]
+    ],
+    "article": "20241027-connectme314"
   },
   {
     "date": "2024-10-17",
@@ -724,7 +734,8 @@
         "source": "x",
         "url": "https://x.com/to6okegao/status/1833655635084468305"
       }
-    ]
+    ],
+    "article": "20240914-fuzzyfest"
   },
   {
     "date": "2024-09-10",
@@ -745,7 +756,8 @@
         "source": "web",
         "url": "https://www.nintendo.com/us/store/products/yars-rising-switch/"
       }
-    ]
+    ],
+    "article": "20240910-yars"
   },
   {
     "date": "2024-09-07",
@@ -784,7 +796,8 @@
         "source": "niconico",
         "url": "https://sp.nicovideo.jp/watch/sm44056026"
       }
-    ]
+    ],
+    "article": "20240901-alive4"
   },
   {
     "date": "2024-08-15",
@@ -902,7 +915,8 @@
         "source": "web",
         "url": "https://note.com/choco_aji_baum/n/n36e4288c4151"
       }
-    ]
+    ],
+    "article": "20240519-sutada30"
   },
   {
     "date": "2024-05-18",
@@ -963,7 +977,8 @@
         "source": "x",
         "url": "https://x.com/to6okegao/status/1789250831675719770"
       }
-    ]
+    ],
+    "article": "20240511-lambchips"
   },
   {
     "date": "2024-04-18",
@@ -990,7 +1005,8 @@
         "source": "x",
         "url": "https://x.com/to6okegao/status/1779003301453086871"
       }
-    ]
+    ],
+    "article": "20240412-vcn5"
   },
   {
     "date": "2024-03-21",
@@ -1037,7 +1053,8 @@
         "source": "web",
         "url": "https://big-up.style/7fRNqsDjz5"
       }
-    ]
+    ],
+    "article": "20240301-sig"
   },
   {
     "date": "2024-02-15",
@@ -1098,7 +1115,8 @@
         "source": "web",
         "url": "https://note.com/tobokegao/n/nbb0f590d8568"
       }
-    ]
+    ],
+    "article": "20240104-jeffliu"
   },
   {
     "date": "2023-12-14",
@@ -1147,7 +1165,8 @@
         "source": "x",
         "url": "https://x.com/to6okegao/status/1703719912664142041"
       }
-    ]
+    ],
+    "article": "20230917-pixelart"
   },
   {
     "date": "2023-08-04",
@@ -1263,7 +1282,8 @@
         "source": "soundcloud",
         "url": "https://soundcloud.com/tobokegao/20230225-tobox-release-party-in-sapporo"
       }
-    ]
+    ],
+    "article": "20230225-toboxrp-sapporo"
   },
   {
     "date": "2023-02-18",
@@ -1284,7 +1304,8 @@
         "source": "soundcloud",
         "url": "https://soundcloud.com/tobokegao/20230218-tobox-release-party"
       }
-    ]
+    ],
+    "article": "20230218-toboxrp-tokyo"
   },
   {
     "date": "2023-02-03",
@@ -1413,7 +1434,7 @@
     "article": "20221007-puremidi1"
   },
   {
-    "date": "2022-09-22",
+    "date": "2022-09-29",
     "kind": "feature",
     "ja": "PROJECT V/R Converters のアルバム「The Executing Points」の特典オーディオコメンタリーに参加",
     "en": "Took part in the bonus audio commentary for PROJECT V/R Converters' album \"The Executing Points\"",
@@ -1431,7 +1452,8 @@
         "source": "youtube",
         "url": "https://www.youtube.com/watch?v=Z3RfdE24cjA"
       }
-    ]
+    ],
+    "article": "20220929-executing-points"
   },
   {
     "date": "2022-08-17",
@@ -1505,7 +1527,8 @@
         "source": "x",
         "url": "https://x.com/to6okegao/status/1519521794394587137"
       }
-    ]
+    ],
+    "article": "20220429-heyily"
   },
   {
     "date": "2022-04-01",
@@ -1518,7 +1541,8 @@
         "source": "bandcamp",
         "url": "https://resoforce.bandcamp.com/album/rivals-of-aether-resonant-mixes-3"
       }
-    ]
+    ],
+    "article": "20220401-resonant3"
   },
   {
     "date": "2022-03-28",
@@ -1567,7 +1591,7 @@
     "date": "2022-03-04",
     "kind": "release",
     "ja": "3rd EP 「DA-LA-LA (Vocal Version)」をリリース",
-    "en": "3rd EP \"DA-LA-LA (Vocal Version)\" is released",
+    "en": "Released 3rd EP \"DA-LA-LA (Vocal Version)\"",
     "source": "works",
     "links": [
       {
@@ -1623,7 +1647,8 @@
         "source": "spotify",
         "url": "https://open.spotify.com/album/4B0iCXmJOCL7lOWGnL5eWP"
       }
-    ]
+    ],
+    "article": "20211124-future-sushi"
   },
   {
     "date": "2021-10-01",
@@ -1675,7 +1700,8 @@
         "source": "bandcamp",
         "url": "https://resoforce.bandcamp.com/album/rivals-of-aether-resonant-mixes-2"
       }
-    ]
+    ],
+    "article": "20210401-resonant2"
   },
   {
     "date": "2021-03-06",
@@ -1696,7 +1722,8 @@
         "source": "web",
         "url": "https://sweeprecord.com/srin-1177/"
       }
-    ]
+    ],
+    "article": "20210306-caravan"
   },
   {
     "date": "2021-03-02",
@@ -1713,7 +1740,8 @@
         "source": "x",
         "url": "https://x.com/to6okegao/status/1366678340917059587"
       }
-    ]
+    ],
+    "article": "20210302-chilodisc5"
   },
   {
     "date": "2021-01-17",
@@ -1726,7 +1754,8 @@
         "source": "youtube",
         "url": "https://www.youtube.com/channel/UC3WcNQ2BHeH9HB2umAMJtdw"
       }
-    ]
+    ],
+    "article": "20210117-mone"
   },
   {
     "date": "2020-12-28",
@@ -1739,7 +1768,8 @@
         "source": "youtube",
         "url": "https://www.youtube.com/watch?v=rq5z4ypSNZw"
       }
-    ]
+    ],
+    "article": "20201228-oncesuperportable"
   },
   {
     "date": "2020-12-04",
@@ -1781,7 +1811,8 @@
         "source": "web",
         "url": "https://note.com/tobokeobi/n/n7517988399fb"
       }
-    ]
+    ],
+    "article": "20201024-otonokatamichi"
   },
   {
     "date": "2020-10-02",
@@ -1879,7 +1910,8 @@
         "source": "soundcloud",
         "url": "https://soundcloud.com/tobokegao/2020-july-13-metazoa-live-video-tobokegao-picnic-deluxe-edition-commemorative-set"
       }
-    ]
+    ],
+    "article": "20200713-metazoa"
   },
   {
     "date": "2020-07-03",
@@ -1935,7 +1967,8 @@
         "source": "web",
         "url": "https://www.twitch.tv/slcchip"
       }
-    ]
+    ],
+    "article": "20200605-isochip2"
   },
   {
     "date": "2020-05-01",
@@ -1969,7 +2002,8 @@
         "source": "youtube",
         "url": "https://www.youtube.com/watch?v=y7KmrpHFPQY"
       }
-    ]
+    ],
+    "article": "20200423-hikikomori"
   },
   {
     "date": "2020-04-01",
@@ -2002,7 +2036,8 @@
         "source": "soundcloud",
         "url": "https://soundcloud.com/tobokegao/12-tobokegao-lsdj-v8_2_2-b-command-test"
       }
-    ]
+    ],
+    "article": "20200401-footcore2"
   },
   {
     "date": "2020-03-20",
@@ -2032,7 +2067,8 @@
         "source": "youtube",
         "url": "https://www.youtube.com/watch?v=HUNP9pJU8z0"
       }
-    ]
+    ],
+    "article": "20200301-qcovers"
   },
   {
     "date": "2020-01-25",
@@ -2065,7 +2101,26 @@
         "source": "soundcloud",
         "url": "https://soundcloud.com/tobokegao/tobokegao-caravan-boomer-track-ym2413-tv-demo-ver"
       }
-    ]
+    ],
+    "article": "20200125-esctrax5th"
+  },
+  {
+    "date": "2019-10-04",
+    "kind": "other",
+    "ja": "MSX2 ソフト「キャラバンブーマー」の先行版「キャラバンブーマー キャラバンエディション!」が店頭で発売（Tobokegao は BGM の作曲者のひとり）",
+    "en": "The early edition of the MSX2 game \"Caravan Boomer\", \"Caravan Boomer Caravan Edition!\", went on sale in shops (Tobokegao is one of the game's BGM composers)",
+    "source": "web",
+    "links": [
+      {
+        "source": "web",
+        "url": "https://akiba-pc.watch.impress.co.jp/docs/wakiba/find/1211090.html"
+      },
+      {
+        "source": "web",
+        "url": "https://sites.google.com/view/caravanboomer-hp-english"
+      }
+    ],
+    "article": "20191004-caravanboomer-preview"
   },
   {
     "date": "2019-09-20",
@@ -2088,7 +2143,7 @@
   {
     "date": "2019-08-13",
     "kind": "feature",
-    "ja": "KlirreさんのEP「Phlox」に「tobokegao feat. Klirre - 船・宇宙・ユンカース・ユモ」で参加",
+    "ja": "Klirre さんの EP「Phlox」に「tobokegao feat. Klirre - 船・宇宙・ユンカース・ユモ」で参加",
     "en": "Participated in Klirre's EP \"Phlox\" with \"tobokegao feat. Klirre - 船・宇宙・ユンカース・ユモ\"",
     "source": "works",
     "links": [
@@ -2104,7 +2159,8 @@
         "source": "soundcloud",
         "url": "https://soundcloud.com/tobokegao/2xlsdj-tobokegao-feat-klirre-phlox-004"
       }
-    ]
+    ],
+    "article": "20190813-phlox"
   },
   {
     "date": "2019-07-05",
@@ -2121,13 +2177,14 @@
         "source": "web",
         "url": "https://akiba-pc.watch.impress.co.jp/docs/wakiba/find/1211090.html"
       }
-    ]
+    ],
+    "article": "20190705-caravanboomer"
   },
   {
     "date": "2019-03-03",
     "kind": "feature",
     "ja": "しのりゅーさん主催の「光のチップチューンVS闇のチップチューン 対決コンピレーション」の-Light Side-に「Sunshine, Sunrise, Sunset」で参加",
-    "en": "Participated in \"Sunshine, Sunrise, Sunset\" for -Light Side- of \"Chiptune of Light vs Chiptune of Darkness\" hosted by Sinoryu",
+    "en": "Contributed \"Sunshine, Sunrise, Sunset\" to the -Light Side- of \"Chiptune of Light vs Chiptune of Darkness\" organized by Sinoryu",
     "source": "works",
     "links": [
       {
@@ -2146,7 +2203,8 @@
         "source": "x",
         "url": "https://x.com/to6okegao/status/1139155961539522561"
       }
-    ]
+    ],
+    "article": "20190303-chipvs-light"
   },
   {
     "date": "2019-02-15",
@@ -2171,7 +2229,8 @@
         "source": "soundcloud",
         "url": "https://soundcloud.com/tobokegao/skweeeee-b4"
       }
-    ]
+    ],
+    "article": "20190215-milwauskweee4"
   },
   {
     "date": "2018-02-09",
@@ -2192,7 +2251,8 @@
         "source": "soundcloud",
         "url": "https://soundcloud.com/tobokegao/tweedees-baby-babytobokegao-gameboy-cover"
       }
-    ]
+    ],
+    "article": "20180209-shibuyakei-ccc"
   },
   {
     "date": "2017-12-29",
@@ -2209,7 +2269,8 @@
         "source": "x",
         "url": "https://x.com/to6okegao/status/945972752321716224"
       }
-    ]
+    ],
+    "article": "20171229-reversible"
   },
   {
     "date": "2017-09-16",
@@ -2226,13 +2287,14 @@
         "source": "web",
         "url": "https://www.facebook.com/events/koenji-high/square-sounds-tokyo-2017/1345018815584436/"
       }
-    ]
+    ],
+    "article": "20170916-sst2017"
   },
   {
     "date": "2017-09-15",
     "kind": "feature",
     "ja": "OMOIDE LABEL から出た Ange;art さんの EP「Chocolat EP」に1曲目「intro」で参加",
-    "en": "Participated in Ange;art's EP \"Chocolat EP\" released from OMOIDE LABEL with the first song \"intro\"",
+    "en": "Contributed the opening track \"intro\" to Ange;art's EP \"Chocolat EP,\" released on OMOIDE LABEL",
     "source": "works",
     "links": [
       {
@@ -2243,7 +2305,8 @@
         "source": "bandcamp",
         "url": "https://omoidelabel.bandcamp.com/track/intro-by-to6okegao"
       }
-    ]
+    ],
+    "article": "20170915-chocolat"
   },
   {
     "date": "2017-08-11",
@@ -2260,7 +2323,8 @@
         "source": "web",
         "url": "https://www.discogs.com/release/10849933-Various-Chippin-Party-02"
       }
-    ]
+    ],
+    "article": "20170811-chippinparty2"
   },
   {
     "date": "2017-05-28",
@@ -2281,7 +2345,8 @@
         "source": "web",
         "url": "https://www.mixcloud.com/%E3%81%A8%E3%81%BC%E3%81%91%E3%81%8C%E3%81%8A/pico2-magic-canvas-20170528-sun-live-gbasp-noise-jam-45-min-1-lsdsng/"
       }
-    ]
+    ],
+    "article": "20170528-magicanvas"
   },
   {
     "date": "2017-05-11",
@@ -2298,7 +2363,8 @@
         "source": "youtube",
         "url": "https://www.youtube.com/watch?v=Os7mlA9I__Q"
       }
-    ]
+    ],
+    "article": "20170511-blastermaster"
   },
   {
     "date": "2017-03-27",
@@ -2311,7 +2377,8 @@
         "source": "spotify",
         "url": "https://open.spotify.com/album/3lVD78zO6yuBKMOrZNChbV"
       }
-    ]
+    ],
+    "article": "20170327-cheapbeats"
   },
   {
     "date": "2016-12-18",
@@ -2328,7 +2395,8 @@
         "source": "x",
         "url": "https://x.com/to6okegao/status/810514139114127360"
       }
-    ]
+    ],
+    "article": "20161218-yurutune"
   },
   {
     "date": "2016-11-16",
@@ -2345,7 +2413,8 @@
         "source": "x",
         "url": "https://x.com/to6okegao/status/1270272154513240065"
       }
-    ]
+    ],
+    "article": "20161116-bandcampdaily"
   },
   {
     "date": "2016-11-11",
@@ -2362,7 +2431,8 @@
         "source": "soundcloud",
         "url": "https://soundcloud.com/tobokegao/omoide-house-tobokegao-2stepish-chiptune-remix"
       }
-    ]
+    ],
+    "article": "20161111-omoidehouse"
   },
   {
     "date": "2016-10-30",
@@ -2375,7 +2445,8 @@
         "source": "soundcloud",
         "url": "https://soundcloud.com/musiclap/xfd"
       }
-    ]
+    ],
+    "article": "20161030-olympus"
   },
   {
     "date": "2016-10-22",
@@ -2388,7 +2459,8 @@
         "source": "x",
         "url": "https://x.com/to6okegao/status/789854240608890880"
       }
-    ]
+    ],
+    "article": "20161022-tonight"
   },
   {
     "date": "2016-10-15",
@@ -2401,7 +2473,8 @@
         "source": "x",
         "url": "https://x.com/to6okegao/status/787244140526305281"
       }
-    ]
+    ],
+    "article": "20161015-technique69"
   },
   {
     "date": "2016-07-20",
@@ -2418,7 +2491,8 @@
         "source": "soundcloud",
         "url": "https://soundcloud.com/tobokegao/homely-girl"
       }
-    ]
+    ],
+    "article": "20160720-weezer8bit"
   },
   {
     "date": "2016-06-25",
@@ -2431,7 +2505,8 @@
         "source": "web",
         "url": "https://lo-bit-freedom.connpass.com/event/33389/"
       }
-    ]
+    ],
+    "article": "20160625-lobitfreedom4"
   },
   {
     "date": "2016-05-04",
@@ -2444,7 +2519,8 @@
         "source": "bandcamp",
         "url": "https://tbkgao.bandcamp.com/album/picnic"
       }
-    ]
+    ],
+    "article": "20160504-picnic"
   },
   {
     "date": "2016-04-01",
@@ -2457,12 +2533,13 @@
         "source": "soundcloud",
         "url": "https://soundcloud.com/madmilky-records/sets/skybox-stardust-ep"
       }
-    ]
+    ],
+    "article": "20160401-stardust"
   },
   {
     "date": "2016-02-06",
     "kind": "other",
-    "ja": "ESC TRAXから1st EP「Wave Chords EP」をrelease",
+    "ja": "ESC TRAX から 1st EP「Wave Chords EP」をリリース",
     "en": "First EP \"Wave Chords EP\" released from ESC TRAX",
     "source": "works",
     "links": [
@@ -2470,7 +2547,8 @@
         "source": "bandcamp",
         "url": "https://esctrax.bandcamp.com/album/esc-002-wave-chords-ep"
       }
-    ]
+    ],
+    "article": "20160206-wavechords"
   },
   {
     "date": "2016-01-15",
@@ -2491,7 +2569,8 @@
         "source": "soundcloud",
         "url": "https://soundcloud.com/tobokegao/harito-trash-toys-dream-to6okegaos-goodnight-chiptune-ver"
       }
-    ]
+    ],
+    "article": "20160115-trashtoysdream"
   },
   {
     "date": "2015-07-17",
@@ -2504,7 +2583,8 @@
         "source": "soundcloud",
         "url": "https://soundcloud.com/ricora/c0efcs9f5ldr"
       }
-    ]
+    ],
+    "article": "20150717-dedederelay"
   },
   {
     "date": "2015-05-05",
@@ -2521,7 +2601,8 @@
         "source": "soundcloud",
         "url": "https://soundcloud.com/tobokegao/electric-yakuza-splendr-tobokegao-bitpop-remix-1"
       }
-    ]
+    ],
+    "article": "20150505-splendr"
   },
   {
     "date": "2015-04-26",
@@ -2550,7 +2631,8 @@
         "source": "youtube",
         "url": "https://youtu.be/6CsLOPTury8"
       }
-    ]
+    ],
+    "article": "20150426-moi"
   },
   {
     "date": "2014-12-20",
@@ -2571,7 +2653,8 @@
         "source": "x",
         "url": "https://x.com/to6okegao/status/546578844287639552"
       }
-    ]
+    ],
+    "article": "20141220-merrychipmas"
   },
   {
     "date": "2014-09-26",
@@ -2588,13 +2671,15 @@
         "source": "soundcloud",
         "url": "https://soundcloud.com/tobokegao/kukeiha-chan-no-daibouken"
       }
-    ]
+    ],
+    "article": "20140926-cheapbeatswin"
   },
   {
     "date": "2014-06-01",
     "kind": "other",
     "ja": "LSDjを始める",
     "en": "Started LSDj",
-    "source": "works"
+    "source": "works",
+    "article": "20140601-lsdj"
   }
 ]
