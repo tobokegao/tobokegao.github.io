@@ -13,6 +13,12 @@ on:
 
 permissions: {}
 
+# One update at a time: a second run waits for the first instead of racing it to the same
+# pull request branch.
+concurrency:
+  group: update
+  cancel-in-progress: false
+
 jobs:
   collect:
     runs-on: ubuntu-latest

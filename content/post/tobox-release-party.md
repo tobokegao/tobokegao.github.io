@@ -205,6 +205,8 @@ ESC TRAXの主催者の一人であり(僕の初EPもこちらからリリース
 　  
 札幌の音楽サークルprototypeのコンピに参加されていて、心の中に渦巻くものを具現化したような音楽を作っていて最高だったのと、元々futurebass方面から音楽を始めたと聞き、矩形波と親和性があるのではないか？と思いお誘いしました！
 
+[tunecore（保存版）](https://web.archive.org/web/20221218093236/https://www.tunecore.co.jp/artists/cvel)
+
 
 　  
 　  
@@ -215,6 +217,8 @@ ESC TRAXの主催者の一人であり(僕の初EPもこちらからリリース
 シャンティブックスのツイートで知ったタブラ奏者。
 楽曲からテクノ的矩形波と蒸気波の雰囲気に惹かれました！
 出演者のtktc szkさんとは最近コヨーテマンショーを結成、何かの縁を感じて出演を依頼！
+
+tunecore（今は開けません）: `https://www.tunecore.co.jp/artists?id=689339`
 
 
 　  
@@ -322,6 +326,7 @@ NES BANDのnoise ch担当であるホソタケさんも出演です！
 ライブがどんな感じになるのか楽しみです！
 
 [tunecore](https://www.tunecore.co.jp/artists/yagishiro?lang=ja)
+[niconico（保存版）](https://web.archive.org/web/20250902162746/https://www.nicovideo.jp/user/81601195)
 
 　  
 　  
@@ -539,6 +544,8 @@ cvel participated in a compilation by Sapporo music circle prototype.
 cvel was great, making music that seemed to embody what was swirling around in his mind
 And when I heard that cvel originally started his music from the futurebass direction, I wondered if he might have an affinity with square waves. So I invited him to join us!
 
+[tunecore (archived)](https://web.archive.org/web/20221218093236/https://www.tunecore.co.jp/artists/cvel)
+
 
 　  
 　  
@@ -549,6 +556,8 @@ And when I heard that cvel originally started his music from the futurebass dire
 A tabla player I learned about through a tweet from Chanti books.
 The music drew me in with its techno square wave and vapor wave vibe!
 The performer, tktc szk, and he recently formed the Coyote Man Show, and I felt some kind of connection and asked him to perform!
+
+tunecore (no longer online): `https://www.tunecore.co.jp/artists?id=689339`
 
 
 　  
@@ -656,6 +665,7 @@ His songs are wonderful, blending Vocaloids with hip elements and gently conveyi
 Can&#x0027;t wait to see what the live show will be like!
 
 [tunecore](https://www.tunecore.co.jp/artists/yagishiro?lang=ja)
+[niconico (archived)](https://web.archive.org/web/20250902162746/https://www.nicovideo.jp/user/81601195)
 
 　  
 　  
