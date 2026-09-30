@@ -484,6 +484,10 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .log__links { position: relative; z-index: 1; display: inline-flex; gap: 6px; margin-left: 8px; vertical-align: -3px; }
 .log__links .px { width: 18px; height: 18px; }
 .doc__links { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 0 0 8px; }
+/* a log row's page: the links sit centered under the title, and the write-up starts well below them */
+.doc__links--top { justify-content: center; margin: 20px 0 0; }
+.doc__body { margin-top: 36px; }
+.doc__body > div > h2:first-child { margin-top: 0; }
 .doc__flyers { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin: 20px 0 8px; }
 .doc__flyers img { display: block; max-width: 100%; max-height: 80vh; width: auto; height: auto; border: 2px solid; border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md); }
 
