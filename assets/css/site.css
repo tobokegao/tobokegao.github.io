@@ -486,6 +486,8 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .doc__links { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 0 0 8px; }
 /* a log row's page: the links sit centered under the title, and the write-up starts well below them */
 .doc__links--top { justify-content: center; margin: 20px 0 0; }
+.doc__pic { margin: 20px auto 0; max-width: 480px; }
+.doc__pic img { display: block; width: 100%; height: auto; border: 2px solid; border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md); }
 .doc__body { margin-top: 36px; }
 .doc__body > div > h2:first-child { margin-top: 0; }
 .doc__flyers { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin: 20px 0 8px; }
@@ -594,6 +596,11 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
   .hero__logo--label { width: 36%; }
   .links { gap: 4px; }
   .grid--jackets, .grid--designs { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 14px; }
+  /* the home page on phones: four releases and four videos (2 x 2), and a log about as tall */
+  .win--home-videos .grid--videos { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 14px; }
+  .win--home-releases .grid--jackets > :nth-child(n+5),
+  .win--home-videos .grid--videos > :nth-child(n+5),
+  .win--home-log .log__row:nth-child(n+10) { display: none; }
   .log__row { grid-template-columns: 7em 1fr; }
   .log__idx { display: none; }
   .log__text { grid-column: 1 / -1; }

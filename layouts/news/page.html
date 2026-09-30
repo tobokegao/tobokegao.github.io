@@ -5,8 +5,22 @@
   {{ partial "win.html" (dict "file" (printf `C:\TBK\NEWS\%s.TXT` (replace $r.date "-" "")) "id" "page-t-file") }}
   <p class="doc__date log__row--{{ $r.kind }}"><time datetime="{{ $r.date }}">{{ replace $r.date "-" "." }}</time> <span class="log__kind">{{ partial "t.html" (printf "kind_%s" $r.kind) }}</span></p>
   <h1 class="doc__title" id="page-t">{{ partial "bi.html" (dict "ja" $r.ja "en" $r.en) }}</h1>
-  {{- /* where to hear or see it, right under the title so it is found before the write-up */}}
   {{ $links := partial "row-links.html" $r }}
+  {{- /* A picture for the row, under the title: its own flyer, else a design (flyer) whose link is one
+     of the row's links, else the cover or thumbnail of a video or release it links to. */ -}}
+  {{ $urls := slice }}
+  {{ range $links }}{{ $urls = $urls | append .url (replaceRE `^https://youtu\.be/([\w-]{11}).*` "https://www.youtube.com/watch?v=$1" .url) }}{{ end }}
+  {{ $pic := "" }}{{ $local := false }}
+  {{ with $r.images }}{{ $pic = (index . 0).src }}{{ $local = true }}{{ end }}
+  {{ if not $pic }}{{ range hugo.Data.designs }}{{ if and (not $pic) .url (in $urls .url) }}{{ $pic = .image }}{{ $local = true }}{{ end }}{{ end }}{{ end }}
+  {{ if not $pic }}{{ range hugo.Data.items }}{{ if and (not $pic) .image (in $urls .url) }}{{ $pic = .image }}{{ end }}{{ end }}{{ end }}
+  {{ if not $pic }}{{ range hugo.Data.releases }}{{ $rel := . }}{{ range .links }}{{ if and (not $pic) $rel.image (in $urls .url) }}{{ $pic = $rel.image }}{{ end }}{{ end }}{{ end }}{{ end }}
+  {{ with $pic }}
+  {{ $src := cond $local (. | relURL) . }}
+  {{ if $local }}{{ with resources.Get (strings.TrimPrefix "/" .) }}{{ if gt .Width 640 }}{{ $src = (.Resize "640x webp q82").RelPermalink }}{{ end }}{{ end }}{{ end }}
+  <p class="doc__pic"><img src="{{ $src }}" alt="" loading="lazy"></p>
+  {{ end }}
+  {{- /* where to hear or see it, right under the title so it is found before the write-up */}}
   {{ with $links }}
   <nav class="doc__links doc__links--top" aria-label="{{ partial "tt.html" "rowLinks" }}">{{ range . }}{{ partial "src-chip.html" (dict "source" .source "url" .url "label" true) }}{{ end }}</nav>
   {{ end }}
@@ -21,7 +35,7 @@
   {{ end }}
   {{- /* Flyers picked from the X archive (scripts/x_to_timeline.py). One copy per language
      for the alt text; the hidden one is lazy, so it is never fetched. */ -}}
-  {{ with $r.images }}
+  {{ with after 1 ($r.images | default slice) }}
   {{ $f := index hugo.Data.strings "kind_flyer" }}
   <div class="doc__flyers">
     {{ range . }}

@@ -17,7 +17,7 @@
 
 {{ $own := slice }}
 {{ range hugo.Data.releases }}{{ if findRE `(?i)tobokegao|とぼけがお` .artist }}{{ $own = $own | append . }}{{ end }}{{ end }}
-<section class="win" aria-labelledby="latest-t">
+<section class="win win--home-releases" aria-labelledby="latest-t">
   {{ partial "win.html" (dict "file" "RELEASES.M3U" "id" "latest-t" "toggle" true) }}
   <p class="win__caption">{{ partial "t.html" "latest" }}</p>
   <div class="grid grid--jackets">
@@ -27,7 +27,7 @@
 </section>
 
 <div class="split">
-  <section class="win" aria-labelledby="videos-t">
+  <section class="win win--home-videos" aria-labelledby="videos-t">
     {{ partial "win.html" (dict "file" "VIDEOS.MP4" "id" "videos-t" "toggle" true) }}
     <p class="win__caption">{{ partial "t.html" "latestVideos" }}</p>
     <div class="grid grid--videos">
@@ -36,7 +36,7 @@
     <p class="win__more"><a class="btn" href="{{ "/videos/" | relURL }}">{{ partial "t.html" "allVideos" }}</a></p>
   </section>
 
-  <section class="win" aria-labelledby="log-t">
+  <section class="win win--home-log" aria-labelledby="log-t">
     {{ partial "win.html" (dict "file" "NEWS.LOG" "id" "log-t" "toggle" true) }}
     <p class="win__caption">{{ partial "t.html" "log" }}</p>
     {{ partial "log.html" (dict "rows" (partial "timeline.html" .) "limit" 13) }}
