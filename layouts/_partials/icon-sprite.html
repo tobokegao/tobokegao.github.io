@@ -1,0 +1,31 @@
+{{- /* The pixel icons as files, so a page only points at them and the browser keeps them
+   between pages. Context "small": the platform icons every page uses (_partials/icons/),
+   icons-small.svg. Context "hd": the large link buttons of the home page, day and night
+   (_partials/icons-hd and icons-hd-night), icons-hd.svg.
+   Inside a <use> of another file the page's CSS classes do not reach the drawing, so the
+   classes that take their colors from CSS become inline styles with the same custom
+   properties (those do pass through): the outline and shadows, and the hover highlight,
+   which is hidden until --px-hl is set on the button. Returns the file's URL. */ -}}
+{{- $fix := dict
+  `class="px__o"` `style="fill:var(--px-outline)"`
+  `class="px__sh1"` `style="fill:var(--px-sh1)"`
+  `class="px__sh2"` `style="fill:var(--px-sh2)"`
+  `class="px__hl"` `style="display:var(--px-hl,none)"` -}}
+{{- $body := "" -}}
+{{- if eq . "small" -}}
+{{- range slice "bandcamp" "apple" "soundcloud" "youtube" "niconico" "spotify" "x" "bluesky" "web" "play" -}}
+  {{- $inner := replaceRE `^\s*<svg[^>]*>|</svg>\s*$` "" (partial (printf "icons/%s.html" .) .) -}}
+  {{- $body = printf `%s<symbol id="i-%s" viewBox="0 0 18 18">%s</symbol>` $body . $inner -}}
+{{- end -}}
+{{- else -}}
+{{- range $l := site.Params.links -}}
+  {{- range $set := slice (dict "dir" "icons-hd" "id" "hd") (dict "dir" "icons-hd-night" "id" "hdn") -}}
+    {{- $inner := replaceRE `^\s*<svg[^>]*>|</svg>\s*$` "" (partial (printf "%s/%s.html" $set.dir $l.icon) $l) -}}
+    {{- $body = printf `%s<symbol id="%s-%s" viewBox="0 0 30 30">%s</symbol>` $body $set.id $l.icon $inner -}}
+  {{- end -}}
+{{- end -}}
+{{- end -}}
+{{- range $k, $v := $fix }}{{ $body = replace $body $k $v }}{{ end -}}
+{{- $svg := printf `<svg xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">%s</svg>` $body -}}
+{{- $res := resources.FromString (printf "icons-%s.svg" .) $svg | fingerprint "md5" -}}
+{{- return $res.RelPermalink -}}

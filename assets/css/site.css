@@ -348,6 +348,7 @@ a.seg { text-decoration: none; }
 .btn--link:hover, .btn--link:focus-visible { background: none; }
 .px__hl { display: none; }
 .btn--link:hover .px__hl, .btn--link:focus-visible .px__hl { display: inline; }
+.btn--link:hover, .btn--link:focus-visible { --px-hl: inline; }   /* the same highlight for the icons drawn from icons.svg */
 .tag {
   font: var(--dot)/1 var(--f-dot);
   padding: 2px 4px;

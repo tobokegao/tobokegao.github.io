@@ -9,7 +9,7 @@
     </div>
     <ul class="links" aria-label="{{ partial "tt.html" "links" }}">
       {{ range site.Params.links }}
-      <li><a class="btn btn--link" href="{{ .url }}" rel="noopener me" target="_blank" title="{{ .name }}" aria-label="{{ .name }}"><span class="logo--day">{{ partial (printf "icons-hd/%s.html" .icon) . }}</span><span class="logo--night">{{ partial (printf "icons-hd-night/%s.html" .icon) . }}</span></a></li>
+      <li><a class="btn btn--link" href="{{ .url }}" rel="noopener me" target="_blank" title="{{ .name }}" aria-label="{{ .name }}">{{ $sp := partialCached "icon-sprite.html" "hd" "hd" }}<span class="logo--day"><svg class="px px--hd" viewBox="0 0 30 30" width="60" height="60" aria-hidden="true" focusable="false"><use href="{{ $sp }}#hd-{{ .icon }}"/></svg></span><span class="logo--night"><svg class="px px--hd" viewBox="0 0 30 30" width="60" height="60" aria-hidden="true" focusable="false"><use href="{{ $sp }}#hdn-{{ .icon }}"/></svg></span></a></li>
       {{ end }}
     </ul>
   </div>
