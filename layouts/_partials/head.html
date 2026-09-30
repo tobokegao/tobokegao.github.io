@@ -16,7 +16,8 @@
 {{ $title := cond .IsHome "とぼけがお Official Home Page" (printf "%s | %s" .Title site.Title) }}
 <title>{{ $title }}</title>
 {{ $desc := or .Description (cond .IsHome "Welcome to TBK zone!" "とぼけがお (Tobokegao) — チップチューン、合成音声、音MAD、素のMIDI音源。") }}
-{{ $image := "img/tobokegao.png" | absURL }}{{ $card := "summary" }}
+{{- /* the favicon figure (16 dots at 32px each); PNG, since link previews read it more widely than WebP */}}
+{{ $image := "img/og-icon.png" | absURL }}{{ $card := "summary" }}
 {{- /* an activity-log row's page: the start of its write-up (else its date and kind) and its picture */}}
 {{ with .Params.row }}{{ $r := . }}
   {{ $desc = printf "%s %s" (replace $r.date "-" ".") (partial "t.html" (printf "kind_%s" $r.kind) | plainify | strings.TrimSpace) }}
