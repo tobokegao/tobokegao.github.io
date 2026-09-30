@@ -2,9 +2,10 @@
 {{- /* The early script lives in assets/js/early.js so its hash can go into the CSP. */ -}}
 {{ $early := resources.Get "js/early.js" | minify | fingerprint "sha256" }}
 {{- /* Content-Security-Policy: what the page may load and from where. Images come only from
-   the hosts fetch_feeds.py accepts (ALLOWED_HOSTS); change both together. 'unsafe-inline' for
+   the hosts fetch_feeds.py accepts (ALLOWED_HOSTS) and row_pics.py keeps (PIC_HOSTS, adds Spotify's
+   i.scdn.co); change them together. 'unsafe-inline' for
    styles is for the style="--i:…" attributes on the pixel icons. See docs/decisions/0009. */ -}}
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' '{{ $early.Data.Integrity }}'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com https://*.sndcdn.com https://*.bcbits.com https://*.nimg.jp https://*.mzstatic.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' '{{ $early.Data.Integrity }}'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com https://*.sndcdn.com https://*.bcbits.com https://*.nimg.jp https://*.mzstatic.com https://i.scdn.co; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{ $title := cond .IsHome site.Title (printf "%s | %s" .Title site.Title) }}
