@@ -15,7 +15,8 @@
   <section class="win loading__win">
     <p class="win__title"><span>LOAD.EXE</span></p>
     <p class="loading__text"><span data-l="ja" lang="ja">読み込み中</span><span data-l="en" lang="en">Loading</span></p>
-    <p class="loading__bar" aria-hidden="true"></p>
+    {{- /* 20 cells: the empty track, and the full row slid in over it by a CSS animation */}}
+    <p class="loading__bar" aria-hidden="true"><span class="loading__cells"><span class="loading__track">░░░░░░░░░░░░░░░░░░░░</span><span class="loading__fill">████████████████████</span></span></p>
   </section>
 </div>
 {{- /* A picture at full size over the page (links with data-zoom; site.js opens it). */}}

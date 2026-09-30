@@ -326,6 +326,24 @@ a.seg { text-decoration: none; }
 .loading__win { margin: 0; padding: 26px 24px 20px; }
 .loading__text { margin: 0 0 12px; text-align: center; font: var(--dot)/calc(var(--dot) * 2) var(--f-dot); color: var(--ink); }
 .loading__bar { margin: 0; font: 400 16px/1 "TBK Blocks", monospace; white-space: pre; color: var(--bar); }
+/* The meter runs as CSS animations on opacity and transform, which the browser can keep
+   drawing while the page's script is busy putting the next page together (a timer cannot).
+   The window appears after 0.3 s; the bar starts at 1 cell, fills fast (0.04 s a cell) up to
+   14, then slowly (0.3 s a cell) up to 19, and waits there. Each step moves exactly one cell
+   (5 % of the 20-cell row). */
+.loading:not([hidden]) { animation: loading-show 0.3s steps(1, end) both; will-change: opacity; }
+.loading__cells { position: relative; display: inline-block; overflow: hidden; vertical-align: top; }
+.loading__fill { position: absolute; left: 0; top: 0; transform: translateX(-100%); will-change: transform; }
+.loading:not([hidden]) .loading__fill { animation: loading-fill 2.02s 0.3s both; }
+@keyframes loading-show { from { opacity: 0; } to { opacity: 1; } }
+@keyframes loading-fill {
+  0% { transform: translateX(-95%); animation-timing-function: steps(13, end); }
+  25.743% { transform: translateX(-30%); animation-timing-function: steps(5, end); }
+  100% { transform: translateX(-5%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .loading:not([hidden]) .loading__fill { animation: none; }
+}
 .win__caption { margin: 0 0 20px; font: var(--dot)/1.6 var(--f-dot); color: var(--ink-dim); }
 /* the fold box at the right end of the top border (home windows): [-] open, [+] folded */
 .win__toggle {

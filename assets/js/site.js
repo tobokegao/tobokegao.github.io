@@ -14,28 +14,24 @@
 
   // Page changes: when the next page takes more than 0.3 s, a small LOAD.EXE window
   // shows a block meter on the old page. The meter only guesses (the browser does not
-  // report progress): it fills fast (0.04 s a cell), then slows down near the end. With reduced motion
-  // it stays still.
+  // report progress). Its timing lives in CSS (site.css, .loading): the window is put on
+  // the page at once but only appears after 0.3 s, so it also shows, and keeps moving,
+  // while this script is busy putting a heavy page together. With reduced motion it stays still.
   var loading = document.getElementById("loading");
-  var loadWait = 0, loadStep = 0;
   function hideLoading() {
-    clearTimeout(loadWait); clearTimeout(loadStep);
     if (loading) loading.hidden = true;
   }
   function showLoading() {
     if (!loading) return;
-    hideLoading();
-    var bar = loading.querySelector(".loading__bar"), cells = 20, n = 0;
-    var draw = function () { bar.textContent = "█".repeat(n) + "░".repeat(cells - n); };
-    var still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    loadWait = setTimeout(function () {
-      n = still ? 0 : 1; draw(); loading.hidden = false;
-      if (still) return;
-      (function next() {
-        if (n >= cells - 1) return;
-        loadStep = setTimeout(function () { n++; draw(); next(); }, n < 14 ? 40 : 300);
-      })();
-    }, 300);
+    loading.hidden = true;
+    void loading.offsetWidth;   // restart the CSS animations from the first frame
+    loading.hidden = false;
+  }
+  // Wait until the meter is on screen before the heavy work, so the browser has it in hand.
+  function afterPaint(value) {
+    return new Promise(function (done) {
+      requestAnimationFrame(function () { setTimeout(function () { done(value); }, 0); });
+    });
   }
   // coming back with the Back button can restore this page as it was, meter and all
   window.addEventListener("pageshow", hideLoading);
@@ -188,7 +184,7 @@
     if (!url || !window.fetch || !window.DOMParser || !history.pushState) { location.href = href; return; }
     var id = ++current;
     showLoading();
-    fetchPage(url).then(function (html) {
+    fetchPage(url).then(afterPaint).then(function (html) {
       if (id !== current) return;
       if (push) history.pushState({ tbk: 1 }, "", href);
       swap(html, url, a.hash);
