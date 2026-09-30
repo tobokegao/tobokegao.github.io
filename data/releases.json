@@ -206,8 +206,8 @@
   ]
  },
  {
-  "key": "sasukeharaguchiigakugameboycover",
-  "title": "sasuke haraguchi - igaku (gameboy cover)",
+  "key": "原口沙輔sasukeharaguchiイガクigakutobokegaogameboycover",
+  "title": "原口沙輔(Sasuke Haraguchi) - イガク(Igaku) (Tobokegao Gameboy Cover)",
   "artist": "Tobokegao",
   "type": "track",
   "date": "2024-12-18",
@@ -216,17 +216,7 @@
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/sasuke-haraguchi-igaku-gameboy"
-   }
-  ]
- },
- {
-  "key": "原口沙輔sasukeharaguchiイガクigakutobokegaogameboycover",
-  "title": "原口沙輔(Sasuke Haraguchi) - イガク(Igaku) (Tobokegao Gameboy Cover)",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2024-12-18",
-  "image": "https://i.ytimg.com/vi/VtT9YCqRykM/mqdefault.jpg",
-  "links": [
+   },
    {
     "source": "youtube",
     "url": "https://www.youtube.com/watch?v=VtT9YCqRykM"
@@ -1728,34 +1718,6 @@
   ]
  },
  {
-  "key": "semusicmv",
-  "title": "SE MUSIC EP (MV)",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2020-12-05",
-  "image": "https://i.ytimg.com/vi/zGeQMpNuNeE/mqdefault.jpg",
-  "links": [
-   {
-    "source": "youtube",
-    "url": "https://www.youtube.com/watch?v=zGeQMpNuNeE"
-   }
-  ]
- },
- {
-  "key": "roomtoroommv",
-  "title": "Room To Room MV",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2020-12-05",
-  "image": "https://i.ytimg.com/vi/hem0NBcBT38/mqdefault.jpg",
-  "links": [
-   {
-    "source": "youtube",
-    "url": "https://www.youtube.com/watch?v=hem0NBcBT38"
-   }
-  ]
- },
- {
   "key": "skipstopmv",
   "title": "○○○○（Skip/Stop - single) MV",
   "artist": "Tobokegao",
@@ -1784,6 +1746,10 @@
    {
     "source": "apple",
     "url": "https://music.apple.com/jp/album/room-to-room/1546748346"
+   },
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=hem0NBcBT38"
    }
   ]
  },
@@ -1872,6 +1838,10 @@
    {
     "source": "apple",
     "url": "https://music.apple.com/jp/album/se-music-ep/1546744903"
+   },
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=zGeQMpNuNeE"
    }
   ]
  },
@@ -1914,17 +1884,7 @@
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/yuko-kumai-mitsuami-hippatte-tobokegao-8-bit-gameboy-cover"
-   }
-  ]
- },
- {
-  "key": "くま井ゆう子yukokumaiみつあみ引っ張ってmitsuamihippattetobokegao8bitgameboycover1hourvideo",
-  "title": "くま井ゆう子(Yuko Kumai) - みつあみ引っ張って(Mitsuami Hippatte) Tobokegao 8-Bit Gameboy Cover 1 Hour Video",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2020-10-18",
-  "image": "https://i.ytimg.com/vi/V7ccJTY39pI/mqdefault.jpg",
-  "links": [
+   },
    {
     "source": "youtube",
     "url": "https://www.youtube.com/watch?v=V7ccJTY39pI"
@@ -1964,6 +1924,14 @@
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/being-rusty-tanashii-mainichi"
+   },
+   {
+    "source": "niconico",
+    "url": "https://www.nicovideo.jp/watch/sm37609199"
+   },
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=HCj7VwCL8AA"
    }
   ]
  },
@@ -1978,34 +1946,6 @@
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/being-rusty-tanashii-mainichi-vocal-guitar-version-feat-antichiptunechiptuneclub"
-   }
-  ]
- },
- {
-  "key": "beingrustybyとぼけがおmvmigmint",
-  "title": "「Being Rusty」 by とぼけがお (MV: migmint)",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2020-10-02",
-  "image": "https://nicovideo.cdn.nimg.jp/thumbnails/37609199/37609199.70463192.L",
-  "links": [
-   {
-    "source": "niconico",
-    "url": "https://www.nicovideo.jp/watch/sm37609199"
-   }
-  ]
- },
- {
-  "key": "8bitanimationbeingrustybytobokegaomvmigmint",
-  "title": "[8bit Animation] \" Being Rusty\" by Tobokegao (MV: migmint)",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2020-10-02",
-  "image": "https://i.ytimg.com/vi/HCj7VwCL8AA/mqdefault.jpg",
-  "links": [
-   {
-    "source": "youtube",
-    "url": "https://www.youtube.com/watch?v=HCj7VwCL8AA"
    }
   ]
  },
@@ -2094,17 +2034,7 @@
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/gameboy-lsdj-8bit-girlpop-cover-wip-collection-micromusic-italy-sunday-jam"
-   }
-  ]
- },
- {
-  "key": "gameboylsdj8bitgirlpopcoverwipcollectionmicromusicitalysundayjamtobokegaolivestream",
-  "title": "[Gameboy LSDj 8bit GiRLPOP Cover WIP Collection] Micromusic Italy Sunday Jam Tobokegao [LIVE STREAM]",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2020-08-31",
-  "image": "https://i.ytimg.com/vi/pEKZbRCufn4/mqdefault.jpg",
-  "links": [
+   },
    {
     "source": "youtube",
     "url": "https://www.youtube.com/watch?v=pEKZbRCufn4"
@@ -2294,20 +2224,6 @@
   ]
  },
  {
-  "key": "exilefakerparallelexperimentslsdj",
-  "title": "exileFaker - parallel experiments LSDJ(Preview)",
-  "artist": "Tobokegao",
-  "type": "track",
-  "date": "2020-07-04",
-  "image": "https://i1.sndcdn.com/artworks-oTU2nwLSrgIzInIR-lsbB3A-t500x500.jpg",
-  "links": [
-   {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/exilefaker-parallel-experiments-lsdjpreview"
-   }
-  ]
- },
- {
   "key": "parallelexperimentslsdj",
   "title": "parallel experiments LSDJ (preview)",
   "artist": "exileFaker",
@@ -2318,6 +2234,10 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/album/parallel-experiments-lsdj-preview"
+   },
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/exilefaker-parallel-experiments-lsdjpreview"
    }
   ]
  },
@@ -2456,17 +2376,7 @@
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/recovery-girl-recovery-girl-tobokegao-gb-remix"
-   }
-  ]
- },
- {
-  "key": "recoverygirlrecoverygirltobokegaolsdjgbremix",
-  "title": "Recovery Girl - Recovery Girl (tobokegao LSDj GB Remix)",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2020-05-12",
-  "image": "https://i.ytimg.com/vi/XhXZbDR6JPE/mqdefault.jpg",
-  "links": [
+   },
    {
     "source": "youtube",
     "url": "https://www.youtube.com/watch?v=XhXZbDR6JPE"
@@ -2764,17 +2674,7 @@
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/2xlsdj-tobokegao-feat-klirre-phlox-004"
-   }
-  ]
- },
- {
-  "key": "2xlsdjgameboytobokegao",
-  "title": "[2xLSDj, Gameboy] tobokegao feat. Klirre - 船・宇宙・ユンカース・ユモ 004",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2019-08-14",
-  "image": "https://i.ytimg.com/vi/po1KR9UMdyc/mqdefault.jpg",
-  "links": [
+   },
    {
     "source": "youtube",
     "url": "https://www.youtube.com/watch?v=po1KR9UMdyc"
