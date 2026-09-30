@@ -20,6 +20,7 @@ series = ["tobokegao"]
 aliases = ["/ja/post/20230226-tobo-interview/"]
 +++
 
+この対談は note でも公開しています（[日本語](https://note.com/tobokegao/n/n61cec13f4e61)／[English](https://note.com/tobokegao/n/n4126c95511e6)）。
 
 ## リード文
 

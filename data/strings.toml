@@ -16,6 +16,10 @@ en = "News"
 ja = "デザイン"
 en = "Designs"
 
+[kind_web]
+ja = "ウェブサイト"
+en = "Website"
+
 [kind_flyer]
 ja = "フライヤー"
 en = "Flyer"
