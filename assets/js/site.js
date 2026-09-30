@@ -11,7 +11,7 @@
 
   // Page changes: when the next page takes more than 0.3 s, a small LOAD.EXE window
   // shows a block meter on the old page. The meter only guesses (the browser does not
-  // report progress): it fills fast, then slows down near the end. With reduced motion
+  // report progress): it fills fast (0.04 s a cell), then slows down near the end. With reduced motion
   // it stays still.
   var loading = document.getElementById("loading");
   var loadWait = 0, loadStep = 0;
@@ -30,7 +30,7 @@
       if (still) return;
       (function next() {
         if (n >= cells - 1) return;
-        loadStep = setTimeout(function () { n++; draw(); next(); }, n < 12 ? 100 : 500);
+        loadStep = setTimeout(function () { n++; draw(); next(); }, n < 14 ? 40 : 300);
       })();
     }, 300);
   }

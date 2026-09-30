@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section class="win win--error" aria-labelledby="page-t">
-  {{ partial "win.html" (dict "file" "ERROR" "id" "page-t" "tag" "h1") }}
+  {{ partial "win.html" (dict "file" "ERROR.LOG" "id" "page-t" "tag" "h1") }}
   <p class="error__msg">File not found<br>Abort, Retry, Fail?</p>
   <p class="win__more"><a class="btn" href="{{ "/" | relURL }}">Retry</a></p>
 </section>

@@ -24,3 +24,4 @@
 - [0007 ログの行のページに本文を書けるようにする](0007-log-row-articles.md)
 - [0008 デザインの一覧には小さい画像を出す](0008-design-thumbnails.md)
 - [0009 読み込み先と権限をしぼる](0009-security-hardening.md)
+- [0010 ページの移り変わりを速く見せる](0010-faster-page-changes.md)
