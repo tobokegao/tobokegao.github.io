@@ -333,6 +333,26 @@ def is_song_video(it: dict, overrides: dict) -> bool:
 
 LINK_ORDER = {"bandcamp": 0, "apple": 1, "spotify": 2}  # anything else keeps its order after these
 
+# One word for what a single upload is, whatever site it went to: a SoundCloud track and a
+# song video are both a "song"; mixes, previews (XFD, trailers) and sketches say so; overrides "kind"
+# ({item id: kind}) settles the ones the words get wrong. Albums, EPs and singles keep the
+# type their store gives them.
+MIX_HINT = re.compile(r"(?<!re)mix\b|\bdj\b|mash-?up|\blive\b|ライブ|\bset\b", re.I)
+DEMO_HINT = re.compile(r"demo|\btest\b|\bwip\b|jingle|練習|息抜き", re.I)
+PREVIEW_HINT = re.compile(r"\bxfd\b|trailer|preview|tester|試聴", re.I)
+
+
+def kind_of(title: str, type_: str) -> str:
+    if type_ not in ("track", "song"):
+        return type_
+    if PREVIEW_HINT.search(title):
+        return "preview"
+    if DEMO_HINT.search(title):
+        return "demo"
+    if MIX_HINT.search(title):
+        return "mix"
+    return "song"
+
 
 def build_releases(items: list[dict], overrides: dict) -> list[dict]:
     """Group music releases (Bandcamp, Apple Music, SoundCloud, song videos) by title."""
@@ -374,6 +394,7 @@ def build_releases(items: list[dict], overrides: dict) -> list[dict]:
         g["image"] = g["image"] or it["image"]
         if not any(l["source"] == it["source"] for l in g["links"]):
             g["links"].append({"source": it["source"], "url": it["url"]})
+        g.setdefault("ids", []).append(it["id"])
 
     # Apple Music often romanizes or shortens titles ("Skip" vs the Japanese title on
     # Bandcamp). An Apple-only entry by the same artist within a few days of a Bandcamp
@@ -393,6 +414,8 @@ def build_releases(items: list[dict], overrides: dict) -> list[dict]:
     # first link is the one the card and the log row open.
     for g in groups.values():
         g["links"].sort(key=lambda l: LINK_ORDER.get(l["source"], len(LINK_ORDER)))
+        fixed = [overrides.get("kind", {}).get(i) for i in g.pop("ids", [])]
+        g["type"] = next((k for k in fixed if k), None) or kind_of(g["title"], g["type"])
     return sorted(groups.values(), key=lambda g: g["date"], reverse=True)
 
 

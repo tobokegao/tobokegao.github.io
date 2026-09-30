@@ -8,7 +8,8 @@
   {{ $links := partial "row-links.html" $r }}
   {{- /* A picture for the row, under the title: its own flyer, else a design (flyer) whose link is one
      of the row's links, else the cover or thumbnail of a video or release it links to, else the cover art
-     fetched for the row by scripts/row_pics.py ("pic"). */ -}}
+     fetched for the row by scripts/row_pics.py or a picture picked by hand in static/img/log/
+     ("pic"). */ -}}
   {{ $urls := slice }}
   {{ range $links }}{{ $urls = $urls | append .url (replaceRE `^https://youtu\.be/([\w-]{11}).*` "https://www.youtube.com/watch?v=$1" .url) }}{{ end }}
   {{ $pic := "" }}{{ $local := false }}
@@ -16,7 +17,7 @@
   {{ if not $pic }}{{ range hugo.Data.designs }}{{ if and (not $pic) .url (in $urls .url) }}{{ $pic = .image }}{{ $local = true }}{{ end }}{{ end }}{{ end }}
   {{ if not $pic }}{{ range hugo.Data.items }}{{ if and (not $pic) .image (in $urls .url) }}{{ $pic = .image }}{{ end }}{{ end }}{{ end }}
   {{ if not $pic }}{{ range hugo.Data.releases }}{{ $rel := . }}{{ range .links }}{{ if and (not $pic) $rel.image (in $urls .url) }}{{ $pic = $rel.image }}{{ end }}{{ end }}{{ end }}{{ end }}
-  {{ if not $pic }}{{ with $r.pic }}{{ $pic = . }}{{ end }}{{ end }}
+  {{ if not $pic }}{{ with $r.pic }}{{ $pic = . }}{{ $local = hasPrefix . "/" }}{{ end }}{{ end }}
   {{ with $pic }}
   {{ $src := cond $local (. | relURL) . }}
   {{ if $local }}{{ with resources.Get (strings.TrimPrefix "/" .) }}{{ if gt .Width 640 }}{{ $src = (.Resize "640x webp q82").RelPermalink }}{{ end }}{{ end }}{{ end }}

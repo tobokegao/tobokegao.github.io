@@ -1,8 +1,18 @@
 {
- "_comment": "Manual fixes. Use item ids from data/items.json (e.g. youtube:XXXX, niconico:smXXXX). song = count this video as a song release, not_song = never count it, hide = drop the item from releases and from the video list (e.g. not Tobokegao's own work), same_video = uploads of one video under different titles, shown as one card, same_release = uploads of one release under different titles, grouped as one (the first id names it).",
+ "_comment": "Manual fixes. Use item ids from data/items.json (e.g. youtube:XXXX, niconico:smXXXX). song = count this video as a song release, not_song = never count it, hide = drop the item from releases and from the video list (e.g. not Tobokegao's own work), same_video = uploads of one video under different titles, shown as one card, same_release = uploads of one release under different titles, grouped as one (the first id names it). kind = what a single upload is (song, mix, preview, demo) where the title's words mislead.",
  "song": [],
  "not_song": [],
  "hide": [
+  "soundcloud:1370911939",
+  "soundcloud:1370911948",
+  "soundcloud:1370911954",
+  "soundcloud:1370911963",
+  "soundcloud:1370911972",
+  "soundcloud:1370911981",
+  "soundcloud:1370911987",
+  "soundcloud:1370911999",
+  "soundcloud:1370912020",
+  "soundcloud:1370912032",
   "youtube:-QssxirIsu4",
   "youtube:-bYDooxljz8",
   "youtube:2NSGqnJx0n0",
@@ -102,5 +112,11 @@
    "soundcloud:665258513",
    "youtube:po1KR9UMdyc"
   ]
- ]
+ ],
+ "kind": {
+  "soundcloud:788346661": "song",
+  "soundcloud:749683555": "song",
+  "youtube:i2fMQFCnxug": "song",
+  "soundcloud:535664835": "song"
+ }
 }

@@ -178,8 +178,20 @@ ja = "夜"
 en = "Night"
 
 [type_song]
-ja = "楽曲"
+ja = "曲"
 en = "Song"
+
+[type_mix]
+ja = "ミックス"
+en = "Mix"
+
+[type_preview]
+ja = "試聴"
+en = "Preview"
+
+[type_demo]
+ja = "デモ"
+en = "Demo"
 
 [profile]
 ja = "プロフィール"
