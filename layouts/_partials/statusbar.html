@@ -7,8 +7,6 @@
   </nav>
   <div class="statusbar__meta">
     <span>{{ partial "t.html" "lastSync" }} {{ now.Format "2006-01-02 15:04" }}</span>
-    {{- /* shown like a key ("@" in the key color) and underlined, so it reads as a link on phones too */}}
-    <a class="statusbar__contact" href="{{ "/contact/" | relURL }}"{{ if eq $cur "contact" }} aria-current="page"{{ end }}><kbd>@</kbd>{{ partial "t.html" "contact" }}</a>
     {{- /* "(C)": the dot fonts have no © glyph, and a fallback glyph looked like a stray mark */}}
     <span>(C) {{ now.Year }} {{ site.Params.artist }} / {{ site.Params.label }}</span>
   </div>

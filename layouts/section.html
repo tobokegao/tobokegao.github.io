@@ -45,7 +45,8 @@
 
   {{ else }}
     <ul class="posts">
-      {{ range .RegularPages }}<li><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time> <a href="{{ .RelPermalink }}">{{ partial "bi.html" (dict "ja" .Title "en" .Params.title_en) }}</a></li>{{ end }}
+      {{- /* posts written elsewhere (note etc.) have external_url and no page of their own here */}}
+      {{ range $p := .RegularPages }}{{ $t := partial "bi.html" (dict "ja" $p.Title "en" $p.Params.title_en) }}<li><time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format "2006.01.02" }}</time> {{ with $p.Params.external_url }}<a href="{{ . }}" rel="noopener" target="_blank">{{ $t }}</a>{{ else }}<a href="{{ $p.RelPermalink }}">{{ $t }}</a>{{ end }}{{ with $p.Params.site_name }} <span class="tag">{{ . }}</span>{{ end }}</li>{{ end }}
     </ul>
   {{ end }}
 </section>

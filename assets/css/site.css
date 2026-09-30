@@ -580,7 +580,6 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .statusbar a:hover kbd { color: inherit; }
 .statusbar a[aria-current="page"] { background: var(--bar-ink); color: var(--bar); }
 .statusbar a[aria-current="page"] kbd { color: inherit; }
-.statusbar__contact { text-decoration: underline; text-underline-offset: 3px; }
 .statusbar__ico { display: none; }   /* phones only: there the keys become the tab bar */
 
 /* ---------- phones ---------- */
