@@ -1,1 +1,0 @@
-{"prefetch":[{"where":{"selector_matches":".menubar__nav a, .statusbar a"},"eagerness":"eager"}],"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":"[target], [download]"}}]},"eagerness":"moderate"}]}
