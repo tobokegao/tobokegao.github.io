@@ -3,6 +3,23 @@
  "song": [],
  "not_song": [],
  "hide": [
+  "soundcloud:1100809633",
+  "soundcloud:1225924666",
+  "soundcloud:1240165081",
+  "soundcloud:1263345136",
+  "soundcloud:1359257806",
+  "soundcloud:1893933822",
+  "soundcloud:1899066906",
+  "soundcloud:779550646",
+  "soundcloud:843661198",
+  "soundcloud:848358994",
+  "soundcloud:887555029",
+  "soundcloud:903287941",
+  "soundcloud:903288691",
+  "soundcloud:924453748",
+  "soundcloud:928488541",
+  "soundcloud:945558403",
+  "soundcloud:950074942",
   "soundcloud:1370911939",
   "soundcloud:1370911948",
   "soundcloud:1370911954",
@@ -111,6 +128,27 @@
   [
    "soundcloud:665258513",
    "youtube:po1KR9UMdyc"
+  ],
+  [
+   "soundcloud:1509849790",
+   "niconico:sm42198829",
+   "youtube:8uYv5fQwXsA",
+   "niconico:sm42205949"
+  ],
+  [
+   "soundcloud:552200451",
+   "youtube:5SyFlPhvtZg",
+   "niconico:sm34436718"
+  ],
+  [
+   "soundcloud:500891934",
+   "youtube:KgSvHvx4lBM",
+   "apple:1517887570"
+  ],
+  [
+   "bandcamp:/album/-",
+   "apple:1532520758",
+   "youtube:f6frdRlxFi4"
   ]
  ],
  "kind": {

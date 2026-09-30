@@ -375,8 +375,9 @@ def build_releases(items: list[dict], overrides: dict) -> list[dict]:
             ids = overrides["same_release"][same[it["id"]]]
             key = title_key(by_id[ids[0]]["title"]) if ids[0] in by_id else f"same:{same[it['id']]}"
         # The same title half a year apart is a new version (e.g. a 2025 vocal remake of
-        # a 2020 song), not another link to the old release.
-        if key in groups and abs(day(groups[key]["date"]) - day(it["date"])) > 180:
+        # a 2020 song), not another link to the old release. A same_release group is kept
+        # together whatever the dates (a store release can come months after the upload).
+        if it["id"] not in same and key in groups and abs(day(groups[key]["date"]) - day(it["date"])) > 180:
             key = f"{key}@{it['date'][:7]}"
         g = groups.get(key)
         if g is None:

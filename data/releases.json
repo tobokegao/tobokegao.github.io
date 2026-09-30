@@ -152,7 +152,7 @@
   ]
  },
  {
-  "key": "skip@2025-02",
+  "key": "skip",
   "title": "Skip (feat. 凪乃ヒマワリ)",
   "artist": "Tobokegao",
   "type": "song",
@@ -308,10 +308,6 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/album/wedding-bell"
-   },
-   {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/wedding-bell"
    }
   ]
  },
@@ -326,10 +322,6 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/album/okane-ga-tarinai-toki-no-uta"
-   },
-   {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/okane-ga-tarinai-toki-no-uta"
    }
   ]
  },
@@ -646,20 +638,6 @@
   ]
  },
  {
-  "key": "事情を知らない転校生がグイグイくるedkitriココロネ8bitアレンジカラオケバージョン",
-  "title": "事情を知らない転校生がグイグイくる。 ED 「Kitri - ココロネ」8bitアレンジ (カラオケバージョン)",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2023-05-11",
-  "image": "https://nicovideo.cdn.nimg.jp/thumbnails/42205949/42205949.70764655.L",
-  "links": [
-   {
-    "source": "niconico",
-    "url": "https://www.nicovideo.jp/watch/sm42205949"
-   }
-  ]
- },
- {
   "key": "kitrikokoronetobokegaogameboyremixkaraokeversion",
   "title": "Kitri - Kokorone (Tobokegao Gameboy Remix) Karaoke Version",
   "artist": "Tobokegao",
@@ -715,7 +693,7 @@
    },
    {
     "source": "niconico",
-    "url": "https://www.nicovideo.jp/watch/sm42198829"
+    "url": "https://www.nicovideo.jp/watch/sm42205949"
    },
    {
     "source": "youtube",
@@ -1092,20 +1070,6 @@
   ]
  },
  {
-  "key": "pure",
-  "title": "PURE",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2022-10-09",
-  "image": "https://i1.sndcdn.com/artworks-y6pzF7Fs8YeBK2yA-nxI6xw-t500x500.jpg",
-  "links": [
-   {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/pure"
-   }
-  ]
- },
- {
   "key": "puremidivolume1",
   "title": "PURE MIDI Volume 1",
   "artist": "Various Artists",
@@ -1228,10 +1192,6 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/album/scythe-sonna-hi-mo-aru-yone-tobokegao-vocal-cover-ep"
-   },
-   {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/scythe-sonna-hi-mo-aru-yonetobokegao-vocal-cover"
    }
   ]
  },
@@ -1260,20 +1220,6 @@
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/tbk-ambient"
-   }
-  ]
- },
- {
-  "key": "blueberrypievocalversion",
-  "title": "Blueberry Pie (Vocal Version)",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2022-03-29",
-  "image": "https://i1.sndcdn.com/artworks-dk53emzMsGW5jSgY-0fEomg-t500x500.jpg",
-  "links": [
-   {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/blueberry-pie-vocal-version"
    }
   ]
  },
@@ -1344,10 +1290,6 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/album/da-la-la-vocal-version-ep"
-   },
-   {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/da-la-la-vocal-version"
    }
   ]
  },
@@ -1496,10 +1438,6 @@
    {
     "source": "apple",
     "url": "https://music.apple.com/jp/album/yomi-de-ashibumi-single/1580282960"
-   },
-   {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/yomi-de-ashibumivocal-version"
    }
   ]
  },
@@ -1546,48 +1484,6 @@
    {
     "source": "youtube",
     "url": "https://www.youtube.com/watch?v=-umrUCHXfYY"
-   }
-  ]
- },
- {
-  "key": "幽霊へdearghost",
-  "title": "幽霊へ(Dear Ghost)",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2020-12-19",
-  "image": "https://i1.sndcdn.com/artworks-TWf1SpArncdlzX3t-ctpqWg-t500x500.jpg",
-  "links": [
-   {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/dear-ghost"
-   }
-  ]
- },
- {
-  "key": "トゥナイト通信tonight",
-  "title": "トゥナイト通信(Tonight)",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2020-12-11",
-  "image": "https://i1.sndcdn.com/artworks-TWf1SpArncdlzX3t-ctpqWg-t500x500.jpg",
-  "links": [
-   {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/tonight"
-   }
-  ]
- },
- {
-  "key": "skipstopmv",
-  "title": "○○○○（Skip/Stop - single) MV",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2020-12-05",
-  "image": "https://i.ytimg.com/vi/f6frdRlxFi4/mqdefault.jpg",
-  "links": [
-   {
-    "source": "youtube",
-    "url": "https://www.youtube.com/watch?v=f6frdRlxFi4"
    }
   ]
  },
@@ -1652,34 +1548,6 @@
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/dogsled-race-menu-theme"
-   }
-  ]
- },
- {
-  "key": "ilikenatemercereau",
-  "title": "I Like Nate Mercereau",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2020-11-13",
-  "image": "https://i1.sndcdn.com/artworks-7L7QmrsZ0DSW9Kxv-25LOiQ-t500x500.jpg",
-  "links": [
-   {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/i-like-nate-mercereau"
-   }
-  ]
- },
- {
-  "key": "telephonefunkoctraviagameloopversion",
-  "title": "Telephone Funk Octravia(Game Loop Version)",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2020-11-07",
-  "image": "https://i1.sndcdn.com/artworks-7L7QmrsZ0DSW9Kxv-25LOiQ-t500x500.jpg",
-  "links": [
-   {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/telephone-funk-octraviagame-loop-version"
    }
   ]
  },
@@ -1782,30 +1650,12 @@
     "url": "https://music.apple.com/jp/album/being-rusty-single/1546743248"
    },
    {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/being-rusty-tanashii-mainichi"
-   },
-   {
     "source": "niconico",
     "url": "https://www.nicovideo.jp/watch/sm37609199"
    },
    {
     "source": "youtube",
     "url": "https://www.youtube.com/watch?v=HCj7VwCL8AA"
-   }
-  ]
- },
- {
-  "key": "beingrustytanashiimainichivocalguitarversion",
-  "title": "Being Rusty (Tanashii Mainichi) (Vocal & Guitar Version) Feat. AntiChiptuneChiptuneClub",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2020-10-02",
-  "image": "https://i1.sndcdn.com/artworks-gmxHVpMip4qDMqFU-xFb36Q-t500x500.jpg",
-  "links": [
-   {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/being-rusty-tanashii-mainichi-vocal-guitar-version-feat-antichiptunechiptuneclub"
    }
   ]
  },
@@ -1852,7 +1702,7 @@
   ]
  },
  {
-  "key": "bandcamp:/album/-",
+  "key": "",
   "title": "○○○○",
   "artist": "Tobokegao",
   "type": "album",
@@ -1862,24 +1712,14 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/album/-"
-   }
-  ]
- },
- {
-  "key": "skip",
-  "title": "Skip",
-  "artist": "Tobokegao",
-  "type": "single",
-  "date": "2020-09-04",
-  "image": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/a2/d3/fe/a2d3fea4-6e37-6add-3024-3a009634808e/053000726791_cover.jpg/600x600bb.jpg",
-  "links": [
+   },
    {
     "source": "apple",
     "url": "https://music.apple.com/jp/album/skip-single/1532520758"
    },
    {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/skip"
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=f6frdRlxFi4"
    }
   ]
  },
@@ -2112,34 +1952,6 @@
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/lsdj-x-output-portal-demo-effect-pitched-and-glitched-repeater-bass"
-   }
-  ]
- },
- {
-  "key": "develop",
-  "title": "Develop",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2020-06-28",
-  "image": "https://i1.sndcdn.com/artworks-SRHUc7QC0avAUvnc-VIs97g-t500x500.jpg",
-  "links": [
-   {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/develop"
-   }
-  ]
- },
- {
-  "key": "jpopstringspulsefullversion",
-  "title": "J-POP Strings Pulse #1 (full version)",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2020-06-20",
-  "image": "https://i1.sndcdn.com/artworks-DonWjIm2UKsqBOtC-gcnlMQ-t500x500.jpg",
-  "links": [
-   {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/j-pop-strings-pulse-1-full-version"
    }
   ]
  },
@@ -2399,15 +2211,15 @@
  },
  {
   "key": "acidwavetest",
-  "title": "ACID WAVE TEST #2",
+  "title": "ACID WAVE Test",
   "artist": "Tobokegao",
   "type": "demo",
   "date": "2020-03-02",
-  "image": "https://i1.sndcdn.com/artworks-N9H3JRU4iudGlYeK-St61bA-t500x500.jpg",
+  "image": "https://i1.sndcdn.com/artworks-pbJioO4KwKFrFTRP-tup1qg-t500x500.jpg",
   "links": [
    {
     "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/acid-wave-test-2"
+    "url": "https://soundcloud.com/tobokegao/acid-wave-test"
    }
   ]
  },
@@ -2542,20 +2354,6 @@
   ]
  },
  {
-  "key": "splittinghairs",
-  "title": "Splitting Hairs (feat. とぼけがお)",
-  "artist": "Shady Monk",
-  "type": "single",
-  "date": "2019-04-17",
-  "image": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/05/d4/fa/05d4faa1-abc5-5dda-495d-b0ef5b83de42/4062994027308_cover.jpg/600x600bb.jpg",
-  "links": [
-   {
-    "source": "apple",
-    "url": "https://music.apple.com/jp/album/splitting-hairs-feat-%E3%81%A8%E3%81%BC%E3%81%91%E3%81%8C%E3%81%8A-single/1517887570"
-   }
-  ]
- },
- {
   "key": "sunshinesunrisesunsetc64fakesidcompilation",
   "title": "Sunshine, Sunrise, Sunset(C64)(Fake SID)(#ChipVS_Light_Dark Compilation)",
   "artist": "Tobokegao",
@@ -2588,20 +2386,6 @@
   ]
  },
  {
-  "key": "otunionssssgridmanoptobokegaogameboycover",
-  "title": "O×T - UNION : SSSS.GRIDMAN OP (tobokegao Gameboy Cover)",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2019-01-06",
-  "image": "https://nicovideo.cdn.nimg.jp/thumbnails/34436718/34436718.78804.L",
-  "links": [
-   {
-    "source": "niconico",
-    "url": "https://www.nicovideo.jp/watch/sm34436718"
-   }
-  ]
- },
- {
   "key": "otuniontobokegaogameboycover",
   "title": "O×T - UNION (tobokegao Gameboy Cover)",
   "artist": "Tobokegao",
@@ -2612,6 +2396,10 @@
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/ot-union-tobokegao-gameboy-cover"
+   },
+   {
+    "source": "niconico",
+    "url": "https://www.nicovideo.jp/watch/sm34436718"
    },
    {
     "source": "youtube",
@@ -2664,11 +2452,15 @@
  {
   "key": "shadymonksplittinghairstobokegaolsdjremix",
   "title": "SHADY MONK -  Splitting Hairs (feat. tobokegao) (tobokegao LSDj Remix)",
-  "artist": "Tobokegao",
-  "type": "song",
+  "artist": "Shady Monk",
+  "type": "single",
   "date": "2018-09-17",
-  "image": "https://i1.sndcdn.com/artworks-000406565496-jwvijq-t500x500.jpg",
+  "image": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/05/d4/fa/05d4faa1-abc5-5dda-495d-b0ef5b83de42/4062994027308_cover.jpg/600x600bb.jpg",
   "links": [
+   {
+    "source": "apple",
+    "url": "https://music.apple.com/jp/album/splitting-hairs-feat-%E3%81%A8%E3%81%BC%E3%81%91%E3%81%8C%E3%81%8A-single/1517887570"
+   },
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/splitting-hairs-feat-tobokegaotobokegao-lsdj-remix"
