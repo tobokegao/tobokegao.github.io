@@ -105,6 +105,30 @@
     if (link) { e.preventDefault(); go(link.href, true); }
   });
 
+  // Pictures at full size: a link with data-zoom opens its picture in the ZOOM window over
+  // the page (a native <dialog>, so Esc and the focus work as usual). Clicking outside the
+  // picture or the [■] box closes it. Without the dialog element the link opens the file.
+  var zoom = document.getElementById("zoom");
+  if (zoom && zoom.showModal) {
+    var zoomImg = document.getElementById("zoom-img");
+    document.addEventListener("click", function (e) {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
+      var a = e.target.closest && e.target.closest("a[data-zoom]");
+      if (!a) return;
+      e.preventDefault();
+      var name = decodeURIComponent(a.pathname.split("/").pop() || "PICTURE");
+      document.getElementById("zoom-t").textContent = name.toUpperCase();
+      var img = a.querySelector("img");
+      zoomImg.alt = img ? img.alt : "";
+      zoomImg.src = a.href;
+      zoom.showModal();
+    });
+    zoom.addEventListener("click", function (e) {
+      if (e.target === zoom || e.target.closest("[data-zoom-close]")) zoom.close();
+    });
+    zoom.addEventListener("close", function () { zoomImg.removeAttribute("src"); });
+  }
+
   // Page changes without reloading: a link to another page of this site fetches that
   // page and swaps in its <main>, menu bar and status bar, so the screen is never
   // redrawn from blank. The page starts loading as soon as a finger or the pointer

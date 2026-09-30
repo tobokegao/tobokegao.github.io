@@ -228,3 +228,7 @@ en = "Fold or unfold the window"
 [rowLinks]
 ja = "リンク"
 en = "Links"
+
+[close]
+ja = "閉じる"
+en = "Close"

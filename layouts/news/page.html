@@ -14,7 +14,7 @@
   {{ with $pic }}
   {{ $src := cond $local (. | relURL) . }}
   {{ if $local }}{{ with resources.Get (strings.TrimPrefix "/" .) }}{{ if gt .Width 640 }}{{ $src = (.Resize "640x webp q82").RelPermalink }}{{ end }}{{ end }}{{ end }}
-  <p class="doc__pic"><img src="{{ $src }}" alt="" loading="lazy"></p>
+  <p class="doc__pic"><a href="{{ cond $local (. | relURL) . }}" target="_blank" rel="noopener" data-zoom><img src="{{ $src }}" alt="" loading="lazy"></a></p>
   {{ end }}
   {{- /* where to hear or see it, right under the title so it is found before the write-up */}}
   {{ with $links }}

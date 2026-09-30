@@ -289,6 +289,27 @@ a.seg { text-decoration: none; }
 }
 .win__title span::before { content: "[ "; color: var(--ink-dim); }
 .win__title span::after  { content: " ]"; color: var(--ink-dim); }
+/* The full-size picture over the page (site.js, links with data-zoom). The page behind is
+   covered by the same screentone as the shadows, not by a see-through layer. */
+.zoom { padding: 0; border: 0; background: none; max-width: none; max-height: none; overflow: visible; }
+.zoom::backdrop { background: repeating-conic-gradient(var(--shadow) 0 25%, transparent 0 50%) 0 0 / 4px 4px; }
+.zoom__win { margin: 0; padding: 28px 16px 16px; }
+.zoom__img { display: block; max-width: calc(100vw - 64px); max-height: calc(100dvh - 96px); width: auto; height: auto; }
+.zoom__close {
+  position: absolute;
+  top: calc(var(--dot) * -1 - 5px);
+  right: 16px;
+  z-index: 1;
+  padding: 0 4px;
+  border: 0;
+  background: var(--win);
+  color: var(--hi);
+  font: 400 var(--dot)/calc(var(--dot) * 2) var(--f-dot);
+  cursor: pointer;
+}
+.zoom__close:hover, .zoom__close:focus-visible { background: var(--accent); color: var(--accent-ink); outline: none; }
+[data-zoom] { cursor: zoom-in; }
+
 /* LOAD.EXE: the small window site.js shows while the next page is on its way */
 .loading {
   position: fixed;

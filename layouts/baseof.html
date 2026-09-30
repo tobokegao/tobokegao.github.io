@@ -18,6 +18,14 @@
     <p class="loading__bar" aria-hidden="true"></p>
   </section>
 </div>
+{{- /* A picture at full size over the page (links with data-zoom; site.js opens it). */}}
+<dialog class="zoom" id="zoom" aria-labelledby="zoom-t">
+  <section class="win zoom__win">
+    <p class="win__title"><span id="zoom-t"></span></p>
+    <button type="button" class="zoom__close" data-zoom-close><span aria-hidden="true">[■]</span><span class="vh">{{ partial "t.html" "close" }}</span></button>
+    <img class="zoom__img" id="zoom-img" alt="">
+  </section>
+</dialog>
 {{ $js := resources.Get "js/site.js" | minify | fingerprint }}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 </body>

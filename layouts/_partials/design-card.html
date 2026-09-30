@@ -7,7 +7,7 @@
   {{- $thumb = cond (gt .Width 480) (.Resize "480x webp q82") . -}}
 {{- end -}}
 <figure class="design">
-  <a class="design__art" href="{{ $img }}" target="_blank" rel="noopener">
+  <a class="design__art" href="{{ $img }}" target="_blank" rel="noopener" data-zoom>
     <img src="{{ $thumb.RelPermalink }}"{{ with $thumb.Width }} width="{{ . }}" height="{{ $thumb.Height }}"{{ end }} alt="{{ .title }}" loading="lazy" decoding="async">
   </a>
   <figcaption class="jacket__meta">
