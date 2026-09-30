@@ -13,6 +13,10 @@
       {
         "source": "youtube",
         "url": "https://youtu.be/o_JYK2tOVgg"
+      },
+      {
+        "source": "niconico",
+        "url": "https://www.nicovideo.jp/watch/sm46819397"
       }
     ],
     "article": "20260919-shiki"
@@ -2022,7 +2026,7 @@
       },
       {
         "source": "web",
-        "url": "http://dochakuso.web.fc2.com/release/dcks-0093.html"
+        "url": "https://web.archive.org/web/20240824002619/http://dochakuso.web.fc2.com/release/dcks-0093.html"
       },
       {
         "source": "soundcloud",
