@@ -22,7 +22,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from fetch_feeds import NS, YOUTUBE_CHANNEL_ID, get, iso_date  # noqa: E402
+from fetch_feeds import NS, YOUTUBE_CHANNEL_ID, get, host_ok, iso_date  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -155,6 +155,26 @@ def from_video_descriptions(known: set[str]) -> list[dict]:
     return [c for c in out if c["text"]]
 
 
+# Where each source's candidate links may point. Google Alerts finds pages anywhere on the
+# web, so for it only the scheme is checked (and Google's own redirect pages are refused).
+LINK_HOSTS = {
+    "bluesky": {"bsky.app"},
+    "livepocket": {"livepocket.jp", "t.livepocket.jp"},
+    "musicbrainz": {"musicbrainz.org"},
+    "youtube": {"www.youtube.com"},
+    "niconico": {"www.nicovideo.jp"},
+}
+
+
+def link_ok(c: dict) -> bool:
+    url = c.get("url") or ""
+    if c["source"] in LINK_HOSTS:
+        return host_ok(url, LINK_HOSTS[c["source"]])
+    p = urllib.parse.urlsplit(url)
+    host = (p.hostname or "").lower()
+    return p.scheme in ("https", "http") and bool(host) and not p.username and not host.endswith("google.com")
+
+
 def main() -> int:
     existing = json.loads(CANDIDATES_PATH.read_text("utf-8")) if CANDIDATES_PATH.exists() else []
     known = {c["id"] for c in existing}
@@ -174,7 +194,10 @@ def main() -> int:
         except Exception as e:  # one broken source must not block the others
             print(f"[{name}] failed: {e}", file=sys.stderr)
             continue
-        new = [dict(c, status="new") for c in found if c["id"] not in known]
+        off = [c for c in found if not link_ok(c)]
+        for c in off:
+            print(f"[{name}] dropped {c['id']}: unexpected link {c.get('url')!r}", file=sys.stderr)
+        new = [dict(c, status="new") for c in found if c["id"] not in known and link_ok(c)]
         known |= {c["id"] for c in new}
         added += new
         print(f"[{name}] {len(found)} found, {len(new)} new")

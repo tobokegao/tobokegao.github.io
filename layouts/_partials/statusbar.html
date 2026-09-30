@@ -7,6 +7,7 @@
   </nav>
   <div class="statusbar__meta">
     <span>{{ partial "t.html" "lastSync" }} {{ now.Format "2006-01-02 15:04" }}</span>
+    <a href="{{ "/contact/" | relURL }}">{{ partial "t.html" "contact" }}</a>
     <span>© {{ now.Year }} {{ site.Params.artist }} / {{ site.Params.label }}</span>
   </div>
 </footer>

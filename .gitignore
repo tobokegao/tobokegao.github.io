@@ -7,3 +7,12 @@ __pycache__/
 /quickstart/
 /static/fonts/gen/
 /work/
+
+# Kept out by accident-proofing: other env files (an example file may be shared), the
+# texts handed to Gemini by hand, local Claude / MCP settings, and half-written files.
+.env.*
+!.env.example
+*.for-gemini.txt
+.claude/settings.local.json
+.mcp.json
+*.tmp

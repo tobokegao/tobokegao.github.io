@@ -1,6 +1,7 @@
 {{ define "main" }}
 {{ $file := cond (eq .Section "post") (printf `C:\TBK\POSTS\%s.MD` (upper .File.ContentBaseName)) `C:\TBK\PROFILE.TXT` }}
 {{ if eq .File.ContentBaseName "tbkgao" }}{{ $file = `C:\TBK\LABEL.TXT` }}{{ end }}
+{{ if eq .File.ContentBaseName "contact" }}{{ $file = `C:\TBK\CONTACT.TXT` }}{{ end }}
 <article class="win win--doc" aria-labelledby="page-t">
   {{ partial "win.html" (dict "file" $file "id" "page-t-file") }}
   {{ if eq .File.ContentBaseName "about" }}

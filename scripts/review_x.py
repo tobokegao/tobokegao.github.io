@@ -73,7 +73,23 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
+    def from_this_page(self) -> bool:
+        """Only this tool's own page may use it. The Host check stops other sites reaching it
+        through a DNS name that points at 127.0.0.1; the Origin / Sec-Fetch-Site checks stop a
+        page on another site that is open in the browser from sending changes."""
+        port = self.server.server_address[1]
+        mine = {f"127.0.0.1:{port}", f"localhost:{port}"}
+        if self.headers.get("Host") not in mine:
+            return False
+        origin = self.headers.get("Origin")
+        if origin is not None and origin not in {f"http://{h}" for h in mine}:
+            return False
+        return self.headers.get("Sec-Fetch-Site") in (None, "same-origin", "none")
+
     def do_GET(self):
+        if not self.from_this_page():
+            self.send(403, b"forbidden", "text/plain")
+            return
         path = urllib.parse.urlparse(self.path).path
         if path == "/":
             self.send(200, PAGE.encode(), "text/html; charset=utf-8")
@@ -93,6 +109,11 @@ class Handler(BaseHTTPRequestHandler):
     def do_POST(self):
         if urllib.parse.urlparse(self.path).path != "/api/save":
             self.send(404, b"not found", "text/plain")
+            return
+        # A JSON body also makes the browser ask first (CORS preflight), which this server
+        # never answers, so a form or script on another site cannot post here.
+        if not self.from_this_page() or self.headers.get_content_type() != "application/json":
+            self.send(403, b"forbidden", "text/plain")
             return
         change = json.loads(self.rfile.read(int(self.headers["Content-Length"])))
         rows = load()

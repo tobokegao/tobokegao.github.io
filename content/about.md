@@ -59,6 +59,10 @@ aliases: ["/ja/about/"]
 >
 > — K-> (@K_fcm) 2022年2月21日
 
+## 連絡先
+
+お仕事のご依頼やお問い合わせは、[連絡先](/contact/)のページをご覧ください。
+
 ## 手伝ってくれた人
 
 - damifortune (HVB) さん、英訳を手伝ってくれてありがとう！
@@ -117,6 +121,10 @@ The name "Tobokegao" goes back to my band days. Back then, I booked studio rehea
 > concept
 >
 > — K-> (@K_fcm), February 21, 2022
+
+## Contact
+
+For bookings and inquiries, see the [Contact](/contact/) page.
 
 ## Thanks
 

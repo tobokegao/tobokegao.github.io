@@ -431,7 +431,7 @@ IG　[https://www.instagram.com/ha___ruuu/](https://www.instagram.com/ha___ruuu/
 
 **佐藤**　今回の札幌編に[cvel](https://twitter.com/Cvelz)さんも出演していましたが、それをきっかけにインターネット・カルチャーから派生したような札幌のクラブ・シーンとの関わりが活発になる可能性はありますか？
 
-**とぼけがお**　あると思います！[ハナカミリユウ](https://twitter.com/Nakayakusyon?t=MJUMClltFBgZjHgw39FODg&s=09)さんや[DOG NOISE](https://twitter.com/DOG_NOISE)さんの活動をきっかけにcvelさんを知り、そこから[Sound Lab mole](https://www.mole-sapporo.jp/)や[PLASTIC THEATER](http://www.plastictheater.com/)のパーティーにも遊びにいくようになったので積極的に交流を持っていきたいと思いますね。
+**とぼけがお**　あると思います！[ハナカミリユウ](https://twitter.com/Nakayakusyon?t=MJUMClltFBgZjHgw39FODg&s=09)さんや[DOG NOISE](https://twitter.com/DOG_NOISE)さんの活動をきっかけにcvelさんを知り、そこから[Sound Lab mole](https://www.mole-sapporo.jp/)や[PLASTIC THEATER](https://www.plastictheater.com/)のパーティーにも遊びにいくようになったので積極的に交流を持っていきたいと思いますね。
 
 
 ### メディアとしての「とぼけがお」

@@ -420,6 +420,39 @@ def build_autolog(releases: list[dict]) -> list[dict]:
     return rows
 
 
+# Where each source's links and cover images may point. Anything else coming back from a
+# feed (another host, http://, javascript:) is dropped before it reaches data/.
+ALLOWED_HOSTS = {
+    "youtube": ({"www.youtube.com"}, {"i.ytimg.com"}),
+    "soundcloud": ({"soundcloud.com"}, {".sndcdn.com"}),
+    "niconico": ({"www.nicovideo.jp"}, {".nimg.jp"}),
+    "bandcamp": ({".bandcamp.com"}, {".bcbits.com"}),
+    "apple": ({"music.apple.com"}, {".mzstatic.com"}),
+}
+
+
+def host_ok(url: str | None, hosts: set[str]) -> bool:
+    """https only, and the host is one of hosts (".example.com" also allows subdomains)."""
+    if not url:
+        return False
+    p = urllib.parse.urlsplit(url)
+    host = (p.hostname or "").lower()
+    return p.scheme == "https" and not p.username and any(
+        host == h or (h.startswith(".") and host.endswith(h)) for h in hosts)
+
+
+def checked(it: dict) -> dict | None:
+    """The item with a link and image it is allowed to have; None if the link itself is off."""
+    pages, images = ALLOWED_HOSTS[it["source"]]
+    if not host_ok(it.get("url"), pages):
+        print(f"[{it['source']}] dropped {it.get('id')}: unexpected link {it.get('url')!r}", file=sys.stderr)
+        return None
+    if it.get("image") and not host_ok(it["image"], images):
+        print(f"[{it['source']}] no cover for {it.get('id')}: unexpected image {it['image']!r}", file=sys.stderr)
+        it = {**it, "image": None}
+    return it
+
+
 def main() -> int:
     existing = json.loads(ITEMS_PATH.read_text("utf-8")) if ITEMS_PATH.exists() else []
     known = {it["id"]: it for it in existing}
@@ -441,6 +474,7 @@ def main() -> int:
             print(f"[{name}] failed: {e}", file=sys.stderr)
             failed.append(name)
             continue
+        fetched = [c for c in map(checked, fetched) if c]
         new = [it for it in fetched if it["id"] not in known]
         for it in fetched:
             known[it["id"]] = {**known.get(it["id"], {}), **it}

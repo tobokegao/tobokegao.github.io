@@ -23,3 +23,4 @@
 - [0006 X のアーカイブから過去の出演を拾う](0006-x-archive.md)
 - [0007 ログの行のページに本文を書けるようにする](0007-log-row-articles.md)
 - [0008 デザインの一覧には小さい画像を出す](0008-design-thumbnails.md)
+- [0009 読み込み先と権限をしぼる](0009-security-hardening.md)

@@ -93,6 +93,10 @@ en = "Tobokegao"
 ja = "TBKgaoレーベル"
 en = "TBKgao label"
 
+[contact]
+ja = "連絡先"
+en = "Contact"
+
 [lastSync]
 ja = "最終同期"
 en = "Last sync"
