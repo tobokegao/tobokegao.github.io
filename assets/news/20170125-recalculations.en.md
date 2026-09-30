@@ -18,4 +18,4 @@
 11. Mekuso - Conclusion (SyndraSound Remix)
 
 ## About the making
-A hard-to-dance-to remix made with the glitchy effects of an odd plugin and sounds from "がんばれ森川君2号".
+A hard-to-dance-to remix made with glitchy effects from an unusual plugin and sounds from the game "がんばれ森川君2号" (Ganbare Morikawa-kun 2-gou).

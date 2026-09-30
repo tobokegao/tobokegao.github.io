@@ -20,4 +20,4 @@
 Tobokegao announced plans to bring the new "TOBOX" cassette (1,500 yen), plus the "TOBOX" CD, Pure MIDI Volume 2 cards and animated button badges. The CDs sold out shortly after noon.
 
 ## Looking back
-Starting with this show, Tobokegao played video and sound from a smartphone that can output to a projector. Running the event, playing and staffing the booth made for 12 hours straight, but it was less tiring than expected. The screen was more impressive than expected, so Tobokegao would like to add VJs for every performer next time (live pixel art drawing, for example).
+Starting with this show, Tobokegao played video and sound from a smartphone that can output to a projector. Running the event, playing, and staffing the booth made for 12 hours straight, but it was less tiring than expected. The screen was so impressive that Tobokegao would like to add VJs for every performer next time (live pixel art drawing, for example).

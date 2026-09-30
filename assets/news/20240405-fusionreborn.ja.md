@@ -15,4 +15,4 @@
 7. Kimono Nights Pt. III (feat. Seme Di Stella, Novadrops) [Kidd Luna Remix]
 8. GETCHU (feat. r u s s e l b u c k) [Suleiman Remix]
 9. Potara [Mr. Nycto Remix]
-10. Friends (feat. beardy, Kidd Luna, Mariode & recovery girl [Shay. Remix]
+10. Friends (feat. beardy, Kidd Luna, Mariode & recovery girl) [Shay. Remix]
