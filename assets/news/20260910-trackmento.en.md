@@ -5,12 +5,12 @@
 - Name: A blend of "Track" and "Memento"
 
 ## Why
-Tobokegao wanted a site for sharing single tracks and even otoMADs together in one image, but could not find one. So Tobokegao made one, with a look and feel that Tobokegao enjoys using.
+Tobokegao wanted a website for sharing single tracks and otoMADs together in one image, but couldn't find one, so they made one, with a look and feel they enjoy.
 
 ## Afterwards
-- September 11: So many people used it that the site could not be opened for a while that night.
-- September 14: Tobokegao got a custom domain, and a Niconico playlist can now fill a grid of up to 256 squares.
-- September 15: It appeared in X's trends.
+- September 11: Due to heavy traffic, the site was temporarily inaccessible that night.
+- September 14: Acquired a custom domain, and added support for filling a grid of up to 256 squares from a Niconico playlist.
+- September 15: Trended on X.
 - September 16: VocaDB was added as a search source.
 - September 17: A note article reported that more than 20,000 images had been made in the first week.
 - September 19: The address became https://trackmento.com/ (the old address still redirects).
