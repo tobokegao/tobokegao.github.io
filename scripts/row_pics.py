@@ -63,7 +63,7 @@ def main() -> int:
     order = {"bandcamp": 0, "apple": 1, "spotify": 2, "soundcloud": 3, "youtube": 4, "niconico": 5}
     added = 0
     for r in rows:
-        if r.get("images") or (r.get("pic") and not args.refresh) or r.get("kind") == "release":
+        if r.get("images") or (r.get("pic") and not args.refresh):
             continue
         for link in sorted(r.get("links", []), key=lambda l: order.get(l["source"], 9)):
             if link["source"] not in order:
