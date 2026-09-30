@@ -12,7 +12,8 @@
 {{ end }}
 {{/* feed rows have no page of their own: the row opens the release (its url) */}}
 {{ range hugo.Data.autolog }}{{ if not (in $manual .date) }}{{ $rows = $rows | append . }}{{ end }}{{ end }}
+{{/* posts written elsewhere (note etc.) have no page here, so their row opens external_url */}}
 {{ range where site.RegularPages "Section" "post" }}
-  {{ $rows = $rows | append (dict "date" (.Date.Format "2006-01-02") "kind" "news" "ja" .Title "en" (.Params.title_en | default .Title) "url" .RelPermalink) }}
+  {{ $rows = $rows | append (dict "date" (.Date.Format "2006-01-02") "kind" "news" "ja" .Title "en" (.Params.title_en | default .Title) "url" (.Params.external_url | default .RelPermalink)) }}
 {{ end }}
 {{ return sort $rows "date" "desc" }}

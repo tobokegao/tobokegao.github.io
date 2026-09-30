@@ -33,7 +33,7 @@ aliases: ["/ja/about/"]
 
 > Tobokegaoは、私が長い間追いかけてきたチップチューンシーンのベテランで、彼らの作品の質は一貫しています。非常にメロディックで、非常にエネルギッシュ、しばしばハッピーでアップビート、常に境界線を押し広げています。
 >
-> — Decon Theed ([@DT_TR909](https://x.com/DT_TR909)) 2022年2月4日
+> — Decon Theed (@DT_TR909) 2022年2月4日
 
 > 誰が言ったか忘れましたが、あるオンラインライブの前に、誰かが「Tobokegaoはチップチューンシーンでは誰もが一度はやり取りをしたことがある人だ」と言いました。その紹介がとても印象に残っています。なぜなら、100％事実だからです。
 >
@@ -96,7 +96,7 @@ The name "Tobokegao" goes back to my band days. Back then, I booked studio rehea
 
 > Tobokegao is a veteran of the chiptune scene who I've followed for a long time, and the quality of their work has stayed consistent: highly melodic, very energetic, often happy and upbeat, constantly pushing boundaries.
 >
-> — Decon Theed ([@DT_TR909](https://x.com/DT_TR909)), February 4, 2022
+> — Decon Theed (@DT_TR909), February 4, 2022
 
 > i cannot remember who said it, but before an online live show, someone said "tobokegao is someone who everyone in the chiptune scene has shared at least one exchange with". that introduction was very memorable because it is 100% true
 >

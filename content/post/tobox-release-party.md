@@ -168,7 +168,7 @@ ESC TRAXの主催者の一人であり(僕の初EPもこちらからリリース
 どうぶつの森的ボーカルや矩形波のメロディの扱いとGSバンドサウンドがツボに入りまくるので参加決定してもらえて本当に嬉しい…
 
 [twitter](https://twitter.com/ahtamaraneze)
-[YouTube](https://www.youtube.com/@katsushikashusshin5712/videos)
+[YouTube](https://www.youtube.com/@katsushikashusshin)
 [YouTube](https://www.youtube.com/@shusshinkatsushika5581/videos)
 
 　  
@@ -205,7 +205,6 @@ ESC TRAXの主催者の一人であり(僕の初EPもこちらからリリース
 　  
 札幌の音楽サークルprototypeのコンピに参加されていて、心の中に渦巻くものを具現化したような音楽を作っていて最高だったのと、元々futurebass方面から音楽を始めたと聞き、矩形波と親和性があるのではないか？と思いお誘いしました！
 
-[tunecore](https://www.tunecore.co.jp/artists/cvel)
 
 　  
 　  
@@ -217,7 +216,6 @@ ESC TRAXの主催者の一人であり(僕の初EPもこちらからリリース
 楽曲からテクノ的矩形波と蒸気波の雰囲気に惹かれました！
 出演者のtktc szkさんとは最近コヨーテマンショーを結成、何かの縁を感じて出演を依頼！
 
-[tunecore](https://www.tunecore.co.jp/artists?id=689339)
 
 　  
 　  
@@ -280,7 +278,6 @@ https://bijutsutecho.com/magazine/series/s6/24289
 
 今回は映像作品を上映してくださるようなので、楽しみです…！
 
-[twitter](https://twitter.com/toyo_traffic)
 [instagram](https://www.instagram.com/clara_tape_store/)
 [bandcamp](https://toyohirakumin.bandcamp.com/)
 
@@ -325,7 +322,6 @@ NES BANDのnoise ch担当であるホソタケさんも出演です！
 ライブがどんな感じになるのか楽しみです！
 
 [tunecore](https://www.tunecore.co.jp/artists/yagishiro?lang=ja)
-[niconico](https://www.nicovideo.jp/user/81601195)
 
 　  
 　  
@@ -338,7 +334,7 @@ NES BANDのnoise ch担当であるホソタケさんも出演です！
 新世代chiptunerとして頭角をメキメキ伸ばしているReiさんの初ライブを是非見てみたいと思い、お呼びしました！当日はファミコンがメインなのかもしれません！
 
 [twitter](https://twitter.com/Rei8bit)
-[SoundCloud](https://soundcloud.com/rei-kaj)
+[SoundCloud](https://soundcloud.com/rei8bit)
 [bandcamp](https://rei8bit.bandcamp.com/)
 
 　  
@@ -504,7 +500,7 @@ The band set also includes a man from Katsushika, whose official remix of the en
 I&#x0027;m so glad they decided to participate because their Animal Crossing-ish vocals, treatment of square wave melodies, and GS band sound really hit the spot…
 
 [twitter](https://twitter.com/ahtamaraneze)
-[YouTube](https://www.youtube.com/@katsushikashusshin5712/videos)
+[YouTube](https://www.youtube.com/@katsushikashusshin)
 [YouTube](https://www.youtube.com/@shusshinkatsushika5581/videos)
 
 　  
@@ -543,7 +539,6 @@ cvel participated in a compilation by Sapporo music circle prototype.
 cvel was great, making music that seemed to embody what was swirling around in his mind
 And when I heard that cvel originally started his music from the futurebass direction, I wondered if he might have an affinity with square waves. So I invited him to join us!
 
-[tunecore](https://www.tunecore.co.jp/artists/cvel)
 
 　  
 　  
@@ -555,7 +550,6 @@ A tabla player I learned about through a tweet from Chanti books.
 The music drew me in with its techno square wave and vapor wave vibe!
 The performer, tktc szk, and he recently formed the Coyote Man Show, and I felt some kind of connection and asked him to perform!
 
-[tunecore](https://www.tunecore.co.jp/artists?id=689339)
 
 　  
 　  
@@ -618,7 +612,6 @@ I think vaporwave and chiptune had an affinity in terms of fictional nostalgia, 
 
 I&#x0027;m looking forward to seeing the video work they will be showing this time...!
 
-[twitter](https://twitter.com/toyo_traffic)
 [instagram](https://www.instagram.com/clara_tape_store/)
 [bandcamp](https://toyohirakumin.bandcamp.com/)
 
@@ -663,7 +656,6 @@ His songs are wonderful, blending Vocaloids with hip elements and gently conveyi
 Can&#x0027;t wait to see what the live show will be like!
 
 [tunecore](https://www.tunecore.co.jp/artists/yagishiro?lang=ja)
-[niconico](https://www.nicovideo.jp/user/81601195)
 
 　  
 　  
@@ -676,7 +668,7 @@ Rei, the second Japanese artist to be released on my personal label, will also b
 Rei is quickly making a name for himself as a new-generation chiptuner, and we wanted to see him perform for the first time! Maybe the NES will be the main attraction that day!
 
 [twitter](https://twitter.com/Rei8bit)
-[SoundCloud](https://soundcloud.com/rei-kaj)
+[SoundCloud](https://soundcloud.com/rei8bit)
 [bandcamp](https://rei8bit.bandcamp.com/)
 
 　  
