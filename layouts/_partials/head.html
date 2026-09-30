@@ -13,16 +13,28 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{ if site.Params.preview }}<meta name="robots" content="noindex">{{ end }}
-{{ $title := cond .IsHome site.Title (printf "%s | %s" .Title site.Title) }}
+{{ $title := cond .IsHome "とぼけがお Official Home Page" (printf "%s | %s" .Title site.Title) }}
 <title>{{ $title }}</title>
-{{ $desc := or .Description "とぼけがお (Tobokegao) — チップチューン、合成音声、音MAD、素のMIDI音源。" }}
+{{ $desc := or .Description (cond .IsHome "Welcome to TBK zone!" "とぼけがお (Tobokegao) — チップチューン、合成音声、音MAD、素のMIDI音源。") }}
+{{ $image := "img/tobokegao.png" | absURL }}{{ $card := "summary" }}
+{{- /* an activity-log row's page: the start of its write-up (else its date and kind) and its picture */}}
+{{ with .Params.row }}{{ $r := . }}
+  {{ $desc = printf "%s %s" (replace $r.date "-" ".") (partial "t.html" (printf "kind_%s" $r.kind) | plainify | strings.TrimSpace) }}
+  {{ with $r.article }}{{ with resources.Get (printf "news/%s.ja.md" .) }}{{ $desc = .Content | replaceRE `(?m)^#.*$` "" | $.RenderString | plainify | htmlUnescape | replaceRE `\s+` " " | strings.TrimSpace | truncate 110 }}{{ end }}{{ end }}
+  {{ $found := partial "row-pic.html" (dict "row" $r "links" (partial "row-links.html" $r)) }}
+  {{ with $found.pic }}
+    {{ $image = cond $found.local (. | absURL) . }}
+    {{ if $found.local }}{{ with resources.Get (strings.TrimPrefix "/" .) }}{{ if gt .Width 1200 }}{{ $image = (.Resize "1200x webp q82").Permalink }}{{ end }}{{ end }}{{ end }}
+    {{ $card = "summary_large_image" }}
+  {{ end }}
+{{ end }}
 <meta name="description" content="{{ $desc }}">
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:type" content="{{ cond .IsPage "article" "website" }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:image" content="{{ "img/tobokegao.png" | absURL }}">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="{{ $image }}">
+<meta name="twitter:card" content="{{ $card }}">
 <meta name="twitter:site" content="@to6okegao">
 <meta name="theme-color" content="#006599">
 <link rel="icon" href="{{ "favicon.ico" | relURL }}">

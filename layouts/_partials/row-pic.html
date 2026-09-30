@@ -1,0 +1,14 @@
+{{- /* The picture for an activity-log row (used by news/page.html and the link preview in head.html):
+   its own flyer, else a design (flyer) whose link is one of the row's links, else the cover or thumbnail of
+   a video or release it links to, else the row's "pic". Takes (dict "row" .. "links" ..), returns
+   (dict "pic" <path or URL> "local" <true when it is a file of this site>). */ -}}
+{{ $r := .row }}{{ $links := .links }}
+{{ $urls := slice }}
+  {{ range $links }}{{ $urls = $urls | append .url (replaceRE `^https://youtu\.be/([\w-]{11}).*` "https://www.youtube.com/watch?v=$1" .url) }}{{ end }}
+  {{ $pic := "" }}{{ $local := false }}
+  {{ with $r.images }}{{ $pic = (index . 0).src }}{{ $local = true }}{{ end }}
+  {{ if not $pic }}{{ range hugo.Data.designs }}{{ if and (not $pic) .url (in $urls .url) }}{{ $pic = .image }}{{ $local = true }}{{ end }}{{ end }}{{ end }}
+  {{ if not $pic }}{{ range hugo.Data.items }}{{ if and (not $pic) .image (in $urls .url) }}{{ $pic = .image }}{{ end }}{{ end }}{{ end }}
+  {{ if not $pic }}{{ range hugo.Data.releases }}{{ $rel := . }}{{ range .links }}{{ if and (not $pic) $rel.image (in $urls .url) }}{{ $pic = $rel.image }}{{ end }}{{ end }}{{ end }}{{ end }}
+  {{ if not $pic }}{{ with $r.pic }}{{ $pic = . }}{{ $local = hasPrefix . "/" }}{{ end }}{{ end }}
+{{ return (dict "pic" $pic "local" $local) }}
