@@ -470,23 +470,13 @@
   "title": "PURE MIDI Volume 2",
   "artist": "Various Artists",
   "type": "album",
-  "date": "2023-10-13",
+  "date": "2023-10-12",
   "image": "https://f4.bcbits.com/img/a4059439536_16.jpg",
   "links": [
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/album/pure-midi-volume-2"
-   }
-  ]
- },
- {
-  "key": "puremidivolume2tester",
-  "title": "Pure MIDI Volume 2 (tester)",
-  "artist": "Tobokegao",
-  "type": "preview",
-  "date": "2023-10-12",
-  "image": "https://i1.sndcdn.com/artworks-hMcItDMIHFHSunLz-286DZg-t500x500.jpg",
-  "links": [
+   },
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/pure-midi-volume-2-tester"
@@ -666,20 +656,6 @@
   ]
  },
  {
-  "key": "omoi",
-  "title": "OMOI (preview)",
-  "artist": "Giant Chess Men",
-  "type": "single",
-  "date": "2023-05-09",
-  "image": "https://f4.bcbits.com/img/a0782908747_16.jpg",
-  "links": [
-   {
-    "source": "bandcamp",
-    "url": "https://tbkgao.bandcamp.com/track/omoi-preview"
-   }
-  ]
- },
- {
   "key": "kitriココロネtobokegaogameboyremix",
   "title": "Kitri - ココロネ (Tobokegao Gameboy Remix)",
   "artist": "Tobokegao",
@@ -730,30 +706,20 @@
   ]
  },
  {
-  "key": "labelomoibygiantchessmentbk026",
-  "title": "[#TBKgao (label)] OMOI by Giant Chess Men [TBK-026]",
-  "artist": "Tobokegao",
-  "type": "song",
+  "key": "omoi",
+  "title": "OMOI (preview)",
+  "artist": "Giant Chess Men",
+  "type": "single",
   "date": "2023-05-05",
-  "image": "https://i1.sndcdn.com/artworks-OR7EBkAwR4I8myVF-4B1ZVw-t500x500.jpg",
+  "image": "https://f4.bcbits.com/img/a0782908747_16.jpg",
   "links": [
+   {
+    "source": "bandcamp",
+    "url": "https://tbkgao.bandcamp.com/track/omoi-preview"
+   },
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/tbkgao-label-omoi-by-giant-chess-men-tbk-026"
-   }
-  ]
- },
- {
-  "key": "labelp8sbynoteheadtbk025",
-  "title": "[#TBKgao (label)] P8's by Notehead [TBK-025]",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2023-05-05",
-  "image": "https://i1.sndcdn.com/artworks-twmiM1q1ckDynsNh-yusryA-t500x500.jpg",
-  "links": [
-   {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/tbkgao-label-p8s-by-notehead-tbk-025"
    }
   ]
  },
@@ -838,6 +804,10 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/track/p8s-preview"
+   },
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/tbkgao-label-p8s-by-notehead-tbk-025"
    }
   ]
  },
@@ -880,17 +850,7 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/track/yagitune-preview"
-   }
-  ]
- },
- {
-  "key": "labelyagitunebyyagishirotbk024",
-  "title": "[#TBKgao (label)] YAGITUNE​!​! by Yagishiro [TBK-024]",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2023-03-04",
-  "image": "https://i1.sndcdn.com/artworks-AuCMxwZNcX8pWMzY-qaME3A-t500x500.jpg",
-  "links": [
+   },
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/yaghisiro-yagitune"
@@ -940,34 +900,6 @@
   ]
  },
  {
-  "key": "labellatenight2hourschiptunebyrei8bittbk022xfd",
-  "title": "[#TBKgao (label)] Late Night 2-Hours Chiptune by Rei8bit [TBK-022] XFD",
-  "artist": "Tobokegao",
-  "type": "preview",
-  "date": "2022-11-05",
-  "image": "https://i1.sndcdn.com/artworks-MwscohTTQ6lEbG5r-DcOpuQ-t500x500.jpg",
-  "links": [
-   {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/late-night-2-hours-chiptune"
-   }
-  ]
- },
- {
-  "key": "labelohachiptunebyrei8bittbk021xfd",
-  "title": "[#TBKgao (label)] Oha Chiptune! by Rei8bit [TBK-021] XFD",
-  "artist": "Tobokegao",
-  "type": "preview",
-  "date": "2022-11-05",
-  "image": "https://i1.sndcdn.com/artworks-QX7kjwLt19H6Jj6u-HRUHaA-t500x500.jpg",
-  "links": [
-   {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/rei8bit-oha-chiptune-xfd"
-   }
-  ]
- },
- {
   "key": "shoumeixfd",
   "title": "Shoumei XFD",
   "artist": "Yagishiro",
@@ -978,17 +910,7 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/track/shoumei-xfd"
-   }
-  ]
- },
- {
-  "key": "label証明byyagishirotbk020xfd",
-  "title": "[#TBKgao (label)] 証明 by Yagishiro [TBK-020] XFD",
-  "artist": "Tobokegao",
-  "type": "preview",
-  "date": "2022-11-04",
-  "image": "https://i1.sndcdn.com/artworks-U9jygDfQ4kOLbNmv-jfKgUg-t500x500.jpg",
-  "links": [
+   },
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/tbkgao-label-by-yagishiro-tbk-020-xfd"
@@ -1006,6 +928,10 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/track/oha-chiptune-xfd"
+   },
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/rei8bit-oha-chiptune-xfd"
    }
   ]
  },
@@ -1020,6 +946,10 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/track/late-night-2-hours-chiptune-xfd"
+   },
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/late-night-2-hours-chiptune"
    }
   ]
  },
@@ -1112,8 +1042,8 @@
   ]
  },
  {
-  "key": "yarukigadenaitokinouta",
-  "title": "Yaruki ga Denai Toki no Uta",
+  "key": "やるきがでないときのうた",
+  "title": "やるきがでないときのうた",
   "artist": "Tobokegao",
   "type": "single",
   "date": "2022-08-17",
@@ -1122,17 +1052,7 @@
    {
     "source": "bandcamp",
     "url": "https://tbkgao.bandcamp.com/track/yaruki-ga-denai-toki-no-uta"
-   }
-  ]
- },
- {
-  "key": "やるきがでないときのうた",
-  "title": "やるきがでないときのうた",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2022-08-17",
-  "image": "https://i1.sndcdn.com/artworks-QeoNkWxTTQN9TVNY-1zxX7w-t500x500.jpg",
-  "links": [
+   },
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/xvjcz49m0nlf"
@@ -1844,26 +1764,16 @@
   "title": "ぼのぼの ED1 - 近道したい (tobokegao gameboy cover)",
   "artist": "Tobokegao",
   "type": "song",
-  "date": "2020-07-16",
-  "image": "https://i.ytimg.com/vi/Ie48Ky2cyz0/mqdefault.jpg",
-  "links": [
-   {
-    "source": "youtube",
-    "url": "https://www.youtube.com/watch?v=Ie48Ky2cyz0"
-   }
-  ]
- },
- {
-  "key": "bonobonoed1chikamichishitaitobokegaogameboycover",
-  "title": "Bonobono ED1 - Chikamichi Shitai(tobokegao gameboy cover)",
-  "artist": "Tobokegao",
-  "type": "song",
   "date": "2020-07-13",
   "image": "https://i1.sndcdn.com/artworks-ujaldNcjl7JiZTNc-Q3XtWA-t500x500.jpg",
   "links": [
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/suga-kyoko-chikamichi-shitai-tobokegao-lsdj-gb-cover"
+   },
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=Ie48Ky2cyz0"
    }
   ]
  },
@@ -2686,34 +2596,6 @@
   ]
  },
  {
-  "key": "けものフレンズopようこそジャパリパークへgameboyカービィ風味cover",
-  "title": "けものフレンズOP ようこそジャパリパークへ GAMEBOYカービィ風味Cover",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2017-03-31",
-  "image": "https://nicovideo.cdn.nimg.jp/thumbnails/30931214/30931214.L",
-  "links": [
-   {
-    "source": "niconico",
-    "url": "https://www.nicovideo.jp/watch/sm30931214"
-   }
-  ]
- },
- {
-  "key": "kemonofriendsopようこそジャパリパークへtobokegaogameboykirbyishcover",
-  "title": "Kemono Friends OP ようこそジャパリパークへ（Tobokegao GAMEBOY Kirby-ish Cover）",
-  "artist": "Tobokegao",
-  "type": "song",
-  "date": "2017-03-31",
-  "image": "https://i.ytimg.com/vi/VPBmK4C9NXI/mqdefault.jpg",
-  "links": [
-   {
-    "source": "youtube",
-    "url": "https://www.youtube.com/watch?v=VPBmK4C9NXI"
-   }
-  ]
- },
- {
   "key": "どうぶつビスケッツpppようこそジャパリパークへtobokegaogameboycover",
   "title": "どうぶつビスケッツ×PPP - ようこそジャパリパークへ（Tobokegao GAMEBOY Cover）",
   "artist": "Tobokegao",
@@ -2724,6 +2606,14 @@
    {
     "source": "soundcloud",
     "url": "https://soundcloud.com/tobokegao/kemono-friends-op-tobokegao-gameboy-cover"
+   },
+   {
+    "source": "niconico",
+    "url": "https://www.nicovideo.jp/watch/sm30931214"
+   },
+   {
+    "source": "youtube",
+    "url": "https://www.youtube.com/watch?v=VPBmK4C9NXI"
    }
   ]
  },

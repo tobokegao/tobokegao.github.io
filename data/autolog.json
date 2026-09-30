@@ -225,22 +225,13 @@
   "own": true
  },
  {
-  "date": "2023-10-13",
+  "date": "2023-10-12",
   "kind": "release",
-  "ja": "Various Artists 「PURE MIDI Volume 2」をBandcampで公開",
-  "en": "Various Artists \"PURE MIDI Volume 2\" released on Bandcamp",
+  "ja": "Various Artists 「PURE MIDI Volume 2」をBandcamp / SoundCloudで公開",
+  "en": "Various Artists \"PURE MIDI Volume 2\" released on Bandcamp / SoundCloud",
   "url": "https://tbkgao.bandcamp.com/album/pure-midi-volume-2",
   "source": "feed",
   "own": false
- },
- {
-  "date": "2023-10-12",
-  "kind": "release",
-  "ja": "「Pure MIDI Volume 2 (tester)」をSoundCloudで公開",
-  "en": "\"Pure MIDI Volume 2 (tester)\" released on SoundCloud",
-  "url": "https://soundcloud.com/tobokegao/pure-midi-volume-2-tester",
-  "source": "feed",
-  "own": true
  },
  {
   "date": "2023-09-02",
@@ -369,24 +360,6 @@
   "own": true
  },
  {
-  "date": "2023-05-05",
-  "kind": "release",
-  "ja": "「[#TBKgao (label)] OMOI by Giant Chess Men [TBK-026]」をSoundCloudで公開",
-  "en": "\"[#TBKgao (label)] OMOI by Giant Chess Men [TBK-026]\" released on SoundCloud",
-  "url": "https://soundcloud.com/tobokegao/tbkgao-label-omoi-by-giant-chess-men-tbk-026",
-  "source": "feed",
-  "own": true
- },
- {
-  "date": "2023-05-05",
-  "kind": "release",
-  "ja": "「[#TBKgao (label)] P8's by Notehead [TBK-025]」をSoundCloudで公開",
-  "en": "\"[#TBKgao (label)] P8's by Notehead [TBK-025]\" released on SoundCloud",
-  "url": "https://soundcloud.com/tobokegao/tbkgao-label-p8s-by-notehead-tbk-025",
-  "source": "feed",
-  "own": true
- },
- {
   "date": "2023-05-01",
   "kind": "release",
   "ja": "「GiRLPOP Mix (20230430 HEY! POP CITY AVENUE)」をSoundCloudで公開",
@@ -450,15 +423,6 @@
   "own": true
  },
  {
-  "date": "2023-03-04",
-  "kind": "release",
-  "ja": "「[#TBKgao (label)] YAGITUNE​!​! by Yagishiro [TBK-024]」をSoundCloudで公開",
-  "en": "\"[#TBKgao (label)] YAGITUNE​!​! by Yagishiro [TBK-024]\" released on SoundCloud",
-  "url": "https://soundcloud.com/tobokegao/yaghisiro-yagitune",
-  "source": "feed",
-  "own": true
- },
- {
   "date": "2023-02-26",
   "kind": "release",
   "ja": "「20230225 TOBOX Release Party In Sapporo」をSoundCloudで公開",
@@ -473,33 +437,6 @@
   "ja": "「20230218 TOBOX Release Party Tobokegao Pure MIDI Mix」をSoundCloudで公開",
   "en": "\"20230218 TOBOX Release Party Tobokegao Pure MIDI Mix\" released on SoundCloud",
   "url": "https://soundcloud.com/tobokegao/20230218-tobox-release-party",
-  "source": "feed",
-  "own": true
- },
- {
-  "date": "2022-11-05",
-  "kind": "release",
-  "ja": "「[#TBKgao (label)] Late Night 2-Hours Chiptune by Rei8bit [TBK-022] XFD」をSoundCloudで公開",
-  "en": "\"[#TBKgao (label)] Late Night 2-Hours Chiptune by Rei8bit [TBK-022] XFD\" released on SoundCloud",
-  "url": "https://soundcloud.com/tobokegao/late-night-2-hours-chiptune",
-  "source": "feed",
-  "own": true
- },
- {
-  "date": "2022-11-05",
-  "kind": "release",
-  "ja": "「[#TBKgao (label)] Oha Chiptune! by Rei8bit [TBK-021] XFD」をSoundCloudで公開",
-  "en": "\"[#TBKgao (label)] Oha Chiptune! by Rei8bit [TBK-021] XFD\" released on SoundCloud",
-  "url": "https://soundcloud.com/tobokegao/rei8bit-oha-chiptune-xfd",
-  "source": "feed",
-  "own": true
- },
- {
-  "date": "2022-11-04",
-  "kind": "release",
-  "ja": "「[#TBKgao (label)] 証明 by Yagishiro [TBK-020] XFD」をSoundCloudで公開",
-  "en": "\"[#TBKgao (label)] 証明 by Yagishiro [TBK-020] XFD\" released on SoundCloud",
-  "url": "https://soundcloud.com/tobokegao/tbkgao-label-by-yagishiro-tbk-020-xfd",
   "source": "feed",
   "own": true
  },
@@ -560,18 +497,9 @@
  {
   "date": "2022-08-17",
   "kind": "release",
-  "ja": "「Yaruki ga Denai Toki no Uta」をBandcampで公開",
-  "en": "\"Yaruki ga Denai Toki no Uta\" released on Bandcamp",
+  "ja": "「やるきがでないときのうた」をBandcamp / SoundCloudで公開",
+  "en": "\"やるきがでないときのうた\" released on Bandcamp / SoundCloud",
   "url": "https://tbkgao.bandcamp.com/track/yaruki-ga-denai-toki-no-uta",
-  "source": "feed",
-  "own": true
- },
- {
-  "date": "2022-08-17",
-  "kind": "release",
-  "ja": "「やるきがでないときのうた」をSoundCloudで公開",
-  "en": "\"やるきがでないときのうた\" released on SoundCloud",
-  "url": "https://soundcloud.com/tobokegao/xvjcz49m0nlf",
   "source": "feed",
   "own": true
  },
@@ -972,19 +900,10 @@
   "own": true
  },
  {
-  "date": "2020-07-16",
-  "kind": "release",
-  "ja": "「ぼのぼの ED1 - 近道したい (tobokegao gameboy cover)」をYouTubeで公開",
-  "en": "\"ぼのぼの ED1 - 近道したい (tobokegao gameboy cover)\" released on YouTube",
-  "url": "https://www.youtube.com/watch?v=Ie48Ky2cyz0",
-  "source": "feed",
-  "own": true
- },
- {
   "date": "2020-07-13",
   "kind": "release",
-  "ja": "「Bonobono ED1 - Chikamichi Shitai(tobokegao gameboy cover)」をSoundCloudで公開",
-  "en": "\"Bonobono ED1 - Chikamichi Shitai(tobokegao gameboy cover)\" released on SoundCloud",
+  "ja": "「ぼのぼの ED1 - 近道したい (tobokegao gameboy cover)」をSoundCloud / YouTubeで公開",
+  "en": "\"ぼのぼの ED1 - 近道したい (tobokegao gameboy cover)\" released on SoundCloud / YouTube",
   "url": "https://soundcloud.com/tobokegao/suga-kyoko-chikamichi-shitai-tobokegao-lsdj-gb-cover",
   "source": "feed",
   "own": true
@@ -1458,28 +1377,10 @@
   "own": true
  },
  {
-  "date": "2017-03-31",
-  "kind": "release",
-  "ja": "「けものフレンズOP ようこそジャパリパークへ GAMEBOYカービィ風味Cover」をniconicoで公開",
-  "en": "\"けものフレンズOP ようこそジャパリパークへ GAMEBOYカービィ風味Cover\" released on niconico",
-  "url": "https://www.nicovideo.jp/watch/sm30931214",
-  "source": "feed",
-  "own": true
- },
- {
-  "date": "2017-03-31",
-  "kind": "release",
-  "ja": "「Kemono Friends OP ようこそジャパリパークへ（Tobokegao GAMEBOY Kirby-ish Cover）」をYouTubeで公開",
-  "en": "\"Kemono Friends OP ようこそジャパリパークへ（Tobokegao GAMEBOY Kirby-ish Cover）\" released on YouTube",
-  "url": "https://www.youtube.com/watch?v=VPBmK4C9NXI",
-  "source": "feed",
-  "own": true
- },
- {
   "date": "2017-03-29",
   "kind": "release",
-  "ja": "「どうぶつビスケッツ×PPP - ようこそジャパリパークへ（Tobokegao GAMEBOY Cover）」をSoundCloudで公開",
-  "en": "\"どうぶつビスケッツ×PPP - ようこそジャパリパークへ（Tobokegao GAMEBOY Cover）\" released on SoundCloud",
+  "ja": "「どうぶつビスケッツ×PPP - ようこそジャパリパークへ（Tobokegao GAMEBOY Cover）」をSoundCloud / niconico / YouTubeで公開",
+  "en": "\"どうぶつビスケッツ×PPP - ようこそジャパリパークへ（Tobokegao GAMEBOY Cover）\" released on SoundCloud / niconico / YouTube",
   "url": "https://soundcloud.com/tobokegao/kemono-friends-op-tobokegao-gameboy-cover",
   "source": "feed",
   "own": true
