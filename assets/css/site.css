@@ -227,6 +227,8 @@ a:hover .px--spin .spin__f, a:focus-visible .px--spin .spin__f {
 .seg:hover .seg__opt:not(.is-on), .seg:focus-visible .seg__opt:not(.is-on) { background: var(--bar-ink); color: var(--bar); }
 .seg:focus-visible { outline: 1px dotted var(--bar-key); outline-offset: 2px; }
 .seg__opt.is-on { background: var(--mark); color: var(--mark-ink); }
+a.seg { text-decoration: none; }
+.seg--link .seg__opt { padding: 0 calc(var(--dot) * 2 / 3 - 1px) 0 calc(var(--dot) * 2 / 3); }   /* same side gaps as JP / EN */
 
 /* ---------- desk ---------- */
 .desk {

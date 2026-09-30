@@ -13,6 +13,8 @@
     {{ end }}
   </nav>
   <div class="menubar__tools">
+    {{/* the contact page, up here so it is in view on every page without scrolling to the footer */}}
+    <a class="seg seg--link" href="{{ "/contact/" | relURL }}"{{ if eq $cur "contact" }} aria-current="page"{{ end }}><span class="seg__opt{{ if eq $cur "contact" }} is-on{{ end }}">{{ partial "t.html" "contact" }}</span></a>
     {{/* each pair is one button (one big tap target on phones): a tap switches to the other side */}}
     <button class="seg seg--lang" type="button" data-toggle="lang" aria-label="Language / 言語: JP / EN">
       <span class="seg__opt" data-opt="ja" lang="ja">JP</span><span class="seg__opt" data-opt="en" lang="en">EN</span>
