@@ -10,7 +10,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{ if site.Params.preview }}<meta name="robots" content="noindex">{{ end }}
 {{ $title := cond .IsHome "とぼけがお Official Home Page" (printf "%s | %s" .Title site.Title) }}
-<title>{{ $title }}</title>
+{{- /* the tab title in English, swapped in by site.js on a language switch */}}
+{{ $en := or .Params.title_en (and .Params.row .Params.row.en) .Title }}
+{{ $title_en := cond .IsHome "Tobokegao Official Home Page" (printf "%s | Tobokegao" $en) }}
+<title data-ja="{{ $title }}" data-en="{{ $title_en }}">{{ $title }}</title>
 {{ $desc := or .Description (cond .IsHome "Welcome to TBK zone!" "とぼけがお (Tobokegao) — チップチューン、合成音声、音MAD、素のMIDI音源。") }}
 {{- /* the favicon figure (16 dots at 32px each); PNG, since link previews read it more widely than WebP */}}
 {{ $image := "img/og-icon.png" | absURL }}{{ $card := "summary" }}

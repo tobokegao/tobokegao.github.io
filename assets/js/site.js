@@ -57,7 +57,14 @@
     root.dataset.lang = l;
     root.lang = l;
     mark("lang", l);
+    setTitle();
     langHooks.forEach(function (fn) { fn(); });
+  }
+  // The tab title in the active language (both are on <title> as data-ja / data-en).
+  function setTitle() {
+    var t = document.querySelector("title");
+    var s = t && t.dataset[root.dataset.lang === "en" ? "en" : "ja"];
+    if (s) document.title = s;
   }
   // Day (Tobokegao colors) is the default; night is remembered per browser.
   function setScheme(s) {
@@ -161,7 +168,10 @@
       var from = doc.querySelector(sel), to = document.querySelector(sel);
       if (from && to) to.replaceWith(document.importNode(from, true));
     });
+    var title = doc.querySelector("title"), myTitle = document.querySelector("title");
+    if (title && myTitle) { myTitle.dataset.ja = title.dataset.ja || title.textContent; myTitle.dataset.en = title.dataset.en || ""; }
     document.title = doc.title;
+    setTitle();
     var desc = doc.querySelector('meta[name="description"]'), mine = document.querySelector('meta[name="description"]');
     if (desc && mine) mine.setAttribute("content", desc.getAttribute("content"));
     markToggles();

@@ -30,6 +30,7 @@ ITEMS_PATH = DATA / "items.json"
 RELEASES_PATH = DATA / "releases.json"
 AUTOLOG_PATH = DATA / "autolog.json"
 OVERRIDES_PATH = DATA / "overrides.json"
+TITLES_EN_PATH = DATA / "titles_en.json"
 
 YOUTUBE_CHANNEL_ID = "UCgO3CHcym4ehQ4Gw3lWlOew"
 SOUNDCLOUD_USER_ID = "107800754"
@@ -424,6 +425,9 @@ def build_autolog(releases: list[dict]) -> list[dict]:
     """Activity-log rows generated from releases, so news keeps flowing without manual posts."""
     names = {"bandcamp": "Bandcamp", "apple": "Apple Music", "soundcloud": "SoundCloud",
              "niconico": "niconico", "youtube": "YouTube"}
+    # English titles and names for the en text, kept by hand in data/titles_en.json
+    en = json.loads(TITLES_EN_PATH.read_text("utf-8")) if TITLES_EN_PATH.exists() else {}
+    titles_en, artists_en = en.get("titles", {}), en.get("artists", {})
     rows = []
     for g in releases:
         # Label releases by other artists belong on the release page, not in this log.
@@ -432,11 +436,12 @@ def build_autolog(releases: list[dict]) -> list[dict]:
         where = " / ".join(names[l["source"]] for l in g["links"])
         own = re.search(r"tobokegao|とぼけがお", g["artist"], re.I)
         who = "" if own else f"{g['artist']} "
+        who_en = "" if own else f"{artists_en.get(g['artist'], g['artist'])} "
         rows.append({
             "date": g["date"],
             "kind": "release",
             "ja": f"{who}「{g['title']}」を{where}で公開",
-            "en": f"{who}\"{g['title']}\" released on {where}",
+            "en": f"{who_en}\"{titles_en.get(g['title'], g['title'])}\" released on {where}",
             "url": g["links"][0]["url"],
             "source": "feed",
             "own": bool(own),
