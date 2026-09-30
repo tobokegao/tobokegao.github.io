@@ -25,6 +25,10 @@ aliases: ["/ja/about/"]
 
 <small>writer by Yasuyuki Hirata & Tobokegao</small>
 
+## 名前の由来
+
+「とぼけがお」という名前は、バンドをしていたころに生まれました。スタジオ練習の予約を、思いつきのバンド名で入れて遊んでいたときの一つです。「ハナレグミ」や「ばちかぶり」のように響きのよい 5 文字の名前でいくつも予約しましたが、スタジオのスタッフに「良いバンド名だね」と言われたのは、なぜか「とぼけがお」だけでした。それがうれしくて、この名前にしています。
+
 ## みんなの声
 
 > Tobokegaoは、私が長い間追いかけてきたチップチューンシーンのベテランで、彼らの作品の質は一貫しています。非常にメロディックで、非常にエネルギッシュ、しばしばハッピーでアップビート、常に境界線を押し広げています。
@@ -79,6 +83,10 @@ In 2024, they contributed the song "Nouveau Monde" to *YARS RISING*, a Nintendo 
 They are currently making music centered on VOCALOID and other voice synthesis, OTO-MAD, and Pure MIDI.
 
 <small>Written by Yasuyuki Hirata & Tobokegao</small>
+
+## The name
+
+The name "Tobokegao" goes back to Tobokegao's band days. Back then, Tobokegao booked studio rehearsals under all sorts of made-up band names for fun, choosing five-character names that sounded good, like "Hanaregumi" or "Bachikaburi". For some reason, "Tobokegao" was the only one a studio staff member praised as a good band name. That made Tobokegao happy, and the name stuck.
 
 ## Words from friends
 

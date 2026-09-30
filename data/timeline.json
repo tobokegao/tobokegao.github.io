@@ -1,6 +1,6 @@
 [
   {
-    "date": "2026-09-17",
+    "date": "2026-09-19",
     "kind": "feature",
     "ja": "音MAD の合作「正岡子規合作」に参加",
     "en": "Took part in the otoMAD collaboration \"正岡子規合作\"",
@@ -85,12 +85,29 @@
     "source": "x",
     "links": [
       {
-        "source": "x",
-        "url": "https://x.com/to6okegao/status/2019766028457353505"
-      },
-      {
         "source": "bandcamp",
         "url": "https://mellmell.bandcamp.com/album/nice-fruit-mellmell-x-pure-midi-x-voice-synthesis-arrange-compilation"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/2019766028457353505"
+      }
+    ]
+  },
+  {
+    "date": "2026-01-31",
+    "kind": "live",
+    "ja": "「PLASTIC THEATER 32周年イベント」にライブで出演",
+    "en": "Played live at the PLASTIC THEATER 32nd anniversary event",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/2010282602092249101"
+      },
+      {
+        "source": "web",
+        "url": "http://www.plastictheater.com/schedule/2811.html"
       }
     ]
   },
@@ -111,19 +128,6 @@
       }
     ],
     "article": "20260115-tbk27"
-  },
-  {
-    "date": "2026-01-11",
-    "kind": "live",
-    "ja": "「PLASTIC THEATER 32周年イベント」にライブで出演",
-    "en": "Played live at the PLASTIC THEATER 32nd anniversary event",
-    "source": "x",
-    "links": [
-      {
-        "source": "x",
-        "url": "https://x.com/to6okegao/status/2010282602092249101"
-      }
-    ]
   },
   {
     "date": "2025-12-20",
@@ -169,15 +173,23 @@
     "article": "20251218-tbk26"
   },
   {
-    "date": "2025-12-01",
+    "date": "2025-12-03",
     "kind": "feature",
-    "ja": "音MAD の合作「S2 スタダver」に参加",
-    "en": "Took part in the otoMAD collaboration \"S2 スタダver\"",
+    "ja": "音MAD の合作「S2 音スタダ2周年バージョン」に参加",
+    "en": "Took part in the otoMAD collaboration \"S2 音スタダ2周年バージョン\"",
     "source": "x",
     "links": [
       {
         "source": "x",
         "url": "https://x.com/to6okegao/status/1995449394879975812"
+      },
+      {
+        "source": "niconico",
+        "url": "https://www.nicovideo.jp/watch/sm45689361"
+      },
+      {
+        "source": "niconico",
+        "url": "https://www.nicovideo.jp/watch/sm45662175"
       }
     ]
   },
@@ -213,6 +225,14 @@
       {
         "source": "x",
         "url": "https://x.com/to6okegao/status/1981965610830737475"
+      },
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=-14Es_J5y_Q"
+      },
+      {
+        "source": "niconico",
+        "url": "https://www.nicovideo.jp/watch/sm45556646"
       }
     ],
     "article": "20251025-maddrift2"
@@ -293,12 +313,12 @@
     "source": "x",
     "links": [
       {
-        "source": "x",
-        "url": "https://x.com/to6okegao/status/1953788293549642110"
-      },
-      {
         "source": "bandcamp",
         "url": "https://mellmell.bandcamp.com/album/nice-fruit"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1953788293549642110"
       }
     ]
   },
@@ -323,13 +343,21 @@
   {
     "date": "2025-07-10",
     "kind": "feature",
-    "ja": "「DigitalStars 2025 Compilation」に Jamie Page さんの「Radiant Revival」のリミックスで参加",
-    "en": "Participated in \"DigitalStars 2025 Compilation\" with a remix of Jamie Page's \"Radiant Revival\"",
+    "ja": "「DigitalStars 2025 Compilation」に Jamie Paige さんの「Radiant Revival」のリミックスで参加",
+    "en": "Participated in \"DigitalStars 2025 Compilation\" with a remix of Jamie Paige's \"Radiant Revival\"",
     "source": "x",
     "links": [
       {
         "source": "x",
         "url": "https://x.com/to6okegao/status/1943149914961383638"
+      },
+      {
+        "source": "web",
+        "url": "https://karent.jp/cd/digitalstars2025"
+      },
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=aR_sWcwE_FA"
       }
     ]
   },
@@ -369,6 +397,14 @@
       {
         "source": "web",
         "url": "https://note.com/tobokegao/n/n188bb710ae66"
+      },
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=d2WrKNXUBmY"
+      },
+      {
+        "source": "niconico",
+        "url": "https://www.nicovideo.jp/watch/sm45063977"
       }
     ],
     "article": "20250612-tbk20"
@@ -387,6 +423,10 @@
       {
         "source": "web",
         "url": "https://t.livepocket.jp/e/to_be_kontinued_vol19"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/to-be-kontinued-vol19-90s-j-pop-mix"
       }
     ],
     "article": "20250515-tbk19"
@@ -399,12 +439,12 @@
     "source": "x",
     "links": [
       {
-        "source": "x",
-        "url": "https://x.com/to6okegao/status/1918287981322092843"
-      },
-      {
         "source": "bandcamp",
         "url": "https://giantchessmen.bandcamp.com/album/arcology"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1918287981322092843"
       }
     ]
   },
@@ -452,12 +492,12 @@
     "source": "x",
     "links": [
       {
-        "source": "x",
-        "url": "https://x.com/to6okegao/status/1892926080597504447"
-      },
-      {
         "source": "bandcamp",
         "url": "https://giantchessmen.bandcamp.com/track/cosmos-2"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1892926080597504447"
       }
     ]
   },
@@ -493,6 +533,10 @@
       {
         "source": "x",
         "url": "https://x.com/to6okegao/status/1874037988927398247"
+      },
+      {
+        "source": "web",
+        "url": "http://www.plastictheater.com/schedule/2604.html"
       }
     ],
     "article": "20250126-theater31"
@@ -543,6 +587,10 @@
       {
         "source": "x",
         "url": "https://x.com/to6okegao/status/1838539661192630395"
+      },
+      {
+        "source": "web",
+        "url": "http://20nov.info/cnct/cnct2024/"
       }
     ],
     "article": "20241130-cnct2024"
@@ -591,17 +639,17 @@
     "source": "x",
     "links": [
       {
-        "source": "x",
-        "url": "https://x.com/to6okegao/status/1854826203275792574"
-      },
-      {
         "source": "bandcamp",
         "url": "https://giantchessmen.bandcamp.com/track/sunken-dreams"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1854826203275792574"
       }
     ]
   },
   {
-    "date": "2024-10-19",
+    "date": "2024-10-27",
     "kind": "feature",
     "ja": "コンピレーション「CONNECT ME!!! 3.14」に「Dot Matrix Clock (Screwed version)」で参加",
     "en": "Contributed \"Dot Matrix Clock (Screwed version)\" to the compilation \"CONNECT ME!!! 3.14\"",
@@ -610,6 +658,14 @@
       {
         "source": "x",
         "url": "https://x.com/to6okegao/status/1847499098737561811"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/20-nov/xfdconnect-me-314-disc1"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/20-nov/xfdconnect-me-314-disc2"
       }
     ]
   },
@@ -631,6 +687,10 @@
       {
         "source": "soundcloud",
         "url": "https://on.soundcloud.com/Ftf9q"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/to-be-kontinued-vol-12"
       }
     ],
     "article": "20241017-tbk12"
@@ -654,7 +714,7 @@
     "article": "20240919-tbk11"
   },
   {
-    "date": "2024-09-11",
+    "date": "2024-09-14",
     "kind": "live",
     "ja": "オンライン DJ イベント「FUZZYFEST 2024」にチップチューンの DJ mix で出演",
     "en": "Played a chiptune DJ mix at the online DJ event \"FUZZYFEST 2024\"",
@@ -674,12 +734,12 @@
     "source": "about",
     "links": [
       {
-        "source": "web",
-        "url": "https://store.steampowered.com/app/3226170/The_Sound_of_Yars_Rising__Official_Soundtrack/"
-      },
-      {
         "source": "spotify",
         "url": "https://open.spotify.com/album/5ZmrKAzZpWlXYm9P44qkHX"
+      },
+      {
+        "source": "web",
+        "url": "https://store.steampowered.com/app/3226170/The_Sound_of_Yars_Rising__Official_Soundtrack/"
       },
       {
         "source": "web",
@@ -762,6 +822,10 @@
       {
         "source": "soundcloud",
         "url": "https://on.soundcloud.com/yb6Dm"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/to-be-kontinued-vol9-otoge-chiptune"
       }
     ],
     "article": "20240725-tbk9"
@@ -774,12 +838,12 @@
     "source": "x",
     "links": [
       {
-        "source": "x",
-        "url": "https://x.com/to6okegao/status/1807013686730756147"
-      },
-      {
         "source": "bandcamp",
         "url": "https://giantchessmen.bandcamp.com/album/arcology-single"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1807013686730756147"
       }
     ]
   },
@@ -797,6 +861,10 @@
       {
         "source": "web",
         "url": "https://t.livepocket.jp/e/to_be_kontinued_vol_8"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/tobekontinued-vol8-chiptunedigital-fusion-vocaloid-mix"
       }
     ],
     "article": "20240620-tbk8"
@@ -825,6 +893,14 @@
       {
         "source": "x",
         "url": "https://x.com/to6okegao/status/1792139286181302522"
+      },
+      {
+        "source": "niconico",
+        "url": "https://www.nicovideo.jp/watch/sm43805070"
+      },
+      {
+        "source": "web",
+        "url": "https://note.com/choco_aji_baum/n/n36e4288c4151"
       }
     ]
   },
@@ -838,6 +914,18 @@
       {
         "source": "x",
         "url": "https://x.com/to6okegao/status/1791785980980248643"
+      },
+      {
+        "source": "niconico",
+        "url": "https://www.nicovideo.jp/watch/sm43806538"
+      },
+      {
+        "source": "niconico",
+        "url": "https://www.nicovideo.jp/watch/sm43820835"
+      },
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=dJa8eBHmpmU"
       }
     ],
     "article": "20240518-otogroove"
@@ -863,10 +951,14 @@
   {
     "date": "2024-05-11",
     "kind": "feature",
-    "ja": "lambscope のアルバム「lambchips」に「孤独なフルーツ」の別ミックスで参加（TBKgao が協力）",
-    "en": "Contributed an alternate mix of \"Kodoku na Fruits\" to lambscope's album \"lambchips\" (with support from TBKgao)",
+    "ja": "lambscope のアルバム「lambchips」に「孤独なフルーツ」の別ミックスで参加（Estl さんと一緒に Tobokegao が企画）",
+    "en": "Contributed an alternate mix of \"Kodoku na Fruits\" to lambscope's album \"lambchips\" (planned by Tobokegao together with Estl)",
     "source": "x",
     "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://lambscope.bandcamp.com/album/lambchips"
+      },
       {
         "source": "x",
         "url": "https://x.com/to6okegao/status/1789250831675719770"
@@ -914,6 +1006,10 @@
       {
         "source": "soundcloud",
         "url": "https://on.soundcloud.com/bYPwT"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/tobekontinued-vol5-tq-jam"
       }
     ],
     "article": "20240321-tbk5"
@@ -926,8 +1022,20 @@
     "source": "x",
     "links": [
       {
+        "source": "apple",
+        "url": "https://music.apple.com/jp/album/sig-feat-tobokegao-single/1870409284"
+      },
+      {
         "source": "x",
         "url": "https://x.com/to6okegao/status/1761341224135397782"
+      },
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=3yKAlxJ-1Jc"
+      },
+      {
+        "source": "web",
+        "url": "https://big-up.style/7fRNqsDjz5"
       }
     ]
   },
@@ -945,6 +1053,10 @@
       {
         "source": "soundcloud",
         "url": "https://on.soundcloud.com/CJ7XE"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/to-be-kontinued-vol4-y2k-vgm-vibes-jungle-mix"
       }
     ],
     "article": "20240215-tbk4"
@@ -963,6 +1075,10 @@
       {
         "source": "soundcloud",
         "url": "https://on.soundcloud.com/k3184"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/to-be-kontinued-vol3"
       }
     ],
     "article": "20240125-tbk3"
@@ -1041,12 +1157,12 @@
     "source": "x",
     "links": [
       {
-        "source": "x",
-        "url": "https://x.com/to6okegao/status/1687368608698224640"
-      },
-      {
         "source": "bandcamp",
         "url": "https://mochiume.bandcamp.com/album/tour-semi-fiction"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1687368608698224640"
       }
     ]
   },
@@ -1080,12 +1196,12 @@
     "source": "x",
     "links": [
       {
-        "source": "x",
-        "url": "https://x.com/to6okegao/status/1654420622905339904"
-      },
-      {
         "source": "bandcamp",
         "url": "https://giantchessmen.bandcamp.com/album/omoi"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1654420622905339904"
       }
     ]
   },
@@ -1103,6 +1219,10 @@
       {
         "source": "web",
         "url": "https://instagram.com/chata_ni"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/girlpop-mix-20230430-hey-pop-city-avenue"
       }
     ],
     "article": "20230430-heypopcity"
@@ -1115,20 +1235,20 @@
     "source": "x",
     "links": [
       {
-        "source": "x",
-        "url": "https://x.com/to6okegao/status/1631869713382010880"
-      },
-      {
         "source": "bandcamp",
         "url": "https://yagishiro.bandcamp.com/album/yagitune"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1631869713382010880"
       }
     ]
   },
   {
     "date": "2023-02-25",
     "kind": "live",
-    "ja": "「TOBOX Release Party in Sapporo」に参加",
-    "en": "Participated in \"TOBOX Release Party in Sapporo\"",
+    "ja": "「TOBOX Release Party in Sapporo」を主催",
+    "en": "Organized \"TOBOX Release Party in Sapporo\"",
     "source": "works",
     "links": [
       {
@@ -1141,15 +1261,15 @@
       },
       {
         "source": "soundcloud",
-        "url": "https://on.soundcloud.com/SajYn"
+        "url": "https://soundcloud.com/tobokegao/20230225-tobox-release-party-in-sapporo"
       }
     ]
   },
   {
     "date": "2023-02-18",
     "kind": "live",
-    "ja": "「TOBOX Release Party in Tokyo」に参加",
-    "en": "Participated in \"TOBOX Release Party in Tokyo\"",
+    "ja": "「TOBOX Release Party in Tokyo」を主催",
+    "en": "Organized \"TOBOX Release Party in Tokyo\"",
     "source": "works",
     "links": [
       {
@@ -1159,6 +1279,10 @@
       {
         "source": "web",
         "url": "/post/tobox-release-party/"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/20230218-tobox-release-party"
       }
     ]
   },
@@ -1170,12 +1294,12 @@
     "source": "x",
     "links": [
       {
-        "source": "x",
-        "url": "https://x.com/to6okegao/status/1621493714790006788"
-      },
-      {
         "source": "bandcamp",
         "url": "https://mltek.bandcamp.com/album/midi-science-intellectual-property"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1621493714790006788"
       }
     ]
   },
@@ -1187,12 +1311,12 @@
     "source": "x",
     "links": [
       {
-        "source": "x",
-        "url": "https://x.com/to6okegao/status/1588574916583923713"
-      },
-      {
         "source": "bandcamp",
         "url": "https://rei8bit.bandcamp.com/album/oha-chiptune"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1588574916583923713"
       }
     ]
   },
@@ -1204,12 +1328,12 @@
     "source": "x",
     "links": [
       {
-        "source": "x",
-        "url": "https://x.com/to6okegao/status/1588733137122562049"
-      },
-      {
         "source": "bandcamp",
         "url": "https://rei8bit.bandcamp.com/album/late-night-2-hours-chiptune-vol-1"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1588733137122562049"
       }
     ]
   },
@@ -1221,12 +1345,12 @@
     "source": "x",
     "links": [
       {
-        "source": "x",
-        "url": "https://x.com/to6okegao/status/1587421884588896257"
-      },
-      {
         "source": "bandcamp",
         "url": "https://yagishiro.bandcamp.com/album/evidence"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1587421884588896257"
       }
     ]
   },
@@ -1256,6 +1380,10 @@
     "source": "x",
     "links": [
       {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com/album/tobox"
+      },
+      {
         "source": "x",
         "url": "https://x.com/to6okegao/status/1584004818112196609"
       }
@@ -1272,6 +1400,14 @@
       {
         "source": "bandcamp",
         "url": "https://tbkgao.bandcamp.com/album/pure-midi-volume-1"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/pure"
+      },
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=pIsE3caKU8Q"
       }
     ],
     "article": "20221007-puremidi1"
@@ -1286,6 +1422,14 @@
       {
         "source": "x",
         "url": "https://x.com/to6okegao/status/1572883068717006848"
+      },
+      {
+        "source": "web",
+        "url": "https://booth.pm/ja/items/4184786"
+      },
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=Z3RfdE24cjA"
       }
     ]
   },
@@ -1324,12 +1468,12 @@
     "source": "x",
     "links": [
       {
-        "source": "x",
-        "url": "https://x.com/to6okegao/status/1537769965159231493"
-      },
-      {
         "source": "bandcamp",
         "url": "https://mltek.bandcamp.com/album/about-image-info"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1537769965159231493"
       }
     ]
   },
@@ -1354,16 +1498,20 @@
     "source": "x",
     "links": [
       {
+        "source": "bandcamp",
+        "url": "https://heyilyband.bandcamp.com/album/psychokinetic-love-songs"
+      },
+      {
         "source": "x",
         "url": "https://x.com/to6okegao/status/1519521794394587137"
       }
     ]
   },
   {
-    "date": "2022-04-02",
+    "date": "2022-04-01",
     "kind": "feature",
     "ja": "「RESOFORCE - Rivals of Aether: RESONANT MIXES 3」に「Elusive Master of Toxin (Tobokegao M8 Remix)」で参加",
-    "en": "Participate in \"RESOFORCE - Rivals of Aether: RESONANT MIXES 3\" with \"Elusive Master of Toxin (Tobokegao M8 Remix)\"",
+    "en": "Participated in \"RESOFORCE - Rivals of Aether: RESONANT MIXES 3\" with \"Elusive Master of Toxin (Tobokegao M8 Remix)\"",
     "source": "works",
     "links": [
       {
@@ -1397,16 +1545,20 @@
     "source": "works",
     "links": [
       {
-        "source": "youtube",
-        "url": "https://www.youtube.com/playlist?list=PL_2fr4Tahm58Qcd2tNSl75ou8FXHeg6C4"
-      },
-      {
         "source": "bandcamp",
         "url": "https://tbkgao.bandcamp.com/album/20220326-chipfest-cyberspace-15-live"
       },
       {
+        "source": "youtube",
+        "url": "https://www.youtube.com/playlist?list=PL_2fr4Tahm58Qcd2tNSl75ou8FXHeg6C4"
+      },
+      {
         "source": "web",
         "url": "http://twitch.tv/calmdownkidder"
+      },
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=EKpxPuAHY4E"
       }
     ],
     "article": "20220326-chipfest15"
@@ -1414,7 +1566,7 @@
   {
     "date": "2022-03-04",
     "kind": "release",
-    "ja": "3rd EP 「DA​-​LA​-​LA (Vocal Version)」をリリース",
+    "ja": "3rd EP 「DA-LA-LA (Vocal Version)」をリリース",
     "en": "3rd EP \"DA-LA-LA (Vocal Version)\" is released",
     "source": "works",
     "links": [
@@ -1460,7 +1612,7 @@
     "date": "2021-11-24",
     "kind": "feature",
     "ja": "「MUTRON - Future Sushi」に「MUTRON - Future Sushi (Tobokegao FM Remix)」で参加",
-    "en": "Participate in \"MUTRON - Future Sushi\" with \"MUTRON - Future Sushi (Tobokegao FM Remix)\"",
+    "en": "Participated in \"MUTRON - Future Sushi\" with \"MUTRON - Future Sushi (Tobokegao FM Remix)\"",
     "source": "works",
     "links": [
       {
@@ -1481,12 +1633,12 @@
     "source": "x",
     "links": [
       {
-        "source": "x",
-        "url": "https://x.com/to6okegao/status/1443909503959789581"
-      },
-      {
         "source": "bandcamp",
         "url": "https://mltek.bandcamp.com/album/logical-positivism"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1443909503959789581"
       }
     ]
   },
@@ -1513,10 +1665,10 @@
     "article": "20210806-yomi-vocal"
   },
   {
-    "date": "2021-04-02",
+    "date": "2021-04-01",
     "kind": "feature",
     "ja": "「RESOFORCE - Rivals of Aether: RESONANT MIXES 2」に「Tetherball Versus (Tobokegao GB Remix)」で参加",
-    "en": "Participate in \"RESOFORCE - Rivals of Aether: RESONANT MIXES 2\" with \"Tetherball Versus (Tobokegao GB Remix)\"",
+    "en": "Participated in \"RESOFORCE - Rivals of Aether: RESONANT MIXES 2\" with \"Tetherball Versus (Tobokegao GB Remix)\"",
     "source": "works",
     "links": [
       {
@@ -1532,6 +1684,10 @@
     "en": "Participated in \"Caravan Boomer Soundtrack\" with \"Yomi De Ashibumi\"",
     "source": "x",
     "links": [
+      {
+        "source": "spotify",
+        "url": "https://open.spotify.com/track/2ihc7zSuRKnK81RSCwz4pe"
+      },
       {
         "source": "x",
         "url": "https://x.com/to6okegao/status/1365512284349497356"
@@ -1550,20 +1706,20 @@
     "source": "x",
     "links": [
       {
-        "source": "x",
-        "url": "https://x.com/to6okegao/status/1366678340917059587"
-      },
-      {
         "source": "bandcamp",
         "url": "https://chilodisc.bandcamp.com/album/chilodisc-vol-5-a-s-m-r"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1366678340917059587"
       }
     ]
   },
   {
     "date": "2021-01-17",
     "kind": "other",
-    "ja": "447 Records所属のバグによってゲーム世界から飛び出したVsinger、Lily lemonade Moneのトーク中bgmを提供",
-    "en": "Provided the bgm during the talk of Lily lemonade Mone, a Vsinger who jumped out of the game world by a bug belonging to 447 Records.",
+    "ja": "447 Records の Vsinger、Lily lemonade Mone さんのトーク中の BGM を提供",
+    "en": "Provided the background music for a talk by Lily lemonade Mone, a Vsinger from 447 Records",
     "source": "works",
     "links": [
       {
@@ -1612,6 +1768,18 @@
       {
         "source": "x",
         "url": "https://x.com/to6okegao/status/1319908879845658629"
+      },
+      {
+        "source": "web",
+        "url": "https://note.com/tobokeobi/n/nb69d27803479"
+      },
+      {
+        "source": "web",
+        "url": "https://note.com/tobokeobi/n/n65dc61cd0498"
+      },
+      {
+        "source": "web",
+        "url": "https://note.com/tobokeobi/n/n7517988399fb"
       }
     ]
   },
@@ -1644,12 +1812,12 @@
         "url": "https://tbkgao.bandcamp.com/album/being-rusty-tanashii-mainichi"
       },
       {
-        "source": "niconico",
-        "url": "https://www.nicovideo.jp/watch/sm37609199"
-      },
-      {
         "source": "apple",
         "url": "https://music.apple.com/jp/album/being-rusty-single/1546743248"
+      },
+      {
+        "source": "niconico",
+        "url": "https://www.nicovideo.jp/watch/sm37609199"
       }
     ]
   },
@@ -1702,6 +1870,14 @@
       {
         "source": "web",
         "url": "https://facebook.com/events/s/tobokegao-0r4-gwem-live/2957538044"
+      },
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=Lvhkfb-ctnU"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/2020-july-13-metazoa-live-video-tobokegao-picnic-deluxe-edition-commemorative-set"
       }
     ]
   },
@@ -1713,12 +1889,12 @@
     "source": "x",
     "links": [
       {
-        "source": "x",
-        "url": "https://x.com/to6okegao/status/1278949210004451328"
-      },
-      {
         "source": "bandcamp",
         "url": "https://exilefaker.bandcamp.com/album/parallel-experiments-lsdj"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1278949210004451328"
       }
     ]
   },
@@ -1775,10 +1951,10 @@
     ]
   },
   {
-    "date": "2020-04-25",
+    "date": "2020-04-23",
     "kind": "feature",
     "ja": "コンピレーションアルバム「Pterodactyl Squad - ひきこもり・Hikikomori」に「J-Pop Is Ready For Love (GB 2step Ver)」で参加",
-    "en": "Participates in compilation album \"Pterodactyl Squad - Hikikomori\" with \"J-Pop Is Ready For Love (GB 2step Ver)\"",
+    "en": "Contributed \"J-Pop Is Ready For Love (GB 2step Ver)\" to the compilation album \"Pterodactyl Squad - Hikikomori\"",
     "source": "works",
     "links": [
       {
@@ -1821,6 +1997,10 @@
       {
         "source": "youtube",
         "url": "https://youtu.be/ZmmAqMPYygc"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/12-tobokegao-lsdj-v8_2_2-b-command-test"
       }
     ]
   },
@@ -1847,6 +2027,10 @@
       {
         "source": "x",
         "url": "https://x.com/to6okegao/status/1220677798815129602"
+      },
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=HUNP9pJU8z0"
       }
     ]
   },
@@ -1872,6 +2056,14 @@
       {
         "source": "web",
         "url": "https://sites.google.com/view/caravanboomer-hp-english/"
+      },
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=i2fMQFCnxug"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/tobokegao-caravan-boomer-track-ym2413-tv-demo-ver"
       }
     ]
   },
@@ -1885,6 +2077,10 @@
       {
         "source": "bandcamp",
         "url": "https://tbkgao.bandcamp.com"
+      },
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=v-C1iu7kb4A"
       }
     ],
     "article": "20190920-tbkgao"
@@ -1892,13 +2088,21 @@
   {
     "date": "2019-08-13",
     "kind": "feature",
-    "ja": "KlirreさんのEP「Phlox」に\t「tobokegao feat. Klirre - 船・宇宙・ユンカース・ユモ」で参加",
+    "ja": "KlirreさんのEP「Phlox」に「tobokegao feat. Klirre - 船・宇宙・ユンカース・ユモ」で参加",
     "en": "Participated in Klirre's EP \"Phlox\" with \"tobokegao feat. Klirre - 船・宇宙・ユンカース・ユモ\"",
     "source": "works",
     "links": [
       {
         "source": "bandcamp",
         "url": "https://klirre.bandcamp.com/album/phlox"
+      },
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=po1KR9UMdyc"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/2xlsdj-tobokegao-feat-klirre-phlox-004"
       }
     ]
   },
@@ -1906,7 +2110,7 @@
     "date": "2019-07-05",
     "kind": "other",
     "ja": "MSX2ソフト「キャラバンブーマー」にbgmを提供",
-    "en": "Provided bgm for MSX2 software \"Caravan Boomer",
+    "en": "Provided music for the MSX2 game \"Caravan Boomer\"",
     "source": "works",
     "links": [
       {
@@ -1920,26 +2124,9 @@
     ]
   },
   {
-    "date": "2019-06-13",
-    "kind": "feature",
-    "ja": "コンピレーション「#ChipVS_Light_Dark」に「Sunshine, Sunrise, Sunset」で参加",
-    "en": "Participated in the compilation \"#ChipVS_Light_Dark\" with \"Sunshine, Sunrise, Sunset\"",
-    "source": "x",
-    "links": [
-      {
-        "source": "x",
-        "url": "https://x.com/to6okegao/status/1139155961539522561"
-      },
-      {
-        "source": "soundcloud",
-        "url": "https://soundcloud.com/tobokegao/sunshine-sunrise-sunset_chipvs_light_dark-compilation"
-      }
-    ]
-  },
-  {
     "date": "2019-03-03",
     "kind": "feature",
-    "ja": "しのりゅーさん主催の「光​の​チ​ッ​プ​チ​ュ​ー​ン​VS​闇​の​チ​ッ​プ​チ​ュ​ー​ン 対​決​コ​ン​ピ​レ​ー​シ​ョ​ン」の-Light Side-に「Sunshine, Sunrise, Sunset」で参加",
+    "ja": "しのりゅーさん主催の「光のチップチューンVS闇のチップチューン 対決コンピレーション」の-Light Side-に「Sunshine, Sunrise, Sunset」で参加",
     "en": "Participated in \"Sunshine, Sunrise, Sunset\" for -Light Side- of \"Chiptune of Light vs Chiptune of Darkness\" hosted by Sinoryu",
     "source": "works",
     "links": [
@@ -1950,23 +2137,39 @@
       {
         "source": "soundcloud",
         "url": "https://soundcloud.com/tobokegao/sunshine-sunrise-sunset_chipvs_light_dark-compilation"
+      },
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=MdR2tC8JQl4"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1139155961539522561"
       }
     ]
   },
   {
-    "date": "2019-02-16",
+    "date": "2019-02-15",
     "kind": "feature",
     "ja": "Innocuous Records のコンピレーション「Milwauskweee Vol. 4」に「SKWEEEEE B4」で参加",
     "en": "Participated in Innocuous Records' compilation \"Milwauskweee Vol. 4\" with \"SKWEEEEE B4\"",
     "source": "x",
     "links": [
       {
+        "source": "bandcamp",
+        "url": "https://innocuous.bandcamp.com/album/milwauskweee-vol-4"
+      },
+      {
         "source": "x",
         "url": "https://x.com/to6okegao/status/1096734585709301761"
       },
       {
-        "source": "bandcamp",
-        "url": "https://innocuous.bandcamp.com/album/milwauskweee-vol-4"
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=LBpEp3o_VCo"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/skweeeee-b4"
       }
     ]
   },
@@ -1984,14 +2187,18 @@
       {
         "source": "soundcloud",
         "url": "https://soundcloud.com/omoidelabel/sets/5g4eiriyrnrj"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/tweedees-baby-babytobokegao-gameboy-cover"
       }
     ]
   },
   {
-    "date": "2017-12-27",
+    "date": "2017-12-29",
     "kind": "feature",
-    "ja": "地獄でなぜサグい 企画、頒布するCD一枚一枚に油をランダムに飛ばした結果、聞こえ方が一枚一枚異なる全て一点もののコンピ「reversible chance operation 」 に「Gameboy Noise Jam 002 (Circuit Bent)」 で参加",
-    "en": "Participated in 地獄でなぜサグい's project \"Gameboy Noise Jam 002 (Circuit Bent)\" in the compilation \"reversible chance operation\", which is a one-of-a-kind compilation with different sound effects as a result of randomly skipping oil on each CD",
+    "ja": "地獄でなぜサグいの企画で、CD の一枚一枚に油をランダムに飛ばし、一枚ごとに聞こえ方が違う一点もののコンピ「reversible chance operation」に「Gameboy Noise Jam 002 (Circuit Bent)」で参加",
+    "en": "Contributed \"Gameboy Noise Jam 002 (Circuit Bent)\" to \"reversible chance operation\", a compilation by 地獄でなぜサグい in which oil was splashed at random on every CD, so each copy sounds different",
     "source": "works",
     "links": [
       {
@@ -2024,7 +2231,7 @@
   {
     "date": "2017-09-15",
     "kind": "feature",
-    "ja": "Participated in Ange;art's EP \"Chocolat EP\" released from OMOIDE LABEL with the first song \"intro\"",
+    "ja": "OMOIDE LABEL から出た Ange;art さんの EP「Chocolat EP」に1曲目「intro」で参加",
     "en": "Participated in Ange;art's EP \"Chocolat EP\" released from OMOIDE LABEL with the first song \"intro\"",
     "source": "works",
     "links": [
@@ -2086,6 +2293,10 @@
       {
         "source": "soundcloud",
         "url": "https://soundcloud.com/relaybros/blaster-master"
+      },
+      {
+        "source": "youtube",
+        "url": "https://www.youtube.com/watch?v=Os7mlA9I__Q"
       }
     ]
   },
@@ -2127,12 +2338,12 @@
     "source": "x",
     "links": [
       {
-        "source": "x",
-        "url": "https://x.com/to6okegao/status/1270272154513240065"
-      },
-      {
         "source": "bandcamp",
         "url": "https://daily.bandcamp.com/scene-report/japanese-chiptune-list"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/1270272154513240065"
       }
     ]
   },
@@ -2146,6 +2357,10 @@
       {
         "source": "bandcamp",
         "url": "https://omoidelabel.bandcamp.com/album/omoide-house"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/omoide-house-tobokegao-2stepish-chiptune-remix"
       }
     ]
   },
@@ -2198,6 +2413,10 @@
       {
         "source": "bandcamp",
         "url": "https://ptesquad.bandcamp.com/album/weezer-the-second-8-bit-album"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/homely-girl"
       }
     ]
   },
@@ -2241,10 +2460,10 @@
     ]
   },
   {
-    "date": "2016-03-05",
+    "date": "2016-02-06",
     "kind": "other",
     "ja": "ESC TRAXから1st EP「Wave Chords EP」をrelease",
-    "en": "First EP \"Wave Chords EP\" released from ESC TRAX.",
+    "en": "First EP \"Wave Chords EP\" released from ESC TRAX",
     "source": "works",
     "links": [
       {
@@ -2267,6 +2486,10 @@
       {
         "source": "bandcamp",
         "url": "https://omoidelabel.bandcamp.com/track/trash-toys-dream-to6okegao-s-goodnight-chiptune-ver"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/harito-trash-toys-dream-to6okegaos-goodnight-chiptune-ver"
       }
     ]
   },
@@ -2291,12 +2514,12 @@
     "source": "works",
     "links": [
       {
-        "source": "soundcloud",
-        "url": "https://soundcloud.com/tobokegao/electric-yakuza-splendr-tobokegao-bitpop-remix-1"
-      },
-      {
         "source": "bandcamp",
         "url": "https://tbkgao.bandcamp.com/track/splendr-tobokegao-bitpop-remix-remaster"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/electric-yakuza-splendr-tobokegao-bitpop-remix-1"
       }
     ]
   },
@@ -2360,6 +2583,10 @@
       {
         "source": "youtube",
         "url": "https://www.youtube.com/watch?v=urYFx92cvrg"
+      },
+      {
+        "source": "soundcloud",
+        "url": "https://soundcloud.com/tobokegao/kukeiha-chan-no-daibouken"
       }
     ]
   },

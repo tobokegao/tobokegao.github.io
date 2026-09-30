@@ -331,6 +331,9 @@ def is_song_video(it: dict, overrides: dict) -> bool:
     return bool(SONG_HINT.search(it["title"])) and not NOT_SONG.search(it["title"])
 
 
+LINK_ORDER = {"bandcamp": 0, "apple": 1, "spotify": 2}  # anything else keeps its order after these
+
+
 def build_releases(items: list[dict], overrides: dict) -> list[dict]:
     """Group music releases (Bandcamp, Apple Music, SoundCloud, song videos) by title."""
     def day(d: str) -> int:
@@ -386,6 +389,10 @@ def build_releases(items: list[dict], overrides: dict) -> list[dict]:
         if match:
             match["links"] += g["links"]
             del groups[key]
+    # Where to buy or stream a release comes before where to hear a preview of it: the
+    # first link is the one the card and the log row open.
+    for g in groups.values():
+        g["links"].sort(key=lambda l: LINK_ORDER.get(l["source"], len(LINK_ORDER)))
     return sorted(groups.values(), key=lambda g: g["date"], reverse=True)
 
 

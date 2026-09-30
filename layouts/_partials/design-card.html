@@ -1,9 +1,14 @@
 {{- /* One design (flyer etc.) from data/designs.json: the picture at its own proportions in
-   the bevel frame, linking to the full-size file; a title, date and kind below. */ -}}
+   the bevel frame, linking to the full-size file; a title, date and kind below.
+   The page shows a copy 480px wide (twice the card's width), not the full file. */ -}}
 {{- $img := .image | relURL -}}
+{{- $thumb := dict "RelPermalink" $img -}}
+{{- with resources.Get (strings.TrimPrefix "/" .image) -}}
+  {{- $thumb = cond (gt .Width 480) (.Resize "480x webp q82") . -}}
+{{- end -}}
 <figure class="design">
   <a class="design__art" href="{{ $img }}" target="_blank" rel="noopener">
-    <img src="{{ $img }}" alt="{{ .title }}" loading="lazy" decoding="async">
+    <img src="{{ $thumb.RelPermalink }}"{{ with $thumb.Width }} width="{{ . }}" height="{{ $thumb.Height }}"{{ end }} alt="{{ .title }}" loading="lazy" decoding="async">
   </a>
   <figcaption class="jacket__meta">
     <p class="jacket__title">{{ with .url }}<a href="{{ . | relURL }}"{{ if hasPrefix . "http" }} rel="noopener" target="_blank"{{ end }}>{{ $.title }}</a>{{ else }}{{ .title }}{{ end }}</p>

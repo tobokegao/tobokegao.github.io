@@ -69,3 +69,16 @@ timeZone = "Asia/Tokyo"
     name = "GitHub"
     icon = "github"
     url = "https://github.com/tobokegao"
+
+# The flyers stay in static/ (the card links to the full-size file) and are also
+# mounted into assets/, so the Designs page can show a smaller copy of each.
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static/img/designs"
+    target = "assets/img/designs"
+  [[module.mounts]]
+    source = "static"
+    target = "static"

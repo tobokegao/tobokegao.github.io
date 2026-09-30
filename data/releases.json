@@ -1644,12 +1644,12 @@
     "url": "https://tbkgao.bandcamp.com/album/yomi-de-ashibumi-vocal-version"
    },
    {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/yomi-de-ashibumivocal-version"
-   },
-   {
     "source": "apple",
     "url": "https://music.apple.com/jp/album/yomi-de-ashibumi-single/1580282960"
+   },
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/yomi-de-ashibumivocal-version"
    }
   ]
  },
@@ -1958,12 +1958,12 @@
     "url": "https://tbkgao.bandcamp.com/album/being-rusty-tanashii-mainichi"
    },
    {
-    "source": "soundcloud",
-    "url": "https://soundcloud.com/tobokegao/being-rusty-tanashii-mainichi"
-   },
-   {
     "source": "apple",
     "url": "https://music.apple.com/jp/album/being-rusty-single/1546743248"
+   },
+   {
+    "source": "soundcloud",
+    "url": "https://soundcloud.com/tobokegao/being-rusty-tanashii-mainichi"
    }
   ]
  },
