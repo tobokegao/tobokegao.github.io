@@ -1,11 +1,15 @@
 <meta charset="utf-8">
 {{- /* The early script lives in assets/js/early.js so its hash can go into the CSP. */ -}}
 {{ $early := resources.Get "js/early.js" | minify | fingerprint "sha256" }}
+{{- /* Speculation rules: the menu and tab-bar pages are fetched as soon as a page opens, and any page
+   starts loading in the background while the pointer rests on its link or a finger touches it,
+   so the click opens it at once. Browsers without support ignore it. Its hash is in the CSP too. */ -}}
+{{ $spec := resources.Get "js/speculation.json" | minify | fingerprint "sha256" }}
 {{- /* Content-Security-Policy: what the page may load and from where. Images come only from
    the hosts fetch_feeds.py accepts (ALLOWED_HOSTS) and row_pics.py keeps (PIC_HOSTS, adds Spotify's
    i.scdn.co); change them together. 'unsafe-inline' for
    styles is for the style="--i:…" attributes on the pixel icons. See docs/decisions/0009. */ -}}
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' '{{ $early.Data.Integrity }}'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com https://*.sndcdn.com https://*.bcbits.com https://*.nimg.jp https://*.mzstatic.com https://i.scdn.co; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' '{{ $early.Data.Integrity }}' '{{ $spec.Data.Integrity }}'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com https://*.sndcdn.com https://*.bcbits.com https://*.nimg.jp https://*.mzstatic.com https://i.scdn.co; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{ if site.Params.preview }}<meta name="robots" content="noindex">{{ end }}
@@ -25,6 +29,8 @@
 <link rel="icon" type="image/png" sizes="192x192" href="{{ "icon-192.png" | relURL }}">
 <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
 <script>{{ $early.Content | safeJS }}</script>
+{{ printf `<script type="speculationrules">%s</script>` $spec.Content | safeHTML }}
+<link rel="preload" href="{{ "fonts/gen/blocks.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ "fonts/gen/dot12.woff2" | relURL }}" as="font" type="font/woff2" crossorigin media="(max-width: 59.99rem)">
 <link rel="preload" href="{{ "fonts/gen/pc-ja.woff2" | relURL }}" as="font" type="font/woff2" crossorigin media="(min-width: 60rem)">
 <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -9,6 +9,41 @@
   toTop();
   window.addEventListener("pageshow", toTop);
 
+  // Page changes: when the next page takes more than 0.3 s, a small LOAD.EXE window
+  // shows a block meter on the old page. The meter only guesses (the browser does not
+  // report progress): it fills fast, then slows down near the end. With reduced motion
+  // it stays still.
+  var loading = document.getElementById("loading");
+  var loadWait = 0, loadStep = 0;
+  function hideLoading() {
+    clearTimeout(loadWait); clearTimeout(loadStep);
+    if (loading) loading.hidden = true;
+  }
+  function showLoading() {
+    if (!loading) return;
+    hideLoading();
+    var bar = loading.querySelector(".loading__bar"), cells = 20, n = 0;
+    var draw = function () { bar.textContent = "█".repeat(n) + "░".repeat(cells - n); };
+    var still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    loadWait = setTimeout(function () {
+      n = still ? 0 : 1; draw(); loading.hidden = false;
+      if (still) return;
+      (function next() {
+        if (n >= cells - 1) return;
+        loadStep = setTimeout(function () { n++; draw(); next(); }, n < 12 ? 100 : 500);
+      })();
+    }, 300);
+  }
+  document.addEventListener("click", function (e) {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    var a = e.target.closest && e.target.closest("a[href]");
+    if (!a || a.target || a.hasAttribute("download") || a.origin !== location.origin) return;
+    if (a.pathname === location.pathname && a.search === location.search) return;  // same page, #anchor
+    showLoading();
+  });
+  // coming back with the Back button can restore this page as it was, meter and all
+  window.addEventListener("pageshow", hideLoading);
+
   function store(key, value) { try { localStorage.setItem(key, value); } catch (e) {} }
   // The language and day/night pairs are one button each; the lit half shows the state.
   function mark(group, value) {
@@ -65,7 +100,7 @@
   document.addEventListener("keydown", function (e) {
     if (e.altKey || e.ctrlKey || e.metaKey) return;
     var link = document.querySelector('.statusbar a[data-key="' + e.key + '"]');
-    if (link) { e.preventDefault(); location.href = link.href; }
+    if (link) { e.preventDefault(); showLoading(); location.href = link.href; }
   });
 
   // News log: kind buttons and a text search, combined.

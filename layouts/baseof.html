@@ -10,6 +10,14 @@
 {{ block "main" . }}{{ end }}
 </main>
 {{ partial "statusbar.html" . }}
+{{- /* Shown by site.js when the next page takes a while to arrive. */}}
+<div class="loading" id="loading" role="status" hidden>
+  <section class="win loading__win">
+    <p class="win__title"><span>LOAD.EXE</span></p>
+    <p class="loading__text"><span data-l="ja" lang="ja">読み込み中</span><span data-l="en" lang="en">Loading</span></p>
+    <p class="loading__bar" aria-hidden="true"></p>
+  </section>
+</div>
 {{ $js := resources.Get "js/site.js" | minify | fingerprint }}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 </body>

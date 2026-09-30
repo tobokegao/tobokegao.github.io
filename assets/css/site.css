@@ -289,6 +289,20 @@ a.seg { text-decoration: none; }
 }
 .win__title span::before { content: "[ "; color: var(--ink-dim); }
 .win__title span::after  { content: " ]"; color: var(--ink-dim); }
+/* LOAD.EXE: the small window site.js shows while the next page is on its way */
+.loading {
+  position: fixed;
+  left: 0; right: 0; top: 160px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+  pointer-events: none;
+}
+.loading[hidden] { display: none; }
+.loading__win { margin: 0; padding: 26px 24px 20px; }
+.loading__text { margin: 0 0 12px; text-align: center; font: var(--dot)/calc(var(--dot) * 2) var(--f-dot); color: var(--ink); }
+.loading__bar { margin: 0; font: 400 16px/1 "TBK Blocks", monospace; white-space: pre; color: var(--bar); }
 .win__caption { margin: 0 0 20px; font: var(--dot)/1.6 var(--f-dot); color: var(--ink-dim); }
 /* the fold box at the right end of the top border (home windows): [-] open, [+] folded */
 .win__toggle {
