@@ -182,10 +182,13 @@
     m.focus({ preventScroll: true });   // screen readers start reading the new page
   }
   // Preview builds only (data-timing on <html>): after each page change, a line at the
-  // bottom shows where the time went, in ms: fetch, the wait for a paint, the swap, the
+  // bottom shows where the time went, in ms: finger down to click (touch), click to this
+  // script (queue), fetch, the wait for a paint, the swap, the
   // first frame drawn after it, and the browser's long tasks (50 ms or more) in the next 3 s.
   var timing = root.hasAttribute("data-timing");
   var longTasks = [];
+  var touchAt = 0, tap = null;   // when the finger went down, and how long until the click came
+  if (timing) document.addEventListener("pointerdown", function (e) { touchAt = e.timeStamp; }, { passive: true, capture: true });
   if (timing && window.PerformanceObserver) {
     try {
       new PerformanceObserver(function (list) {
@@ -201,7 +204,9 @@
       document.body.appendChild(box);
     }
     var ms = function (a, b) { return Math.round(b - a); };
-    var line = "fetch " + ms(t[0], t[1]) + " / wait " + ms(t[1], t[2]) + " / swap " + ms(t[2], t[3]);
+    var from = tap;
+    tap = null;
+    var line = (from ? "touch " + ms(from.down, from.click) + " / queue " + ms(from.click, t[0]) + " / " : "") + "fetch " + ms(t[0], t[1]) + " / wait " + ms(t[1], t[2]) + " / swap " + ms(t[2], t[3]);
     box.textContent = line + " / paint …";
     requestAnimationFrame(function () {
       requestAnimationFrame(function () {
@@ -211,7 +216,7 @@
         setTimeout(function () {
           var n = 0, sum = 0;
           longTasks.forEach(function (l) { if (l[0] >= t[0]) { n++; sum += l[1]; } });
-          box.textContent = line + " / long " + n + "x " + Math.round(sum) + " (total " + ms(t[0], painted) + ")";
+          box.textContent = line + " / long " + n + "x " + Math.round(sum) + " (total " + ms(from ? from.down : t[0], painted) + ")";
         }, 3000);
       });
     });
@@ -242,6 +247,7 @@
     if (!url) return;
     if (a.pathname === location.pathname && a.search === location.search && a.hash) return;  // #anchor on this page
     e.preventDefault();
+    if (timing) tap = touchAt && e.timeStamp - touchAt < 5000 ? { down: touchAt, click: e.timeStamp } : null;
     go(a.href, true);
   });
   var early = function (e) {
