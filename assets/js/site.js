@@ -150,12 +150,26 @@
     return a.href.split("#")[0];
   }
   var ready = {};        // url -> the page's HTML once it has arrived, to swap without waiting
+  // The first few pictures of a fetched page are requested right away, so they are in the
+  // browser's cache by the time the page is shown. The logo of the other scheme is skipped.
+  var PICTURES = 6;
+  function warmPictures(html, url) {
+    var other = root.dataset.scheme === "night" ? "logo--day" : "logo--night";
+    var re = /<img\b[^>]*>/g, m, n = 0;
+    while ((m = re.exec(html)) && n < PICTURES) {
+      if (m[0].indexOf(other) >= 0) continue;
+      var src = /\ssrc=(?:"([^"]*)"|([^\s>]+))/.exec(m[0]);
+      if (!src) continue;
+      new Image().src = new URL(src[1] || src[2], url).href;
+      n++;
+    }
+  }
   function fetchPage(url) {
     if (!cache[url]) {
       cache[url] = fetch(url, { credentials: "same-origin" }).then(function (r) {
         if (!r.ok || !/text\/html/.test(r.headers.get("content-type") || "")) throw new Error("not a page");
         return r.text();
-      }).then(function (html) { ready[url] = html; return html; });
+      }).then(function (html) { ready[url] = html; warmPictures(html, url); return html; });
       cache[url].catch(function () { delete cache[url]; });
     }
     return cache[url];
@@ -174,9 +188,29 @@
         if (v && !/^([a-z][a-z0-9+.-]*:|\/|#)/i.test(v)) el.setAttribute(k, new URL(v, url).href);
       });
     });
-    ["main", ".menubar", ".statusbar"].forEach(function (sel) {
+    // the first pictures load and decode with the page instead of popping in after it
+    var other = root.dataset.scheme === "night" ? "logo--day" : "logo--night";
+    var n = 0;
+    main.querySelectorAll("img").forEach(function (img) {
+      if (n >= PICTURES || img.classList.contains(other) || !img.getAttribute("src")) return;
+      img.loading = "eager"; img.decoding = "sync"; n++;
+    });
+    document.getElementById("main").replaceWith(document.importNode(main, true));
+    // The menu bar and the tab bar stay the same elements (only the parts that differ change),
+    // so the link just tapped keeps its hover state: the About figure turns while it is held.
+    [".menubar", ".statusbar"].forEach(function (sel) {
       var from = doc.querySelector(sel), to = document.querySelector(sel);
-      if (from && to) to.replaceWith(document.importNode(from, true));
+      if (!from || !to) return;
+      var a = to.querySelectorAll("nav a"), b = from.querySelectorAll("nav a");
+      if (a.length !== b.length) { to.replaceWith(document.importNode(from, true)); return; }
+      a.forEach(function (link, i) {
+        if (b[i].hasAttribute("aria-current")) link.setAttribute("aria-current", "page"); else link.removeAttribute("aria-current");
+      });
+      // the brand (a banner on every page but the top) and the contact link differ by page
+      [".menubar__brand", ".seg--link", ".statusbar__meta"].forEach(function (part) {
+        var x = from.querySelector(part), y = to.querySelector(part);
+        if (x && y && x.outerHTML !== y.outerHTML) y.replaceWith(document.importNode(x, true));
+      });
     });
     var title = doc.querySelector("title"), docTitle = doc.title;
     var desc = doc.querySelector('meta[name="description"]');
@@ -259,10 +293,12 @@
     go(location.href, false);
   });
   var ahead = function () {
-    document.querySelectorAll(".menubar__nav a, .statusbar a").forEach(function (a) {
+    // the menu pages, the top page (the brand), and this page itself, for Back
+    document.querySelectorAll(".menubar__nav a, .menubar__brand, .statusbar a").forEach(function (a) {
       var url = pageUrl(a);
       if (url && url !== shown) fetchPage(url);
     });
+    fetchPage(shown).catch(function () {});
   };
   window.addEventListener("load", function () {
     (window.requestIdleCallback || function (fn) { setTimeout(fn, 1500); })(ahead);
