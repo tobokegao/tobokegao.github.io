@@ -631,8 +631,10 @@ def to_svg(rows, outline=True):
 
 
 def to_spin_svg(frames):
-    """Frames -> one 18x18 SVG with a <g> per frame. Only frame 0 shows until the link is
-    hovered; then CSS (.px--spin) steps through them."""
+    """Frames -> a <span> holding one 18x18 SVG per frame, stacked. Only frame 0 shows until
+    the link is hovered or held; then CSS (.px--spin) steps through them by opacity. One
+    element per frame, so the browser can run that animation off its main thread and the
+    figure keeps turning while a page is being put together."""
     size = 18
     groups = []
     for n, rows in enumerate(frames):
@@ -651,9 +653,9 @@ def to_spin_svg(frames):
                 paths.setdefault(c, []).append(f"M{start + 1} {y + 1}h{x - start}v1h-{x - start}z")
         body = "".join(f'<path {"class=\"px__dim\" " if c == "+" else ""}fill="currentColor" d="{"".join(d)}"/>'
                        for c, d in sorted(paths.items()))
-        groups.append(f'<g class="spin__f" style="--i:{n}">{body}</g>')
-    return (f'<svg class="px px--spin" viewBox="0 0 {size} {size}" width="{size}" height="{size}" aria-hidden="true" '
-            f'focusable="false" shape-rendering="crispEdges" style="--n:{len(frames)}">{"".join(groups)}</svg>')
+        groups.append(f'<svg class="spin__f" style="--i:{n}" viewBox="0 0 {size} {size}" width="{size}" height="{size}" '
+                      f'aria-hidden="true" focusable="false" shape-rendering="crispEdges">{body}</svg>')
+    return f'<span class="px px--spin" style="--n:{len(frames)}" aria-hidden="true">{"".join(groups)}</span>'
 
 
 def main():

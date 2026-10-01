@@ -183,8 +183,11 @@ time { font-variant-numeric: tabular-nums; }
 /* the About figure (scripts/pixel_icons.py SPIN): faces front at rest, turns round while
    its link is hovered or focused; the face is the same color, dimmer */
 .px__dim { opacity: .5; }
-.px--spin .spin__f { visibility: hidden; }
-.px--spin .spin__f:first-child { visibility: visible; }
+/* one <svg> per frame, stacked in the 18px box; opacity (not visibility) and will-change,
+   so the browser runs the turn off its main thread: it goes on while a page is put together */
+.px--spin { position: relative; }
+.px--spin .spin__f { position: absolute; left: 0; top: 0; width: 100%; height: 100%; opacity: 0; will-change: opacity; }
+.px--spin .spin__f:first-child { opacity: 1; }
 /* one turn in .6s over the 10 frames (the minifier glues "var(...) steps()" together, so
    the timing is written out in longhands) */
 /* .is-held: set by site.js from pointerdown, since on a phone :hover and :active come only
@@ -196,7 +199,7 @@ a:hover .px--spin .spin__f, a.is-held .px--spin .spin__f, a:focus-visible .px--s
   animation-iteration-count: infinite;
   animation-delay: calc(var(--i) * .06s - .6s);
 }
-@keyframes spin-frame { 0% { visibility: visible; } 10%, 100% { visibility: hidden; } }
+@keyframes spin-frame { 0% { opacity: 1; } 10%, 100% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { a:hover .px--spin .spin__f, a.is-held .px--spin .spin__f, a:focus-visible .px--spin .spin__f { animation: none; } }
 .menubar__ico { color: var(--bar-key); margin-right: 4px; }
 .menubar__ico .px { display: inline-block; vertical-align: -4px; }
