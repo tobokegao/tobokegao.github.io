@@ -4,7 +4,7 @@
 - 形態: Bandcamp、各種の配信サービス（8月16日から）
 - レーベル: TBKgao [TBK-039]
 
-MellMell の 1 枚目のアルバムです。
+MellMellの1枚目のアルバムです。
 
 ## 収録曲
 
@@ -27,13 +27,13 @@ MellMell の 1 枚目のアルバムです。
 - キーボード: taku kameda
 - ベース: ryuki maeda
 - 歌: yumechiyo
-- ギター（3 曲目以外）: yuto kurosawa
-- ギター（3 曲目）: ryo hamamoto
+- ギター（3曲目以外）: yuto kurosawa
+- ギター（3曲目）: ryo hamamoto
 - エンジニア: toshiaki sudoh
 - アルバムのアートワーク: ryuki maeda
 
 ## リリースについて
 
-熱帯夜に聴きたくなるような、あたたかくてやさしい歌を集めたアルバムです。前から知り合いだった henrytennis のオクムラさんに声をかけてもらい、TBKgao から出すことになりました。発売の日には、音楽サイトの Mikiki にもニュースとして載りました。
+熱帯夜に聴きたくなるような、あたたかくてやさしい歌を集めたアルバムです。前から知り合いだったhenrytennisのオクムラさんに声をかけてもらい、TBKgaoから出すことになりました。発売の日には、音楽サイトのMikikiにもニュースとして載りました。
 
-翌年には、このアルバムの曲を MIDI の音と合成音声で作り直したコンピレーション「Nice Fruit - MellMell x Pure MIDI x Voice Synthesis Arrange Compilation」[TBK-040] も出ています。
+翌年には、このアルバムの曲をMIDIの音と合成音声で作り直したコンピレーション「Nice Fruit - MellMell x Pure MIDI x Voice Synthesis Arrange Compilation」[TBK-040] も出ています。

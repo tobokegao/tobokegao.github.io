@@ -1,20 +1,20 @@
 ## 概要
 - 日時: 2023年2月18日（土）13:00〜18:00
-- 会場: 高円寺 Koenji Fourth Floor Ⅱ
+- 会場: 高円寺Koenji Fourth Floor Ⅱ
 - 主催: Tobokegao（3枚目のアルバム「TOBOX」のリリースパーティ）
-- 料金: 前売り 2,500円、当日 3,500円（twipla で参加を表明すると前売りの料金）
-- 配信: あり（Tobokegao の Twitch）
-- Tobokegao の出演: DJ（13:00〜）とライブ（16:30〜）
+- 料金: 前売り2,500円、当日3,500円（twiplaで参加を表明すると前売りの料金）
+- 配信: あり（TobokegaoのTwitch）
+- Tobokegaoの出演: DJ（13:00〜）とライブ（16:30〜）
 
 ## 出演者
 - DJ: Tobokegao、AVGN Crew、hosotake、konamiscc
 - ライブ: ヤギシロ、Rei8bit、ツポールヌ、sdhizumi、Tobokegao、葛飾出身
 
 ## ふりかえり
-翌日、このときの DJ に少し足した「20230218 TOBOX Release Party Tobokegao Pure MIDI Mix」を SoundCloud に公開しました。
+翌日、このときのDJに少し足した「20230218 TOBOX Release Party Tobokegao Pure MIDI Mix」をSoundCloudに公開しました。
 
-## DJ mix のトラックリスト
-SoundCloud に公開した mix のトラックリストです。
+## DJ mixのトラックリスト
+SoundCloudに公開したmixのトラックリストです。
 
 1. あのまりあ - MEGA PULSE
 2. Blitz Lunar - Diamanté Spectrasplosion

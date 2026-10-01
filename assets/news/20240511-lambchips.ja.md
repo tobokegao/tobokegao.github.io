@@ -4,7 +4,7 @@
 - レーベル: lambscope [lamb001]
 - 作品: lambchips（チップチューンの作り手によるバンドサウンドがテーマのコンピレーション）
 - 収録: 3曲目「孤独なフルーツ (compilation version)」
-- 企画: Estl さんと Tobokegao
+- 企画: EstlさんとTobokegao
 - アートワーク: 葛飾出身さん
 
 ## 参加者

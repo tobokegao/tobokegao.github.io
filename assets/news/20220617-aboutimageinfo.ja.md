@@ -4,7 +4,7 @@
 - 形態: Bandcamp
 - レーベル: TBKgao [TBK-016]
 
-MLTEK の作品です。TBKgao からは「Logical Positivism」[TBK-011] に続く 2 作目で、Tobokegao は「Pure MIDI の新しい時代が始まろうとしている」と紹介しました。
+MLTEKの作品です。TBKgaoからは「Logical Positivism」[TBK-011] に続く2作目で、Tobokegaoは「Pure MIDI の新しい時代が始まろうとしている」と紹介しました。
 
 ## 収録曲
 

@@ -4,7 +4,7 @@
 - 形態: Bandcamp
 - レーベル: TBKgao [TBK-014]
 
-Tobokegao の 1 枚目のライブアルバムです。2022年3月26日の配信イベント「Chipfest Cyberspace 15」での演奏を収めています。10 曲すべてが、歌入りのアレンジです。
+Tobokegaoの1枚目のライブアルバムです。2022年3月26日の配信イベント「Chipfest Cyberspace 15」での演奏を収めています。10曲すべてが、歌入りのアレンジです。
 
 ## 収録曲
 
@@ -26,4 +26,4 @@ Tobokegao の 1 枚目のライブアルバムです。2022年3月26日の配信
 
 ## 制作について
 
-「Chipfest Cyberspace 15」は calmdownkidder が開いた配信イベントで、英国の時間で 3月26日の 19時に始まりました。出演は Danimal Cannon、exciting!!excellent!!、itspandaonair、Jellica、Tobokegao です。演奏には LSDj と M8 Tracker を使いました。配信の録画は YouTube で見られます。
+「Chipfest Cyberspace 15」はcalmdownkidderが開いた配信イベントで、英国の時間で3月26日の19時に始まりました。出演はDanimal Cannon、exciting!!excellent!!、itspandaonair、Jellica、Tobokegaoです。演奏にはLSDjとM8 Trackerを使いました。配信の録画はYouTubeで見られます。

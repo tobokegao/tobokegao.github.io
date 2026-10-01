@@ -1,7 +1,7 @@
 ## 概要
 - 日時: 2024年9月14日（土）
-- 会場: オンライン（YouTube の deraileddamazementisfuzzy チャンネル）
+- 会場: オンライン（YouTubeのderaileddamazementisfuzzyチャンネル）
 - テーマ: A URL CELEBRATION OF THE QUEER UNDERGROUND
-- Tobokegao の出演: チップチューンの DJ mix
+- Tobokegaoの出演: チップチューンのDJ mix
 
-2024年9月11日に出演を知らせました。出演者には Fire-Toolz さんもいました。
+2024年9月11日に出演を知らせました。出演者にはFire-Toolzさんもいました。

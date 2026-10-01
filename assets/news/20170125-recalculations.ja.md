@@ -1,8 +1,8 @@
 ## 概要
 - 公開日: 2017年1月25日（水）
 - レーベル: OthermanRecords（OTMN079）
-- 作品: Mekuso さんの「ReCalculations」（11曲、デジタル。Internet Archive でも公開）
-- Tobokegao の参加: 別名義「ＰｉＴ」で、10曲目「Mekuso - RE: (ＰｉＴ ｒａｎｄｏｍ ｂｕｇ)」のリミックス
+- 作品: Mekusoさんの「ReCalculations」（11曲、デジタル。Internet Archiveでも公開）
+- Tobokegaoの参加: 別名義「ＰｉＴ」で、10曲目「Mekuso - RE: (ＰｉＴ ｒａｎｄｏｍ ｂｕｇ)」のリミックス
 
 ## 収録曲
 1. Mekuso - 100 Hours of Regrets

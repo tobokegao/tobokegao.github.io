@@ -7,27 +7,27 @@ aliases: ["/ja/about/"]
 ---
 
 {{< lang ja >}}
-2014年夏、バンド活動を経て辿り着いた音楽表現方法として「GAMEBOY」を使った作曲を開始。
+2014年夏、バンド活動を経てたどり着いた表現として、「GAMEBOY」での作曲を開始。
 
-チップチューンアーティスト向けの作曲ソフト「[LSDj (Little Sound Dj)](https://www.littlesounddj.com/)」を使用した楽曲を多数発表。
+チップチューンアーティスト向けの作曲ソフト「[LSDj (Little Sound Dj)](https://www.littlesounddj.com/)」で作った楽曲を多数発表。
 
 2017年、世界最大級のチップチューンフェスティバル「[Square Sounds Tokyo](/news/20170916-7f203d/)」に出演。
 
 2019年、チップチューンミュージックを中心とした自主レーベル「[TBKgao](/tbkgao/)」の運営を開始。
 
-2020年、MSX2新作ゲーム「[キャラバンブーマー](/news/20190705-addb62/)」にてBGMを提供。
+2020年、MSX2の新作ゲーム「[キャラバンブーマー](/news/20190705-addb62/)」にBGMを提供。
 
-2022年、LSDjから影響を受け産まれた手のひらサイズのハードシンセ[M8 Tracker](https://dirtywave.com/products/m8-tracker)に没頭、そこに加えてGAMEBOY、ギター、ピッチを上げた自らのボーカルを用いた3rd album「[TOBOX](/news/20221030-665f86/)」を発表。
+2022年、LSDjの影響を受けて生まれた手のひらサイズのハードシンセ、[M8 Tracker](https://dirtywave.com/products/m8-tracker)に没頭。M8 TrackerにGAMEBOY、ギター、ピッチを上げた自らのボーカルを加えて、3rd album「[TOBOX](/news/20221030-665f86/)」を発表。
 
-2024年、ATARIとWayForwardによって制作されたNintendo Switch用ゲーム「[YARS RISING](/news/20240910-a03e0f/)」へ楽曲「Nouveau Monde」を提供（歌唱、主旋律作曲、作詞を担当）。
+2024年、ATARIとWayForwardが制作したゲーム「[YARS RISING](/news/20240910-a03e0f/)」に楽曲「Nouveau Monde」を提供し、歌唱、主旋律の作曲、作詞を担当。
 
-現在、合成音声、音MAD、素のMIDI音源に着目した音楽を目指し活動中。
+現在は、合成音声、音MAD、素のMIDI音源に着目した音楽を目指して活動中。
 
-<small>writer by Yasuyuki Hirata & Tobokegao</small>
+<small>written by Yasuyuki Hirata & Tobokegao</small>
 
 ## 名前の由来
 
-「とぼけがお」という名前は、バンドをしていたころに生まれました。スタジオ練習の予約を、思いつきのバンド名で入れて遊んでいたときの一つです。「ハナレグミ」や「ばちかぶり」のように響きのよい 5 文字の名前でいくつも予約しましたが、スタジオのスタッフに「良いバンド名だね」と言われたのは、なぜか「とぼけがお」だけでした。それがうれしくて、この名前にしています。
+「とぼけがお」という名前は、バンドをしていたころに生まれました。当時は、スタジオ練習の予約を思いつきのバンド名で入れて遊んでいて、これはそのうちの一つです。「ハナレグミ」や「ばちかぶり」のように響きのよい5文字の名前でいくつも予約しましたが、スタジオのスタッフに「良いバンド名だね」と言われたのは、なぜか「とぼけがお」だけでした。それがうれしくて、この名前にしています。
 
 ## みんなの声
 
@@ -66,7 +66,7 @@ aliases: ["/ja/about/"]
 ## 手伝ってくれた人
 
 - damifortune (HVB) さん、英訳を手伝ってくれてありがとう！
-- sdhizumi さん、動作チェックを手伝ってくれてありがとう！
+- sdhizumiさん、動作チェックを手伝ってくれてありがとう！
 {{< /lang >}}
 
 {{< lang en >}}
@@ -82,7 +82,7 @@ In 2020, they provided BGM for the new MSX2 game [*Caravan Boomer*](/news/201907
 
 In 2022, they became deeply immersed in the [M8 Tracker](https://dirtywave.com/products/m8-tracker), a palm-sized hardware synthesizer inspired by LSDj, and released their third album [*TOBOX*](/news/20221030-665f86/), featuring sounds from a Game Boy, guitar and their own pitched-up vocals.
 
-In 2024, they contributed the song "Nouveau Monde" to [*YARS RISING*](/news/20240910-a03e0f/), a Nintendo Switch game by ATARI and WayForward, handling the vocals, main melody and lyrics.
+In 2024, they contributed the song "Nouveau Monde" to [*YARS RISING*](/news/20240910-a03e0f/), a game by ATARI and WayForward, handling the vocals, main melody and lyrics.
 
 They are currently making music centered on VOCALOID and other voice synthesis, OTO-MAD, and Pure MIDI.
 

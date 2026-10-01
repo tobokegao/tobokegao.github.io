@@ -1,8 +1,8 @@
 ## 概要
 - 日時: 2020年12月28日（月）
-- 場所: Once Super Portable の Twitch 配信
-- Tobokegao の出演: ライブ（ゲームボーイ、LSDj）
-- VJ: polarist さんと Tobokegao
+- 場所: Once Super PortableのTwitch配信
+- Tobokegaoの出演: ライブ（GAMEBOY、LSDj）
+- VJ: polaristさんとTobokegao
 
 ## セットリスト
 1. Room To Room
@@ -17,4 +17,4 @@
 10. 黄泉で足踏み (Yomi De Ashibumi) (Album Version)
 
 ## ふりかえり
-当日のうちに、VJ 付きのライブ映像を YouTube に公開しました。
+当日のうちに、VJ付きのライブ映像をYouTubeに公開しました。

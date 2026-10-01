@@ -20,6 +20,7 @@ marked "merged" in work/x/candidates.json so they are not drafted again.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -227,7 +228,9 @@ def merge() -> int:
             print(f"skip {d['id']} ({d['date']}): already logged as {dup['ja']!r}")
             done.append((d, "duplicate"))
             continue
-        row = {"date": d["date"], "kind": d["kind"], "ja": d["ja"], "en": d["en"],
+        # the page id is fixed here, so later rewording does not move the row's page (decision 0019)
+        rid = d["date"].replace("-", "") + "-" + hashlib.md5(d["ja"].encode()).hexdigest()[:6]
+        row = {"date": d["date"], "id": rid, "kind": d["kind"], "ja": d["ja"], "en": d["en"],
                "source": "x", "links": d["links"]}
         if d.get("flyers"):
             row["images"] = [flyer(f, d, i + 1) for i, f in enumerate(d["flyers"])]

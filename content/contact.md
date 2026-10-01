@@ -12,7 +12,7 @@ description_en: Work requests and inquiries
 
 <to6okegao@gmail.com>
 
-## TBKgao へのお問い合わせ
+## TBKgaoへのお問い合わせ
 
 レーベル「TBKgao」のリリース作品や活動についてのお問い合わせは、こちらへお送りください。
 

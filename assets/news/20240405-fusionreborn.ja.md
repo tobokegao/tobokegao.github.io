@@ -1,9 +1,9 @@
 ## 概要
 - 発売日: 2024年4月5日（金）（Bandcamp Friday）
 - レーベル: HyperPop Records
-- 作品: That Andy Guy さんと Shady Monk さんのリミックスアルバム「FUSION REBORN」（10曲、デジタル）。2021年に DESKPOP から出たミックステープ「FUSION DANCE」の曲を、仲間たちがリミックスした作品
+- 作品: That Andy GuyさんとShady Monkさんのリミックスアルバム「FUSION REBORN」（10曲、デジタル）。2021年にDESKPOPから出たミックステープ「FUSION DANCE」の曲を、仲間たちがリミックスした作品
 - 収録: 6曲目「Press On [Tobokegao's Y2K VGM Vibes Jungle Remix]」
-- アートワーク: GraphixGenesis さん
+- アートワーク: GraphixGenesisさん
 
 ## 収録曲
 1. Fusion Dance (Intro) [Shay. Remix]

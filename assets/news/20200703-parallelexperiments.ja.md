@@ -4,7 +4,7 @@
 - 形態: Bandcamp
 - レーベル: TBKgao [TBK-005]
 
-exileFaker の作品です。ニューラルネットワークに LSDj のデータを作らせて、それを音にする、という試みです。
+exileFakerの作品です。ニューラルネットワークにLSDjのデータを作らせて、それを音にする、という試みです。
 
 ## 収録曲
 
@@ -17,12 +17,12 @@ exileFaker の作品です。ニューラルネットワークに LSDj のデー
 
 ## クレジット
 
-- 作曲（全曲）: Alex Kiefer と exileFakerFaker（制限付きボルツマンマシン）
+- 作曲（全曲）: Alex KieferとexileFakerFaker（制限付きボルツマンマシン）
 - ジャケット: Mario Hamborg (Klirre)
 - マスタリング: J. Skjevling（Subsystem Sound）
 
 ## リリースについて
 
-Tobokegao は、「チップチューンのフリージャズ、ノイズ」と紹介しました。ゲームボーイの作曲ソフト LSDj を、プログラミング言語の Python でバグらせて演奏させている、という説明です。
+Tobokegaoは、「チップチューンのフリージャズ、ノイズ」と紹介しました。GAMEBOYの作曲ソフトLSDjを、プログラミング言語のPythonでバグらせて演奏させている、という説明です。
 
-1、2、4、5 曲目は、Weekly Beats 2016 で発表されていた曲です。
+1、2、4、5曲目は、Weekly Beats 2016で発表されていた曲です。

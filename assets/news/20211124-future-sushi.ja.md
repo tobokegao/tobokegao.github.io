@@ -11,4 +11,4 @@
 3. Future Sushi (Tobokegao FM Remix)
 
 ## 制作について
-MUTRON さんの曲を、M8 Tracker でリミックスしました。FM 音源らしさを出せないか、いろいろ試しています。
+MUTRONさんの曲を、M8 Trackerでリミックスしました。FM音源らしさを出せないか、いろいろ試しています。

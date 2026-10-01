@@ -5,7 +5,7 @@
 - 形態: CD（通常盤と、2層アクリルボード付きの限定盤）
 - 収録: 4曲目「Radiant Revival (Tobokegao Remix)」（Jamie Paige feat. 初音ミク）
 
-収録曲が発表された 2025年7月10日に、参加を知らせました。
+収録曲が発表された2025年7月10日に、参加を知らせました。
 
 ## 制作について
-Digital Stars 2025 のテーマ曲「Radiant Revival」を、M8 Tracker で Y2K ふうにしたリミックスです。Jamie Paige さんの曲は、Digital Fusion をきっかけに、ボカロPになる前から聴いていました。
+Digital Stars 2025のテーマ曲「Radiant Revival」を、M8 TrackerでY2Kふうにしたリミックスです。Jamie Paigeさんの曲は、Digital Fusionをきっかけに、ボカロPになる前から聴いていました。

@@ -4,7 +4,7 @@
 - 形態: Bandcamp
 - レーベル: TBKgao [TBK-023]
 
-MLTEK の作品です。TBKgao からは「Logical Positivism」[TBK-011]、「About Image Info」[TBK-016] に続く 3 作目で、Tobokegao は「Pure MIDI が、さらに硬派でストイックになった」と紹介しました。
+MLTEKの作品です。TBKgaoからは「Logical Positivism」[TBK-011]、「About Image Info」[TBK-016] に続く3作目で、Tobokegaoは「Pure MIDI が、さらに硬派でストイックになった」と紹介しました。
 
 ## 収録曲
 
