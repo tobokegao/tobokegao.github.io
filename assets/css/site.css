@@ -63,6 +63,13 @@
   --news: #9a6f00;
   --other: #4f6475;
   --focus: #e0a800;
+  --kind-ink: #1b2430;       /* log kind chips: TRACKMENTO's palette, mixed into the window colour */
+  --kind-base: #9399a0;
+  --kind-live: #f0535a;      /* coral */
+  --kind-release: #58a6ff;   /* azure */
+  --kind-feature: #ff5ec4;   /* magenta */
+  --kind-news: #fbd743;      /* lemon */
+  --kind-other: #3ddc97;     /* jade */
 
   --f-dot: "JF Dot MPlus12", "MS Gothic", "Osaka-Mono", monospace;
   --dot: 12px;              /* one dot = one pixel; UI text is --dot or 2x --dot */
@@ -103,6 +110,7 @@
   --px-sh1: #06070a;
   --px-sh2: #0e1115;
   --focus: #fbd743;
+  --kind-ink: #efeeeb;
   color-scheme: dark;
 }
 
@@ -119,7 +127,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--desk);
-  background-image: radial-gradient(var(--desk-dot) 1px, transparent 1.5px);
+  background-image: radial-gradient(var(--desk-dot) 1px, transparent 1.5px);   /* check-ok: the desk's dot pattern, not a colour fade */
   background-size: 4px 4px;
   color: var(--ink);
   font: 400 15px/1.75 var(--f-body);
@@ -148,7 +156,6 @@ time { font-variant-numeric: tabular-nums; }
 .px { width: 18px; height: 18px; flex: none; }
 .px__o { fill: var(--px-outline); }
 .px__sh1 { fill: var(--px-sh1); }
-.px__m { fill: var(--px-mono, #efeeeb); }  /* night line-art icons */
 .px__sh2 { fill: var(--px-sh2); }
 
 .skip { position: absolute; left: -999px; top: 0; background: var(--mark); color: var(--mark-ink); padding: 8px 12px; z-index: 10; font: var(--dot)/1 var(--f-dot); }
@@ -273,7 +280,7 @@ a.seg { text-decoration: none; }
   left: -6px; right: -6px;
   top: calc(-6px - var(--shadow-h));
   height: var(--shadow-h);
-  background: repeating-conic-gradient(var(--shadow) 0 25%, transparent 0 50%) 0 0 / 4px 4px;
+  background: repeating-conic-gradient(var(--shadow) 0 25%, transparent 0 50%) 0 0 / 4px 4px;   /* check-ok: the checker screentone */
   pointer-events: none;
 }
 .win__title {
@@ -336,7 +343,7 @@ a.seg { text-decoration: none; }
    The window appears after 0.3 s; the bar starts at 1 cell, fills fast (0.04 s a cell) up to
    14, then slowly (0.3 s a cell) up to 19, and waits there. Each step moves exactly one cell
    (5 % of the 20-cell row). */
-.loading:not([hidden]) { animation: loading-show 0.3s steps(1, end) both; will-change: opacity; }
+.loading:not([hidden]) { animation: loading-show 0.3s steps(1, end) both; will-change: opacity; }   /* check-ok: a one-step delay before it shows; nothing moves */
 .loading__cells { position: relative; display: inline-block; overflow: hidden; vertical-align: top; }
 .loading__fill { position: absolute; left: 0; top: 0; transform: translateX(-100%); will-change: transform; }
 .loading:not([hidden]) .loading__fill { animation: loading-fill 2.02s 0.3s both; }
@@ -526,14 +533,13 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .log__idx, .log__date { color: var(--ink-dim); white-space: nowrap; }
 /* Kind chips: TRACKMENTO's palette as a flat pale tint (no outline).
    Day uses charcoal text, night off-white, so the label always reads. */
-.log__kind { --k: #9399a0; justify-self: start; align-self: center; padding: 0 6px; line-height: 1.6;
-  color: #1b2430; background: color-mix(in srgb, var(--k) 38%, #ffffff); }
-:root[data-scheme="night"] .log__kind { color: #efeeeb; background: color-mix(in srgb, var(--k) 38%, #1b2025); }
-.log__row--live .log__kind { --k: #f0535a; }     /* coral */
-.log__row--release .log__kind { --k: #58a6ff; }  /* azure */
-.log__row--feature .log__kind { --k: #ff5ec4; }  /* magenta */
-.log__row--news .log__kind { --k: #fbd743; }     /* lemon */
-.log__row--other .log__kind { --k: #3ddc97; }    /* jade */
+.log__kind { --k: var(--kind-base); justify-self: start; align-self: center; padding: 0 6px; line-height: 1.6;
+  color: var(--kind-ink); background: color-mix(in srgb, var(--k) 38%, var(--win)); }
+.log__row--live .log__kind { --k: var(--kind-live); }
+.log__row--release .log__kind { --k: var(--kind-release); }
+.log__row--feature .log__kind { --k: var(--kind-feature); }
+.log__row--news .log__kind { --k: var(--kind-news); }
+.log__row--other .log__kind { --k: var(--kind-other); }
 .log__text { font: 14px/1.6 var(--f-body); color: var(--ink); overflow-wrap: anywhere; }
 .log__text a { color: inherit; text-decoration: none; }
 .log__text a:hover { color: var(--accent-ink); }

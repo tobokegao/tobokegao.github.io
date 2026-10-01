@@ -1,0 +1,3 @@
+#!/bin/sh
+# Checks everything and builds the site before a push (scripts/check.py --all). Skip with --no-verify.
+PYTHONUTF8=1 exec python scripts/check.py --all

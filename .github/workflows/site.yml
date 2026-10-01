@@ -32,7 +32,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install Python packages
-        run: pip install fonttools==4.66.1 brotli==1.2.0
+        run: pip install fonttools==4.66.1 brotli==1.2.0 pillow==12.3.0
 
       - name: Install Hugo
         run: |
@@ -61,6 +61,10 @@ jobs:
           else
             HUGO_RELATIVEURLS=true HUGO_PARAMS_PREVIEW=true hugo --minify
           fi
+
+      # The site rules a machine can decide, and every link in the built site (see CLAUDE.md).
+      - name: Check
+        run: python scripts/check.py --all --site public
 
       - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4.0.0
         with:

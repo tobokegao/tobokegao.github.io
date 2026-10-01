@@ -1,0 +1,2 @@
+# Hook scripts run under sh, which reads a carriage return as part of the command.
+.githooks/* text eol=lf

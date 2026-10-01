@@ -1,0 +1,3 @@
+#!/bin/sh
+# Checks the staged files against the site rules (scripts/check.py). Skip with --no-verify.
+PYTHONUTF8=1 exec python scripts/check.py
