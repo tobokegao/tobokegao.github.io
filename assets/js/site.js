@@ -159,22 +159,28 @@
     }
     return cache[url];
   }
+  // Puts the next page's parts on screen. The address changes only afterwards (see go), so
+  // links and pictures written relative to the next page (the preview build) are made absolute
+  // first. Returns a function that updates the tab title and description, to run once the
+  // address has changed (the title belongs to the new history entry, not the one being left).
   function swap(html, url, hash) {
     var doc = new DOMParser().parseFromString(html, "text/html");
     var main = doc.getElementById("main");
     if (!main) throw new Error("no main");
+    doc.querySelectorAll("[href], [src]").forEach(function (el) {
+      ["href", "src"].forEach(function (k) {
+        var v = el.getAttribute(k);
+        if (v && !/^([a-z][a-z0-9+.-]*:|\/|#)/i.test(v)) el.setAttribute(k, new URL(v, url).href);
+      });
+    });
     // preview timing: ask the browser to report when the new window title is really on screen
     if (timing) { var mark = main.querySelector(".win__title span"); if (mark) mark.setAttribute("elementtiming", "swap"); }
     ["main", ".menubar", ".statusbar"].forEach(function (sel) {
       var from = doc.querySelector(sel), to = document.querySelector(sel);
       if (from && to) to.replaceWith(document.importNode(from, true));
     });
-    var title = doc.querySelector("title"), myTitle = document.querySelector("title");
-    if (title && myTitle) { myTitle.dataset.ja = title.dataset.ja || title.textContent; myTitle.dataset.en = title.dataset.en || ""; }
-    document.title = doc.title;
-    setTitle();
-    var desc = doc.querySelector('meta[name="description"]'), mine = document.querySelector('meta[name="description"]');
-    if (desc && mine) mine.setAttribute("content", desc.getAttribute("content"));
+    var title = doc.querySelector("title"), docTitle = doc.title;
+    var desc = doc.querySelector('meta[name="description"]');
     markToggles();
     initPage();
     var target = hash && document.getElementById(decodeURIComponent(hash.slice(1)));
@@ -182,22 +188,26 @@
     var m = document.getElementById("main");
     m.setAttribute("tabindex", "-1");
     m.focus({ preventScroll: true });   // screen readers start reading the new page
+    return function () {
+      var myTitle = document.querySelector("title");
+      if (title && myTitle) { myTitle.dataset.ja = title.dataset.ja || title.textContent; myTitle.dataset.en = title.dataset.en || ""; }
+      document.title = docTitle;
+      setTitle();
+      var mine = document.querySelector('meta[name="description"]');
+      if (desc && mine) mine.setAttribute("content", desc.getAttribute("content"));
+    };
+  }
+  // after the next frame has been drawn (a hidden tab draws none, so 0.2 s at most)
+  function afterFrame(fn) {
+    var done = false, run = function () { if (!done) { done = true; fn(); } };
+    setTimeout(run, 200);
+    requestAnimationFrame(function () { requestAnimationFrame(run); });
   }
   // Preview builds only (data-timing on <html>): after each page change, a line at the
   // bottom shows where the time went, in ms: finger down to click (touch), click to this
   // script (queue), fetch, the wait for a paint, the swap, the
   // first frame drawn after it, and the browser's long tasks (50 ms or more) in the next 3 s.
   var timing = root.hasAttribute("data-timing");
-  // preview test: open a page with ?history=replace to change pages without adding history
-  // entries (kept for this tab), to see whether a new entry is what delays the screen
-  var historyMode = "push";
-  if (timing) {
-    try {
-      var hm = new URLSearchParams(location.search).get("history");
-      if (hm) sessionStorage.setItem("tbk-history", hm);
-      historyMode = sessionStorage.getItem("tbk-history") === "replace" ? "replace" : "push";
-    } catch (e) {}
-  }
   var longTasks = [];
   var touchAt = 0, tap = null, shownAt = 0;   // when the finger went down, and how long until the click came
   if (timing) document.addEventListener("pointerdown", function (e) { touchAt = e.timeStamp; }, { passive: true, capture: true });
@@ -223,7 +233,7 @@
     var ms = function (a, b) { return Math.round(b - a); };
     var from = tap;
     tap = null;
-    var line = historyMode + " / " + (from ? "touch " + ms(from.down, from.click) + " / queue " + ms(from.click, t[0]) + " / " : "") + "fetch " + ms(t[0], t[1]) + " / wait " + ms(t[1], t[2]) + " / swap " + ms(t[2], t[3]);
+    var line = (from ? "touch " + ms(from.down, from.click) + " / queue " + ms(from.click, t[0]) + " / " : "") + "fetch " + ms(t[0], t[1]) + " / wait " + ms(t[1], t[2]) + " / swap " + ms(t[2], t[3]);
     box.textContent = line + " / paint …";
     requestAnimationFrame(function () {
       requestAnimationFrame(function () {
@@ -250,11 +260,18 @@
     fetchPage(url).then(function (html) { if (t) t.push(performance.now()); return html; }).then(afterPaint).then(function (html) {
       if (id !== current) return;
       if (t) t.push(performance.now());
-      if (push) history[historyMode === "replace" ? "replaceState" : "pushState"]({ tbk: 1 }, "", href);
-      swap(html, url, a.hash);
+      var head = swap(html, url, a.hash);
       shown = url;
       hideLoading();
       if (t) { t.push(performance.now()); showTiming(t); }
+      if (!push) { head(); return; }
+      // A new history entry makes Chrome on Android hold the screen for about 0.4 s (measured
+      // on Tobokegao's phone; not in incognito), so the entry is added once the new page is
+      // already showing. See docs/decisions/0014.
+      afterFrame(function () {
+        history.pushState({ tbk: 1 }, "", href);
+        head();
+      });
     }).catch(function () {
       if (id === current) location.href = href;   // let the browser show whatever it is
     });
@@ -271,7 +288,7 @@
   });
   var early = function (e) {
     var url = pageUrl(e.target.closest && e.target.closest("a[href]"));
-    if (url && url !== location.href.split("#")[0]) fetchPage(url);
+    if (url && url !== shown) fetchPage(url);
   };
   var hover = 0;   // the pointer has to rest on a link a moment, so sweeping over the log fetches nothing
   document.addEventListener("pointerdown", early, { passive: true });
@@ -284,7 +301,7 @@
   var ahead = function () {
     document.querySelectorAll(".menubar__nav a, .statusbar a").forEach(function (a) {
       var url = pageUrl(a);
-      if (url && url !== location.href.split("#")[0]) fetchPage(url);
+      if (url && url !== shown) fetchPage(url);
     });
   };
   window.addEventListener("load", function () {
