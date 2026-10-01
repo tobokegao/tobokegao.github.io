@@ -29,8 +29,11 @@
   }
   // Wait until the meter is on screen before the heavy work, so the browser has it in hand.
   function afterPaint(value) {
+    // a hidden tab draws no frames, so do not wait more than 0.1 s for one
     return new Promise(function (done) {
-      requestAnimationFrame(function () { setTimeout(function () { done(value); }, 0); });
+      var next = function () { clearTimeout(cap); setTimeout(function () { done(value); }, 0); };
+      var cap = setTimeout(next, 100);
+      requestAnimationFrame(next);
     });
   }
   // coming back with the Back button can restore this page as it was, meter and all
@@ -178,18 +181,56 @@
     m.setAttribute("tabindex", "-1");
     m.focus({ preventScroll: true });   // screen readers start reading the new page
   }
+  // Preview builds only (data-timing on <html>): after each page change, a line at the
+  // bottom shows where the time went, in ms: fetch, the wait for a paint, the swap, the
+  // first frame drawn after it, and the browser's long tasks (50 ms or more) in the next 3 s.
+  var timing = root.hasAttribute("data-timing");
+  var longTasks = [];
+  if (timing && window.PerformanceObserver) {
+    try {
+      new PerformanceObserver(function (list) {
+        list.getEntries().forEach(function (e) { longTasks.push([e.startTime, e.duration]); });
+      }).observe({ type: "longtask", buffered: true });
+    } catch (e) {}
+  }
+  function showTiming(t) {
+    var box = document.getElementById("timing");
+    if (!box) {
+      box = document.createElement("p");
+      box.id = "timing"; box.className = "timing";
+      document.body.appendChild(box);
+    }
+    var ms = function (a, b) { return Math.round(b - a); };
+    var line = "fetch " + ms(t[0], t[1]) + " / wait " + ms(t[1], t[2]) + " / swap " + ms(t[2], t[3]);
+    box.textContent = line + " / paint …";
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        var painted = performance.now();
+        line += " / paint " + ms(t[3], painted);
+        box.textContent = line + " / long …";
+        setTimeout(function () {
+          var n = 0, sum = 0;
+          longTasks.forEach(function (l) { if (l[0] >= t[0]) { n++; sum += l[1]; } });
+          box.textContent = line + " / long " + n + "x " + Math.round(sum) + " (total " + ms(t[0], painted) + ")";
+        }, 3000);
+      });
+    });
+  }
   function go(href, push) {
     var a = document.createElement("a"); a.href = href;
     var url = pageUrl(a);
     if (!url || !window.fetch || !window.DOMParser || !history.pushState) { location.href = href; return; }
     var id = ++current;
     showLoading();
-    fetchPage(url).then(afterPaint).then(function (html) {
+    var t = timing && [performance.now()];
+    fetchPage(url).then(function (html) { if (t) t.push(performance.now()); return html; }).then(afterPaint).then(function (html) {
       if (id !== current) return;
+      if (t) t.push(performance.now());
       if (push) history.pushState({ tbk: 1 }, "", href);
       swap(html, url, a.hash);
       shown = url;
       hideLoading();
+      if (t) { t.push(performance.now()); showTiming(t); }
     }).catch(function () {
       if (id === current) location.href = href;   // let the browser show whatever it is
     });
