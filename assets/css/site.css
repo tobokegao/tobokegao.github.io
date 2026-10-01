@@ -187,7 +187,8 @@ time { font-variant-numeric: tabular-nums; }
 .px--spin .spin__f:first-child { visibility: visible; }
 /* one turn in .6s over the 10 frames (the minifier glues "var(...) steps()" together, so
    the timing is written out in longhands) */
-a:hover .px--spin .spin__f, a:focus-visible .px--spin .spin__f {
+/* :active too: on a phone :hover arrives only after the tap, :active while the finger is down */
+a:hover .px--spin .spin__f, a:active .px--spin .spin__f, a:focus-visible .px--spin .spin__f {
   animation-name: spin-frame;
   animation-duration: .6s;
   animation-timing-function: steps(1, end);
@@ -195,7 +196,7 @@ a:hover .px--spin .spin__f, a:focus-visible .px--spin .spin__f {
   animation-delay: calc(var(--i) * .06s - .6s);
 }
 @keyframes spin-frame { 0% { visibility: visible; } 10%, 100% { visibility: hidden; } }
-@media (prefers-reduced-motion: reduce) { a:hover .px--spin .spin__f, a:focus-visible .px--spin .spin__f { animation: none; } }
+@media (prefers-reduced-motion: reduce) { a:hover .px--spin .spin__f, a:active .px--spin .spin__f, a:focus-visible .px--spin .spin__f { animation: none; } }
 .menubar__ico { color: var(--bar-key); margin-right: 4px; }
 .menubar__ico .px { display: inline-block; vertical-align: -4px; }
 .menubar a:hover .menubar__ico, .menubar a[aria-current="page"] .menubar__ico { color: inherit; }
