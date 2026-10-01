@@ -149,12 +149,13 @@
     if (!/(\/|\.html)$/.test(a.pathname)) return null;      // files: feeds, images, fonts
     return a.href.split("#")[0];
   }
+  var ready = {};        // url -> the page's HTML once it has arrived, to swap without waiting
   function fetchPage(url) {
     if (!cache[url]) {
       cache[url] = fetch(url, { credentials: "same-origin" }).then(function (r) {
         if (!r.ok || !/text\/html/.test(r.headers.get("content-type") || "")) throw new Error("not a page");
         return r.text();
-      });
+      }).then(function (html) { ready[url] = html; return html; });
       cache[url].catch(function () { delete cache[url]; });
     }
     return cache[url];
@@ -163,7 +164,7 @@
   // links and pictures written relative to the next page (the preview build) are made absolute
   // first. Returns a function that updates the tab title and description, to run once the
   // address has changed (the title belongs to the new history entry, not the one being left).
-  function swap(html, url, hash) {
+  function swap(html, url, hash, y) {
     var doc = new DOMParser().parseFromString(html, "text/html");
     var main = doc.getElementById("main");
     if (!main) throw new Error("no main");
@@ -173,8 +174,6 @@
         if (v && !/^([a-z][a-z0-9+.-]*:|\/|#)/i.test(v)) el.setAttribute(k, new URL(v, url).href);
       });
     });
-    // preview timing: ask the browser to report when the new window title is really on screen
-    if (timing) { var mark = main.querySelector(".win__title span"); if (mark) mark.setAttribute("elementtiming", "swap"); }
     ["main", ".menubar", ".statusbar"].forEach(function (sel) {
       var from = doc.querySelector(sel), to = document.querySelector(sel);
       if (from && to) to.replaceWith(document.importNode(from, true));
@@ -184,7 +183,7 @@
     markToggles();
     initPage();
     var target = hash && document.getElementById(decodeURIComponent(hash.slice(1)));
-    if (target) target.scrollIntoView(); else window.scrollTo(0, 0);
+    if (target) target.scrollIntoView(); else window.scrollTo(0, y || 0);
     var m = document.getElementById("main");
     m.setAttribute("tabindex", "-1");
     m.focus({ preventScroll: true });   // screen readers start reading the new page
@@ -203,75 +202,37 @@
     setTimeout(run, 200);
     requestAnimationFrame(function () { requestAnimationFrame(run); });
   }
-  // Preview builds only (data-timing on <html>): after each page change, a line at the
-  // bottom shows where the time went, in ms: finger down to click (touch), click to this
-  // script (queue), fetch, the wait for a paint, the swap, the
-  // first frame drawn after it, and the browser's long tasks (50 ms or more) in the next 3 s.
-  var timing = root.hasAttribute("data-timing");
-  var longTasks = [];
-  var touchAt = 0, tap = null, shownAt = 0;   // when the finger went down, and how long until the click came
-  if (timing) document.addEventListener("pointerdown", function (e) { touchAt = e.timeStamp; }, { passive: true, capture: true });
-  if (timing && window.PerformanceObserver) {
-    try {
-      new PerformanceObserver(function (list) {
-        list.getEntries().forEach(function (e) { longTasks.push([e.startTime, e.duration]); });
-      }).observe({ type: "longtask", buffered: true });
-    } catch (e) {}
-    try {
-      new PerformanceObserver(function (list) {
-        list.getEntries().forEach(function (e) { if (e.identifier === "swap") shownAt = e.renderTime || e.loadTime; });
-      }).observe({ type: "element", buffered: false });
-    } catch (e) {}
-  }
-  function showTiming(t) {
-    var box = document.getElementById("timing");
-    if (!box) {
-      box = document.createElement("p");
-      box.id = "timing"; box.className = "timing";
-      document.body.appendChild(box);
-    }
-    var ms = function (a, b) { return Math.round(b - a); };
-    var from = tap;
-    tap = null;
-    var line = (from ? "touch " + ms(from.down, from.click) + " / queue " + ms(from.click, t[0]) + " / " : "") + "fetch " + ms(t[0], t[1]) + " / wait " + ms(t[1], t[2]) + " / swap " + ms(t[2], t[3]);
-    box.textContent = line + " / paint …";
-    requestAnimationFrame(function () {
-      requestAnimationFrame(function () {
-        var painted = performance.now();
-        line += " / paint " + ms(t[3], painted);
-        box.textContent = line + " / long …";
-        setTimeout(function () {
-          var n = 0, sum = 0;
-          longTasks.forEach(function (l) { if (l[0] >= t[0]) { n++; sum += l[1]; } });
-          var start = from ? from.down : t[0];
-          var shown = shownAt > t[2] ? " / on screen " + ms(start, shownAt) : " / on screen ?";
-          box.textContent = line + " / long " + n + "x " + Math.round(sum) + " (total " + ms(start, painted) + shown + ")";
-        }, 3000);
-      });
-    });
-  }
+  // The scroll position is kept in each history entry and put back by hand on Back/Forward,
+  // since the page is only swapped in after the browser would have restored it.
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
   function go(href, push) {
     var a = document.createElement("a"); a.href = href;
     var url = pageUrl(a);
     if (!url || !window.fetch || !window.DOMParser || !history.pushState) { location.href = href; return; }
     var id = ++current;
-    showLoading();
-    var t = timing && [performance.now()];
-    fetchPage(url).then(function (html) { if (t) t.push(performance.now()); return html; }).then(afterPaint).then(function (html) {
-      if (id !== current) return;
-      if (t) t.push(performance.now());
-      var head = swap(html, url, a.hash);
+    var y = push ? 0 : (history.state && history.state.y) || 0;
+    if (push) history.replaceState({ tbk: 1, y: window.scrollY }, "");   // where this page was left
+    var show = function (html) {
+      var head = swap(html, url, a.hash, y);
       shown = url;
       hideLoading();
-      if (t) { t.push(performance.now()); showTiming(t); }
       if (!push) { head(); return; }
       // A new history entry makes Chrome on Android hold the screen for about 0.4 s (measured
       // on Tobokegao's phone; not in incognito), so the entry is added once the new page is
       // already showing. See docs/decisions/0014.
       afterFrame(function () {
-        history.pushState({ tbk: 1 }, "", href);
+        history.pushState({ tbk: 1, y: 0 }, "", href);
         head();
       });
+    };
+    // a page already here (seen before, or fetched ahead) goes on screen at once, with no meter
+    if (ready[url]) {
+      try { show(ready[url]); } catch (e) { location.href = href; }
+      return;
+    }
+    showLoading();
+    fetchPage(url).then(afterPaint).then(function (html) {
+      if (id === current) show(html);
     }).catch(function () {
       if (id === current) location.href = href;   // let the browser show whatever it is
     });
@@ -283,7 +244,6 @@
     if (!url) return;
     if (a.pathname === location.pathname && a.search === location.search && a.hash) return;  // #anchor on this page
     e.preventDefault();
-    if (timing) tap = touchAt && e.timeStamp - touchAt < 5000 ? { down: touchAt, click: e.timeStamp } : null;
     go(a.href, true);
   });
   var early = function (e) {
