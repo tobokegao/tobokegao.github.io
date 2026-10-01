@@ -163,6 +163,8 @@
     var doc = new DOMParser().parseFromString(html, "text/html");
     var main = doc.getElementById("main");
     if (!main) throw new Error("no main");
+    // preview timing: ask the browser to report when the new window title is really on screen
+    if (timing) { var mark = main.querySelector(".win__title span"); if (mark) mark.setAttribute("elementtiming", "swap"); }
     ["main", ".menubar", ".statusbar"].forEach(function (sel) {
       var from = doc.querySelector(sel), to = document.querySelector(sel);
       if (from && to) to.replaceWith(document.importNode(from, true));
@@ -187,13 +189,18 @@
   // first frame drawn after it, and the browser's long tasks (50 ms or more) in the next 3 s.
   var timing = root.hasAttribute("data-timing");
   var longTasks = [];
-  var touchAt = 0, tap = null;   // when the finger went down, and how long until the click came
+  var touchAt = 0, tap = null, shownAt = 0;   // when the finger went down, and how long until the click came
   if (timing) document.addEventListener("pointerdown", function (e) { touchAt = e.timeStamp; }, { passive: true, capture: true });
   if (timing && window.PerformanceObserver) {
     try {
       new PerformanceObserver(function (list) {
         list.getEntries().forEach(function (e) { longTasks.push([e.startTime, e.duration]); });
       }).observe({ type: "longtask", buffered: true });
+    } catch (e) {}
+    try {
+      new PerformanceObserver(function (list) {
+        list.getEntries().forEach(function (e) { if (e.identifier === "swap") shownAt = e.renderTime || e.loadTime; });
+      }).observe({ type: "element", buffered: false });
     } catch (e) {}
   }
   function showTiming(t) {
@@ -216,7 +223,9 @@
         setTimeout(function () {
           var n = 0, sum = 0;
           longTasks.forEach(function (l) { if (l[0] >= t[0]) { n++; sum += l[1]; } });
-          box.textContent = line + " / long " + n + "x " + Math.round(sum) + " (total " + ms(from ? from.down : t[0], painted) + ")";
+          var start = from ? from.down : t[0];
+          var shown = shownAt > t[2] ? " / on screen " + ms(start, shownAt) : " / on screen ?";
+          box.textContent = line + " / long " + n + "x " + Math.round(sum) + " (total " + ms(start, painted) + shown + ")";
         }, 3000);
       });
     });
