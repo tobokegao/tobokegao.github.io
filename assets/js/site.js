@@ -188,6 +188,16 @@
   // script (queue), fetch, the wait for a paint, the swap, the
   // first frame drawn after it, and the browser's long tasks (50 ms or more) in the next 3 s.
   var timing = root.hasAttribute("data-timing");
+  // preview test: open a page with ?history=replace to change pages without adding history
+  // entries (kept for this tab), to see whether a new entry is what delays the screen
+  var historyMode = "push";
+  if (timing) {
+    try {
+      var hm = new URLSearchParams(location.search).get("history");
+      if (hm) sessionStorage.setItem("tbk-history", hm);
+      historyMode = sessionStorage.getItem("tbk-history") === "replace" ? "replace" : "push";
+    } catch (e) {}
+  }
   var longTasks = [];
   var touchAt = 0, tap = null, shownAt = 0;   // when the finger went down, and how long until the click came
   if (timing) document.addEventListener("pointerdown", function (e) { touchAt = e.timeStamp; }, { passive: true, capture: true });
@@ -213,7 +223,7 @@
     var ms = function (a, b) { return Math.round(b - a); };
     var from = tap;
     tap = null;
-    var line = (from ? "touch " + ms(from.down, from.click) + " / queue " + ms(from.click, t[0]) + " / " : "") + "fetch " + ms(t[0], t[1]) + " / wait " + ms(t[1], t[2]) + " / swap " + ms(t[2], t[3]);
+    var line = historyMode + " / " + (from ? "touch " + ms(from.down, from.click) + " / queue " + ms(from.click, t[0]) + " / " : "") + "fetch " + ms(t[0], t[1]) + " / wait " + ms(t[1], t[2]) + " / swap " + ms(t[2], t[3]);
     box.textContent = line + " / paint …";
     requestAnimationFrame(function () {
       requestAnimationFrame(function () {
@@ -240,7 +250,7 @@
     fetchPage(url).then(function (html) { if (t) t.push(performance.now()); return html; }).then(afterPaint).then(function (html) {
       if (id !== current) return;
       if (t) t.push(performance.now());
-      if (push) history.pushState({ tbk: 1 }, "", href);
+      if (push) history[historyMode === "replace" ? "replaceState" : "pushState"]({ tbk: 1 }, "", href);
       swap(html, url, a.hash);
       shown = url;
       hideLoading();
