@@ -7,9 +7,11 @@
       <a class="hero__logo hero__logo--tbk" href="{{ "/about/" | relURL }}" title="{{ partial "tt.html" "profile" }}">{{ partial "logo-tobokegao.html" . }}</a>
       <a class="hero__logo hero__logo--label" href="{{ "/tbkgao/" | relURL }}" title="TBKgao">{{ partial "logo-tbkgao.html" . }}</a>
     </div>
+      {{- /* the big link icons, day and night, as symbols in the page (see icon-sprite.html) */}}
+      {{ partialCached "icon-sprite.html" "hd" "hd" | safeHTML }}
     <ul class="links" aria-label="{{ partial "tt.html" "links" }}">
       {{ range site.Params.links }}
-      <li><a class="btn btn--link" href="{{ .url }}" rel="noopener me" target="_blank" title="{{ .name }}" aria-label="{{ .name }}">{{ $sp := partialCached "icon-sprite.html" "hd" "hd" }}<span class="logo--day"><svg class="px px--hd" viewBox="0 0 30 30" width="60" height="60" aria-hidden="true" focusable="false"><use href="{{ $sp }}#hd-{{ .icon }}"/></svg></span><span class="logo--night"><svg class="px px--hd" viewBox="0 0 30 30" width="60" height="60" aria-hidden="true" focusable="false"><use href="{{ $sp }}#hdn-{{ .icon }}"/></svg></span></a></li>
+      <li><a class="btn btn--link" href="{{ .url }}" rel="noopener me" target="_blank" title="{{ .name }}" aria-label="{{ .name }}"><span class="logo--day"><svg class="px px--hd" viewBox="0 0 30 30" width="60" height="60" aria-hidden="true" focusable="false"><use href="#hd-{{ .icon }}"/></svg></span><span class="logo--night"><svg class="px px--hd" viewBox="0 0 30 30" width="60" height="60" aria-hidden="true" focusable="false"><use href="#hdn-{{ .icon }}"/></svg></span></a></li>
       {{ end }}
     </ul>
   </div>

@@ -1,3 +1,3 @@
-{{- /* One small pixel icon by name, drawn from the shared icon file (_partials/icon-sprite.html). */ -}}
-<svg class="px" viewBox="0 0 18 18" width="18" height="18" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><use href="{{ partialCached "icon-sprite.html" "small" "small" }}#i-{{ . }}"/></svg>
+{{- /* One small pixel icon by name, drawn from the sprite in the page (_partials/icon-sprite.html, baseof.html). */ -}}
+<svg class="px" viewBox="0 0 18 18" width="18" height="18" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><use href="#i-{{ . }}"/></svg>
 {{- /**/ -}}

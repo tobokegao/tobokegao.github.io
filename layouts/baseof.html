@@ -10,6 +10,8 @@
 {{ block "main" . }}{{ end }}
 </main>
 {{ partial "statusbar.html" . }}
+{{- /* the small platform icons as symbols, outside <main> so they stay through page changes */}}
+{{ partialCached "icon-sprite.html" "small" "small" | safeHTML }}
 {{- /* Shown by site.js when the next page takes a while to arrive. */}}
 <div class="loading" id="loading" role="status" hidden>
   <section class="win loading__win">
