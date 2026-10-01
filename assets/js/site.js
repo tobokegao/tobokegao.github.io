@@ -329,12 +329,23 @@
   };
   var hover = 0;   // the pointer has to rest on a link a moment, so sweeping over the log fetches nothing
   document.addEventListener("pointerdown", early, { passive: true });
-  // a link with a turning figure (About) turns from the moment the finger is down
+  // A link with a turning figure (About) turns from the moment the finger is down. The
+  // mark stays 1.5 s after the finger lifts: Android gives the link :hover only at the end
+  // of the tap and takes it away for a moment at the next tap, and a gap between the two
+  // selectors would stop the figure and start it again from the first frame.
+  var held = 0;
   document.addEventListener("pointerdown", function (e) {
     var a = e.target.closest && e.target.closest("a");
-    if (a && a.querySelector(".px--spin")) a.classList.add("is-held");
+    if (!a || !a.querySelector(".px--spin")) return;
+    clearTimeout(held);
+    a.classList.add("is-held");
   }, { passive: true, capture: true });
-  var release = function () { document.querySelectorAll("a.is-held").forEach(function (a) { a.classList.remove("is-held"); }); };
+  var release = function () {
+    clearTimeout(held);
+    held = setTimeout(function () {
+      document.querySelectorAll("a.is-held").forEach(function (a) { a.classList.remove("is-held"); });
+    }, 1500);
+  };
   document.addEventListener("pointerup", release, { passive: true });
   document.addEventListener("pointercancel", release, { passive: true });
   document.addEventListener("mouseover", function (e) { clearTimeout(hover); hover = setTimeout(function () { early(e); }, 80); }, { passive: true });
