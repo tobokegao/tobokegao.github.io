@@ -355,15 +355,18 @@
     go(location.href, false);
   });
   var ahead = function () {
-    // the menu pages, the top page (the brand), and this page itself, for Back
-    document.querySelectorAll(".menubar__nav a, .menubar__brand, .statusbar a").forEach(function (a) {
+    // the top page first (its logos are the biggest pictures), then the menu pages, and
+    // this page itself, for Back
+    document.querySelectorAll(".menubar__brand, .menubar__nav a, .statusbar a").forEach(function (a) {
       var url = pageUrl(a);
       if (url && url !== shown) fetchPage(url);
     });
     fetchPage(shown).catch(function () {});
   };
+  // soon after load: when idle, but within 0.8 s even on a busy phone, so the pages and
+  // their first pictures are here before the first tap
   window.addEventListener("load", function () {
-    (window.requestIdleCallback || function (fn) { setTimeout(fn, 1500); })(ahead);
+    if (window.requestIdleCallback) requestIdleCallback(ahead, { timeout: 800 }); else setTimeout(ahead, 800);
   });
 
   // Everything that belongs to the page in <main>; run again after each page change.
