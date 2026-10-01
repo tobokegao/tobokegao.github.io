@@ -67,3 +67,4 @@ AI が意味のある間違いをしたら、ここに 1 行足す。
 - 本文で `XI[sai](PS1)` のように角かっこのすぐ後に丸かっこが続くと、Markdown のリンクになってしまう。`XI\[sai\](PS1)` と書く。
 - ページを作らない記事（`build.render: never`、`external_url` 付き）の `.RelPermalink` は空になる。リンクには `external_url` を使う。
 - 本文に `@__name__` のような名前をそのまま書くと、`__` が太字の記号になって消える。バッククォートで囲む。
+- プレビューは `/tbk-preview/` の下にあり、リンクがそのページから見た相対の形になる。ページ移動（`site.js`）を試すときは、サイトのいちばん上ではなく、同じ下の階層で配って試す（`HUGO_RELATIVEURLS=true HUGO_PARAMS_PREVIEW=true` で `<作業用>/site/tbk-preview` にビルドし、`<作業用>/site` を配る）。

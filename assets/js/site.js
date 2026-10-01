@@ -150,6 +150,21 @@
     return a.href.split("#")[0];
   }
   var ready = {};        // url -> the page's HTML once it has arrived, to swap without waiting
+  // Links and pictures written relative to the page (the preview build) are made absolute:
+  // the menu bar and the tab bar stay on screen across page changes, and swapped-in parts
+  // arrive before the address changes.
+  function absolute(root, base) {
+    root.querySelectorAll("[href], [src]").forEach(function (el) {
+      ["href", "src"].forEach(function (k) {
+        var v = el.getAttribute(k);
+        if (v && !/^([a-z][a-z0-9+.-]*:|\/|#)/i.test(v)) el.setAttribute(k, new URL(v, base).href);
+      });
+    });
+  }
+  [".menubar", ".statusbar"].forEach(function (sel) {
+    var bar = document.querySelector(sel);
+    if (bar) absolute(bar, location.href);
+  });
   // The first few pictures of a fetched page are requested right away, so they are in the
   // browser's cache by the time the page is shown. The logo of the other scheme is skipped.
   var PICTURES = 6;
@@ -182,12 +197,7 @@
     var doc = new DOMParser().parseFromString(html, "text/html");
     var main = doc.getElementById("main");
     if (!main) throw new Error("no main");
-    doc.querySelectorAll("[href], [src]").forEach(function (el) {
-      ["href", "src"].forEach(function (k) {
-        var v = el.getAttribute(k);
-        if (v && !/^([a-z][a-z0-9+.-]*:|\/|#)/i.test(v)) el.setAttribute(k, new URL(v, url).href);
-      });
-    });
+    absolute(doc, url);
     // the first pictures load and decode with the page instead of popping in after it
     var other = root.dataset.scheme === "night" ? "logo--day" : "logo--night";
     var n = 0;
