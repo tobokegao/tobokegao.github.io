@@ -34,10 +34,15 @@ jobs:
           python-version: "3.12"
 
       - name: Install Python packages
-        run: pip install anthropic==1.9.0
+        run: pip install anthropic==1.9.0 pillow==12.3.0
 
       - name: Fetch releases and videos
         run: python scripts/fetch_feeds.py
+
+      # the cards' covers and thumbnails as the site's own WebP files (data/covers.json
+      # says which file stands in for which remote picture)
+      - name: Copy new covers and thumbnails to the site
+        run: python scripts/cover_cache.py
 
       - name: Collect news candidates
         run: python scripts/collect_news.py
@@ -50,7 +55,9 @@ jobs:
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: data
-          path: data
+          path: |
+            data
+            static/img/covers
           retention-days: 1
 
   propose:
@@ -67,17 +74,20 @@ jobs:
       - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
           name: data
-          path: data
+          path: .
 
       - name: Open a pull request for review
         uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7.0.11
         with:
           branch: data/update
           delete-branch: true
-          add-paths: data
+          add-paths: |
+            data
+            static/img/covers
           commit-message: "data: update releases and news"
           title: "Releases and news update"
           body: |
-            New releases and videos (`fetch_feeds.py`) and news chosen by Claude
-            (`collect_news.py` + `classify_news.py`). Check `data/releases.json` and
-            `data/news.json` in the Files tab. Merge to publish, close to discard.
+            New releases and videos (`fetch_feeds.py`), their covers as the site's own
+            WebP files (`cover_cache.py`) and news chosen by Claude (`collect_news.py` +
+            `classify_news.py`). Check `data/releases.json` and `data/news.json` in the
+            Files tab. Merge to publish, close to discard.
