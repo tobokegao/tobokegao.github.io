@@ -165,19 +165,40 @@
     var bar = document.querySelector(sel);
     if (bar) absolute(bar, location.href);
   });
-  // The first few pictures of a fetched page are requested right away, so they are in the
-  // browser's cache by the time the page is shown. The logo of the other scheme is skipped.
-  var PICTURES = 6;
-  function warmPictures(html, url) {
+  // The first few pictures of a fetched page are loaded and decoded right away, and kept.
+  // On a page change the swap waits a moment for them (PICTURE_WAIT), then puts these very
+  // picture elements into the new page, so they show with it instead of popping in after.
+  // The logo of the other scheme is skipped.
+  var PICTURES = 6, PICTURE_WAIT = 300;
+  var pictures = {};    // absolute src -> a loaded, decoded <img>
+  function firstPictures(html, url) {
     var other = root.dataset.scheme === "night" ? "logo--day" : "logo--night";
-    var re = /<img\b[^>]*>/g, m, n = 0;
-    while ((m = re.exec(html)) && n < PICTURES) {
+    var re = /<img\b[^>]*>/g, m, list = [];
+    while ((m = re.exec(html)) && list.length < PICTURES) {
       if (m[0].indexOf(other) >= 0) continue;
       var src = /\ssrc=(?:"([^"]*)"|([^\s>]+))/.exec(m[0]);
-      if (!src) continue;
-      new Image().src = new URL(src[1] || src[2], url).href;
-      n++;
+      if (src) list.push(new URL(src[1] || src[2], url).href);
     }
+    return list;
+  }
+  function warmPictures(html, url) {
+    return firstPictures(html, url).map(function (src) {
+      var img = pictures[src];
+      if (!img) {
+        img = pictures[src] = new Image();
+        img.src = src;
+        img.decoded = img.decode().catch(function () {});
+      }
+      return img.decoded;
+    });
+  }
+  // resolves when the first pictures are ready, or after PICTURE_WAIT ms at most
+  function picturesReady(html, url) {
+    var waits = warmPictures(html, url);
+    return new Promise(function (done) {
+      setTimeout(done, PICTURE_WAIT);
+      Promise.all(waits).then(done);
+    });
   }
   function fetchPage(url) {
     if (!cache[url]) {
@@ -198,14 +219,20 @@
     var main = doc.getElementById("main");
     if (!main) throw new Error("no main");
     absolute(doc, url);
-    // the first pictures load and decode with the page instead of popping in after it
-    var other = root.dataset.scheme === "night" ? "logo--day" : "logo--night";
-    var n = 0;
-    main.querySelectorAll("img").forEach(function (img) {
-      if (n >= PICTURES || img.classList.contains(other) || !img.getAttribute("src")) return;
-      img.loading = "eager"; img.decoding = "sync"; n++;
+    var fresh = document.importNode(main, true);
+    // the first pictures: the decoded elements kept by warmPictures take the new ones' place
+    var used = [];
+    fresh.querySelectorAll("img[src]").forEach(function (img) {
+      var kept = pictures[img.getAttribute("src")];
+      if (used.indexOf(kept) >= 0) return;   // the same picture twice: the second stays as it is
+      // one already on screen may come along only from the page being left (it goes away now)
+      if (!kept || !kept.complete || !kept.naturalWidth) return;
+      if (kept.isConnected && !document.getElementById("main").contains(kept)) return;
+      Array.prototype.forEach.call(img.attributes, function (at) { kept.setAttribute(at.name, at.value); });
+      img.replaceWith(kept);
+      used.push(kept);
     });
-    document.getElementById("main").replaceWith(document.importNode(main, true));
+    document.getElementById("main").replaceWith(fresh);
     // The menu bar and the tab bar stay the same elements (only the parts that differ change),
     // so the link just tapped keeps its hover state: the About figure turns while it is held.
     [".menubar", ".statusbar"].forEach(function (sel) {
@@ -271,11 +298,17 @@
     };
     // a page already here (seen before, or fetched ahead) goes on screen at once, with no meter
     if (ready[url]) {
-      try { show(ready[url]); } catch (e) { location.href = href; }
+      var html = ready[url];
+      picturesReady(html, url).then(function () {
+        if (id !== current) return;
+        try { show(html); } catch (e) { location.href = href; }
+      });
       return;
     }
     showLoading();
     fetchPage(url).then(afterPaint).then(function (html) {
+      return picturesReady(html, url).then(function () { return html; });
+    }).then(function (html) {
       if (id === current) show(html);
     }).catch(function () {
       if (id === current) location.href = href;   // let the browser show whatever it is
