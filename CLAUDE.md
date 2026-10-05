@@ -16,7 +16,7 @@ DOSのテキスト画面のような見た目で、日本語と英語を一つ�
 
 - `fetch_feeds.py`: リリースと動画の一覧を取ってくる
 - `collect_news.py` → `classify_news.py`: ニュースの候補を集め、ログに載せるものを選ぶ
-- `import_x_archive.py` → `review_x.py` → `x_to_timeline.py`: Xのアーカイブから出演や告知を拾ってログに足す（`work/`はGitに入れない）
+- `import_x_archive.py` → `review_x.py` → `x_to_timeline.py`: Xのアーカイブから出演や告知を拾ってログに足す（`work/`はGitに入れない）。アーカイブより新しいポストは、URLを`work/x/inbox.txt`に書いて`x_urls.py`で同じ候補に足す
 - `row_pics.py`: 絵のないログの行に、リンク先（Bandcamp、Apple Music、Spotifyなど）のジャケットを取ってくる
 - `cover_cache.py`: リリースと動画のカードに出すジャケットとサムネイルを、表示する大きさのWebPにしてサイトに置く（`static/img/covers/`、対応表は`data/covers.json`）。`fetch_feeds.py`のあとに動かす
 - `pixel_icons.py` / `hd_icons.py` / `banner.py` / `night_logos.py`: ドット絵のアイコン、ANSIのタイトル、夜のロゴを作る

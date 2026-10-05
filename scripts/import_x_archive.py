@@ -358,6 +358,10 @@ def main() -> int:
             for k in ("status", "flyers", "note"):
                 if k in old[c["id"]]:
                     c[k] = old[c["id"]][k]
+    # posts added by URL (scripts/x_urls.py) stay until a newer archive has them
+    ids = {c["id"] for c in picked}
+    picked += [c for c in old.values() if c.get("source") == "x-url" and c["id"] not in ids]
+    picked.sort(key=lambda c: c["date"])
     OUT_PATH.write_text(json.dumps(picked, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print("wrote", OUT_PATH.relative_to(ROOT))
 
