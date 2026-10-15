@@ -73,4 +73,5 @@ AIが意味のある間違いをしたら、ここに1行足す。
 - 前付けに`draft = true`と書くと、Hugoはそのページを作らない。ノートの「まだ確かめていない」印は`unverified = true`。
 - ページを作らない記事（`build.render: never`、`external_url`付き）の`.RelPermalink`は空になる。リンクには`external_url`を使う。
 - 本文に`@__name__`のような名前をそのまま書くと、`__`が太字の記号になって消える。バッククォートで囲む。
+- `relativeURLs`は`src`や`href`のパスしか書き換えない。`data-*`属性に入れた`/`始まりのパスはプレビューで404になるので、`site.js`の`sitePath`を通す。
 - プレビューは`/tbk-preview/`の下にあり、リンクがそのページから見た相対の形になる。ページ移動（`site.js`）を試すときは、サイトのいちばん上ではなく、同じ下の階層で配って試す（`HUGO_RELATIVEURLS=true HUGO_PARAMS_PREVIEW=true`で`<作業用>/site/tbk-preview`にビルドし、`<作業用>/site`を配る）。

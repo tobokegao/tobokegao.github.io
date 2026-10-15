@@ -1,6 +1,12 @@
 (function () {
   "use strict";
   var root = document.documentElement;
+  // The site's top, from where this script sits (<top>/js/). Paths kept in data-*
+  // attributes start at "/", and Hugo's relativeURLs (the preview, one folder down)
+  // does not rewrite those, so they are put under this top.
+  var me = document.currentScript;
+  var siteTop = me && me.src ? me.src.replace(/js\/[^\/]*$/, "") : "/";
+  var sitePath = function (p) { return p && p.charAt(0) === "/" ? siteTop + p.slice(1) : p; };
 
   // Always open a page at the top (some viewers carry the previous page's scroll
   // position over); links to an #anchor still land on it.
@@ -381,10 +387,12 @@
   function initNotes() {
     var host = document.querySelector("[data-notes-js]");
     if (!host) return;
+    var box = document.querySelector("[data-pagefind]");
+    if (box) box.dataset.pagefind = sitePath(box.dataset.pagefind);
     if (!notesJs) {
       notesJs = new Promise(function (done, fail) {
         var s = document.createElement("script");
-        s.src = host.dataset.notesJs;
+        s.src = sitePath(host.dataset.notesJs);
         s.integrity = host.dataset.notesSri;
         s.onload = done;
         s.onerror = function () { notesJs = null; fail(); };
