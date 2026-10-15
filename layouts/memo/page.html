@@ -85,6 +85,7 @@
     {{ if gt $t.nr (len .) }}<p class="notes__more">{{ partial "t.html" "moreBySearch" }}</p>{{ end }}
     {{ end }}
     {{ with $t.credit }}<p class="notes__credit">{{ partial "t.html" "genreCredit" }}</p>{{ end }}
+    {{ with $t.dbpedia }}<p class="notes__credit">{{ partial "t.html" "dbpediaCredit" }} <a href="https://dbpedia.org/{{ if ne . "*" }}page/{{ . }}{{ end }}">DBpedia</a> (Wikipedia, CC BY-SA)</p>{{ end }}
     {{ with $t.draft }}<p class="notes__credit notes__draft">{{ partial "t.html" "draftNote" }}</p>{{ end }}
 
   {{ else if eq $view "month" }}
@@ -121,6 +122,7 @@
     <div class="tl" id="tl" data-notes-js="{{ $js.RelPermalink }}" data-notes-sri="{{ $js.Data.Integrity }}"></div>
     <script type="application/json" id="tl-data">{{ $nodes | jsonify | safeJS }}</script>
     <p class="notes__credit">{{ partial "t.html" "genreCredit" }}</p>
+    <p class="notes__credit">{{ partial "t.html" "dbpediaCredit" }} <a href="https://dbpedia.org/">DBpedia</a> (Wikipedia, CC BY-SA)</p>
   {{ end }}
 </article>
 {{ end }}

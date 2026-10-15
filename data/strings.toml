@@ -306,6 +306,10 @@ en = "Reply to"
 ja = "画像あり"
 en = "With pictures"
 
+[dbpediaCredit]
+ja = "つながりの一部:"
+en = "Some of the links:"
+
 [genreCredit]
 ja = "ジャンルとつながりの初めのデータ: ざっと"
 en = "First genre data and links: zatto"
@@ -319,7 +323,7 @@ ja = "年のあるページ"
 en = "Pages with a year"
 
 [scale]
-ja = "横の縮尺"
+ja = "時代の幅"
 en = "Zoom"
 
 [draftNote]

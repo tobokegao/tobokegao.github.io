@@ -3,6 +3,11 @@
 (function () {
   "use strict";
   var root = document.documentElement;
+  // Links in the timeline data start at "/" (relativeURLs leaves JSON alone), so they are
+  // put under the site's top, found from where this script sits (<top>/js/), as in site.js.
+  var me = document.currentScript;
+  var siteTop = me && me.src ? me.src.replace(/js\/[^\/]*$/, "") : "/";
+  var sitePath = function (p) { return p && p.charAt(0) === "/" ? siteTop + p.slice(1) : p; };
   var en = function () { return root.dataset.lang === "en"; };
   var esc = function (s) {
     return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; });
@@ -68,7 +73,7 @@
     var scaleInput = document.getElementById("tl-scale");
     var buttons = document.querySelectorAll("[data-tl]");
     var mode = "born";
-    var PAD = 24, GAP = 24, FLAG = 0, GAP_YEARS = 40, BREAK = 48, TURN = 20;
+    var PAD = 24, GAP = 24, FLAG = 0, GAP_YEARS = 40, BREAK = 48, TURN = 20, DENSE = 3;
 
     var draw = function () {
       var scale = parseInt(scaleInput.value, 10);
@@ -84,16 +89,27 @@
         if (i && y - years[i - 1] > GAP_YEARS) { segs.push([from, years[i - 1]]); from = y; }
       });
       segs.push([from, years[years.length - 1]]);
+      // Within a stretch, each decade is as wide as its pages need: scale px a year, plus
+      // DENSE x scale px for each page in it, so busy decades get room and quiet ones stay short.
+      var perDecade = {};
+      nodes.forEach(function (n) { var d = Math.floor(n.y / 10) * 10; perDecade[d] = (perDecade[d] || 0) + 1; });
       var left = PAD;
       segs = segs.map(function (g) {
-        var a = Math.floor(g[0] / 10) * 10 - 10, b = Math.ceil(g[1] / 10) * 10 + 10;
-        var seg = { a: a, b: b, x: left };
-        left += (b - a) * scale + BREAK;
+        var a = Math.floor(g[0] / 10) * 10 - 10, b = Math.floor(g[1] / 10) * 10 + 20;
+        var seg = { a: a, b: b, x: left, decs: [] };
+        for (var d = a; d < b; d += 10) {
+          var w = scale * 10 + DENSE * scale * (perDecade[d] || 0);
+          seg.decs.push({ d: d, x: left, w: w });
+          left += w;
+        }
+        left += BREAK;
         return seg;
       });
       var X = function (y) {
         var g = segs.filter(function (s) { return y >= s.a; }).pop() || segs[0];
-        return g.x + (Math.min(y, g.b) - g.a) * scale;
+        if (y >= g.b) { var z = g.decs[g.decs.length - 1]; return z.x + z.w; }
+        var dec = g.decs[Math.max(0, Math.floor((y - g.a) / 10))];
+        return Math.round(dec.x + (y - dec.d) * dec.w / 10);
       };
       var maxX = left - BREAK;
 
@@ -104,7 +120,7 @@
       nodes.forEach(function (n) {
         var a = document.createElement("a");
         a.className = "tl__node" + (n.b ? "" : " tl__node--posts") + (n.c ? " tl__node--major tl__grp--" + n.c : "") + (n.d ? " tl__node--draft" : "");
-        a.href = n.u;
+        a.href = sitePath(n.u);
         a.innerHTML = '<span class="tl__name">' + esc(n.t) + '</span><span class="tl__year">' +
           // a genre's year is when it was born; a topic without one shows its first post's year.
           // The year and the count take a line each: narrow nodes need fewer rows.
@@ -182,15 +198,19 @@
         it.el.style.top = it.y + "px";
       });
 
-      var step = [1, 5, 10, 25, 50, 100, 250].find(function (s) { return s * scale >= 64; }) || 250;
       var svg = '<svg class="tl__svg" width="' + W + '" height="' + H + '" aria-hidden="true"><defs>' +
         '<marker id="tl-mu" markerUnits="userSpaceOnUse" viewBox="0 0 8 14" refX="8" refY="7" markerWidth="8" markerHeight="14" orient="auto"><path class="tl__arrow--up" d="M0 0h2v2h2v2h2v2h2v2h-2v2h-2v2h-2v2h-2z"/></marker>' +
         '<marker id="tl-ms" markerUnits="userSpaceOnUse" viewBox="0 0 8 14" refX="8" refY="7" markerWidth="8" markerHeight="14" orient="auto"><path class="tl__arrow--src" d="M0 0h2v2h2v2h2v2h2v2h-2v2h-2v2h-2v2h-2z"/></marker></defs>';
+      // a line at each decade, and at its middle when the decade is wide enough to label it
+      var tick = function (y) {
+        svg += '<line class="tl__grid" x1="' + X(y) + '" x2="' + X(y) + '" y1="' + row + '" y2="' + H + '"/>' +
+          '<text class="tl__label" x="' + (X(y) + 4) + '" y="' + (row - 6) + '">' + y + "</text>";
+      };
       segs.forEach(function (g, i) {
-        for (var y = Math.ceil(g.a / step) * step; y <= g.b; y += step) {
-          svg += '<line class="tl__grid" x1="' + X(y) + '" x2="' + X(y) + '" y1="' + row + '" y2="' + H + '"/>' +
-            '<text class="tl__label" x="' + (X(y) + 4) + '" y="' + (row - 6) + '">' + y + "</text>";
-        }
+        g.decs.forEach(function (dec) {
+          tick(dec.d);
+          if (dec.w >= 128) tick(dec.d + 5);
+        });
         if (i) svg += '<text class="tl__label tl__break" x="' + (g.x - BREAK + 12) + '" y="' + (row - 6) + '">≈</text>';
       });
       flags.forEach(function (f, i) {

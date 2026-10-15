@@ -1,5 +1,6 @@
 +++
 title = "Breakbeat"
+dbpedia = "Breakbeat"
 born = 1990
 tags = ["breaks"]
 up = ["Club Music"]

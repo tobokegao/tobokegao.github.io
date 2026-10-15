@@ -220,6 +220,29 @@ def main() -> int:
             t["major"] = int(fm.get("color", 1))
         if fm.get("credit"):
             t["credit"] = fm["credit"]
+    # Typed relations from DBpedia (scripts/dbpedia_links.py) come first: a pair of genres
+    # that DBpedia links is taken from there, and the notes' own relation for that pair is
+    # left out (decision 0024). Pairs DBpedia does not link keep the notes' relations.
+    dbp = json.loads((OUT / "dbpedia.json").read_text(encoding="utf-8")) if (OUT / "dbpedia.json").exists() else {}
+    dbp_pairs = set()
+    dbp_rel = []
+    dbp_res = dbp.get("resources", {})
+    for child, rel in dbp.get("links", {}).items():
+        for r in ("up", "src"):
+            for parent in rel[r]:
+                if norm(child) in alias and norm(parent) in alias:
+                    a, b = alias[norm(child)], alias[norm(parent)]
+                    dbp_pairs.add(frozenset((a, b)))
+                    dbp_rel.append((a, r, b))
+                    # the page credits DBpedia: its own resource, or the site when it has none
+                    for k, title in ((a, child), (b, parent)):
+                        topics[k]["dbpedia"] = dbp_res.get(title) or topics[k].get("dbpedia") or "*"
+    for a, r, b in dbp_rel:
+        if b not in topics[a]["rel"][r]:
+            topics[a]["rel"][r].append(b)
+        if a not in topics[b]["rel"][REL[r]]:
+            topics[b]["rel"][REL[r]].append(a)
+
     # links and typed relations may name pages that have no note yet: they become topics
     for n in notes:
         key = alias[norm(n["fm"]["title"])]
@@ -232,7 +255,7 @@ def main() -> int:
         for r, other in REL.items():
             for name in n["fm"].get(r, []):
                 k = add(name)
-                if k == key:
+                if k == key or frozenset((key, k)) in dbp_pairs:
                     continue
                 if k not in topics[key]["rel"][r]:
                     topics[key]["rel"][r].append(k)
@@ -299,7 +322,7 @@ def main() -> int:
              "years": dict(sorted(t["years"].items()))}
         if "names" in t:
             o["names"] = {w: topics[x]["url"] for w, x in t["names"].items() if x in topics}
-        for f in ("born", "first", "major", "majors", "credit", "draft"):
+        for f in ("born", "first", "major", "majors", "credit", "draft", "dbpedia"):
             if f in t:
                 o[f] = t[f]
         out_topics[k] = o

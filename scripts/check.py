@@ -77,6 +77,8 @@ REMINDERS = [
     (r"^(fonts-src/|scripts/subset_fonts\.py$)", "フォントが変わった。scripts/subset_fonts.py を回し、字がにじまないか拡大して確かめる"),
     (r"^scripts/(hd_icons|night_logos)\.py$", "夜の光の段階色を変えたなら、hd_icons.py と night_logos.py の両方を回す"),
     (r"^(content/memo/|scripts/x_notes\.py$)", "ノートが変わった。scripts/x_notes.py を回して、リンクとポストの一覧を作り直す"),
+    (r"^(content/memo/|scripts/dbpedia_links\.py$)",
+     "ジャンルのノートを足したり dbpedia = を書いたりしたなら、scripts/dbpedia_links.py を回してから x_notes.py を回す"),
 ]
 
 
