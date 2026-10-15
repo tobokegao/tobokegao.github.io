@@ -308,11 +308,11 @@ en = "With pictures"
 
 [dbpediaCredit]
 ja = "つながりの一部:"
-en = "Some of the links:"
+en = "Some of the connections:"
 
 [genreCredit]
 ja = "ジャンルとつながりの初めのデータ: ざっと"
-en = "First genre data and links: zatto"
+en = "First genre data and connections: zatto"
 
 [withPosts]
 ja = "ポストのある話題も"
