@@ -109,7 +109,7 @@
           // a genre's year is when it was born; a topic without one shows its first post's year.
           // The year and the count take a line each: narrow nodes need fewer rows.
           '<span data-l="ja">' + n.y + (n.b ? "年生まれ" : "年から") + (n.n ? "<br>ポスト" + n.n + "件" : "") + "</span>" +
-          '<span data-l="en">' + (n.b ? "born " : "since ") + n.y + (n.n ? "<br>" + n.n + (n.n === 1 ? " post" : " posts") : "") + "</span></span>";
+          '<span data-l="en">' + (n.b ? "born in " : "since ") + n.y + (n.n ? "<br>" + n.n + (n.n === 1 ? " post" : " posts") : "") + "</span></span>";
         canvas.appendChild(a);
         byKey[n.k] = { n: n, el: a };
       });
