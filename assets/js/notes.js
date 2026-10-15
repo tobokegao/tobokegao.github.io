@@ -54,7 +54,7 @@
         }).join("");
       }).catch(function () {
         // no index: `hugo server` alone does not run Pagefind
-        count.textContent = en() ? "search is not built here" : "ここでは検索を使えません";
+        count.textContent = en() ? "Search is not available here" : "ここでは検索を使えません";
       });
     };
     input.addEventListener("input", run);
