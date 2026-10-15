@@ -35,3 +35,5 @@
 - [0018 決まりの点検をスクリプトにして、コミットとpushの前に回す](0018-check-gate.md)
 - [0019 日本語の文では、英字・数字の前後に半角スペースを入れない](0019-no-space-around-latin.md)
 - [0020 アーカイブより新しいポストは、URLから候補に足す](0020-x-posts-by-url.md)
+- [0021 Xのアーカイブから、話題でつながるノートを作る](0021-notes-from-x-archive.md)
+- [0022 /memo/は別のリポジトリ（tobokegao/memo）で公開する](0022-memo-in-its-own-repository.md)

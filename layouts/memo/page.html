@@ -1,0 +1,126 @@
+{{ define "main" }}
+{{- /* NOTES pages (scripts/x_notes.py, content/memo/_content.gotmpl): a topic (a note written
+   by hand, or a hashtag), a month of posts, a month of retweets, or the timeline. */ -}}
+{{ $g := hugo.Data.memo.graph }}
+{{ $view := .Params.view | default "topic" }}
+{{ $key := .Params.key }}
+{{- /* pages from _content.gotmpl carry their key; a note (content/memo/*.md) is found by its file name */}}
+{{ if and (eq $view "topic") (not $key) }}{{ $key = index $g.files .File.ContentBaseName }}{{ end }}
+{{ $t := cond (ne $key nil) (index $g.topics (string $key)) dict }}
+{{ $file := `C:\TBK\MEMO\` }}
+{{ if eq $view "topic" }}{{ $file = printf `C:\TBK\MEMO\%s.TXT` (upper $t.slug) }}
+{{ else if eq $view "month" }}{{ $file = printf `C:\TBK\MEMO\%s.LOG` .Params.month }}
+{{ else if eq $view "rt" }}{{ $file = printf `C:\TBK\MEMO\RT\%s.LOG` .Params.month }}
+{{ else if eq $view "timeline" }}{{ $file = `C:\TBK\MEMO\TIMELINE.SVG` }}{{ end }}
+<article class="win {{ if ne $view "timeline" }}win--doc {{ end }}notes" aria-labelledby="page-t"{{ if ne $view "timeline" }} data-pagefind-body{{ end }}>
+  {{ partial "win.html" (dict "file" $file "id" "page-t-file") }}
+  <p class="notes__path"><a href="{{ "/memo/" | relURL }}">{{ partial "t.html" "memo" }}</a> /</p>
+  <h1 class="doc__title" id="page-t">{{ partial "bi.html" (dict "ja" .Title "en" .Params.title_en) }}</h1>
+
+  {{ if eq $view "topic" }}
+    {{ $all := slice }}{{ range $t.rel }}{{ $all = $all | append . }}{{ end }}
+    <p class="notes__meta">
+      {{- if isset $t "born" }}<span>{{ $t.born }}</span>{{ end -}}
+      <span>{{ partial "t.html" "xPosts" }} {{ $t.n }}</span>
+      {{- if $t.nr }}<span>{{ partial "t.html" "retweets" }} {{ $t.nr }}</span>{{ end -}}
+    </p>
+    {{ $rels := slice (dict "k" "up" "s" "relUp") (dict "k" "down" "s" "relDown") (dict "k" "src" "s" "relSrc") (dict "k" "inf" "s" "relInf") }}
+    {{ if or $all $t.majors }}
+    <dl class="notes__rel">
+      {{ range $r := $rels }}{{ with index $t.rel $r.k }}
+      <div class="notes__rel-row notes__rel-row--{{ $r.k }}"><dt>{{ partial "t.html" $r.s }}</dt><dd>{{ range . }}{{ with index $g.topics . }}<a href="{{ .url | relURL }}">[{{ .title }}]</a> {{ end }}{{ end }}</dd></div>
+      {{ end }}{{ end }}
+      {{ with $t.majors }}
+      <div class="notes__rel-row"><dt>{{ partial "t.html" "majors" }}</dt><dd>{{ range . }}{{ with index $g.topics . }}<a class="notes__grp notes__grp--{{ .major }}" href="{{ .url | relURL }}">[{{ .title }}]</a> {{ end }}{{ end }}</dd></div>
+      {{ end }}
+    </dl>
+    {{ end }}
+
+    {{ with .Content }}
+      {{ $html := . }}
+      {{ range $w, $u := $t.names }}{{ $html = replace $html (printf "[%s]" (htmlEscape $w)) (printf `<a href="%s">[%s]</a>` (relURL $u) (htmlEscape $w)) }}{{ end }}
+      <div class="prose notes__body">{{ $html | safeHTML }}</div>
+    {{ end }}
+
+    {{ with $t.years }}
+    {{ $max := 1 }}{{ range . }}{{ if gt . $max }}{{ $max = . }}{{ end }}{{ end }}
+    <h2 class="sub">{{ partial "t.html" "byYear" }}</h2>
+    <ol class="notes__years">
+      {{ range $y, $n := . }}<li><span>{{ $y }}</span><span class="notes__bar" aria-hidden="true">{{ strings.Repeat (int (math.Ceil (div (mul $n 20.0) $max))) "█" }}</span><span>{{ $n }}</span></li>{{ end }}
+    </ol>
+    {{ end }}
+
+    {{ $hops := slice }}
+    {{ range $L := $t.out | append ($t.rel.up | default slice) }}
+      {{ with index $g.topics $L }}{{ $via := . }}
+        {{ $others := slice }}
+        {{ range (cond (in $t.out $L) $via.back $via.rel.down) }}{{ if ne . $key }}{{ $others = $others | append . }}{{ end }}{{ end }}
+        {{ if $others }}{{ $hops = $hops | append (dict "via" $via "others" $others) }}{{ end }}
+      {{ end }}
+    {{ end }}
+    {{ with $t.back }}
+    <h2 class="sub">{{ partial "t.html" "backlinks" }}</h2>
+    <p class="notes__links">{{ range . }}{{ with index $g.topics . }}<a href="{{ .url | relURL }}">[{{ .title }}]</a> {{ end }}{{ end }}</p>
+    {{ end }}
+    {{ with $hops }}
+    <h2 class="sub">{{ partial "t.html" "twoHop" }}</h2>
+    <dl class="notes__hops">
+      {{ range . }}<div><dt><a href="{{ .via.url | relURL }}">[{{ .via.title }}]</a></dt><dd>{{ range .others }}{{ with index $g.topics . }}<a href="{{ .url | relURL }}">[{{ .title }}]</a> {{ end }}{{ end }}</dd></div>{{ end }}
+    </dl>
+    {{ end }}
+
+    {{ with $t.posts }}
+    <h2 class="sub">{{ partial "t.html" "xPosts" }}</h2>
+    <div class="notes__posts">
+      {{ range . }}{{ $m := index . 1 }}{{ with index (index hugo.Data.memo.posts $m) (index . 0) }}{{ partial "notes-post.html" (dict "p" . "g" $g) }}{{ end }}{{ end }}
+    </div>
+    {{ if gt $t.n (len .) }}<p class="notes__more">{{ partial "t.html" "moreBySearch" }}</p>{{ end }}
+    {{ end }}
+    {{- /* retweets: only who and when here; their text is on the month's RT page, which search engines leave out */}}
+    {{ with $t.rts }}
+    <h2 class="sub">{{ partial "t.html" "retweets" }}</h2>
+    <ul class="notes__rts">
+      {{ range . }}{{ $m := index . 1 }}{{ with index (index hugo.Data.memo.rt $m) (index . 0) }}<li><a href="{{ printf "/memo/rt/%s/#p%s" $m .id | relURL }}"><time datetime="{{ replace .d " " "T" }}">{{ replace .d "-" "." }}</time> @{{ .u }}</a></li>{{ end }}{{ end }}
+    </ul>
+    {{ if gt $t.nr (len .) }}<p class="notes__more">{{ partial "t.html" "moreBySearch" }}</p>{{ end }}
+    {{ end }}
+    {{ with $t.credit }}<p class="notes__credit">{{ partial "t.html" "genreCredit" }}</p>{{ end }}
+    {{ with $t.draft }}<p class="notes__credit notes__draft">{{ partial "t.html" "draftNote" }}</p>{{ end }}
+
+  {{ else if eq $view "month" }}
+    {{ $m := .Params.month }}
+    {{ with where $g.months "m" $m }}{{ with (index . 0).nr }}<p class="notes__meta"><a href="{{ printf "/memo/rt/%s/" $m | relURL }}">{{ partial "t.html" "retweets" }} {{ . }}</a></p>{{ end }}{{ end }}
+    <div class="notes__posts">
+      {{ $posts := index hugo.Data.memo.posts $m }}
+      {{ range sort $posts "d" }}{{ partial "notes-post.html" (dict "p" . "g" $g) }}{{ end }}
+    </div>
+
+  {{ else if eq $view "rt" }}
+    {{ $m := .Params.month }}
+    <p class="notes__meta"><a href="{{ printf "/memo/%s/" $m | relURL }}">{{ partial "t.html" "xPosts" }} {{ replace $m "-" "." }}</a></p>
+    <div class="notes__posts" data-pagefind-filter="kind:rt">
+      {{ range sort (index hugo.Data.memo.rt $m) "d" }}{{ partial "notes-post.html" (dict "p" . "g" $g) }}{{ end }}
+    </div>
+
+  {{ else if eq $view "timeline" }}
+    {{ $nodes := slice }}
+    {{ range $k, $x := $g.topics }}
+      {{- /* a year may be 0 (日本音楽), so "has one" is checked with isset, not by its value */}}
+      {{ $year := -99999 }}
+      {{ if isset $x "born" }}{{ $year = $x.born }}{{ else if $x.first }}{{ $year = int (substr $x.first 0 4) }}{{ end }}
+      {{ if ne $year -99999 }}
+      {{ $nodes = $nodes | append (dict "k" $k "t" $x.title "u" (relURL $x.url) "y" $year "b" (cond (isset $x "born") 1 0) "n" (add $x.n $x.nr) "up" $x.rel.up "src" $x.rel.src "mj" ($x.majors | default slice) "c" ($x.major | default 0) "d" ($x.draft | default 0)) }}
+      {{ end }}
+    {{ end }}
+    {{ $js := resources.Get "js/notes.js" | minify | fingerprint }}
+    <div class="filters" role="group" aria-label="{{ partial "tt.html" "timeline" }}">
+      <button type="button" class="btn chip" data-tl="born" aria-pressed="true">{{ partial "t.html" "yearsOnly" }}</button>
+      <button type="button" class="btn chip" data-tl="all" aria-pressed="false">{{ partial "t.html" "withPosts" }}</button>
+      <label class="notes__scale">{{ partial "t.html" "scale" }} <input type="range" id="tl-scale" min="2" max="24" step="1" value="8"></label>
+    </div>
+    <div class="tl" id="tl" data-notes-js="{{ $js.RelPermalink }}" data-notes-sri="{{ $js.Data.Integrity }}"></div>
+    <script type="application/json" id="tl-data">{{ $nodes | jsonify | safeJS }}</script>
+    <p class="notes__credit">{{ partial "t.html" "genreCredit" }}</p>
+  {{ end }}
+</article>
+{{ end }}

@@ -1,7 +1,7 @@
 {{ $cur := partial "cur.html" . }}
 <footer class="statusbar">
   <nav class="statusbar__keys" aria-label="{{ partial "tt.html" "nav" }}">
-    {{ range $i, $k := slice "releases" "videos" "designs" "news" "post" "about" }}
+    {{ range $i, $k := slice "releases" "videos" "designs" "news" "post" "about" "memo" }}
     <a href="{{ printf "/%s/" $k | relURL }}" data-key="F{{ add $i 1 }}"{{ if eq $cur $k }} aria-current="page"{{ end }}><span class="statusbar__ico">{{ partial (printf "icons/tab-%s.html" $k) }}</span><kbd>F{{ add $i 1 }}</kbd><span lang="en">{{ (index hugo.Data.strings $k).en }}</span></a>
     {{ end }}
   </nav>

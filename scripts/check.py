@@ -49,6 +49,8 @@ ITALIC_OK = {"/about/index.html", "/post/tobox-release-party/index.html"}   # fl
 SAME_LINE = [
     ("ログの行の id", re.compile(r"\$id := .*?(?=\s*-?\}\})"),
      ["layouts/_partials/timeline.html", "content/news/_content.gotmpl"]),
+    ("メニューの項目と順番", re.compile(r'slice "releases"[" a-z]*'),
+     ["layouts/_partials/menubar.html", "layouts/_partials/statusbar.html"]),
 ]
 SAME_LIST = [
     ("夜のアイコンとロゴの光の段階色", [("scripts/hd_icons.py", r"ramp_n = (\[[^\]]*\])"),
@@ -74,6 +76,7 @@ REMINDERS = [
     (r"^scripts/banner\.py$", "ANSI のタイトルの作り方が変わった。scripts/banner.py を回す"),
     (r"^(fonts-src/|scripts/subset_fonts\.py$)", "フォントが変わった。scripts/subset_fonts.py を回し、字がにじまないか拡大して確かめる"),
     (r"^scripts/(hd_icons|night_logos)\.py$", "夜の光の段階色を変えたなら、hd_icons.py と night_logos.py の両方を回す"),
+    (r"^(content/memo/|scripts/x_notes\.py$)", "ノートが変わった。scripts/x_notes.py を回して、リンクとポストの一覧を作り直す"),
 ]
 
 
@@ -425,7 +428,9 @@ def check_site(r: Result, site: Path | None) -> None:
             shutil.rmtree(tmp, ignore_errors=True)
 
 
-ATTR = re.compile(r"""\b(href|src|srcset)=(?:"([^"]*)"|'([^']*)'|([^\s>]+))""")
+# an attribute follows a space inside a tag; "\b" also matched "&src=..." in the text of a
+# link to a search page (NOTES posts)
+ATTR = re.compile(r"""(?<=\s)(href|src|srcset)=(?:"([^"]*)"|'([^']*)'|([^\s>]+))""")
 
 
 def check_built(r: Result, site: Path) -> None:

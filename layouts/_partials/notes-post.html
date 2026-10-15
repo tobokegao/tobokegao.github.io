@@ -1,0 +1,27 @@
+{{- /* One post on a NOTES page. Context: dict "p" (a post from data/memo/posts or rt) "g" (the graph).
+   The date line is a heading with the post's id, so a search result can point at the post. */ -}}
+{{- $p := .p -}}{{- $g := .g -}}
+{{- $text := $p.t | htmlEscape | replaceRE `(https?://[A-Za-z0-9\-._~:/?#@!$&'()*+,;=%]+)` `<a href="${1}" rel="noopener" target="_blank">${1}</a>` -}}
+{{- $text = replace $text "\n" "<br>" -}}
+<article class="np np--{{ $p.k }}">
+  <h3 class="np__head" id="p{{ $p.id }}">
+    {{- if eq $p.k "rt" -}}
+    <time datetime="{{ replace $p.d " " "T" }}">{{ replace $p.d "-" "." }}</time>
+    <a class="np__who" href="https://x.com/{{ $p.u }}{{ with $p.src }}/status/{{ . }}{{ end }}" rel="noopener" target="_blank">RT @{{ $p.u }}</a>
+    {{- else -}}
+    <a href="https://x.com/{{ $g.handle }}/status/{{ $p.id }}" rel="noopener" target="_blank"><time datetime="{{ replace $p.d " " "T" }}">{{ replace $p.d "-" "." }}</time></a>
+    {{- if eq $p.k "reply" }} <span class="np__who">{{ partial "t.html" "replyTo" }} <a href="https://x.com/{{ $p.to }}{{ with $p.ts }}/status/{{ . }}{{ end }}" rel="noopener" target="_blank">@{{ $p.to }}</a></span>{{ end -}}
+    {{- end -}}
+    {{- if and $p.m (not $p.mx) }} <span class="tag">{{ partial "t.html" "withPics" }}</span>{{ end -}}
+  </h3>
+  <p class="np__text">{{ $text | safeHTML }}{{ if $p.cut }} <span class="np__cut">[{{ partial "t.html" "cutInArchive" }}]</span>{{ end }}</p>
+  {{- /* thumbnails straight from X's server (nothing is copied to this site), each opening the
+     post on X; site.js swaps in a note when the original is gone. See docs/decisions/0021 */}}
+  {{- with $p.mx }}
+  {{- $post := cond (eq $p.k "rt") (printf "https://x.com/%s%s" $p.u (cond (ne $p.src nil) (printf "/status/%v" $p.src) "")) (printf "https://x.com/%s/status/%s" $g.handle $p.id) }}
+  <p class="np__pics">{{ range . }}{{ $kind := index . 1 }}<a class="np__pic np__pic--{{ $kind }}" href="{{ $post }}" rel="noopener" target="_blank"><img class="np__img" src="https://pbs.twimg.com/{{ index . 0 }}?format=webp&amp;name=360x360" width="160" height="160" loading="lazy" alt="{{ cond (eq $kind "p") (partial "tt.html" "picture") (partial "tt.html" "video") }}">{{ if ne $kind "p" }}<span class="np__play" aria-hidden="true"><svg viewBox="0 0 11 11" width="22" height="22" shape-rendering="crispEdges" focusable="false"><path fill="currentColor" d="M0 0h2v11h-2zM2 1h2v9h-2zM4 2h2v7h-2zM6 3h2v5h-2zM8 4h2v3h-2zM10 5h1v1h-1z"/></svg></span>{{ end }}<span class="np__gone">{{ partial "t.html" "gone" }}</span></a>{{ end }}</p>
+  {{- end }}
+  {{- with $p.tp }}
+  <p class="np__tp">{{ range . }}{{ with index $g.topics . }}<a href="{{ .url | relURL }}">[{{ .title }}]</a> {{ end }}{{ end }}</p>
+  {{- end }}
+</article>

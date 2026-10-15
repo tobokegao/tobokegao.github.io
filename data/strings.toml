@@ -232,3 +232,108 @@ en = "Links"
 [close]
 ja = "閉じる"
 en = "Close"
+
+# NOTES: topics made from the X archive and hand-written notes (scripts/x_notes.py)
+[memo]
+ja = "メモ"
+en = "Memo"
+
+[relUp]
+ja = "上位"
+en = "Parent"
+
+[relDown]
+ja = "下位"
+en = "Children"
+
+[relSrc]
+ja = "源流"
+en = "Roots"
+
+[relInf]
+ja = "影響先"
+en = "Influenced"
+
+[majors]
+ja = "大ジャンル"
+en = "Families"
+
+[backlinks]
+ja = "このページへのリンク"
+en = "Linked from"
+
+[twoHop]
+ja = "同じリンク先のページ"
+en = "Also linking there"
+
+[byYear]
+ja = "年ごとの数（ポストとリツイート）"
+en = "By year (posts and retweets)"
+
+[xPosts]
+ja = "ポスト"
+en = "Posts"
+
+[retweets]
+ja = "リツイート"
+en = "Retweets"
+
+[months]
+ja = "月ごと"
+en = "By month"
+
+[topics]
+ja = "話題"
+en = "Topics"
+
+[timeline]
+ja = "年表"
+en = "Timeline"
+
+[moreBySearch]
+ja = "ここにないものは検索で"
+en = "Search for the rest"
+
+[cutInArchive]
+ja = "アーカイブで途切れています"
+en = "Cut short in the archive"
+
+[replyTo]
+ja = "返信先"
+en = "Reply to"
+
+[withPics]
+ja = "画像あり"
+en = "With pictures"
+
+[genreCredit]
+ja = "ジャンルとつながりの初めのデータ: ざっと"
+en = "First genre data and links: zatto"
+
+[withPosts]
+ja = "ポストのある話題も"
+en = "Topics with posts too"
+
+[yearsOnly]
+ja = "年のあるページ"
+en = "Pages with a year"
+
+[scale]
+ja = "横の縮尺"
+en = "Scale"
+
+[draftNote]
+ja = "下書き: 年とつながりは、Claudeが一般の知識から書いたものです。まだ確かめていません。"
+en = "Draft: the year and links were written by Claude from general knowledge and are not checked yet."
+
+[picture]
+ja = "画像"
+en = "Picture"
+
+[video]
+ja = "動画"
+en = "Video"
+
+[gone]
+ja = "見られない"
+en = "Gone"

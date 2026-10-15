@@ -550,6 +550,25 @@ hhhhwwwwwwwwhhhh
 ................
 """),
     "tab-about": SPIN["tab-about"][0],   # still: facing front (the frames are below)
+    # Memo (NOTES): a ring-bound pad, its lines cut out like the Posts page
+    "tab-memo": grid("""
+................
+................
+...#..#..#..#...
+..############..
+..############..
+..##........##..
+..############..
+..##......####..
+..############..
+..##........##..
+..############..
+..##.....#####..
+..###########...
+..##########....
+................
+................
+"""),
     "sun": grid("""
 ................
 .......##.......
@@ -589,7 +608,7 @@ hhhhwwwwwwwwhhhh
 }
 
 
-NO_OUTLINE = {"sun", "moon", "play", "web", "tab-releases", "tab-videos", "tab-designs", "tab-news", "tab-post", "tab-about"}  # line icons; a ring would fill the gaps between rays
+NO_OUTLINE = {"sun", "moon", "play", "web", "tab-releases", "tab-videos", "tab-designs", "tab-news", "tab-post", "tab-about", "tab-memo"}  # line icons; a ring would fill the gaps between rays
 
 
 def to_svg(rows, outline=True):

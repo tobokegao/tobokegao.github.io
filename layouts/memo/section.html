@@ -1,0 +1,30 @@
+{{ define "main" }}
+{{- /* NOTES: search over every post, note and retweet (Pagefind, built after Hugo), then the
+   topics by size and the months. */ -}}
+{{ $g := hugo.Data.memo.graph }}
+{{ $js := resources.Get "js/notes.js" | minify | fingerprint }}
+<section class="win notes" aria-labelledby="page-t">
+  {{ partial "win.html" (dict "file" `C:\TBK\MEMO\` "id" "page-t" "tag" "h1") }}
+  <p class="vh">{{ partial "bi.html" (dict "ja" .Title "en" .Params.title_en) }}</p>
+  <p class="doc__lead">{{ partial "bi.html" (dict "ja" .Description "en" .Params.description_en) }}</p>
+  <div class="search" data-notes-js="{{ $js.RelPermalink }}" data-notes-sri="{{ $js.Data.Integrity }}" data-pagefind="{{ "memo/pagefind/" | relURL }}">
+    <label for="notes-search">{{ partial "t.html" "search" }}</label>
+    <input id="notes-search" type="search" autocomplete="off">
+    <output for="notes-search" id="notes-count"></output>
+  </div>
+  <ol class="notes__results" id="notes-results"></ol>
+  <p class="log__empty" id="notes-empty" hidden>{{ partial "t.html" "noResults" }}</p>
+
+  <p class="win__more"><a class="btn" href="{{ "/memo/timeline/" | relURL }}">{{ partial "t.html" "timeline" }}</a></p>
+
+  <h2 class="sub">{{ partial "t.html" "topics" }}</h2>
+  {{ $list := slice }}
+  {{ range $k, $t := $g.topics }}{{ $list = $list | append (merge $t (dict "sum" (add $t.n $t.nr))) }}{{ end }}
+  <p class="notes__links">{{ range sort $list "sum" "desc" }}<a href="{{ .url | relURL }}">[{{ .title }}]</a><span class="count">{{ .sum }}</span> {{ end }}</p>
+
+  <h2 class="sub">{{ partial "t.html" "months" }}</h2>
+  <ul class="notes__months">
+    {{ range sort $g.months "m" "desc" }}<li><a href="{{ printf "/memo/%s/" .m | relURL }}">{{ replace .m "-" "." }}</a> <span class="count">{{ .n }}</span>{{ if .nr }} <a href="{{ printf "/memo/rt/%s/" .m | relURL }}">RT</a> <span class="count">{{ .nr }}</span>{{ end }}</li>{{ end }}
+  </ul>
+</section>
+{{ end }}

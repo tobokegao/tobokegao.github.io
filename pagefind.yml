@@ -1,0 +1,13 @@
+# Pagefind (the NOTES search), run after Hugo: npx -y pagefind@1.3.0
+# Only the NOTES pages carry data-pagefind-body, so nothing else is indexed.
+site: public
+exclude_selectors:
+  # every UI string is on the page twice (Japanese and English); the English one is left out
+  - '[data-l="en"]'
+  # the topic links under each post: the topic pages are found by their own names
+  - ".np__tp"
+  # the window frame and the path above the title
+  - ".win__title"
+  - ".notes__path"
+# the index goes inside /memo/, which tobokegao/memo serves (docs/decisions/0022)
+output_subdir: memo/pagefind

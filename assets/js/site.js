@@ -370,8 +370,33 @@
   });
 
   // Everything that belongs to the page in <main>; run again after each page change.
+  // MEMO thumbnails come from X's server; when the post is gone, its note shows instead.
+  document.addEventListener("error", function (e) {
+    var img = e.target;
+    if (img && img.classList && img.classList.contains("np__img")) img.parentNode.classList.add("is-gone");
+  }, true);
+
+  // NOTES pages: notes.js is fetched the first time one of them is shown, then runs on each.
+  var notesJs = null;
+  function initNotes() {
+    var host = document.querySelector("[data-notes-js]");
+    if (!host) return;
+    if (!notesJs) {
+      notesJs = new Promise(function (done, fail) {
+        var s = document.createElement("script");
+        s.src = host.dataset.notesJs;
+        s.integrity = host.dataset.notesSri;
+        s.onload = done;
+        s.onerror = function () { notesJs = null; fail(); };
+        document.body.appendChild(s);
+      });
+    }
+    notesJs.then(function () { window.tbkNotes.init(); }).catch(function () {});
+  }
+
   function initPage() {
     langHooks = [];
+    initNotes();
 
     // News log: kind buttons and a text search, combined.
     var logRows = document.querySelectorAll(".log__row[data-kind]");
