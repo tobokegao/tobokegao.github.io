@@ -1,6 +1,6 @@
 +++
 title = "Hiphop"
-born = 1900
+born = 1973
 credit = "zatto"
 also = ["Hip Hop", "ヒップホップ"]
 +++

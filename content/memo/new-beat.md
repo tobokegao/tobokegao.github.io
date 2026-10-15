@@ -1,5 +1,5 @@
 +++
 title = "New Beat"
-born = 1900
+born = 1987
 credit = "zatto"
 +++

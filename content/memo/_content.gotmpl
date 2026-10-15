@@ -1,6 +1,6 @@
 {{- /* The NOTES pages that have no file of their own (scripts/x_notes.py writes the data):
    a page per topic without a note, a page per month of posts, a page per month of
-   retweets (kept out of search engines in head.html), and the timeline. Notes written
+   retweets (kept out of search engines in head.html), and the roots (なりたち). Notes written
    by hand are content/memo/*.md. */ -}}
 {{- $g := hugo.Data.memo.graph -}}
 {{- range $k, $t := $g.topics -}}
@@ -14,4 +14,4 @@
   {{- $.AddPage (dict "path" (printf "rt/%s" .m) "kind" "page" "title" (printf "%s RT" (replace .m "-" ".")) "params" (dict "month" .m "view" "rt")) -}}
   {{- end -}}
 {{- end -}}
-{{- $.AddPage (dict "path" "timeline" "kind" "page" "title" "年表" "params" (dict "title_en" "Timeline" "view" "timeline")) -}}
+{{- $.AddPage (dict "path" "roots" "kind" "page" "title" "なりたち" "params" (dict "title_en" "Roots" "view" "roots")) -}}

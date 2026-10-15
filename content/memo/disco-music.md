@@ -1,5 +1,5 @@
 +++
 title = "Disco Music"
-born = 1900
+born = 1974
 credit = "zatto"
 +++

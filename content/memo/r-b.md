@@ -1,6 +1,6 @@
 +++
 title = "R&B"
-born = 1900
-up = ["Comtemporary R&B"]
+born = 1949
+up = ["Contemporary R&B"]
 credit = "zatto"
 +++

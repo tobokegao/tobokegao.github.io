@@ -1,5 +1,5 @@
 +++
 title = "Synth Pop"
-born = 1900
+born = 1978
 credit = "zatto"
 +++

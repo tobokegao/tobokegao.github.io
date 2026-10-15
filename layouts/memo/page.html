@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{- /* NOTES pages (scripts/x_notes.py, content/memo/_content.gotmpl): a topic (a note written
-   by hand, or a hashtag), a month of posts, a month of retweets, or the timeline. */ -}}
+   by hand, or a hashtag), a month of posts, a month of retweets, or the roots (なりたち, the genre tree). */ -}}
 {{ $g := hugo.Data.memo.graph }}
 {{ $view := .Params.view | default "topic" }}
 {{ $key := .Params.key }}
@@ -11,8 +11,8 @@
 {{ if eq $view "topic" }}{{ $file = printf `C:\TBK\MEMO\%s.TXT` (upper $t.slug) }}
 {{ else if eq $view "month" }}{{ $file = printf `C:\TBK\MEMO\%s.LOG` .Params.month }}
 {{ else if eq $view "rt" }}{{ $file = printf `C:\TBK\MEMO\RT\%s.LOG` .Params.month }}
-{{ else if eq $view "timeline" }}{{ $file = `C:\TBK\MEMO\TIMELINE.SVG` }}{{ end }}
-<article class="win {{ if ne $view "timeline" }}win--doc {{ end }}notes" aria-labelledby="page-t"{{ if ne $view "timeline" }} data-pagefind-body{{ end }}>
+{{ else if eq $view "roots" }}{{ $file = `C:\TBK\MEMO\ROOTS.SVG` }}{{ end }}
+<article class="win {{ if ne $view "roots" }}win--doc {{ end }}notes" aria-labelledby="page-t"{{ if ne $view "roots" }} data-pagefind-body{{ end }}>
   {{ partial "win.html" (dict "file" $file "id" "page-t-file") }}
   <p class="notes__path"><a href="{{ "/memo/" | relURL }}">{{ partial "t.html" "memo" }}</a> /</p>
   <h1 class="doc__title" id="page-t">{{ partial "bi.html" (dict "ja" .Title "en" .Params.title_en) }}</h1>
@@ -102,7 +102,7 @@
       {{ range sort (index hugo.Data.memo.rt $m) "d" }}{{ partial "notes-post.html" (dict "p" . "g" $g) }}{{ end }}
     </div>
 
-  {{ else if eq $view "timeline" }}
+  {{ else if eq $view "roots" }}
     {{ $nodes := slice }}
     {{ range $k, $x := $g.topics }}
       {{- /* a year may be 0 (日本音楽), so "has one" is checked with isset, not by its value */}}

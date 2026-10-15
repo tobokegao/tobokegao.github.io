@@ -11,7 +11,7 @@ are made per topic, not per post (55k post pages would come close to GitHub Page
 - other names: `also` (looked for in the text too) and `tags` (hashtags only); with
   `match = "tags"` none of the note's names is looked for in the text
 - `unverified = true` (not `draft`, which Hugo leaves unbuilt): written by Claude from general knowledge (year, links) and not yet
-  checked by Tobokegao; the page and the timeline say so
+  checked by Tobokegao; the page and the roots page say so
 
 Outputs (all read by Hugo; content/memo/_content.gotmpl makes the pages):
   data/memo/graph.json         topics, links, months
@@ -50,7 +50,7 @@ JST = timezone(timedelta(hours=9))
 MIN_TAG = 3          # a hashtag becomes a topic once it is used this often
 MAX_LIST = 300       # posts listed on a topic page (the rest are found by search)
 REL = {"up": "down", "down": "up", "src": "inf", "inf": "src"}
-RESERVED = {"timeline", "rt"}   # pages of the NOTES section that are not topics
+RESERVED = {"roots", "rt"}   # pages of the NOTES section that are not topics
 LINK = re.compile(r"(?<!\\)\[([^\[\]\n]+)\](?!\()")
 
 

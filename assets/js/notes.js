@@ -68,7 +68,7 @@
     var scaleInput = document.getElementById("tl-scale");
     var buttons = document.querySelectorAll("[data-tl]");
     var mode = "born";
-    var PAD = 24, GAP = 12, FLAG = 0, GAP_YEARS = 40, BREAK = 48;
+    var PAD = 24, GAP = 24, FLAG = 0, GAP_YEARS = 40, BREAK = 48, TURN = 20;
 
     var draw = function () {
       var scale = parseInt(scaleInput.value, 10);
@@ -105,7 +105,11 @@
         var a = document.createElement("a");
         a.className = "tl__node" + (n.b ? "" : " tl__node--posts") + (n.c ? " tl__node--major tl__grp--" + n.c : "") + (n.d ? " tl__node--draft" : "");
         a.href = n.u;
-        a.innerHTML = '<span class="tl__name">' + esc(n.t) + '</span><span class="tl__year">' + n.y + (n.n ? " / " + n.n : "") + "</span>";
+        a.innerHTML = '<span class="tl__name">' + esc(n.t) + '</span><span class="tl__year">' +
+          // a genre's year is when it was born; a topic without one shows its first post's year.
+          // The year and the count take a line each: narrow nodes need fewer rows.
+          '<span data-l="ja">' + n.y + (n.b ? "年生まれ" : "年から") + (n.n ? "<br>ポスト" + n.n + "件" : "") + "</span>" +
+          '<span data-l="en">' + (n.b ? "born " : "since ") + n.y + (n.n ? "<br>" + n.n + (n.n === 1 ? " post" : " posts") : "") + "</span></span>";
         canvas.appendChild(a);
         byKey[n.k] = { n: n, el: a };
       });
@@ -122,16 +126,49 @@
       FLAG = flags.length ? flags.length * row + GAP : 0;
       var TOP = row + GAP + FLAG;
 
-      // Lanes: each node takes the first row that is free at its year.
-      var lanes = [], h = 0;
-      nodes.forEach(function (n) {
-        var it = byKey[n.k], x = X(n.y), w = it.el.offsetWidth;
-        h = Math.max(h, it.el.offsetHeight);
-        var l = lanes.findIndex(function (end) { return end + GAP < x; });
-        if (l < 0) { l = lanes.length; lanes.push(0); }
-        lanes[l] = x + w;
-        it.x = x; it.w = w; it.l = l;
+      // Widths in both languages (the labels differ), so a switch does not make nodes overlap.
+      var h = 0, lang = root.dataset.lang;
+      ["ja", "en"].forEach(function (l) {
+        root.dataset.lang = l;
+        nodes.forEach(function (n) {
+          var it = byKey[n.k];
+          it.w = Math.max(it.w || 0, it.el.offsetWidth);
+          h = Math.max(h, it.el.offsetHeight);
+        });
       });
+      root.dataset.lang = lang;
+
+      // Lanes: each node takes the free row nearest the rows of the pages it is linked to
+      // (the barycentre step of layered graph drawing), so parents and children sit close
+      // and fewer lines cross. The first pass knows only the pages placed before; the later
+      // passes also use where the rest landed last time.
+      var links = {};
+      nodes.forEach(function (n) { links[n.k] = []; });
+      nodes.forEach(function (n) {
+        (n.up || []).concat(n.src || []).forEach(function (p) {
+          if (byKey[p] && p !== n.k) { links[n.k].push(p); links[p].push(n.k); }
+        });
+      });
+      var lanes;
+      for (var pass = 0; pass < 3; pass++) {
+        lanes = [];
+        nodes.forEach(function (n) { byKey[n.k].now = false; });
+        nodes.forEach(function (n) {
+          var it = byKey[n.k], x = X(n.y), sum = 0, cnt = 0;
+          links[n.k].forEach(function (k) {
+            var o = byKey[k];
+            if (o.now || pass) { sum += o.l; cnt++; }
+          });
+          // a new row only when none is free: the rows stay as few as the overlaps need
+          var t = cnt ? sum / cnt : 0, best = lanes.length;
+          for (var l = 0; l < lanes.length; l++) {
+            if (lanes[l] + GAP >= x) continue;
+            if (best === lanes.length || Math.abs(l - t) < Math.abs(best - t)) best = l;
+          }
+          lanes[best] = x + it.w;
+          it.x = x; it.l = best; it.now = true;
+        });
+      }
       var LH = h + GAP;
       var W = Math.max(maxX + PAD, Math.max.apply(null, lanes) + PAD);
       var H = TOP + lanes.length * LH + PAD;
@@ -140,14 +177,15 @@
       Object.keys(byKey).forEach(function (k) {
         var it = byKey[k];
         it.y = TOP + it.l * LH;
+        it.el.style.width = it.w + "px";
         it.el.style.left = it.x + "px";
         it.el.style.top = it.y + "px";
       });
 
       var step = [1, 5, 10, 25, 50, 100, 250].find(function (s) { return s * scale >= 64; }) || 250;
       var svg = '<svg class="tl__svg" width="' + W + '" height="' + H + '" aria-hidden="true"><defs>' +
-        '<marker id="tl-mu" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path class="tl__arrow--up" d="M0 0L8 4L0 8z"/></marker>' +
-        '<marker id="tl-ms" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path class="tl__arrow--src" d="M0 0L8 4L0 8z"/></marker></defs>';
+        '<marker id="tl-mu" markerUnits="userSpaceOnUse" viewBox="0 0 8 14" refX="8" refY="7" markerWidth="8" markerHeight="14" orient="auto"><path class="tl__arrow--up" d="M0 0h2v2h2v2h2v2h2v2h-2v2h-2v2h-2v2h-2z"/></marker>' +
+        '<marker id="tl-ms" markerUnits="userSpaceOnUse" viewBox="0 0 8 14" refX="8" refY="7" markerWidth="8" markerHeight="14" orient="auto"><path class="tl__arrow--src" d="M0 0h2v2h2v2h2v2h2v2h-2v2h-2v2h-2v2h-2z"/></marker></defs>';
       segs.forEach(function (g, i) {
         for (var y = Math.ceil(g.a / step) * step; y <= g.b; y += step) {
           svg += '<line class="tl__grid" x1="' + X(y) + '" x2="' + X(y) + '" y1="' + row + '" y2="' + H + '"/>' +
@@ -159,12 +197,31 @@
         svg += '<line class="tl__flag tl__grp--' + f.m.c + '" x1="' + f.x + '" x2="' + f.x + '" y1="' + (row + GAP + i * row) + '" y2="' + H + '"/>' +
           '<text class="tl__flag-t tl__grp--' + f.m.c + '" x="' + (f.x + 6) + '" y="' + (row + GAP + i * row + dot) + '">' + esc(f.m.t) + "</text>";
       });
+      // Lines in right angles only, like box-drawing characters: out to the right, along
+      // the gap TURN px before the child (so a straight run is left before the arrow), then
+      // in. Lines into different children (or of the other kind) that would turn at the
+      // same x are moved 4 px apart, so they do not run on top of each other. When the child starts left of the parent's end, the line runs back along the
+      // gap above (or below) the child's row. Roots -> influenced is drawn twice: a solid
+      // line with yellow dots on it, the site's yellow light.
+      var chans = {};
       var edge = function (kind, from, to) {
         var A = byKey[from], B = byKey[to];
         if (!A || !B) return "";
-        var sx = A.x + A.w, sy = A.y + Math.round(h / 2), ex = B.x, ey = B.y + Math.round(h / 2);
-        var d = Math.max(40, Math.round(Math.abs(ex - sx) / 2));
-        return '<path class="tl__e tl__e--' + kind + '" data-a="' + esc(from) + '" data-b="' + esc(to) + '" marker-end="url(#tl-m' + (kind === "up" ? "u" : "s") + ')" d="M' + sx + " " + sy + " C" + (sx + d) + " " + sy + "," + (ex - d) + " " + ey + "," + ex + " " + ey + '"/>';
+        var mid = Math.round(h / 2), half = Math.round(GAP / 2);
+        var sx = A.x + A.w, sy = A.y + mid, ex = B.x, ey = B.y + mid, cx = ex - TURN;
+        var ch = chans[cx] || (chans[cx] = []), lane = to + " " + kind;
+        if (ch.indexOf(lane) < 0) ch.push(lane);
+        cx -= ch.indexOf(lane) * 4;
+        var d = "M" + sx + " " + sy;
+        if (cx >= sx + half) d += "H" + cx + "V" + ey;
+        else {
+          var gy = ey > sy ? B.y - half : B.y + h + half;
+          d += "H" + (sx + half) + "V" + gy + "H" + cx + "V" + ey;
+        }
+        d += "H" + ex;
+        var data = '" data-a="' + esc(from) + '" data-b="' + esc(to) + '" d="' + d + '"/>';
+        var line = '<path class="tl__e tl__e--' + kind + '" marker-end="url(#tl-m' + (kind === "up" ? "u" : "s") + ')' + data;
+        return kind === "up" ? line : line + '<path class="tl__e tl__e--lit' + data;
       };
       nodes.forEach(function (n) {
         (n.up || []).forEach(function (p) { svg += edge("up", p, n.k); });
