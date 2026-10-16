@@ -197,5 +197,53 @@
    "replace": true,
    "text": "ハウス・ミュージック（単にハウスとも）は、くり返される四つ打ちのビートと、1分間に115〜130拍ほどのテンポが特徴のエレクトロニック・ダンス・ミュージック。シカゴのクィアの黒人たちによるアンダーグラウンドなクラブ文化の中でDJや音楽プロデューサーたちによって作られ、1980年代の初めから半ばにかけて、DJがディスコの曲をより機械的なビートに作り変える中で、ゆっくりと形になった。"
   }
+ },
+ "Baile Funk": {
+  "en": {
+   "from": "バイレファンキ（Baile Funk）は、1980年代に生まれたブラジル・リオデジャネイロのファベーラ発祥の音楽ジャンルの一つ。本場ブラジルではFunk Carioca（ファンキ・カリオカ）[ˈfɐ̃.ki ˌka.ɾi.ˈɔ.kɐ]などとも呼ばれる。",
+   "text": "Baile funk is a music genre born in the 1980s in the favelas of Rio de Janeiro, Brazil. In Brazil it is also called funk carioca."
+  }
+ },
+ "Grunge": {
+  "en": {
+   "from": "グランジ（grunge）とは、ロック音楽のジャンルのひとつ。",
+   "text": "Grunge is a genre of rock music."
+  }
+ },
+ "Juke": {
+  "ja": {
+   "from": "Juke, as a term being used to describe genres of music, was during different times used to denote: Ghetto house, especially used for faster tracks within the genre, but also used as a blanket term for ghetto house itself. Footwork, a fast, abstract and syncopated genre of electronic dance music that evolved from ghetto house during the late 1990s and early 2000s.",
+   "text": "音楽ジャンルとしての「ジューク」という言葉は、時期によって指すものが異なる。ひとつはゲットー・ハウス（とくにテンポの速い曲や、ジャンル全体）を指し、もうひとつは1990年代末から2000年代初めにそこから派生した、速く抽象的で独特のリズムを持つフットワークを指す。"
+  }
+ },
+ "Laptop Twee": {
+  "ja": {
+   "from": "Laptop twee is a style of twee pop that blends indie pop and indietronica with influences drawing from internet music and primarily DAW-based production. The genre emerged in the early 2020s, originally coined by the Canadian blogger and musician friends&.",
+   "text": "ラップトップ・トゥイーは、インディー・ポップとインディートロニカを掛け合わせ、ネット発の音楽からの影響や、主にパソコンの音楽制作ソフト（DAW）を使った音作りを取り入れたトゥイー・ポップのスタイル。2020年代初頭に生まれ、カナダのブロガー兼ミュージシャンのfriends&が名付けた。"
+  }
+ },
+ "Psychedelic Rock": {
+  "en": {
+   "from": "サイケデリック・ロック（英: Psychedelic rock）は、1960年代後半に発生し流行したロック音楽の派生ジャンル。主に、LSDなどのドラッグによる幻覚を、ロックとして再現した音楽のことを指す。",
+   "text": "Psychedelic rock is a subgenre of rock music that emerged and became popular in the late 1960s. It mainly refers to rock music that recreates the hallucinations brought on by drugs such as LSD."
+  }
+ },
+ "Psychedelic Trance": {
+  "ja": {
+   "from": "Psychedelic trance, psytrance, or psy is a subgenre of trance music characterized by arrangements of rhythms and layered melodies created by high tempo riffs. The genre offers variety in terms of mood, tempo, and style.",
+   "text": "サイケデリック・トランス（サイトランス、あるいは単にサイとも呼ばれる）は、トランスから派生したジャンルで、速いテンポで繰り返されるフレーズ（リフ）によるリズムと、重なり合うメロディが特徴。雰囲気やテンポ、スタイルの幅広さも魅力の一つ。"
+  }
+ },
+ "Shangaan Electro": {
+  "ja": {
+   "from": "Tsonga electro is a dance movement and musical style born from a 21st-century reboot of local folk traditions in South African townships, Tsonga Disco and Kwaito House. The movement has been spearheaded by DJ Khwaya and the producer Nozinja in recent years, who has turned it into an iconic Afro-futurist strain of electronic dance music.",
+   "text": "ツォンガ・エレクトロ（シャンガーン・エレクトロ）は、南アフリカのタウンシップ（旧黒人居住区）で、地元の伝統音楽やツォンガ・ディスコ、クワイト・ハウスを21世紀に再構築して生まれたダンスの流行（ムーブメント）であり、音楽のスタイル。近年はDJ Khwayaやプロデューサーのノジンジャが牽引し、エレクトロニック・ダンス・ミュージックにおける「アフロフューチャリズム（アフリカの未来志向カルチャー）」を象徴するジャンルへと押し上げた。"
+  }
+ },
+ "Sigilkore": {
+  "ja": {
+   "from": "Sigilkore is an Internet microgenre of hip-hop that emerged in the late 2010s, originally pioneered by American rapper and producer Luci4. The style is characterized by layered DJ mixing and digital effects such as bitcrushing and pitch shifting with lyrics relating to magic, deities, demons and occult rituals.",
+   "text": "シジルコアは、2010年代末に生まれたネット発のヒップホップ派生ジャンルで、アメリカのラッパー兼プロデューサーのLuci4が切り開いた。DJミックスを何層も重ねる手法や、音をあえて粗くしたり音程を変えたりするデジタル効果（ビットクラッシュやピッチシフト）が特徴で、歌詞には魔術や神々、悪魔、オカルトの儀式などが登場する。"
+  }
  }
 }

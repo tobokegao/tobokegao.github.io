@@ -56,6 +56,32 @@
     "url": "https://ja.wikipedia.org/wiki/%E7%92%B0%E5%A2%83%E9%9F%B3%E6%A5%BD"
    }
   },
+  "Baile Funk": {
+   "ja": {
+    "title": "バイレファンキ",
+    "text": "バイレファンキ（Baile Funk）は、1980年代に生まれたブラジル・リオデジャネイロのファベーラ発祥の音楽ジャンルの一つ。本場ブラジルではFunk Carioca（ファンキ・カリオカ）[ˈfɐ̃.ki ˌka.ɾi.ˈɔ.kɐ]などとも呼ばれる。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%90%E3%82%A4%E3%83%AC%E3%83%95%E3%82%A1%E3%83%B3%E3%82%AD"
+   },
+   "en": {
+    "title": "Funk carioca",
+    "text": "Funk carioca (Brazilian Portuguese pronunciation: [ˈfɐ̃k(i) kɐɾiˈɔkɐ, - kaɾ-]), also known as baile funk, Brazilian funk, or simply funk, is a Brazilian hip hop-influenced music genre from Rio de Janeiro, taking influences from musical styles such as Miami bass and freestyle. In Brazil, \"baile funk\" refers not to the music, but to the actual parties or discotheques in which the music is played (Portuguese pronunciation: [ˈbajʎi], from baile, meaning \"ball\").",
+    "url": "https://en.wikipedia.org/wiki/Funk_carioca",
+    "doubt": [
+     "All articles lacking reliable references",
+     "Articles lacking reliable references from May 2015"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from August 2011",
+     "Articles with unsourced statements from December 2011",
+     "Articles with unsourced statements from January 2026"
+    ]
+   },
+   "en_tr": {
+    "text": "Baile funk is a music genre born in the 1980s in the favelas of Rio de Janeiro, Brazil. In Brazil it is also called funk carioca.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%90%E3%82%A4%E3%83%AC%E3%83%95%E3%82%A1%E3%83%B3%E3%82%AD"
+   }
+  },
   "Bass Music": {
    "ja": {
     "title": "ベース・ミュージック",
@@ -271,6 +297,18 @@
     ]
    }
   },
+  "Djent": {
+   "ja": {
+    "title": "ジェント",
+    "text": "ジェント(英: Djent) は、プログレッシブ・メタルより派生したヘヴィメタルのジャンルの一つ。。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88"
+   },
+   "en": {
+    "title": "Djent",
+    "text": "Djent () is a subgenre of progressive metal, termed for an onomatopoeia of the guitar sound that characterizes it. While sources such as The Guardian and Guitar World describe djent as a genre, some notable musicians including Randy Blythe (Lamb of God) and Stephen Carpenter (Deftones) say it is not.",
+    "url": "https://en.wikipedia.org/wiki/Djent"
+   }
+  },
   "Drum'n'Bass": {
    "ja": {
     "title": "ドラムンベース",
@@ -435,6 +473,46 @@
     "url": "https://en.wikipedia.org/wiki/Electronica"
    }
   },
+  "Footwork": {
+   "ja": {
+    "title": "ジューク/フットワーク",
+    "text": "ジューク/フットワーク（英: Juke/Footwork）とは、アメリカのイリノイ州シカゴを発祥とするエレクトロニック・ダンス・ミュージックとダンスのムーヴメントを総称したものである。 1990年代のシカゴ（主に市街南部と西部）を中心に発展したが、2010年代にイギリスや日本を通じてクラブミュージックシーンにも普及が進んだ。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A5%E3%83%BC%E3%82%AF/%E3%83%95%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF",
+    "doubt": [
+     "出典を必要とする記事/2017年2月"
+    ]
+   },
+   "en": {
+    "title": "Footwork (genre)",
+    "text": "Footwork, also called juke, or Chicago juke, is a genre of electronic dance music derived from ghetto house with elements of hip-hop, first appearing in Chicago in the late 1990s. The music style evolved from the earlier, rapid rhythms of ghetto house, a change pioneered by RP Boo, DJ Rashad and DJ Clent.",
+    "url": "https://en.wikipedia.org/wiki/Footwork_%28genre%29",
+    "doubt": [
+     "All articles lacking reliable references",
+     "Articles lacking reliable references from March 2024"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from August 2024",
+     "Articles with unsourced statements from February 2022"
+    ]
+   }
+  },
+  "Free Jazz": {
+   "ja": {
+    "title": "フリー・ジャズ",
+    "text": "フリー・ジャズ（英: Free jazz）は、1950年代末にビバップなどのそれまでのジャズの演奏形態を否定、革新した当時の新しいジャズのジャンルであり、1960年代に隆盛となった。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%AA%E3%83%BC%E3%83%BB%E3%82%B8%E3%83%A3%E3%82%BA"
+   },
+   "en": {
+    "title": "Free jazz",
+    "text": "Free jazz (also known as free form jazz) is a style of avant-garde jazz or an experimental approach to jazz improvisation that developed in the late 1950s and early 1960s, when musicians attempted to change or break down jazz conventions, such as regular tempos, tones, and chord changes. Musicians during this period believed that the bebop and modal jazz that had been played before them was too limiting, and became preoccupied with creating something new.",
+    "url": "https://en.wikipedia.org/wiki/Free_jazz",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from April 2026"
+    ]
+   }
+  },
   "French House": {
    "ja": {
     "title": "フレンチ・ハウス",
@@ -575,6 +653,31 @@
    "ja_tr": {
     "text": "グリッチは、1990年代に生まれた実験的な電子音楽のジャンルで、音声メディアの不具合（グリッチ）やそのほかの音の乱れをわざと使うのが特徴。録音機器やデジタル機器の故障から音を取り、エラーや失敗を、直すべき問題ではなく作曲の材料として扱う考え方に立って作られる。",
     "url": "https://en.wikipedia.org/wiki/Glitch_%28music%29"
+   }
+  },
+  "Grunge": {
+   "ja": {
+    "title": "グランジ",
+    "text": "グランジ（grunge）とは、ロック音楽のジャンルのひとつ。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%B8"
+   },
+   "en": {
+    "title": "Grunge",
+    "text": "Grunge (originally known as the Seattle Sound) is an alternative rock genre and subculture that emerged during the mid-1980s in the U.S. state of Washington, particularly in Seattle and Olympia, and other nearby cities. Grunge fuses elements of punk rock and heavy metal, and features the distorted electric guitar sound used in both genres, as well as bass guitar, drums, and vocals.",
+    "url": "https://en.wikipedia.org/wiki/Grunge",
+    "doubt": [
+     "All articles lacking reliable references",
+     "Articles lacking reliable references from April 2021"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from April 2021",
+     "Articles with unsourced statements from January 2026"
+    ]
+   },
+   "en_tr": {
+    "text": "Grunge is a genre of rock music.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%B8"
    }
   },
   "Hardcore Techno": {
@@ -721,6 +824,17 @@
     "url": "https://en.wikipedia.org/wiki/Jazz"
    }
   },
+  "Juke": {
+   "en": {
+    "title": "Juke music",
+    "text": "Juke, as a term being used to describe genres of music, was during different times used to denote: Ghetto house, especially used for faster tracks within the genre, but also used as a blanket term for ghetto house itself. Footwork, a fast, abstract and syncopated genre of electronic dance music that evolved from ghetto house during the late 1990s and early 2000s.",
+    "url": "https://en.wikipedia.org/wiki/Juke_music"
+   },
+   "ja_tr": {
+    "text": "音楽ジャンルとしての「ジューク」という言葉は、時期によって指すものが異なる。ひとつはゲットー・ハウス（とくにテンポの速い曲や、ジャンル全体）を指し、もうひとつは1990年代末から2000年代初めにそこから派生した、速く抽象的で独特のリズムを持つフットワークを指す。",
+    "url": "https://en.wikipedia.org/wiki/Juke_music"
+   }
+  },
   "Jungle": {
    "ja": {
     "title": "ジャングル (音楽)",
@@ -738,6 +852,28 @@
    "ja_tr": {
     "text": "ジャングルは、1990年代にイギリスのレイヴ・シーンとジャマイカのサウンドシステム文化から生まれた電子音楽のジャンル。ブレイクビート・ハードコアから生まれ、速いブレイクビーツ、シンコペーションの強い打楽器のループ、サンプルやシンセサイザーの効果に、ダブ、レゲエ、ダンスホール、ヒップホップ、ファンクの深いベースライン、メロディ、ボーカルのサンプルを組み合わせるのが特徴。",
     "url": "https://en.wikipedia.org/wiki/Jungle_music"
+   }
+  },
+  "Laptop Twee": {
+   "en": {
+    "title": "Laptop twee",
+    "text": "Laptop twee is a style of twee pop that blends indie pop and indietronica with influences drawing from internet music and primarily DAW-based production. The genre emerged in the early 2020s, originally coined by the Canadian blogger and musician friends&.",
+    "url": "https://en.wikipedia.org/wiki/Laptop_twee"
+   },
+   "ja_tr": {
+    "text": "ラップトップ・トゥイーは、インディー・ポップとインディートロニカを掛け合わせ、ネット発の音楽からの影響や、主にパソコンの音楽制作ソフト（DAW）を使った音作りを取り入れたトゥイー・ポップのスタイル。2020年代初頭に生まれ、カナダのブロガー兼ミュージシャンのfriends&が名付けた。",
+    "url": "https://en.wikipedia.org/wiki/Laptop_twee"
+   }
+  },
+  "Liquid Drum & Bass": {
+   "en": {
+    "title": "Liquid funk",
+    "text": "Liquid drum and bass, liquid DnB, melodic drum & bass, liquid funk, or sometimes just liquid is a subgenre of drum and bass. While it uses similar basslines and bar layouts to other styles, it contains fewer bar-oriented samples and more instrumental layers (both synthesized and natural), harmonies, melodies and ambiance, producing a sentimental atmosphere directed at home listeners as well as nightclub and rave audiences.",
+    "url": "https://en.wikipedia.org/wiki/Liquid_funk",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from January 2021"
+    ]
    }
   },
   "Lo-fi Hip Hop": {
@@ -803,6 +939,18 @@
     "url": "https://en.wikipedia.org/wiki/New_beat"
    }
   },
+  "Noise Music": {
+   "ja": {
+    "title": "ノイズミュージック",
+    "text": "ノイズミュージック (Noise music) は、音楽の一ジャンルである。実験音楽、前衛音楽、フリー・ジャズ、アンダーグラウンドなロック音楽の一部が、ノイズ音楽に含まれると見られている。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%8E%E3%82%A4%E3%82%BA%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF"
+   },
+   "en": {
+    "title": "Noise music",
+    "text": "Noise music (or simply noise) is a subgenre of experimental music that is characterised by its use of unwanted noise as a primary musical element. The genre has roots in early 20th century avant-garde music, but later drew influence from industrial and electronic music.",
+    "url": "https://en.wikipedia.org/wiki/Noise_music"
+   }
+  },
   "Oldskool Happy Hardcore": {
    "ja": {
     "title": "ハッピーハードコア",
@@ -820,6 +968,48 @@
    "ja_tr": {
     "text": "ハッピー・ハードコア（4ビートとも）は、ハードコア・ダンス・ミュージックのサブジャンル。1990年代初めに、イギリスのブレイクビート・ハードコアのレイヴ・シーンと、ベルギー、ドイツ、オランダのハードコアテクノのシーンの両方から生まれた。",
     "url": "https://en.wikipedia.org/wiki/Happy_hardcore"
+   }
+  },
+  "Power Pop": {
+   "ja": {
+    "title": "パワー・ポップ",
+    "text": "パワー・ポップ（Power pop）とは、ロックの形態の一種である。ポップなメロディと、はじけるようなサウンドが特徴となっている。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%AF%E3%83%BC%E3%83%BB%E3%83%9D%E3%83%83%E3%83%97"
+   },
+   "en": {
+    "title": "Power pop",
+    "text": "Power pop is a subgenre of rock music and a form of pop rock based on the early music of bands such as the Beach Boys, the Beatles, the Byrds, and the Who. It typically incorporates melodic hooks, vocal harmonies, an energetic performance, and cheerful-sounding music underpinned by a sense of yearning, longing, despair, or self-empowerment.",
+    "url": "https://en.wikipedia.org/wiki/Power_pop"
+   }
+  },
+  "Progressive House": {
+   "ja": {
+    "title": "プログレッシブ・ハウス",
+    "text": "プログレッシブ・ハウス (Progressive House) は、ハウスミュージックのサブジャンルであり、1990年代前半に台頭し、当初は1980年代のアメリカやヨーロッパのハウスの自然な発達としてイギリスで発展していった。 2010年代以降広まり、アヴィーチーなどによって知られるフェスティバル・プログレッシブ・ハウスとは別ジャンルである。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%AC%E3%83%83%E3%82%B7%E3%83%96%E3%83%BB%E3%83%8F%E3%82%A6%E3%82%B9"
+   },
+   "en": {
+    "title": "Progressive house",
+    "text": "Progressive house is a subgenre of house music. The progressive house style emerged in the early 1990s.",
+    "url": "https://en.wikipedia.org/wiki/Progressive_house"
+   }
+  },
+  "Progressive Metal": {
+   "ja": {
+    "title": "プログレッシブ・メタル",
+    "text": "プログレッシブ・メタル（英語：Progressive Metal）は、ロック・ミュージックのジャンルのひとつ。略称はプログレメタル（あるいはプログメタル）。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%AC%E3%83%83%E3%82%B7%E3%83%96%E3%83%BB%E3%83%A1%E3%82%BF%E3%83%AB"
+   },
+   "en": {
+    "title": "Progressive metal",
+    "text": "Progressive metal (often shortened to prog metal) is a broad fusion music genre melding heavy metal and progressive rock, combining the loud aggression and amplified distorted guitar-driven sound of the former with the more experimental, cerebral or quasi-classical compositions of the latter. The music typically showcases the extreme technical proficiency of the performers and usually uses unorthodox harmonies as well as complex rhythms with frequent meter changes and intense syncopation.",
+    "url": "https://en.wikipedia.org/wiki/Progressive_metal",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from August 2022",
+     "Articles with unsourced statements from May 2022",
+     "Articles with unsourced statements from November 2025"
+    ]
    }
   },
   "Progressive Rock": {
@@ -844,6 +1034,49 @@
    "en_tr": {
     "text": "Progressive rock is a genre of rock that appeared in Britain in the late 1960s. The name means progressive, innovative rock.",
     "url": "https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%AC%E3%83%83%E3%82%B7%E3%83%96%E3%83%BB%E3%83%AD%E3%83%83%E3%82%AF"
+   }
+  },
+  "Psychedelic Rock": {
+   "ja": {
+    "title": "サイケデリック・ロック",
+    "text": "サイケデリック・ロック（英: Psychedelic rock）は、1960年代後半に発生し流行したロック音楽の派生ジャンル。主に、LSDなどのドラッグによる幻覚を、ロックとして再現した音楽のことを指す。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%A4%E3%82%B1%E3%83%87%E3%83%AA%E3%83%83%E3%82%AF%E3%83%BB%E3%83%AD%E3%83%83%E3%82%AF"
+   },
+   "en": {
+    "title": "Psychedelic rock",
+    "text": "Psychedelic rock is a subgenre of rock music that originally emerged during the mid-1960s, inspired by psychedelic culture and centered primarily around the influence of psychoactive and hallucinogenic drugs. The music incorporated new electronic sound effects and recording techniques, extended instrumental solos, and improvisation.",
+    "url": "https://en.wikipedia.org/wiki/Psychedelic_rock",
+    "doubt": [
+     "All articles lacking reliable references",
+     "Articles lacking reliable references from August 2016"
+    ]
+   },
+   "en_tr": {
+    "text": "Psychedelic rock is a subgenre of rock music that emerged and became popular in the late 1960s. It mainly refers to rock music that recreates the hallucinations brought on by drugs such as LSD.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%A4%E3%82%B1%E3%83%87%E3%83%AA%E3%83%83%E3%82%AF%E3%83%BB%E3%83%AD%E3%83%83%E3%82%AF"
+   }
+  },
+  "Psychedelic Trance": {
+   "ja": {
+    "title": "サイケデリックトランス",
+    "text": "サイケデリックトランス（英: psychedelic trance）は、ゴアトランスから派生したよりサイケ色が強まったトランスである。短縮形でPsytranceと表記される場合もある。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%A4%E3%82%B1%E3%83%87%E3%83%AA%E3%83%83%E3%82%AF%E3%83%88%E3%83%A9%E3%83%B3%E3%82%B9",
+    "doubt": [
+     "出典を必要とする記事/2018年8月"
+    ]
+   },
+   "en": {
+    "title": "Psychedelic trance",
+    "text": "Psychedelic trance, psytrance, or psy is a subgenre of trance music characterized by arrangements of rhythms and layered melodies created by high tempo riffs. The genre offers variety in terms of mood, tempo, and style.",
+    "url": "https://en.wikipedia.org/wiki/Psychedelic_trance",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from September 2015"
+    ]
+   },
+   "ja_tr": {
+    "text": "サイケデリック・トランス（サイトランス、あるいは単にサイとも呼ばれる）は、トランスから派生したジャンルで、速いテンポで繰り返されるフレーズ（リフ）によるリズムと、重なり合うメロディが特徴。雰囲気やテンポ、スタイルの幅広さも魅力の一つ。",
+    "url": "https://en.wikipedia.org/wiki/Psychedelic_trance"
    }
   },
   "R&B": {
@@ -879,6 +1112,74 @@
      "Articles with unsourced statements from April 2017",
      "Articles with unsourced statements from February 2017",
      "Articles with unsourced statements from February 2025"
+    ]
+   }
+  },
+  "Salsa": {
+   "ja": {
+    "title": "サルサ (音楽)",
+    "text": "サルサ（Salsa music）はラテン音楽の一ジャンルである。 リズムの基本となるのは南米音楽特有の「クラーベ」という単位である。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%AB%E3%82%B5_%28%E9%9F%B3%E6%A5%BD%29"
+   },
+   "en": {
+    "title": "Salsa music",
+    "text": "Salsa is a style of dance music mainly influenced by Caribbean traditions and music from Cuba, Puerto Rico, the Dominican Republic, and other countries such as Colombia and Venezuela, where African cultural syncretism in music and dance blends with European influences and indigenous instruments, along with contributions from the contiguous United States. Because most of the basic musical components predate the labeling of salsa, there have been many controversies regarding its origin.",
+    "url": "https://en.wikipedia.org/wiki/Salsa_music",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from April 2021"
+    ]
+   }
+  },
+  "Shangaan Electro": {
+   "en": {
+    "title": "Shangaan electro",
+    "text": "Tsonga electro is a dance movement and musical style born from a 21st-century reboot of local folk traditions in South African townships, Tsonga Disco and Kwaito House. The movement has been spearheaded by DJ Khwaya and the producer Nozinja in recent years, who has turned it into an iconic Afro-futurist strain of electronic dance music.",
+    "url": "https://en.wikipedia.org/wiki/Shangaan_electro"
+   },
+   "ja_tr": {
+    "text": "ツォンガ・エレクトロ（シャンガーン・エレクトロ）は、南アフリカのタウンシップ（旧黒人居住区）で、地元の伝統音楽やツォンガ・ディスコ、クワイト・ハウスを21世紀に再構築して生まれたダンスの流行（ムーブメント）であり、音楽のスタイル。近年はDJ Khwayaやプロデューサーのノジンジャが牽引し、エレクトロニック・ダンス・ミュージックにおける「アフロフューチャリズム（アフリカの未来志向カルチャー）」を象徴するジャンルへと押し上げた。",
+    "url": "https://en.wikipedia.org/wiki/Shangaan_electro"
+   }
+  },
+  "Shoegaze": {
+   "ja": {
+    "title": "シューゲイザー",
+    "text": "シューゲイザー (Shoegazer)は、ロックミュージックのスタイルの1つ。英語では正確にはシューゲイズ (Shoegaze)と表現する。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%B2%E3%82%A4%E3%82%B6%E3%83%BC",
+    "part": [
+     "出典を必要とする記述のある記事/2023年4月"
+    ]
+   },
+   "en": {
+    "title": "Shoegaze",
+    "text": "Shoegaze (originally shoegazing and also known as dream rock) is a subgenre of indie and alternative rock characterised by ethereal soundscapes, obscured vocals, and extensive use of guitar effects and distortion. Rooted in Phil Spector's Wall of Sound, the Velvet Underground, and psychedelic pop of the 1960s, the genre originated in the late 1980s and early 1990s mainly among British acts who based their sound on groups such as Cocteau Twins, the Jesus and Mary Chain, and My Bloody Valentine.",
+    "url": "https://en.wikipedia.org/wiki/Shoegaze",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from January 2026"
+    ]
+   }
+  },
+  "Sigilkore": {
+   "en": {
+    "title": "Sigilkore",
+    "text": "Sigilkore is an Internet microgenre of hip-hop that emerged in the late 2010s, originally pioneered by American rapper and producer Luci4. The style is characterized by layered DJ mixing and digital effects such as bitcrushing and pitch shifting with lyrics relating to magic, deities, demons and occult rituals.",
+    "url": "https://en.wikipedia.org/wiki/Sigilkore"
+   },
+   "ja_tr": {
+    "text": "シジルコアは、2010年代末に生まれたネット発のヒップホップ派生ジャンルで、アメリカのラッパー兼プロデューサーのLuci4が切り開いた。DJミックスを何層も重ねる手法や、音をあえて粗くしたり音程を変えたりするデジタル効果（ビットクラッシュやピッチシフト）が特徴で、歌詞には魔術や神々、悪魔、オカルトの儀式などが登場する。",
+    "url": "https://en.wikipedia.org/wiki/Sigilkore"
+   }
+  },
+  "Singeli": {
+   "en": {
+    "title": "Singeli",
+    "text": "Singeli or sometimes called Sengeli is a Tanzanian music genre that originated with the Zaramo in the Mtogole neighborhood of the Tandale ward in Kinondoni District of Dar es Salaam Region around the mid-2000s. The genre has since the late 2010s spread throughout Tanzania, and since 2020 the surrounding Great Lakes.",
+    "url": "https://en.wikipedia.org/wiki/Singeli",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from May 2023"
     ]
    }
   },
@@ -1108,6 +1409,18 @@
    "ja_tr": {
     "text": "日本の音楽には、伝統的なものから現代的なものまで、さまざまなジャンルがある。日本語で「音楽」を表す言葉は「音楽（おんがく）」で、「音」（おん、音のこと）と「楽」（がく、音楽・安らぎ）の2つの漢字を合わせたもの。",
     "url": "https://en.wikipedia.org/wiki/Music_of_Japan"
+   }
+  },
+  "歌謡曲": {
+   "ja": {
+    "title": "歌謡曲",
+    "text": "歌謡曲（かようきょく）は、日本のポピュラー音楽、流行歌のジャンルの一つ。作詞家・作曲家・編曲家が作った曲を歌手が歌い、それをレコード会社の音楽プロデューサーなり、音楽ディレクターがまとめて完成させる分業システムによって作られた歌を指す。",
+    "url": "https://ja.wikipedia.org/wiki/%E6%AD%8C%E8%AC%A1%E6%9B%B2"
+   },
+   "en": {
+    "title": "Kayōkyoku",
+    "text": "Kayōkyoku (歌謡曲; lit. 'Pop Tune') is a Japanese pop music genre, which became a base of modern J-pop. The Japan Times described kayōkyoku as \"standard Japanese pop\" or \"Shōwa-era pop\".",
+    "url": "https://en.wikipedia.org/wiki/Kay%C5%8Dkyoku"
    }
   },
   "渋谷系": {

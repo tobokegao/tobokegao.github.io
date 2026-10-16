@@ -1,10 +1,11 @@
 {
- "fetched": "2026-10-16",
+ "fetched": "2026-10-17",
  "source": "https://dbpedia.org/",
  "resources": {
   "2-step Garage": "2-step_garage",
   "Acid House": "Acid_house",
   "Ambient": "Ambient_music",
+  "Baile Funk": "Funk_carioca",
   "Bass Music": "Bass_music",
   "Bitpop": "Bitpop",
   "Braindance": "Braindance",
@@ -20,6 +21,7 @@
   "Contemporary R&B": "Contemporary_R&B",
   "Detroit Techno": "Detroit_techno",
   "Disco Music": "Disco",
+  "Djent": "Djent",
   "Drum'n'Bass": "Drum_and_bass",
   "Dubstep": "Dubstep",
   "EBM": "Electronic_body_music",
@@ -27,6 +29,8 @@
   "Electro House": "Electro_house",
   "Electro": "Electro_(music)",
   "Electronica": "Electronica",
+  "Footwork": "Footwork_(genre)",
+  "Free Jazz": "Free_jazz",
   "French House": "French_house",
   "Funk": "Funk",
   "Funkot": "Funkot",
@@ -36,6 +40,7 @@
   "Gabber": "Gabber",
   "Garage House": "Garage_house",
   "Glitch": "Glitch_(music)",
+  "Grunge": "Grunge",
   "Hardcore Techno": "Hardcore_techno",
   "Hiphop": "Hip_hop_music",
   "House Music": "House_music",
@@ -45,16 +50,30 @@
   "J-CORE": "J-core",
   "J-POP": "J-pop",
   "Jazz": "Jazz",
+  "Juke": "Juke_music",
   "Jungle": "Jungle_music",
   "Kawaii Future Bass": "Kawaii_future_bass",
+  "Laptop Twee": "Laptop_twee",
+  "Liquid Drum & Bass": "Liquid_funk",
   "Lo-fi Hip Hop": "Lo-fi_hip_hop",
   "Miami Bass": "Miami_bass",
   "Nerdcore": "Nerdcore",
   "New Beat": "New_beat",
+  "Noise Music": "Noise_music",
   "Oldskool Happy Hardcore": "Happy_hardcore",
+  "Power Pop": "Power_pop",
+  "Progressive House": "Progressive_house",
+  "Progressive Metal": "Progressive_metal",
   "Progressive Rock": "Progressive_rock",
+  "Psychedelic Rock": "Psychedelic_rock",
+  "Psychedelic Trance": "Psychedelic_trance",
   "R&B": "Rhythm_and_blues",
   "Rock Music": "Rock_music",
+  "Salsa": "Salsa_music",
+  "Shangaan Electro": "Shangaan_electro",
+  "Shoegaze": "Shoegaze",
+  "Sigilkore": "Sigilkore",
+  "Singeli": "Singeli",
   "Synth Pop": "Synth-pop",
   "Synthwave": "Synthwave",
   "Techno Music": "Techno",
@@ -68,6 +87,7 @@
   "古典派音楽": "Classical_period_(music)",
   "実験音楽": "Experimental_music",
   "日本音楽": "Music_of_Japan",
+  "歌謡曲": "Kayōkyoku",
   "渋谷系": "Shibuya-kei",
   "芸術音楽": "Art_music",
   "雅楽": "Gagaku",
@@ -97,6 +117,16 @@
     "実験音楽"
    ]
   },
+  "Baile Funk": {
+   "up": [
+    "Hiphop"
+   ],
+   "src": [
+    "Electro",
+    "Miami Bass",
+    "Techno Music"
+   ]
+  },
   "Bitpop": {
    "up": [
     "Chiptune"
@@ -112,7 +142,8 @@
    "src": [
     "Electro",
     "Funk",
-    "Hiphop"
+    "Hiphop",
+    "Progressive House"
    ]
   },
   "Breakbeat Hardcore": {
@@ -150,6 +181,7 @@
     "Ambient",
     "Contemporary R&B",
     "Funk",
+    "Shoegaze",
     "Synth Pop"
    ]
   },
@@ -197,6 +229,12 @@
     "Funk",
     "R&B"
    ]
+  },
+  "Djent": {
+   "up": [
+    "Progressive Metal"
+   ],
+   "src": []
   },
   "Drum'n'Bass": {
    "up": [],
@@ -268,6 +306,20 @@
     "Synth Pop"
    ]
   },
+  "Footwork": {
+   "up": [],
+   "src": [
+    "Drum'n'Bass",
+    "Hiphop"
+   ]
+  },
+  "Free Jazz": {
+   "up": [],
+   "src": [
+    "Jazz",
+    "実験音楽"
+   ]
+  },
   "French House": {
    "up": [],
    "src": [
@@ -305,7 +357,8 @@
    ],
    "src": [
     "Chiptune",
-    "Dubstep"
+    "Dubstep",
+    "Footwork"
    ]
   },
   "Gabber": {
@@ -321,8 +374,15 @@
    "src": [
     "Ambient",
     "Chiptune",
+    "Noise Music",
     "Techno Music"
    ]
+  },
+  "Grunge": {
+   "up": [
+    "Rock Music"
+   ],
+   "src": []
   },
   "Hardcore Techno": {
    "up": [
@@ -385,6 +445,12 @@
     "Hardcore Techno"
    ]
   },
+  "J-POP": {
+   "up": [],
+   "src": [
+    "歌謡曲"
+   ]
+  },
   "Jazz": {
    "up": [],
    "src": [
@@ -398,6 +464,17 @@
     "Breakbeat Hardcore",
     "Funk",
     "Hiphop"
+   ]
+  },
+  "Liquid Drum & Bass": {
+   "up": [
+    "Drum'n'Bass"
+   ],
+   "src": [
+    "Ambient",
+    "Breakbeat Hardcore",
+    "Funk",
+    "Trance"
    ]
   },
   "Lo-fi Hip Hop": {
@@ -431,11 +508,38 @@
     "Hiphop"
    ]
   },
+  "Noise Music": {
+   "up": [],
+   "src": [
+    "実験音楽"
+   ]
+  },
   "Oldskool Happy Hardcore": {
    "up": [],
    "src": [
     "Breakbeat",
     "Breakbeat Hardcore"
+   ]
+  },
+  "Power Pop": {
+   "up": [
+    "Rock Music"
+   ],
+   "src": []
+  },
+  "Progressive House": {
+   "up": [],
+   "src": [
+    "Acid House",
+    "House Music",
+    "Techno Music",
+    "Trance"
+   ]
+  },
+  "Progressive Metal": {
+   "up": [],
+   "src": [
+    "Progressive Rock"
    ]
   },
   "Progressive Rock": {
@@ -444,7 +548,28 @@
    ],
    "src": [
     "Classic Music",
+    "Jazz",
+    "Psychedelic Rock"
+   ]
+  },
+  "Psychedelic Rock": {
+   "up": [
+    "Rock Music"
+   ],
+   "src": [
     "Jazz"
+   ]
+  },
+  "Psychedelic Trance": {
+   "up": [
+    "Trance"
+   ],
+   "src": [
+    "Acid House",
+    "Classic Music",
+    "New Beat",
+    "Psychedelic Rock",
+    "Techno Music"
    ]
   },
   "R&B": {
@@ -458,6 +583,33 @@
    "src": [
     "Jazz",
     "R&B"
+   ]
+  },
+  "Salsa": {
+   "up": [],
+   "src": [
+    "Jazz",
+    "R&B"
+   ]
+  },
+  "Shangaan Electro": {
+   "up": [],
+   "src": [
+    "House Music"
+   ]
+  },
+  "Shoegaze": {
+   "up": [],
+   "src": [
+    "Psychedelic Rock"
+   ]
+  },
+  "Sigilkore": {
+   "up": [
+    "Hiphop"
+   ],
+   "src": [
+    "Hyperpop"
    ]
   },
   "Synth Pop": {
@@ -523,6 +675,12 @@
     "Citypop",
     "Contemporary R&B",
     "Italo Disco"
+   ]
+  },
+  "歌謡曲": {
+   "up": [],
+   "src": [
+    "Jazz"
    ]
   },
   "渋谷系": {
