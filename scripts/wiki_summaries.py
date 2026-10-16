@@ -189,6 +189,12 @@ def main() -> None:
         if item:
             out[title] = item
 
+    # a note with no Wikipedia article at all (no dbpedia =) can still have one written by hand
+    for title, own in (json.loads(OWN.read_text(encoding="utf-8")) if OWN.exists() else {}).items():
+        if title not in out:
+            out[title] = {lang + "_own": {"text": own[lang], "url": own["url"], "ref": own["ref"][lang]}
+                          for lang in ("ja", "en") if own.get(lang)}
+
     data = {"fetched": date.today().isoformat(), "source": "https://www.wikipedia.org/", "summaries": out}
     (OUT / "summaries.json").write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     shown = {l: sum(1 for v in out.values() if l in v and not v[l].get("doubt")) for l in ("ja", "en")}

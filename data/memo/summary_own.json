@@ -16,5 +16,77 @@
    "ja": "Britannica「electronic dance music」",
    "en": "Britannica, “electronic dance music”"
   }
+ },
+ "Footwork": {
+  "ja": "フットワークは、シカゴのダンスの場から生まれた、テンポ160前後のとても速く、細かく刻まれた抽象的なダンス音楽。ジューク（ゲットー・ハウス）から育ち、2010年にPlanet Muのコンピ『Bangs & Works』が出るまでは、ほとんどシカゴの中だけで聞かれていた。",
+  "en": "Footwork is very fast, abstract and hyper-rhythmic dance music of around 160 BPM that grew out of Chicago's dance scene and juke (ghetto house). Until Planet Mu's 2010 compilation Bangs & Works, it was heard almost exclusively within Chicago.",
+  "url": "https://planet.mu/?p=1090",
+  "ref": {
+   "ja": "Planet Mu『Bangs & Works Vol. 1』",
+   "en": "Planet Mu, Bangs & Works Vol. 1"
+  }
+ },
+ "Liquid Drum & Bass": {
+  "ja": "リキッド・ドラムンベース（リキッド・ファンク）は、ジャズやソウルの色が濃い、なめらかに流れるドラムンベース。1990年代末から2000年代初めに広まり、DJのFabioがラジオ番組で、こうした曲をかけるコーナーを「リキッド・ファンク」と呼んだのが名前の始まりとされる。",
+  "en": "Liquid drum and bass (liquid funk) is a smooth, flowing style of drum and bass with a strong jazz and soul feel. It spread in the late 1990s and early 2000s, and its name is said to come from DJ Fabio, who called a segment of his radio show featuring such tracks \"liquid funk\".",
+  "url": "https://ukf.com/read/in-conversation-with-fabio/",
+  "ref": {
+   "ja": "UKF「In Conversation With Fabio」",
+   "en": "UKF, “In Conversation With Fabio”"
+  }
+ },
+ "Singeli": {
+  "ja": "シンゲリは、タンザニアのダルエスサラームの路上パーティーから広まった、1分間に180〜300拍ほどのとても速いダンス音楽。ザラモ人のリズムや、カシオの電子楽器を使うムチリク、ターラブなどを元にしている。2017年にNyege Nyege Tapesのコンピ『Sounds of Sisso』が出て、国外にも知られるようになった。",
+  "en": "Singeli is very fast dance music, at around 180–300 BPM, that spread from street parties in Dar es Salaam, Tanzania. It draws on Zaramo rhythms, mchiriku (played on Casio keyboards) and taarab, and became known abroad with Nyege Nyege Tapes' 2017 compilation Sounds of Sisso.",
+  "url": "https://pan-african-music.com/en/singeli-the-future-sound-of-tanzania/",
+  "ref": {
+   "ja": "Pan African Music「Singeli, the future sound of Tanzania」",
+   "en": "Pan African Music, “Singeli, the future sound of Tanzania”"
+  }
+ },
+ "Pure MIDI": {
+  "ja": "Pure MIDIは、MIDI音源の内蔵エフェクトを切り、外のエフェクトもかけない素の音で作る音楽。ベロシティで音色の変わらないPCM音源のような響きが特徴で、実機のGM音源でもソフト音源でもよく、Windowsに入っているMSGSがいちばんよく使われる。ジャンルというより、決まりを決めて作る「縛り作曲」に近い。MLTEKや石引勲の音楽を元に、とぼけがおが名付けた。",
+  "en": "Pure MIDI is music made with the raw sound of MIDI sound modules, with their built-in effects turned off and no outside effects added. It sounds like PCM tones that do not change with velocity; real GM modules and software instruments are both fine, and the MSGS synth built into Windows is the most used. It is closer to composing under a set of rules than to a genre. Tobokegao named it after the music of MLTEK and Isao Ishibiki.",
+  "url": "https://x.com/to6okegao/status/1962335108960252381",
+  "ref": {
+   "ja": "Tobokegao（X）",
+   "en": "Tobokegao (X)"
+  }
+ },
+ "ジャスコテック": {
+  "ja": "ジャスコテックは、スーパー「ジャスコ」の店内BGMを源流とする音楽。どこでも耳にする店内BGMの、昔の商品や時代を思い出させる響きを楽しむもので、名前は2012年ごろから定着したとされる。2014年には、この名を冠したイベント「Tokyo Jusco Night」が始まった。",
+  "en": "Jusco-tech is music rooted in the in-store background music of Jusco supermarkets. Listeners enjoy the way this familiar background music recalls past products and eras; the name is said to have taken hold around 2012, and the event Tokyo Jusco Night, named after it, began in 2014.",
+  "url": "https://note.com/aka_obi/n/nf00fc62cb517",
+  "ref": {
+   "ja": "akaobi「ジャスコテックに関する覚書」（note）",
+   "en": "akaobi, notes on Jusco-tech (note, in Japanese)"
+  }
+ },
+ "Botanica": {
+  "ja": "Botanicaは、電子音楽に温かいアコースティックの音を重ねた音楽。身の回りの音の録音、何層もの音の重なり、音を細かく刻んで散らすグラニュラー処理、わざと荒らした音が特徴。名前はSpliceのサンプルパック「Resonance Botanica」から来たとされ、2024年ごろからSNSで見かけるようになった。作り手の一人は、ジャンルというより雰囲気だと話している。",
+  "en": "Botanica is electronic music layered with warm acoustic sounds, marked by recordings of everyday sounds, many stacked layers, granular processing and deliberately roughened textures. The name is said to come from the Splice sample pack \"Resonance Botanica\", and it began to appear on social media around 2024. One of its makers says it is more a mood than a genre.",
+  "url": "https://note.com/gloveity/n/n065dbb7a730e",
+  "ref": {
+   "ja": "Gloveity「Botanicaという音楽ジャンルについてざっくりと...」（note）",
+   "en": "Gloveity, on the Botanica genre (note, in Japanese)"
+  }
+ },
+ "ゴルジェ": {
+  "ja": "ゴルジェは、福岡出身のhanaliが2012年に始めた、タム（太鼓）を必ず使う音楽。登山や岩のイメージをまとい、「タムを使え、ゴルジェと呼べ、アートと呼ぶな」という決まりのもとで、誰でも参加して手を加えられる、オープンソースのようなジャンルとして広まった。",
+  "en": "Gorge is music that always uses toms, started in 2012 by hanali from Fukuoka. Wrapped in images of mountain climbing and rock, it spread as an open-source-like genre that anyone can join and change, under the rule \"Use toms. Call it Gorge. Don't call it art.\"",
+  "url": "https://daily.bandcamp.com/lists/gorge-music-feature",
+  "ref": {
+   "ja": "Bandcamp Daily「A Guide to Gorge」",
+   "en": "Bandcamp Daily, “A Guide to Gorge”"
+  }
+ },
+ "#jesusclub": {
+  "ja": "#jesusclubは、キックを7つ打つせわしないリズム（「七つ打ち」）が特徴の、ジャージー・クラブなどを元にしたダンス音楽。music fmとAbareflailの企画から生まれた「架空のジャンル」とされ、2024年11月末にハッシュタグが使われ始め、2025年にはコンピも出た。",
+  "en": "#jesusclub is dance music built on Jersey club and similar styles, marked by a busy rhythm of seven kicks in a row. It is said to have begun as a \"fictional genre\" from a project by music fm and Abareflail; the hashtag came into use at the end of November 2024, and compilations followed in 2025.",
+  "url": "https://note.com/dtm_nmpass/n/n624024607869",
+  "ref": {
+   "ja": "NMPASS「#jesusclubって何？」（note）",
+   "en": "NMPASS, “What is #jesusclub?” (note, in Japanese)"
+  }
  }
 }

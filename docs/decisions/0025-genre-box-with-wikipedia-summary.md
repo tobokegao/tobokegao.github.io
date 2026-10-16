@@ -7,7 +7,7 @@
   - 要約は`scripts/wiki_summaries.py`が取ってきて`data/memo/summaries.json`に置く。ノートの`dbpedia =`（英語版の記事名と同じ）から、英語版の記事の日本語版へのリンクをたどり、日本語版と英語版の両方の冒頭を取っておく。窓は、表示の言葉に合わせて切り替える。
   - 記事全体に出典の注意（「出典を必要とする記事」「独自研究の除去が必要な記事」など）が付いていれば、その言葉の要約は疑わしいとみなして出さない。記事の一部だけへの注意（「出典を必要とする記述」など）は、出すが`part`として残す。
   - 片方の言葉にしか使える要約がないときは、もう片方の表示ではそれを翻訳した文を出し、「（英語版を翻訳）」「(translated from the Japanese article)」と添える。翻訳は手で書いて`data/memo/summary_translations.json`に置き、翻訳元の文も一緒に持つ。元の文が変わると、スクリプトが翻訳の書き直しを知らせる。
-  - 日本語版と英語版のどちらも疑わしいジャンルは、ほかの出典を元に要約を書いて`data/memo/summary_own.json`に置き、「参考: Britannica「electronic dance music」」のように出典を出す（ChiptuneはMcAlpine『Bits and Pieces』（オックスフォード大学出版局）、EDMはBritannica）。出典の文はそのまま写さない。
+  - 日本語版と英語版のどちらも疑わしいジャンルは、ほかの出典を元に要約を書いて`data/memo/summary_own.json`に置き、「参考: Britannica「electronic dance music」」のように出典を出す（ChiptuneはMcAlpine『Bits and Pieces』（オックスフォード大学出版局）、EDMはBritannica）。出典の文はそのまま写さない。Wikipediaに記事がないジャンル（Pure MIDI、ゴルジェなど）も、ほかの出典を元に書いた要約を同じファイルに置けば窓に出る（`dbpedia =`がなくてもよい）。
   - 要約が図の年と食い違うときは確かめる。House Musicの日本語版は「1977年に誕生」としていたが、これは名前の元になったクラブWarehouseが開いた年で、英語版とBritannicaは1980年代初めから半ばに形になったとしている。図の年は最初のレコード（Jesse Saunders「On and On」、1984年）のまま、日本語の表示では英語版の訳を出す（翻訳に`"replace": true`）。
   - Wikipediaに記事がないジャンルは、ノートに`nicopedia = "記事名"`と書けば、窓に「ニコニコ大百科で見る」のリンクを出す（音MAD）。ニコニコ大百科の文はCC BY-SAではないので、窓には写さない。
   - 別のジャンルの記事に転送される記事名（Brostep → Dubstepなど）は、そのジャンルの要約を横取りするので使わない（0024と同じ）。

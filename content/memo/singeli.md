@@ -1,7 +1,7 @@
 +++
 title = "Singeli"
 dbpedia = "Singeli"
-born = 2007
+born = 2010
 also = ["シンゲリ"]
 unverified = true
 +++
