@@ -3,7 +3,6 @@ title = "Breakbeat"
 dbpedia = "Breakbeat"
 born = 1990
 tags = ["breaks"]
-up = ["Club Music"]
-src = ["Hiphop"]
+src = ["Hip Hop"]
 unverified = true
 +++

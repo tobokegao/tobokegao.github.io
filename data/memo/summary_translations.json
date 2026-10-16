@@ -23,12 +23,6 @@
    "text": "Detroit techno refers to techno originating from Detroit, Michigan, or a style of techno shared by artists from the city."
   }
  },
- "Drum'n'Bass": {
-  "ja": {
-   "from": "Drum and bass (D&B), also known as drum 'n' bass (DnB or D'n'B), is a genre of electronic dance music that emerged in the United Kingdom in the early 1990s. It is characterised by fast breakbeats (typically 165–185 beats per minute) with heavy bass and sub-bass lines, samples, and synthesizers.",
-   "text": "ドラムンベース（D&B、DnB、D'n'Bとも）は、1990年代初めにイギリスで生まれたエレクトロニック・ダンス・ミュージックのジャンル。速いブレイクビーツ（ふつうは1分間に165〜185拍）に、重いベースとサブベースのライン、サンプル、シンセサイザーを重ねるのが特徴。"
-  }
- },
  "Dubstep": {
   "ja": {
    "from": "Dubstep is a genre of electronic dance music or Bass Music that originated in South London in the early 2000s. The style, whose roots trace to the Jamaican sound system party scene in the early 1980s, emerged as a UK garage offshoot that blended 2-step rhythms and sparse dub production, as well as incorporating elements of broken beat, grime, and drum and bass.",
@@ -131,22 +125,10 @@
    "text": "ニュービートは、ニュー・ウェイヴ、ハイエナジー、EBM、ヒップホップ（スクラッチなど）の要素を混ぜた、ベルギーのエレクトロニック・ダンス・ミュージックのジャンル。"
   }
  },
- "Oldskool Happy Hardcore": {
-  "ja": {
-   "from": "Happy hardcore, also known as 4-beat, is a subgenre of hardcore dance music. It emerged both from the UK breakbeat hardcore rave scene, and Belgian, German and Dutch hardcore techno scenes in the early 1990s.",
-   "text": "ハッピー・ハードコア（4ビートとも）は、ハードコア・ダンス・ミュージックのサブジャンル。1990年代初めに、イギリスのブレイクビート・ハードコアのレイヴ・シーンと、ベルギー、ドイツ、オランダのハードコアテクノのシーンの両方から生まれた。"
-  }
- },
  "Progressive Rock": {
   "en": {
    "from": "プログレッシブ・ロック（英: Progressive rock）は、1960年代後半のイギリスに登場したロックのジャンルの1つ。進歩的、革新的なロックを意味する。",
    "text": "Progressive rock is a genre of rock that appeared in Britain in the late 1960s. The name means progressive, innovative rock."
-  }
- },
- "Techno Music": {
-  "en": {
-   "from": "音楽におけるテクノ（英: Techno）は、電子楽器を多数使用したジャンルを指す音楽用語である。テクノという音楽用語の使用は早く、1970年代後半には早くも西ドイツのクラフトワークの音楽についてテクノとの形容がなされている。",
-   "text": "In music, techno is a term for genres that use many electronic instruments. The word came into use early: as far back as the late 1970s, the music of Kraftwerk in West Germany was being described as techno."
   }
  },
  "Trance": {
@@ -189,13 +171,6 @@
   "ja": {
    "from": "Art music (alternatively called classical music, cultivated music, serious music, and canonic music) is music considered to be of high phonoaesthetic value. It typically implies advanced structural and theoretical considerations or a written musical tradition.",
    "text": "芸術音楽（クラシック音楽、教養音楽、シリアス・ミュージック、規範とされる音楽とも）は、音としての美的な価値が高いとされる音楽。ふつうは、高度な構造や理論への配慮、または楽譜に書かれた音楽の伝統を前提とする。"
-  }
- },
- "House Music": {
-  "ja": {
-   "from": "House music, or simply house, is a type of electronic dance music which is characterized by a repetitive four-on-the-floor beat and a typical tempo of 115–130 beats per minute. It was created in Chicago by DJs and music producers from the city's queer Black underground club culture and evolved slowly in the early/mid 1980s as DJs began altering disco songs to give them a more mechanical beat.",
-   "replace": true,
-   "text": "ハウス・ミュージック（単にハウスとも）は、くり返される四つ打ちのビートと、1分間に115〜130拍ほどのテンポが特徴のエレクトロニック・ダンス・ミュージック。シカゴのクィアの黒人たちによるアンダーグラウンドなクラブ文化の中でDJや音楽プロデューサーたちによって作られ、1980年代の初めから半ばにかけて、DJがディスコの曲をより機械的なビートに作り変える中で、ゆっくりと形になった。"
   }
  },
  "Baile Funk": {
@@ -244,6 +219,31 @@
   "ja": {
    "from": "Sigilkore is an Internet microgenre of hip-hop that emerged in the late 2010s, originally pioneered by American rapper and producer Luci4. The style is characterized by layered DJ mixing and digital effects such as bitcrushing and pitch shifting with lyrics relating to magic, deities, demons and occult rituals.",
    "text": "シジルコアは、2010年代末に生まれたネット発のヒップホップ派生ジャンルで、アメリカのラッパー兼プロデューサーのLuci4が切り開いた。DJミックスを何層も重ねる手法や、音をあえて粗くしたり音程を変えたりするデジタル効果（ビットクラッシュやピッチシフト）が特徴で、歌詞には魔術や神々、悪魔、オカルトの儀式などが登場する。"
+  }
+ },
+ "House": {
+  "ja": {
+   "from": "House music, or simply house, is a type of electronic dance music which is characterized by a repetitive four-on-the-floor beat and a typical tempo of 115–130 beats per minute. It was created in Chicago by DJs and music producers from the city's queer Black underground club culture and evolved slowly in the early/mid 1980s as DJs began altering disco songs to give them a more mechanical beat.",
+   "replace": true,
+   "text": "ハウス・ミュージック（単にハウスとも）は、くり返される四つ打ちのビートと、1分間に115〜130拍ほどのテンポが特徴のエレクトロニック・ダンス・ミュージック。シカゴのクィアの黒人たちによるアンダーグラウンドなクラブ文化の中でDJや音楽プロデューサーたちによって作られ、1980年代の初めから半ばにかけて、DJがディスコの曲をより機械的なビートに作り変える中で、ゆっくりと形になった。"
+  }
+ },
+ "Techno": {
+  "en": {
+   "from": "音楽におけるテクノ（英: Techno）は、電子楽器を多数使用したジャンルを指す音楽用語である。テクノという音楽用語の使用は早く、1970年代後半には早くも西ドイツのクラフトワークの音楽についてテクノとの形容がなされている。",
+   "text": "In music, techno is a term for genres that use many electronic instruments. The word came into use early: as far back as the late 1970s, the music of Kraftwerk in West Germany was being described as techno."
+  }
+ },
+ "Drum & Bass": {
+  "ja": {
+   "from": "Drum and bass (D&B), also known as drum 'n' bass (DnB or D'n'B), is a genre of electronic dance music that emerged in the United Kingdom in the early 1990s. It is characterised by fast breakbeats (typically 165–185 beats per minute) with heavy bass and sub-bass lines, samples, and synthesizers.",
+   "text": "ドラムンベース（D&B、DnB、D'n'Bとも）は、1990年代初めにイギリスで生まれたエレクトロニック・ダンス・ミュージックのジャンル。速いブレイクビーツ（ふつうは1分間に165〜185拍）に、重いベースとサブベースのライン、サンプル、シンセサイザーを重ねるのが特徴。"
+  }
+ },
+ "Happy Hardcore": {
+  "ja": {
+   "from": "Happy hardcore, also known as 4-beat, is a subgenre of hardcore dance music. It emerged both from the UK breakbeat hardcore rave scene, and Belgian, German and Dutch hardcore techno scenes in the early 1990s.",
+   "text": "ハッピー・ハードコア（4ビートとも）は、ハードコア・ダンス・ミュージックのサブジャンル。1990年代初めに、イギリスのブレイクビート・ハードコアのレイヴ・シーンと、ベルギー、ドイツ、オランダのハードコアテクノのシーンの両方から生まれた。"
   }
  }
 }

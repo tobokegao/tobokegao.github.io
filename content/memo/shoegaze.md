@@ -2,7 +2,7 @@
 title = "Shoegaze"
 dbpedia = "Shoegaze"
 born = 1988
-up = ["Rock Music"]
+up = ["Rock"]
 src = ["Psychedelic Rock"]
 also = ["シューゲイザー", "シューゲイズ"]
 unverified = true

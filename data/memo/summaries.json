@@ -279,7 +279,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%83%87%E3%83%88%E3%83%AD%E3%82%A4%E3%83%88%E3%83%BB%E3%83%86%E3%82%AF%E3%83%8E"
    }
   },
-  "Disco Music": {
+  "Disco": {
    "ja": {
     "title": "ディスコ (音楽)",
     "text": "ディスコ（Disco）は、ポピュラー音楽におけるダンス・ミュージックのジャンルの一つ。",
@@ -309,7 +309,7 @@
     "url": "https://en.wikipedia.org/wiki/Djent"
    }
   },
-  "Drum'n'Bass": {
+  "Drum & Bass": {
    "ja": {
     "title": "ドラムンベース",
     "text": "ドラムンベース（英: Drum and bass）は、イギリスサウスロンドンで1990年代に誕生した電子音楽のジャンルの1つ。非常に速いテンポの変則的なドラムビートに、うねる様なベースが重なるドラムとベースが主体となるダンスミュージック。",
@@ -690,6 +690,25 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%B8"
    }
   },
+  "Happy Hardcore": {
+   "ja": {
+    "title": "ハッピーハードコア",
+    "text": "ハッピーハードコア (happy hardcore) はハードコアテクノの音楽のジャンルの一つ。イギリスの地方都市を発祥の地とする。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%83%E3%83%94%E3%83%BC%E3%83%8F%E3%83%BC%E3%83%89%E3%82%B3%E3%82%A2",
+    "doubt": [
+     "独自研究の除去が必要な記事/2016年3月"
+    ]
+   },
+   "en": {
+    "title": "Happy hardcore",
+    "text": "Happy hardcore, also known as 4-beat, is a subgenre of hardcore dance music. It emerged both from the UK breakbeat hardcore rave scene, and Belgian, German and Dutch hardcore techno scenes in the early 1990s.",
+    "url": "https://en.wikipedia.org/wiki/Happy_hardcore"
+   },
+   "ja_tr": {
+    "text": "ハッピー・ハードコア（4ビートとも）は、ハードコア・ダンス・ミュージックのサブジャンル。1990年代初めに、イギリスのブレイクビート・ハードコアのレイヴ・シーンと、ベルギー、ドイツ、オランダのハードコアテクノのシーンの両方から生まれた。",
+    "url": "https://en.wikipedia.org/wiki/Happy_hardcore"
+   }
+  },
   "Hardcore Techno": {
    "ja": {
     "title": "ハードコアテクノ",
@@ -716,7 +735,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%B3%E3%82%A2%E3%83%86%E3%82%AF%E3%83%8E"
    }
   },
-  "Hiphop": {
+  "Hip Hop": {
    "ja": {
     "title": "ヒップホップ・ミュージック",
     "text": "ヒップホップ・ミュージック（hip hop music）は、ヒップホップ、ラップ・ミュージックとも呼ばれる、ラップなどのリズミカルなミュージックからなる音楽のジャンルの一つである。または、そのリズム、セリフを同じ調子でリズミカルに繰り返すことを指す。",
@@ -732,7 +751,7 @@
     ]
    }
   },
-  "House Music": {
+  "House": {
    "ja": {
     "title": "ハウス (音楽)",
     "text": "ハウス・ミュージック (英名：house music) は、1977年にアメリカ合衆国シカゴで誕生した音楽ジャンルの一つ。単にハウスと呼ばれることも多い。",
@@ -959,7 +978,7 @@
     "url": "https://en.wikipedia.org/wiki/New_beat"
    }
   },
-  "Noise Music": {
+  "Noise": {
    "ja": {
     "title": "ノイズミュージック",
     "text": "ノイズミュージック (Noise music) は、音楽の一ジャンルである。実験音楽、前衛音楽、フリー・ジャズ、アンダーグラウンドなロック音楽の一部が、ノイズ音楽に含まれると見られている。",
@@ -969,25 +988,6 @@
     "title": "Noise music",
     "text": "Noise music (or simply noise) is a subgenre of experimental music that is characterised by its use of unwanted noise as a primary musical element. The genre has roots in early 20th century avant-garde music, but later drew influence from industrial and electronic music.",
     "url": "https://en.wikipedia.org/wiki/Noise_music"
-   }
-  },
-  "Oldskool Happy Hardcore": {
-   "ja": {
-    "title": "ハッピーハードコア",
-    "text": "ハッピーハードコア (happy hardcore) はハードコアテクノの音楽のジャンルの一つ。イギリスの地方都市を発祥の地とする。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%83%E3%83%94%E3%83%BC%E3%83%8F%E3%83%BC%E3%83%89%E3%82%B3%E3%82%A2",
-    "doubt": [
-     "独自研究の除去が必要な記事/2016年3月"
-    ]
-   },
-   "en": {
-    "title": "Happy hardcore",
-    "text": "Happy hardcore, also known as 4-beat, is a subgenre of hardcore dance music. It emerged both from the UK breakbeat hardcore rave scene, and Belgian, German and Dutch hardcore techno scenes in the early 1990s.",
-    "url": "https://en.wikipedia.org/wiki/Happy_hardcore"
-   },
-   "ja_tr": {
-    "text": "ハッピー・ハードコア（4ビートとも）は、ハードコア・ダンス・ミュージックのサブジャンル。1990年代初めに、イギリスのブレイクビート・ハードコアのレイヴ・シーンと、ベルギー、ドイツ、オランダのハードコアテクノのシーンの両方から生まれた。",
-    "url": "https://en.wikipedia.org/wiki/Happy_hardcore"
    }
   },
   "Power Pop": {
@@ -1116,7 +1116,7 @@
     ]
    }
   },
-  "Rock Music": {
+  "Rock": {
    "ja": {
     "title": "ロック (音楽)",
     "text": "ロック（英: Rock）とは、音楽のジャンルの1つ。ロックンロールやブルース、カントリーミュージックを起源として1950年代にアメリカ合衆国で発祥し、1960年代以降のアメリカおよびイギリスを中心にして幅広く多様な様式へと発展した。",
@@ -1237,7 +1237,7 @@
     "url": "https://en.wikipedia.org/wiki/Synthwave"
    }
   },
-  "Techno Music": {
+  "Techno": {
    "ja": {
     "title": "テクノ (ダンスミュージック)",
     "text": "音楽におけるテクノ（英: Techno）は、電子楽器を多数使用したジャンルを指す音楽用語である。テクノという音楽用語の使用は早く、1970年代後半には早くも西ドイツのクラフトワークの音楽についてテクノとの形容がなされている。",

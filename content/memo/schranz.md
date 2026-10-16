@@ -1,7 +1,7 @@
 +++
 title = "Schranz"
 born = 1996
-up = ["Techno Music"]
+up = ["Techno"]
 also = ["シュランツ"]
 unverified = true
 +++

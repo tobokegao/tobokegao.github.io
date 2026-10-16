@@ -1,6 +1,6 @@
 +++
 title = "Italo Disco"
 dbpedia = "Italo_disco"
-up = ["Disco Music"]
+up = ["Disco"]
 credit = "zatto"
 +++
