@@ -787,6 +787,8 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .tl__e.is-on { stroke-width: 3px; }
 .tl__canvas.is-focus .tl__e:not(.is-on) { opacity: .2; }
 .tl__canvas.is-focus .tl__node:not(.is-near) { opacity: .4; }
+/* the pages linked to the one pointed at: yellow dots over their edge, like the lit lines */
+.tl__canvas.is-focus .tl__node.is-near:not(.is-self) { outline: 2px dotted var(--rel-lit); outline-offset: -2px; }
 .tl__node { position: absolute; display: flex; flex-direction: column; padding: 2px 8px; white-space: nowrap; text-decoration: none; font: var(--dot)/calc(var(--dot) + 6px) var(--f-dot); color: var(--ink); background: var(--win); border: 2px solid var(--frame); }
 .tl__node--posts { border-color: var(--bevel-dk); }
 .tl__node--major { border-color: var(--grp); }

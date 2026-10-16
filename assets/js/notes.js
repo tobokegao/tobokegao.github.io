@@ -291,7 +291,10 @@
           p.classList.toggle("is-on", !!on);
           if (on) { near[p.dataset.a] = 1; near[p.dataset.b] = 1; }
         });
-        Object.keys(byKey).forEach(function (x) { byKey[x].el.classList.toggle("is-near", !!near[x]); });
+        Object.keys(byKey).forEach(function (x) {
+          byKey[x].el.classList.toggle("is-near", !!near[x]);
+          byKey[x].el.classList.toggle("is-self", x === k);
+        });
       };
       Object.keys(byKey).forEach(function (k) {
         var a = byKey[k].el;

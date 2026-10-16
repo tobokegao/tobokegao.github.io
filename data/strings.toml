@@ -307,12 +307,12 @@ ja = "画像あり"
 en = "With pictures"
 
 [dbpediaCredit]
-ja = "つながりの一部:"
-en = "Some of the connections:"
+ja = "つながりの出典（一部）:"
+en = "Some connection data:"
 
 [genreCredit]
-ja = "ジャンルとつながりの初めのデータ: ざっと"
-en = "First genre data and connections: zatto"
+ja = "音楽相関図のもとになったデータ: ざっと"
+en = "Original music map data: zatto"
 
 [withPosts]
 ja = "ポストのある話題も"
