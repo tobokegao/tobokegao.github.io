@@ -1,0 +1,194 @@
+{
+ "Ambient": {
+  "en": {
+   "from": "環境音楽（かんきょうおんがく、英: ambient music）、アンビエント・ミュージックは、伝統的な音楽の構成やリズムよりも音色や雰囲気を重視した音楽のジャンルである。正味の構成、ビート、構造化されたメロディを持たないこともある。",
+   "text": "Ambient music (環境音楽) is a genre that emphasizes tone and atmosphere over traditional musical structure and rhythm. It may have no clear structure, beat or structured melody."
+  }
+ },
+ "Breakbeat Hardcore": {
+  "ja": {
+   "from": "Breakbeat hardcore (also referred to as hardcore rave, oldskool hardcore or simply hardcore) is a music genre that spawned from the UK rave scene during the early 1990s. It combines four-on-the-floor rhythms with breakbeats usually sampled from hip-hop.",
+   "text": "ブレイクビート・ハードコア（ハードコア・レイヴ、オールドスクール・ハードコア、または単にハードコアとも）は、1990年代初めにイギリスのレイヴ・シーンから生まれた音楽ジャンル。四つ打ちのリズムに、ふつうはヒップホップからサンプリングしたブレイクビーツを組み合わせる。"
+  }
+ },
+ "Chicago House": {
+  "en": {
+   "from": "シカゴ・ハウス（Chicago house）はハウス音楽の初期のスタイルで、アメリカ合衆国のシカゴで誕生した音楽ジャンルである。",
+   "text": "Chicago house is an early style of house music, a genre born in Chicago in the United States."
+  }
+ },
+ "Detroit Techno": {
+  "en": {
+   "from": "デトロイト・テクノ（Detroit techno）は、アメリカのミシガン州デトロイトから発信されるテクノ、またはデトロイト出身のアーティストに共通した音楽性を持つテクノのジャンルをさす。",
+   "text": "Detroit techno refers to techno originating from Detroit, Michigan, or a style of techno shared by artists from the city."
+  }
+ },
+ "Drum'n'Bass": {
+  "ja": {
+   "from": "Drum and bass (D&B), also known as drum 'n' bass (DnB or D'n'B), is a genre of electronic dance music that emerged in the United Kingdom in the early 1990s. It is characterised by fast breakbeats (typically 165–185 beats per minute) with heavy bass and sub-bass lines, samples, and synthesizers.",
+   "text": "ドラムンベース（D&B、DnB、D'n'Bとも）は、1990年代初めにイギリスで生まれたエレクトロニック・ダンス・ミュージックのジャンル。速いブレイクビーツ（ふつうは1分間に165〜185拍）に、重いベースとサブベースのライン、サンプル、シンセサイザーを重ねるのが特徴。"
+  }
+ },
+ "Dubstep": {
+  "ja": {
+   "from": "Dubstep is a genre of electronic dance music or Bass Music that originated in South London in the early 2000s. The style, whose roots trace to the Jamaican sound system party scene in the early 1980s, emerged as a UK garage offshoot that blended 2-step rhythms and sparse dub production, as well as incorporating elements of broken beat, grime, and drum and bass.",
+   "text": "ダブステップは、2000年代初めにロンドン南部で生まれたエレクトロニック・ダンス・ミュージック（ベース・ミュージック）のジャンル。そのルーツは1980年代初めのジャマイカのサウンドシステム文化にさかのぼり、UKガラージから派生して、2ステップのリズムと音数を絞ったダブの音作りを合わせ、ブロークンビーツやグライム、ドラムンベースの要素も取り入れた。"
+  }
+ },
+ "EBM": {
+  "ja": {
+   "from": "Electronic body music (EBM) is a genre of electronic music that combines elements of industrial music and synth-punk with elements of dance music. It developed in the early 1980s in Western Europe, as an outgrowth of both the punk and the industrial music cultures.",
+   "text": "エレクトロニック・ボディ・ミュージック（EBM）は、インダストリアル・ミュージックとシンセパンクの要素に、ダンス・ミュージックの要素を合わせた電子音楽のジャンル。1980年代初めに西ヨーロッパで、パンクとインダストリアル・ミュージックの双方の文化から生まれた。"
+  }
+ },
+ "Electro": {
+  "en": {
+   "from": "エレクトロ（英: Electro(electro-funk もしくは electro-boogie)の略称）とは、1980年代前半に流行した電子音楽の1ジャンルである。本項のエレクトロ以外の一般的な意味としてのエレクトロ(Electro)は電気工学と電子工学を含む上位概念の意味である。",
+   "text": "Electro (short for electro-funk or electro-boogie) is a genre of electronic music that was popular in the early 1980s. Apart from this genre, the word electro in general is an umbrella term covering electrical and electronic engineering."
+  }
+ },
+ "Electro House": {
+  "en": {
+   "from": "エレクトロ・ハウス (electro house) は、ハウスの中でもハードな一分野である。1980年代のエレクトロ、エレクトロクラッシュ、ポップス、シンセポップとテックハウスに起因している様々な影響を受けているため、エレクトロ・ハウスの起源は明確ではない。",
+   "text": "Electro house is a harder style of house music. Its origins are unclear, as it draws on many influences from 1980s electro, electroclash, pop, synth-pop and tech house."
+  }
+ },
+ "Electronica": {
+  "ja": {
+   "from": "Electronica is both a broad group of electronic-based music styles intended for listening rather than strictly for dancing and a music scene that came to prominence in the early 1990s in the United Kingdom which incorporated various musical styles. In the United States, the term is mostly used to refer to electronic music generally.",
+   "text": "エレクトロニカは、踊るためよりも聴くための電子音楽のさまざまなスタイルをまとめた呼び名であり、1990年代初めにイギリスで注目された、いろいろな音楽スタイルを取り込んだ音楽シーンのことでもある。アメリカでは、おもに電子音楽全般を指す言葉として使われる。"
+  }
+ },
+ "French House": {
+  "ja": {
+   "from": "French house (also referred to as French touch, filter house, or tekfunk) is a style of house music devised by French musicians in the 1990s. It is a form of Eurodisco and a popular strand of the late 1990s and 2000s European dance music scene.",
+   "text": "フレンチ・ハウス（フレンチ・タッチ、フィルター・ハウス、テックファンクとも）は、1990年代にフランスの音楽家たちが作り出したハウス・ミュージックのスタイル。ユーロディスコの一種で、1990年代末から2000年代のヨーロッパのダンス・ミュージックで人気のあった流れの一つ。"
+  }
+ },
+ "Funkot": {
+  "en": {
+   "from": "ファンコット（Funkot）は、インドネシアで発展した電子音楽およびダンス・ミュージックの一種である。ハウス・ミュージックを基盤として、ダンドゥットやインドネシアのポピュラー音楽などの要素を取り入れた音楽で、高速なテンポ、特徴的なリズム、太いベースライン、ボーカルなどのサンプリングを特徴とする。",
+   "text": "Funkot is a kind of electronic and dance music developed in Indonesia. Built on house music, it takes in elements of dangdut and Indonesian popular music, and is marked by fast tempos, distinctive rhythms, thick basslines and sampled vocals."
+  }
+ },
+ "Garage House": {
+  "ja": {
+   "from": "Garage house (originally known as \"garage\"; local terms include \"New York house\" and New Jersey sound) is an electronic dance music style that was developed alongside Chicago house music. The genre was popular in the 1980s in the United States and the 1990s in the United Kingdom, where it developed into UK garage and speed garage.",
+   "text": "ガラージ・ハウス（もとは「ガラージ」と呼ばれ、地元では「ニューヨーク・ハウス」「ニュージャージー・サウンド」とも）は、シカゴ・ハウスと並行して発展したエレクトロニック・ダンス・ミュージックのスタイル。1980年代のアメリカと1990年代のイギリスで人気を集め、イギリスではUKガラージやスピード・ガラージへと発展した。"
+  }
+ },
+ "Glitch": {
+  "ja": {
+   "from": "Glitch is a genre of experimental electronic music that emerged in the 1990s, distinguished by the deliberate use of glitches in audio media and other sonic artifacts. The genre takes its sounds from malfunctions in recording equipment and digital electronics, and its practitioners work from a philosophical position that treats errors and failures as compositional material rather than problems to be corrected.",
+   "text": "グリッチは、1990年代に生まれた実験的な電子音楽のジャンルで、音声メディアの不具合（グリッチ）やそのほかの音の乱れをわざと使うのが特徴。録音機器やデジタル機器の故障から音を取り、エラーや失敗を、直すべき問題ではなく作曲の材料として扱う考え方に立って作られる。"
+  }
+ },
+ "Hardcore Techno": {
+  "en": {
+   "from": "ハードコアテクノ（英: hardcore techno）は1990年代初期から半ばにかけ、オランダのロッテルダム、アメリカのニューヨーク、オーストラリアのニューキャッスルなどで同時発生的に出現した電子音楽のスタイルである。",
+   "text": "Hardcore techno is a style of electronic music that emerged simultaneously in the early to mid-1990s across locations such as Rotterdam in the Netherlands, New York in the United States and Newcastle in Australia."
+  }
+ },
+ "J-CORE": {
+  "ja": {
+   "from": "J-core (Jコア) is the style of hardcore techno associated with Japanese groups and DJs from the 1990s onward. Originally called \"Japcore\", the name \"J-core\" is an abbreviation of \"Japanese hardcore\".",
+   "text": "J-core（Jコア）は、1990年代から日本のグループやDJたちが作ってきたハードコアテクノのスタイル。もとは「ジャップコア」と呼ばれ、「J-core」は「ジャパニーズ・ハードコア」を縮めた名前。"
+  }
+ },
+ "J-POP": {
+  "ja": {
+   "from": "J-pop (an abbreviated form of \"Japanese popular music\") is a form of popular music that entered the musical mainstream of Japan in the 1990s. In Japan it is known simply as pops (ポップス, poppusu).",
+   "text": "J-pop（「ジャパニーズ・ポピュラー・ミュージック」を縮めた呼び名）は、1990年代に日本の音楽の主流に入ったポピュラー音楽。日本では単に「ポップス」とも呼ばれる。"
+  }
+ },
+ "Jungle": {
+  "ja": {
+   "from": "Jungle is a genre of electronic music that developed in the 1990s out of the UK rave scene and Jamaican sound system culture. Emerging from breakbeat hardcore, the style is characterised by rapid breakbeats, heavily syncopated percussive loops, samples and synthesised effects, combined with the deep basslines, melodies and vocal samples found in dub, reggae and dancehall, as well as hip-hop and funk.",
+   "text": "ジャングルは、1990年代にイギリスのレイヴ・シーンとジャマイカのサウンドシステム文化から生まれた電子音楽のジャンル。ブレイクビート・ハードコアから生まれ、速いブレイクビーツ、シンコペーションの強い打楽器のループ、サンプルやシンセサイザーの効果に、ダブ、レゲエ、ダンスホール、ヒップホップ、ファンクの深いベースライン、メロディ、ボーカルのサンプルを組み合わせるのが特徴。"
+  }
+ },
+ "Lo-fi Hip Hop": {
+  "ja": {
+   "from": "Lofi hip-hop (also known as chillhop) is a style of lo-fi music that combines hip-hop beats with elements of chill-out. The word lofi (also typeset as lo-fi, short for \"low fidelity\"), refers to the unpolished production techniques common in the style.",
+   "text": "ローファイ・ヒップホップ（チルホップとも）は、ヒップホップのビートにチルアウトの要素を合わせたローファイ音楽のスタイル。ローファイ（lofi、lo-fiとも書き、「ロー・フィデリティ」を縮めた言葉）は、このスタイルによく見られる、磨きすぎない音作りのこと。"
+  }
+ },
+ "Miami Bass": {
+  "ja": {
+   "from": "Miami bass (also known as booty music or booty bass) is a subgenre of hip-hop that became popular in the 1980s and 1990s. The use of drums from the Roland TR-808, sustained kick drum, heavy bass, raised dance tempos, and frequently sexually explicit lyrical content differentiate it from other hip-hop subgenres.",
+   "text": "マイアミ・ベース（ブーティ・ミュージック、ブーティ・ベースとも）は、1980年代から1990年代に人気を集めたヒップホップのサブジャンル。ローランドTR-808のドラム、長く伸びるキック、重いベース、速めのダンス向けのテンポ、性的な歌詞が多いことが、ほかのヒップホップのサブジャンルとの違い。"
+  }
+ },
+ "Nerdcore": {
+  "en": {
+   "from": "ナードコア・ヒップホップとは、ヒップホップ・ミュージックのジャンル。ナードやギークなどいわゆるオタクが興味を持っていると考えられるテーマを含んだもの。",
+   "text": "Nerdcore hip hop is a genre of hip hop music. It deals with themes thought to interest nerds and geeks, the so-called otaku."
+  }
+ },
+ "New Beat": {
+  "ja": {
+   "from": "New beat is a Belgian electronic dance music genre that fuses elements of new wave, hi-NRG, EBM and hip hop (e.g. scratching).",
+   "text": "ニュービートは、ニュー・ウェイヴ、ハイエナジー、EBM、ヒップホップ（スクラッチなど）の要素を混ぜた、ベルギーのエレクトロニック・ダンス・ミュージックのジャンル。"
+  }
+ },
+ "Oldskool Happy Hardcore": {
+  "ja": {
+   "from": "Happy hardcore, also known as 4-beat, is a subgenre of hardcore dance music. It emerged both from the UK breakbeat hardcore rave scene, and Belgian, German and Dutch hardcore techno scenes in the early 1990s.",
+   "text": "ハッピー・ハードコア（4ビートとも）は、ハードコア・ダンス・ミュージックのサブジャンル。1990年代初めに、イギリスのブレイクビート・ハードコアのレイヴ・シーンと、ベルギー、ドイツ、オランダのハードコアテクノのシーンの両方から生まれた。"
+  }
+ },
+ "Progressive Rock": {
+  "en": {
+   "from": "プログレッシブ・ロック（英: Progressive rock）は、1960年代後半のイギリスに登場したロックのジャンルの1つ。進歩的、革新的なロックを意味する。",
+   "text": "Progressive rock is a genre of rock that appeared in Britain in the late 1960s. The name means progressive, innovative rock."
+  }
+ },
+ "Techno Music": {
+  "en": {
+   "from": "音楽におけるテクノ（英: Techno）は、電子楽器を多数使用したジャンルを指す音楽用語である。テクノという音楽用語の使用は早く、1970年代後半には早くも西ドイツのクラフトワークの音楽についてテクノとの形容がなされている。",
+   "text": "In music, techno is a term for genres that use many electronic instruments. The word came into use early: as far back as the late 1970s, the music of Kraftwerk in West Germany was being described as techno."
+  }
+ },
+ "Trance": {
+  "en": {
+   "from": "トランス（英: trance）は、ハウスから派生したEDMの一種である。125~145BPM付近で、短いシンセサイザーの旋律を際限なく繰り返し、うねるようなサウンドが特徴である。",
+   "text": "Trance is a kind of EDM that branched off from house. It is marked by short synthesizer phrases repeated without end at around 125–145 BPM, and a surging sound."
+  }
+ },
+ "UK Garage": {
+  "ja": {
+   "from": "UK garage, abbreviated as UKG, is a genre of electronic music which originated in England in the early to mid-1990s. It is defined by percussive, shuffled rhythms with syncopated hi-hats, cymbals, and snares, and may include either 4/4 house kick patterns or more irregular \"2-step\" rhythms.",
+   "text": "UKガラージ（UKG）は、1990年代初めから半ばにイングランドで生まれた電子音楽のジャンル。シンコペーションのあるハイハット、シンバル、スネアによる、跳ねるような打楽器のリズムが特徴で、ハウスの4/4のキックのパターンか、もっと不規則な「2ステップ」のリズムを使う。"
+  }
+ },
+ "ゲーム音楽": {
+  "en": {
+   "from": "ゲームミュージックは、コンピュータゲームに付随する音楽のことである。ゲーム音楽、ビデオゲームミュージック（VGM）、ゲームBGMとも呼ばれている。",
+   "text": "Game music is music that accompanies video games. It is also called video game music (VGM) or game BGM."
+  }
+ },
+ "古典派音楽": {
+  "en": {
+   "from": "古典派音楽（こてんはおんがく）は、クラシック音楽の歴史において、18世紀中ごろから19世紀はじめにかけての音楽様式をさす用語。現代においてはハイドン、モーツァルト、ベートーヴェンを中心とするウィーン古典派が代表的な存在とされている。",
+   "text": "Classical-period music is a term in the history of classical music for the musical style from the mid-18th to the early 19th century. Today the Viennese Classical school, centred on Haydn, Mozart and Beethoven, is seen as its leading example."
+  }
+ },
+ "日本音楽": {
+  "ja": {
+   "from": "In Japan, music includes a wide array of distinct genres, both traditional and modern. The word for \"music\" in Japanese is 音楽 (ongaku), combining the kanji 音 on (sound) with the kanji 楽 gaku (music, comfort).",
+   "text": "日本の音楽には、伝統的なものから現代的なものまで、さまざまなジャンルがある。日本語で「音楽」を表す言葉は「音楽（おんがく）」で、「音」（おん、音のこと）と「楽」（がく、音楽・安らぎ）の2つの漢字を合わせたもの。"
+  }
+ },
+ "渋谷系": {
+  "ja": {
+   "from": "Shibuya-kei (Japanese: 渋谷系; lit. \"Shibuya style\", also called the Shibuya sound) is a Japanese music subculture and microgenre that originated in Tokyo in the late 1980s and early 1990s.",
+   "text": "渋谷系（「渋谷スタイル」の意味で、渋谷サウンドとも）は、1980年代末から1990年代初めに東京で生まれた、日本の音楽のサブカルチャーであり、小さなジャンル。"
+  }
+ },
+ "芸術音楽": {
+  "ja": {
+   "from": "Art music (alternatively called classical music, cultivated music, serious music, and canonic music) is music considered to be of high phonoaesthetic value. It typically implies advanced structural and theoretical considerations or a written musical tradition.",
+   "text": "芸術音楽（クラシック音楽、教養音楽、シリアス・ミュージック、規範とされる音楽とも）は、音としての美的な価値が高いとされる音楽。ふつうは、高度な構造や理論への配慮、または楽譜に書かれた音楽の伝統を前提とする。"
+  }
+ }
+}

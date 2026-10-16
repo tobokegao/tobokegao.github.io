@@ -79,6 +79,8 @@ REMINDERS = [
     (r"^(content/memo/|scripts/x_notes\.py$)", "ノートが変わった。scripts/x_notes.py を回して、リンクとポストの一覧を作り直す"),
     (r"^(content/memo/|scripts/dbpedia_links\.py$)",
      "ジャンルのノートを足したり dbpedia = を書いたりしたなら、scripts/dbpedia_links.py を回してから x_notes.py を回す"),
+    (r"^(content/memo/|scripts/wiki_summaries\.py$)",
+     "ジャンルのノートを足したり dbpedia = を書いたりしたなら、scripts/wiki_summaries.py も回し、出典の疑わしい要約を確かめる"),
 ]
 
 

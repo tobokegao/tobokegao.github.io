@@ -220,6 +220,9 @@ def main() -> int:
             t["major"] = int(fm.get("color", 1))
         if fm.get("credit"):
             t["credit"] = fm["credit"]
+        # a genre with no Wikipedia article points to Niconico Pedia instead (decision 0025)
+        if fm.get("nicopedia"):
+            t["nicopedia"] = fm["nicopedia"]
     # Typed relations from DBpedia (scripts/dbpedia_links.py) come first: a pair of genres
     # that DBpedia links is taken from there, and the notes' own relation for that pair is
     # left out (decision 0024). Pairs DBpedia does not link keep the notes' relations.
@@ -322,7 +325,7 @@ def main() -> int:
              "years": dict(sorted(t["years"].items()))}
         if "names" in t:
             o["names"] = {w: topics[x]["url"] for w, x in t["names"].items() if x in topics}
-        for f in ("born", "first", "major", "majors", "credit", "draft", "dbpedia"):
+        for f in ("born", "first", "major", "majors", "credit", "draft", "dbpedia", "nicopedia"):
             if f in t:
                 o[f] = t[f]
         out_topics[k] = o

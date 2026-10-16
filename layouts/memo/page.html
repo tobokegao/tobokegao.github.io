@@ -110,7 +110,18 @@
       {{ $year := -99999 }}
       {{ if isset $x "born" }}{{ $year = $x.born }}{{ else if $x.first }}{{ $year = int (substr $x.first 0 4) }}{{ end }}
       {{ if ne $year -99999 }}
-      {{ $nodes = $nodes | append (dict "k" $k "t" $x.title "u" (relURL $x.url) "y" $year "b" (cond (isset $x "born") 1 0) "n" (add $x.n $x.nr) "up" $x.rel.up "src" $x.rel.src "mj" ($x.majors | default slice) "c" ($x.major | default 0) "d" ($x.draft | default 0)) }}
+      {{- /* the opening of its Wikipedia articles (scripts/wiki_summaries.py), in each language: the
+           article in that language unless its sources are in doubt, or else a translation of the other */}}
+      {{ $sum := dict }}
+      {{ with index hugo.Data.memo.summaries.summaries $x.title }}
+        {{ $v := . }}
+        {{ range slice "ja" "en" }}
+          {{ $o := index $v . }}{{ $t := index $v (printf "%s_tr" .) }}
+          {{ if and $o (not $o.doubt) }}{{ $sum = merge $sum (dict . (dict "x" $o.text "u" $o.url)) }}
+          {{ else if $t }}{{ $sum = merge $sum (dict . (dict "x" $t.text "u" $t.url "tr" 1)) }}{{ end }}
+        {{ end }}
+      {{ end }}
+      {{ $nodes = $nodes | append (dict "k" $k "t" $x.title "u" (relURL $x.url) "y" $year "b" (cond (isset $x "born") 1 0) "n" (add $x.n $x.nr) "up" $x.rel.up "src" $x.rel.src "mj" ($x.majors | default slice) "c" ($x.major | default 0) "d" ($x.draft | default 0) "s" $sum "np" ($x.nicopedia | default "")) }}
       {{ end }}
     {{ end }}
     {{ $js := resources.Get "js/notes.js" | minify | fingerprint }}
@@ -119,7 +130,31 @@
       <button type="button" class="btn chip" data-tl="all" aria-pressed="false">{{ partial "t.html" "withPosts" }}</button>
       <span class="notes__hint">{{ partial "t.html" "zoomHint" }}</span>
     </div>
-    <div class="tl" id="tl" data-notes-js="{{ $js.RelPermalink }}" data-notes-sri="{{ $js.Data.Integrity }}"></div>
+    <div class="tl-wrap">
+      <div class="tl" id="tl" data-notes-js="{{ $js.RelPermalink }}" data-notes-sri="{{ $js.Data.Integrity }}"></div>
+      {{- /* the box for a chosen genre, filled in by notes.js */}}
+      <div class="tl__pop" id="tl-pop" role="dialog" aria-labelledby="tl-pop-t" hidden>
+        <p class="tl__pop-t" id="tl-pop-t"></p>
+        <p class="tl__pop-y"></p>
+        <div class="tl__pop-s">
+          {{ $str := hugo.Data.strings }}
+          {{ range slice "ja" "en" }}
+          <div data-l="{{ . }}"{{ if eq . "en" }} lang="en"{{ end }} data-sum="{{ . }}">
+            <p class="tl__pop-x"></p>
+            <p class="tl__pop-src">{{ index $str.summaryCredit . }} <a class="tl__pop-wiki" href="https://www.wikipedia.org/">Wikipedia</a> (CC BY-SA)<span class="tl__pop-tr">{{ index $str.summaryTr . }}</span></p>
+          </div>
+          {{ end }}
+        </div>
+        <p class="tl__pop-np"><a data-np href="https://dic.nicovideo.jp/">{{ partial "t.html" "nicopedia" }}</a></p>
+        <dl class="tl__pop-rel">
+          <div data-rel="up"><dt>{{ partial "t.html" "relUp" }}</dt><dd></dd></div>
+          <div data-rel="down"><dt>{{ partial "t.html" "relDown" }}</dt><dd></dd></div>
+          <div data-rel="src"><dt>{{ partial "t.html" "relSrc" }}</dt><dd></dd></div>
+          <div data-rel="inf"><dt>{{ partial "t.html" "relInf" }}</dt><dd></dd></div>
+        </dl>
+        <p class="tl__pop-act"><a class="btn" data-go href="">{{ partial "t.html" "seePosts" }}</a> <button type="button" class="btn" data-close>{{ partial "t.html" "close" }}</button></p>
+      </div>
+    </div>
     <script type="application/json" id="tl-data">{{ $nodes | jsonify | safeJS }}</script>
     <p class="notes__credit">{{ partial "t.html" "genreCredit" }}</p>
     <p class="notes__credit">{{ partial "t.html" "dbpediaCredit" }} <a href="https://dbpedia.org/">DBpedia</a> (Wikipedia, CC BY-SA)</p>

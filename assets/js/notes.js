@@ -296,14 +296,88 @@
           byKey[x].el.classList.toggle("is-self", x === k);
         });
       };
+      // Choosing a node (a click, a tap or Enter) keeps it forward and opens its box; the
+      // box has the link to the page. Pointing elsewhere goes back to the chosen one.
+      light = focus;
+      nodeEl = function (k) { return byKey[k] && byKey[k].el; };
       Object.keys(byKey).forEach(function (k) {
         var a = byKey[k].el;
         a.addEventListener("mouseenter", function () { focus(k); });
         a.addEventListener("focus", function () { focus(k); });
-        a.addEventListener("mouseleave", function () { focus(null); });
-        a.addEventListener("blur", function () { focus(null); });
+        a.addEventListener("mouseleave", function () { focus(sel); });
+        a.addEventListener("blur", function () { focus(sel); });
+        a.addEventListener("click", function (e) { e.preventDefault(); choose(k); });
       });
+      if (sel && byKey[sel]) focus(sel);
     };
+
+    // ---------- the box for a chosen genre ----------
+    var pop = document.getElementById("tl-pop"), sel = null;
+    var light = function () {}, nodeEl = function () { return null; };
+    var byK = {};
+    all.forEach(function (n) { byK[n.k] = n; });
+    var names = function (keys) {
+      return keys.filter(function (k) { return byK[k]; }).map(function (k) {
+        return '<button type="button" class="tl__pop-g" data-k="' + esc(k) + '">' + esc(byK[k].t) + "</button>";
+      }).join(" ");
+    };
+    var choose = function (k, move) {
+      var n = byK[k];
+      if (!n) return;
+      sel = k;
+      light(k);
+      pop.querySelector(".tl__pop-t").textContent = n.t;
+      pop.querySelector(".tl__pop-y").innerHTML =
+        '<span data-l="ja">' + n.y + (n.b ? "年生まれ" : "年から") + (n.n ? "・ポスト" + n.n + "件" : "") + "</span>" +
+        '<span data-l="en" lang="en">' + (n.b ? "born in " : "since ") + n.y + (n.n ? " · " + n.n + (n.n === 1 ? " post" : " posts") : "") + "</span>";
+      // the summary in each language (one of them may be a translation of the other)
+      var sum = n.s || {}, any = false;
+      pop.querySelectorAll("[data-sum]").forEach(function (b) {
+        var v = sum[b.dataset.sum];
+        b.hidden = !v;
+        if (!v) return;
+        any = true;
+        b.querySelector(".tl__pop-x").textContent = v.x;
+        b.querySelector(".tl__pop-wiki").href = v.u;
+        b.querySelector(".tl__pop-tr").hidden = !v.tr;
+      });
+      pop.querySelector(".tl__pop-s").hidden = !any;
+      var np = pop.querySelector("[data-np]");
+      np.parentNode.hidden = !n.np;
+      if (n.np) np.href = "https://dic.nicovideo.jp/a/" + encodeURIComponent(n.np);
+      var rel = {
+        up: n.up || [], src: n.src || [],
+        down: all.filter(function (m) { return (m.up || []).indexOf(k) !== -1; }).map(function (m) { return m.k; }),
+        inf: all.filter(function (m) { return (m.src || []).indexOf(k) !== -1; }).map(function (m) { return m.k; })
+      };
+      pop.querySelectorAll("[data-rel]").forEach(function (row) {
+        var html = names(rel[row.dataset.rel]);
+        row.hidden = !html;
+        row.querySelector("dd").innerHTML = html;
+      });
+      pop.querySelector("[data-go]").href = sitePath(n.u);
+      pop.hidden = false;
+      pop.scrollTop = 0;
+      // a genre chosen from the box is brought into view above it
+      var a = move && nodeEl(k);
+      if (a) {
+        el.scrollLeft = Math.max(0, a.offsetLeft - Math.round((el.clientWidth - a.offsetWidth) / 2));
+        el.scrollTop = Math.max(0, a.offsetTop - GAP);
+      }
+    };
+    var close = function () {
+      sel = null;
+      pop.hidden = true;
+      light(null);
+    };
+    pop.addEventListener("click", function (e) {
+      var g = e.target.closest("[data-k]");
+      if (g) choose(g.dataset.k, true);
+      if (e.target.closest("[data-close]")) close();
+    });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && sel) close(); });
+    // a tap on the drawing but off the nodes closes the box
+    el.addEventListener("click", function (e) { if (sel && !e.target.closest(".tl__node")) close(); });
 
     buttons.forEach(function (b) {
       b.addEventListener("click", function () {

@@ -341,3 +341,19 @@ en = "Video"
 [gone]
 ja = "見られない"
 en = "Unavailable"
+
+[summaryCredit]
+ja = "要約:"
+en = "Summary:"
+
+[summaryTr]
+ja = "（英語版を翻訳）"
+en = " (translated from the Japanese article)"
+
+[nicopedia]
+ja = "ニコニコ大百科で見る"
+en = "Read on Niconico Pedia (in Japanese)"
+
+[seePosts]
+ja = "ポストを見る"
+en = "View posts"
