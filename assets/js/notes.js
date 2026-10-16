@@ -107,7 +107,7 @@
       nodes.forEach(function (n) { var d = Math.floor(n.y / 10) * 10; perDecade[d] = (perDecade[d] || 0) + 1; });
       var left = PAD;
       segs = segs.map(function (g) {
-        var a = Math.floor(g[0] / 10) * 10 - 10, b = Math.floor(g[1] / 10) * 10 + 20;
+        var a = Math.floor(g[0] / 10) * 10 - 10, b = Math.floor(g[1] / 10) * 10 + 10;
         var seg = { a: a, b: b, x: left, decs: [] };
         for (var d = a; d < b; d += 10) {
           var w = scale * 10 + DENSE * scale * (perDecade[d] || 0);
@@ -257,7 +257,11 @@
         if (ch.indexOf(lane) < 0) ch.push(lane);
         cx -= ch.indexOf(lane) * 4;
         var d = "M" + sx + " " + sy;
-        if (cx >= sx + half) d += "H" + cx + "V" + ey;
+        // down at once when there is room (just past the parent when the turn would be behind
+        // it but the arrow still fits); back round the child's row (a coat-hanger shape) only
+        // when the child starts left of the parent's end
+        if (cx >= sx + 4) d += "H" + cx + "V" + ey;
+        else if (ex - 8 >= sx + 4) d += "H" + (sx + 4) + "V" + ey;
         else {
           var gy = ey > sy ? B.y - vhalf : B.y + h + vhalf;
           d += "H" + (sx + half) + "V" + gy + "H" + cx + "V" + ey;
@@ -392,13 +396,17 @@
       var d = e.key === "+" || e.key === "=" ? 1 : e.key === "-" ? -1 : 0;
       if (d) { e.preventDefault(); zoom(scale + d, lod); }
     });
-    // The panel ends at the bottom of the screen (above the tab bar on phones) when the page
-    // is at its top, so the whole drawing is moved inside it and the page itself does not scroll.
+    // On phones the window ends at the bottom of the screen (above the tab bar) when the page
+    // is at its top, so the drawing is moved inside the panel and the page itself does not
+    // scroll. What is under the panel (the credits, the window's edge) is kept in view too.
     var fit = function () {
       var bar = document.querySelector(".statusbar__keys");
       var under = bar && getComputedStyle(bar).position === "fixed" ? bar.offsetHeight : 0;
-      var top = el.getBoundingClientRect().top + window.scrollY;
-      el.style.maxHeight = Math.max(240, window.innerHeight - top - under - PAD) + "px";
+      // on a PC (no tab bar) the panel keeps the height in the CSS: the window would leave it too low
+      if (!under) { el.style.maxHeight = ""; return; }
+      var box = el.getBoundingClientRect(), win = el.closest(".win");
+      var below = win ? Math.max(0, win.getBoundingClientRect().bottom - box.bottom) : 0;
+      el.style.maxHeight = Math.max(240, window.innerHeight - (box.top + window.scrollY) - below - under - GAP) + "px";
     };
     window.addEventListener("resize", fit);
     // the dot font has to be in before the nodes are measured (and the panel placed)
