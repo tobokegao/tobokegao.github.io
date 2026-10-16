@@ -396,19 +396,29 @@
       var d = e.key === "+" || e.key === "=" ? 1 : e.key === "-" ? -1 : 0;
       if (d) { e.preventDefault(); zoom(scale + d, lod); }
     });
-    // On phones the window ends at the bottom of the screen (above the tab bar) when the page
-    // is at its top, so the drawing is moved inside the panel and the page itself does not
-    // scroll. What is under the panel (the credits, the window's edge) is kept in view too.
+    // The panel has a set height, so a drawing made low (rows at their smallest) does not
+    // shrink the window with it. On phones the window ends at the bottom of the screen (above
+    // the tab bar) when the page is at its top, so the drawing is moved inside the panel and
+    // the page itself does not scroll; what is under the panel (the credits, the window's
+    // edge) is kept in view too. On a PC that would leave the panel too low: 3/4 of the screen.
     var fit = function () {
       var bar = document.querySelector(".statusbar__keys");
       var under = bar && getComputedStyle(bar).position === "fixed" ? bar.offsetHeight : 0;
-      // on a PC (no tab bar) the panel keeps the height in the CSS: the window would leave it too low
-      if (!under) { el.style.maxHeight = ""; return; }
-      var box = el.getBoundingClientRect(), win = el.closest(".win");
-      var below = win ? Math.max(0, win.getBoundingClientRect().bottom - box.bottom) : 0;
-      el.style.maxHeight = Math.max(240, window.innerHeight - (box.top + window.scrollY) - below - under - GAP) + "px";
+      var h = Math.round(window.innerHeight * 3 / 4);
+      if (under) {
+        var box = el.getBoundingClientRect(), win = el.closest(".win");
+        var below = win ? Math.max(0, win.getBoundingClientRect().bottom - box.bottom) : 0;
+        h = Math.floor(window.innerHeight - (box.top + window.scrollY) - below - under - GAP);
+      }
+      h = Math.max(240, h) + "px";
+      if (el.style.height !== h) el.style.height = h;
+      el.style.maxHeight = "none";
     };
     window.addEventListener("resize", fit);
+    // and again when the window's parts change size (a title font coming in late, the other
+    // language); the panel's own height does not move its top, so this settles at once
+    var win = el.closest(".win");
+    if (win && window.ResizeObserver) new ResizeObserver(function () { fit(); }).observe(win);
     // the dot font has to be in before the nodes are measured (and the panel placed)
     (document.fonts ? document.fonts.ready : Promise.resolve()).then(function () { fit(); draw(); });
   }
