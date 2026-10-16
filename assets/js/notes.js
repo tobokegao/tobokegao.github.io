@@ -73,10 +73,22 @@
     var buttons = document.querySelectorAll("[data-tl]");
     var mode = "born";
     var PAD = 24, GAP = 24, FLAG = 0, GAP_YEARS = 40, BREAK = 48, TURN = 20, DENSE = 3;
-    // px a year; two fingers (or Ctrl + wheel) change it, `want` keeps the fraction between steps
+    // Across: px a year; two fingers apart sideways (or Ctrl + wheel) change it, `want` keeps
+    // the fraction between steps.
     var scale = 8, want = 8, MIN = 2, MAX = 24;
+    // Down: the nodes drop lines instead of shrinking the dot font (lod 2 = name, year and
+    // posts; 1 = name and year; 0 = name only), and the gap between rows narrows with them.
+    // Two fingers apart up and down (or Ctrl + Shift + wheel) change it.
+    var lod = 2;
+    // a row's height: a node of lod + 1 lines (dot + 6 px each, 8 px of padding and border)
+    // and the gap under it
+    var rowH = function (l) {
+      var dot = parseInt(getComputedStyle(root).getPropertyValue("--dot"), 10) || 12;
+      return (l + 1) * (dot + 6) + 8 + [8, 16, 24][l];
+    };
 
     var draw = function (keep) {
+      var VGAP = [8, 16, 24][lod];
       var nodes = all.filter(function (n) { return mode === "all" || n.b; });
       nodes.sort(function (a, b) { return a.y - b.y || a.t.localeCompare(b.t); });
       el.innerHTML = "";
@@ -121,11 +133,12 @@
         var a = document.createElement("a");
         a.className = "tl__node" + (n.b ? "" : " tl__node--posts") + (n.c ? " tl__node--major tl__grp--" + n.c : "") + (n.d ? " tl__node--draft" : "");
         a.href = sitePath(n.u);
-        a.innerHTML = '<span class="tl__name">' + esc(n.t) + '</span><span class="tl__year">' +
+        var posts = lod > 1 && n.n;
+        a.innerHTML = '<span class="tl__name">' + esc(n.t) + "</span>" + (lod ? '<span class="tl__year">' +
           // a genre's year is when it was born; a topic without one shows its first post's year.
           // The year and the count take a line each: narrow nodes need fewer rows.
-          '<span data-l="ja">' + n.y + (n.b ? "年生まれ" : "年から") + (n.n ? "<br>ポスト" + n.n + "件" : "") + "</span>" +
-          '<span data-l="en">' + (n.b ? "born in " : "since ") + n.y + (n.n ? "<br>" + n.n + (n.n === 1 ? " post" : " posts") : "") + "</span></span>";
+          '<span data-l="ja">' + n.y + (n.b ? "年生まれ" : "年から") + (posts ? "<br>ポスト" + n.n + "件" : "") + "</span>" +
+          '<span data-l="en">' + (n.b ? "born in " : "since ") + n.y + (posts ? "<br>" + n.n + (n.n === 1 ? " post" : " posts") : "") + "</span></span>" : "");
         canvas.appendChild(a);
         byKey[n.k] = { n: n, el: a };
       });
@@ -185,7 +198,7 @@
           it.x = x; it.l = best; it.now = true;
         });
       }
-      var LH = h + GAP;
+      var LH = h + VGAP;
       var W = Math.max(maxX + PAD, Math.max.apply(null, lanes) + PAD);
       var H = TOP + lanes.length * LH + PAD;
       canvas.style.width = W + "px";
@@ -201,17 +214,28 @@
       var svg = '<svg class="tl__svg" width="' + W + '" height="' + H + '" aria-hidden="true"><defs>' +
         '<marker id="tl-mu" markerUnits="userSpaceOnUse" viewBox="0 0 8 14" refX="8" refY="7" markerWidth="8" markerHeight="14" orient="auto"><path class="tl__arrow--up" d="M0 0h2v2h2v2h2v2h2v2h-2v2h-2v2h-2v2h-2z"/></marker>' +
         '<marker id="tl-ms" markerUnits="userSpaceOnUse" viewBox="0 0 8 14" refX="8" refY="7" markerWidth="8" markerHeight="14" orient="auto"><path class="tl__arrow--src" d="M0 0h2v2h2v2h2v2h2v2h-2v2h-2v2h-2v2h-2z"/></marker></defs>';
-      // a line at each decade, and at its middle when the decade is wide enough to label it
+      // a line at each decade, and at its middle when the decade is wide enough to label it;
+      // zoomed out, a year without room after the last one keeps its line but not its number
+      var said = -1e9, stop = 1e9, LABEL = 5 * Math.round(dot * 2 / 3);
       var tick = function (y) {
-        svg += '<line class="tl__grid" x1="' + X(y) + '" x2="' + X(y) + '" y1="' + row + '" y2="' + H + '"/>' +
-          '<text class="tl__label" x="' + (X(y) + 4) + '" y="' + (row - 6) + '">' + y + "</text>";
+        var x = X(y);
+        svg += '<line class="tl__grid" x1="' + x + '" x2="' + x + '" y1="' + row + '" y2="' + H + '"/>';
+        if (x < said + LABEL || x + LABEL > stop) return;
+        said = x;
+        svg += '<text class="tl__label" x="' + (x + 4) + '" y="' + (row - 6) + '">' + y + "</text>";
       };
       segs.forEach(function (g, i) {
+        if (i) {
+          var bx = g.x - BREAK + 12;
+          svg += '<text class="tl__label tl__break" x="' + bx + '" y="' + (row - 6) + '">≈</text>';
+          said = bx + dot - LABEL;
+        }
+        // and none runs into the next break mark
+        stop = i + 1 < segs.length ? segs[i + 1].x - BREAK + 12 : 1e9;
         g.decs.forEach(function (dec) {
           tick(dec.d);
           if (dec.w >= 128) tick(dec.d + 5);
         });
-        if (i) svg += '<text class="tl__label tl__break" x="' + (g.x - BREAK + 12) + '" y="' + (row - 6) + '">≈</text>';
       });
       flags.forEach(function (f, i) {
         svg += '<line class="tl__flag tl__grp--' + f.m.c + '" x1="' + f.x + '" x2="' + f.x + '" y1="' + (row + GAP + i * row) + '" y2="' + H + '"/>' +
@@ -227,7 +251,7 @@
       var edge = function (kind, from, to) {
         var A = byKey[from], B = byKey[to];
         if (!A || !B) return "";
-        var mid = Math.round(h / 2), half = Math.round(GAP / 2);
+        var mid = Math.round(h / 2), half = Math.round(GAP / 2), vhalf = Math.round(VGAP / 2);
         var sx = A.x + A.w, sy = A.y + mid, ex = B.x, ey = B.y + mid, cx = ex - TURN;
         var ch = chans[cx] || (chans[cx] = []), lane = to + " " + kind;
         if (ch.indexOf(lane) < 0) ch.push(lane);
@@ -235,7 +259,7 @@
         var d = "M" + sx + " " + sy;
         if (cx >= sx + half) d += "H" + cx + "V" + ey;
         else {
-          var gy = ey > sy ? B.y - half : B.y + h + half;
+          var gy = ey > sy ? B.y - vhalf : B.y + h + vhalf;
           d += "H" + (sx + half) + "V" + gy + "H" + cx + "V" + ey;
         }
         d += "H" + ex;
@@ -281,56 +305,88 @@
         draw();
       });
     });
-    // Zoom: redraw at the new scale and keep the place under the fingers (or the pointer) still.
-    var zoom = function (next, px) {
+    // Zoom: redraw at the new scale and lod, and keep the place under the fingers (or the
+    // pointer) still.
+    var zoom = function (next, l, px, py) {
       want = Math.max(MIN, Math.min(MAX, next));
       var s = Math.round(want), c = el.firstChild;
-      if (s === scale || !c) return;
-      var at = (el.scrollLeft + px) / c.offsetWidth, top = el.scrollTop;
+      l = Math.max(0, Math.min(2, l));
+      if ((s === scale && l === lod) || !c) return;
+      if (px === undefined) px = Math.round(el.clientWidth / 2);
+      if (py === undefined) py = Math.round(el.clientHeight / 2);
+      var at = (el.scrollLeft + px) / c.offsetWidth, atY = (el.scrollTop + py) / c.offsetHeight;
       scale = s;
+      lod = l;
       draw(true);
       el.scrollLeft = Math.round(at * el.firstChild.offsetWidth - px);
-      el.scrollTop = top;
+      el.scrollTop = Math.round(atY * el.firstChild.offsetHeight - py);
     };
     var left = function (x) { return x - el.getBoundingClientRect().left; };
-    // Two fingers: while they move, the drawing is only stretched (a redraw would take the
-    // touched node out from under them and the gesture would stop); it is redrawn when they lift.
-    var pinch = null;
-    var span = function (t) { return Math.abs(t[0].clientX - t[1].clientX) || 1; };
+    var down = function (y) { return y - el.getBoundingClientRect().top; };
+    // Two fingers: how far apart they move sideways changes the years, up and down the rows;
+    // fingers that start less than AXIS px apart on one axis leave that axis alone. While they
+    // move, the drawing is only stretched (a redraw would take the touched node out from under
+    // them and the gesture would stop); it is redrawn when they lift.
+    var pinch = null, AXIS = 48;
+    var gap = function (t, k) { return Math.abs(t[0][k] - t[1][k]); };
+    // the lod whose rows come nearest to the stretched height
+    var nearest = function (h) {
+      var best = 0;
+      for (var l = 1; l < 3; l++) if (Math.abs(rowH(l) - h) < Math.abs(rowH(best) - h)) best = l;
+      return best;
+    };
     el.addEventListener("touchstart", function (e) {
       if (e.touches.length !== 2) return;
-      var t = e.touches, px = left((t[0].clientX + t[1].clientX) / 2);
-      pinch = { d: span(t), px: px, k: 1, c: el.firstChild };
-      pinch.c.style.transformOrigin = el.scrollLeft + px + "px 0";
+      var t = e.touches, px = left((t[0].clientX + t[1].clientX) / 2), py = down((t[0].clientY + t[1].clientY) / 2);
+      pinch = { dx: gap(t, "clientX"), dy: gap(t, "clientY"), px: px, py: py, kx: 1, l: lod, c: el.firstChild };
+      pinch.c.style.transformOrigin = el.scrollLeft + px + "px " + (el.scrollTop + py) + "px";
     }, { passive: true });
     el.addEventListener("touchmove", function (e) {
       if (!pinch || e.touches.length !== 2) return;
       e.preventDefault();
-      pinch.k = Math.max(MIN / scale, Math.min(MAX / scale, span(e.touches) / pinch.d));
-      pinch.c.style.transform = "scaleX(" + pinch.k + ")";
+      var t = e.touches, ky = 1;
+      if (pinch.dx >= AXIS) pinch.kx = Math.max(MIN / scale, Math.min(MAX / scale, gap(t, "clientX") / pinch.dx));
+      if (pinch.dy >= AXIS) {
+        var h = rowH(lod) * gap(t, "clientY") / pinch.dy;
+        h = Math.max(rowH(0), Math.min(rowH(2), h));
+        pinch.l = nearest(h);
+        ky = h / rowH(lod);
+      }
+      pinch.c.style.transform = "scale(" + pinch.kx + ", " + ky + ")";
     }, { passive: false });
     var lift = function () {
       if (!pinch) return;
       var p = pinch;
       pinch = null;
       p.c.style.transform = "";
-      zoom(scale * p.k, p.px);
+      zoom(scale * p.kx, p.l, p.px, p.py);
     };
     el.addEventListener("touchend", function (e) { if (e.touches.length < 2) lift(); });
     el.addEventListener("touchcancel", lift);
-    // Ctrl + wheel, which is also what a touchpad's pinch sends
-    var wheel = 0;
+    // Ctrl + wheel, which is also what a touchpad's pinch sends; with Shift, the rows
+    var wheel = 0, rows = 0;
     el.addEventListener("wheel", function (e) {
       if (!e.ctrlKey) return;
       e.preventDefault();
-      var px = left(e.clientX), next = want * Math.exp(-e.deltaY / 300);
-      if (!wheel) wheel = requestAnimationFrame(function () { wheel = 0; zoom(next, px); });
+      var px = left(e.clientX), py = down(e.clientY);
+      // some systems turn a wheel with Shift into a sideways one
+      var d = e.deltaY || e.deltaX;
+      if (e.shiftKey) {
+        rows -= d;
+        if (Math.abs(rows) < 100) return;
+        var l = lod + (rows > 0 ? 1 : -1);
+        rows = 0;
+        zoom(want, l, px, py);
+        return;
+      }
+      var next = want * Math.exp(-d / 300);
+      if (!wheel) wheel = requestAnimationFrame(function () { wheel = 0; zoom(next, lod, px, py); });
       else want = Math.max(MIN, Math.min(MAX, next));
     }, { passive: false });
     // and + / - on the keyboard when the panel has the focus
     el.addEventListener("keydown", function (e) {
       var d = e.key === "+" || e.key === "=" ? 1 : e.key === "-" ? -1 : 0;
-      if (d) { e.preventDefault(); zoom(scale + d, Math.round(el.clientWidth / 2)); }
+      if (d) { e.preventDefault(); zoom(scale + d, lod); }
     });
     // the dot font has to be in before the nodes are measured
     (document.fonts ? document.fonts.ready : Promise.resolve()).then(draw);
