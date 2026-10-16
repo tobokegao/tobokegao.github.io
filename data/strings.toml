@@ -322,9 +322,9 @@ en = "Include topics with posts"
 ja = "年のあるページ"
 en = "Pages with a year"
 
-[scale]
-ja = "時代の幅"
-en = "Zoom"
+[zoomHint]
+ja = "広げる・縮める: 指2本、またはCtrl＋マウスホイール"
+en = "Zoom: Pinch or Ctrl + scroll"
 
 [draftNote]
 ja = "下書き: 年とつながりは、Claudeが一般の知識から書いたものです。まだ確かめていません。"

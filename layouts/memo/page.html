@@ -117,7 +117,7 @@
     <div class="filters" role="group" aria-label="{{ partial "tt.html" "timeline" }}">
       <button type="button" class="btn chip" data-tl="born" aria-pressed="true">{{ partial "t.html" "yearsOnly" }}</button>
       <button type="button" class="btn chip" data-tl="all" aria-pressed="false">{{ partial "t.html" "withPosts" }}</button>
-      <label class="notes__scale">{{ partial "t.html" "scale" }} <input type="range" id="tl-scale" min="2" max="24" step="1" value="8"></label>
+      <span class="notes__hint">{{ partial "t.html" "zoomHint" }}</span>
     </div>
     <div class="tl" id="tl" data-notes-js="{{ $js.RelPermalink }}" data-notes-sri="{{ $js.Data.Integrity }}"></div>
     <script type="application/json" id="tl-data">{{ $nodes | jsonify | safeJS }}</script>

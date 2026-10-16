@@ -70,13 +70,13 @@
   // to what they influenced. Nodes are links (HTML), the lines an SVG behind them.
   function initTimeline(el) {
     var all = JSON.parse(document.getElementById("tl-data").textContent);
-    var scaleInput = document.getElementById("tl-scale");
     var buttons = document.querySelectorAll("[data-tl]");
     var mode = "born";
     var PAD = 24, GAP = 24, FLAG = 0, GAP_YEARS = 40, BREAK = 48, TURN = 20, DENSE = 3;
+    // px a year; two fingers (or Ctrl + wheel) change it, `want` keeps the fraction between steps
+    var scale = 8, want = 8, MIN = 2, MAX = 24;
 
-    var draw = function () {
-      var scale = parseInt(scaleInput.value, 10);
+    var draw = function (keep) {
       var nodes = all.filter(function (n) { return mode === "all" || n.b; });
       nodes.sort(function (a, b) { return a.y - b.y || a.t.localeCompare(b.t); });
       el.innerHTML = "";
@@ -250,7 +250,7 @@
       canvas.insertAdjacentHTML("afterbegin", svg + "</svg>");
       // open at the busiest decade (the middle of the pages, by year)
       var mid = nodes[Math.floor(nodes.length / 2)];
-      el.scrollLeft = Math.max(0, X(mid.y) - Math.round(el.clientWidth / 2));
+      if (keep !== true) el.scrollLeft = Math.max(0, X(mid.y) - Math.round(el.clientWidth / 2));
 
       // Pointing at a node brings its own lines and neighbours forward.
       var paths = canvas.querySelectorAll(".tl__e");
@@ -281,7 +281,57 @@
         draw();
       });
     });
-    scaleInput.addEventListener("input", draw);
+    // Zoom: redraw at the new scale and keep the place under the fingers (or the pointer) still.
+    var zoom = function (next, px) {
+      want = Math.max(MIN, Math.min(MAX, next));
+      var s = Math.round(want), c = el.firstChild;
+      if (s === scale || !c) return;
+      var at = (el.scrollLeft + px) / c.offsetWidth, top = el.scrollTop;
+      scale = s;
+      draw(true);
+      el.scrollLeft = Math.round(at * el.firstChild.offsetWidth - px);
+      el.scrollTop = top;
+    };
+    var left = function (x) { return x - el.getBoundingClientRect().left; };
+    // Two fingers: while they move, the drawing is only stretched (a redraw would take the
+    // touched node out from under them and the gesture would stop); it is redrawn when they lift.
+    var pinch = null;
+    var span = function (t) { return Math.abs(t[0].clientX - t[1].clientX) || 1; };
+    el.addEventListener("touchstart", function (e) {
+      if (e.touches.length !== 2) return;
+      var t = e.touches, px = left((t[0].clientX + t[1].clientX) / 2);
+      pinch = { d: span(t), px: px, k: 1, c: el.firstChild };
+      pinch.c.style.transformOrigin = el.scrollLeft + px + "px 0";
+    }, { passive: true });
+    el.addEventListener("touchmove", function (e) {
+      if (!pinch || e.touches.length !== 2) return;
+      e.preventDefault();
+      pinch.k = Math.max(MIN / scale, Math.min(MAX / scale, span(e.touches) / pinch.d));
+      pinch.c.style.transform = "scaleX(" + pinch.k + ")";
+    }, { passive: false });
+    var lift = function () {
+      if (!pinch) return;
+      var p = pinch;
+      pinch = null;
+      p.c.style.transform = "";
+      zoom(scale * p.k, p.px);
+    };
+    el.addEventListener("touchend", function (e) { if (e.touches.length < 2) lift(); });
+    el.addEventListener("touchcancel", lift);
+    // Ctrl + wheel, which is also what a touchpad's pinch sends
+    var wheel = 0;
+    el.addEventListener("wheel", function (e) {
+      if (!e.ctrlKey) return;
+      e.preventDefault();
+      var px = left(e.clientX), next = want * Math.exp(-e.deltaY / 300);
+      if (!wheel) wheel = requestAnimationFrame(function () { wheel = 0; zoom(next, px); });
+      else want = Math.max(MIN, Math.min(MAX, next));
+    }, { passive: false });
+    // and + / - on the keyboard when the panel has the focus
+    el.addEventListener("keydown", function (e) {
+      var d = e.key === "+" || e.key === "=" ? 1 : e.key === "-" ? -1 : 0;
+      if (d) { e.preventDefault(); zoom(scale + d, Math.round(el.clientWidth / 2)); }
+    });
     // the dot font has to be in before the nodes are measured
     (document.fonts ? document.fonts.ready : Promise.resolve()).then(draw);
   }

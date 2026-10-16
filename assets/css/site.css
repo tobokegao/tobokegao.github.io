@@ -761,15 +761,7 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .notes__hit-s { margin: 2px 0 0; font: 14px/1.6 var(--f-body); overflow-wrap: anywhere; }
 .notes__hit-s a { margin-right: 8px; font: var(--dot)/2 var(--f-dot); }
 .notes mark { background: var(--mark); color: var(--mark-ink); }
-.notes__scale { display: inline-flex; align-items: center; gap: 8px; font: var(--dot)/2 var(--f-dot); color: var(--ink-dim); }
-/* the scale: a sunken groove (dark top edge, lit bottom edge) and a square block for the thumb */
-.notes__scale input { -webkit-appearance: none; appearance: none; width: 144px; height: 24px; margin: 0; background: none; cursor: pointer; }
-.notes__scale input::-webkit-slider-runnable-track { height: 8px; background: var(--win-2); border: 2px solid; border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md); }
-.notes__scale input::-moz-range-track { height: 4px; background: var(--win-2); border: 2px solid; border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md); }
-.notes__scale input::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 12px; height: 20px; margin-top: -8px; background: var(--frame); border: 0; border-radius: 0; }
-.notes__scale input::-moz-range-thumb { width: 12px; height: 20px; background: var(--frame); border: 0; border-radius: 0; }
-.notes__scale input:hover::-webkit-slider-thumb, .notes__scale input:focus-visible::-webkit-slider-thumb { background: var(--accent); }
-.notes__scale input:hover::-moz-range-thumb, .notes__scale input:focus-visible::-moz-range-thumb { background: var(--accent); }
+.notes__hint { align-self: center; font: var(--dot)/2 var(--f-dot); color: var(--ink-dim); }
 .notes__grp--1, .tl__grp--1 { --grp: var(--grp-1); }
 .notes__grp--2, .tl__grp--2 { --grp: var(--grp-2); }
 .notes__grp--3, .tl__grp--3 { --grp: var(--grp-3); }
@@ -778,7 +770,8 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .notes__grp--6, .tl__grp--6 { --grp: var(--grp-6); }
 .notes__grp { color: var(--grp); }
 /* the timeline: a sunken panel that scrolls both ways; nodes are links over an SVG of lines */
-.tl { overflow: auto; max-height: 75vh; background: var(--win-2); border: 2px solid; border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md); }
+/* two fingers stretch the years (notes.js), so the page itself does not zoom here */
+.tl { overflow: auto; max-height: 75vh; touch-action: pan-x pan-y; background: var(--win-2); border: 2px solid; border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md); }
 .tl__canvas { position: relative; }
 .tl__svg { position: absolute; left: 0; top: 0; shape-rendering: crispEdges; }
 .tl__grid { stroke: var(--bevel-md); stroke-width: 1px; }
