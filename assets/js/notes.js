@@ -324,10 +324,11 @@
     var left = function (x) { return x - el.getBoundingClientRect().left; };
     var down = function (y) { return y - el.getBoundingClientRect().top; };
     // Two fingers: how far apart they move sideways changes the years, up and down the rows;
-    // fingers that start less than AXIS px apart on one axis leave that axis alone. While they
-    // move, the drawing is only stretched (a redraw would take the touched node out from under
-    // them and the gesture would stop); it is redrawn when they lift.
-    var pinch = null, AXIS = 48;
+    // fingers that start less than AXIS px apart on one axis leave that axis alone. The drawing
+    // is redrawn step by step as they move (stretching it instead pulled the dot font out of
+    // shape). A redraw takes the touched node out of the page, and the browser then sends the
+    // gesture to that node alone, so the moves are heard on the touched nodes themselves.
+    var pinch = null, AXIS = 48, frame = 0;
     var gap = function (t, k) { return Math.abs(t[0][k] - t[1][k]); };
     // the lod whose rows come nearest to the stretched height
     var nearest = function (h) {
@@ -335,34 +336,37 @@
       for (var l = 1; l < 3; l++) if (Math.abs(rowH(l) - h) < Math.abs(rowH(best) - h)) best = l;
       return best;
     };
-    el.addEventListener("touchstart", function (e) {
-      if (e.touches.length !== 2) return;
-      var t = e.touches, px = left((t[0].clientX + t[1].clientX) / 2), py = down((t[0].clientY + t[1].clientY) / 2);
-      pinch = { dx: gap(t, "clientX"), dy: gap(t, "clientY"), px: px, py: py, kx: 1, l: lod, c: el.firstChild };
-      pinch.c.style.transformOrigin = el.scrollLeft + px + "px " + (el.scrollTop + py) + "px";
-    }, { passive: true });
-    el.addEventListener("touchmove", function (e) {
+    var move = function (e) {
       if (!pinch || e.touches.length !== 2) return;
       e.preventDefault();
-      var t = e.touches, ky = 1;
-      if (pinch.dx >= AXIS) pinch.kx = Math.max(MIN / scale, Math.min(MAX / scale, gap(t, "clientX") / pinch.dx));
-      if (pinch.dy >= AXIS) {
-        var h = rowH(lod) * gap(t, "clientY") / pinch.dy;
-        h = Math.max(rowH(0), Math.min(rowH(2), h));
-        pinch.l = nearest(h);
-        ky = h / rowH(lod);
-      }
-      pinch.c.style.transform = "scale(" + pinch.kx + ", " + ky + ")";
-    }, { passive: false });
-    var lift = function () {
-      if (!pinch) return;
-      var p = pinch;
-      pinch = null;
-      p.c.style.transform = "";
-      zoom(scale * p.kx, p.l, p.px, p.py);
+      var t = e.touches, p = pinch;
+      p.px = left((t[0].clientX + t[1].clientX) / 2);
+      p.py = down((t[0].clientY + t[1].clientY) / 2);
+      if (p.dx >= AXIS) p.s = p.s0 * gap(t, "clientX") / p.dx;
+      if (p.dy >= AXIS) p.l = nearest(Math.max(rowH(0), Math.min(rowH(2), p.h0 * gap(t, "clientY") / p.dy)));
+      if (!frame) frame = requestAnimationFrame(function () { frame = 0; if (pinch) zoom(pinch.s, pinch.l, pinch.px, pinch.py); });
     };
-    el.addEventListener("touchend", function (e) { if (e.touches.length < 2) lift(); });
-    el.addEventListener("touchcancel", lift);
+    var lift = function (e) {
+      if (!pinch || (e && e.touches && e.touches.length >= 2)) return;
+      pinch.on.forEach(function (n) {
+        n.removeEventListener("touchmove", move);
+        n.removeEventListener("touchend", lift);
+        n.removeEventListener("touchcancel", lift);
+      });
+      pinch = null;
+    };
+    el.addEventListener("touchstart", function (e) {
+      if (e.touches.length !== 2) return;
+      var t = e.touches;
+      pinch = { dx: gap(t, "clientX"), dy: gap(t, "clientY"), s0: want, s: want, h0: rowH(lod), l: lod, on: [] };
+      [t[0].target, t[1].target, el].forEach(function (n) {
+        if (pinch.on.indexOf(n) !== -1) return;
+        pinch.on.push(n);
+        n.addEventListener("touchmove", move, { passive: false });
+        n.addEventListener("touchend", lift);
+        n.addEventListener("touchcancel", lift);
+      });
+    }, { passive: true });
     // Ctrl + wheel, which is also what a touchpad's pinch sends; with Shift, the rows
     var wheel = 0, rows = 0;
     el.addEventListener("wheel", function (e) {
@@ -388,8 +392,17 @@
       var d = e.key === "+" || e.key === "=" ? 1 : e.key === "-" ? -1 : 0;
       if (d) { e.preventDefault(); zoom(scale + d, lod); }
     });
-    // the dot font has to be in before the nodes are measured
-    (document.fonts ? document.fonts.ready : Promise.resolve()).then(draw);
+    // The panel ends at the bottom of the screen (above the tab bar on phones) when the page
+    // is at its top, so the whole drawing is moved inside it and the page itself does not scroll.
+    var fit = function () {
+      var bar = document.querySelector(".statusbar__keys");
+      var under = bar && getComputedStyle(bar).position === "fixed" ? bar.offsetHeight : 0;
+      var top = el.getBoundingClientRect().top + window.scrollY;
+      el.style.maxHeight = Math.max(240, window.innerHeight - top - under - PAD) + "px";
+    };
+    window.addEventListener("resize", fit);
+    // the dot font has to be in before the nodes are measured (and the panel placed)
+    (document.fonts ? document.fonts.ready : Promise.resolve()).then(function () { fit(); draw(); });
   }
 
   window.tbkNotes = {
