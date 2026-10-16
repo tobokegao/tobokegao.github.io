@@ -350,6 +350,10 @@ en = "Summary:"
 ja = "（英語版を翻訳）"
 en = " (translated from the Japanese article)"
 
+[summaryRef]
+ja = "参考:"
+en = "Based on:"
+
 [nicopedia]
 ja = "ニコニコ大百科で見る"
 en = "Read on Niconico Pedia (in Japanese)"

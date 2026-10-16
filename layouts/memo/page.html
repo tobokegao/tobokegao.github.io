@@ -116,8 +116,9 @@
       {{ with index hugo.Data.memo.summaries.summaries $x.title }}
         {{ $v := . }}
         {{ range slice "ja" "en" }}
-          {{ $o := index $v . }}{{ $t := index $v (printf "%s_tr" .) }}
-          {{ if and $o (not $o.doubt) }}{{ $sum = merge $sum (dict . (dict "x" $o.text "u" $o.url)) }}
+          {{ $o := index $v . }}{{ $t := index $v (printf "%s_tr" .) }}{{ $w := index $v (printf "%s_own" .) }}
+          {{ if and $o (not $o.doubt) (not $o.skip) }}{{ $sum = merge $sum (dict . (dict "x" $o.text "u" $o.url)) }}
+          {{ else if $w }}{{ $sum = merge $sum (dict . (dict "x" $w.text "u" $w.url "ref" $w.ref)) }}
           {{ else if $t }}{{ $sum = merge $sum (dict . (dict "x" $t.text "u" $t.url "tr" 1)) }}{{ end }}
         {{ end }}
       {{ end }}
@@ -142,6 +143,7 @@
           <div data-l="{{ . }}"{{ if eq . "en" }} lang="en"{{ end }} data-sum="{{ . }}">
             <p class="tl__pop-x"></p>
             <p class="tl__pop-src">{{ index $str.summaryCredit . }} <a class="tl__pop-wiki" href="https://www.wikipedia.org/">Wikipedia</a> (CC BY-SA)<span class="tl__pop-tr">{{ index $str.summaryTr . }}</span></p>
+            <p class="tl__pop-src tl__pop-ref">{{ index $str.summaryRef . }} <a class="tl__pop-refa" href=""></a></p>
           </div>
           {{ end }}
         </div>

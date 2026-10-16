@@ -340,6 +340,14 @@
         b.querySelector(".tl__pop-x").textContent = v.x;
         b.querySelector(".tl__pop-wiki").href = v.u;
         b.querySelector(".tl__pop-tr").hidden = !v.tr;
+        // a summary written from other sources names them instead of Wikipedia
+        b.querySelector(".tl__pop-src:not(.tl__pop-ref)").hidden = !!v.ref;
+        b.querySelector(".tl__pop-ref").hidden = !v.ref;
+        if (v.ref) {
+          var r = b.querySelector(".tl__pop-refa");
+          r.textContent = v.ref;
+          r.href = v.u;
+        }
       });
       pop.querySelector(".tl__pop-s").hidden = !any;
       var np = pop.querySelector("[data-np]");

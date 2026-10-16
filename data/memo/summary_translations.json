@@ -190,5 +190,12 @@
    "from": "Art music (alternatively called classical music, cultivated music, serious music, and canonic music) is music considered to be of high phonoaesthetic value. It typically implies advanced structural and theoretical considerations or a written musical tradition.",
    "text": "芸術音楽（クラシック音楽、教養音楽、シリアス・ミュージック、規範とされる音楽とも）は、音としての美的な価値が高いとされる音楽。ふつうは、高度な構造や理論への配慮、または楽譜に書かれた音楽の伝統を前提とする。"
   }
+ },
+ "House Music": {
+  "ja": {
+   "from": "House music, or simply house, is a type of electronic dance music which is characterized by a repetitive four-on-the-floor beat and a typical tempo of 115–130 beats per minute. It was created in Chicago by DJs and music producers from the city's queer Black underground club culture and evolved slowly in the early/mid 1980s as DJs began altering disco songs to give them a more mechanical beat.",
+   "replace": true,
+   "text": "ハウス・ミュージック（単にハウスとも）は、くり返される四つ打ちのビートと、1分間に115〜130拍ほどのテンポが特徴のエレクトロニック・ダンス・ミュージック。シカゴのクィアの黒人たちによるアンダーグラウンドなクラブ文化の中でDJや音楽プロデューサーたちによって作られ、1980年代の初めから半ばにかけて、DJがディスコの曲をより機械的なビートに作り変える中で、ゆっくりと形になった。"
+  }
  }
 }

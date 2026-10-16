@@ -51,6 +51,9 @@ PART = {
     "ja": ("出典を必要とする記述", "出典を必要とする節", "独自研究の除去が必要な節", "要出典"),
 }
 SENTENCES = 2
+# summaries written by hand from other sources, for genres whose articles are all in doubt:
+# {"title": {"ja": text, "en": text, "url": source, "ref": {"ja": name, "en": name}}}
+OWN = OUT / "summary_own.json"
 
 
 def api(lang: str, **params) -> dict:
@@ -159,12 +162,24 @@ def main() -> None:
             if part:
                 one["part"] = part
             item[lang] = one
-        ok = {l for l, v in item.items() if not v.get("doubt")}
+        # a translation marked "replace" is shown instead of that language's own article
+        # (House: the Japanese one dates the genre by the club it was named after)
+        for lang, t in tr.get(title, {}).items():
+            if t.get("replace") and lang in item:
+                item[lang]["skip"] = "replaced by a translation"
+        ok = {l for l, v in item.items() if not v.get("doubt") and not v.get("skip")}
+        # no usable article at all: a summary written by hand from other sources
+        own = json.loads(OWN.read_text(encoding="utf-8")).get(title) if OWN.exists() else None
+        if own:
+            for lang in ("ja", "en"):
+                if lang not in ok and own.get(lang):
+                    item[lang + "_own"] = {"text": own[lang], "url": own["url"], "ref": own["ref"][lang]}
+                    ok.add(lang + "_own")
         if not ok:
             missing.append(title)
         # one language only: the other shows a translation of it, kept by hand
         for lang, other in (("ja", "en"), ("en", "ja")):
-            if lang in ok or other not in ok:
+            if lang in ok or lang + "_own" in ok or other not in ok:
                 continue
             t = tr.get(title, {}).get(lang)
             if t and t.get("from") == item[other]["text"]:

@@ -1,0 +1,20 @@
+{
+ "Chiptune": {
+  "ja": "チップチューンは、1970年代末から1980年代初めのゲーム機やパソコンに積まれた音源チップで鳴らしたり、その音をまねたりした電子音楽のスタイル。チップの少ない音数や単純な波形といった制約が、そのまま音の特徴になっている。",
+  "en": "Chiptune is a style of lo-fi electronic music made with, or modelled on, the sound chips of the first video game consoles and home computers of the late 1970s and early 1980s. Its distinctive sound comes from the limitations of those chips.",
+  "url": "https://academic.oup.com/book/6699",
+  "ref": {
+   "ja": "McAlpine『Bits and Pieces: A History of Chiptunes』（オックスフォード大学出版局）",
+   "en": "McAlpine, Bits and Pieces: A History of Chiptunes (Oxford University Press)"
+  }
+ },
+ "EDM": {
+  "ja": "エレクトロニック・ダンス・ミュージック（EDM）は、1980年代半ばから広がった、踊るための電子音楽のいろいろなスタイルをまとめた呼び名。ハウス、テクノ、ドラムンベース、ダブステップ、トランスなどを含み、クラブでDJがほかの曲とつないでかけることを前提に作られる。",
+  "en": "Electronic dance music (EDM) is an umbrella term for various styles of electronic music for dancing that spread from the mid-1980s, among them house, techno, drum and bass, dubstep, and trance. It is made mainly to be played in clubs by DJs, mixed with other tracks.",
+  "url": "https://www.britannica.com/art/electronic-dance-music",
+  "ref": {
+   "ja": "Britannica「electronic dance music」",
+   "en": "Britannica, “electronic dance music”"
+  }
+ }
+}

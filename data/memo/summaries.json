@@ -173,6 +173,16 @@
      "All articles lacking reliable references",
      "Articles lacking reliable references from September 2023"
     ]
+   },
+   "ja_own": {
+    "text": "チップチューンは、1970年代末から1980年代初めのゲーム機やパソコンに積まれた音源チップで鳴らしたり、その音をまねたりした電子音楽のスタイル。チップの少ない音数や単純な波形といった制約が、そのまま音の特徴になっている。",
+    "url": "https://academic.oup.com/book/6699",
+    "ref": "McAlpine『Bits and Pieces: A History of Chiptunes』（オックスフォード大学出版局）"
+   },
+   "en_own": {
+    "text": "Chiptune is a style of lo-fi electronic music made with, or modelled on, the sound chips of the first video game consoles and home computers of the late 1970s and early 1980s. Its distinctive sound comes from the limitations of those chips.",
+    "url": "https://academic.oup.com/book/6699",
+    "ref": "McAlpine, Bits and Pieces: A History of Chiptunes (Oxford University Press)"
    }
   },
   "Citypop": {
@@ -346,6 +356,16 @@
      "Articles with unsourced statements from May 2018",
      "Articles with unsourced statements from September 2019"
     ]
+   },
+   "ja_own": {
+    "text": "エレクトロニック・ダンス・ミュージック（EDM）は、1980年代半ばから広がった、踊るための電子音楽のいろいろなスタイルをまとめた呼び名。ハウス、テクノ、ドラムンベース、ダブステップ、トランスなどを含み、クラブでDJがほかの曲とつないでかけることを前提に作られる。",
+    "url": "https://www.britannica.com/art/electronic-dance-music",
+    "ref": "Britannica「electronic dance music」"
+   },
+   "en_own": {
+    "text": "Electronic dance music (EDM) is an umbrella term for various styles of electronic music for dancing that spread from the mid-1980s, among them house, techno, drum and bass, dubstep, and trance. It is made mainly to be played in clubs by DJs, mixed with other tracks.",
+    "url": "https://www.britannica.com/art/electronic-dance-music",
+    "ref": "Britannica, “electronic dance music”"
    }
   },
   "Electro": {
@@ -603,7 +623,8 @@
    "ja": {
     "title": "ハウス (音楽)",
     "text": "ハウス・ミュージック (英名：house music) は、1977年にアメリカ合衆国シカゴで誕生した音楽ジャンルの一つ。単にハウスと呼ばれることも多い。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%A6%E3%82%B9_%28%E9%9F%B3%E6%A5%BD%29"
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%A6%E3%82%B9_%28%E9%9F%B3%E6%A5%BD%29",
+    "skip": "replaced by a translation"
    },
    "en": {
     "title": "House music",
@@ -617,6 +638,10 @@
      "Articles with unsourced statements from February 2020",
      "Articles with unsourced statements from July 2020"
     ]
+   },
+   "ja_tr": {
+    "text": "ハウス・ミュージック（単にハウスとも）は、くり返される四つ打ちのビートと、1分間に115〜130拍ほどのテンポが特徴のエレクトロニック・ダンス・ミュージック。シカゴのクィアの黒人たちによるアンダーグラウンドなクラブ文化の中でDJや音楽プロデューサーたちによって作られ、1980年代の初めから半ばにかけて、DJがディスコの曲をより機械的なビートに作り変える中で、ゆっくりと形になった。",
+    "url": "https://en.wikipedia.org/wiki/House_music"
    }
   },
   "Hyperpop": {
