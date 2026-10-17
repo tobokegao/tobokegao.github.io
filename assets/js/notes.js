@@ -75,11 +75,11 @@
     var PAD = 24, GAP = 24, FLAG = 0, GAP_YEARS = 40, BREAK = 48, TURN = 20, DENSE = 3;
     // Across: px a year; two fingers apart sideways (or Ctrl + wheel) change it, `want` keeps
     // the fraction between steps.
-    var scale = 8, want = 8, MIN = 2, MAX = 24;
+    var scale = 3, want = 3, MIN = 2, MAX = 24;
     // Down: the nodes drop lines instead of shrinking the dot font (lod 2 = name, year and
     // posts; 1 = name and year; 0 = name only), and the gap between rows narrows with them.
     // Two fingers apart up and down (or Ctrl + Shift + wheel) change it.
-    var lod = 2;
+    var lod = 0;
     // a row's height: a node of lod + 1 lines (dot + 6 px each, 8 px of padding and border)
     // and the gap under it
     var rowH = function (l) {
@@ -260,8 +260,17 @@
         // down at once when there is room (just past the parent when the turn would be behind
         // it but the arrow still fits); back round the child's row (a coat-hanger shape) only
         // when the child starts left of the parent's end
-        if (cx >= sx + 4) d += "H" + cx + "V" + ey;
-        else if (ex - 8 >= sx + 4) d += "H" + (sx + 4) + "V" + ey;
+        var vx = cx >= sx + 4 ? cx : ex - 8 >= sx + 4 ? sx + 4 : null;
+        // a run along the parent's row that would pass behind another node there (and look
+        // as if it came out of it) goes along the gap below (or above) the row instead
+        var cross = vx !== null && Object.keys(byKey).some(function (k) {
+          var C = byKey[k];
+          return C !== A && C !== B && C.l === A.l && C.x < vx && C.x + C.w > sx;
+        });
+        if (cross) {
+          var ry = ey >= sy ? A.y + h + vhalf : A.y - vhalf;
+          d += "H" + (sx + half) + "V" + ry + "H" + vx + "V" + ey;
+        } else if (vx !== null) d += "H" + vx + "V" + ey;
         else {
           var gy = ey > sy ? B.y - vhalf : B.y + h + vhalf;
           d += "H" + (sx + half) + "V" + gy + "H" + cx + "V" + ey;
@@ -276,9 +285,8 @@
         (n.src || []).forEach(function (p) { svg += edge("src", p, n.k); });
       });
       canvas.insertAdjacentHTML("afterbegin", svg + "</svg>");
-      // open at the busiest decade (the middle of the pages, by year)
-      var mid = nodes[Math.floor(nodes.length / 2)];
-      if (keep !== true) el.scrollLeft = Math.max(0, X(mid.y) - Math.round(el.clientWidth / 2));
+      // open at the newest end
+      if (keep !== true) el.scrollLeft = el.scrollWidth;
 
       // Pointing at a node brings its own lines and neighbours forward.
       var paths = canvas.querySelectorAll(".tl__e");
@@ -366,17 +374,22 @@
       pop.querySelector("[data-go]").href = sitePath(n.u);
       pop.hidden = false;
       pop.scrollTop = 0;
-      // a genre chosen from the box is brought into view above it
-      var a = move && nodeEl(k);
-      if (a) {
+      fit();
+      // the chosen genre is kept in view in the (maybe lower) panel
+      var a = nodeEl(k);
+      if (a && (move || a.offsetLeft < el.scrollLeft || a.offsetLeft + a.offsetWidth > el.scrollLeft + el.clientWidth ||
+                a.offsetTop < el.scrollTop || a.offsetTop + a.offsetHeight > el.scrollTop + el.clientHeight)) {
         el.scrollLeft = Math.max(0, a.offsetLeft - Math.round((el.clientWidth - a.offsetWidth) / 2));
         el.scrollTop = Math.max(0, a.offsetTop - GAP);
       }
+      // on a PC the page moves to show the box under the panel
+      if (!tabBar()) pop.scrollIntoView({ block: "nearest" });
     };
     var close = function () {
       sel = null;
       pop.hidden = true;
       light(null);
+      fit();
     };
     pop.addEventListener("click", function (e) {
       var g = e.target.closest("[data-k]");
@@ -486,16 +499,27 @@
     // the tab bar) when the page is at its top, so the drawing is moved inside the panel and
     // the page itself does not scroll; what is under the panel (the credits, the window's
     // edge) is kept in view too. On a PC that would leave the panel too low: 3/4 of the screen.
-    var fit = function () {
+    // With the box open on a phone, the panel and the box share that room (the panel a bit
+    // under half), so the drawing stays in view above the box.
+    var tabBar = function () {
       var bar = document.querySelector(".statusbar__keys");
-      var under = bar && getComputedStyle(bar).position === "fixed" ? bar.offsetHeight : 0;
+      return bar && getComputedStyle(bar).position === "fixed" ? bar.offsetHeight : 0;
+    };
+    var fit = function () {
+      var under = tabBar();
       var h = Math.round(window.innerHeight * 3 / 4);
       if (under) {
         var box = el.getBoundingClientRect(), win = el.closest(".win");
         var below = win ? Math.max(0, win.getBoundingClientRect().bottom - box.bottom) : 0;
-        h = Math.floor(window.innerHeight - (box.top + window.scrollY) - below - under - GAP);
+        if (!pop.hidden) below -= pop.offsetHeight + GAP / 2;
+        var room = Math.floor(window.innerHeight - (box.top + window.scrollY) - below - under - GAP);
+        h = room;
+        if (!pop.hidden) {
+          h = Math.max(120, Math.round(room * 0.45));
+          pop.style.maxHeight = Math.max(120, room - h - GAP / 2) + "px";
+        }
       }
-      h = Math.max(240, h) + "px";
+      h = Math.max(pop.hidden ? 240 : 120, h) + "px";
       if (el.style.height !== h) el.style.height = h;
       el.style.maxHeight = "none";
     };

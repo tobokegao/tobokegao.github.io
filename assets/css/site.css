@@ -773,9 +773,8 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 /* two fingers stretch the years (notes.js), so the page itself does not zoom here */
 .tl { overflow: auto; max-height: 75vh; touch-action: pan-x pan-y; background: var(--win-2); border: 2px solid; border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md); }
 .tl__canvas { position: relative; }
-/* the box for a chosen genre: a small window over the panel's corner (its bottom on phones) */
-.tl-wrap { position: relative; }
-.tl__pop { position: absolute; z-index: 2; right: 8px; bottom: 8px; box-sizing: border-box; width: 360px; max-width: calc(100% - 16px); max-height: calc(100% - 16px); overflow: auto; padding: 0 12px 8px; background: var(--win); border: 2px solid var(--frame); }
+/* the box for a chosen genre: a small window under the panel, so it hides none of the drawing */
+.tl__pop { box-sizing: border-box; max-height: 360px; margin-top: 12px; overflow: auto; padding: 0 12px 8px; background: var(--win); border: 2px solid var(--frame); }
 .tl__pop-t { position: sticky; top: 0; margin: 0 -12px 8px; padding: 0 12px; font: var(--dot)/2 var(--f-dot); background: var(--frame); color: var(--win); }
 .tl__pop-y, .tl__pop-src, .tl__pop-act { margin: 0; font: var(--dot)/2 var(--f-dot); color: var(--ink-dim); }
 .tl__pop-x { margin: 8px 0 0; font: 14px/1.6 var(--f-body); color: var(--ink); }
@@ -788,9 +787,6 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .tl__pop-np { margin: 8px 0 0; font: var(--dot)/2 var(--f-dot); }
 /* the language switch shows its blocks with display, so hidden needs to win over it */
 .tl__pop [hidden] { display: none !important; }
-@media (max-width: 640px) {
-  .tl__pop { left: 8px; width: auto; max-height: calc(70% - 8px); }
-}
 .tl__svg { position: absolute; left: 0; top: 0; shape-rendering: crispEdges; }
 .tl__grid { stroke: var(--bevel-md); stroke-width: 1px; }
 .tl__label { fill: var(--ink-dim); font: var(--dot)/1 var(--f-dot); }

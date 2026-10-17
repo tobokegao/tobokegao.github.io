@@ -2,7 +2,7 @@
  "fetched": "2026-10-17",
  "source": "https://dbpedia.org/",
  "resources": {
-  "2-step Garage": "2-step_garage",
+  "2-step": "2-step_garage",
   "Acid House": "Acid_house",
   "Ambient": "Ambient_music",
   "Baile Funk": "Funk_carioca",
@@ -84,17 +84,19 @@
   "ゲーム音楽": "Video_game_music",
   "コンピュータ音楽": "Computer_music",
   "バロック音楽": "Baroque_music",
+  "ブラック・コンテンポラリー": "Urban_contemporary_music",
   "古典派音楽": "Classical_period_(music)",
   "実験音楽": "Experimental_music",
   "日本音楽": "Music_of_Japan",
   "歌謡曲": "Kayōkyoku",
   "渋谷系": "Shibuya-kei",
+  "現代音楽": "Contemporary_classical_music",
   "芸術音楽": "Art_music",
   "雅楽": "Gagaku",
   "音MAD": "Otomad"
  },
  "links": {
-  "2-step Garage": {
+  "2-step": {
    "up": [],
    "src": [
     "Breakbeat",
@@ -252,7 +254,7 @@
   "Dubstep": {
    "up": [],
    "src": [
-    "2-step Garage",
+    "2-step",
     "Breakbeat",
     "Drum & Bass",
     "EDM",
@@ -518,7 +520,8 @@
   "Noise": {
    "up": [],
    "src": [
-    "実験音楽"
+    "実験音楽",
+    "現代音楽"
    ]
   },
   "Power Pop": {
@@ -675,6 +678,12 @@
     "Citypop",
     "Contemporary R&B",
     "Italo Disco"
+   ]
+  },
+  "ブラック・コンテンポラリー": {
+   "up": [],
+   "src": [
+    "Fusion"
    ]
   },
   "歌謡曲": {

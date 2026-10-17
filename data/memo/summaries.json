@@ -2,7 +2,7 @@
  "fetched": "2026-10-17",
  "source": "https://www.wikipedia.org/",
  "summaries": {
-  "2-step Garage": {
+  "2-step": {
    "ja": {
     "title": "2ステップ",
     "text": "2ステップ UKガラージのサブジャンル。ハウスミュージックの四つ打ちに対し、変則的なリズムを持つ。",
@@ -1386,6 +1386,18 @@
     ]
    }
   },
+  "ブラック・コンテンポラリー": {
+   "ja": {
+    "title": "ブラック・コンテンポラリー",
+    "text": "ブラック・コンテンポラリー (Black Contemporary) は、ポピュラー音楽のジャンルの一つであるソウルの一種。日本ではブラコンと略して呼ばれることも多い。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%9D%E3%83%A9%E3%83%AA%E3%83%BC"
+   },
+   "en": {
+    "title": "Urban contemporary music",
+    "text": "Urban contemporary music, also known as urban music, urban pop, or just simply urban, is a music radio format. The term was coined by New York radio DJ Frankie Crocker in the early to mid-1970s as a synonym for Black music.",
+    "url": "https://en.wikipedia.org/wiki/Urban_contemporary_music"
+   }
+  },
   "古典派音楽": {
    "ja": {
     "title": "古典派音楽",
@@ -1478,6 +1490,33 @@
     "url": "https://en.wikipedia.org/wiki/Shibuya-kei"
    }
   },
+  "現代音楽": {
+   "ja": {
+    "title": "現代音楽",
+    "text": "現代音楽（げんだいおんがく）は、西洋クラシック音楽の流れであり20世紀後半から現在に至る音楽を指す。ドイツ語では「Neue Musik」、英語では「20th century classical music」などと表記されるようにその定義も非常に曖昧・抽象的であり、他の時代の西洋音楽史の区分のように、様式によって区分されたものではない。",
+    "url": "https://ja.wikipedia.org/wiki/%E7%8F%BE%E4%BB%A3%E9%9F%B3%E6%A5%BD",
+    "doubt": [
+     "独自研究の除去が必要な記事/2011年7月-9月"
+    ],
+    "part": [
+     "出典を必要とする節のある記事/2007年以前"
+    ]
+   },
+   "en": {
+    "title": "Contemporary classical music",
+    "text": "Contemporary classical music is European art music composed close to the present day. At the beginning of the 21st century, it commonly referred to the post-1945 post-tonal music after the death of Anton Webern, and included serial music, electronic music, experimental music, and minimalist music.",
+    "url": "https://en.wikipedia.org/wiki/Contemporary_classical_music",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from March 2026",
+     "Articles needing additional references from September 2017"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from July 2026"
+    ]
+   }
+  },
   "芸術音楽": {
    "en": {
     "title": "Art music",
@@ -1537,18 +1576,6 @@
     "ref": "Gloveity, on the Botanica genre (note, in Japanese)"
    }
   },
-  "ゴルジェ": {
-   "ja_own": {
-    "text": "ゴルジェは、福岡出身のhanaliが2012年に始めた、タム（太鼓）を必ず使う音楽。登山や岩のイメージをまとい、「タムを使え、ゴルジェと呼べ、アートと呼ぶな」という決まりのもとで、誰でも参加して手を加えられる、オープンソースのようなジャンルとして広まった。",
-    "url": "https://daily.bandcamp.com/lists/gorge-music-feature",
-    "ref": "Bandcamp Daily「A Guide to Gorge」"
-   },
-   "en_own": {
-    "text": "Gorge is music that always uses toms, started in 2012 by hanali from Fukuoka. Wrapped in images of mountain climbing and rock, it spread as an open-source-like genre that anyone can join and change, under the rule \"Use toms. Call it Gorge. Don't call it art.\"",
-    "url": "https://daily.bandcamp.com/lists/gorge-music-feature",
-    "ref": "Bandcamp Daily, “A Guide to Gorge”"
-   }
-  },
   "#jesusclub": {
    "ja_own": {
     "text": "#jesusclubは、キックを7つ打つせわしないリズム（「七つ打ち」）が特徴の、ジャージー・クラブなどを元にしたダンス音楽。music fmとAbareflailの企画から生まれた「架空のジャンル」とされ、2024年11月末にハッシュタグが使われ始め、2025年にはコンピも出た。",
@@ -1559,6 +1586,18 @@
     "text": "#jesusclub is dance music built on Jersey club and similar styles, marked by a busy rhythm of seven kicks in a row. It is said to have begun as a \"fictional genre\" from a project by music fm and Abareflail; the hashtag came into use at the end of November 2024, and compilations followed in 2025.",
     "url": "https://note.com/dtm_nmpass/n/n624024607869",
     "ref": "NMPASS, “What is #jesusclub?” (note, in Japanese)"
+   }
+  },
+  "GORGE": {
+   "ja_own": {
+    "text": "ゴルジェは、福岡出身のhanaliが2012年に始めた、タム（太鼓）を必ず使う音楽。登山や岩のイメージをまとい、「タムを使え、ゴルジェと呼べ、アートと呼ぶな」という決まりのもとで、誰でも参加して手を加えられる、オープンソースのようなジャンルとして広まった。",
+    "url": "https://daily.bandcamp.com/lists/gorge-music-feature",
+    "ref": "Bandcamp Daily「A Guide to Gorge」"
+   },
+   "en_own": {
+    "text": "Gorge is music that always uses toms, started in 2012 by hanali from Fukuoka. Wrapped in images of mountain climbing and rock, it spread as an open-source-like genre that anyone can join and change, under the rule \"Use toms. Call it Gorge. Don't call it art.\"",
+    "url": "https://daily.bandcamp.com/lists/gorge-music-feature",
+    "ref": "Bandcamp Daily, “A Guide to Gorge”"
    }
   }
  }

@@ -71,15 +71,6 @@
    "en": "Gloveity, on the Botanica genre (note, in Japanese)"
   }
  },
- "ゴルジェ": {
-  "ja": "ゴルジェは、福岡出身のhanaliが2012年に始めた、タム（太鼓）を必ず使う音楽。登山や岩のイメージをまとい、「タムを使え、ゴルジェと呼べ、アートと呼ぶな」という決まりのもとで、誰でも参加して手を加えられる、オープンソースのようなジャンルとして広まった。",
-  "en": "Gorge is music that always uses toms, started in 2012 by hanali from Fukuoka. Wrapped in images of mountain climbing and rock, it spread as an open-source-like genre that anyone can join and change, under the rule \"Use toms. Call it Gorge. Don't call it art.\"",
-  "url": "https://daily.bandcamp.com/lists/gorge-music-feature",
-  "ref": {
-   "ja": "Bandcamp Daily「A Guide to Gorge」",
-   "en": "Bandcamp Daily, “A Guide to Gorge”"
-  }
- },
  "#jesusclub": {
   "ja": "#jesusclubは、キックを7つ打つせわしないリズム（「七つ打ち」）が特徴の、ジャージー・クラブなどを元にしたダンス音楽。music fmとAbareflailの企画から生まれた「架空のジャンル」とされ、2024年11月末にハッシュタグが使われ始め、2025年にはコンピも出た。",
   "en": "#jesusclub is dance music built on Jersey club and similar styles, marked by a busy rhythm of seven kicks in a row. It is said to have begun as a \"fictional genre\" from a project by music fm and Abareflail; the hashtag came into use at the end of November 2024, and compilations followed in 2025.",
@@ -87,6 +78,15 @@
   "ref": {
    "ja": "NMPASS「#jesusclubって何？」（note）",
    "en": "NMPASS, “What is #jesusclub?” (note, in Japanese)"
+  }
+ },
+ "GORGE": {
+  "ja": "ゴルジェは、福岡出身のhanaliが2012年に始めた、タム（太鼓）を必ず使う音楽。登山や岩のイメージをまとい、「タムを使え、ゴルジェと呼べ、アートと呼ぶな」という決まりのもとで、誰でも参加して手を加えられる、オープンソースのようなジャンルとして広まった。",
+  "en": "Gorge is music that always uses toms, started in 2012 by hanali from Fukuoka. Wrapped in images of mountain climbing and rock, it spread as an open-source-like genre that anyone can join and change, under the rule \"Use toms. Call it Gorge. Don't call it art.\"",
+  "url": "https://daily.bandcamp.com/lists/gorge-music-feature",
+  "ref": {
+   "ja": "Bandcamp Daily「A Guide to Gorge」",
+   "en": "Bandcamp Daily, “A Guide to Gorge”"
   }
  }
 }
