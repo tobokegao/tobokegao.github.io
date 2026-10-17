@@ -40,3 +40,4 @@
 - [0023 年表を「なりたち」にし、線は直角だけで引き、段はつながる相手の近くに置く](0023-timeline-layout.md)
 - [0024 ジャンルのつながりはDBpediaを優先する](0024-genre-links-from-dbpedia.md)
 - [0025 ジャンルを選ぶと小さな窓を開き、Wikipediaの要約を出す](0025-genre-box-with-wikipedia-summary.md)
+- [0026 スクロールバーはTRACKMENTOの作りを流用する](0026-scrollbars-from-trackmento.md)

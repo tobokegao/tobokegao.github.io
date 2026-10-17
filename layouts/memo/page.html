@@ -130,6 +130,15 @@
       <button type="button" class="btn chip" data-tl="born" aria-pressed="true">{{ partial "t.html" "yearsOnly" }}</button>
       <button type="button" class="btn chip" data-tl="all" aria-pressed="false">{{ partial "t.html" "withPosts" }}</button>
       <span class="notes__hint">{{ partial "t.html" "zoomHint" }}</span>
+      {{- /* buttons for a mouse (Ctrl + Shift + wheel did not always reach the page); not on touch screens */}}
+      <span class="tl-zoom" role="group" aria-label="{{ partial "tt.html" "zoomButtons" }}">
+        <span aria-hidden="true">{{ partial "t.html" "zoomWidth" }}</span>
+        <button type="button" class="btn" data-z="x-"><span aria-hidden="true">−</span><span class="vh">{{ partial "t.html" "zoomNarrower" }}</span></button>
+        <button type="button" class="btn" data-z="x+"><span aria-hidden="true">＋</span><span class="vh">{{ partial "t.html" "zoomWider" }}</span></button>
+        <span aria-hidden="true">{{ partial "t.html" "zoomHeight" }}</span>
+        <button type="button" class="btn" data-z="y-"><span aria-hidden="true">−</span><span class="vh">{{ partial "t.html" "zoomShorter" }}</span></button>
+        <button type="button" class="btn" data-z="y+"><span aria-hidden="true">＋</span><span class="vh">{{ partial "t.html" "zoomTaller" }}</span></button>
+      </span>
     </div>
     <div class="tl-wrap">
       <div class="tl" id="tl" data-notes-js="{{ $js.RelPermalink }}" data-notes-sri="{{ $js.Data.Integrity }}"></div>

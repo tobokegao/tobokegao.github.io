@@ -323,8 +323,8 @@ ja = "年のあるページ"
 en = "Pages with a year"
 
 [zoomHint]
-ja = "広げる・縮める: 指2本、またはCtrl＋マウスホイール（縦は＋Shift）"
-en = "Zoom: Pinch or Ctrl + scroll (add Shift for vertical)"
+ja = "広げる・縮める: 指2本、またはCtrl＋マウスホイール"
+en = "Zoom: Pinch or Ctrl + scroll"
 
 [draftNote]
 ja = "下書き: 年とつながりは、Claudeが一般の知識から書いたものです。まだ確かめていません。"
@@ -361,3 +361,31 @@ en = "Read on Niconico Pedia (in Japanese)"
 [seePosts]
 ja = "ポストを見る"
 en = "View posts"
+
+[zoomButtons]
+ja = "図の大きさ"
+en = "Chart size"
+
+[zoomWidth]
+ja = "横"
+en = "Width"
+
+[zoomHeight]
+ja = "縦"
+en = "Height"
+
+[zoomNarrower]
+ja = "横に縮める"
+en = "Make narrower"
+
+[zoomWider]
+ja = "横に広げる"
+en = "Make wider"
+
+[zoomShorter]
+ja = "縦に縮める"
+en = "Make shorter"
+
+[zoomTaller]
+ja = "縦に広げる"
+en = "Make taller"

@@ -58,6 +58,23 @@
   --px-sh1: #3b3752;          /* the large icons' cast shadow on the page: next to the icon */
   --px-sh2: #a9a6ba;          /* ...and further out */
   --live: #b3261e;
+  /* the scrollbars (TRACKMENTO's, recoloured and lit from below): the colours, then the
+     thumb's frame and grip and the arrows as pictures, since SVG cannot read CSS variables */
+  --sb-face: #d5dce3;
+  --sb-edge: #8a9aa8;
+  --sb-dim: #b3bdc7;
+  --sb-lit: #f4efd8;
+  --sb-frame: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='5' viewBox='0 0 5 5' shape-rendering='crispEdges'%3E%3Cpath fill='%238a9aa8' d='M0 0h5v1H0zM0 4h5v1H0zM0 0h1v5H0zM4 0h1v5H4z'/%3E%3Cpath fill='%23b3bdc7' d='M1 1h3v1H1zM1 1h1v3H1z'/%3E%3Cpath fill='%23f4efd8' d='M1 3h3v1H1zM3 1h1v3H3z'/%3E%3Cpath fill='%23d5dce3' d='M3 1h1v1H3zM1 3h1v1H1z'/%3E%3C/svg%3E");
+  --sb-grip-v: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='16' viewBox='0 0 9 16' shape-rendering='crispEdges'%3E%3Cpath fill='%23b3bdc7' d='M0 0h7v2H0zM0 6h7v2H0zM0 12h7v2H0z'/%3E%3Cpath fill='%23f4efd8' d='M2 2h7v2H2zM2 8h7v2H2zM2 14h7v2H2z'/%3E%3C/svg%3E");
+  --sb-grip-h: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' viewBox='0 0 16 9' shape-rendering='crispEdges'%3E%3Cpath fill='%23b3bdc7' d='M0 0h2v7H0zM6 0h2v7H6zM12 0h2v7H12z'/%3E%3Cpath fill='%23f4efd8' d='M2 2h2v7H2zM8 2h2v7H8zM14 2h2v7H14z'/%3E%3C/svg%3E");
+  --sb-arrow-up: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 9'%3E%3Cpath d='M4.5 1.5 8 7H1z' fill='%230d2233'/%3E%3C/svg%3E");
+  --sb-arrow-down: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 9'%3E%3Cpath d='M4.5 7.5 1 2h7z' fill='%230d2233'/%3E%3C/svg%3E");
+  --sb-arrow-left: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 9'%3E%3Cpath d='M1.5 4.5 7 1v7z' fill='%230d2233'/%3E%3C/svg%3E");
+  --sb-arrow-right: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 9'%3E%3Cpath d='M7.5 4.5 2 8V1z' fill='%230d2233'/%3E%3C/svg%3E");
+  --sb-hover: #e4e9ef;
+  --sb-down: #c4ccd4;
+  --sb-track: #f1f4f7;
+  --u: 1px;   /* a pixel-art dot: a whole number of screen pixels (site.js sets it) */
   --release: #006599;
   --feature: #6b3fa0;
   --news: #9a6f00;
@@ -119,6 +136,22 @@
   --rel-src: var(--ink-dim);
   --rel-lit: var(--mark);
   --grp-1: #f0535a; --grp-2: #58a6ff; --grp-3: #ff5ec4; --grp-4: #fbd743; --grp-5: #3ddc97; --grp-6: #9399a0;
+  /* the scrollbars (TRACKMENTO's, recoloured and lit from below): the colours, then the
+     thumb's frame and grip and the arrows as pictures, since SVG cannot read CSS variables */
+  --sb-face: #3e4348;
+  --sb-edge: #12171b;
+  --sb-dim: #2f3439;
+  --sb-lit: #5c5a4c;
+  --sb-frame: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='5' viewBox='0 0 5 5' shape-rendering='crispEdges'%3E%3Cpath fill='%2312171b' d='M0 0h5v1H0zM0 4h5v1H0zM0 0h1v5H0zM4 0h1v5H4z'/%3E%3Cpath fill='%232f3439' d='M1 1h3v1H1zM1 1h1v3H1z'/%3E%3Cpath fill='%235c5a4c' d='M1 3h3v1H1zM3 1h1v3H3z'/%3E%3Cpath fill='%233e4348' d='M3 1h1v1H3zM1 3h1v1H1z'/%3E%3C/svg%3E");
+  --sb-grip-v: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='16' viewBox='0 0 9 16' shape-rendering='crispEdges'%3E%3Cpath fill='%232f3439' d='M0 0h7v2H0zM0 6h7v2H0zM0 12h7v2H0z'/%3E%3Cpath fill='%235c5a4c' d='M2 2h7v2H2zM2 8h7v2H2zM2 14h7v2H2z'/%3E%3C/svg%3E");
+  --sb-grip-h: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' viewBox='0 0 16 9' shape-rendering='crispEdges'%3E%3Cpath fill='%232f3439' d='M0 0h2v7H0zM6 0h2v7H6zM12 0h2v7H12z'/%3E%3Cpath fill='%235c5a4c' d='M2 2h2v7H2zM8 2h2v7H8zM14 2h2v7H14z'/%3E%3C/svg%3E");
+  --sb-arrow-up: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 9'%3E%3Cpath d='M4.5 1.5 8 7H1z' fill='%23efeeeb'/%3E%3C/svg%3E");
+  --sb-arrow-down: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 9'%3E%3Cpath d='M4.5 7.5 1 2h7z' fill='%23efeeeb'/%3E%3C/svg%3E");
+  --sb-arrow-left: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 9'%3E%3Cpath d='M1.5 4.5 7 1v7z' fill='%23efeeeb'/%3E%3C/svg%3E");
+  --sb-arrow-right: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 9'%3E%3Cpath d='M7.5 4.5 2 8V1z' fill='%23efeeeb'/%3E%3C/svg%3E");
+  --sb-hover: #484d53;
+  --sb-down: #2f3439;
+  --sb-track: #292e34;
   color-scheme: dark;
 }
 
@@ -762,6 +795,9 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .notes__hit-s a { margin-right: 8px; font: var(--dot)/2 var(--f-dot); }
 .notes mark { background: var(--mark); color: var(--mark-ink); }
 .notes__hint { align-self: center; font: var(--dot)/2 var(--f-dot); color: var(--ink-dim); }
+.tl-zoom { display: inline-flex; align-items: center; gap: 4px; font: var(--dot)/2 var(--f-dot); color: var(--ink-dim); }
+.tl-zoom > span + .btn { margin-left: 4px; }
+@media (pointer: coarse) { .tl-zoom { display: none; } }   /* two fingers there */
 .notes__grp--1, .tl__grp--1 { --grp: var(--grp-1); }
 .notes__grp--2, .tl__grp--2 { --grp: var(--grp-2); }
 .notes__grp--3, .tl__grp--3 { --grp: var(--grp-3); }
@@ -789,7 +825,8 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .tl__pop [hidden] { display: none !important; }
 .tl__svg { position: absolute; left: 0; top: 0; shape-rendering: crispEdges; }
 .tl__grid { stroke: var(--bevel-md); stroke-width: 1px; }
-.tl__label { fill: var(--ink-dim); font: var(--dot)/1 var(--f-dot); }
+.tl__axis { position: sticky; top: 0; z-index: 2; background: var(--win-2); }
+.tl__tick { position: absolute; top: calc(var(--dot) - 6px); color: var(--ink-dim); font: var(--dot)/1 var(--f-dot); white-space: nowrap; }
 .tl__e { fill: none; stroke-width: 2px; }
 .tl__e--up { stroke: var(--rel-up); }
 .tl__e--src { stroke: var(--rel-src); }
@@ -813,3 +850,53 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .tl__node:hover .tl__year, .tl__node:focus-visible .tl__year { color: inherit; }
 .tl__flag { stroke: var(--grp); stroke-width: 2px; }
 .tl__flag-t { fill: var(--grp); font: var(--dot)/1 var(--f-dot); }
+
+/* ---------- scrollbars: TRACKMENTO's way, in the site's colours ----------
+   WebKit (Chrome, Edge, Safari) gets drawn parts; Firefox, which has none, only the colours.
+   scrollbar-color / scrollbar-width make Chrome drop every ::-webkit-scrollbar rule, so they
+   stay inside @supports. The thumb's edge and bevel are one 5x5 picture cut in nine by
+   border-image (corners kept, sides stretched) and its grip one picture in the middle, all in
+   --u dots, a whole number of screen pixels, so lines never come out uneven. No box-shadow
+   outside a part: WebKit does not repaint outside it and the line stays behind on the track. */
+@supports not selector(::-webkit-scrollbar) {
+  * { scrollbar-width: auto; scrollbar-color: var(--sb-face) var(--sb-track); }
+}
+::-webkit-scrollbar { width: 16px; height: 16px; }
+/* on touch screens wider, to hit with a finger */
+@media (pointer: coarse) {
+  ::-webkit-scrollbar { width: 24px; height: 24px; }
+  ::-webkit-scrollbar-thumb:vertical { min-height: 44px; }
+  ::-webkit-scrollbar-thumb:horizontal { min-width: 44px; }
+}
+::-webkit-scrollbar-track { background: var(--sb-track); }
+::-webkit-scrollbar-track:vertical { box-shadow: inset 1px 0 0 var(--sb-edge), inset -1px 0 0 var(--sb-edge); }
+::-webkit-scrollbar-track:horizontal { box-shadow: inset 0 1px 0 var(--sb-edge), inset 0 -1px 0 var(--sb-edge); }
+::-webkit-scrollbar-thumb {
+  background-color: var(--sb-face);
+  border: calc(2 * var(--u)) solid transparent;
+  border-image: var(--sb-frame) 2 / calc(2 * var(--u));
+  background-repeat: no-repeat;
+  background-position: center;
+}
+::-webkit-scrollbar-thumb:vertical { min-height: 28px; background-image: var(--sb-grip-v); background-size: calc(9 * var(--u)) calc(16 * var(--u)); }
+::-webkit-scrollbar-thumb:horizontal { min-width: 28px; background-image: var(--sb-grip-h); background-size: calc(16 * var(--u)) calc(9 * var(--u)); }
+::-webkit-scrollbar-thumb:hover { background-color: var(--sb-hover); }
+::-webkit-scrollbar-thumb:active { background-color: var(--sb-down); }
+::-webkit-scrollbar-button { display: none; }
+::-webkit-scrollbar-button:vertical:start:decrement,
+::-webkit-scrollbar-button:vertical:end:increment,
+::-webkit-scrollbar-button:horizontal:start:decrement,
+::-webkit-scrollbar-button:horizontal:end:increment {
+  display: block; width: 16px; height: 16px;
+  background-color: var(--sb-face);
+  background-repeat: no-repeat; background-position: center; background-size: 9px 9px;
+  border: 1px solid var(--sb-edge);
+  box-shadow: inset 1px 1px 0 var(--sb-dim), inset -1px -1px 0 var(--sb-lit);
+}
+::-webkit-scrollbar-button:active { background-color: var(--sb-down); }
+::-webkit-scrollbar-button:vertical:start:decrement { background-image: var(--sb-arrow-up); }
+::-webkit-scrollbar-button:vertical:end:increment { background-image: var(--sb-arrow-down); }
+::-webkit-scrollbar-button:horizontal:start:decrement { background-image: var(--sb-arrow-left); }
+::-webkit-scrollbar-button:horizontal:end:increment { background-image: var(--sb-arrow-right); }
+/* where the two bars meet: plain (a size box would look grabbable) */
+::-webkit-scrollbar-corner { background: var(--sb-face); }

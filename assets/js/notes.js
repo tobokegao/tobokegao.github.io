@@ -87,7 +87,12 @@
       return (l + 1) * (dot + 6) + 8 + [8, 16, 24][l];
     };
 
+    var sbar = 0;   // the panel's sideways scrollbar, gone while the drawing is cleared
     var draw = function (keep) {
+      if (el.firstChild) {
+        var cs = getComputedStyle(el);
+        sbar = Math.max(0, el.offsetHeight - el.clientHeight - parseInt(cs.borderTopWidth, 10) - parseInt(cs.borderBottomWidth, 10));
+      }
       var VGAP = [8, 16, 24][lod];
       var nodes = all.filter(function (n) { return mode === "all" || n.b; });
       nodes.sort(function (a, b) { return a.y - b.y || a.t.localeCompare(b.t); });
@@ -178,6 +183,11 @@
           if (byKey[p] && p !== n.k) { links[n.k].push(p); links[p].push(n.k); }
         });
       });
+      // As many rows as the panel shows: past that, a node that finds no free row is set a
+      // little right of its year in the row that frees up first, rather than opening a row
+      // (genres born in the same year stacked up and made the drawing tall). It moves at
+      // most three years' width, so its place still reads as its year.
+      var cap = Math.max(1, Math.floor((el.clientHeight - sbar - TOP - PAD) / (h + VGAP)));
       var lanes;
       for (var pass = 0; pass < 3; pass++) {
         lanes = [];
@@ -193,6 +203,12 @@
           for (var l = 0; l < lanes.length; l++) {
             if (lanes[l] + GAP >= x) continue;
             if (best === lanes.length || Math.abs(l - t) < Math.abs(best - t)) best = l;
+          }
+          if (best === lanes.length && lanes.length >= cap) {
+            var e = 0;
+            for (var f = 1; f < lanes.length; f++) if (lanes[f] < lanes[e]) e = f;
+            var nx = lanes[e] + GAP + 1, reach = Math.max(4 * dot, 3 * (X(n.y + 1) - X(n.y)));
+            if (nx - x <= reach) { x = nx; best = e; }
           }
           lanes[best] = x + it.w;
           it.x = x; it.l = best; it.now = true;
@@ -217,17 +233,19 @@
       // a line at each decade, and at its middle when the decade is wide enough to label it;
       // zoomed out, a year without room after the last one keeps its line but not its number
       var said = -1e9, stop = 1e9, LABEL = 5 * Math.round(dot * 2 / 3);
+      // the year labels go in a strip that stays at the top of the panel when it scrolls down
+      var axis = "";
       var tick = function (y) {
         var x = X(y);
         svg += '<line class="tl__grid" x1="' + x + '" x2="' + x + '" y1="' + row + '" y2="' + H + '"/>';
         if (x < said + LABEL || x + LABEL > stop) return;
         said = x;
-        svg += '<text class="tl__label" x="' + (x + 4) + '" y="' + (row - 6) + '">' + y + "</text>";
+        axis += '<span class="tl__tick" style="left:' + (x + 4) + 'px">' + y + "</span>";
       };
       segs.forEach(function (g, i) {
         if (i) {
           var bx = g.x - BREAK + 12;
-          svg += '<text class="tl__label tl__break" x="' + bx + '" y="' + (row - 6) + '">≈</text>';
+          axis += '<span class="tl__tick" style="left:' + bx + 'px">≈</span>';
           said = bx + dot - LABEL;
         }
         // and none runs into the next break mark
@@ -285,6 +303,7 @@
         (n.src || []).forEach(function (p) { svg += edge("src", p, n.k); });
       });
       canvas.insertAdjacentHTML("afterbegin", svg + "</svg>");
+      canvas.insertAdjacentHTML("afterbegin", '<div class="tl__axis" style="width:' + W + "px;height:" + row + 'px" aria-hidden="true">' + axis + "</div>");
       // open at the newest end
       if (keep !== true) el.scrollLeft = el.scrollWidth;
 
@@ -410,6 +429,7 @@
     // Zoom: redraw at the new scale and lod, and keep the place under the fingers (or the
     // pointer) still.
     var zoom = function (next, l, px, py) {
+      touched = true;
       want = Math.max(MIN, Math.min(MAX, next));
       var s = Math.round(want), c = el.firstChild;
       l = Math.max(0, Math.min(2, l));
@@ -489,6 +509,13 @@
       if (!wheel) wheel = requestAnimationFrame(function () { wheel = 0; zoom(next, lod, px, py); });
       else want = Math.max(MIN, Math.min(MAX, next));
     }, { passive: false });
+    // the buttons for a mouse: a step wider or narrower, a line taller or shorter
+    document.querySelectorAll("[data-z]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var z = b.dataset.z, d = z.charAt(1) === "+" ? 1 : -1;
+        if (z.charAt(0) === "x") zoom(scale + d, lod); else zoom(want, lod + d);
+      });
+    });
     // and + / - on the keyboard when the panel has the focus
     el.addEventListener("keydown", function (e) {
       var d = e.key === "+" || e.key === "=" ? 1 : e.key === "-" ? -1 : 0;
@@ -520,7 +547,12 @@
         }
       }
       h = Math.max(pop.hidden ? 240 : 120, h) + "px";
-      if (el.style.height !== h) el.style.height = h;
+      if (el.style.height !== h) {
+        el.style.height = h;
+        // the panel settled lower or higher (a late font, a turned phone): choose the
+        // starting scale again, unless the reader has already zoomed
+        if (started && !touched && pop.hidden && !again) again = setTimeout(function () { again = 0; autoScale(); }, 0);
+      }
       el.style.maxHeight = "none";
     };
     window.addEventListener("resize", fit);
@@ -529,7 +561,37 @@
     var win = el.closest(".win");
     if (win && window.ResizeObserver) new ResizeObserver(function () { fit(); }).observe(win);
     // the dot font has to be in before the nodes are measured (and the panel placed)
-    (document.fonts ? document.fonts.ready : Promise.resolve()).then(function () { fit(); draw(); });
+    // At the start the years are as narrow as they can be while every row fits in the panel
+    // (wider years need fewer rows), so the drawing needs no scrolling up and down; the
+    // heights are measured by drawing (a halving search). When even the widest years leave
+    // more rows than fit (many genres born in one year stack up, as on a phone), the years
+    // widen only until it stops paying: the first scale where five steps wider would save
+    // no more than one row.
+    var started = false, touched = false, again = 0;
+    var autoScale = function () {
+      started = true;
+      draw(true);   // once first, so the scrollbar is known
+      var seen = {};
+      var tall = function (s) {
+        if (!(s in seen)) { scale = want = s; draw(true); seen[s] = el.firstChild.offsetHeight; }
+        return seen[s];
+      };
+      var room = el.clientHeight, pick = null;
+      if (tall(MAX) <= room) {
+        var lo = MIN, hi = MAX;
+        while (lo <= hi) {
+          var m = (lo + hi) >> 1;
+          if (tall(m) <= room) { pick = m; hi = m - 1; } else lo = m + 1;
+        }
+      } else {
+        for (var t = MIN; t < MAX && pick === null; t++) {
+          if (tall(t) - tall(Math.min(MAX, t + 5)) <= rowH(lod)) pick = t;
+        }
+      }
+      scale = want = pick || MAX;
+      draw();
+    };
+    (document.fonts ? document.fonts.ready : Promise.resolve()).then(function () { fit(); autoScale(); });
   }
 
   window.tbkNotes = {
