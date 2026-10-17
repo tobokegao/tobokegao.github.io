@@ -50,6 +50,8 @@ JST = timezone(timedelta(hours=9))
 MIN_TAG = 3          # a hashtag becomes a topic once it is used this often
 MAX_LIST = 300       # posts listed on a topic page (the rest are found by search)
 REL = {"up": "down", "down": "up", "src": "inf", "inf": "src"}
+# a year known only as a part of a decade: where in the decade it is drawn
+ERA_OFFSET = {"x": 0, "x2": 2, "x3": 5, "x4": 7}
 RESERVED = {"roots", "rt"}   # pages of the NOTES section that are not topics
 LINK = re.compile(r"(?<!\\)\[([^\[\]\n]+)\](?!\()")
 
@@ -216,6 +218,13 @@ def main() -> int:
             t["draft"] = 1
         if "born" in fm:
             t["born"] = int(fm["born"])
+            # only a part of a decade is known (decision 0023): born is the decade + 0/2/5/7
+            if fm.get("era"):
+                if fm["era"] not in ERA_OFFSET:
+                    raise SystemExit(f"content/memo/{n['file']}.md: era must be one of {', '.join(ERA_OFFSET)}")
+                if t["born"] != t["born"] // 10 * 10 + ERA_OFFSET[fm["era"]]:
+                    raise SystemExit(f"content/memo/{n['file']}.md: born {t['born']} does not match era {fm['era']}")
+                t["era"] = fm["era"]
         if fm.get("major"):
             t["major"] = int(fm.get("color", 1))
         if fm.get("credit"):
@@ -325,7 +334,7 @@ def main() -> int:
              "years": dict(sorted(t["years"].items()))}
         if "names" in t:
             o["names"] = {w: topics[x]["url"] for w, x in t["names"].items() if x in topics}
-        for f in ("born", "first", "major", "majors", "credit", "draft", "dbpedia", "nicopedia"):
+        for f in ("born", "era", "first", "major", "majors", "credit", "draft", "dbpedia", "nicopedia"):
             if f in t:
                 o[f] = t[f]
         out_topics[k] = o

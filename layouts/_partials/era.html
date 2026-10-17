@@ -1,0 +1,12 @@
+{{- /* When a genre was born, in both languages: the year, or a part of a decade when only that
+       is known (`era`, decision 0023; notes.js says it the same way). Context: the topic. */ -}}
+{{- $y := int .born -}}
+{{- with .era -}}
+  {{- $d := mul (div $y 10) 10 -}}
+  {{- $ja := dict "x" "" "x2" "前半" "x3" "半ば" "x4" "後半" -}}
+  {{- /* a label, so no "the" and a capital (notes.js writes "born in the late 1990s") */ -}}
+  {{- $en := dict "x" "%ds" "x2" "Early %ds" "x3" "Mid-%ds" "x4" "Late %ds" -}}
+  {{- partial "bi.html" (dict "ja" (printf "%d年代%s" $d (index $ja .)) "en" (printf (index $en .) $d)) -}}
+{{- else -}}
+  {{- $y -}}
+{{- end -}}

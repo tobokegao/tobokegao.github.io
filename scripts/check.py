@@ -55,6 +55,10 @@ SAME_LINE = [
 SAME_LIST = [
     ("夜のアイコンとロゴの光の段階色", [("scripts/hd_icons.py", r"ramp_n = (\[[^\]]*\])"),
                                ("scripts/night_logos.py", r"RAMP = (\[[^\]]*\])")]),
+    # a third item: what to compare in the matched text (colours when left out)
+    ("年代の一部の書き方（前半・半ば・後半）", [("assets/js/notes.js", r"ja: \{ (x: \"\"[^}]*)\}"),
+                                 ("layouts/_partials/era.html", r"\$ja := dict (\"x\" \"\"[^-]*)-")],
+     r"[\u3040-\u9fff]+"),
 ]
 
 # Built so that this file does not match itself.
@@ -363,11 +367,11 @@ def check_doubles(r: Result) -> None:
         found = {p: (pattern.search(read(p)) or [None])[0] for p in paths}
         if None in found.values() or len({v.strip() for v in found.values()}) != 1:
             r.ng.append(f"二重実装がずれた（{label}）: " + " / ".join(f"{p}: {v}" for p, v in found.items()))
-    for label, places in SAME_LIST:
+    for label, places, *item in SAME_LIST:
         found = {}
         for p, pattern in places:
             m = re.search(pattern, read(p))
-            found[p] = re.findall(r"#[0-9a-fA-F]{6}", m.group(1).lower()) if m else None
+            found[p] = re.findall(item[0] if item else r"#[0-9a-fA-F]{6}", m.group(1).lower()) if m else None
         if len({json.dumps(v) for v in found.values()}) != 1:
             r.ng.append(f"二重実装がずれた（{label}）: " + " / ".join(f"{p}: {v}" for p, v in found.items()))
 
@@ -523,7 +527,7 @@ def main() -> int:
         jobs.append(("JSON", check_json))
     if touched(r"^static/img/"):
         jobs.append(("画像", lambda r: check_images(r, added)))
-    doubles = [p for _, _, ps in SAME_LINE for p in ps] + [p for _, ps in SAME_LIST for p, _ in ps]
+    doubles = [p for _, _, ps in SAME_LINE for p in ps] + [p for e in SAME_LIST for p, _ in e[1]]
     if changed is None or set(changed) & set(doubles):
         jobs.append(("二重実装", check_doubles))
     if touched(r"^(data/(covers|releases|items)\.json|static/img/covers/)"):

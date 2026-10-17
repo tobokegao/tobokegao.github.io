@@ -4,10 +4,20 @@
  "resources": {
   "2-step": "2-step_garage",
   "Acid House": "Acid_house",
+  "Acid Jazz": "Acid_jazz",
+  "Alternative Rock": "Alternative_rock",
   "Ambient": "Ambient_music",
   "Baile Funk": "Funk_carioca",
+  "Baltimore Club": "Baltimore_club",
   "Bass Music": "Bass_music",
+  "Bassline": "Bassline_(music_genre)",
+  "Bebop": "Bebop",
+  "Big Band": "Big_band",
+  "Big Room House": "Big_room_house",
   "Bitpop": "Bitpop",
+  "ブラック・コンテンポラリー": "Urban_contemporary_music",
+  "Blues Rock": "Blues_rock",
+  "Blues": "Blues",
   "Braindance": "Braindance",
   "Breakbeat Hardcore": "Breakbeat_hardcore",
   "Breakbeat": "Breakbeat",
@@ -19,8 +29,12 @@
   "Citypop": "City_pop",
   "Classic Music": "Classical_music",
   "Contemporary R&B": "Contemporary_R&B",
+  "Cool Jazz": "Cool_jazz",
+  "Deep House": "Deep_house",
   "Detroit Techno": "Detroit_techno",
+  "Digicore": "Digicore",
   "Disco": "Disco",
+  "Dixieland": "Dixieland_jazz",
   "Djent": "Djent",
   "Drum & Bass": "Drum_and_bass",
   "Dubstep": "Dubstep",
@@ -32,6 +46,7 @@
   "Footwork": "Footwork_(genre)",
   "Free Jazz": "Free_jazz",
   "French House": "French_house",
+  "Frutiger Aero": "Frutiger_Aero",
   "Funk": "Funk",
   "Funkot": "Funkot",
   "Fusion": "Jazz_fusion",
@@ -39,58 +54,102 @@
   "Future Funk": "Future_funk",
   "Gabber": "Gabber",
   "Garage House": "Garage_house",
+  "Ghetto House": "Ghetto_house",
+  "Glam Rock": "Glam_rock",
   "Glitch": "Glitch_(music)",
+  "Goa Trance": "Goa_trance",
   "Grunge": "Grunge",
+  "Gypsy Jazz": "Gypsy_jazz",
   "Happy Hardcore": "Happy_hardcore",
+  "Hard Bop": "Hard_bop",
+  "Hard House": "UK_hard_house",
+  "Hard Rock": "Hard_rock",
+  "Hard Trance": "Hard_trance",
   "Hardcore Techno": "Hardcore_techno",
+  "Hardstep": "Hardstep",
+  "Hardstyle": "Hardstyle",
+  "Heavy Metal": "Heavy_metal_music",
   "Hip Hop": "Hip_hop_music",
   "House": "House_music",
   "Hyperpop": "Hyperpop",
   "IDM": "Intelligent_dance_music",
   "Italo Disco": "Italo_disco",
+  "Italo House": "Italo_house",
   "J-CORE": "J-core",
   "J-POP": "J-pop",
+  "Jazz Rap": "Jazz_rap",
   "Jazz": "Jazz",
+  "Jersey Club": "Jersey_club",
   "Juke": "Juke_music",
+  "Jump Blues": "Jump_blues",
   "Jungle": "Jungle_music",
   "Kawaii Future Bass": "Kawaii_future_bass",
+  "Krautrock": "Krautrock",
   "Laptop Twee": "Laptop_twee",
   "Liquid Drum & Bass": "Liquid_funk",
   "Lo-fi Hip Hop": "Lo-fi_hip_hop",
+  "M-Base": "M-Base",
+  "Mallsoft": "Mallsoft",
+  "Memphis Rap": "Memphis_rap",
   "Miami Bass": "Miami_bass",
+  "Microhouse": "Microhouse",
+  "Modal Jazz": "Modal_jazz",
+  "Musique Concrète": "Musique_concrète",
+  "Neo Soul": "Neo_soul",
   "Nerdcore": "Nerdcore",
+  "Neurofunk": "Neurofunk",
   "New Beat": "New_beat",
+  "Nightcore": "Nightcore",
   "Noise": "Noise_music",
+  "Phonk": "Phonk",
   "Power Pop": "Power_pop",
   "Progressive House": "Progressive_house",
   "Progressive Metal": "Progressive_metal",
   "Progressive Rock": "Progressive_rock",
   "Psychedelic Rock": "Psychedelic_rock",
   "Psychedelic Trance": "Psychedelic_trance",
+  "Punk Rock": "Punk_rock",
   "R&B": "Rhythm_and_blues",
+  "Ragtime": "Ragtime",
+  "Rock and Roll": "Rock_and_roll",
   "Rock": "Rock_music",
   "Salsa": "Salsa_music",
   "Shangaan Electro": "Shangaan_electro",
   "Shoegaze": "Shoegaze",
   "Sigilkore": "Sigilkore",
   "Singeli": "Singeli",
+  "Smooth Jazz": "Smooth_jazz",
+  "Soul Jazz": "Soul_jazz",
+  "Soul": "Soul_music",
+  "Speedcore": "Speedcore",
+  "Stoner Rock": "Stoner_rock",
+  "Swing": "Swing_music",
+  "Symphonic Jazz": "Orchestral_jazz",
   "Synth Pop": "Synth-pop",
   "Synthwave": "Synthwave",
+  "Tech House": "Tech_house",
   "Techno": "Techno",
   "Trance": "Trance_music",
+  "Trap": "Trap_music",
   "UK Garage": "UK_garage",
   "UK Hardcore": "UK_hardcore",
+  "Uplifting Trance": "Uplifting_trance",
   "Vaporwave": "Vaporwave",
+  "West Coast Jazz": "West_Coast_jazz",
   "ゲーム音楽": "Video_game_music",
   "コンピュータ音楽": "Computer_music",
   "バロック音楽": "Baroque_music",
-  "ブラック・コンテンポラリー": "Urban_contemporary_music",
   "古典派音楽": "Classical_period_(music)",
   "実験音楽": "Experimental_music",
   "日本音楽": "Music_of_Japan",
+  "歌舞伎": "Kabuki",
   "歌謡曲": "Kayōkyoku",
+  "浄瑠璃": "Jōruri",
   "渋谷系": "Shibuya-kei",
+  "猿楽": "Sarugaku",
   "現代音楽": "Contemporary_classical_music",
+  "田楽": "Dengaku",
+  "能楽": "Noh",
   "芸術音楽": "Art_music",
   "雅楽": "Gagaku",
   "音MAD": "Otomad"
@@ -113,9 +172,30 @@
     "Chicago House"
    ]
   },
+  "Acid Jazz": {
+   "up": [],
+   "src": [
+    "Acid House",
+    "Disco",
+    "Funk",
+    "Fusion",
+    "Hip Hop",
+    "Soul"
+   ]
+  },
+  "Alternative Rock": {
+   "up": [
+    "Rock"
+   ],
+   "src": [
+    "Power Pop",
+    "Punk Rock"
+   ]
+  },
   "Ambient": {
    "up": [],
    "src": [
+    "Krautrock",
     "実験音楽"
    ]
   },
@@ -129,6 +209,54 @@
     "Techno"
    ]
   },
+  "Baltimore Club": {
+   "up": [],
+   "src": [
+    "Breakbeat",
+    "Ghetto House",
+    "Hip Hop",
+    "House",
+    "Miami Bass",
+    "Techno"
+   ]
+  },
+  "Bassline": {
+   "up": [],
+   "src": [
+    "Contemporary R&B",
+    "Italo House",
+    "UK Garage"
+   ]
+  },
+  "Bebop": {
+   "up": [],
+   "src": [
+    "Swing"
+   ]
+  },
+  "Big Band": {
+   "up": [],
+   "src": [
+    "Blues",
+    "Classic Music",
+    "Jazz"
+   ]
+  },
+  "Big Room House": {
+   "up": [
+    "Electro House"
+   ],
+   "src": [
+    "Hard House",
+    "Hardstyle",
+    "House",
+    "Progressive House",
+    "Tech House",
+    "Techno",
+    "Trance",
+    "Uplifting Trance"
+   ]
+  },
   "Bitpop": {
    "up": [
     "Chiptune"
@@ -137,6 +265,13 @@
     "Electronica",
     "Synth Pop",
     "ゲーム音楽"
+   ]
+  },
+  "Blues Rock": {
+   "up": [],
+   "src": [
+    "Blues",
+    "Rock"
    ]
   },
   "Breakbeat": {
@@ -163,6 +298,7 @@
     "Breakbeat"
    ],
    "src": [
+    "Digicore",
     "Drum & Bass",
     "Gabber",
     "Hardcore Techno",
@@ -191,6 +327,7 @@
    "up": [],
    "src": [
     "Fusion",
+    "Heavy Metal",
     "Synth Pop",
     "ゲーム音楽",
     "コンピュータ音楽"
@@ -203,7 +340,8 @@
    "src": [
     "Disco",
     "Funk",
-    "Fusion"
+    "Fusion",
+    "Soul"
    ]
   },
   "Contemporary R&B": {
@@ -212,7 +350,25 @@
    ],
    "src": [
     "Funk",
-    "Hip Hop"
+    "Hip Hop",
+    "Soul"
+   ]
+  },
+  "Cool Jazz": {
+   "up": [],
+   "src": [
+    "Bebop",
+    "Classic Music",
+    "Swing"
+   ]
+  },
+  "Deep House": {
+   "up": [],
+   "src": [
+    "Chicago House",
+    "Garage House",
+    "House",
+    "Soul"
    ]
   },
   "Detroit Techno": {
@@ -225,11 +381,24 @@
     "Synth Pop"
    ]
   },
+  "Digicore": {
+   "up": [],
+   "src": [
+    "Drum & Bass"
+   ]
+  },
   "Disco": {
    "up": [],
    "src": [
     "Funk",
-    "R&B"
+    "R&B",
+    "Soul"
+   ]
+  },
+  "Dixieland": {
+   "up": [],
+   "src": [
+    "Jazz"
    ]
   },
   "Djent": {
@@ -268,6 +437,7 @@
     "Disco",
     "EDM",
     "Electro",
+    "Krautrock",
     "Synth Pop"
    ]
   },
@@ -276,6 +446,7 @@
    "src": [
     "Disco",
     "House",
+    "Krautrock",
     "Synth Pop"
    ]
   },
@@ -297,7 +468,8 @@
     "Chiptune",
     "Electro",
     "House",
-    "Synth Pop"
+    "Synth Pop",
+    "Tech House"
    ]
   },
   "Electronica": {
@@ -312,6 +484,7 @@
    "up": [],
    "src": [
     "Drum & Bass",
+    "Ghetto House",
     "Hip Hop"
    ]
   },
@@ -326,14 +499,16 @@
    "up": [],
    "src": [
     "Disco",
-    "House"
+    "House",
+    "Tech House"
    ]
   },
   "Funk": {
    "up": [],
    "src": [
     "Jazz",
-    "R&B"
+    "R&B",
+    "Soul"
    ]
   },
   "Funkot": {
@@ -347,6 +522,8 @@
   "Fusion": {
    "up": [],
    "src": [
+    "Bebop",
+    "Cool Jazz",
     "Funk",
     "Jazz",
     "R&B",
@@ -371,26 +548,105 @@
     "Techno"
    ]
   },
+  "Ghetto House": {
+   "up": [],
+   "src": [
+    "Chicago House",
+    "Hip Hop"
+   ]
+  },
+  "Glam Rock": {
+   "up": [
+    "Rock"
+   ],
+   "src": [
+    "Hard Rock",
+    "Psychedelic Rock"
+   ]
+  },
   "Glitch": {
    "up": [],
    "src": [
     "Ambient",
     "Chiptune",
+    "Musique Concrète",
     "Noise",
     "Techno"
    ]
   },
+  "Goa Trance": {
+   "up": [
+    "Trance"
+   ],
+   "src": [
+    "Acid House",
+    "EBM",
+    "New Beat",
+    "Psychedelic Rock"
+   ]
+  },
   "Grunge": {
    "up": [
+    "Alternative Rock",
     "Rock"
    ],
-   "src": []
+   "src": [
+    "Hard Rock",
+    "Heavy Metal",
+    "Punk Rock"
+   ]
+  },
+  "Gypsy Jazz": {
+   "up": [],
+   "src": [
+    "Jazz"
+   ]
   },
   "Happy Hardcore": {
    "up": [],
    "src": [
     "Breakbeat",
-    "Breakbeat Hardcore"
+    "Breakbeat Hardcore",
+    "Hard Trance"
+   ]
+  },
+  "Hard Bop": {
+   "up": [],
+   "src": [
+    "Bebop",
+    "Blues",
+    "Jazz",
+    "R&B"
+   ]
+  },
+  "Hard House": {
+   "up": [],
+   "src": [
+    "Acid House",
+    "Breakbeat Hardcore",
+    "Hardcore Techno",
+    "House",
+    "New Beat"
+   ]
+  },
+  "Hard Rock": {
+   "up": [
+    "Rock"
+   ],
+   "src": [
+    "Blues Rock",
+    "Psychedelic Rock",
+    "Rock and Roll"
+   ]
+  },
+  "Hard Trance": {
+   "up": [
+    "Trance"
+   ],
+   "src": [
+    "Breakbeat Hardcore",
+    "Hard House",
+    "New Beat"
    ]
   },
   "Hardcore Techno": {
@@ -400,7 +656,36 @@
    ],
    "src": [
     "EBM",
-    "New Beat"
+    "New Beat",
+    "Tech House"
+   ]
+  },
+  "Hardstep": {
+   "up": [
+    "Drum & Bass"
+   ],
+   "src": [
+    "Breakbeat Hardcore",
+    "Jungle"
+   ]
+  },
+  "Hardstyle": {
+   "up": [],
+   "src": [
+    "Hard House",
+    "Hard Trance",
+    "New Beat",
+    "Techno",
+    "Trance"
+   ]
+  },
+  "Heavy Metal": {
+   "up": [
+    "Rock"
+   ],
+   "src": [
+    "Blues Rock",
+    "Psychedelic Rock"
    ]
   },
   "Hip Hop": {
@@ -409,7 +694,8 @@
     "Disco",
     "Funk",
     "Jazz",
-    "R&B"
+    "R&B",
+    "Soul"
    ]
   },
   "House": {
@@ -429,7 +715,9 @@
    "src": [
     "Chiptune",
     "Hip Hop",
-    "Rock"
+    "Nightcore",
+    "Rock",
+    "Trap"
    ]
   },
   "IDM": {
@@ -448,6 +736,15 @@
     "Synth Pop"
    ]
   },
+  "Italo House": {
+   "up": [],
+   "src": [
+    "Chicago House",
+    "Garage House",
+    "House",
+    "Italo Disco"
+   ]
+  },
   "J-CORE": {
    "up": [],
    "src": [
@@ -463,7 +760,32 @@
   "Jazz": {
    "up": [],
    "src": [
-    "Classic Music"
+    "Blues",
+    "Classic Music",
+    "Ragtime"
+   ]
+  },
+  "Jazz Rap": {
+   "up": [],
+   "src": [
+    "Acid Jazz",
+    "Hip Hop",
+    "Jazz"
+   ]
+  },
+  "Jersey Club": {
+   "up": [],
+   "src": [
+    "Baltimore Club"
+   ]
+  },
+  "Jump Blues": {
+   "up": [
+    "Blues"
+   ],
+   "src": [
+    "Jazz",
+    "Swing"
    ]
   },
   "Jungle": {
@@ -475,11 +797,23 @@
     "Hip Hop"
    ]
   },
+  "Krautrock": {
+   "up": [],
+   "src": [
+    "Free Jazz",
+    "Funk",
+    "Fusion",
+    "Musique Concrète",
+    "Progressive Rock",
+    "Psychedelic Rock"
+   ]
+  },
   "Liquid Drum & Bass": {
    "up": [
     "Drum & Bass"
    ],
    "src": [
+    "Acid Jazz",
     "Ambient",
     "Breakbeat Hardcore",
     "Funk",
@@ -491,7 +825,25 @@
     "Hip Hop"
    ],
    "src": [
-    "Jazz"
+    "Jazz",
+    "Jazz Rap",
+    "Soul"
+   ]
+  },
+  "Mallsoft": {
+   "up": [
+    "Vaporwave"
+   ],
+   "src": [
+    "Ambient"
+   ]
+  },
+  "Memphis Rap": {
+   "up": [
+    "Hip Hop"
+   ],
+   "src": [
+    "Electro"
    ]
   },
   "Miami Bass": {
@@ -503,11 +855,48 @@
     "Electro"
    ]
   },
+  "Microhouse": {
+   "up": [],
+   "src": [
+    "Acid House",
+    "Bitpop",
+    "Chicago House",
+    "Glitch",
+    "House",
+    "IDM"
+   ]
+  },
+  "Modal Jazz": {
+   "up": [],
+   "src": [
+    "Cool Jazz"
+   ]
+  },
+  "Neo Soul": {
+   "up": [
+    "Soul"
+   ],
+   "src": [
+    "Contemporary R&B",
+    "Hip Hop",
+    "R&B"
+   ]
+  },
   "Nerdcore": {
    "up": [
     "Hip Hop"
    ],
    "src": []
+  },
+  "Neurofunk": {
+   "up": [
+    "Drum & Bass"
+   ],
+   "src": [
+    "Funk",
+    "House",
+    "Techno"
+   ]
   },
   "New Beat": {
    "up": [],
@@ -517,24 +906,44 @@
     "Hip Hop"
    ]
   },
+  "Nightcore": {
+   "up": [],
+   "src": [
+    "Happy Hardcore",
+    "J-CORE",
+    "Trance"
+   ]
+  },
   "Noise": {
    "up": [],
    "src": [
+    "Musique Concrète",
     "実験音楽",
     "現代音楽"
    ]
+  },
+  "Phonk": {
+   "up": [
+    "Hip Hop",
+    "Memphis Rap",
+    "Trap"
+   ],
+   "src": []
   },
   "Power Pop": {
    "up": [
     "Rock"
    ],
-   "src": []
+   "src": [
+    "Hard Rock"
+   ]
   },
   "Progressive House": {
    "up": [],
    "src": [
     "Acid House",
     "House",
+    "Italo House",
     "Techno",
     "Trance"
    ]
@@ -542,6 +951,7 @@
   "Progressive Metal": {
    "up": [],
    "src": [
+    "Heavy Metal",
     "Progressive Rock"
    ]
   },
@@ -560,6 +970,7 @@
     "Rock"
    ],
    "src": [
+    "Blues",
     "Jazz"
    ]
   },
@@ -570,21 +981,53 @@
    "src": [
     "Acid House",
     "Classic Music",
+    "Goa Trance",
+    "Hard Trance",
     "New Beat",
     "Psychedelic Rock",
     "Techno"
    ]
   },
+  "Punk Rock": {
+   "up": [
+    "Rock"
+   ],
+   "src": [
+    "Glam Rock",
+    "Rock and Roll"
+   ]
+  },
   "R&B": {
    "up": [],
    "src": [
-    "Jazz"
+    "Blues",
+    "Jazz",
+    "Jump Blues",
+    "Swing"
+   ]
+  },
+  "Ragtime": {
+   "up": [],
+   "src": [
+    "Blues",
+    "Classic Music"
    ]
   },
   "Rock": {
    "up": [],
    "src": [
+    "Blues",
     "Jazz",
+    "R&B",
+    "Rock and Roll"
+   ]
+  },
+  "Rock and Roll": {
+   "up": [],
+   "src": [
+    "Blues",
+    "Jazz",
+    "Jump Blues",
     "R&B"
    ]
   },
@@ -602,17 +1045,76 @@
    ]
   },
   "Shoegaze": {
-   "up": [],
+   "up": [
+    "Alternative Rock"
+   ],
    "src": [
-    "Psychedelic Rock"
+    "Psychedelic Rock",
+    "Punk Rock"
    ]
   },
   "Sigilkore": {
    "up": [
-    "Hip Hop"
+    "Hip Hop",
+    "Trap"
    ],
    "src": [
     "Hyperpop"
+   ]
+  },
+  "Smooth Jazz": {
+   "up": [],
+   "src": [
+    "Fusion",
+    "R&B",
+    "Soul"
+   ]
+  },
+  "Soul": {
+   "up": [],
+   "src": [
+    "R&B",
+    "Trap"
+   ]
+  },
+  "Soul Jazz": {
+   "up": [],
+   "src": [
+    "Blues",
+    "Hard Bop",
+    "Jazz",
+    "R&B",
+    "Soul"
+   ]
+  },
+  "Speedcore": {
+   "up": [],
+   "src": [
+    "Breakcore",
+    "Gabber",
+    "Hardcore Techno"
+   ]
+  },
+  "Stoner Rock": {
+   "up": [
+    "Rock"
+   ],
+   "src": [
+    "Psychedelic Rock"
+   ]
+  },
+  "Swing": {
+   "up": [],
+   "src": [
+    "Big Band",
+    "Symphonic Jazz"
+   ]
+  },
+  "Symphonic Jazz": {
+   "up": [],
+   "src": [
+    "Classic Music",
+    "Dixieland"
    ]
   },
   "Synth Pop": {
@@ -621,6 +1123,8 @@
    ],
    "src": [
     "Disco",
+    "Glam Rock",
+    "Krautrock",
     "Progressive Rock"
    ]
   },
@@ -635,6 +1139,14 @@
     "ゲーム音楽"
    ]
   },
+  "Tech House": {
+   "up": [],
+   "src": [
+    "Deep House",
+    "House",
+    "Techno"
+   ]
+  },
   "Techno": {
    "up": [
     "EDM"
@@ -647,6 +1159,7 @@
     "Funk",
     "House",
     "Italo Disco",
+    "Krautrock",
     "Synth Pop"
    ]
   },
@@ -661,7 +1174,18 @@
     "Detroit Techno",
     "Hardcore Techno",
     "House",
+    "Tech House",
     "Techno"
+   ]
+  },
+  "Trap": {
+   "up": [
+    "Hip Hop",
+    "Memphis Rap"
+   ],
+   "src": [
+    "Electro",
+    "Miami Bass"
    ]
   },
   "UK Garage": {
@@ -671,13 +1195,31 @@
     "Jungle"
    ]
   },
+  "Uplifting Trance": {
+   "up": [
+    "Psychedelic Trance",
+    "Trance"
+   ],
+   "src": [
+    "Hard Trance"
+   ]
+  },
   "Vaporwave": {
    "up": [],
    "src": [
     "Chillwave",
     "Citypop",
     "Contemporary R&B",
-    "Italo Disco"
+    "Italo Disco",
+    "Smooth Jazz"
+   ]
+  },
+  "West Coast Jazz": {
+   "up": [],
+   "src": [
+    "Bebop",
+    "Classic Music",
+    "Swing"
    ]
   },
   "ブラック・コンテンポラリー": {
@@ -689,7 +1231,9 @@
   "歌謡曲": {
    "up": [],
    "src": [
-    "Jazz"
+    "Blues",
+    "Jazz",
+    "Rock and Roll"
    ]
   },
   "渋谷系": {
@@ -699,7 +1243,8 @@
     "Funk",
     "Hip Hop",
     "House",
-    "Jazz"
+    "Jazz",
+    "Soul"
    ]
   }
  }

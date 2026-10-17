@@ -36,6 +36,41 @@
     "url": "https://en.wikipedia.org/wiki/Acid_house"
    }
   },
+  "Acid Jazz": {
+   "ja": {
+    "title": "アシッドジャズ",
+    "text": "アシッドジャズ（Acid jazz）は、1980年代にイギリス のクラブシーンから派生したジャズの文化。ジャズ・ファンクやソウル・ジャズ等の影響を受けた音楽のジャンル。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%B7%E3%83%83%E3%83%89%E3%82%B8%E3%83%A3%E3%82%BA"
+   },
+   "en": {
+    "title": "Acid jazz",
+    "text": "Acid jazz (also known as club jazz, psychedelic jazz, or groove jazz) is a music genre that combines elements of funk, soul, and hip-hop. Acid jazz originated in clubs in London during the 1980s with the rare groove movement and spread to the United States, Western Europe, Latin America and Japan.",
+    "url": "https://en.wikipedia.org/wiki/Acid_jazz",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from July 2025"
+    ]
+   }
+  },
+  "Alternative Rock": {
+   "ja": {
+    "title": "オルタナティヴ・ロック",
+    "text": "オルタナティヴ・ロック（英語: Alternative rock）は、ロックのサブジャンル。主に1980年代半ばから1990年代半ばにかけてのポストパンク系バンドの総称であり、ジャングル・ポップ調の甘美なメロディからインダストリアル調の不穏で金属的な轟音までの幅広い音楽性が特徴。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%AB%E3%82%BF%E3%83%8A%E3%83%86%E3%82%A3%E3%83%B4%E3%83%BB%E3%83%AD%E3%83%83%E3%82%AF",
+    "doubt": [
+     "出典を必要とする記事/2026年7月"
+    ]
+   },
+   "en": {
+    "title": "Alternative rock",
+    "text": "Alternative rock (also known as alternative music, alt-rock or simply alternative) is a category of rock music that evolved from the independent music underground of the 1970s. Alternative rock acts achieved mainstream success in the 1990s with the likes of the grunge subgenre in the United States, and the Britpop and shoegaze subgenres in the United Kingdom and Ireland.",
+    "url": "https://en.wikipedia.org/wiki/Alternative_rock"
+   },
+   "ja_tr": {
+    "text": "オルタナティヴ・ロック（オルタナティヴ、オルタナとも）は、1970年代のインディーズやアンダーグラウンドの音楽から育ったロックの一分野。1990年代には、アメリカのグランジ、イギリスとアイルランドのブリットポップやシューゲイザーといった流れとともに、広く売れるようになった。",
+    "url": "https://en.wikipedia.org/wiki/Alternative_rock"
+   }
+  },
   "Ambient": {
    "ja": {
     "title": "環境音楽",
@@ -82,6 +117,17 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%83%90%E3%82%A4%E3%83%AC%E3%83%95%E3%82%A1%E3%83%B3%E3%82%AD"
    }
   },
+  "Baltimore Club": {
+   "en": {
+    "title": "Baltimore club",
+    "text": "Baltimore club, also called B'more club, B'more house or simply B'more, is a music genre that fuses breakbeat and house. It was created in Baltimore in the early 1990s by Frank Ski, Scottie B, Shawn Caesar, DJ Technics, DJ Class, DJ Patrick, Kenny B, among others.",
+    "url": "https://en.wikipedia.org/wiki/Baltimore_club"
+   },
+   "ja_tr": {
+    "text": "ボルティモア・クラブ（B'more club、B'more houseとも）は、ブレイクビーツとハウスを混ぜた音楽のジャンル。1990年代初め、フランク・スキー、スコッティ・B、ショーン・シーザー、DJテクニクス、DJクラス、DJパトリック、ケニー・Bらがボルティモアで作った。",
+    "url": "https://en.wikipedia.org/wiki/Baltimore_club"
+   }
+  },
   "Bass Music": {
    "ja": {
     "title": "ベース・ミュージック",
@@ -94,6 +140,86 @@
     "url": "https://en.wikipedia.org/wiki/Bass_music"
    }
   },
+  "Bassline": {
+   "en": {
+    "title": "Bassline (music genre)",
+    "text": "Bassline (sometimes referred to as bassline house or 4x4 or niche) is a genre of electronic dance music that originated in South Yorkshire in the early 2000s. Stylistically it comprises a four-to-the-floor beat with a tempo of around 135–142 beats per minute and a heavy bass, similar to speed garage, with chopped up R&B and Pop vocal samples and a pop music aesthetic.",
+    "url": "https://en.wikipedia.org/wiki/Bassline_%28music_genre%29",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from December 2025"
+    ]
+   },
+   "ja_tr": {
+    "text": "ベースライン（ベースライン・ハウス、4x4、ニッチとも）は、2000年代初めにイギリスのサウス・ヨークシャーで生まれたエレクトロニック・ダンス・ミュージック。1分間に135〜142拍ほどの四つ打ちに、スピード・ガラージに似た重いベース、細かく刻んだR&Bやポップの歌声のサンプルを重ね、ポップな味わいを持つ。",
+    "url": "https://en.wikipedia.org/wiki/Bassline_%28music_genre%29"
+   }
+  },
+  "Bebop": {
+   "ja": {
+    "title": "ビバップ",
+    "text": "ビバップ (bebop) は、1940年代に成立したとされる、ジャズの一形態。スウィング・ジャズの終焉後に発生したモダン・ジャズの起源は、このジャズ様式にあるというのが一般的な見解である。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%90%E3%83%83%E3%83%97"
+   },
+   "en": {
+    "title": "Bebop",
+    "text": "Bebop or bop is a style of jazz developed in the early to mid-1940s in the United States. It is characterized by a fast tempo, complex chord progressions—with rapid chord changes, changes of key, angular melodies and substitute chords—along with virtuosic improvisation based on a combination of harmonic structure, scales, and occasional references to the melody.",
+    "url": "https://en.wikipedia.org/wiki/Bebop",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from May 2018"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from July 2017",
+     "Articles with unsourced statements from November 2018"
+    ]
+   },
+   "en_tr": {
+    "text": "Bebop is a form of jazz said to have taken shape in the 1940s. It is generally held that modern jazz, which arose after the swing era ended, has its origins in this style.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%90%E3%83%83%E3%83%97"
+   }
+  },
+  "Big Band": {
+   "ja": {
+    "title": "ビッグバンド",
+    "text": "ビッグバンド（Big Band）は、ポピュラー音楽、特にジャズにおけるバンド形式の一つ。一般には大人数編成によるアンサンブル形態のバンド、あるいはこの形態で演奏されるジャズのジャンルのことを指す。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%83%E3%82%B0%E3%83%90%E3%83%B3%E3%83%89"
+   },
+   "en": {
+    "title": "Big band",
+    "text": "A big band (historically referred to as jazz orchestra) is a type of musical ensemble of jazz music that usually consists of 10 or more musicians with four sections: saxophones, trumpets, trombones, and a rhythm section. Big bands originated during the early 1910s and dominated jazz in the early 1940s when swing was most popular.",
+    "url": "https://en.wikipedia.org/wiki/Big_band",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from April 2018",
+     "Articles needing additional references from November 2021"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from July 2024"
+    ]
+   },
+   "en_tr": {
+    "text": "A big band is a type of musical ensemble in popular music, especially jazz. The term usually refers to a large ensemble, or the style of jazz played by such a band.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%83%E3%82%B0%E3%83%90%E3%83%B3%E3%83%89"
+   }
+  },
+  "Big Room House": {
+   "en": {
+    "title": "Big room house",
+    "text": "Big room house or simply big room is a fusion subgenre of house music (notably progressive house and electro house) that gained popularity in the early 2010s. Although the term \"big room\" started appearing in news articles circa 2007, the current state of this subgenre emerged around 2010—12 and was popularized by songs such as \"Epic\" and \"Cannonball\".",
+    "url": "https://en.wikipedia.org/wiki/Big_room_house",
+    "doubt": [
+     "All articles that may contain original research",
+     "Articles that may contain original research from June 2019"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from December 2013"
+    ]
+   }
+  },
   "Bitpop": {
    "ja": {
     "title": "ビットポップ",
@@ -104,6 +230,30 @@
     "title": "Bitpop",
     "text": "Bitpop, also known as Chiptune Fusion, is a type of electronic music and subgenre of chiptune music, where at least part of the music is made using the sound chips of 8-bit (or 16-bit) computers and video game consoles.",
     "url": "https://en.wikipedia.org/wiki/Bitpop"
+   }
+  },
+  "Blues": {
+   "ja": {
+    "title": "ブルース",
+    "text": "ブルース（英語: blues、英語発音 [blú:z]）は、アメリカ合衆国深南部でアフリカ系アメリカ人の間から発生した音楽の一ジャンルである。19世紀後半ごろに米国深南部で黒人霊歌、フィールドハラー （農作業の際の叫び声）や、ワーク・ソング（労働歌）などから発展したものといわれている。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9"
+   },
+   "en": {
+    "title": "Blues",
+    "text": "Blues is a music genre and musical form that originated among African Americans in the Deep South of the United States around the 1860s. Blues has incorporated spirituals, work songs, field hollers, shouts, chants, and rhymed simple narrative ballads from the African-American culture.",
+    "url": "https://en.wikipedia.org/wiki/Blues"
+   }
+  },
+  "Blues Rock": {
+   "ja": {
+    "title": "ブルースロック",
+    "text": "ブルースロック (blues rock) は、ロック音楽のジャンルの一つ。1960年代以降のロックの中で、白人がブルースを、ロック的なスタイルで演奏したジャンルである。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9%E3%83%AD%E3%83%83%E3%82%AF"
+   },
+   "en": {
+    "title": "Blues rock",
+    "text": "Blues rock is a fusion genre and form of rock and blues music that relies on the chords/scales and instrumental improvisation of blues. It is mostly an electric ensemble-style music with instrumentation similar to electric blues and rock (electric guitar, electric bass guitar, drums, and sometimes with keyboards and harmonica).",
+    "url": "https://en.wikipedia.org/wiki/Blues_rock"
    }
   },
   "Breakbeat": {
@@ -252,6 +402,30 @@
     "url": "https://en.wikipedia.org/wiki/Contemporary_R%26B"
    }
   },
+  "Cool Jazz": {
+   "ja": {
+    "title": "クール・ジャズ",
+    "text": "クール・ジャズ (cool jazz) とは、ビバップの反動として1940年代後半に生まれた、白人寄りの傾向をもつジャズのジャンル。リラックスした軽いサウンドが特徴だった。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%BB%E3%82%B8%E3%83%A3%E3%82%BA"
+   },
+   "en": {
+    "title": "Cool jazz",
+    "text": "Cool jazz is a style and genre of modern jazz music inspired by bebop and big band that arose in the United States after World War II. It is characterized by relaxed tempos and a lighter tone than that used in the fast and complex bebop style. Cool jazz often employs formal arrangements and incorporates elements of classical music.",
+    "url": "https://en.wikipedia.org/wiki/Cool_jazz"
+   }
+  },
+  "Deep House": {
+   "ja": {
+    "title": "ディープ・ハウス",
+    "text": "ディープ・ハウス (Deep House) とはシカゴ・ハウスのサウンドと、1970年代のソウルやファンクを融合したハウスミュージックのジャンルの一つである。代表的なミュージシャンには、ムーディーマン、セオ・パリッシュ、テン・シティ、ケリー・チャンドラーらがいる。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%BB%E3%83%8F%E3%82%A6%E3%82%B9"
+   },
+   "en": {
+    "title": "Deep house",
+    "text": "Deep house is a subgenre of house music that originated in the 1980s, initially fusing elements of Chicago house with the lush chords of 1980s jazz-funk and touches of soul music. Its origins are attributed to the early recordings of Larry Heard (aka Mr.",
+    "url": "https://en.wikipedia.org/wiki/Deep_house"
+   }
+  },
   "Detroit Techno": {
    "ja": {
     "title": "デトロイト・テクノ",
@@ -279,6 +453,17 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%83%87%E3%83%88%E3%83%AD%E3%82%A4%E3%83%88%E3%83%BB%E3%83%86%E3%82%AF%E3%83%8E"
    }
   },
+  "Digicore": {
+   "en": {
+    "title": "Digicore",
+    "text": "Digicore (originally known as draincore) is an Internet microgenre of hip-hop and electronic music that developed alongside hyperpop in the late 2010s to early 2020s. The genre is typically made up of artists that share stylistic similarities to Drain Gang and 100 gecs, rather than the \"bubblegum bass\" musicians signed to the label PC Music.",
+    "url": "https://en.wikipedia.org/wiki/Digicore"
+   },
+   "ja_tr": {
+    "text": "デジコア（もとはドレインコアと呼ばれた）は、2010年代末から2020年代初めにハイパーポップと並んで育った、ヒップホップと電子音楽のインターネット発の小さなジャンル。レーベルPC Musicの「バブルガム・ベース」の作り手より、Drain Gangや100 gecsに近い作風のアーティストが多い。",
+    "url": "https://en.wikipedia.org/wiki/Digicore"
+   }
+  },
   "Disco": {
    "ja": {
     "title": "ディスコ (音楽)",
@@ -295,6 +480,30 @@
      "Articles with unsourced statements from November 2024",
      "Articles with unsourced statements from October 2023"
     ]
+   }
+  },
+  "Dixieland": {
+   "ja": {
+    "title": "ディキシーランド・ジャズ",
+    "text": "ディキシーランド・ジャズ（英語：Dixieland jazz）は、ディキシーランド、トラディショナル・ジャズとも呼ばれる、20世紀初頭にニューオーリンズを中心に発展したジャズの一分野である。ジャズの初期の例とされている。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%A3%E3%82%AD%E3%82%B7%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89%E3%83%BB%E3%82%B8%E3%83%A3%E3%82%BA"
+   },
+   "en": {
+    "title": "Dixieland jazz",
+    "text": "Dixieland jazz, also referred to as traditional jazz, hot jazz, or simply Dixieland, is a style of jazz based on the music that developed in New Orleans at the start of the 20th century. The 1917 recordings by the Original Dixieland Jass Band fostered awareness of this new style of music.",
+    "url": "https://en.wikipedia.org/wiki/Dixieland_jazz",
+    "doubt": [
+     "All articles needing additional references",
+     "All articles that may contain original research",
+     "Articles needing additional references from May 2021",
+     "Articles needing additional references from November 2025",
+     "Articles needing additional references from September 2024",
+     "Articles that may contain original research from June 2020"
+    ]
+   },
+   "en_tr": {
+    "text": "Dixieland jazz, also called Dixieland or traditional jazz, is a branch of jazz that developed in the early 20th century, centred on New Orleans. It is regarded as an early form of jazz.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%A3%E3%82%AD%E3%82%B7%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89%E3%83%BB%E3%82%B8%E3%83%A3%E3%82%BA"
    }
   },
   "Djent": {
@@ -547,6 +756,26 @@
     "url": "https://en.wikipedia.org/wiki/French_house"
    }
   },
+  "Frutiger Aero": {
+   "ja": {
+    "title": "Frutiger Aero",
+    "text": "Frutiger Aero（フルティガー・エアロ、別名：Web 2.0 Gloss）は、2004年から2013年頃までコンピュータのグラフィカルユーザインタフェース（以下、GUI）等の様々な分野で流行したデザイントレンドに名付けられたレトロニムであり、インターネット美学の一種である。 Frutiger Aeroという用語は消費者美学研究所（CARI）のソフィ・リーによって2017年に名付けられ、トレンドを形作ったGUIのWindows Aeroと当時のUIに多く使われていた書体のFrutiger（もしくはデザイナーのアドリアン・フルティガー）に由来している。",
+    "url": "https://ja.wikipedia.org/wiki/Frutiger_Aero",
+    "doubt": [
+     "独自研究の除去が必要な記事/2026年3月",
+     "独自研究の除去が必要な記事/2026年4月"
+    ]
+   },
+   "en": {
+    "title": "Frutiger Aero",
+    "text": "Frutiger Aero () is a design style that was prevalent from the mid-2000s to the early 2010s. It originated in user interface designs but later influenced various other media.",
+    "url": "https://en.wikipedia.org/wiki/Frutiger_Aero"
+   },
+   "ja_tr": {
+    "text": "フルティガー・エアロは、2000年代半ばから2010年代初めに広く見られたデザインの様式。画面の操作部分のデザインから生まれ、のちにほかのさまざまな分野にも影響を与えた。",
+    "url": "https://en.wikipedia.org/wiki/Frutiger_Aero"
+   }
+  },
   "Funk": {
    "ja": {
     "title": "ファンク",
@@ -650,6 +879,29 @@
     "url": "https://en.wikipedia.org/wiki/Garage_house"
    }
   },
+  "Ghetto House": {
+   "en": {
+    "title": "Ghetto house",
+    "text": "Ghetto house or booty house is a subgenre of house music which started being recognized as a distinct style from around 1992 onwards. It features minimal 808 and 909 drum machine-driven tracks and sometimes sexually explicit lyrics.",
+    "url": "https://en.wikipedia.org/wiki/Ghetto_house"
+   },
+   "ja_tr": {
+    "text": "ゲットー・ハウス（ブーティー・ハウスとも）は、1992年ごろから独自のスタイルとして知られるようになったハウスの一分野。808や909のドラムマシンを中心にした音数の少ない曲で、性的な歌詞が入ることもある。",
+    "url": "https://en.wikipedia.org/wiki/Ghetto_house"
+   }
+  },
+  "Glam Rock": {
+   "ja": {
+    "title": "グラムロック",
+    "text": "グラムロック（glam rock）は、主にイギリスで1960年代後半から流行した、ロックのジャンル。由来は、魅惑的であることを意味する英語の「グラマラス（glamorous）」から来ている。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B0%E3%83%A9%E3%83%A0%E3%83%AD%E3%83%83%E3%82%AF"
+   },
+   "en": {
+    "title": "Glam rock",
+    "text": "Glam rock (also known as glitter rock) is a subgenre of rock music that developed in the United Kingdom in the early 1970s and was primarily defined by the hairstyles, makeup, and flamboyant clothing of its musicians, particularly platform shoes and glitter. Glam artists drew on diverse sources, ranging from bubblegum pop and 1950s rock and roll to cabaret, science fiction, and complex art rock.",
+    "url": "https://en.wikipedia.org/wiki/Glam_rock"
+   }
+  },
   "Glitch": {
    "en": {
     "title": "Glitch (music)",
@@ -663,6 +915,23 @@
    "ja_tr": {
     "text": "グリッチは、1990年代に生まれた実験的な電子音楽のジャンルで、音声メディアの不具合（グリッチ）やそのほかの音の乱れをわざと使うのが特徴。録音機器やデジタル機器の故障から音を取り、エラーや失敗を、直すべき問題ではなく作曲の材料として扱う考え方に立って作られる。",
     "url": "https://en.wikipedia.org/wiki/Glitch_%28music%29"
+   }
+  },
+  "Goa Trance": {
+   "ja": {
+    "title": "ゴアトランス",
+    "text": "ゴアトランス（英語: Goa Trance）は電子音楽の1種のトランスの1ジャンルである。そのままゴアと呼ばれたり、604（特に日本国外では符丁としてこう表記する場合もある）などと呼ばれたりもする。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B4%E3%82%A2%E3%83%88%E3%83%A9%E3%83%B3%E3%82%B9"
+   },
+   "en": {
+    "title": "Goa trance",
+    "text": "Goa trance is an electronic dance music style that originated in the early 1990s in the Indian state of Goa. Goa trance often has drone-like basslines, similar to the techno minimalism of 21st century psychedelic trance (psytrance).",
+    "url": "https://en.wikipedia.org/wiki/Goa_trance",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from April 2015",
+     "Articles with unsourced statements from September 2023"
+    ]
    }
   },
   "Grunge": {
@@ -690,6 +959,22 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%B8"
    }
   },
+  "Gypsy Jazz": {
+   "ja": {
+    "title": "ジプシー・スウィング",
+    "text": "ジプシー・スウィング（Gypsy swing）は、1930年代にギタリストのジャンゴ・ラインハルトが始めたジプシーの伝統音楽とスウィング・ジャズを融合させた音楽。ジプシー・ジャズ（Gypsy jazz）、シンティ・ジャズ（Sinti jazz）、ジャズ・マヌーシュ（Jazz manouche）、または、ホット・クラブ・スタイル・ジャズ（Hot club-style jazz）とも呼ばれる。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%97%E3%82%B7%E3%83%BC%E3%83%BB%E3%82%B9%E3%82%A6%E3%82%A3%E3%83%B3%E3%82%B0"
+   },
+   "en": {
+    "title": "Gypsy jazz",
+    "text": "Gypsy jazz is a musical idiom inspired by the Romani jazz guitarist Jean \"Django\" Reinhardt (1910–1953), in conjunction with the French jazz violinist Stéphane Grappelli (1908–1997), as expressed by their group the Quintette du Hot Club de France. The style has its origins in France and the Manouche clan of Romanis, and has remained popular amongst this clan.",
+    "url": "https://en.wikipedia.org/wiki/Gypsy_jazz",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from November 2025"
+    ]
+   }
+  },
   "Happy Hardcore": {
    "ja": {
     "title": "ハッピーハードコア",
@@ -707,6 +992,69 @@
    "ja_tr": {
     "text": "ハッピー・ハードコア（4ビートとも）は、ハードコア・ダンス・ミュージックのサブジャンル。1990年代初めに、イギリスのブレイクビート・ハードコアのレイヴ・シーンと、ベルギー、ドイツ、オランダのハードコアテクノのシーンの両方から生まれた。",
     "url": "https://en.wikipedia.org/wiki/Happy_hardcore"
+   }
+  },
+  "Hard Bop": {
+   "ja": {
+    "title": "ハード・バップ",
+    "text": "ハード・バップ（Hard bop）は、モダン・ジャズの一種。ニューヨークなどのアメリカ東海岸で、1950年代に始まり1960年代まで続いた演奏スタイルである。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%BC%E3%83%89%E3%83%BB%E3%83%90%E3%83%83%E3%83%97"
+   },
+   "en": {
+    "title": "Hard bop",
+    "text": "Hard bop is a subgenre of jazz that is an extension of bebop. Journalists and record companies began using the term in the mid-1950s to describe a new current within jazz that incorporated influences from rhythm and blues, gospel music, and blues, especially in saxophone and piano playing.",
+    "url": "https://en.wikipedia.org/wiki/Hard_bop"
+   }
+  },
+  "Hard House": {
+   "ja": {
+    "title": "ハード・ハウス",
+    "text": "ハード・ハウス (hard house) とは1990年代にアメリカ合衆国で誕生したハウスのジャンルの一つである。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%BC%E3%83%89%E3%83%BB%E3%83%8F%E3%82%A6%E3%82%B9",
+    "doubt": [
+     "出典を必要とする記事/2024年1月"
+    ]
+   },
+   "en": {
+    "title": "UK hard house",
+    "text": "UK hard house or simply hard house is a style of electronic dance music that emerged in the early 1990s and is synonymous with its association to the Trade club and the associated DJs there that created the style. It often features a speedy tempo (around 150 BPM but hard house ranges from around 135 BPM to around 165 BPM), offbeat bass stabs, hoovers and horns.",
+    "url": "https://en.wikipedia.org/wiki/UK_hard_house",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from January 2021"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from February 2024",
+     "Articles with unsourced statements from January 2021"
+    ]
+   }
+  },
+  "Hard Rock": {
+   "ja": {
+    "title": "ハードロック",
+    "text": "ハードロック（英: hard rock）は、ロックの一ジャンルである。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%BC%E3%83%89%E3%83%AD%E3%83%83%E3%82%AF"
+   },
+   "en": {
+    "title": "Hard rock",
+    "text": "Hard rock or heavy rock is a heavier subgenre of rock music typified by vocals and electric guitars that are aggressive and distorted relative to traditional rock music. Hard rock began in the mid-1960s with the garage, psychedelic, and blues rock movements.",
+    "url": "https://en.wikipedia.org/wiki/Hard_rock"
+   }
+  },
+  "Hard Trance": {
+   "en": {
+    "title": "Hard trance",
+    "text": "Hard trance is a subgenre of trance music that originated in Belgium, Germany and the Netherlands in the early 1990s as the Breakbeat hardcore production community began to diversify into new and different styles of electronic music, all influenced by hard house, new beat, happy hardcore and jungle music. The popularity of hard trance peaked during the late 1990s and has since faded in favor of newer forms of trance.",
+    "url": "https://en.wikipedia.org/wiki/Hard_trance",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from June 2011"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from November 2014"
+    ]
    }
   },
   "Hardcore Techno": {
@@ -733,6 +1081,53 @@
    "en_tr": {
     "text": "Hardcore techno is a style of electronic music that emerged simultaneously in the early to mid-1990s across locations such as Rotterdam in the Netherlands, New York in the United States and Newcastle in Australia.",
     "url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%B3%E3%82%A2%E3%83%86%E3%82%AF%E3%83%8E"
+   }
+  },
+  "Hardstep": {
+   "en": {
+    "title": "Hardstep",
+    "text": "Hardstep is a subgenre of drum and bass which emerged in the mid-1990s. It is characterized by a gritty production style that consists of an inner-city feel.",
+    "url": "https://en.wikipedia.org/wiki/Hardstep"
+   },
+   "ja_tr": {
+    "text": "ハードステップは、1990年代半ばに現れたドラムンベースの一分野。都会の空気を感じさせる、ざらついた音作りが特徴。",
+    "url": "https://en.wikipedia.org/wiki/Hardstep"
+   }
+  },
+  "Hardstyle": {
+   "ja": {
+    "title": "ハードスタイル",
+    "text": "ハードスタイル（英: hardstyle）は、1990年代後半から2000年代初頭にオランダで生まれ、その後ヨーロッパ近隣諸国へ広がった、電子音楽の一種のジャンルである。EDMのスタイルの1つとされることも多い。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB"
+   },
+   "en": {
+    "title": "Hardstyle",
+    "text": "Hardstyle, is an electronic dance genre that emerged in the late 1990s, with origins in the Netherlands, Belgium and Italy. Hardstyle mixes influences from techno, new beat and hardcore.",
+    "url": "https://en.wikipedia.org/wiki/Hardstyle",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from July 2025"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from October 2025"
+    ]
+   },
+   "en_tr": {
+    "text": "Hardstyle is a genre of electronic dance music that emerged in the Netherlands in the late 1990s and early 2000s, before spreading to neighbouring European countries. It is often considered a style of EDM.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB"
+   }
+  },
+  "Heavy Metal": {
+   "ja": {
+    "title": "ヘヴィメタル",
+    "text": "ヘヴィメタル（英語: heavy metal）は、ロック・ミュージックのジャンルの一つ。1960年代末から1970年代の初頭にかけてイギリス及びアメリカ合衆国などで広く発展したロックのスタイルのひとつである。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%98%E3%83%B4%E3%82%A3%E3%83%A1%E3%82%BF%E3%83%AB"
+   },
+   "en": {
+    "title": "Heavy metal music",
+    "text": "Heavy metal (or simply metal) is a genre of rock music that developed in the late 1960s and early 1970s, largely in the United Kingdom and United States. With roots in blues rock, psychedelic rock and acid rock, heavy metal bands developed a thick, monumental sound characterized by distorted guitars, extended guitar solos, emphatic beats and loudness.",
+    "url": "https://en.wikipedia.org/wiki/Heavy_metal_music"
    }
   },
   "Hip Hop": {
@@ -800,6 +1195,30 @@
     "url": "https://en.wikipedia.org/wiki/Intelligent_dance_music"
    }
   },
+  "Italo House": {
+   "ja": {
+    "title": "イタロ・ハウス",
+    "text": "イタロハウス(Italo house)は、ハウスとイタロ・ディスコを組み合わせた、イタリア、イギリス、アメリカで1980年代後半から1990年台前半に人気の高かったハウス・ミュージックである。イタリア語を英語に直訳した一部の曲の、英語歌詞の意味が不明という点が指摘される場合もある。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%BF%E3%83%AD%E3%83%BB%E3%83%8F%E3%82%A6%E3%82%B9"
+   },
+   "en": {
+    "title": "Italo house",
+    "text": "Italo house (often simply referred to as \"Italian\" or \"Italian house\" in the UK) is a form of house music originating in Italy. Typically popular in Italy, Britain, and United States since the late 1980s, it fuses house music and Italo disco.",
+    "url": "https://en.wikipedia.org/wiki/Italo_house",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from March 2021"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from November 2015"
+    ]
+   },
+   "en_tr": {
+    "text": "Italo house is house music that combines house and Italo disco, popular in Italy, the UK and the US from the late 1980s to the early 1990s. It is sometimes pointed out that the English lyrics of some songs, translated word for word from Italian, make little sense.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%BF%E3%83%AD%E3%83%BB%E3%83%8F%E3%82%A6%E3%82%B9"
+   }
+  },
   "J-CORE": {
    "en": {
     "title": "J-core",
@@ -853,6 +1272,33 @@
     "url": "https://en.wikipedia.org/wiki/Jazz"
    }
   },
+  "Jazz Rap": {
+   "ja": {
+    "title": "ジャズ・ラップ",
+    "text": "ジャズ・ラップ（英語: jazz rap）またはジャズ・ヒップホップ（jazz hip hop）は、ジャズのサンプリング音源や、生楽器による演奏などを取り入れたヒップホップのサブジャンルである。1980年代後半から1990年代初頭にかけてアメリカ合衆国を中心に形成され、ギャング・スター、ア・トライブ・コールド・クエスト、デ・ラ・ソウル、ジャングル・ブラザーズ、ディガブル・プラネッツなどが代表格として挙げられる。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%82%BA%E3%83%BB%E3%83%A9%E3%83%83%E3%83%97"
+   },
+   "en": {
+    "title": "Jazz rap",
+    "text": "Jazz rap (also known as jazz hop or jazz hip-hop) is a fusion of jazz and hip hop music, as well as an alternative hip-hop subgenre, that developed in the late 1980s and early 1990s. An article on AllMusic explains that the genre \"was an attempt to fuse African-American music of the past with a newly dominant form of the present, paying tribute to and reinvigorating the former while expanding the horizons of the latter.\" The rhythm was rooted in hip hop over which repetitive phrases of jazz instrumentation, such as the trumpet, double bass, etc., were placed.",
+    "url": "https://en.wikipedia.org/wiki/Jazz_rap",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from September 2018"
+    ]
+   }
+  },
+  "Jersey Club": {
+   "en": {
+    "title": "Jersey club",
+    "text": "Jersey club (originally called Brick City club) is a style of electronic club music that originated in Newark, New Jersey, in the late 90s/early 2000s. It was pioneered by DJ Tameil, Mike V, DJ Black Mic, and DJ Tim Dolla of the Brick Bandits crew, who were inspired by Baltimore club's uptempo hybrid of house and hip-hop.",
+    "url": "https://en.wikipedia.org/wiki/Jersey_club"
+   },
+   "ja_tr": {
+    "text": "ジャージー・クラブ（もとはブリック・シティ・クラブと呼ばれた）は、1990年代末から2000年代初めにニュージャージー州ニューアークで生まれたクラブ音楽。ブリック・バンディッツのDJタメイル、マイク・V、DJブラック・マイク、DJティム・ドラらが、ハウスとヒップホップを合わせたボルティモア・クラブのアップテンポなサウンドに影響を受けて始めた。",
+    "url": "https://en.wikipedia.org/wiki/Jersey_club"
+   }
+  },
   "Juke": {
    "en": {
     "title": "Juke music",
@@ -862,6 +1308,22 @@
    "ja_tr": {
     "text": "音楽ジャンルとしての「ジューク」という言葉は、時期によって指すものが異なる。ひとつはゲットー・ハウス（とくにテンポの速い曲や、ジャンル全体）を指し、もうひとつは1990年代末から2000年代初めにそこから派生した、速く抽象的で独特のリズムを持つフットワークを指す。",
     "url": "https://en.wikipedia.org/wiki/Juke_music"
+   }
+  },
+  "Jump Blues": {
+   "ja": {
+    "title": "ジャンプ・ブルース",
+    "text": "ジャンプ・ブルース（Jump blues）はブルースのサブ・ジャンルの一種。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%83%BB%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9"
+   },
+   "en": {
+    "title": "Jump blues",
+    "text": "Jump blues is an uptempo style of blues with jazz and boogie woogie influence, usually played by small groups and featuring horn instruments. It was popular in the 1940s and was a precursor of rhythm and blues and rock and roll.",
+    "url": "https://en.wikipedia.org/wiki/Jump_blues",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from January 2025"
+    ]
    }
   },
   "Jungle": {
@@ -881,6 +1343,26 @@
    "ja_tr": {
     "text": "ジャングルは、1990年代にイギリスのレイヴ・シーンとジャマイカのサウンドシステム文化から生まれた電子音楽のジャンル。ブレイクビート・ハードコアから生まれ、速いブレイクビーツ、シンコペーションの強い打楽器のループ、サンプルやシンセサイザーの効果に、ダブ、レゲエ、ダンスホール、ヒップホップ、ファンクの深いベースライン、メロディ、ボーカルのサンプルを組み合わせるのが特徴。",
     "url": "https://en.wikipedia.org/wiki/Jungle_music"
+   }
+  },
+  "Krautrock": {
+   "ja": {
+    "title": "クラウトロック",
+    "text": "クラウトロック（Krautrock）は、1960年代末から1970年代初めにかけて、西ドイツに登場した実験的（前衛的）ロックバンド群の音楽を指す、一般名詞である。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%88%E3%83%AD%E3%83%83%E3%82%AF"
+   },
+   "en": {
+    "title": "Krautrock",
+    "text": "Krautrock (originally known as kosmische Musik, German for \"cosmic music\") is a broad genre of experimental rock that developed in West Germany in the late 1960s and early 1970s. Artists blend elements of psychedelic rock, avant-garde composition, and electronic music, among other eclectic sources.",
+    "url": "https://en.wikipedia.org/wiki/Krautrock",
+    "doubt": [
+     "All articles lacking reliable references",
+     "Articles lacking reliable references from November 2021"
+    ]
+   },
+   "en_tr": {
+    "text": "Krautrock is an umbrella term for the music of experimental (avant-garde) rock bands that appeared in West Germany from the late 1960s to the early 1970s.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%88%E3%83%AD%E3%83%83%E3%82%AF"
    }
   },
   "Laptop Twee": {
@@ -926,6 +1408,50 @@
     "url": "https://en.wikipedia.org/wiki/Lo-fi_hip_hop"
    }
   },
+  "M-Base": {
+   "ja": {
+    "title": "M-BASE",
+    "text": "M-BASE (エムベイス、M-Base) という用語は、いくつかの方法で使用されている。それは1980年代、スティーヴ・コールマン、グラハム・ヘインズ、カサンドラ・ウィルソン、ジェリ・アレン、ロビン・ユーバンクス、グレッグ・オズビーなど、アフリカ系アメリカ人の若いミュージシャンによる遊離した集団に由来する、クリエイティヴな表現についての新しいサウンドと具体的なアイデアとともに生まれた。",
+    "url": "https://ja.wikipedia.org/wiki/M-BASE"
+   },
+   "en": {
+    "title": "M-Base",
+    "text": "The term \"M-Base\" is a term coined in the 1980s by American musician Steve Coleman to describe a new theory about creative expression. \"M-Base-concept\" is short for \"macro-basic array of structured extemporization\", and critics have used this term to categorize this scene's music as a style of jazz.",
+    "url": "https://en.wikipedia.org/wiki/M-Base",
+    "doubt": [
+     "All articles lacking reliable references",
+     "All articles that may contain original research",
+     "Articles lacking reliable references from October 2023",
+     "Articles that may contain original research from October 2023"
+    ]
+   },
+   "en_tr": {
+    "text": "The term M-Base is used in several ways. It grew out of a loose group of young African-American musicians in the 1980s, among them Steve Coleman, Graham Haynes, Cassandra Wilson, Geri Allen, Robin Eubanks and Greg Osby, together with a new sound and concrete ideas about creative expression.",
+    "url": "https://ja.wikipedia.org/wiki/M-BASE"
+   }
+  },
+  "Mallsoft": {
+   "en": {
+    "title": "Mallsoft",
+    "text": "Mallsoft (also known as mallwave) is a vaporwave subgenre centered around shopping malls.",
+    "url": "https://en.wikipedia.org/wiki/Mallsoft"
+   },
+   "ja_tr": {
+    "text": "モールソフト（モールウェーブとも）は、ショッピングモールを題材にしたヴェイパーウェイヴの一分野。",
+    "url": "https://en.wikipedia.org/wiki/Mallsoft"
+   }
+  },
+  "Memphis Rap": {
+   "en": {
+    "title": "Memphis rap",
+    "text": "Memphis rap (also known as Memphis hip-hop, or Memphis horrorcore) is a regional subgenre of hip hop music that originated in Memphis, Tennessee, during the mid- to late 1980s.",
+    "url": "https://en.wikipedia.org/wiki/Memphis_rap"
+   },
+   "ja_tr": {
+    "text": "メンフィス・ラップ（メンフィス・ヒップホップ、メンフィス・ホラーコアとも）は、1980年代半ばから後半にテネシー州メンフィスで生まれた、ヒップホップのご当地ジャンル（地域的な一分野）。",
+    "url": "https://en.wikipedia.org/wiki/Memphis_rap"
+   }
+  },
   "Miami Bass": {
    "en": {
     "title": "Miami bass",
@@ -940,6 +1466,71 @@
    "ja_tr": {
     "text": "マイアミ・ベース（ブーティ・ミュージック、ブーティ・ベースとも）は、1980年代から1990年代に人気を集めたヒップホップのサブジャンル。ローランドTR-808のドラム、長く伸びるキック、重いベース、速めのダンス向けのテンポ、性的な歌詞が多いことが、ほかのヒップホップのサブジャンルとの違い。",
     "url": "https://en.wikipedia.org/wiki/Miami_bass"
+   }
+  },
+  "Microhouse": {
+   "en": {
+    "title": "Microhouse",
+    "text": "Microhouse, buftech or sometimes just minimal, is a subgenre of house music strongly influenced by minimalism and 1990s techno.",
+    "url": "https://en.wikipedia.org/wiki/Microhouse"
+   },
+   "ja_tr": {
+    "text": "マイクロハウス（バフテック、または単にミニマルとも）は、ミニマリズムと1990年代のテクノの影響を強く受けた、ハウスの一分野。",
+    "url": "https://en.wikipedia.org/wiki/Microhouse"
+   }
+  },
+  "Modal Jazz": {
+   "ja": {
+    "title": "モード・ジャズ",
+    "text": "モード・ジャズあるいはモーダル・ジャズ（Modal jazz）は、コード進行よりもモード (旋法)を用いて演奏されるジャズ。英語では「モーダル・ジャズ」と呼ばれている。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%BC%E3%83%89%E3%83%BB%E3%82%B8%E3%83%A3%E3%82%BA",
+    "doubt": [
+     "出典を必要とする記事/2024年4月"
+    ]
+   },
+   "en": {
+    "title": "Modal jazz",
+    "text": "Modal jazz is jazz that makes use of musical modes, often modulating among them to accompany the chords instead of relying on one tonal center used across the piece. Though exerting influence to the present, modal jazz was most popular in the 1950s and 1960s, as evidenced by the success of Miles Davis's 1958 composition \"Milestones\" and 1959 album Kind of Blue, and John Coltrane's quartet from 1960 to 1965.",
+    "url": "https://en.wikipedia.org/wiki/Modal_jazz"
+   },
+   "ja_tr": {
+    "text": "モード・ジャズは、曲全体を一つの調で通すのではなく、音楽のモード（旋法）を使い、和音に合わせてモードを移り変わらせることも多いジャズ。今にも影響を残しているが、最も盛んだったのは1950〜60年代で、マイルス・デイヴィスの1958年の曲「マイルストーンズ」と1959年のアルバム『カインド・オブ・ブルー』、1960〜65年のジョン・コルトレーンのカルテットの成功がそれを示している。",
+    "url": "https://en.wikipedia.org/wiki/Modal_jazz"
+   }
+  },
+  "Musique Concrète": {
+   "ja": {
+    "title": "ミュジーク・コンクレート",
+    "text": "ミュジーク・コンクレートまたはミュージック・コンクレート (musique concrète)は、1940年代の後半にフランスでピエール・シェフェールによって作られた現代音楽のひとつのジャンルであり、音響・録音技術を使った電子音楽の一種。具体音楽とも訳される。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%9F%E3%83%A5%E3%82%B8%E3%83%BC%E3%82%AF%E3%83%BB%E3%82%B3%E3%83%B3%E3%82%AF%E3%83%AC%E3%83%BC%E3%83%88",
+    "doubt": [
+     "出典を必要とする記事/2012年12月"
+    ]
+   },
+   "en": {
+    "title": "Musique concrète",
+    "text": "Musique concrète (French pronunciation: [myzik kɔ̃kʁɛt]; lit. 'concrete music') is a type of music composition that utilizes recorded sounds as raw material. Sounds are often modified through the application of audio signal processing and tape music techniques, and may be assembled into a form of sound collage.",
+    "url": "https://en.wikipedia.org/wiki/Musique_concr%C3%A8te",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from January 2026"
+    ]
+   },
+   "ja_tr": {
+    "text": "ミュジーク・コンクレート（フランス語で「具体音楽」）は、録音した音を素材にする作曲の方法。音は信号処理やテープ音楽の技法で加工されることが多く、音のコラージュのように組み立てられることもある。",
+    "url": "https://en.wikipedia.org/wiki/Musique_concr%C3%A8te"
+   }
+  },
+  "Neo Soul": {
+   "ja": {
+    "title": "ネオ・ソウル",
+    "text": "ネオ・ソウル（英: neo soul）は、1980年代末から1990年代にかけてアメリカ合衆国で形成された、コンテンポラリーR&Bおよびソウルミュージックの一形態。1970年代のソウル、ファンク、ゴスペル、ジャズの歌唱や演奏語法に、ヒップホップのビート、サンプリング、制作手法などを取り入れた音楽を指す。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%82%AA%E3%83%BB%E3%82%BD%E3%82%A6%E3%83%AB"
+   },
+   "en": {
+    "title": "Neo soul",
+    "text": "Neo soul (sometimes called progressive soul) is a genre of popular music. As a term, it was coined by music industry entrepreneur Kedar Massenburg during the late 1990s to market and describe the style of music that emerged from soul and R&B. Evolving from soul music, neo soul is distinguished by a less conventional sound than its contemporary R&B counterpart, with elements ranging from funk, jazz fusion, hip-hop and rock.",
+    "url": "https://en.wikipedia.org/wiki/Neo_soul"
    }
   },
   "Nerdcore": {
@@ -963,6 +1554,26 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%BC%E3%83%89%E3%82%B3%E3%82%A2%E3%83%BB%E3%83%92%E3%83%83%E3%83%97%E3%83%9B%E3%83%83%E3%83%97"
    }
   },
+  "Neurofunk": {
+   "ja": {
+    "title": "ニューロファンク",
+    "text": "ニューロファンク（Neurofunk、俗称でneuroとも呼ばれる）は、1997年から1998年にかけてイギリスのロンドンでテックステップの進化形として登場した、ドラムンベースのサブジャンルである。 このジャンルは、ファンクよりダークでヘビーかつハードな要素を組み合わせ、テクノ、ハウス、ジャズなどの多様な影響を受けながらさらに発展した。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%AD%E3%83%95%E3%82%A1%E3%83%B3%E3%82%AF",
+    "doubt": [
+     "出典を必要とする記事/2024年8月",
+     "独自研究の除去が必要な記事/2024年8月"
+    ]
+   },
+   "en": {
+    "title": "Neurofunk",
+    "text": "Neurofunk (also known informally as neuro) is a subgenre of drum and bass which emerged from England in the mid-to-late 1990s as a stylistic diversion from techstep.",
+    "url": "https://en.wikipedia.org/wiki/Neurofunk",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from December 2008"
+    ]
+   }
+  },
   "New Beat": {
    "en": {
     "title": "New beat",
@@ -978,6 +1589,29 @@
     "url": "https://en.wikipedia.org/wiki/New_beat"
    }
   },
+  "Nightcore": {
+   "ja": {
+    "title": "ナイトコア",
+    "text": "ナイトコア（英: Nightcore）とは、波形編集ソフトウェアを用いて、原曲のテンポを高速化させ、場合によっては意図的にピッチも上げて作られた、リミックスを指す音楽ジャンルである。2002年にノルウェーのDJチーム・ナイトコアが、学校の課題として原曲のテンポ・ピッチを上げた、トランスやユーロダンスのリミックス・トラックCDを制作したことが発祥である。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%82%A4%E3%83%88%E3%82%B3%E3%82%A2",
+    "doubt": [
+     "出典を必要とする記事/2021年9月"
+    ]
+   },
+   "en": {
+    "title": "Nightcore",
+    "text": "A nightcore edit (also known as a sped-up song, sped-up version, sped-up remix, or simply sped-up) is a version of a music track that speeds up its source material by approximately 35%, which also raises the pitch. This gives an effect almost identical to playing a 33⅓-rpm vinyl record at 45 rpm.",
+    "url": "https://en.wikipedia.org/wiki/Nightcore",
+    "doubt": [
+     "All articles lacking reliable references",
+     "Articles lacking reliable references from December 2021"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from June 2026"
+    ]
+   }
+  },
   "Noise": {
    "ja": {
     "title": "ノイズミュージック",
@@ -988,6 +1622,18 @@
     "title": "Noise music",
     "text": "Noise music (or simply noise) is a subgenre of experimental music that is characterised by its use of unwanted noise as a primary musical element. The genre has roots in early 20th century avant-garde music, but later drew influence from industrial and electronic music.",
     "url": "https://en.wikipedia.org/wiki/Noise_music"
+   }
+  },
+  "Phonk": {
+   "ja": {
+    "title": "フォンク",
+    "text": "フォンク（Phonk）は、1990年代のメンフィス・ラップから直接影響を受けた音楽のジャンルである。主に、ヴィンテージのラップボーカルや、チョップド・アンド・スクリュードと呼ばれる編集技法、1990年代初頭のヒップホップやジャズ、ファンクのサンプルを用いることが特徴である。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A9%E3%83%B3%E3%82%AF"
+   },
+   "en": {
+    "title": "Phonk",
+    "text": "Phonk ( ) is a subgenre of hip hop that emerged in the early 2010s in the United States. The term was coined and popularized by American rapper and record producer SpaceGhostPurrp.",
+    "url": "https://en.wikipedia.org/wiki/Phonk"
    }
   },
   "Power Pop": {
@@ -1099,6 +1745,18 @@
     "url": "https://en.wikipedia.org/wiki/Psychedelic_trance"
    }
   },
+  "Punk Rock": {
+   "ja": {
+    "title": "パンク・ロック",
+    "text": "パンク・ロック（英: punk rock）は、1970年代半ばから後半にかけて発生したロックのスタイルの一つ。パンク（英: punk）と略称されることも多い。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%B3%E3%82%AF%E3%83%BB%E3%83%AD%E3%83%83%E3%82%AF"
+   },
+   "en": {
+    "title": "Punk rock",
+    "text": "Punk rock (or simply punk) is a genre of rock music that emerged in the mid-1970s. Rooted in 1950s rock and roll and 1960s garage rock, punk bands rejected the overproduction and corporate nature of mainstream arena rock.",
+    "url": "https://en.wikipedia.org/wiki/Punk_rock"
+   }
+  },
   "R&B": {
    "ja": {
     "title": "リズム・アンド・ブルース",
@@ -1114,6 +1772,18 @@
      "Articles with unsourced statements from January 2018",
      "Articles with unsourced statements from November 2022"
     ]
+   }
+  },
+  "Ragtime": {
+   "ja": {
+    "title": "ラグタイム",
+    "text": "ラグタイム (ragtime) は、19世紀末から20世紀初頭（記載ある楽譜の出版年とされる1897年ごろから第一次大戦ごろまで）にかけて、アメリカを中心として流行した、黒人音楽に強い影響を受けた音楽ジャンルである。リズムのシンコペーション（強調）が大きな特徴である。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%A9%E3%82%B0%E3%82%BF%E3%82%A4%E3%83%A0"
+   },
+   "en": {
+    "title": "Ragtime",
+    "text": "Ragtime, also spelled rag-time or rag time, is a musical style noted for its syncopated or \"ragged\" rhythm. It originated in African American communities in the late 19th century and was propelled to popularity in the 1890s to 1910s by composers such as James Scott, Joseph Lamb, and particularly Scott Joplin.",
+    "url": "https://en.wikipedia.org/wiki/Ragtime"
    }
   },
   "Rock": {
@@ -1133,6 +1803,30 @@
      "Articles with unsourced statements from February 2017",
      "Articles with unsourced statements from February 2025"
     ]
+   }
+  },
+  "Rock and Roll": {
+   "ja": {
+    "title": "ロックンロール",
+    "text": "ロックンロール（Rock and Roll, Rock ’n’ Roll）は、1950年代半ばにアメリカで発祥した音楽のジャンル。白人音楽であるカントリー・ミュージックと黒人音楽であるブルース、黒人霊歌を結合したもの。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%AD%E3%83%83%E3%82%AF%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%AB",
+    "doubt": [
+     "出典を必要とする記事/2026年9月",
+     "独自研究の除去が必要な記事/2026年9月"
+    ]
+   },
+   "en": {
+    "title": "Rock and roll",
+    "text": "Rock and roll is a genre of popular music that evolved in the United States during the late 1940s and early 1950s. The origins of rock and roll are rooted in a blending of African-American musical genres, mainly rhythm and blues, with stylistic influences from gospel, jazz, boogie-woogie, electric blues, jump blues, swing, and folk music.",
+    "url": "https://en.wikipedia.org/wiki/Rock_and_roll",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from May 2023"
+    ]
+   },
+   "ja_tr": {
+    "text": "ロックンロールは、1940年代末から1950年代初めにアメリカで育ったポピュラー音楽のジャンル。主にリズム・アンド・ブルースなどのアフリカ系アメリカ人の音楽に、ゴスペル、ジャズ、ブギウギ、エレクトリック・ブルース、ジャンプ・ブルース、スウィング、フォークの要素が合わさって生まれた。",
+    "url": "https://en.wikipedia.org/wiki/Rock_and_roll"
    }
   },
   "Salsa": {
@@ -1213,6 +1907,144 @@
     "ref": "Pan African Music, “Singeli, the future sound of Tanzania”"
    }
   },
+  "Smooth Jazz": {
+   "ja": {
+    "title": "スムーズジャズ",
+    "text": "スムーズジャズ（英: Smooth Jazz）は、ジャズのサブジャンル。フュージョンから派生したジャンルであり、即興演奏よりもリズムやグルーヴが重視され、洗練された側面が強調されている。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%A0%E3%83%BC%E3%82%BA%E3%82%B8%E3%83%A3%E3%82%BA",
+    "doubt": [
+     "出典を必要とする記事/2026年7月"
+    ]
+   },
+   "en": {
+    "title": "Smooth jazz",
+    "text": "Smooth jazz is a commercially oriented sub-genre style of jazz music that is influenced by R&B, funk, rock and pop music styles (separately, or in any combination). Beginning in the early-1970s, jazz fusion (aka \"fusion\") was a movement by some jazz musicians to merge the instrumental virtuosity and improvisation of traditional jazz, with a modern, electronic sensibility.",
+    "url": "https://en.wikipedia.org/wiki/Smooth_jazz",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from September 2026"
+    ]
+   },
+   "ja_tr": {
+    "text": "スムース・ジャズは、R&B、ファンク、ロック、ポップの影響を（一つ、またはいくつか合わせて）受けた、商業的な色の濃いジャズの一分野。1970年代初めから、ジャズの演奏家の一部が、昔ながらのジャズの楽器の腕前と即興に、新しい電子の感覚を合わせようとする動き（ジャズ・フュージョン）を始めていた。",
+    "url": "https://en.wikipedia.org/wiki/Smooth_jazz"
+   }
+  },
+  "Soul": {
+   "ja": {
+    "title": "ソウルミュージック",
+    "text": "ソウルミュージック（英語: soul music）は、ポピュラー音楽のジャンルの一つ。ソウル（英語: soul）の略称でしばしば呼ばれる。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%BD%E3%82%A6%E3%83%AB%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF"
+   },
+   "en": {
+    "title": "Soul music",
+    "text": "Soul music is a popular music genre that originated in African-American communities throughout the United States in the late 1950s and early 1960s. Catchy rhythms, stressed by handclaps and extemporaneous body movements, are an important hallmark of soul.",
+    "url": "https://en.wikipedia.org/wiki/Soul_music",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from January 2009"
+    ]
+   },
+   "en_tr": {
+    "text": "Soul music is a genre of popular music, often called soul for short.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%BD%E3%82%A6%E3%83%AB%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF"
+   }
+  },
+  "Soul Jazz": {
+   "ja": {
+    "title": "ファンキー・ジャズ",
+    "text": "ファンキー・ジャズ（英:funky Jazz）は、ビバップ、ハード・バップから派生したモダン・ジャズのジャンル。ソウル・ジャズ（Soul jazz）と呼ばれる場合もある。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%83%B3%E3%82%AD%E3%83%BC%E3%83%BB%E3%82%B8%E3%83%A3%E3%82%BA"
+   },
+   "en": {
+    "title": "Soul jazz",
+    "text": "Soul jazz or funky jazz is a subgenre of jazz that incorporates strong influences from hard bop, blues, soul, gospel and rhythm and blues. Soul jazz is often characterized by organ trios featuring the Hammond organs and small combos including saxophones, brass instruments, electric guitars, double basses, bass guitars, drums, pianos, vocals and electric organs.",
+    "url": "https://en.wikipedia.org/wiki/Soul_jazz"
+   }
+  },
+  "Speedcore": {
+   "ja": {
+    "title": "スピードコア",
+    "text": "スピードコア (Speedcore) は、音楽ジャンルであるハードコアテクノの一種で、歪んだバスドラムや攻撃的なテーマ、高速なBPM（テンポ）等が特徴として挙げられる。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%94%E3%83%BC%E3%83%89%E3%82%B3%E3%82%A2",
+    "doubt": [
+     "出典を必要とする記事/2008年7月-8月",
+     "独自研究の除去が必要な記事/2008年5月-8月"
+    ]
+   },
+   "en": {
+    "title": "Speedcore",
+    "text": "Speedcore is a form of electronic music that is characterized by a high tempo and aggressive themes. It was created in the early 1990s, the name originating from the hardcore genre as well as the high tempo used.",
+    "url": "https://en.wikipedia.org/wiki/Speedcore",
+    "doubt": [
+     "All articles lacking reliable references",
+     "Articles lacking reliable references from March 2023"
+    ]
+   }
+  },
+  "Stoner Rock": {
+   "ja": {
+    "title": "ストーナーロック",
+    "text": "ストーナーロック（Stoner rock）は、ハードロックのジャンルの一つ。ストーナーメタルと表記されることもある。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%88%E3%83%BC%E3%83%8A%E3%83%BC%E3%83%AD%E3%83%83%E3%82%AF"
+   },
+   "en": {
+    "title": "Stoner rock",
+    "text": "Stoner rock, also known as stoner metal or stoner doom, is a rock music fusion genre that combines elements of doom metal with psychedelic rock and acid rock. The genre emerged during the early 1990s and was pioneered foremost by Kyuss and Sleep.",
+    "url": "https://en.wikipedia.org/wiki/Stoner_rock"
+   }
+  },
+  "Swing": {
+   "ja": {
+    "title": "スウィング・ジャズ",
+    "text": "スウィング・ジャズ（日本語仮名表記にはスイング・ジャズも見られる）は、1920年代から1930年代にかけて大流行した、白人が主体となって作られた大人数編成による戦前のジャズのジャンルの一つ。ベニー・グッドマンや黒人の演奏家も積極的に採用した。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%A6%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%B8%E3%83%A3%E3%82%BA",
+    "skip": "replaced by a translation"
+   },
+   "en": {
+    "title": "Swing music",
+    "text": "Swing music is a style of jazz that developed in the United States during the late 1920s and early 1930s. It became nationally popular from the mid-1930s.",
+    "url": "https://en.wikipedia.org/wiki/Swing_music",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from September 2025"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from July 2024"
+    ]
+   },
+   "ja_own": {
+    "text": "スウィングは、ジャズの前へぐっと進むようなリズム感を指す言葉であり、1930年代半ばから1940年代半ばの「スウィングの時代」にビッグバンドによって大流行したスタイルの名前でもあります。",
+    "url": "https://www.britannica.com/art/swing-music",
+    "ref": "Britannica「swing」"
+   },
+   "en_own": {
+    "text": "Swing refers both to the forward-driving rhythmic feel of jazz and to the big-band style that flourished during the “swing era” of the mid-1930s to mid-1940s.",
+    "url": "https://www.britannica.com/art/swing-music",
+    "ref": "Britannica, \"swing\""
+   }
+  },
+  "Symphonic Jazz": {
+   "ja": {
+    "title": "シンフォニックジャズ",
+    "text": "シンフォニックジャズ（英: symphonic jazz）、またはオーケストラル・ジャズは、ジャズ風表現を伴う管弦楽曲や交響曲などのクラシック音楽ジャンルのひとつ。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%B3%E3%83%95%E3%82%A9%E3%83%8B%E3%83%83%E3%82%AF%E3%82%B8%E3%83%A3%E3%82%BA"
+   },
+   "en": {
+    "title": "Orchestral jazz",
+    "text": "Orchestral jazz or symphonic jazz is a form of jazz that developed in New York City in the 1920s. Early innovators of the genre, such as Fletcher Henderson and Duke Ellington, include some of the most highly regarded musicians, composers, and arrangers in all of jazz history.",
+    "url": "https://en.wikipedia.org/wiki/Orchestral_jazz",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from August 2014"
+    ]
+   },
+   "en_tr": {
+    "text": "Symphonic jazz, or orchestral jazz, is a genre of classical music, such as orchestral works and symphonies, incorporating jazz elements.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%B3%E3%83%95%E3%82%A9%E3%83%8B%E3%83%83%E3%82%AF%E3%82%B8%E3%83%A3%E3%82%BA"
+   }
+  },
   "Synth Pop": {
    "ja": {
     "title": "シンセポップ",
@@ -1235,6 +2067,26 @@
     "title": "Synthwave",
     "text": "Synthwave (also called retrowave, or futuresynth) is an electronic music microgenre that is based predominantly on the music associated with the soundtracks of action, science fiction, and horror films of the 1970s and 1980s. Other influences are drawn from the decade's art and video games.",
     "url": "https://en.wikipedia.org/wiki/Synthwave"
+   }
+  },
+  "Tech House": {
+   "ja": {
+    "title": "テックハウス",
+    "text": "テックハウス（Tech House）は、テクノとハウスの中間に位置する音を意味するエレクトロニック・ダンス・ミュージックの一ジャンル。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%86%E3%83%83%E3%82%AF%E3%83%8F%E3%82%A6%E3%82%B9"
+   },
+   "en": {
+    "title": "Tech house",
+    "text": "Tech house is a house music subgenre that prominently incorporates stylistic features from techno. The term tech house developed as a shorthand record store name for a category of electronic dance music that combined musical aspects of techno, such as \"rugged basslines\" and \"steely beats\", with the harmonies and grooves of progressive house.",
+    "url": "https://en.wikipedia.org/wiki/Tech_house",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from May 2012"
+    ]
+   },
+   "en_tr": {
+    "text": "Tech house is a genre of electronic dance music whose sound sits between techno and house.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%86%E3%83%83%E3%82%AF%E3%83%8F%E3%82%A6%E3%82%B9"
    }
   },
   "Techno": {
@@ -1288,6 +2140,22 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%A9%E3%83%B3%E3%82%B9_%28%E9%9F%B3%E6%A5%BD%29"
    }
   },
+  "Trap": {
+   "ja": {
+    "title": "トラップ (音楽のジャンル)",
+    "text": "トラップ（英: Trap）とは、ハードコア・ヒップホップから派生したヒップホップの1つ。トラップのビートにイギリス発祥のダブステップの要素を取り込んだダンスミュージック（ベースミュージック）のジャンルも存在する。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%A9%E3%83%83%E3%83%97_%28%E9%9F%B3%E6%A5%BD%E3%81%AE%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%AB%29"
+   },
+   "en": {
+    "title": "Trap music",
+    "text": "Trap music, also known simply as trap, is a subgenre of hip-hop music that originated in the Southern United States. Lyrical references to trap began appearing in 1991, while the modern sound of trap emerged in 1999.",
+    "url": "https://en.wikipedia.org/wiki/Trap_music",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from July 2025"
+    ]
+   }
+  },
   "UK Garage": {
    "ja": {
     "title": "UKガラージ",
@@ -1315,6 +2183,17 @@
     "url": "https://en.wikipedia.org/wiki/UK_garage"
    }
   },
+  "Uplifting Trance": {
+   "en": {
+    "title": "Uplifting trance",
+    "text": "Uplifting trance (often synonymous with epic trance, energetic trance, anthem trance, emotional trance, or euphoric trance) is a broad subgenre of trance music. The name, which emerged in the wake of progressive trance in 1996, is derived from the feeling which listeners claim to get (often described as a \"rush\").",
+    "url": "https://en.wikipedia.org/wiki/Uplifting_trance",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from August 2007"
+    ]
+   }
+  },
   "Vaporwave": {
    "ja": {
     "title": "ヴェイパーウェイヴ",
@@ -1325,6 +2204,18 @@
     "title": "Vaporwave",
     "text": "Vaporwave is an internet music microgenre, aesthetic, and meme that emerged in the early 2010s. It is defined partly by its slowed-down, chopped and screwed samples of smooth jazz, elevator music, R&B, and lounge music from the 1980s and 1990s.",
     "url": "https://en.wikipedia.org/wiki/Vaporwave"
+   }
+  },
+  "West Coast Jazz": {
+   "ja": {
+    "title": "ウエストコースト・ジャズ",
+    "text": "ウエストコースト・ジャズ（West Coast Jazz）は、1950年代、アメリカ合衆国ロサンゼルスを中心とする、アメリカ西海岸一帯で演奏されていたジャズの総称。ロックにもウエストコースト・ロックという地域ジャンルがある。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%A8%E3%82%B9%E3%83%88%E3%82%B3%E3%83%BC%E3%82%B9%E3%83%88%E3%83%BB%E3%82%B8%E3%83%A3%E3%82%BA"
+   },
+   "en": {
+    "title": "West Coast jazz",
+    "text": "West Coast jazz refers to styles of jazz that developed in the American West Coast cities of Los Angeles and San Francisco during the 1950s. West Coast jazz is often seen as a subgenre of cool jazz, which consisted of a calmer style than bebop or hard bop.",
+    "url": "https://en.wikipedia.org/wiki/West_Coast_jazz"
    }
   },
   "ゲーム音楽": {
@@ -1453,6 +2344,30 @@
     "url": "https://en.wikipedia.org/wiki/Music_of_Japan"
    }
   },
+  "歌舞伎": {
+   "ja": {
+    "title": "歌舞伎",
+    "text": "歌舞伎（かぶき）は、日本の演劇で、伝統芸能の一つ。1603年（慶長8年）に京都で出雲阿国が始めたややこ踊り、かぶき踊り（踊念仏）が始まりで、江戸時代に形成されたものである。",
+    "url": "https://ja.wikipedia.org/wiki/%E6%AD%8C%E8%88%9E%E4%BC%8E",
+    "part": [
+     "出典を必要とする記述のある記事/2014年4月"
+    ]
+   },
+   "en": {
+    "title": "Kabuki",
+    "text": "Kabuki (歌舞伎; Japanese pronunciation: [ka.bɯ.kʲi]) is a classical form of Japanese theatre, mixing dramatic performance with traditional dance. Kabuki theatre is known for its heavily stylised performances, its glamorous, highly decorated costumes, and for the elaborate kumadori make-up worn by some of its performers.",
+    "url": "https://en.wikipedia.org/wiki/Kabuki",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from June 2014",
+     "Articles needing additional references from September 2023"
+    ]
+   },
+   "en_tr": {
+    "text": "Kabuki is a form of Japanese theatre and one of the traditional performing arts. It originated from the yayako odori and kabuki odori (a nenbutsu dance) performed by Izumo no Okuni in Kyoto in 1603 (Keichō 8), and took shape during the Edo period.",
+    "url": "https://ja.wikipedia.org/wiki/%E6%AD%8C%E8%88%9E%E4%BC%8E"
+   }
+  },
   "歌謡曲": {
    "ja": {
     "title": "歌謡曲",
@@ -1463,6 +2378,18 @@
     "title": "Kayōkyoku",
     "text": "Kayōkyoku (歌謡曲; lit. 'Pop Tune') is a Japanese pop music genre, which became a base of modern J-pop. The Japan Times described kayōkyoku as \"standard Japanese pop\" or \"Shōwa-era pop\".",
     "url": "https://en.wikipedia.org/wiki/Kay%C5%8Dkyoku"
+   }
+  },
+  "浄瑠璃": {
+   "ja": {
+    "title": "浄瑠璃 (曖昧さ回避)",
+    "text": "浄瑠璃（じょうるり）",
+    "url": "https://ja.wikipedia.org/wiki/%E6%B5%84%E7%91%A0%E7%92%83_%28%E6%9B%96%E6%98%A7%E3%81%95%E5%9B%9E%E9%81%BF%29"
+   },
+   "en": {
+    "title": "Jōruri",
+    "text": "Jōruri (浄瑠璃) can refer to: Jōruri (music), a type of sung narrative with shamisen accompaniment, typically found in bunraku, a traditional Japanese puppet theatre Jōruri, a 1985 opera by Japanese composer Minoru Miki Jōruri-ji (浄瑠璃寺), a Buddhist temple in Kyoto Jōruri is the Hepburn romanization of the Japanese (kanji) word. It is spelled Zyôruri in Kunrei-shiki Rōmaji (ISO 3602), and Zyōruri in Nihon-shiki Rōmaji (ISO 3602 Strict).",
+    "url": "https://en.wikipedia.org/wiki/J%C5%8Druri"
    }
   },
   "渋谷系": {
@@ -1488,6 +2415,21 @@
    "ja_tr": {
     "text": "渋谷系（「渋谷スタイル」の意味で、渋谷サウンドとも）は、1980年代末から1990年代初めに東京で生まれた、日本の音楽のサブカルチャーであり、小さなジャンル。",
     "url": "https://en.wikipedia.org/wiki/Shibuya-kei"
+   }
+  },
+  "猿楽": {
+   "ja": {
+    "title": "猿楽",
+    "text": "猿楽（さるがく、旧字体: 猿樂）は、室町時代に成立した日本の伝統芸能。能は江戸時代までは猿楽と呼ばれ、狂言とともに能楽と総称されるようになったのは明治以降のことである。",
+    "url": "https://ja.wikipedia.org/wiki/%E7%8C%BF%E6%A5%BD",
+    "part": [
+     "出典を必要とする記述のある記事/2018年3月"
+    ]
+   },
+   "en": {
+    "title": "Sarugaku",
+    "text": "Sarugaku (猿楽; \"monkey music\") was a form of theatre popular in Japan during the 11th to 14th centuries. One of its predecessors was a sangaku , a form of entertainment reminiscent of the modern-day circus, consisting mostly of acrobatics, juggling, and pantomime, sometimes combined with drum dancing.",
+    "url": "https://en.wikipedia.org/wiki/Sarugaku"
    }
   },
   "現代音楽": {
@@ -1525,6 +2467,42 @@
     "text": "Contemporary classical music (gendai ongaku) broadly refers to Western art music from the 20th century onward, or more narrowly to works created after the Second World War. Beginning with atonality, twelve-tone technique, and neoclassicism, it branched out after the war into serialism, musique concrète, electronic music, chance music, and minimalism.",
     "url": "https://kotobank.jp/word/%E7%8F%BE%E4%BB%A3%E9%9F%B3%E6%A5%BD-61144",
     "ref": "Nipponica, “Gendai ongaku” (Kotobank, in Japanese)"
+   }
+  },
+  "田楽": {
+   "ja": {
+    "title": "田楽",
+    "text": "田楽（でんがく）は、平安時代中期に成立した日本の伝統芸能。楽と躍りなどから成る。",
+    "url": "https://ja.wikipedia.org/wiki/%E7%94%B0%E6%A5%BD"
+   },
+   "en": {
+    "title": "Dengaku",
+    "text": "Dengaku (田楽) were rustic Japanese celebrations that can be classified into two types: dengaku that developed as a musical accompaniment to rice planting observances, and the dengaku dances that developed in conjunction with sangaku . The dengaku celebrated for rice planting was performed by villagers either at the New Year or during the planting season in early summer.",
+    "url": "https://en.wikipedia.org/wiki/Dengaku",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from December 2021"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from December 2021"
+    ]
+   },
+   "en_tr": {
+    "text": "Dengaku is a traditional Japanese performing art that took shape in the middle of the Heian period. It is made up of music and dance.",
+    "url": "https://ja.wikipedia.org/wiki/%E7%94%B0%E6%A5%BD"
+   }
+  },
+  "能楽": {
+   "ja": {
+    "title": "能",
+    "text": "能（のう）は、日本の伝統芸能である能楽の一分野（能楽の能）。能面を用い能舞台で行われる。",
+    "url": "https://ja.wikipedia.org/wiki/%E8%83%BD"
+   },
+   "en": {
+    "title": "Noh",
+    "text": "Noh (能, Nō; Japanese pronunciation: [no(ꜜ)ː], Sino-Japanese for \"ability\") is a major form of classical Japanese dance-drama that has been performed since the 14th century. It is Japan's oldest major theater art that is still regularly performed today.",
+    "url": "https://en.wikipedia.org/wiki/Noh"
    }
   },
   "芸術音楽": {

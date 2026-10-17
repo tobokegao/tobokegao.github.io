@@ -90,8 +90,13 @@
   --rel-up: var(--accent);   /* NOTES timeline: parent -> child (solid) */
   --rel-src: var(--frame);   /* ...roots -> influenced (a line with yellow dots on it) */
   --rel-lit: var(--mark);
-  --grp-1: var(--live); --grp-2: var(--release); --grp-3: var(--feature);   /* large genres */
-  --grp-4: var(--news); --grp-5: #2f7d4f; --grp-6: var(--ink-dim);
+  /* large genres: TRACKMENTO's "riso" palette by day and its "night" one by night, with
+     dark text on them */
+  --grp-1: oklch(80% 0.150 88); --grp-2: oklch(60% 0.140 235); --grp-3: oklch(62% 0.200 32);
+  --grp-4: oklch(74% 0.100 295); --grp-5: oklch(84% 0.110 165); --grp-6: oklch(78% 0.130 350);
+  /* the text on them: white on the blue and the red, which are too dark for dark text */
+  --grp-ink-1: var(--ink); --grp-ink-2: #ffffff; --grp-ink-3: #ffffff;
+  --grp-ink-4: var(--ink); --grp-ink-5: var(--ink); --grp-ink-6: var(--ink);
 
   --f-dot: "JF Dot MPlus12", "MS Gothic", "Osaka-Mono", monospace;
   --dot: 12px;              /* one dot = one pixel; UI text is --dot or 2x --dot */
@@ -135,7 +140,9 @@
   --kind-ink: #efeeeb;
   --rel-src: var(--ink-dim);
   --rel-lit: var(--mark);
-  --grp-1: #f0535a; --grp-2: #58a6ff; --grp-3: #ff5ec4; --grp-4: #fbd743; --grp-5: #3ddc97; --grp-6: #9399a0;
+  --grp-1: #ffb43d; --grp-2: #58a6ff; --grp-3: #ff6b6b; --grp-4: #b18cff; --grp-5: #3ddc97; --grp-6: #ff5ec4;
+  --grp-ink-1: #12171b; --grp-ink-2: #12171b; --grp-ink-3: #12171b;
+  --grp-ink-4: #12171b; --grp-ink-5: #12171b; --grp-ink-6: #12171b;
   /* the scrollbars (TRACKMENTO's, recoloured and lit from below): the colours, then the
      thumb's frame and grip and the arrows as pictures, since SVG cannot read CSS variables */
   --sb-face: #3e4348;
@@ -795,20 +802,27 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .notes__hit-s a { margin-right: 8px; font: var(--dot)/2 var(--f-dot); }
 .notes mark { background: var(--mark); color: var(--mark-ink); }
 .notes__hint { align-self: center; font: var(--dot)/2 var(--f-dot); color: var(--ink-dim); }
-.tl-find-box { display: inline-flex; align-items: center; gap: 8px; }
+.tl-find-box { position: relative; display: inline-flex; align-items: center; gap: 8px; }
+/* the matches, in a column under the box */
+.tl-find-list { position: absolute; top: 100%; left: 0; z-index: 5; box-sizing: border-box; width: 256px; max-width: calc(100vw - 32px); max-height: 240px; margin: 0; padding: 0; overflow: auto; list-style: none; background: var(--win); border: 2px solid var(--frame); }
+.tl-find-list[hidden] { display: none; }
+.tl-find-list li { display: flex; justify-content: space-between; gap: 8px; padding: 0 6px; font: var(--dot)/2 var(--f-dot); color: var(--ink); cursor: pointer; }
+.tl-find-list li:hover, .tl-find-list li[aria-selected="true"] { background: var(--frame); color: var(--win); }
+.tl-find-y { color: var(--ink-dim); }
+.tl-find-list li:hover .tl-find-y, .tl-find-list li[aria-selected="true"] .tl-find-y { color: inherit; }
 .tl-find-box input { width: 192px; padding: 2px 6px; font: var(--dot)/2 var(--f-dot); color: var(--ink); background: var(--win); border: 2px solid; border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md); border-radius: 0; }
 .tl-find-box input:focus-visible { outline: 2px solid var(--accent); outline-offset: 0; }
 .tl-find-none { font: var(--dot)/2 var(--f-dot); color: var(--ink-dim); }
 .tl-zoom { display: inline-flex; align-items: center; gap: 4px; font: var(--dot)/2 var(--f-dot); color: var(--ink-dim); }
 .tl-zoom > span + .btn { margin-left: 4px; }
 @media (pointer: coarse) { .tl-zoom { display: none; } }   /* two fingers there */
-.notes__grp--1, .tl__grp--1 { --grp: var(--grp-1); }
-.notes__grp--2, .tl__grp--2 { --grp: var(--grp-2); }
-.notes__grp--3, .tl__grp--3 { --grp: var(--grp-3); }
-.notes__grp--4, .tl__grp--4 { --grp: var(--grp-4); }
-.notes__grp--5, .tl__grp--5 { --grp: var(--grp-5); }
-.notes__grp--6, .tl__grp--6 { --grp: var(--grp-6); }
-.notes__grp { color: var(--grp); }
+.notes__grp--1, .tl__grp--1 { --grp: var(--grp-1); --grp-fg: var(--grp-ink-1); }
+.notes__grp--2, .tl__grp--2 { --grp: var(--grp-2); --grp-fg: var(--grp-ink-2); }
+.notes__grp--3, .tl__grp--3 { --grp: var(--grp-3); --grp-fg: var(--grp-ink-3); }
+.notes__grp--4, .tl__grp--4 { --grp: var(--grp-4); --grp-fg: var(--grp-ink-4); }
+.notes__grp--5, .tl__grp--5 { --grp: var(--grp-5); --grp-fg: var(--grp-ink-5); }
+.notes__grp--6, .tl__grp--6 { --grp: var(--grp-6); --grp-fg: var(--grp-ink-6); }
+.notes__grp { padding: 0 4px; color: var(--grp-fg); background: var(--grp); }
 /* the timeline: a sunken panel that scrolls both ways; nodes are links over an SVG of lines */
 /* two fingers stretch the years (notes.js), so the page itself does not zoom here. No scrollbars
    on touch screens: they took room from the drawing, and the sideways one did not move under a
@@ -853,14 +867,16 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .tl__canvas.is-focus .tl__node.is-near:not(.is-self) { outline: 2px dotted var(--rel-lit); outline-offset: -2px; }
 .tl__node { position: absolute; display: flex; flex-direction: column; padding: 2px 8px; white-space: nowrap; text-decoration: none; font: var(--dot)/calc(var(--dot) + 6px) var(--f-dot); color: var(--ink); background: var(--win); border: 2px solid var(--frame); }
 .tl__node--posts { border-color: var(--bevel-dk); }
-.tl__node--major { border-color: var(--grp); }
+.tl__node--major { border-color: var(--grp); background: var(--grp); color: var(--grp-fg); }
+.tl__node--major .tl__year { color: inherit; }
+.tl__node--member { border-color: var(--grp); }
 .tl__node--draft { border-style: dashed; }   /* year and links not checked yet (draft = true) */
 .notes__draft::before { content: "■ "; color: var(--mark); }
 .tl__year { color: var(--ink-dim); }
 .tl__node:hover, .tl__node:focus-visible { background: var(--accent); color: var(--accent-ink); }
 .tl__node:hover .tl__year, .tl__node:focus-visible .tl__year { color: inherit; }
 .tl__flag { stroke: var(--grp); stroke-width: 2px; }
-.tl__flag-t { fill: var(--grp); font: var(--dot)/1 var(--f-dot); }
+.tl__flag-t { position: absolute; padding: 0 6px; white-space: nowrap; font: var(--dot)/2 var(--f-dot); background: var(--grp); color: var(--grp-fg); }
 
 /* ---------- scrollbars: TRACKMENTO's way, in the site's colours ----------
    WebKit (Chrome, Edge, Safari) gets drawn parts; Firefox, which has none, only the colours.

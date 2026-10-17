@@ -20,7 +20,7 @@
   {{ if eq $view "topic" }}
     {{ $all := slice }}{{ range $t.rel }}{{ $all = $all | append . }}{{ end }}
     <p class="notes__meta">
-      {{- if isset $t "born" }}<span>{{ $t.born }}</span>{{ end -}}
+      {{- if isset $t "born" }}<span>{{ partial "era.html" $t }}</span>{{ end -}}
       <span>{{ partial "t.html" "xPosts" }} {{ $t.n }}</span>
       {{- if $t.nr }}<span>{{ partial "t.html" "retweets" }} {{ $t.nr }}</span>{{ end -}}
     </p>
@@ -122,7 +122,7 @@
           {{ else if $t }}{{ $sum = merge $sum (dict . (dict "x" $t.text "u" $t.url "tr" 1)) }}{{ end }}
         {{ end }}
       {{ end }}
-      {{ $nodes = $nodes | append (dict "k" $k "t" $x.title "u" (relURL $x.url) "y" $year "b" (cond (isset $x "born") 1 0) "n" (add $x.n $x.nr) "up" $x.rel.up "src" $x.rel.src "mj" ($x.majors | default slice) "c" ($x.major | default 0) "d" ($x.draft | default 0) "s" $sum "np" ($x.nicopedia | default "")) }}
+      {{ $nodes = $nodes | append (dict "k" $k "t" $x.title "u" (relURL $x.url) "y" $year "b" (cond (isset $x "born") 1 0) "n" (add $x.n $x.nr) "up" $x.rel.up "src" $x.rel.src "mj" ($x.majors | default slice) "c" ($x.major | default 0) "d" ($x.draft | default 0) "s" $sum "np" ($x.nicopedia | default "") "e" ($x.era | default "")) }}
       {{ end }}
     {{ end }}
     {{ $js := resources.Get "js/notes.js" | minify | fingerprint }}
@@ -131,8 +131,8 @@
       <button type="button" class="btn chip" data-tl="all" aria-pressed="false">{{ partial "t.html" "withPosts" }}</button>
       <span class="notes__hint">{{ partial "t.html" "zoomHint" }}</span>
       <span class="tl-find-box">
-        <label><span class="vh">{{ partial "t.html" "findGenre" }}</span><input type="search" id="tl-find" list="tl-names" autocomplete="off" {{ with index hugo.Data.strings "findGenre" }}data-ph-ja="{{ .ja }}" data-ph-en="{{ .en }}" placeholder="{{ .ja }}"{{ end }}></label>
-        <datalist id="tl-names"></datalist>
+        <label><span class="vh">{{ partial "t.html" "findGenre" }}</span><input type="search" id="tl-find" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="tl-names" autocomplete="off" {{ with index hugo.Data.strings "findGenre" }}data-ph-ja="{{ .ja }}" data-ph-en="{{ .en }}" placeholder="{{ .ja }}"{{ end }}></label>
+        <ul id="tl-names" class="tl-find-list" role="listbox" aria-label="{{ partial "tt.html" "findGenre" }}" hidden></ul>
         <span id="tl-find-none" class="tl-find-none" hidden>{{ partial "t.html" "findNone" }}</span>
       </span>
       {{- /* buttons for a mouse (Ctrl + Shift + wheel did not always reach the page); not on touch screens */}}

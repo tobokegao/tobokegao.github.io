@@ -66,10 +66,32 @@
   }
 
   // ---------- timeline ----------
+  // When a genre was born: a year, or a part of a decade when only that is known (`era` in
+  // the note: x the decade, x2 early, x3 the middle, x4 late; the year it is drawn at is the
+  // decade + 0, 2, 5 or 7).
+  var ERA = {
+    ja: { x: "", x2: "前半", x3: "半ば", x4: "後半" },
+    en: { x: "the {}s", x2: "the early {}s", x3: "the mid-{}s", x4: "the late {}s" }
+  };
+  var when = function (n, l) {
+    if (!n.e || !ERA.ja.hasOwnProperty(n.e)) return l === "ja" ? n.y + "年" : String(n.y);
+    var d = Math.floor(n.y / 10) * 10;
+    return l === "ja" ? d + "年代" + ERA.ja[n.e] : ERA.en[n.e].replace("{}", d);
+  };
+  var born = function (n) { return "born in " + when(n, "en"); };
   // Pages with a year, left to right; solid lines from parent to child, dashed from roots
   // to what they influenced. Nodes are links (HTML), the lines an SVG behind them.
   function initTimeline(el) {
     var all = JSON.parse(document.getElementById("tl-data").textContent);
+    // A page in a large genre takes its colour (in more than one: the newest of them, which
+    // is the nearer family as a rule); the large genre itself has its own.
+    var majorOf = {};
+    all.forEach(function (n) { if (n.c) majorOf[n.k] = n; });
+    all.forEach(function (n) {
+      var best = null;
+      (n.mj || []).forEach(function (k) { var m = majorOf[k]; if (m && (!best || m.y > best.y)) best = m; });
+      n.g = n.c || (best ? best.c : 0);
+    });
     var buttons = document.querySelectorAll("[data-tl]");
     var mode = "born";
     var PAD = 24, GAP = 24, FLAG = 0, GAP_YEARS = 40, BREAK = 48, TURN = 20, DENSE = 3;
@@ -136,14 +158,14 @@
       var byKey = {};
       nodes.forEach(function (n) {
         var a = document.createElement("a");
-        a.className = "tl__node" + (n.b ? "" : " tl__node--posts") + (n.c ? " tl__node--major tl__grp--" + n.c : "") + (n.d ? " tl__node--draft" : "");
+        a.className = "tl__node" + (n.b ? "" : " tl__node--posts") + (n.g ? (n.c ? " tl__node--major" : " tl__node--member") + " tl__grp--" + n.g : "") + (n.d ? " tl__node--draft" : "");
         a.href = sitePath(n.u);
         var posts = lod > 1 && n.n;
         a.innerHTML = '<span class="tl__name">' + esc(n.t) + "</span>" + (lod ? '<span class="tl__year">' +
           // a genre's year is when it was born; a topic without one shows its first post's year.
           // The year and the count take a line each: narrow nodes need fewer rows.
-          '<span data-l="ja">' + n.y + (n.b ? "年生まれ" : "年から") + (posts ? "<br>ポスト" + n.n + "件" : "") + "</span>" +
-          '<span data-l="en">' + (n.b ? "born in " : "since ") + n.y + (posts ? "<br>" + n.n + (n.n === 1 ? " post" : " posts") : "") + "</span></span>" : "");
+          '<span data-l="ja">' + (n.b ? when(n, "ja") + "生まれ" : n.y + "年から") + (posts ? "<br>ポスト" + n.n + "件" : "") + "</span>" +
+          '<span data-l="en">' + (n.b ? born(n) : "since " + n.y) + (posts ? "<br>" + n.n + (n.n === 1 ? " post" : " posts") : "") + "</span></span>" : "");
         canvas.appendChild(a);
         byKey[n.k] = { n: n, el: a };
       });
@@ -157,7 +179,21 @@
       });
       var dot = parseInt(getComputedStyle(root).getPropertyValue("--dot"), 10) || 12;
       var row = dot * 2;
-      FLAG = flags.length ? flags.length * row + GAP : 0;
+      // the names on top share a row when they do not run into each other (the widest of the
+      // two languages' names)
+      var flagEnd = [];
+      flags.sort(function (a, b) { return a.x - b.x; }).forEach(function (f) {
+        var t = document.createElement("span");
+        t.className = "tl__flag-t tl__grp--" + f.m.c;
+        t.textContent = f.m.t;
+        canvas.appendChild(t);
+        f.el = t;
+        var r = flagEnd.findIndex(function (end) { return end + 8 <= f.x; });
+        if (r < 0) { r = flagEnd.length; flagEnd.push(0); }
+        flagEnd[r] = f.x + t.offsetWidth;
+        f.r = r;
+      });
+      FLAG = flagEnd.length ? flagEnd.length * row + GAP : 0;
       var TOP = row + GAP + FLAG;
 
       // Widths in both languages (the labels differ), so a switch does not make nodes overlap.
@@ -255,9 +291,11 @@
           if (dec.w >= 128) tick(dec.d + 5);
         });
       });
-      flags.forEach(function (f, i) {
-        svg += '<line class="tl__flag tl__grp--' + f.m.c + '" x1="' + f.x + '" x2="' + f.x + '" y1="' + (row + GAP + i * row) + '" y2="' + H + '"/>' +
-          '<text class="tl__flag-t tl__grp--' + f.m.c + '" x="' + (f.x + 6) + '" y="' + (row + GAP + i * row + dot) + '">' + esc(f.m.t) + "</text>";
+      flags.forEach(function (f) {
+        var y = row + GAP + f.r * row;
+        svg += '<line class="tl__flag tl__grp--' + f.m.c + '" x1="' + (f.x + 1) + '" x2="' + (f.x + 1) + '" y1="' + y + '" y2="' + H + '"/>';
+        f.el.style.left = f.x + "px";
+        f.el.style.top = y + "px";
       });
       // Lines in right angles only, like box-drawing characters: out to the right, along
       // the gap TURN px before the child (so a straight run is left before the arrow), then
@@ -360,8 +398,8 @@
       light(k);
       pop.querySelector(".tl__pop-t").textContent = n.t;
       pop.querySelector(".tl__pop-y").innerHTML =
-        '<span data-l="ja">' + n.y + (n.b ? "年生まれ" : "年から") + (n.n ? "・ポスト" + n.n + "件" : "") + "</span>" +
-        '<span data-l="en" lang="en">' + (n.b ? "born in " : "since ") + n.y + (n.n ? " · " + n.n + (n.n === 1 ? " post" : " posts") : "") + "</span>";
+        '<span data-l="ja">' + (n.b ? when(n, "ja") + "生まれ" : n.y + "年から") + (n.n ? "・ポスト" + n.n + "件" : "") + "</span>" +
+        '<span data-l="en" lang="en">' + (n.b ? born(n) : "since " + n.y) + (n.n ? " · " + n.n + (n.n === 1 ? " post" : " posts") : "") + "</span>";
       // the summary in each language (one of them may be a translation of the other)
       var sum = n.s || {}, any = false;
       pop.querySelectorAll("[data-sum]").forEach(function (b) {
@@ -541,31 +579,83 @@
     el.addEventListener("click", function (e) {
       if (dragged) { e.preventDefault(); e.stopPropagation(); dragged = false; }
     }, true);
-    // Finding a genre by name: the list offers the genres with a year; a name that matches
-    // a topic without one switches to every topic first. The genre is chosen as if tapped.
+    // Finding a genre by name: the matches open in a column under the box, from the topics in
+    // view only (the genres, or every topic when those are shown), so a search never changes the
+    // view. Whole names first, then names that start with the words, then the rest. A match is
+    // chosen as if tapped.
     var find = document.getElementById("tl-find"), none = document.getElementById("tl-find-none");
     if (find) {
-      var list = document.getElementById("tl-names");
+      var list = document.getElementById("tl-names"), hits = [], at = -1;
       // the hint inside the box in the language shown (an attribute cannot be switched by CSS)
       var hint = function () { find.placeholder = find.dataset[root.dataset.lang === "en" ? "phEn" : "phJa"]; };
       hint();
       new MutationObserver(hint).observe(root, { attributes: true, attributeFilter: ["data-lang"] });
-      all.filter(function (n) { return n.b; }).map(function (n) { return n.t; }).sort(function (a, b) { return a.localeCompare(b); })
-        .forEach(function (t) { var o = document.createElement("option"); o.value = t; list.appendChild(o); });
-      var go = function (strict) {
+      var shut = function () {
+        list.hidden = true;
+        find.setAttribute("aria-expanded", "false");
+        find.removeAttribute("aria-activedescendant");
+        at = -1;
+      };
+      var mark = function (i) {
+        at = i;
+        list.querySelectorAll("li").forEach(function (li, j) { li.setAttribute("aria-selected", j === i ? "true" : "false"); });
+        var li = list.children[i];
+        if (li) { find.setAttribute("aria-activedescendant", li.id); li.scrollIntoView({ block: "nearest" }); }
+      };
+      var search = function () {
         var q = find.value.trim().toLowerCase();
         none.hidden = true;
-        if (!q) return;
-        var hit = all.filter(function (n) { return n.t.toLowerCase() === q; })[0];
-        if (!hit && !strict) hit = all.filter(function (n) { return n.b && n.t.toLowerCase().indexOf(q) === 0; })[0] ||
-          all.filter(function (n) { return n.t.toLowerCase().indexOf(q) !== -1; })[0];
-        if (!hit) { if (!strict) none.hidden = false; return; }
-        if (!hit.b && mode !== "all") setMode("all");
-        choose(hit.k, true);
+        hits = [];
+        if (q) {
+          var rank = function (n) { var t = n.t.toLowerCase(); return t === q ? 0 : t.indexOf(q) === 0 ? 1 : t.indexOf(q) !== -1 ? 2 : 3; };
+          hits = all.filter(function (n) { return (mode === "all" || n.b) && rank(n) < 3; })
+            .sort(function (a, b) { return rank(a) - rank(b) || a.t.localeCompare(b.t); }).slice(0, 30);
+        }
+        list.textContent = "";
+        hits.forEach(function (n, i) {
+          var li = document.createElement("li");
+          li.id = "tl-name-" + i;
+          li.setAttribute("role", "option");
+          li.dataset.k = n.k;
+          li.textContent = n.t;
+          var y = document.createElement("span");
+          y.className = "tl-find-y";
+          y.textContent = n.e ? Math.floor(n.y / 10) * 10 + "s" : n.y;
+          li.appendChild(y);
+          list.appendChild(li);
+        });
+        if (!hits.length) { shut(); none.hidden = !q; return; }
+        list.hidden = false;
+        find.setAttribute("aria-expanded", "true");
+        mark(-1);
       };
-      // a name picked from the list (or typed in full) goes at once; Enter takes the best match
-      find.addEventListener("input", function () { go(true); });
-      find.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); go(false); } });
+      var pick = function (n) {
+        if (!n) return;
+        find.value = n.t;
+        shut();
+        choose(n.k, true);
+      };
+      find.addEventListener("input", search);
+      find.addEventListener("focus", function () { if (find.value.trim()) search(); });
+      find.addEventListener("keydown", function (e) {
+        if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+          if (list.hidden) search();
+          if (!hits.length) return;
+          e.preventDefault();
+          mark(e.key === "ArrowDown" ? (at + 1) % hits.length : (at <= 0 ? hits.length : at) - 1);
+        } else if (e.key === "Enter") {
+          e.preventDefault();
+          if (list.hidden) search();
+          pick(hits[at < 0 ? 0 : at]);
+        } else if (e.key === "Escape") shut();
+      });
+      // pressed, not clicked: the box keeps the focus, so the list is still there to be tapped
+      list.addEventListener("pointerdown", function (e) { e.preventDefault(); });
+      list.addEventListener("click", function (e) {
+        var li = e.target.closest("li");
+        if (li) pick(byK[li.dataset.k]);
+      });
+      find.addEventListener("blur", shut);
     }
     // the buttons for a mouse: a step wider or narrower, a line taller or shorter
     document.querySelectorAll("[data-z]").forEach(function (b) {

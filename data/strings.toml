@@ -315,12 +315,12 @@ ja = "音楽相関図のもとになったデータ: ざっと"
 en = "Original music map data: zatto"
 
 [withPosts]
-ja = "ポストのある話題も"
-en = "Include topics with posts"
+ja = "ポストの話題も含む"
+en = "Include post topics"
 
 [yearsOnly]
-ja = "年のあるページ"
-en = "Pages with a year"
+ja = "ジャンルだけ"
+en = "Genres only"
 
 [zoomHint]
 ja = "広げる・縮める: 指2本、またはCtrl＋マウスホイール"
@@ -352,7 +352,7 @@ en = " (translated from the Japanese article)"
 
 [summaryRef]
 ja = "参考:"
-en = "Based on:"
+en = "Source:"
 
 [nicopedia]
 ja = "ニコニコ大百科で見る"
