@@ -6,6 +6,7 @@
   "Acid House": "Acid_house",
   "Acid Jazz": "Acid_jazz",
   "Acid Rock": "Acid_rock",
+  "Alternative R&B": "Alternative_R&B",
   "Alternative Rock": "Alternative_rock",
   "Ambient Techno": "Ambient_techno",
   "Ambient": "Ambient_music",
@@ -39,6 +40,7 @@
   "Chopped and Screwed": "Chopped_and_screwed",
   "Citypop": "City_pop",
   "Classic Music": "Classical_music",
+  "Cloud Rap": "Cloud_rap",
   "Contemporary R&B": "Contemporary_R&B",
   "Cool Jazz": "Cool_jazz",
   "Dangdut": "Dangdut",
@@ -49,6 +51,7 @@
   "Dixieland": "Dixieland_jazz",
   "Djent": "Djent",
   "Doom Metal": "Doom_metal",
+  "Drill": "Drill_music",
   "Drum & Bass": "Drum_and_bass",
   "Dub": "Dub_music",
   "Dubstep": "Dubstep",
@@ -92,11 +95,13 @@
   "Hardstep": "Hardstep",
   "Hardstyle": "Hardstyle",
   "Heavy Metal": "Heavy_metal_music",
+  "HexD": "HexD",
   "Hi-NRG": "Hi-NRG",
   "Hip Hop": "Hip_hop_music",
   "House": "House_music",
   "Hyperpop": "Hyperpop",
   "IDM": "Intelligent_dance_music",
+  "Illbient": "Illbient",
   "Indie Rock": "Indie_rock",
   "Industrial": "Industrial_music",
   "Italo Disco": "Italo_disco",
@@ -230,6 +235,16 @@
     "Rock"
    ],
    "src": []
+  },
+  "Alternative R&B": {
+   "up": [
+    "R&B"
+   ],
+   "src": [
+    "Alternative Rock",
+    "Contemporary R&B",
+    "Indie Rock"
+   ]
   },
   "Alternative Rock": {
    "up": [
@@ -488,6 +503,16 @@
     "Soul"
    ]
   },
+  "Cloud Rap": {
+   "up": [
+    "Hip Hop",
+    "Trap"
+   ],
+   "src": [
+    "Chillwave",
+    "Chopped and Screwed"
+   ]
+  },
   "Contemporary R&B": {
    "up": [
     "R&B"
@@ -560,6 +585,13 @@
     "Heavy Metal",
     "Progressive Metal"
    ]
+  },
+  "Drill": {
+   "up": [
+    "Hip Hop",
+    "Trap"
+   ],
+   "src": []
   },
   "Drum & Bass": {
    "up": [],
@@ -938,6 +970,18 @@
     "Psychedelic Rock"
    ]
   },
+  "HexD": {
+   "up": [
+    "Hip Hop"
+   ],
+   "src": [
+    "Breakbeat",
+    "Cloud Rap",
+    "Hyperpop",
+    "Trance",
+    "Trap"
+   ]
+  },
   "Hi-NRG": {
    "up": [
     "Disco"
@@ -984,6 +1028,16 @@
     "Ambient",
     "EDM",
     "Techno"
+   ]
+  },
+  "Illbient": {
+   "up": [],
+   "src": [
+    "Ambient",
+    "Dub",
+    "Hip Hop",
+    "Industrial",
+    "Jungle"
    ]
   },
   "Indie Rock": {
@@ -1399,6 +1453,8 @@
    ],
    "src": [
     "Chopped and Screwed",
+    "Cloud Rap",
+    "HexD",
     "Hyperpop"
    ]
   },

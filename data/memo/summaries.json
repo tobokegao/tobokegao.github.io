@@ -83,6 +83,18 @@
     "url": "https://en.wikipedia.org/wiki/Acid_rock"
    }
   },
+  "Alternative R&B": {
+   "ja": {
+    "title": "オルタナティブR&B",
+    "text": "オルタナティブR&B（英: Alternative R&B）は、音楽評論家がオルタナティブスタイルのコンテンポラリー・R&Bを説明するために使用する用語。 90年代末にネオ・ソウルと呼ばれたR&B勢力の2000年代半ば以降の流れであり、音楽的には1990年代〜2000年代のR&Bからロックやクラシックまでもをサンプリングし、深いフィルターやエコーをかけたような音像と、トラップのような下地の効いたドラムを特徴とする。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%AB%E3%82%BF%E3%83%8A%E3%83%86%E3%82%A3%E3%83%96R%26B"
+   },
+   "en": {
+    "title": "Alternative R&B",
+    "text": "Alternative R&B (also referred to as alt-R&B, indie R&B, and originally known as PBR&B, hipster R&B, emo R&B, or R-Neg-B) is a term used by music journalists to describe a stylistic alternative to contemporary R&B that began in the mid 2000s and came to prominence with musical artists such as Frank Ocean, Khalid, SZA, Summer Walker, Jhené Aiko, Brent Faiyaz, Zayn Malik, Tyler, the Creator, Steve Lacy, Childish Gambino, Miguel, Drake, The Weeknd, Kehlani, Tinashe, Bryson Tiller, PartyNextDoor, Tory Lanez, 6lack, and others. It is considered to be \"more progressive and diverse\" than its mainstream counterpart.",
+    "url": "https://en.wikipedia.org/wiki/Alternative_R%26B"
+   }
+  },
   "Alternative Rock": {
    "ja": {
     "title": "オルタナティヴ・ロック",
@@ -614,6 +626,18 @@
     ]
    }
   },
+  "Cloud Rap": {
+   "ja": {
+    "title": "クラウド・ラップ",
+    "text": "クラウド・ラップ（Cloud rap）は、ヒップホップおよびインターネット・ラップのサブジャンルであり、ぼんやりとした、夢のような、リラックスしたプロダクションスタイルを持つトラップ音楽の音響的特徴をいくつか備えている。ラッパーのリル・Bとプロデューサーのクラムス・カジノがこのスタイルの初期のパイオニアであった。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%83%BB%E3%83%A9%E3%83%83%E3%83%97"
+   },
+   "en": {
+    "title": "Cloud rap",
+    "text": "Cloud rap (also known as trillwave) is a subgenre of hip-hop that emerged from the Southern hip-hop scene in the late 2000s to early 2010s. The style draws influences from trap, ambient and new age music to create a hazy, dreamlike, atmospheric and relaxed production style through the extensive use of reverb and ethereal chopped samples.",
+    "url": "https://en.wikipedia.org/wiki/Cloud_rap"
+   }
+  },
   "Contemporary R&B": {
    "ja": {
     "title": "コンテンポラリー・R&B",
@@ -772,6 +796,25 @@
      "All articles with unsourced statements",
      "Articles with unsourced statements from December 2020"
     ]
+   }
+  },
+  "Drill": {
+   "ja": {
+    "title": "ドリル (音楽のジャンル)",
+    "text": "ドリル・ミュージック（Drill music）、またはドリル・ラップ（drill rap）、単にドリル（drill）は、2010年代初頭にシカゴで生まれたヒップホップ音楽のサブジャンルである。音響的にはトラップのサブジャンルに、歌詞的にはギャングスタ・ラップのサブジャンルに類似している。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%83%AA%E3%83%AB_%28%E9%9F%B3%E6%A5%BD%E3%81%AE%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%AB%29",
+    "doubt": [
+     "出典を必要とする記事/2025年8月"
+    ]
+   },
+   "en": {
+    "title": "Drill music",
+    "text": "Drill music, also known as drill rap or simply drill, is a subgenre of hip-hop music with sonic origins in trap music and lyrical origins in gangsta rap. It began in Chicago, Illinois, United States, in the early 2010s.",
+    "url": "https://en.wikipedia.org/wiki/Drill_music"
+   },
+   "ja_tr": {
+    "text": "ドリル（ドリルラップ、あるいは単にドリルとも呼ばれる）は、サウンドはトラップ、歌詞はギャングスタラップにルーツを持つヒップホップのスタイル。2010年代初めに、アメリカのイリノイ州シカゴで始まった。",
+    "url": "https://en.wikipedia.org/wiki/Drill_music"
    }
   },
   "Drum & Bass": {
@@ -1585,6 +1628,21 @@
     "url": "https://en.wikipedia.org/wiki/Heavy_metal_music"
    }
   },
+  "HexD": {
+   "en": {
+    "title": "HexD",
+    "text": "HexD is an Internet microgenre of electronic music and style of audio mixing that emerged in the late 2010s to early 2020s. The term \"hexD\" was originally coined by the music collective Hexcastcrew.",
+    "url": "https://en.wikipedia.org/wiki/HexD",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from April 2026"
+    ]
+   },
+   "ja_tr": {
+    "text": "HexDは、2010年代末から2020年代初めに現れた、インターネット発の小さな電子音楽のジャンルで、音のミックスの仕方の一つでもある。「hexD」という言葉は、音楽集団Hexcastcrewが作った。",
+    "url": "https://en.wikipedia.org/wiki/HexD"
+   }
+  },
   "Hi-NRG": {
    "ja": {
     "title": "Hi-NRG",
@@ -1664,6 +1722,18 @@
     "title": "Intelligent dance music",
     "text": "Intelligent dance music (IDM) is a loose label used to describe experimental forms of electronic music associated with early-1990s ambient techno, \"electronic listening music\" and related forms of electronica. Rather than being defined by a fixed set of genre conventions, IDM has generally been associated with individualistic experimentation.",
     "url": "https://en.wikipedia.org/wiki/Intelligent_dance_music"
+   }
+  },
+  "Illbient": {
+   "ja": {
+    "title": "イルビエント",
+    "text": "イルビエント(Illbient) は電子音楽のジャンルの一つ。 この言葉はDJ Olive(英語版)によって、1994年にニューヨークのブルックリン区のウィリアムスバーグを拠点としたアーティストコミュニティが作っていた音楽を説明するために使われだしたといわれる。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%AB%E3%83%93%E3%82%A8%E3%83%B3%E3%83%88"
+   },
+   "en": {
+    "title": "Illbient",
+    "text": "Illbient is a genre of electronic music and an art movement that originated among hip hop-influenced experimental musicians from New York City in the early 1990s. The word \"illbient\" combines the hip hop slang term \"ill\" with \"ambient\"; DJ Olive and DJ Spooky, pioneers of the genre, have claimed to have coined the term.",
+    "url": "https://en.wikipedia.org/wiki/Illbient"
    }
   },
   "Indie Rock": {
@@ -3834,6 +3904,90 @@
     "text": "Japanese popular music that emerged in the early 1970s, made mostly by singer-songwriters influenced by folk and rock. Unlike kayōkyoku, it won its audience mainly through albums and concerts rather than the media-driven hit system.",
     "url": "https://kotobank.jp/word/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF",
     "ref": "Kotobank, \"New Music\" (Hyakka Jiten Mypedia; Digital Daijisen; Seisenban Nihon Kokugo Daijiten)"
+   }
+  },
+  "Ambient Rap": {
+   "ja_own": {
+    "text": "Ambient Pluggからさらに派生したラップ。浮遊感のあるシンセの音、変則的なドラム、気だるくつぶやくような歌い方、皮肉でダークな歌詞が特徴で、2026年にSIE Collectiveのkllhhrの「skin」がバイラルヒットして注目が集まった。",
+    "url": "https://note.com/hotmilkissweet/n/n08c17f305db0",
+    "ref": "ホットミルクが甘い理由「2026年注目度急上昇サブジャンルAMBIENT RAPについて知ってること」note（2026）"
+   },
+   "en_own": {
+    "text": "A further offshoot of ambient plugg, with floating synths, irregular hi-hats, a languid, mumbled flow and ironic, dark lyrics. It drew wide attention in 2026 after \"skin\" by kllhhr of SIE Collective went viral.",
+    "url": "https://note.com/hotmilkissweet/n/n08c17f305db0",
+    "ref": "ホットミルクが甘い理由 (hotmilkissweet), \"2026年注目度急上昇サブジャンルAMBIENT RAPについて知ってること\", note (2026)"
+   }
+  },
+  "Ambient Plugg": {
+   "ja_own": {
+    "text": "Pluggから派生したサブジャンル。Izaya Tiji、Duwap Kaine、SummrsらSlayworld周辺のアーティストが源流として語られることが多く、990xや.cutspaceなどクリック＆カット系の電子音楽の作り手と合流して、一つのジャンルになった。",
+    "url": "https://note.com/hotmilkissweet/n/n08c17f305db0",
+    "ref": "ホットミルクが甘い理由「2026年注目度急上昇サブジャンルAMBIENT RAPについて知ってること」note（2026）"
+   },
+   "en_own": {
+    "text": "An offshoot of plugg. Its roots are usually traced to Izaya Tiji, Duwap Kaine, Summrs and others around Slayworld, and it settled into a genre of its own when it met click-and-cut electronic producers such as 990x and .cutspace.",
+    "url": "https://note.com/hotmilkissweet/n/n08c17f305db0",
+    "ref": "ホットミルクが甘い理由 (hotmilkissweet), \"2026年注目度急上昇サブジャンルAMBIENT RAPについて知ってること\", note (2026)"
+   }
+  },
+  "Plugg": {
+   "ja_own": {
+    "text": "アトランタのプロデューサーMexikoDroが、StoopidXoolと2013年に作った集団BeatPluggzから始まったトラップの一種。Zaytovenの影響を受けた激しい重低音（808）と、くり返し耳に残るメロディーで、SoundCloudを通して広まった。",
+    "url": "https://soundcloud.com/stories/post/dive-into-atlantas-underground-hip-hop-community-in-scenes-plugg",
+    "ref": "SoundCloud Stories「Dive into Atlanta’s underground Hip-Hop community in SCENES: plugg」"
+   },
+   "en_own": {
+    "text": "A style of trap that began in Atlanta with BeatPluggz, the collective that producer MexikoDro formed with StoopidXool in 2013. Its aggressive 808s and hypnotic melodies, drawn from Zaytoven's production, spread quickly across SoundCloud.",
+    "url": "https://soundcloud.com/stories/post/dive-into-atlantas-underground-hip-hop-community-in-scenes-plugg",
+    "ref": "SoundCloud Stories, \"Dive into Atlanta’s underground Hip-Hop community in SCENES: plugg\""
+   }
+  },
+  "Dark Plugg": {
+   "ja_own": {
+    "text": "Pluggから分かれた暗い作風。地を揺らすような重低音（808）とゆがんだメロディーが特徴で、tdf、boolymon、perc40らのプロデューサーが形を作ってきた。",
+    "url": "https://www.thefader.com/2025/02/13/goxan-lazer-dim-700-dark-plugg-producuer-interview",
+    "ref": "Vivian Medithi「Goxan on Lazer Dim 700, dark plugg, and alarm 808s」The FADER（2025）"
+   },
+   "en_own": {
+    "text": "A darker offshoot of plugg, built on enormous 808s and warped melodies, defined and refined by producers such as tdf, boolymon and perc40.",
+    "url": "https://www.thefader.com/2025/02/13/goxan-lazer-dim-700-dark-plugg-producuer-interview",
+    "ref": "Vivian Medithi, \"Goxan on Lazer Dim 700, dark plugg, and alarm 808s\", The FADER (2025)"
+   }
+  },
+  "Stepteam": {
+   "ja_own": {
+    "text": "ivvys、maajins、sxpranoの3人のプロデューサー集団#stepTeamから生まれた作風で、つまずいて跳ねるように聞こえる変則的なドラムが特徴。リズムの元として、ivvysはアンビエントなトラップ、EDM、フットワークを挙げている。",
+    "url": "https://www.thefader.com/2025/05/01/ivvys-stepteam-producer-interview",
+    "ref": "Vivian Medithi「How ivvys and #stepTeam unlocked new rhythms in rap production」The FADER（2025）"
+   },
+   "en_own": {
+    "text": "The style of #stepTeam, the producer trio of ivvys, maajins and sxprano, built on syncopated drums that seem to skip, stutter and glitch. ivvys names ambient trap, EDM and footwork as the sources of its rhythms.",
+    "url": "https://www.thefader.com/2025/05/01/ivvys-stepteam-producer-interview",
+    "ref": "Vivian Medithi, \"How ivvys and #stepTeam unlocked new rhythms in rap production\", The FADER (2025)"
+   }
+  },
+  "Experimental Hip Hop": {
+   "ja_own": {
+    "text": "決まった音ではなく、作り方の姿勢を指すヒップホップの呼び名。ドリルやブーンバップのようにドラムで聞き分けられるものではなく、大手レーベルのふつうのラップの枠から外れたものが、広く「エクスペリメンタル」と呼ばれてきた。",
+    "url": "https://www.okayplayer.com/so-what-exactly-is-experimental-rap-anyway-we-asked-six-rappers-producers-and-journalists/1430855",
+    "ref": "andre gee「So What Exactly is Experimental Rap Anyway? We Asked Six Rappers, Producers and Journalists」Okayplayer（2026）"
+   },
+   "en_own": {
+    "text": "A label for hip hop that names an approach rather than a sound. Unlike drill or boom bap, it cannot be identified by its drums alone, and almost anything that steps outside the confines of a conventional major-label rap release has been called experimental.",
+    "url": "https://www.okayplayer.com/so-what-exactly-is-experimental-rap-anyway-we-asked-six-rappers-producers-and-journalists/1430855",
+    "ref": "andre gee, \"So What Exactly is Experimental Rap Anyway? We Asked Six Rappers, Producers and Journalists\", Okayplayer (2026)"
+   }
+  },
+  "Krush Club": {
+   "ja_own": {
+    "text": "HexDから派生したダンスミュージック。Hyperpopの影響が強く、あえて音質を粗く荒らした（ビットクラッシュした）音が多い。2022年の終わりごろにLumi Athenaの「Smoke It Off!」がTikTokで広まり、似た曲がたくさん作られた。",
+    "url": "https://note.com/hotmilkissweet/n/nd9b5de9e1194",
+    "ref": "ホットミルクが甘い理由「2023年の覇権ジャンル、Krush Club(HexD),Sigilkoreについて」note（2023）"
+   },
+   "en_own": {
+    "text": "A dance offshoot of HexD with a strong hyperpop influence, usually (though not always) bitcrushed. After Lumi Athena's \"Smoke It Off!\" spread on TikTok around the end of 2022, a wave of similar tracks followed.",
+    "url": "https://note.com/hotmilkissweet/n/nd9b5de9e1194",
+    "ref": "ホットミルクが甘い理由 (hotmilkissweet), \"2023年の覇権ジャンル、Krush Club(HexD),Sigilkoreについて\", note (2023)"
    }
   }
  }
