@@ -806,7 +806,14 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .notes__grp--6, .tl__grp--6 { --grp: var(--grp-6); }
 .notes__grp { color: var(--grp); }
 /* the timeline: a sunken panel that scrolls both ways; nodes are links over an SVG of lines */
-/* two fingers stretch the years (notes.js), so the page itself does not zoom here */
+/* two fingers stretch the years (notes.js), so the page itself does not zoom here. No scrollbars
+   on touch screens: they took room from the drawing, and the sideways one did not move under a
+   finger. A mouse keeps them, and can also drag the drawing */
+@media (pointer: coarse) {
+  .tl { scrollbar-width: none; }
+  .tl::-webkit-scrollbar { display: none; }
+}
+.tl.is-dragging { cursor: grabbing; }
 .tl { overflow: auto; max-height: 75vh; touch-action: pan-x pan-y; background: var(--win-2); border: 2px solid; border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md); }
 .tl__canvas { position: relative; }
 /* the box for a chosen genre: a small window under the panel, so it hides none of the drawing */

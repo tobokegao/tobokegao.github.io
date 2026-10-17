@@ -509,6 +509,30 @@
       if (!wheel) wheel = requestAnimationFrame(function () { wheel = 0; zoom(next, lod, px, py); });
       else want = Math.max(MIN, Math.min(MAX, next));
     }, { passive: false });
+    // a mouse moves the drawing by dragging it (the panel has no scrollbars); a drag that moved
+    // does not count as a click, so it neither opens a box nor closes one
+    var drag = null, dragged = false;
+    el.addEventListener("pointerdown", function (e) {
+      if (e.pointerType !== "mouse" || e.button !== 0) return;
+      drag = { x: e.clientX, y: e.clientY, l: el.scrollLeft, t: el.scrollTop };
+      dragged = false;
+    });
+    window.addEventListener("pointermove", function (e) {
+      if (!drag) return;
+      var dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+      if (!dragged && Math.abs(dx) + Math.abs(dy) < 6) return;
+      dragged = true;
+      el.classList.add("is-dragging");
+      el.scrollLeft = drag.l - dx;
+      el.scrollTop = drag.t - dy;
+    });
+    window.addEventListener("pointerup", function () {
+      drag = null;
+      el.classList.remove("is-dragging");
+    });
+    el.addEventListener("click", function (e) {
+      if (dragged) { e.preventDefault(); e.stopPropagation(); dragged = false; }
+    }, true);
     // the buttons for a mouse: a step wider or narrower, a line taller or shorter
     document.querySelectorAll("[data-z]").forEach(function (b) {
       b.addEventListener("click", function () {

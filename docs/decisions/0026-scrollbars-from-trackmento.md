@@ -11,4 +11,4 @@
   - `scrollbar-color` / `scrollbar-width` を `@supports` の外に書かない（Chromeが `::-webkit-scrollbar` を丸ごと無視する）。
   - スクロールバーの部品に、外へ出る `box-shadow` を使わない（WebKitが描き直さず、線が溝に残る）。
   - 色を変えるときは、絵（`--sb-frame`、`--sb-grip-v/h`、`--sb-arrow-*`）の中の色も昼と夜の両方で直す（SVGの中からはCSS変数が読めない）。
-  - TRACKMENTOのスマホ用の自前のスクロールバー（`attachTouchScrollbar`）は、まだ移していない。
+  - スマホ用の自前のスクロールバー（`attachTouchScrollbar`）は移さない。スマホでは音楽相関図の枠の中にスクロールバーが出ず、出しても指で横に動かせなかったので、指で触る画面では枠のスクロールバーを消す（場所も取っていた）。PCでは出したまま、図をマウスでつかんで動かすこともできる。
