@@ -42,9 +42,11 @@ PROPS = [("stylisticOrigin", "self", "src"), ("derivative", "other", "src"),
 
 
 def sparql(query: str) -> list[dict]:
-    """Ask the public SPARQL endpoint (the per-resource pages of large genres are slow)."""
-    url = SPARQL + "?" + urllib.parse.urlencode({"query": query, "format": "application/sparql-results+json"})
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    """Ask the public SPARQL endpoint (the per-resource pages of large genres are slow).
+    Sent as a POST: with 150 genres the query is too long for a URL (400 Bad Request)."""
+    body = urllib.parse.urlencode({"query": query, "format": "application/sparql-results+json"}).encode()
+    req = urllib.request.Request(SPARQL, data=body, headers={
+        "User-Agent": UA, "Content-Type": "application/x-www-form-urlencoded"})
     with urllib.request.urlopen(req, timeout=120) as r:
         return json.load(r)["results"]["bindings"]
 

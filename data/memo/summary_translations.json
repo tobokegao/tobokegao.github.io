@@ -413,5 +413,137 @@
    "from": "田楽（でんがく）は、平安時代中期に成立した日本の伝統芸能。楽と躍りなどから成る。",
    "text": "Dengaku is a traditional Japanese performing art that took shape in the middle of the Heian period. It is made up of music and dance."
   }
+ },
+ "AOR": {
+  "en": {
+   "from": "AOR（エーオーアール）とは、アルバム・オリエンテッド・ロック（Album-Oriented Rock）、もしくはアダルト・オリエンテッド・ロック（Adult-Oriented Rock）の略語で、ポピュラー音楽のジャンルの一つ。",
+   "text": "AOR is short for album-oriented rock, or adult-oriented rock, and is a genre of popular music."
+  }
+ },
+ "Acid Rock": {
+  "ja": {
+   "from": "Acid rock is a loosely defined type of rock music that evolved out of the mid-1960s garage punk movement and helped launch the psychedelic subculture. While the term has sometimes been used interchangeably with \"psychedelic rock\", acid rock also specifically refers to a more musically intense, rawer, or heavier subgenre or sibling of psychedelic rock.",
+   "text": "アシッド・ロックは、1960年代半ばのガレージ・パンクの流れから育ち、サイケデリックな若者文化の始まりを後押しした、輪郭のゆるいロックの一種。サイケデリック・ロックと同じ意味で使われることもあるが、より激しく、荒く、重いサイケデリック・ロックの一分野や、その兄弟のような音を特に指すこともある。"
+  }
+ },
+ "Ambient Techno": {
+  "ja": {
+   "from": "Ambient techno is a subgenre of techno that incorporates the atmospheric textures of ambient music with the rhythmic elements and production of techno. It was pioneered by 1990s electronic artists such as Aphex Twin, Carl Craig, The Orb, The Future Sound of London, the Black Dog, Pete Namlook and Biosphere.",
+   "text": "アンビエント・テクノは、アンビエントの空気のような響きに、テクノのリズムや音作りを合わせたテクノの一分野。Aphex Twin、Carl Craig、The Orb、The Future Sound of London、The Black Dog、Pete Namlook、Biosphereなど、1990年代の電子音楽の作り手が切り開いた。"
+  }
+ },
+ "Big Beat": {
+  "en": {
+   "from": "ビッグ・ビート（英: Big beat）は、電子音楽のサブジャンル。1990年代半ばにイギリスで発祥。",
+   "text": "Big beat is a subgenre of electronic music that began in Britain in the mid-1990s."
+  }
+ },
+ "Boogie-woogie": {
+  "en": {
+   "from": "ブギウギ（boogie-woogie）は、ブルースのサブジャンルの一つであり、1920年代末頃に人気を博した。その原型はアフリカ系アメリカ人のコミュニティの中で1870年代頃から存在していたとされる。",
+   "text": "Boogie-woogie is a subgenre of the blues that became popular around the end of the 1920s. Its earliest forms are said to have existed in African-American communities from around the 1870s."
+  }
+ },
+ "Broken Beat": {
+  "ja": {
+   "from": "Broken beat (sometimes referred to as \"bruk\") is an electronic dance music genre that emerged in the late 1990s and is characterized by syncopated beats and frenetic, choppy rhythms, often alongside female vocals and elements inspired by 1970s jazz-funk. It has been heavily influenced by styles such as house, drum and bass, hip hop, techno, acid jazz, and R&B. The eclectic style generally avoided rigid four-on-the-floor rhythms and could make use of samplers, analogue synths, and live instrumentation.",
+   "text": "ブロークン・ビート（「bruk」とも呼ばれる）は、1990年代末に現れたエレクトロニック・ダンス・ミュージック。拍をずらしたビートと、せわしなく途切れるリズムが特徴で、女性の歌声や、1970年代のジャズ・ファンクから来た要素を伴うことが多い。ハウス、ドラムンベース、ヒップホップ、テクノ、アシッド・ジャズ、R&Bなどの影響を強く受けている。決まった四つ打ちは避けられることが多く、サンプラー、アナログ・シンセ、生の楽器が使われる。"
+  }
+ },
+ "Dub": {
+  "en": {
+   "from": "ダブ（dub）は、レゲエから派生した音楽制作手法、及び音楽ジャンルである。ダブ制作に携わる音楽エンジニアのことを特にダブ・エンジニアという。",
+   "text": "Dub is both a music production technique and a genre that grew out of reggae. Engineers who work on dub are known in particular as dub engineers."
+  }
+ },
+ "Dungeon Synth": {
+  "ja": {
+   "from": "Dungeon synth is a genre of electronic music derived from black metal and dark ambient. The style emerged in the early 1990s, predominantly among members of the early Norwegian black metal scene.",
+   "text": "ダンジョン・シンセは、ブラックメタルとダーク・アンビエントから生まれた電子音楽のジャンル。1990年代初め、主に初期のノルウェーのブラックメタル・シーンにいた人たちのあいだで現れた。"
+  }
+ },
+ "EDM Trap": {
+  "ja": {
+   "from": "EDM trap music, Trap EDM, or simply Trap, is a fusion genre of hip-hop, rave, and electronic dance music (EDM), that originated in the early 2010s on peaking popularity of big room house and hip hop trap genres. It blends elements of hip hop trap, which is an offshoot of Southern hip-hop, with elements of EDM like build-ups, drops, dense production with rave music synthesizers, and breakdowns.",
+   "text": "EDMトラップ（トラップEDM、または単にトラップとも）は、ヒップホップとレイヴの音楽、エレクトロニック・ダンス・ミュージック（EDM）を合わせたジャンル。ビッグルーム・ハウスとヒップホップのトラップが人気の頂点にあった2010年代初めに生まれた。南部のヒップホップから分かれたトラップの要素に、盛り上げ、ドロップ、レイヴのシンセを重ねた厚い音作り、ブレイクダウンといったEDMの要素を合わせている。"
+  }
+ },
+ "Electric Blues": {
+  "ja": {
+   "from": "Electric blues is blues music distinguished by the use of electric amplification for musical instruments. The guitar was the first instrument to be popularly amplified and used by early pioneers T-Bone Walker in the late 1930s and John Lee Hooker and Muddy Waters in the 1940s.",
+   "text": "エレクトリック・ブルースは、楽器の音をアンプなどで電気的に増幅させて演奏するブルース。最初に広く電気で鳴らされた楽器はギターで、1930年代末のT-Bone Walker、1940年代のJohn Lee HookerやMuddy Watersが先駆けとなった。"
+  }
+ },
+ "Eurodisco": {
+  "ja": {
+   "from": "Eurodisco (also spelled as Euro disco) is a genre of electronic dance music that evolved from disco in the middle 1970s. The term \"Eurodisco\" first appeared in magazines geared towards popular music and was used by the UK magazine Blues & Soul to describe the music of Boney M. Music producers such as Giorgio Moroder, Frank Farian and Michael Kunze (Silver Convention) are credited as pioneers of the genre.",
+   "text": "ユーロディスコは、1970年代半ばにディスコから育ったエレクトロニック・ダンス・ミュージック。「ユーロディスコ」という言葉はポピュラー音楽の雑誌に初めて現れ、イギリスの雑誌Blues & SoulがBoney Mの音楽を表現するのに使った。Giorgio Moroder、Frank Farian、Michael Kunze（Silver Convention）といったプロデューサーが先駆けとされる。"
+  }
+ },
+ "Gospel": {
+  "en": {
+   "from": "ゴスペル (英語：Gospel music) または福音音楽（ふくいんおんがく）は、アメリカ発祥の音楽の一ジャンル。元来はキリスト教プロテスタント系の宗教音楽。",
+   "text": "Gospel (gospel music) is a genre of music that began in the United States. It was originally the religious music of Protestant Christianity."
+  }
+ },
+ "Grime": {
+  "ja": {
+   "from": "Grime is a genre of electronic dance music (EDM) that emerged in London in the early 2000s. It developed out of the earlier UK dance style UK garage, and draws influences from jungle, dancehall, and hip-hop.",
+   "text": "グライムは、2000年代初めにロンドンで現れたエレクトロニック・ダンス・ミュージック（EDM）。それより前のイギリスのダンス音楽UKガラージから育ち、ジャングル、ダンスホール、ヒップホップの影響を受けている。"
+  }
+ },
+ "Industrial": {
+  "ja": {
+   "from": "Industrial music (or simply industrial) is a subgenre of experimental music that emerged in the mid-to late 1970s, primarily inspired by industrial society, while drawing influences from avant-garde and early electronic music genres such as musique concrète, tape music, noise and sound collage. The term was coined in 1976 by Monte Cazazza and adopted by Throbbing Gristle with the founding of Industrial Records.",
+   "text": "インダストリアル（インダストリアル・ミュージック）は、1970年代半ばから後半に現れた実験音楽の一分野。主に工業化した社会から着想を得て、前衛音楽や、ミュジーク・コンクレート、テープ音楽、ノイズ、音のコラージュといった初期の電子音楽の影響を受けている。この言葉は1976年にMonte Cazazzaが作り、Throbbing GristleがレーベルIndustrial Recordsを始めるときに使った。"
+  }
+ },
+ "Italo Disco": {
+  "en": {
+   "from": "イタロ・ディスコ（伊: Italo disco, Italo-disco）は、イタリアで生まれ、主に1980年代に制作された音楽ジャンル。当時のアンダーグラウンドなダンス・ミュージックやポップ・ミュージック、電子音楽、国内や海外の音楽（アメリカのHi-NRG、フランスのユーロ・ディスコ）から進化し、多様なジャンルへと発展した。",
+   "text": "Italo disco is a genre of music born in Italy and made mainly in the 1980s. It evolved from the underground dance and pop music, electronic music, and both domestic and foreign music of the time (American Hi-NRG, French Euro disco), and went on to branch into many genres."
+  }
+ },
+ "Kwaito": {
+  "ja": {
+   "from": "Kwaito is a music genre that emerged in Soweto, Johannesburg, South Africa, between the late 1980s and 1990s. It is a sound that features the use of South African sounds and samples.",
+   "text": "クワイトは、1980年代末から1990年代にかけて、南アフリカのヨハネスブルグのソウェトで現れた音楽のジャンル。南アフリカ特有の音やサンプリングを使うのが特徴。"
+  }
+ },
+ "Latin": {
+  "ja": {
+   "from": "Latin music (Portuguese and Spanish: música latina) is a term used by the music industry as a catch-all category for various styles of music from Ibero-America, which encompasses Latin America, Spain, Portugal, and the Latino population in Canada and the United States, as well as music that is sung in either Spanish or Portuguese. It may also include music from other territories where Spanish- and Portuguese-language music is made.",
+   "text": "ラテン音楽（スペイン語・ポルトガル語でmúsica latina）は、音楽業界が、イベロアメリカのさまざまな音楽をまとめて呼ぶための言葉。イベロアメリカには、ラテンアメリカ、スペイン、ポルトガル、カナダとアメリカのラテン系の人々が含まれ、スペイン語かポルトガル語で歌われる音楽も入る。ほかの地域でスペイン語やポルトガル語で作られる音楽を含むこともある。"
+  }
+ },
+ "Minimal Music": {
+  "en": {
+   "from": "ミニマル・ミュージック（Minimal music）は、音の動きを最小限に抑え、パターン化された音型を反復させる音楽。現代音楽のムーブメントのひとつ。",
+   "text": "Minimal music is music that keeps the movement of sound to a minimum and repeats patterned figures. It is one of the movements of contemporary music."
+  }
+ },
+ "New Wave": {
+  "en": {
+   "from": "音楽におけるニュー・ウェイヴ（英語: new wave）は、1970年代後半から1980年代前半にかけて流行したロックの一ジャンルである。",
+   "text": "In music, new wave is a genre of rock that was popular from the late 1970s to the early 1980s."
+  }
+ },
+ "Twee Pop": {
+  "ja": {
+   "from": "Twee pop is a subgenre of indie pop that originally emerged in the United Kingdom during the mid-to late 1980s. The style has been described as \"excessively or affectedly quaint, pretty, or sentimental\" and initially rose to prominence through the NME's C86 cassette compilation, with AllMusic describing twee as \"simplicity and innocence\" as well as \"boy-girl harmonies, lovelorn lyrics, infectious melodies, and simple, unaffected performances\".",
+   "text": "トゥイー・ポップは、1980年代半ばから後半にイギリスで生まれた、インディー・ポップの一分野。「やりすぎなほど、あるいは気取ったほどに古風で、かわいらしく、感傷的」と言われることがあり、NMEのカセットのコンピ『C86』をきっかけに広く知られるようになった。AllMusicは、トゥイーを「素朴さと無垢さ」とし、男女のハーモニー、恋に悩む歌詞、耳に残る旋律、飾らない演奏を挙げている。"
+  }
+ },
+ "無調音楽": {
+  "ja": {
+   "from": "Atonality in its broadest sense is music that lacks a tonal center, or key. Atonality, in this sense, usually describes compositions written from about the early 20th century to the present day, where a hierarchy of harmonies focusing on a single, central triad is not used, and the notes of the chromatic scale function independently of one another.",
+   "text": "無調音楽は、いちばん広い意味では、中心となる調を持たない音楽のこと。この意味では、主に20世紀初めから今までに書かれた曲を指し、一つの中心の三和音を軸にした和音の主従関係（ヒエラルキー）を持たず、半音階の音どうしがそれぞれ別々に働く。"
+  }
+ },
+ "神楽": {
+  "ja": {
+   "from": "Kagura (神楽(かぐら), \"god-entertainment\") is a type of Shinto ritual ceremonial dance. The term is a contraction of the phrase kami no kura (\"seat of god\"), indicating the presence of gods (kami) in the practice.",
+   "text": "神楽（かぐら）は、神道の儀式で舞われる踊りの一種。「神の座（かみのくら）」を縮めた言葉とされ、儀式の場に神が宿っていることを表している。"
+  }
  }
 }

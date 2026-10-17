@@ -448,5 +448,77 @@
    "ja": "BRUTUS「韓国文化通信 Vol.15 ポンチャック歌手・Lee Park Sa」",
    "en": "BRUTUS, \"Korean Cultural News Vol. 15: Ponchak Singer Lee Park Sa\""
   }
+ },
+ "Brass Band": {
+  "ja": "金管楽器と打楽器で編成する楽団。イギリスでは1810年代にナポレオン戦争から戻った軍楽隊の楽士が始め、1820年代の終わりから町や炭鉱の楽団へ広がった。",
+  "en": "A band made up of brass instruments and percussion. In Britain, military musicians returning from the Napoleonic Wars formed the first ones in the 1810s, and civilian town and colliery bands followed from the late 1820s.",
+  "url": "https://doi.org/10.1017/S0018246X24000372",
+  "ref": {
+   "ja": "Eamonn O'Keeffe「British Military Music and the Legacy of the Napoleonic Wars」The Historical Journal（2024）",
+   "en": "Eamonn O'Keeffe, \"British Military Music and the Legacy of the Napoleonic Wars\", The Historical Journal (2024)"
+  }
+ },
+ "Chopped and Screwed": {
+  "ja": "1990年代はじめにヒューストン南部でDJ Screwが始めたヒップホップのミックスの手法。同じレコード2枚のあいだを行き来しながらテープに録り、それをさらに遅く回して、ゆっくりと重い音にする。",
+  "en": "A hip hop mixing style developed by DJ Screw on Houston's Southside in the early 1990s: cutting back and forth between two copies of one record onto tape, then slowing the taped mix down further.",
+  "url": "https://daily.redbullmusicacademy.com/2015/05/dj-screw-feature",
+  "ref": {
+   "ja": "Lance Scott Walker「DJ Screw: A Fast Life In Slow Motion」Red Bull Music Academy Daily（2015）",
+   "en": "Lance Scott Walker, \"DJ Screw: A Fast Life In Slow Motion\", Red Bull Music Academy Daily (2015)"
+  }
+ },
+ "Folk": {
+  "ja": "楽譜ではなく耳で聞いて、家族や身近な集まりのなかで受け継がれてきた音楽。多くは農村に根ざし、仕事や儀式などの暮らしの場と結びついている。",
+  "en": "Traditional music handed down by ear within families and small communities rather than learned from notation. It is mostly rural in origin and tied to everyday activities such as work and ritual.",
+  "url": "https://www.britannica.com/art/folk-music",
+  "ref": {
+   "ja": "ブリタニカ百科事典「folk music」",
+   "en": "Encyclopaedia Britannica, \"folk music\""
+  }
+ },
+ "Hard Techno": {
+  "ja": "1990年代はじめに生まれた、速く荒々しいテクノ。Jeff Millsが1992年にベルリンのTresorから出した『Waveform Transmission Vol. 1』の、当時としては速いループの音が、その流れの始まりとされる。",
+  "en": "A faster, harsher strain of techno that took shape in the early 1990s. Jeff Mills's 1992 album \"Waveform Transmission Vol. 1\" on Berlin's Tresor, built on relentless loops at up to 149 bpm, is credited with starting it.",
+  "url": "https://djmag.com/features/how-jeff-mills-waveform-vol-1-started-new-era-techno",
+  "ref": {
+   "ja": "Ben Cardew「How Jeff Mills' 'Waveform Vol. 1' started a new era of techno」DJ Mag（2022）",
+   "en": "Ben Cardew, \"How Jeff Mills' 'Waveform Vol. 1' started a new era of techno\", DJ Mag (2022)"
+  }
+ },
+ "Bubblegum Bass": {
+  "ja": "2013年にロンドンでA. G. Cookが始めたレーベルPC Musicのまわりで生まれた電子ポップ。ユーロダンスの派手なシンセ、グライムの低音、ハッピーハードコアの高い声に、わざとかわいらしさを強調した表現を合わせた音楽で、のちのハイパーポップの最初の波とされる。",
+  "en": "Electronic pop from the circle around PC Music, the London label A. G. Cook started in 2013, pairing Eurodance-style synths, grime sub-bass and pitched-up happy-hardcore vocals with a deliberately cute image. It is considered the first wave of what became hyperpop.",
+  "url": "https://pitchfork.com/features/article/the-lost-promises-of-hyperpoptimism/",
+  "ref": {
+   "ja": "Kieran Press-Reynolds「The Lost Promises of Hyperpoptimism」Pitchfork（2024）、Lanre Bakare「PC Music: clubland's cute new direction」The Guardian（2014）",
+   "en": "Kieran Press-Reynolds, \"The Lost Promises of Hyperpoptimism\", Pitchfork (2024); Lanre Bakare, \"PC Music: clubland's cute new direction\", The Guardian (2014)"
+  }
+ },
+ "Indietronica": {
+  "ja": "ロックに根をもつバンドが、シンセサイザーやサンプラー、ドラムマシンを使って作る音楽をまとめた呼び名。1990年代はじめのStereolabやDisco Infernoが最初の波で、2000年代に宅録とソフトシンセが広まって一気に増えた。",
+  "en": "A catch-all for rock-rooted acts making music with synthesizers, samplers and drum machines, drawing on krautrock, synth-pop and early electronic composers. The first wave came in the early 1990s with Stereolab and Disco Inferno, and it grew fast in the 2000s as home recording spread.",
+  "url": "https://www.allmusic.com/style/indie-electronic-ma0000012275",
+  "ref": {
+   "ja": "AllMusic「Indie Electronic」",
+   "en": "AllMusic, \"Indie Electronic\""
+  }
+ },
+ "Tsonga Disco": {
+  "ja": "南アフリカで、おもにツォンガ語で歌われるディスコ。1985年にPaul Ndlovuが最初の曲を出したのが始まりで、のちにJoe Shirimaniが自作やPenny Pennyのプロデュースで受け継いだ。",
+  "en": "Disco from South Africa sung mainly in Xitsonga. It began with Paul Ndlovu's first songs in 1985 and was carried on by Joe Shirimani, both in his own records and as writer-producer for Penny Penny.",
+  "url": "https://journal.ru.ac.za/index.php/africanmusic/article/view/1230",
+  "ref": {
+   "ja": "Ignatia Madalane「From Paul to Penny: the emergence and development of Tsonga disco 1985-1990s」African Music 10(1)（2015）",
+   "en": "Ignatia Madalane, \"From Paul to Penny: the emergence and development of Tsonga disco 1985-1990s\", African Music 10(1) (2015)"
+  }
+ },
+ "ニューミュージック": {
+  "ja": "1970年代前半から出てきた日本のポピュラー音楽。フォークやロックの影響を受けた歌い手が自分で曲を作って歌い、それまでの歌謡曲と違って、アルバムとコンサートを中心に支持を集めた。",
+  "en": "Japanese popular music that emerged in the early 1970s, made mostly by singer-songwriters influenced by folk and rock. Unlike kayōkyoku, it won its audience mainly through albums and concerts rather than the media-driven hit system.",
+  "url": "https://kotobank.jp/word/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF",
+  "ref": {
+   "ja": "コトバンク「ニューミュージック」（百科事典マイペディア、デジタル大辞泉、精選版 日本国語大辞典）",
+   "en": "Kotobank, \"New Music\" (Hyakka Jiten Mypedia; Digital Daijisen; Seisenban Nihon Kokugo Daijiten)"
+  }
  }
 }

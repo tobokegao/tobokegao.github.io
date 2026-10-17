@@ -24,6 +24,26 @@
     ]
    }
   },
+  "AOR": {
+   "ja": {
+    "title": "AOR",
+    "text": "AOR（エーオーアール）とは、アルバム・オリエンテッド・ロック（Album-Oriented Rock）、もしくはアダルト・オリエンテッド・ロック（Adult-Oriented Rock）の略語で、ポピュラー音楽のジャンルの一つ。",
+    "url": "https://ja.wikipedia.org/wiki/AOR"
+   },
+   "en": {
+    "title": "Album-oriented rock",
+    "text": "Album-oriented rock (AOR, originally album-oriented radio) is a radio format created in the United States in the late 1960s that focuses on the full repertoire of rock albums and is currently associated with classic rock. The format arose when American FM radio stations decided to play tracks by hard rock and progressive rock artists.",
+    "url": "https://en.wikipedia.org/wiki/Album-oriented_rock",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from January 2024"
+    ]
+   },
+   "en_tr": {
+    "text": "AOR is short for album-oriented rock, or adult-oriented rock, and is a genre of popular music.",
+    "url": "https://ja.wikipedia.org/wiki/AOR"
+   }
+  },
   "Acid House": {
    "ja": {
     "title": "アシッド・ハウス",
@@ -50,6 +70,17 @@
      "All articles with unsourced statements",
      "Articles with unsourced statements from July 2025"
     ]
+   }
+  },
+  "Acid Rock": {
+   "en": {
+    "title": "Acid rock",
+    "text": "Acid rock is a loosely defined type of rock music that evolved out of the mid-1960s garage punk movement and helped launch the psychedelic subculture. While the term has sometimes been used interchangeably with \"psychedelic rock\", acid rock also specifically refers to a more musically intense, rawer, or heavier subgenre or sibling of psychedelic rock.",
+    "url": "https://en.wikipedia.org/wiki/Acid_rock"
+   },
+   "ja_tr": {
+    "text": "アシッド・ロックは、1960年代半ばのガレージ・パンクの流れから育ち、サイケデリックな若者文化の始まりを後押しした、輪郭のゆるいロックの一種。サイケデリック・ロックと同じ意味で使われることもあるが、より激しく、荒く、重いサイケデリック・ロックの一分野や、その兄弟のような音を特に指すこともある。",
+    "url": "https://en.wikipedia.org/wiki/Acid_rock"
    }
   },
   "Alternative Rock": {
@@ -89,6 +120,37 @@
    "en_tr": {
     "text": "Ambient music (環境音楽) is a genre that emphasizes tone and atmosphere over traditional musical structure and rhythm. It may have no clear structure, beat or structured melody.",
     "url": "https://ja.wikipedia.org/wiki/%E7%92%B0%E5%A2%83%E9%9F%B3%E6%A5%BD"
+   }
+  },
+  "Ambient Techno": {
+   "ja": {
+    "title": "アンビエント・テクノ",
+    "text": "アンビエント・テクノ（英: ambient techno）は、テクノの一ジャンル。アンビエント・ハウスと類似しているが、一般的なテクノで使用されるシンセサイザーやドラムマシンの音をより不明瞭にした音を特徴としている。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%B3%E3%83%93%E3%82%A8%E3%83%B3%E3%83%88%E3%83%BB%E3%83%86%E3%82%AF%E3%83%8E",
+    "doubt": [
+     "出典を必要とする記事/2019年1月"
+    ]
+   },
+   "en": {
+    "title": "Ambient techno",
+    "text": "Ambient techno is a subgenre of techno that incorporates the atmospheric textures of ambient music with the rhythmic elements and production of techno. It was pioneered by 1990s electronic artists such as Aphex Twin, Carl Craig, The Orb, The Future Sound of London, the Black Dog, Pete Namlook and Biosphere.",
+    "url": "https://en.wikipedia.org/wiki/Ambient_techno"
+   },
+   "ja_tr": {
+    "text": "アンビエント・テクノは、アンビエントの空気のような響きに、テクノのリズムや音作りを合わせたテクノの一分野。Aphex Twin、Carl Craig、The Orb、The Future Sound of London、The Black Dog、Pete Namlook、Biosphereなど、1990年代の電子音楽の作り手が切り開いた。",
+    "url": "https://en.wikipedia.org/wiki/Ambient_techno"
+   }
+  },
+  "Art Rock": {
+   "ja": {
+    "title": "アート・ロック",
+    "text": "アート・ロック（Art rock）は、主に1960年代後半に登場した芸術的要素を持つロックバンドや、その作品を分類した音楽用語である。70年代初頭にはニュー・ロックという言葉も生まれている。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%BC%E3%83%88%E3%83%BB%E3%83%AD%E3%83%83%E3%82%AF"
+   },
+   "en": {
+    "title": "Art rock",
+    "text": "Art rock is rock music that aims to distinguish the genre from popular entertainment, with the term typically being applied as the middle ground between mainstream and experimental rock. Art rock primarily draws influences from the wider art world and academia; which includes contemporary art, art music, avant-garde art, experimental music, avant-garde music, alongside classical music and jazz.",
+    "url": "https://en.wikipedia.org/wiki/Art_rock"
    }
   },
   "Baile Funk": {
@@ -205,6 +267,27 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%83%E3%82%B0%E3%83%90%E3%83%B3%E3%83%89"
    }
   },
+  "Big Beat": {
+   "ja": {
+    "title": "ビッグ・ビート",
+    "text": "ビッグ・ビート（英: Big beat）は、電子音楽のサブジャンル。1990年代半ばにイギリスで発祥。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%83%E3%82%B0%E3%83%BB%E3%83%93%E3%83%BC%E3%83%88"
+   },
+   "en": {
+    "title": "Big beat",
+    "text": "Big beat is an electronic music genre that usually uses heavy breakbeats and synthesizer-generated loops and patterns – common to acid house/techno. The term has been used by the British music industry to describe music by artists such as The Prodigy, The Chemical Brothers and Fatboy Slim.",
+    "url": "https://en.wikipedia.org/wiki/Big_beat",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles lacking reliable references from September 2025",
+     "Articles needing additional references from September 2025"
+    ]
+   },
+   "en_tr": {
+    "text": "Big beat is a subgenre of electronic music that began in Britain in the mid-1990s.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%83%E3%82%B0%E3%83%BB%E3%83%93%E3%83%BC%E3%83%88"
+   }
+  },
   "Big Room House": {
    "en": {
     "title": "Big room house",
@@ -242,6 +325,22 @@
     "url": "https://en.wikipedia.org/wiki/Bitpop"
    }
   },
+  "Black Metal": {
+   "ja": {
+    "title": "ブラックメタル",
+    "text": "ブラックメタル（Black Metal）とは、ヘヴィメタルのサブジャンルの一つ。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%83%A1%E3%82%BF%E3%83%AB"
+   },
+   "en": {
+    "title": "Black metal",
+    "text": "Black metal is an extreme subgenre of heavy metal music. Common traits include fast tempos, a shrieking vocal style, heavily distorted guitars played with tremolo picking, raw (lo-fi) recording, unconventional song structures, and an emphasis on atmosphere.",
+    "url": "https://en.wikipedia.org/wiki/Black_metal",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from June 2025"
+    ]
+   }
+  },
   "Blues": {
    "ja": {
     "title": "ブルース",
@@ -264,6 +363,57 @@
     "title": "Blues rock",
     "text": "Blues rock is a fusion genre and form of rock and blues music that relies on the chords/scales and instrumental improvisation of blues. It is mostly an electric ensemble-style music with instrumentation similar to electric blues and rock (electric guitar, electric bass guitar, drums, and sometimes with keyboards and harmonica).",
     "url": "https://en.wikipedia.org/wiki/Blues_rock"
+   }
+  },
+  "Boogie-woogie": {
+   "ja": {
+    "title": "ブギウギ",
+    "text": "ブギウギ（boogie-woogie）は、ブルースのサブジャンルの一つであり、1920年代末頃に人気を博した。その原型はアフリカ系アメリカ人のコミュニティの中で1870年代頃から存在していたとされる。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%96%E3%82%AE%E3%82%A6%E3%82%AE"
+   },
+   "en": {
+    "title": "Boogie-woogie",
+    "text": "Boogie-woogie, also known as boogie, is a genre of blues music that became popular during the late 1920s, but had already developed in African-American communities since the 1870s. It was eventually extended from piano to piano duo and trio, guitar, big band, country and western, and gospel.",
+    "url": "https://en.wikipedia.org/wiki/Boogie-woogie",
+    "doubt": [
+     "All articles lacking reliable references",
+     "All articles needing additional references",
+     "Articles lacking reliable references from July 2026",
+     "Articles needing additional references from November 2017"
+    ]
+   },
+   "en_tr": {
+    "text": "Boogie-woogie is a subgenre of the blues that became popular around the end of the 1920s. Its earliest forms are said to have existed in African-American communities from around the 1870s.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%96%E3%82%AE%E3%82%A6%E3%82%AE"
+   }
+  },
+  "Brass Band": {
+   "ja": {
+    "title": "ブラスバンド",
+    "text": "ブラスバンド（またはブラス・バンド、金管バンド、ラッパ隊、英: brass band）は、狭義において金管楽器を主体として編成される楽団。吹奏楽団とは異なり、ブラスバンドは、一般に金管楽器群と打楽器群によって構成され、通常は木管楽器群や弦楽器群は含まない。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%A9%E3%82%B9%E3%83%90%E3%83%B3%E3%83%89",
+    "doubt": [
+     "出典を必要とする記事/2012年6月"
+    ]
+   },
+   "en": {
+    "title": "Brass band",
+    "text": "A brass band is a musical ensemble generally consisting primarily of brass instruments, most often with a percussion section. Ensembles that include brass and woodwind instruments can in certain traditions also be termed brass bands (particularly in the context of New Orleans and Japan–style brass bands), but may be more correctly termed military bands, concert bands, or \"brass and reed\" bands.",
+    "url": "https://en.wikipedia.org/wiki/Brass_band",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from July 2007"
+    ]
+   },
+   "ja_own": {
+    "text": "金管楽器と打楽器で編成する楽団。イギリスでは1810年代にナポレオン戦争から戻った軍楽隊の楽士が始め、1820年代の終わりから町や炭鉱の楽団へ広がった。",
+    "url": "https://doi.org/10.1017/S0018246X24000372",
+    "ref": "Eamonn O'Keeffe「British Military Music and the Legacy of the Napoleonic Wars」The Historical Journal（2024）"
+   },
+   "en_own": {
+    "text": "A band made up of brass instruments and percussion. In Britain, military musicians returning from the Napoleonic Wars formed the first ones in the 1810s, and civilian town and colliery bands followed from the late 1820s.",
+    "url": "https://doi.org/10.1017/S0018246X24000372",
+    "ref": "Eamonn O'Keeffe, \"British Military Music and the Legacy of the Napoleonic Wars\", The Historical Journal (2024)"
    }
   },
   "Breakbeat": {
@@ -299,6 +449,43 @@
     "title": "Breakcore",
     "text": "Breakcore is a style of electronic dance music that emerged from jungle, hardcore, and drum & bass in the mid-to-late 1990s. It is characterized by very complex and intricate breakbeats and a wide palette of sampling sources played at high tempos, though there is much debate in the breakcore subculture as to what breakcore itself is.",
     "url": "https://en.wikipedia.org/wiki/Breakcore"
+   }
+  },
+  "Britpop": {
+   "ja": {
+    "title": "ブリットポップ",
+    "text": "ブリットポップ（Britpop）またはブリットポップ・ムーブメント（Britpop Movement）は、1990年代にロンドンやマンチェスターを中心に発生したイギリスのポピュラー音楽ムーブメントである。ブリティッシュ・インヴェイジョン、グラム・ロック、パンク・ロックなど、イギリスのロック黄金期の影響を受けたバンドが多くデビューし、イギリス音楽界を盛り上げた。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%AA%E3%83%83%E3%83%88%E3%83%9D%E3%83%83%E3%83%97",
+    "part": [
+     "出典を必要とする記述のある記事/2025年10月"
+    ]
+   },
+   "en": {
+    "title": "Britpop",
+    "text": "Britpop was a British music and cultural movement that emerged in the 1990s. Musically, it produced bright, catchy alternative rock that drew heavily on the traditions of 1960s guitar-based British pop, with lyrics that emphasised national identity and offered commentary on British culture and society.",
+    "url": "https://en.wikipedia.org/wiki/Britpop"
+   }
+  },
+  "Broken Beat": {
+   "ja": {
+    "title": "ブロークンビーツ",
+    "text": "ブロークンビーツ／ブロークンビート（broken beat）またはbrukは、1990年代中期から後期にかけてロンドン西部で生まれたエレクトロニック・ミュージックのジャンル。通常4分の4拍子でシンコペーションを大いに活用したリズムに特徴づけられる。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%AD%E3%83%BC%E3%82%AF%E3%83%B3%E3%83%93%E3%83%BC%E3%83%84",
+    "doubt": [
+     "出典を必要とする記事/2012年6月"
+    ],
+    "part": [
+     "出典を必要とする記述のある記事/2021年4月"
+    ]
+   },
+   "en": {
+    "title": "Broken beat",
+    "text": "Broken beat (sometimes referred to as \"bruk\") is an electronic dance music genre that emerged in the late 1990s and is characterized by syncopated beats and frenetic, choppy rhythms, often alongside female vocals and elements inspired by 1970s jazz-funk. It has been heavily influenced by styles such as house, drum and bass, hip hop, techno, acid jazz, and R&B. The eclectic style generally avoided rigid four-on-the-floor rhythms and could make use of samplers, analogue synths, and live instrumentation.",
+    "url": "https://en.wikipedia.org/wiki/Broken_beat"
+   },
+   "ja_tr": {
+    "text": "ブロークン・ビート（「bruk」とも呼ばれる）は、1990年代末に現れたエレクトロニック・ダンス・ミュージック。拍をずらしたビートと、せわしなく途切れるリズムが特徴で、女性の歌声や、1970年代のジャズ・ファンクから来た要素を伴うことが多い。ハウス、ドラムンベース、ヒップホップ、テクノ、アシッド・ジャズ、R&Bなどの影響を強く受けている。決まった四つ打ちは避けられることが多く、サンプラー、アナログ・シンセ、生の楽器が使われる。",
+    "url": "https://en.wikipedia.org/wiki/Broken_beat"
    }
   },
   "Chicago House": {
@@ -371,6 +558,33 @@
     "ref": "McAlpine, Bits and Pieces: A History of Chiptunes (Oxford University Press)"
    }
   },
+  "Chopped and Screwed": {
+   "en": {
+    "title": "Chopped and screwed",
+    "text": "Chopped and screwed (also called screwed and chopped or slowed and throwed) is a genre of hip-hop music and technique of remixing and sampling music that involves slowing down the tempo and DJing. It was pioneered by DJ Screw, and became a staple in the Houston hip hop scene in the 1990s.",
+    "url": "https://en.wikipedia.org/wiki/Chopped_and_screwed",
+    "doubt": [
+     "All articles lacking reliable references",
+     "All articles needing additional references",
+     "Articles lacking reliable references from December 2020",
+     "Articles needing additional references from April 2017"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from August 2023"
+    ]
+   },
+   "ja_own": {
+    "text": "1990年代はじめにヒューストン南部でDJ Screwが始めたヒップホップのミックスの手法。同じレコード2枚のあいだを行き来しながらテープに録り、それをさらに遅く回して、ゆっくりと重い音にする。",
+    "url": "https://daily.redbullmusicacademy.com/2015/05/dj-screw-feature",
+    "ref": "Lance Scott Walker「DJ Screw: A Fast Life In Slow Motion」Red Bull Music Academy Daily（2015）"
+   },
+   "en_own": {
+    "text": "A hip hop mixing style developed by DJ Screw on Houston's Southside in the early 1990s: cutting back and forth between two copies of one record onto tape, then slowing the taped mix down further.",
+    "url": "https://daily.redbullmusicacademy.com/2015/05/dj-screw-feature",
+    "ref": "Lance Scott Walker, \"DJ Screw: A Fast Life In Slow Motion\", Red Bull Music Academy Daily (2015)"
+   }
+  },
   "Citypop": {
    "ja": {
     "title": "シティ・ポップ",
@@ -422,6 +636,22 @@
     "title": "Cool jazz",
     "text": "Cool jazz is a style and genre of modern jazz music inspired by bebop and big band that arose in the United States after World War II. It is characterized by relaxed tempos and a lighter tone than that used in the fast and complex bebop style. Cool jazz often employs formal arrangements and incorporates elements of classical music.",
     "url": "https://en.wikipedia.org/wiki/Cool_jazz"
+   }
+  },
+  "Dangdut": {
+   "ja": {
+    "title": "ダンドゥット",
+    "text": "ダンドゥット（Dangdut）とは、インドネシアのポピュラー音楽のジャンルである。19７0年代後半から広まったジャンルで、それ以前のポピュラー音楽だったムラユ音楽を基本とし、インドの映画音楽やロックなどの要素を含む。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%80%E3%83%B3%E3%83%89%E3%82%A5%E3%83%83%E3%83%88"
+   },
+   "en": {
+    "title": "Dangdut",
+    "text": "Dangdut () is a genre of Indonesian folk music that is partly derived and fused from Hindustani, Arabic, and, to a lesser extent, Javanese, Malay, Minangkabau, Sundanese and local folk music. Dangdut is the most popular musical genre in Indonesia and very popular in other Maritime Southeast Asian countries because of its melodious instrumentation and vocals.",
+    "url": "https://en.wikipedia.org/wiki/Dangdut",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from January 2025"
+    ]
    }
   },
   "Deep House": {
@@ -528,6 +758,22 @@
     "url": "https://en.wikipedia.org/wiki/Djent"
    }
   },
+  "Doom Metal": {
+   "ja": {
+    "title": "ドゥームメタル",
+    "text": "ドゥームメタル (Doom Metal) は、ヘヴィメタルのサブジャンルの一つ。高テンポの過激なサウンドがステレオタイプ化されるヘヴィメタルの中にありながら、遅さやダウナー感を特徴としている。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%82%A5%E3%83%BC%E3%83%A0%E3%83%A1%E3%82%BF%E3%83%AB"
+   },
+   "en": {
+    "title": "Doom metal",
+    "text": "Doom metal is an extreme subgenre of heavy metal music that typically uses slower tempos, low-tuned guitars and a much \"thicker\" or \"heavier\" sound than other heavy metal genres. Both the music and the lyrics are intended to evoke a sense of despair, dread, and impending doom.",
+    "url": "https://en.wikipedia.org/wiki/Doom_metal",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from December 2020"
+    ]
+   }
+  },
   "Drum & Bass": {
    "ja": {
     "title": "ドラムンベース",
@@ -545,6 +791,32 @@
    "ja_tr": {
     "text": "ドラムンベース（D&B、DnB、D'n'Bとも）は、1990年代初めにイギリスで生まれたエレクトロニック・ダンス・ミュージックのジャンル。速いブレイクビーツ（ふつうは1分間に165〜185拍）に、重いベースとサブベースのライン、サンプル、シンセサイザーを重ねるのが特徴。",
     "url": "https://en.wikipedia.org/wiki/Drum_and_bass"
+   }
+  },
+  "Dub": {
+   "ja": {
+    "title": "ダブ",
+    "text": "ダブ（dub）は、レゲエから派生した音楽制作手法、及び音楽ジャンルである。ダブ制作に携わる音楽エンジニアのことを特にダブ・エンジニアという。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%80%E3%83%96"
+   },
+   "en": {
+    "title": "Dub music",
+    "text": "Dub is a musical style that grew out of reggae in the late 1960s and early 1970s. It is commonly considered a subgenre of reggae, though it has developed to extend beyond that style.",
+    "url": "https://en.wikipedia.org/wiki/Dub_music",
+    "doubt": [
+     "All articles that may contain original research",
+     "Articles that may contain original research from October 2015"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from June 2022",
+     "Articles with unsourced statements from May 2025",
+     "Articles with unsourced statements from October 2025"
+    ]
+   },
+   "en_tr": {
+    "text": "Dub is both a music production technique and a genre that grew out of reggae. Engineers who work on dub are known in particular as dub engineers.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%80%E3%83%96"
    }
   },
   "Dubstep": {
@@ -569,6 +841,17 @@
    "ja_tr": {
     "text": "ダブステップは、2000年代初めにロンドン南部で生まれたエレクトロニック・ダンス・ミュージック（ベース・ミュージック）のジャンル。そのルーツは1980年代初めのジャマイカのサウンドシステム文化にさかのぼり、UKガラージから派生して、2ステップのリズムと音数を絞ったダブの音作りを合わせ、ブロークンビーツやグライム、ドラムンベースの要素も取り入れた。",
     "url": "https://en.wikipedia.org/wiki/Dubstep"
+   }
+  },
+  "Dungeon Synth": {
+   "en": {
+    "title": "Dungeon synth",
+    "text": "Dungeon synth is a genre of electronic music derived from black metal and dark ambient. The style emerged in the early 1990s, predominantly among members of the early Norwegian black metal scene.",
+    "url": "https://en.wikipedia.org/wiki/Dungeon_synth"
+   },
+   "ja_tr": {
+    "text": "ダンジョン・シンセは、ブラックメタルとダーク・アンビエントから生まれた電子音楽のジャンル。1990年代初め、主に初期のノルウェーのブラックメタル・シーンにいた人たちのあいだで現れた。",
+    "url": "https://en.wikipedia.org/wiki/Dungeon_synth"
    }
   },
   "EBM": {
@@ -625,6 +908,32 @@
     "ref": "Britannica, “electronic dance music”"
    }
   },
+  "EDM Trap": {
+   "en": {
+    "title": "EDM trap music",
+    "text": "EDM trap music, Trap EDM, or simply Trap, is a fusion genre of hip-hop, rave, and electronic dance music (EDM), that originated in the early 2010s on peaking popularity of big room house and hip hop trap genres. It blends elements of hip hop trap, which is an offshoot of Southern hip-hop, with elements of EDM like build-ups, drops, dense production with rave music synthesizers, and breakdowns.",
+    "url": "https://en.wikipedia.org/wiki/EDM_trap_music",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from November 2024"
+    ]
+   },
+   "ja_tr": {
+    "text": "EDMトラップ（トラップEDM、または単にトラップとも）は、ヒップホップとレイヴの音楽、エレクトロニック・ダンス・ミュージック（EDM）を合わせたジャンル。ビッグルーム・ハウスとヒップホップのトラップが人気の頂点にあった2010年代初めに生まれた。南部のヒップホップから分かれたトラップの要素に、盛り上げ、ドロップ、レイヴのシンセを重ねた厚い音作り、ブレイクダウンといったEDMの要素を合わせている。",
+    "url": "https://en.wikipedia.org/wiki/EDM_trap_music"
+   }
+  },
+  "Electric Blues": {
+   "en": {
+    "title": "Electric blues",
+    "text": "Electric blues is blues music distinguished by the use of electric amplification for musical instruments. The guitar was the first instrument to be popularly amplified and used by early pioneers T-Bone Walker in the late 1930s and John Lee Hooker and Muddy Waters in the 1940s.",
+    "url": "https://en.wikipedia.org/wiki/Electric_blues"
+   },
+   "ja_tr": {
+    "text": "エレクトリック・ブルースは、楽器の音をアンプなどで電気的に増幅させて演奏するブルース。最初に広く電気で鳴らされた楽器はギターで、1930年代末のT-Bone Walker、1940年代のJohn Lee HookerやMuddy Watersが先駆けとなった。",
+    "url": "https://en.wikipedia.org/wiki/Electric_blues"
+   }
+  },
   "Electro": {
    "ja": {
     "title": "エレクトロ",
@@ -669,6 +978,18 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AD%E3%83%BB%E3%83%8F%E3%82%A6%E3%82%B9"
    }
   },
+  "Electroclash": {
+   "ja": {
+    "title": "エレクトロクラッシュ",
+    "text": "エレクトロクラッシュ (Electroclash、Elektroklash とも) は、1980年代の音楽であるニュー・ウェイヴ、ポストパンク、エレクトロ、ディスコ等を、1990年代後半のダンス・ミュージックの概念で解釈・再構築を行ったものである。 代表的なアーティストとして、DJヘル（Gigoloレーベル）、2 Many DJ's、LCDサウンドシステム、アダルト、ピーチズ、フェリックス・ダ・ハウスキャット、フリーズポップ、ミス・キティン・アンド・ザ・ハッカー、ティガ、ル・ティグラ、チックス・オン・スピード、フィッシャースプーナー、ザ・スランツ、レディトロン等がある。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5"
+   },
+   "en": {
+    "title": "Electroclash",
+    "text": "Electroclash (also known as synthcore, retro-electro, tech-pop, nouveau disco) is a genre of popular music that fuses 1980s electro, new wave and synth-pop with 1990s techno, retro-style electropop and electronic dance music. It emerged in the late 1990s and was pioneered by and associated with acts such as I-F, DJ Hell, Miss Kittin and The Hacker, and Fischerspooner.",
+    "url": "https://en.wikipedia.org/wiki/Electroclash"
+   }
+  },
   "Electronica": {
    "ja": {
     "title": "エレクトロニカ",
@@ -690,6 +1011,52 @@
    "ja_tr": {
     "text": "エレクトロニカは、踊るためよりも聴くための電子音楽のさまざまなスタイルをまとめた呼び名であり、1990年代初めにイギリスで注目された、いろいろな音楽スタイルを取り込んだ音楽シーンのことでもある。アメリカでは、おもに電子音楽全般を指す言葉として使われる。",
     "url": "https://en.wikipedia.org/wiki/Electronica"
+   }
+  },
+  "Eurodisco": {
+   "en": {
+    "title": "Eurodisco",
+    "text": "Eurodisco (also spelled as Euro disco) is a genre of electronic dance music that evolved from disco in the middle 1970s. The term \"Eurodisco\" first appeared in magazines geared towards popular music and was used by the UK magazine Blues & Soul to describe the music of Boney M. Music producers such as Giorgio Moroder, Frank Farian and Michael Kunze (Silver Convention) are credited as pioneers of the genre.",
+    "url": "https://en.wikipedia.org/wiki/Eurodisco"
+   },
+   "ja_tr": {
+    "text": "ユーロディスコは、1970年代半ばにディスコから育ったエレクトロニック・ダンス・ミュージック。「ユーロディスコ」という言葉はポピュラー音楽の雑誌に初めて現れ、イギリスの雑誌Blues & SoulがBoney Mの音楽を表現するのに使った。Giorgio Moroder、Frank Farian、Michael Kunze（Silver Convention）といったプロデューサーが先駆けとされる。",
+    "url": "https://en.wikipedia.org/wiki/Eurodisco"
+   }
+  },
+  "Folk": {
+   "ja": {
+    "title": "民謡",
+    "text": "民謡（みんよう、独: Volkslied、英: folk song）とは、主に民衆の生活のなかで生まれ、口承によってうたい継がれてきた歌の総称。",
+    "url": "https://ja.wikipedia.org/wiki/%E6%B0%91%E8%AC%A1",
+    "doubt": [
+     "出典を必要とする記事/2016年1月"
+    ]
+   },
+   "en": {
+    "title": "Folk music",
+    "text": "Folk music is a music genre that includes traditional folk music and the contemporary genre that evolved from the former during the 20th-century folk revival. Some types of folk music may be called world music.",
+    "url": "https://en.wikipedia.org/wiki/Folk_music",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from October 2022"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from March 2026",
+     "Articles with unsourced statements from October 2021",
+     "Articles with unsourced statements from October 2022"
+    ]
+   },
+   "ja_own": {
+    "text": "楽譜ではなく耳で聞いて、家族や身近な集まりのなかで受け継がれてきた音楽。多くは農村に根ざし、仕事や儀式などの暮らしの場と結びついている。",
+    "url": "https://www.britannica.com/art/folk-music",
+    "ref": "ブリタニカ百科事典「folk music」"
+   },
+   "en_own": {
+    "text": "Traditional music handed down by ear within families and small communities rather than learned from notation. It is mostly rural in origin and tied to everyday activities such as work and ritual.",
+    "url": "https://www.britannica.com/art/folk-music",
+    "ref": "Encyclopaedia Britannica, \"folk music\""
    }
   },
   "Footwork": {
@@ -956,6 +1323,52 @@
     ]
    }
   },
+  "Gospel": {
+   "ja": {
+    "title": "ゴスペル (音楽)",
+    "text": "ゴスペル (英語：Gospel music) または福音音楽（ふくいんおんがく）は、アメリカ発祥の音楽の一ジャンル。元来はキリスト教プロテスタント系の宗教音楽。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B4%E3%82%B9%E3%83%9A%E3%83%AB_%28%E9%9F%B3%E6%A5%BD%29"
+   },
+   "en": {
+    "title": "Gospel music",
+    "text": "Gospel music is a traditional genre of Christian music and a cornerstone of Christian media, characterized by dominant vocals (often with strong harmonies) and lyrics that reflect Christian teachings and values. The creation, performance, significance, and even the definition of gospel music vary according to culture and social context.",
+    "url": "https://en.wikipedia.org/wiki/Gospel_music",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from June 2014"
+    ]
+   },
+   "en_tr": {
+    "text": "Gospel (gospel music) is a genre of music that began in the United States. It was originally the religious music of Protestant Christianity.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B4%E3%82%B9%E3%83%9A%E3%83%AB_%28%E9%9F%B3%E6%A5%BD%29"
+   }
+  },
+  "Grime": {
+   "ja": {
+    "title": "グライム",
+    "text": "グライム（英: Grime）は、UKガラージ、2ステップなどのハウス系クラブミュージックに、ラップやレゲエの要素を加えた音楽ジャンルの総称である。2000年代にイギリスで生まれ、若者の間で人気となった。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B0%E3%83%A9%E3%82%A4%E3%83%A0",
+    "doubt": [
+     "出典を必要とする記事/2025年7月"
+    ]
+   },
+   "en": {
+    "title": "Grime music",
+    "text": "Grime is a genre of electronic dance music (EDM) that emerged in London in the early 2000s. It developed out of the earlier UK dance style UK garage, and draws influences from jungle, dancehall, and hip-hop.",
+    "url": "https://en.wikipedia.org/wiki/Grime_music",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from February 2020",
+     "Articles with unsourced statements from February 2022",
+     "Articles with unsourced statements from March 2015",
+     "Articles with unsourced statements from May 2011"
+    ]
+   },
+   "ja_tr": {
+    "text": "グライムは、2000年代初めにロンドンで現れたエレクトロニック・ダンス・ミュージック（EDM）。それより前のイギリスのダンス音楽UKガラージから育ち、ジャングル、ダンスホール、ヒップホップの影響を受けている。",
+    "url": "https://en.wikipedia.org/wiki/Grime_music"
+   }
+  },
   "Grunge": {
    "ja": {
     "title": "グランジ",
@@ -1172,6 +1585,22 @@
     "url": "https://en.wikipedia.org/wiki/Heavy_metal_music"
    }
   },
+  "Hi-NRG": {
+   "ja": {
+    "title": "Hi-NRG",
+    "text": "Hi-NRG（High Energy、ハイエナジー）は、1980年代半ばに登場したディスコやクラブで人気の高かったダンス・ミュージックである。ディスコ音楽に電子楽器を導入したユーロ・ディスコから派生した音楽とされる。",
+    "url": "https://ja.wikipedia.org/wiki/Hi-NRG"
+   },
+   "en": {
+    "title": "Hi-NRG",
+    "text": "Hi-NRG (pronounced \"high energy\") is a genre of uptempo disco or electronic dance music that originated during the late 1970s and early 1980s. As a music genre, typified by its fast tempo, staccato hi-hat rhythms (and the four-on-the-floor pattern), reverberated \"intense\" vocals and \"pulsating\" octave basslines, it was particularly influential on the disco scene.",
+    "url": "https://en.wikipedia.org/wiki/Hi-NRG",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from February 2023"
+    ]
+   }
+  },
   "Hip Hop": {
    "ja": {
     "title": "ヒップホップ・ミュージック",
@@ -1235,6 +1664,66 @@
     "title": "Intelligent dance music",
     "text": "Intelligent dance music (IDM) is a loose label used to describe experimental forms of electronic music associated with early-1990s ambient techno, \"electronic listening music\" and related forms of electronica. Rather than being defined by a fixed set of genre conventions, IDM has generally been associated with individualistic experimentation.",
     "url": "https://en.wikipedia.org/wiki/Intelligent_dance_music"
+   }
+  },
+  "Indie Rock": {
+   "ja": {
+    "title": "インディー・ロック",
+    "text": "インディー・ロック（indie rock）は、ロックの形態の一種である。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%B3%E3%83%87%E3%82%A3%E3%83%BC%E3%83%BB%E3%83%AD%E3%83%83%E3%82%AF"
+   },
+   "en": {
+    "title": "Indie rock",
+    "text": "Indie rock is a subgenre of rock music that originated in the United Kingdom, United States and New Zealand in the early to mid-1980s. Although the term was originally used to describe rock music released through independent record labels, by the 1990s it became more widely associated with the music such bands produced.",
+    "url": "https://en.wikipedia.org/wiki/Indie_rock"
+   }
+  },
+  "Industrial": {
+   "ja": {
+    "title": "インダストリアル",
+    "text": "インダストリアル（Industrial、デザイン用語やピアスの方式などと区別するためインダストリアル・ミュージック Industrial Music とする場合が多い。）は、電子音楽の一種である。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%B3%E3%83%80%E3%82%B9%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB",
+    "doubt": [
+     "出典を必要とする記事/2026年6月"
+    ]
+   },
+   "en": {
+    "title": "Industrial music",
+    "text": "Industrial music (or simply industrial) is a subgenre of experimental music that emerged in the mid-to late 1970s, primarily inspired by industrial society, while drawing influences from avant-garde and early electronic music genres such as musique concrète, tape music, noise and sound collage. The term was coined in 1976 by Monte Cazazza and adopted by Throbbing Gristle with the founding of Industrial Records.",
+    "url": "https://en.wikipedia.org/wiki/Industrial_music"
+   },
+   "ja_tr": {
+    "text": "インダストリアル（インダストリアル・ミュージック）は、1970年代半ばから後半に現れた実験音楽の一分野。主に工業化した社会から着想を得て、前衛音楽や、ミュジーク・コンクレート、テープ音楽、ノイズ、音のコラージュといった初期の電子音楽の影響を受けている。この言葉は1976年にMonte Cazazzaが作り、Throbbing GristleがレーベルIndustrial Recordsを始めるときに使った。",
+    "url": "https://en.wikipedia.org/wiki/Industrial_music"
+   }
+  },
+  "Italo Disco": {
+   "ja": {
+    "title": "イタロ・ディスコ",
+    "text": "イタロ・ディスコ（伊: Italo disco, Italo-disco）は、イタリアで生まれ、主に1980年代に制作された音楽ジャンル。当時のアンダーグラウンドなダンス・ミュージックやポップ・ミュージック、電子音楽、国内や海外の音楽（アメリカのHi-NRG、フランスのユーロ・ディスコ）から進化し、多様なジャンルへと発展した。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%BF%E3%83%AD%E3%83%BB%E3%83%87%E3%82%A3%E3%82%B9%E3%82%B3"
+   },
+   "en": {
+    "title": "Italo disco",
+    "text": "Italo disco or Italodisco (variously capitalized, and sometimes hyphenated as Italo-disco) is a music genre which originated in Italy in the early 1980s. Italo disco evolved from the then-current post-disco dance music and synth-pop, both domestic and foreign (hi-NRG, Euro disco) and developed into a diverse genre.",
+    "url": "https://en.wikipedia.org/wiki/Italo_disco",
+    "doubt": [
+     "All articles lacking in-text citations",
+     "All articles needing additional references",
+     "Articles lacking in-text citations from July 2012",
+     "Articles needing additional references from April 2021",
+     "Articles needing additional references from December 2021",
+     "Articles needing additional references from July 2011"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from August 2021",
+     "Articles with unsourced statements from May 2024"
+    ]
+   },
+   "en_tr": {
+    "text": "Italo disco is a genre of music born in Italy and made mainly in the 1980s. It evolved from the underground dance and pop music, electronic music, and both domestic and foreign music of the time (American Hi-NRG, French Euro disco), and went on to branch into many genres.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%BF%E3%83%AD%E3%83%BB%E3%83%87%E3%82%A3%E3%82%B9%E3%82%B3"
    }
   },
   "Italo House": {
@@ -1330,6 +1819,18 @@
     ]
    }
   },
+  "Jazz-Funk": {
+   "ja": {
+    "title": "ジャズ・ファンク",
+    "text": "ジャズ・ファンク（Jazz-funk）は、ジャズにファンク、ソウル、R&Bなどの要素を取り入れた音楽のジャンル。1960年代後半から1970年代にかけて、主にアメリカ合衆国で発展した。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%82%BA%E3%83%BB%E3%83%95%E3%82%A1%E3%83%B3%E3%82%AF"
+   },
+   "en": {
+    "title": "Jazz-funk",
+    "text": "Jazz-funk is a subgenre of jazz music characterized by a strong back beat, electrified sounds, and analog synthesizers. The integration of funk, soul, and R&B music and styles into jazz resulted in the creation of a genre that ranges from pure jazz improvisation to soul, funk or disco with jazz arrangements, jazz riffs, jazz solos, and sometimes soul vocals.",
+    "url": "https://en.wikipedia.org/wiki/Jazz-funk"
+   }
+  },
   "Jersey Club": {
    "en": {
     "title": "Jersey club",
@@ -1407,6 +1908,21 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%88%E3%83%AD%E3%83%83%E3%82%AF"
    }
   },
+  "Kwaito": {
+   "en": {
+    "title": "Kwaito",
+    "text": "Kwaito is a music genre that emerged in Soweto, Johannesburg, South Africa, between the late 1980s and 1990s. It is a sound that features the use of South African sounds and samples.",
+    "url": "https://en.wikipedia.org/wiki/Kwaito",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from September 2011"
+    ]
+   },
+   "ja_tr": {
+    "text": "クワイトは、1980年代末から1990年代にかけて、南アフリカのヨハネスブルグのソウェトで現れた音楽のジャンル。南アフリカ特有の音やサンプリングを使うのが特徴。",
+    "url": "https://en.wikipedia.org/wiki/Kwaito"
+   }
+  },
   "Laptop Twee": {
    "en": {
     "title": "Laptop twee",
@@ -1416,6 +1932,21 @@
    "ja_tr": {
     "text": "ラップトップ・トゥイーは、インディー・ポップとインディートロニカを掛け合わせ、ネット発の音楽からの影響や、主にパソコンの音楽制作ソフト（DAW）を使った音作りを取り入れたトゥイー・ポップのスタイル。2020年代初頭に生まれ、カナダのブロガー兼ミュージシャンのfriends&が名付けた。",
     "url": "https://en.wikipedia.org/wiki/Laptop_twee"
+   }
+  },
+  "Latin": {
+   "en": {
+    "title": "Latin music",
+    "text": "Latin music (Portuguese and Spanish: música latina) is a term used by the music industry as a catch-all category for various styles of music from Ibero-America, which encompasses Latin America, Spain, Portugal, and the Latino population in Canada and the United States, as well as music that is sung in either Spanish or Portuguese. It may also include music from other territories where Spanish- and Portuguese-language music is made.",
+    "url": "https://en.wikipedia.org/wiki/Latin_music",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from April 2022"
+    ]
+   },
+   "ja_tr": {
+    "text": "ラテン音楽（スペイン語・ポルトガル語でmúsica latina）は、音楽業界が、イベロアメリカのさまざまな音楽をまとめて呼ぶための言葉。イベロアメリカには、ラテンアメリカ、スペイン、ポルトガル、カナダとアメリカのラテン系の人々が含まれ、スペイン語かポルトガル語で歌われる音楽も入る。ほかの地域でスペイン語やポルトガル語で作られる音楽を含むこともある。",
+    "url": "https://en.wikipedia.org/wiki/Latin_music"
    }
   },
   "Liquid Drum & Bass": {
@@ -1519,6 +2050,26 @@
    "ja_tr": {
     "text": "マイクロハウス（バフテック、または単にミニマルとも）は、ミニマリズムと1990年代のテクノの影響を強く受けた、ハウスの一分野。",
     "url": "https://en.wikipedia.org/wiki/Microhouse"
+   }
+  },
+  "Minimal Music": {
+   "ja": {
+    "title": "ミニマル・ミュージック",
+    "text": "ミニマル・ミュージック（Minimal music）は、音の動きを最小限に抑え、パターン化された音型を反復させる音楽。現代音楽のムーブメントのひとつ。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%9F%E3%83%8B%E3%83%9E%E3%83%AB%E3%83%BB%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF"
+   },
+   "en": {
+    "title": "Minimal music",
+    "text": "Minimal music (also called minimalism) is a form of art music or other compositional practice that employs limited or minimal musical materials. Prominent features of minimalist music include repetitive patterns or pulses, steady drones, consonant harmony, and reiteration of musical phrases or smaller units.",
+    "url": "https://en.wikipedia.org/wiki/Minimal_music",
+    "doubt": [
+     "All articles that may contain original research",
+     "Articles that may contain original research from January 2020"
+    ]
+   },
+   "en_tr": {
+    "text": "Minimal music is music that keeps the movement of sound to a minimum and repeats patterned figures. It is one of the movements of contemporary music.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%9F%E3%83%8B%E3%83%9E%E3%83%AB%E3%83%BB%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF"
    }
   },
   "Modal Jazz": {
@@ -1639,6 +2190,32 @@
    "ja_tr": {
     "text": "ニュービートは、ニュー・ウェイヴ、ハイエナジー、EBM、ヒップホップ（スクラッチなど）の要素を混ぜた、ベルギーのエレクトロニック・ダンス・ミュージックのジャンル。",
     "url": "https://en.wikipedia.org/wiki/New_beat"
+   }
+  },
+  "New Wave": {
+   "ja": {
+    "title": "ニュー・ウェイヴ (音楽)",
+    "text": "音楽におけるニュー・ウェイヴ（英語: new wave）は、1970年代後半から1980年代前半にかけて流行したロックの一ジャンルである。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%BB%E3%82%A6%E3%82%A7%E3%82%A4%E3%83%B4_%28%E9%9F%B3%E6%A5%BD%29"
+   },
+   "en": {
+    "title": "New wave music",
+    "text": "New wave is a music genre encompassing pop-oriented styles that emerged in the United States and United Kingdom in the mid-to late 1970s. The term was initially synonymous with punk rock but soon branched off into its own distinct style: a lighter and more melodic \"broadening of punk culture\", in contrast to the more atmospheric sounds of post-punk.",
+    "url": "https://en.wikipedia.org/wiki/New_wave_music",
+    "doubt": [
+     "All articles lacking reliable references",
+     "Articles lacking reliable references from March 2026",
+     "Articles that may contain original research from May 2020"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from February 2024",
+     "Articles with unsourced statements from March 2026"
+    ]
+   },
+   "en_tr": {
+    "text": "In music, new wave is a genre of rock that was popular from the late 1970s to the early 1980s.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%BB%E3%82%A6%E3%82%A7%E3%82%A4%E3%83%B4_%28%E9%9F%B3%E6%A5%BD%29"
    }
   },
   "Nightcore": {
@@ -1992,6 +2569,22 @@
     "url": "https://en.wikipedia.org/wiki/Smooth_jazz"
    }
   },
+  "Soft Rock": {
+   "ja": {
+    "title": "ソフトロック",
+    "text": "ソフトロック（soft rock）は、ロック・ミュージックの音楽ジャンルのひとつ。 定義については日本における認識と、日本国外における認識に相違がある。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%BD%E3%83%95%E3%83%88%E3%83%AD%E3%83%83%E3%82%AF"
+   },
+   "en": {
+    "title": "Soft rock",
+    "text": "Soft rock (also known as light rock, mellow rock or adult-oriented rock) is a form of rock music that originated in the late 1960s in the United States and the United Kingdom which smoothed over the edges of singer-songwriter and pop rock, relying on simple, melodic songs with big, lush productions. Soft rock was prevalent on the radio throughout the 1970s and eventually metamorphosed into a form of the synthesized music of adult contemporary in the 1980s.",
+    "url": "https://en.wikipedia.org/wiki/Soft_rock",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from September 2025"
+    ]
+   }
+  },
   "Soul": {
    "ja": {
     "title": "ソウルミュージック",
@@ -2024,6 +2617,18 @@
     "url": "https://en.wikipedia.org/wiki/Soul_jazz"
    }
   },
+  "Speed Garage": {
+   "ja": {
+    "title": "スピードガラージ",
+    "text": "スピードガラージ (speed garage)［時にプラス8（プラスエイト、plus-8）の名でも知られる］は、UKガラージの始まりと言われる音楽の様式。1997年前後に流行した。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%94%E3%83%BC%E3%83%89%E3%82%AC%E3%83%A9%E3%83%BC%E3%82%B8"
+   },
+   "en": {
+    "title": "Speed garage",
+    "text": "Speed garage (occasionally known as plus-8) is a genre of electronic dance music, associated with the UK garage scene, of which it is regarded as one of its subgenres. It emerged in London in the mid-1990s, reached commercial peak in 1997 and 1998, and was a direct precursor to both 2-step garage and Bassline.",
+    "url": "https://en.wikipedia.org/wiki/Speed_garage"
+   }
+  },
   "Speedcore": {
    "ja": {
     "title": "スピードコア",
@@ -2052,6 +2657,23 @@
     "text": "Hardcore techno pushed even faster and harsher. It became a genre of its own around 1995, as Dutch hardcore turned poppier, with the Australian label Bloody Fist among its early movers.",
     "url": "https://boilerroom.tv/article/extreme-bpms/",
     "ref": "Boiler Room, \"Breaking Down the Most Extreme BPMs in Dance Music\" (Claire Mouchemore, 2019)"
+   }
+  },
+  "Spirituals": {
+   "ja": {
+    "title": "霊歌",
+    "text": "霊歌（れいか、スピリチュアルズ、英: Spirituals）は日本語では黒人霊歌（こくじんれいか）とも呼ばれ、アメリカ合衆国で誕生した宗教的な民謡 (英: folksong) の一つであり、奴隷状態に置かれていた南部のアフリカ系アメリカ人（黒人）の共同体の中から誕生した固有の宗教歌で、通常作者は不明である。これらの歌は18世紀後半の数十年間から1860年代に制度的奴隷制が廃止されるまでの間に黒人の共同体の中で育まれ、アメリカ民謡の最も幅広い重要な音楽形態の一つに発展した音楽。",
+    "url": "https://ja.wikipedia.org/wiki/%E9%9C%8A%E6%AD%8C"
+   },
+   "en": {
+    "title": "Spirituals",
+    "text": "Spirituals (also known as Negro spirituals, African American spirituals, Black spirituals, or spiritual music) is a genre of Christian music that is associated with African Americans, which merged varied African cultural influences with the experiences of being held in bondage in slavery, at first during the transatlantic slave trade and for centuries afterwards, through the domestic slave trade. Spirituals incorporate the \"sing songs\", work songs, and plantation songs that evolved into the blues and gospel songs in church.",
+    "url": "https://en.wikipedia.org/wiki/Spirituals",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from April 2026",
+     "Articles with unsourced statements from February 2021"
+    ]
    }
   },
   "Stoner Rock": {
@@ -2185,6 +2807,18 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%83%86%E3%82%AF%E3%83%8E_%28%E3%83%80%E3%83%B3%E3%82%B9%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF%29"
    }
   },
+  "Techstep": {
+   "ja": {
+    "title": "テックステップ",
+    "text": "テックステップ (techstep) は、エレクトロニック・ミュージックのジャンルであるドラムンベースのダークなサブジャンルの1つであり、1990年代後期に人気を集めた。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%86%E3%83%83%E3%82%AF%E3%82%B9%E3%83%86%E3%83%83%E3%83%97"
+   },
+   "en": {
+    "title": "Techstep",
+    "text": "Techstep is a dark subgenre of drum and bass that was created in the mid-1990s.",
+    "url": "https://en.wikipedia.org/wiki/Techstep"
+   }
+  },
   "Trance": {
    "ja": {
     "title": "トランス (音楽)",
@@ -2226,6 +2860,17 @@
      "All articles with unsourced statements",
      "Articles with unsourced statements from July 2025"
     ]
+   }
+  },
+  "Twee Pop": {
+   "en": {
+    "title": "Twee pop",
+    "text": "Twee pop is a subgenre of indie pop that originally emerged in the United Kingdom during the mid-to late 1980s. The style has been described as \"excessively or affectedly quaint, pretty, or sentimental\" and initially rose to prominence through the NME's C86 cassette compilation, with AllMusic describing twee as \"simplicity and innocence\" as well as \"boy-girl harmonies, lovelorn lyrics, infectious melodies, and simple, unaffected performances\".",
+    "url": "https://en.wikipedia.org/wiki/Twee_pop"
+   },
+   "ja_tr": {
+    "text": "トゥイー・ポップは、1980年代半ばから後半にイギリスで生まれた、インディー・ポップの一分野。「やりすぎなほど、あるいは気取ったほどに古風で、かわいらしく、感傷的」と言われることがあり、NMEのカセットのコンピ『C86』をきっかけに広く知られるようになった。AllMusicは、トゥイーを「素朴さと無垢さ」とし、男女のハーモニー、恋に悩む歌詞、耳に残る旋律、飾らない演奏を挙げている。",
+    "url": "https://en.wikipedia.org/wiki/Twee_pop"
    }
   },
   "UK Garage": {
@@ -2371,6 +3016,41 @@
     "url": "https://en.wikipedia.org/wiki/Urban_contemporary_music"
    }
   },
+  "ルネサンス音楽": {
+   "ja": {
+    "title": "ルネサンス音楽",
+    "text": "ルネサンス音楽（ルネサンスおんがく）は、ヨーロッパにおいて、15世紀から16世紀のルネサンス期に作られた音楽の総称である。中世西洋音楽とバロック音楽の中間に位置し、その中心をなすのは、ポリフォニーによる声楽、とくに、宗教曲である。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%AB%E3%83%8D%E3%82%B5%E3%83%B3%E3%82%B9%E9%9F%B3%E6%A5%BD"
+   },
+   "en": {
+    "title": "Renaissance music",
+    "text": "Renaissance music is traditionally understood to cover European music of the 15th and 16th centuries, later than the Renaissance era as it is understood in other disciplines. Rather than starting from the early 14th-century ars nova, the Trecento music was treated by musicology as a coda to medieval music and the new era dated from the rise of triadic harmony and the spread of the contenance angloise style from the British Isles to the Burgundian School.",
+    "url": "https://en.wikipedia.org/wiki/Renaissance_music",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from August 2016",
+     "Articles with unsourced statements from February 2019",
+     "Articles with unsourced statements from June 2015"
+    ]
+   }
+  },
+  "十二音技法": {
+   "ja": {
+    "title": "十二音技法",
+    "text": "十二音技法（じゅうにおんぎほう、英: Twelve-tone music、独: Zwölftonmusik）は、一般にはアルノルト・シェーンベルクが「五つのピアノ曲」作品23で1921年に完全に体系化した（とされる）作曲技法であり、ドデカフォニー（dodecaphony）や音列主義、セリエリズムなどとも呼ばれる。実際は「無調音楽」や「雑音音楽」「電子音楽」と同様に、同時代に複数の作曲家によって別々に独立して模索されてきた作曲技法である。",
+    "url": "https://ja.wikipedia.org/wiki/%E5%8D%81%E4%BA%8C%E9%9F%B3%E6%8A%80%E6%B3%95"
+   },
+   "en": {
+    "title": "Twelve-tone technique",
+    "text": "The twelve-tone technique—also known as dodecaphony, twelve-tone serialism, and (in British usage) twelve-note composition—is a method of musical composition. The technique is a means of ensuring that all 12 notes of the chromatic scale are sounded equally often in a piece of music while preventing the emphasis of any one note through the use of tone rows, orderings of the 12 pitch classes.",
+    "url": "https://en.wikipedia.org/wiki/Twelve-tone_technique",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from December 2022",
+     "Articles with unsourced statements from February 2020"
+    ]
+   }
+  },
   "古典派音楽": {
    "ja": {
     "title": "古典派音楽",
@@ -2499,6 +3179,29 @@
     "url": "https://en.wikipedia.org/wiki/Shibuya-kei"
    }
   },
+  "無調音楽": {
+   "ja": {
+    "title": "無調",
+    "text": "無調（むちょう）、無調性（むちょうせい、英語: atonality, ドイツ語: Atonalität）とは、調性のない音組織のことである。無調は単なる調性の否定でなく、厳密には、調的な中心音（特定の主音・終止音）がない、和声的な分類体系（トニカ‐サブドミナント‐ドミナント）が働かない、全音階的でないといった特色から、旋法性とも峻別される。",
+    "url": "https://ja.wikipedia.org/wiki/%E7%84%A1%E8%AA%BF",
+    "doubt": [
+     "出典を必要とする記事/2012年3月"
+    ]
+   },
+   "en": {
+    "title": "Atonality",
+    "text": "Atonality in its broadest sense is music that lacks a tonal center, or key. Atonality, in this sense, usually describes compositions written from about the early 20th century to the present day, where a hierarchy of harmonies focusing on a single, central triad is not used, and the notes of the chromatic scale function independently of one another.",
+    "url": "https://en.wikipedia.org/wiki/Atonality",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from September 2025"
+    ]
+   },
+   "ja_tr": {
+    "text": "無調音楽は、いちばん広い意味では、中心となる調を持たない音楽のこと。この意味では、主に20世紀初めから今までに書かれた曲を指し、一つの中心の三和音を軸にした和音の主従関係（ヒエラルキー）を持たず、半音階の音どうしがそれぞれ別々に働く。",
+    "url": "https://en.wikipedia.org/wiki/Atonality"
+   }
+  },
   "猿楽": {
    "ja": {
     "title": "猿楽",
@@ -2573,6 +3276,25 @@
    "en_tr": {
     "text": "Dengaku is a traditional Japanese performing art that took shape in the middle of the Heian period. It is made up of music and dance.",
     "url": "https://ja.wikipedia.org/wiki/%E7%94%B0%E6%A5%BD"
+   }
+  },
+  "神楽": {
+   "ja": {
+    "title": "神楽",
+    "text": "神楽（かぐら）は、日本の神道の神事において神に奉納するため奏される歌舞。",
+    "url": "https://ja.wikipedia.org/wiki/%E7%A5%9E%E6%A5%BD",
+    "doubt": [
+     "出典を必要とする記事/2015年11月"
+    ]
+   },
+   "en": {
+    "title": "Kagura",
+    "text": "Kagura (神楽(かぐら), \"god-entertainment\") is a type of Shinto ritual ceremonial dance. The term is a contraction of the phrase kami no kura (\"seat of god\"), indicating the presence of gods (kami) in the practice.",
+    "url": "https://en.wikipedia.org/wiki/Kagura"
+   },
+   "ja_tr": {
+    "text": "神楽（かぐら）は、神道の儀式で舞われる踊りの一種。「神の座（かみのくら）」を縮めた言葉とされ、儀式の場に神が宿っていることを表している。",
+    "url": "https://en.wikipedia.org/wiki/Kagura"
    }
   },
   "能楽": {
@@ -3040,6 +3762,66 @@
     "text": "A style of Korean popular music that strings together well-known songs into nonstop medleys, topped with shouts and ad-libs. Lee Park-sa, a former tour-bus guide, had a hit with his 1989 cassette Shinparam Ipaksa 1 and released albums in Japan in 1996.",
     "url": "https://brutus.jp/post-425034/",
     "ref": "BRUTUS, \"Korean Cultural News Vol. 15: Ponchak Singer Lee Park Sa\""
+   }
+  },
+  "Hard Techno": {
+   "ja_own": {
+    "text": "1990年代はじめに生まれた、速く荒々しいテクノ。Jeff Millsが1992年にベルリンのTresorから出した『Waveform Transmission Vol. 1』の、当時としては速いループの音が、その流れの始まりとされる。",
+    "url": "https://djmag.com/features/how-jeff-mills-waveform-vol-1-started-new-era-techno",
+    "ref": "Ben Cardew「How Jeff Mills' 'Waveform Vol. 1' started a new era of techno」DJ Mag（2022）"
+   },
+   "en_own": {
+    "text": "A faster, harsher strain of techno that took shape in the early 1990s. Jeff Mills's 1992 album \"Waveform Transmission Vol. 1\" on Berlin's Tresor, built on relentless loops at up to 149 bpm, is credited with starting it.",
+    "url": "https://djmag.com/features/how-jeff-mills-waveform-vol-1-started-new-era-techno",
+    "ref": "Ben Cardew, \"How Jeff Mills' 'Waveform Vol. 1' started a new era of techno\", DJ Mag (2022)"
+   }
+  },
+  "Bubblegum Bass": {
+   "ja_own": {
+    "text": "2013年にロンドンでA. G. Cookが始めたレーベルPC Musicのまわりで生まれた電子ポップ。ユーロダンスの派手なシンセ、グライムの低音、ハッピーハードコアの高い声に、わざとかわいらしさを強調した表現を合わせた音楽で、のちのハイパーポップの最初の波とされる。",
+    "url": "https://pitchfork.com/features/article/the-lost-promises-of-hyperpoptimism/",
+    "ref": "Kieran Press-Reynolds「The Lost Promises of Hyperpoptimism」Pitchfork（2024）、Lanre Bakare「PC Music: clubland's cute new direction」The Guardian（2014）"
+   },
+   "en_own": {
+    "text": "Electronic pop from the circle around PC Music, the London label A. G. Cook started in 2013, pairing Eurodance-style synths, grime sub-bass and pitched-up happy-hardcore vocals with a deliberately cute image. It is considered the first wave of what became hyperpop.",
+    "url": "https://pitchfork.com/features/article/the-lost-promises-of-hyperpoptimism/",
+    "ref": "Kieran Press-Reynolds, \"The Lost Promises of Hyperpoptimism\", Pitchfork (2024); Lanre Bakare, \"PC Music: clubland's cute new direction\", The Guardian (2014)"
+   }
+  },
+  "Indietronica": {
+   "ja_own": {
+    "text": "ロックに根をもつバンドが、シンセサイザーやサンプラー、ドラムマシンを使って作る音楽をまとめた呼び名。1990年代はじめのStereolabやDisco Infernoが最初の波で、2000年代に宅録とソフトシンセが広まって一気に増えた。",
+    "url": "https://www.allmusic.com/style/indie-electronic-ma0000012275",
+    "ref": "AllMusic「Indie Electronic」"
+   },
+   "en_own": {
+    "text": "A catch-all for rock-rooted acts making music with synthesizers, samplers and drum machines, drawing on krautrock, synth-pop and early electronic composers. The first wave came in the early 1990s with Stereolab and Disco Inferno, and it grew fast in the 2000s as home recording spread.",
+    "url": "https://www.allmusic.com/style/indie-electronic-ma0000012275",
+    "ref": "AllMusic, \"Indie Electronic\""
+   }
+  },
+  "Tsonga Disco": {
+   "ja_own": {
+    "text": "南アフリカで、おもにツォンガ語で歌われるディスコ。1985年にPaul Ndlovuが最初の曲を出したのが始まりで、のちにJoe Shirimaniが自作やPenny Pennyのプロデュースで受け継いだ。",
+    "url": "https://journal.ru.ac.za/index.php/africanmusic/article/view/1230",
+    "ref": "Ignatia Madalane「From Paul to Penny: the emergence and development of Tsonga disco 1985-1990s」African Music 10(1)（2015）"
+   },
+   "en_own": {
+    "text": "Disco from South Africa sung mainly in Xitsonga. It began with Paul Ndlovu's first songs in 1985 and was carried on by Joe Shirimani, both in his own records and as writer-producer for Penny Penny.",
+    "url": "https://journal.ru.ac.za/index.php/africanmusic/article/view/1230",
+    "ref": "Ignatia Madalane, \"From Paul to Penny: the emergence and development of Tsonga disco 1985-1990s\", African Music 10(1) (2015)"
+   }
+  },
+  "ニューミュージック": {
+   "ja_own": {
+    "text": "1970年代前半から出てきた日本のポピュラー音楽。フォークやロックの影響を受けた歌い手が自分で曲を作って歌い、それまでの歌謡曲と違って、アルバムとコンサートを中心に支持を集めた。",
+    "url": "https://kotobank.jp/word/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF",
+    "ref": "コトバンク「ニューミュージック」（百科事典マイペディア、デジタル大辞泉、精選版 日本国語大辞典）"
+   },
+   "en_own": {
+    "text": "Japanese popular music that emerged in the early 1970s, made mostly by singer-songwriters influenced by folk and rock. Unlike kayōkyoku, it won its audience mainly through albums and concerts rather than the media-driven hit system.",
+    "url": "https://kotobank.jp/word/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF",
+    "ref": "Kotobank, \"New Music\" (Hyakka Jiten Mypedia; Digital Daijisen; Seisenban Nihon Kokugo Daijiten)"
    }
   }
  }
