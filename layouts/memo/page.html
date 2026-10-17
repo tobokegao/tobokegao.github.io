@@ -130,6 +130,11 @@
       <button type="button" class="btn chip" data-tl="born" aria-pressed="true">{{ partial "t.html" "yearsOnly" }}</button>
       <button type="button" class="btn chip" data-tl="all" aria-pressed="false">{{ partial "t.html" "withPosts" }}</button>
       <span class="notes__hint">{{ partial "t.html" "zoomHint" }}</span>
+      <span class="tl-find-box">
+        <label><span class="vh">{{ partial "t.html" "findGenre" }}</span><input type="search" id="tl-find" list="tl-names" autocomplete="off" {{ with index hugo.Data.strings "findGenre" }}data-ph-ja="{{ .ja }}" data-ph-en="{{ .en }}" placeholder="{{ .ja }}"{{ end }}></label>
+        <datalist id="tl-names"></datalist>
+        <span id="tl-find-none" class="tl-find-none" hidden>{{ partial "t.html" "findNone" }}</span>
+      </span>
       {{- /* buttons for a mouse (Ctrl + Shift + wheel did not always reach the page); not on touch screens */}}
       <span class="tl-zoom" role="group" aria-label="{{ partial "tt.html" "zoomButtons" }}">
         <span aria-hidden="true">{{ partial "t.html" "zoomWidth" }}</span>

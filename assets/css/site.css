@@ -795,6 +795,10 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .notes__hit-s a { margin-right: 8px; font: var(--dot)/2 var(--f-dot); }
 .notes mark { background: var(--mark); color: var(--mark-ink); }
 .notes__hint { align-self: center; font: var(--dot)/2 var(--f-dot); color: var(--ink-dim); }
+.tl-find-box { display: inline-flex; align-items: center; gap: 8px; }
+.tl-find-box input { width: 192px; padding: 2px 6px; font: var(--dot)/2 var(--f-dot); color: var(--ink); background: var(--win); border: 2px solid; border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md); border-radius: 0; }
+.tl-find-box input:focus-visible { outline: 2px solid var(--accent); outline-offset: 0; }
+.tl-find-none { font: var(--dot)/2 var(--f-dot); color: var(--ink-dim); }
 .tl-zoom { display: inline-flex; align-items: center; gap: 4px; font: var(--dot)/2 var(--f-dot); color: var(--ink-dim); }
 .tl-zoom > span + .btn { margin-left: 4px; }
 @media (pointer: coarse) { .tl-zoom { display: none; } }   /* two fingers there */

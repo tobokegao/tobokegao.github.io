@@ -305,7 +305,12 @@
       canvas.insertAdjacentHTML("afterbegin", svg + "</svg>");
       canvas.insertAdjacentHTML("afterbegin", '<div class="tl__axis" style="width:' + W + "px;height:" + row + 'px" aria-hidden="true">' + axis + "</div>");
       // open at the newest end
-      if (keep !== true) el.scrollLeft = el.scrollWidth;
+      // (the newest node, not the axis's end: with every topic the last decade is far wider than its nodes)
+      if (keep !== true) {
+        var right = 0;
+        Object.keys(byKey).forEach(function (k) { right = Math.max(right, byKey[k].x + byKey[k].w); });
+        el.scrollLeft = Math.max(0, right + PAD - el.clientWidth);
+      }
 
       // Pointing at a node brings its own lines and neighbours forward.
       var paths = canvas.querySelectorAll(".tl__e");
@@ -419,11 +424,14 @@
     // a tap on the drawing but off the nodes closes the box
     el.addEventListener("click", function (e) { if (sel && !e.target.closest(".tl__node")) close(); });
 
+    var setMode = function (m) {
+      mode = m;
+      buttons.forEach(function (x) { x.setAttribute("aria-pressed", String(x.dataset.tl === m)); });
+      draw();
+    };
     buttons.forEach(function (b) {
       b.addEventListener("click", function () {
-        mode = b.dataset.tl;
-        buttons.forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
-        draw();
+        setMode(b.dataset.tl);
       });
     });
     // Zoom: redraw at the new scale and lod, and keep the place under the fingers (or the
@@ -533,6 +541,32 @@
     el.addEventListener("click", function (e) {
       if (dragged) { e.preventDefault(); e.stopPropagation(); dragged = false; }
     }, true);
+    // Finding a genre by name: the list offers the genres with a year; a name that matches
+    // a topic without one switches to every topic first. The genre is chosen as if tapped.
+    var find = document.getElementById("tl-find"), none = document.getElementById("tl-find-none");
+    if (find) {
+      var list = document.getElementById("tl-names");
+      // the hint inside the box in the language shown (an attribute cannot be switched by CSS)
+      var hint = function () { find.placeholder = find.dataset[root.dataset.lang === "en" ? "phEn" : "phJa"]; };
+      hint();
+      new MutationObserver(hint).observe(root, { attributes: true, attributeFilter: ["data-lang"] });
+      all.filter(function (n) { return n.b; }).map(function (n) { return n.t; }).sort(function (a, b) { return a.localeCompare(b); })
+        .forEach(function (t) { var o = document.createElement("option"); o.value = t; list.appendChild(o); });
+      var go = function (strict) {
+        var q = find.value.trim().toLowerCase();
+        none.hidden = true;
+        if (!q) return;
+        var hit = all.filter(function (n) { return n.t.toLowerCase() === q; })[0];
+        if (!hit && !strict) hit = all.filter(function (n) { return n.b && n.t.toLowerCase().indexOf(q) === 0; })[0] ||
+          all.filter(function (n) { return n.t.toLowerCase().indexOf(q) !== -1; })[0];
+        if (!hit) { if (!strict) none.hidden = false; return; }
+        if (!hit.b && mode !== "all") setMode("all");
+        choose(hit.k, true);
+      };
+      // a name picked from the list (or typed in full) goes at once; Enter takes the best match
+      find.addEventListener("input", function () { go(true); });
+      find.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); go(false); } });
+    }
     // the buttons for a mouse: a step wider or narrower, a line taller or shorter
     document.querySelectorAll("[data-z]").forEach(function (b) {
       b.addEventListener("click", function () {

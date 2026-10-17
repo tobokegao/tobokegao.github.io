@@ -389,3 +389,11 @@ en = "Make shorter"
 [zoomTaller]
 ja = "縦に広げる"
 en = "Make taller"
+
+[findGenre]
+ja = "ジャンルを探す"
+en = "Search genres"
+
+[findNone]
+ja = "見つかりませんでした"
+en = "No results"
