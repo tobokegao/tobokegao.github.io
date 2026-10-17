@@ -178,13 +178,24 @@
       var dot = parseInt(getComputedStyle(root).getPropertyValue("--dot"), 10) || 12;
       var row = dot * 2;
       // the names on top share a row when they do not run into each other (the widest of the
-      // two languages' names)
+      // two languages' names). Each is a flag on the line, its right end cut in a swallowtail
+      // of 2 px steps, so it does not read as one more genre's box; pressing it opens the large
+      // genre's box as its node would.
       var flagEnd = [];
       flags.sort(function (a, b) { return a.x - b.x; }).forEach(function (f) {
-        var t = document.createElement("span");
+        var t = document.createElement("button");
+        t.type = "button";
         t.className = "tl__flag-t tl__grp--" + f.m.c;
         t.textContent = f.m.t;
         canvas.appendChild(t);
+        var half = Math.floor(t.offsetHeight / 2);
+        t.style.paddingRight = (half + 6) + "px";
+        var w = t.offsetWidth, h = t.offsetHeight, pts = ["0 0"], cx = w, y;
+        for (y = 0; y < half; y += 2) { pts.push(cx + "px " + y + "px", cx + "px " + Math.min(y + 2, half) + "px"); cx -= 2; }
+        for (y = h - half; y < h; y += 2) { cx += 2; pts.push(cx + "px " + y + "px", cx + "px " + Math.min(y + 2, h) + "px"); }
+        pts.push("0 " + h + "px");
+        t.style.clipPath = "polygon(" + pts.join(",") + ")";
+        t.addEventListener("click", function (e) { e.stopPropagation(); choose(f.m.k, true); });
         f.el = t;
         var r = flagEnd.findIndex(function (end) { return end + 8 <= f.x; });
         if (r < 0) { r = flagEnd.length; flagEnd.push(0); }

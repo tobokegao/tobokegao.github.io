@@ -876,7 +876,8 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .tl__node:hover, .tl__node:focus-visible { background: var(--accent); color: var(--accent-ink); }
 .tl__node:hover .tl__year, .tl__node:focus-visible .tl__year { color: inherit; }
 .tl__flag { stroke: var(--grp); stroke-width: 2px; }
-.tl__flag-t { position: absolute; padding: 0 6px; white-space: nowrap; font: var(--dot)/2 var(--f-dot); background: var(--grp); color: var(--grp-fg); }
+.tl__flag-t { position: absolute; margin: 0; padding: 0 6px; border: 0; border-radius: 0; white-space: nowrap; font: var(--dot)/2 var(--f-dot); background: var(--grp); color: var(--grp-fg); cursor: pointer; }
+.tl__flag-t:hover, .tl__flag-t:focus-visible { background: var(--accent); color: var(--accent-ink); outline: 0; }
 
 /* ---------- scrollbars: TRACKMENTO's way, in the site's colours ----------
    WebKit (Chrome, Edge, Safari) gets drawn parts; Firefox, which has none, only the colours.
