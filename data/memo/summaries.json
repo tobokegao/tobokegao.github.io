@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-17",
+ "fetched": "2026-10-18",
  "source": "https://www.wikipedia.org/",
  "summaries": {
   "2-step": {
@@ -498,6 +498,27 @@
    "ja_tr": {
     "text": "ブロークン・ビート（「bruk」とも呼ばれる）は、1990年代末に現れたエレクトロニック・ダンス・ミュージック。拍をずらしたビートと、せわしなく途切れるリズムが特徴で、女性の歌声や、1970年代のジャズ・ファンクから来た要素を伴うことが多い。ハウス、ドラムンベース、ヒップホップ、テクノ、アシッド・ジャズ、R&Bなどの影響を強く受けている。決まった四つ打ちは避けられることが多く、サンプラー、アナログ・シンセ、生の楽器が使われる。",
     "url": "https://en.wikipedia.org/wiki/Broken_beat"
+   }
+  },
+  "Budots": {
+   "en": {
+    "title": "Budots",
+    "text": "Budots (; boo-DOTS) is an electronic dance music (EDM) genre that originated in Davao City, Philippines, and is considered as street style techno. It eventually spread in Bisaya-speaking regions.",
+    "url": "https://en.wikipedia.org/wiki/Budots",
+    "doubt": [
+     "All articles lacking reliable references",
+     "Articles lacking reliable references from January 2022"
+    ]
+   },
+   "ja_own": {
+    "text": "フィリピンのダバオ市で生まれた電子ダンス音楽と、それに合わせた踊り。テンポは140BPMほどで、太いベース、サイレン、拍をずらしたシンセに、ビサヤ語の歌、動物の鳴き声や街の音、おどけた掛け声などが合わさるのが特徴。名前は「怠け者」を指すビサヤ語の俗語から来ている。DJ Love（Sherwin Tuna）が先駆けとされ、YouTubeやTikTokを通じて国じゅうに広まった。",
+    "url": "https://www.nme.com/features/budots-genre-future-dj-love-boiler-room-manila-community-radio-3555062",
+    "ref": "Khyne Palumar「Budots is no longer just 'dance for the slums'. Where does it go from here?」NME（2023）"
+   },
+   "en_own": {
+    "text": "Electronic dance music, and the dance that goes with it, from Davao City in the Philippines. Tracks run at about 140 BPM, driven by chunky bass, sirens and syncopated synths, layered with Bisaya vocals, animal and street sounds, and playful jokes. The name comes from Bisaya slang for a slacker. DJ Love (Sherwin Tuna) is widely credited as its pioneer, and it spread across the country through YouTube and TikTok.",
+    "url": "https://www.nme.com/features/budots-genre-future-dj-love-boiler-room-manila-community-radio-3555062",
+    "ref": "Khyne Palumar, \"Budots is no longer just 'dance for the slums'. Where does it go from here?\", NME (2023)"
    }
   },
   "Chicago House": {
@@ -3988,6 +4009,18 @@
     "text": "A dance offshoot of HexD with a strong hyperpop influence, usually (though not always) bitcrushed. After Lumi Athena's \"Smoke It Off!\" spread on TikTok around the end of 2022, a wave of similar tracks followed.",
     "url": "https://note.com/hotmilkissweet/n/nd9b5de9e1194",
     "ref": "ホットミルクが甘い理由 (hotmilkissweet), \"2023年の覇権ジャンル、Krush Club(HexD),Sigilkoreについて\", note (2023)"
+   }
+  },
+  "Jedag Jedug": {
+   "ja_own": {
+    "text": "インドネシアのリミックス音楽を中心に、速く、力強いビートと重低音のEDMを指す言葉。名前は、ビートの「ドゥッ、ドゥッ」という音から来ている。SNSの利用者が、ダンドゥットを混ぜてリミックスしたEDMを呼ぶのに使い始め、コロナ禍のTikTokで広まった。ビートに合わせて写真や映像がテンポよく切り替わる動画編集とセットで親しまれている。",
+    "url": "https://journal.unnes.ac.id/sju/jsm/article/view/75278",
+    "ref": "Wendy Belinda Tiantini、Nadya Afdholy、Yulia Mega Puspita「Jamet Stereotyping in Jedag-Jedug Music」Jurnal Seni Musik（2023）"
+   },
+   "en_own": {
+    "text": "A term for fast, bass-heavy EDM, especially Indonesian remix music. The name is an onomatopoeia for the beat (\"dug, dug\"). Social media users began using it for EDM remixed with dangdut, and it spread on TikTok during the pandemic, closely tied to video edits that flash photos and clips in sync with the beat.",
+    "url": "https://journal.unnes.ac.id/sju/jsm/article/view/75278",
+    "ref": "Wendy Belinda Tiantini, Nadya Afdholy and Yulia Mega Puspita, \"Jamet Stereotyping in Jedag-Jedug Music\", Jurnal Seni Musik (2023)"
    }
   }
  }
