@@ -170,13 +170,11 @@
         byKey[n.k] = { n: n, el: a };
       });
 
-      // Large genres: a line down from the earliest year of their members, with the name on top.
+      // Large genres: a line down from their own year, with the name on top (not from their
+      // earliest member: New Orleans Jazz is dated before Jazz, and the flag stood apart from
+      // the Jazz node)
       var majors = nodes.filter(function (n) { return n.c; });
-      var flags = [];
-      majors.forEach(function (m) {
-        var ys = nodes.filter(function (n) { return n.mj.indexOf(m.k) !== -1; }).map(function (n) { return n.y; });
-        if (ys.length) flags.push({ m: m, x: X(Math.min.apply(null, ys)) });
-      });
+      var flags = majors.map(function (m) { return { m: m, x: X(m.y) }; });
       var dot = parseInt(getComputedStyle(root).getPropertyValue("--dot"), 10) || 12;
       var row = dot * 2;
       // the names on top share a row when they do not run into each other (the widest of the
@@ -436,6 +434,10 @@
       pop.querySelector("[data-go]").href = sitePath(n.u);
       pop.hidden = false;
       pop.scrollTop = 0;
+      // once a genre has been chosen the scale is not chosen again by itself: when the box
+      // closes, the panel (and the window around it) changes height, and choosing again
+      // redrew the drawing at its newest end, losing the place the reader was at
+      touched = true;
       fit();
       // the chosen genre is kept in view in the (maybe lower) panel
       var a = nodeEl(k);
@@ -698,7 +700,7 @@
       if (el.style.height !== h) {
         el.style.height = h;
         // the panel settled lower or higher (a late font, a turned phone): choose the
-        // starting scale again, unless the reader has already zoomed
+        // starting scale again, unless the reader has already zoomed or chosen a genre
         if (started && !touched && pop.hidden && !again) again = setTimeout(function () { again = 0; autoScale(); }, 0);
       }
       el.style.maxHeight = "none";
