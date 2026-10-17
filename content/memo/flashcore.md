@@ -1,6 +1,6 @@
 +++
 title = "Flashcore"
-born = 1998
+born = 2001
 up = ["Speedcore"]
 src = ["IDM"]
 also = ["フラッシュコア"]

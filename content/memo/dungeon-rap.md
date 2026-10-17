@@ -1,7 +1,7 @@
 +++
 title = "Dungeon Rap"
-born = 2010
-era = "x"
+born = 2017
+era = "x4"
 up = ["Hip Hop"]
 src = ["Memphis Rap"]
 also = ["ダンジョン・ラップ", "Crypt Hop"]

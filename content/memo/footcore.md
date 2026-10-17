@@ -1,7 +1,6 @@
 +++
 title = "Footcore"
-born = 2020
-era = "x"
+born = 2019
 up = ["Footwork"]
 src = ["Breakcore"]
 also = ["フットコア"]

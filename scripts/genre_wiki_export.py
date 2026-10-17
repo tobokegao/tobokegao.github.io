@@ -11,8 +11,8 @@ zatto's works.
   (x, x2, x3, x4: the decade, its early, middle and late part).
 - Zatto's genres that are not here (not added yet, or left out) are kept as they are, with
   their links, so nothing of zatto's is lost.
-- Zatto's large genres are kept; the six that the roots page also has take its colours
-  (TRACKMENTO's "riso" colours, as hex).
+- Zatto's large genres are kept as they are, colours too; a large genre of ours that zatto
+  does not have is added in the roots page's colour (TRACKMENTO's "riso" colours, as hex).
 - Zatto's works are kept.
 
     python scripts/genre_wiki_export.py <zatto's genre-wiki.json> [out.json]
@@ -93,7 +93,7 @@ def main() -> None:
     out_genres += only
     only_ids = {g["id"] for g in only}
     edges += [e for e in theirs["edges"] if e["a"] in only_ids or e["b"] in only_ids]
-    # zatto's large genres, the ones the roots page has in its colours
+    # zatto's large genres as they are (Tobokegao, 2026-10-17: keep zatto's colours)
     ours = {ids[k]: t["major"] for k, t in genres.items() if t.get("major")}
     majors = []
     for m in theirs.get("majors", []):
@@ -102,7 +102,6 @@ def main() -> None:
         name = m["name"].strip().lower()
         k = RENAMED.get(name, name)
         if k in genres and genres[k].get("major"):
-            m = dict(m, color=COLORS[genres[k]["major"]])
             ours.pop(ids[k], None)
         majors.append(m)
     for gid, c in ours.items():

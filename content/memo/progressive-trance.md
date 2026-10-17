@@ -1,7 +1,7 @@
 +++
 title = "Progressive Trance"
-born = 1992
-era = "x2"
+born = 1995
+era = "x3"
 up = ["Trance"]
 src = ["Progressive House"]
 also = ["プログレッシブ・トランス"]

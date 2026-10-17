@@ -1,8 +1,7 @@
 +++
 title = "Speedcore"
 dbpedia = "Speedcore"
-born = 1992
-era = "x2"
+born = 1995
 up = ["Hardcore Techno"]
 src = ["Gabber"]
 also = ["スピードコア"]
