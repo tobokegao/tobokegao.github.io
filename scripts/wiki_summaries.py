@@ -113,7 +113,9 @@ def warnings(lang: str, page: dict, words: dict) -> list[str]:
 
 
 def main() -> None:
-    notes = [n for n in read_notes() if n["fm"].get("dbpedia") and n["fm"].get("born") is not None]
+    # every note with an article, a year or not: an umbrella genre without one (Folk, 日本音楽)
+    # is a topic on the roots page and still shows its summary there and on its link card
+    notes = [n for n in read_notes() if n["fm"].get("dbpedia")]
     en_titles = {n["fm"]["title"]: n["fm"]["dbpedia"].replace("_", " ") for n in notes}
 
     # the English article, its Japanese language link and its warnings
