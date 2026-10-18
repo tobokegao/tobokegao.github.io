@@ -54,10 +54,12 @@ SS = 8          # supersampling per icon pixel
 # color), "tile" (a white mark on a colored tile). size: the mark's width on the grid;
 # 24 keeps the 24-unit marks at an exact 8x scale, so circles stay round and centered.
 ICONS = {
-    "x":          dict(src=OFFICIAL / "twitter.svg",    kind="plain", size=20, mark="#1d9bf0",
-                       night_fill=True),
-    "bluesky":    dict(src=OFFICIAL / "bluesky.svg",    kind="plain", size=20, mark="#1185fe",
-                       night_fill=True),  # a 1px outline made the butterfly look thin at night
+    # white marks on square tiles, like Instagram and SoundCloud (asked for 2026-10-18)
+    "x":          dict(src=HAND / "twitter-tile.svg",   kind="tile",  size=24, mark="#ffffff", tile="#1d9bf0"),
+    # the butterfly drawn on the grid by icons-src/hand/bluesky_grid.py (shrunk from the
+    # official outline, its wings ran together)
+    "bluesky":    dict(src=HAND / "bluesky_grid.py",    kind="tile",  size=24, mark="#ffffff", tile="#1185fe",
+                       hand_grid=True),
     "youtube":    dict(src=HAND / "youtube.svg",        kind="hull",  size=24, mark="#ff0033", hole="#ffffff"),
     "niconico":   dict(src=HAND / "niconico.svg",       kind="hull",  size=24, mark="#252525", hole="#ffffff",
                        line_art=True,             # at night: frame, antennas and face as white lines
