@@ -185,7 +185,7 @@
               }).join("") : '<p class="notes__hit-s">' + p.excerpt + "</p>") + "</li>";
           }).join("");
           say(shown + " ページ" + (o.media ? "（絵の有無は、from:かto:と一緒のときだけ絞れます）" : ""),
-            shown + " pages" + (o.media ? " (pictures can be told apart only with from: or to:)" : ""));
+            shown + " pages" + (o.media ? " (you can filter by pictures only when using from: or to:)" : ""));
           empty.hidden = shown !== 0;
         }).catch(function () {
           // no index: `hugo server` alone does not run Pagefind
