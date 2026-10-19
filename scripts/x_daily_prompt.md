@@ -11,6 +11,8 @@
 
 ## 手順
 
+`PYTHONUTF8=1`は起動用のファイル（`x_daily.ps1`）が設定済み。コマンドの前には付けず、`python scripts/...`の形のまま動かす（付けると許可に当たらず止まる）。
+
 1. `git branch --show-current`で`renewal`か確かめる。
 2. Chromeの道具を読み込み（ToolSearch、まとめて1回）、`tabs_context_mcp`のあと新しいタブを作る。つながらないときは、報告に「Chromeにつながらなかった」と書いて終わる。
 3. 次の3つのページを順に開き、それぞれで番号を拾う。
