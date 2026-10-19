@@ -420,7 +420,7 @@ en = "Open this picture's post (diary)"
 
 [miniAsk]
 ja = "話しかける"
-en = "Say"
+en = "Talk"
 
 [miniSend]
 ja = "送る"
@@ -428,4 +428,4 @@ en = "Send"
 
 [miniNote]
 ja = "メモの中から、言葉に合うポストを自動で選んで答えます。とぼけがお本人の返事ではありません。"
-en = "Automatically picks a matching post from the memo based on your words. It is not Tobokegao replying."
+en = "Automatically picks a matching post from the memo based on your words. Replies are not from Tobokegao in person."

@@ -117,7 +117,7 @@
           if (old) old.remove();
           list.insertAdjacentHTML("beforeend", html.map(function (h) { return '<li class="notes__hit">' + h + "</li>"; }).join(""));
           if (shown < posts.length) {
-            list.insertAdjacentHTML("beforeend", '<li class="notes__more"><button type="button" class="btn">' + (en() ? "Load more" : "続きを読み込む") + "</button></li>");
+            list.insertAdjacentHTML("beforeend", '<li class="notes__more"><button type="button" class="btn">' + (en() ? "See more" : "もっと見る") + "</button></li>");
             list.querySelector(".notes__more button").addEventListener("click", more);
           }
         });
@@ -212,10 +212,10 @@
       more: "このポストを見る"
     },
     en: {
-      hello: ["Hi…! Type a word and I'll dig it out of the memo!", "Mini Tobokegao here…! (I can answer from the memo)", "Any word on your mind…?"],
+      hello: ["Hi…! Type a word and I'll dig it out of the memo!", "Mini Tobokegao here…! (I can only answer things from the memo)", "Any word on your mind…?"],
       open: ["Oh, ", "Ah, ", "I see…! ", "Whoa, ", "Found it…! "],
       found: "I wrote this on {d}…!",
-      foundRt: "On {d} I reposted this from {u}…!",
+      foundRt: "On {d}, I reposted {u}'s post…!",
       aside: ["(good old days)", "(from the memo)", "(there may be more)"],
       none: ["Hmm, I couldn't find that in the memo…! (try another word)", "Maybe I haven't written about that yet…!"],
       more: "See this post"
