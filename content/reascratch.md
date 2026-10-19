@@ -42,12 +42,12 @@ GitHubのReleasesから、最新版のzipファイルをダウンロードでき
 
 説明書はキットに入っています（Releasesのzipにも入っています）。
 
-- 日本語: [ReaScratch_manual.pdf](https://github.com/tobokegao/ReaScratch/blob/main/ReaScratch_manual.pdf)、[README.md](https://github.com/tobokegao/ReaScratch/blob/main/README.md)
-- 英語: [ReaScratch_manual_en.pdf](https://github.com/tobokegao/ReaScratch/blob/main/ReaScratch_manual_en.pdf)、[README_en.md](https://github.com/tobokegao/ReaScratch/blob/main/README_en.md)
+- 日本語: [ReaScratch_manual.pdf](https://github.com/tobokegao/ReaScratch/raw/main/ReaScratch_manual.pdf)（14MB）、[README.md](https://github.com/tobokegao/ReaScratch/blob/main/README.md)
+- 英語: [ReaScratch_manual_en.pdf](https://github.com/tobokegao/ReaScratch/raw/main/ReaScratch_manual_en.pdf)（14MB）、[README_en.md](https://github.com/tobokegao/ReaScratch/blob/main/README_en.md)
 
 ## ライセンスとクレジット
 
-ライセンスはGPL-3.0-or-laterです。フィルターはSaikeのJSFX（MITライセンス）から、映像のVHSのエフェクトはzhukerのntsc（Apache License 2.0）から移植しました。コントローラーの情報は、Mixxxの割り当て、メーカーのMIDI一覧、SuperXtremeMapper、有志の割り当てをもとにしています。スクラッチをJSFXの中で行うアイデアは、tilrのTIME-1から得ました。くわしくは[CREDITS.md](https://github.com/tobokegao/ReaScratch/blob/main/CREDITS.md)にあります。
+ライセンスはGPL-3.0-or-laterです。フィルターは[SaikeのJSFX](https://github.com/JoepVanlier/JSFX)（MITライセンス）から、映像のVHSのエフェクトは[zhukerのntsc](https://github.com/zhuker/ntsc)（Apache License 2.0）から移植しました。コントローラーの情報は、[Mixxx](https://github.com/mixxxdj/mixxx)の割り当て、メーカーのMIDI一覧、[SuperXtremeMapper](https://github.com/SuperXtremeMapper/super-xtreme-mapper)、有志の割り当てをもとにしています。スクラッチをJSFXの中で行うアイデアは、[tilrのTIME-1](https://github.com/tiagolr/time1)から得ました。くわしくは[CREDITS.md](https://github.com/tobokegao/ReaScratch/blob/main/CREDITS.md)にあります。
 
 ReaScratchは、Claudeに手伝ってもらって作りました。
 {{< /lang >}}
@@ -89,12 +89,12 @@ If you own a controller marked ⚠, I'd be grateful if you could:
 
 The manuals come with the kit (and are in the Releases zip).
 
-- English: [ReaScratch_manual_en.pdf](https://github.com/tobokegao/ReaScratch/blob/main/ReaScratch_manual_en.pdf), [README_en.md](https://github.com/tobokegao/ReaScratch/blob/main/README_en.md)
-- Japanese: [ReaScratch_manual.pdf](https://github.com/tobokegao/ReaScratch/blob/main/ReaScratch_manual.pdf), [README.md](https://github.com/tobokegao/ReaScratch/blob/main/README.md)
+- English: [ReaScratch_manual_en.pdf](https://github.com/tobokegao/ReaScratch/raw/main/ReaScratch_manual_en.pdf) (14 MB), [README_en.md](https://github.com/tobokegao/ReaScratch/blob/main/README_en.md)
+- Japanese: [ReaScratch_manual.pdf](https://github.com/tobokegao/ReaScratch/raw/main/ReaScratch_manual.pdf) (14 MB), [README.md](https://github.com/tobokegao/ReaScratch/blob/main/README.md)
 
 ## License and credits
 
-ReaScratch is licensed under GPL-3.0-or-later. The filters are ported from Saike's JSFX (MIT License), and the VHS video effect from zhuker's ntsc (Apache License 2.0). Controller data comes from Mixxx mappings, manufacturers' MIDI lists, SuperXtremeMapper and community mappings. The idea of scratching inside a JSFX came from tilr's TIME-1. See [CREDITS.md](https://github.com/tobokegao/ReaScratch/blob/main/CREDITS.md) for details.
+ReaScratch is licensed under GPL-3.0-or-later. The filters are ported from [Saike's JSFX](https://github.com/JoepVanlier/JSFX) (MIT License), and the VHS video effect from [zhuker's ntsc](https://github.com/zhuker/ntsc) (Apache License 2.0). Controller data comes from [Mixxx](https://github.com/mixxxdj/mixxx) mappings, manufacturers' MIDI lists, [SuperXtremeMapper](https://github.com/SuperXtremeMapper/super-xtreme-mapper) and community mappings. The idea of scratching inside a JSFX came from [tilr's TIME-1](https://github.com/tiagolr/time1). See [CREDITS.md](https://github.com/tobokegao/ReaScratch/blob/main/CREDITS.md) for details.
 
 Built with extensive AI assistance (Claude).
 {{< /lang >}}
