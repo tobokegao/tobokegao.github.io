@@ -2,12 +2,20 @@
 {{ $file := cond (eq .Section "post") (printf `C:\TBK\POSTS\%s.MD` (upper .File.ContentBaseName)) `C:\TBK\PROFILE.TXT` }}
 {{ if eq .File.ContentBaseName "tbkgao" }}{{ $file = `C:\TBK\LABEL.TXT` }}{{ end }}
 {{ if eq .File.ContentBaseName "contact" }}{{ $file = `C:\TBK\CONTACT.TXT` }}{{ end }}
+{{ if eq .File.ContentBaseName "reascratch" }}{{ $file = `C:\TBK\REASCRAT\README.TXT` }}{{ end }}
 <article class="win win--doc" aria-labelledby="page-t">
   {{ partial "win.html" (dict "file" $file "id" "page-t-file") }}
   {{ if eq .File.ContentBaseName "about" }}
   <div class="doc__art">{{ partial "logo-tobokegao.html" . }}</div>
   {{ else if eq .File.ContentBaseName "tbkgao" }}
   <div class="doc__art doc__art--label">{{ partial "logo-tbkgao.html" . }}</div>
+  {{ else if eq .File.ContentBaseName "reascratch" }}
+  <div class="doc__art doc__art--rs"><div class="rs__stack">
+    <span class="rs__ansi rs__ansi--8"><img class="logo--day" src="{{ "img/reascratch/ansi8-day.webp" | relURL }}" width="487" height="111" alt="ReaScratch"><img class="logo--night" src="{{ "img/reascratch/ansi8-night.webp" | relURL }}" width="487" height="111" alt="ReaScratch"></span>
+    <span class="rs__ansi rs__ansi--5"><img class="logo--day" src="{{ "img/reascratch/ansi5-day.webp" | relURL }}" width="305" height="69" alt="ReaScratch"><img class="logo--night" src="{{ "img/reascratch/ansi5-night.webp" | relURL }}" width="305" height="69" alt="ReaScratch"></span>
+    <span class="rs__ansi rs__ansi--4"><img class="logo--day" src="{{ "img/reascratch/ansi4-day.webp" | relURL }}" width="243" height="55" alt="ReaScratch"><img class="logo--night" src="{{ "img/reascratch/ansi4-night.webp" | relURL }}" width="243" height="55" alt="ReaScratch"></span>
+    <img class="rs__gui" src="{{ "img/reascratch/gui.webp" | relURL }}" srcset="{{ "img/reascratch/gui-2x.webp" | relURL }} 2x" width="744" height="340" alt="" decoding="async">
+  </div></div>
   {{ end }}
   <h1 class="doc__title" id="page-t">{{ partial "bi.html" (dict "ja" .Title "en" .Params.title_en) }}</h1>
   {{ if eq .Section "post" }}<p class="doc__date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time></p>{{ end }}

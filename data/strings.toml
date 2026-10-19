@@ -24,6 +24,10 @@ en = "Website"
 ja = "フライヤー"
 en = "Flyer"
 
+[kind_plugin]
+ja = "プラグインの画面"
+en = "Plug-in UI"
+
 # Tobokegao's part in a design made with others (designs.json "role")
 [role_idea]
 ja = "アイデア出し"

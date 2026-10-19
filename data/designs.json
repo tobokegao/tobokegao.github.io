@@ -1,5 +1,12 @@
 [
   {
+    "title": "ReaScratch",
+    "kind": "plugin",
+    "date": "2026-10-17",
+    "image": "/img/designs/reascratch.webp",
+    "url": "/reascratch/"
+  },
+  {
     "title": "TRACKMENTO",
     "kind": "web",
     "date": "2026-09-10",

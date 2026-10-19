@@ -42,3 +42,4 @@
 - [0025 ジャンルを選ぶと小さな窓を開き、Wikipediaの要約を出す](0025-genre-box-with-wikipedia-summary.md)
 - [0026 スクロールバーはTRACKMENTOの作りを流用する](0026-scrollbars-from-trackmento.md)
 - [0027 XとBlueskyのアイコンを、四角い色地に白抜きにする](0027-x-and-bluesky-on-tiles.md)
+- [0028 ReaScratchの紹介ページは、このサイトの中に置く](0028-reascratch-page.md)

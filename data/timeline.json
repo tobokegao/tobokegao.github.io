@@ -1,5 +1,28 @@
 [
   {
+    "date": "2026-10-17",
+    "id": "20261017-7e5c4a",
+    "kind": "other",
+    "ja": "REAPERで音と映像をスクラッチできる無料のキット「ReaScratch」を公開",
+    "en": "Released ReaScratch, a free kit for scratching audio and video in REAPER",
+    "source": "web",
+    "links": [
+      {
+        "source": "web",
+        "url": "/reascratch/"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/2111040461242847714"
+      },
+      {
+        "source": "web",
+        "url": "https://github.com/tobokegao/ReaScratch/releases/latest"
+      }
+    ],
+    "pic": "/img/log/2026-10-17.webp"
+  },
+  {
     "date": "2026-09-19",
     "id": "20260919-482830",
     "kind": "feature",

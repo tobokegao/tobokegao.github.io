@@ -7,7 +7,7 @@
   <a class="menubar__brand menubar__logo" href="{{ "/" | relURL }}" aria-label="Tobokegao — {{ partial "tt.html" "home" }}" title="{{ partial "tt.html" "home" }}">{{ partial "banner-mini.html" . }}</a>
   {{ end }}
   <nav class="menubar__nav" aria-label="{{ partial "tt.html" "nav" }}">
-    {{ range slice "releases" "videos" "designs" "news" "post" "about" "memo" }}
+    {{ range slice "releases" "videos" "designs" "news" "post" "memo" "about" }}
       {{ $s := index hugo.Data.strings . }}
       <a href="{{ printf "/%s/" . | relURL }}" accesskey="{{ lower (substr $s.en 0 1) }}" aria-keyshortcuts="Alt+{{ upper (substr $s.en 0 1) }}" title="{{ $s.en }}"{{ if eq $cur . }} aria-current="page"{{ end }}><span class="menubar__ico">{{ partial (printf "icons/tab-%s.html" .) }}</span><span lang="en"><u>{{ substr $s.en 0 1 }}</u>{{ substr $s.en 1 }}</span></a>
     {{ end }}

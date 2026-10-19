@@ -632,6 +632,18 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .win--doc { max-width: 860px; width: 100%; margin-inline: auto; }
 .doc__art { width: min(260px, 70%); margin: 4px auto 20px; }
 .doc__art--label { width: min(220px, 60%); }
+/* ReaScratch: laid out like the manual's cover, the ANSI logo over the plug-in screen */
+.doc__art--rs { width: 100%; max-width: 748px; container-type: inline-size; }
+.rs__stack { display: flex; flex-direction: column; align-items: center; gap: 24px; }
+/* the ANSI logo is drawn at 8, 5 and 4 px cells (not scaled): the widest one that fits is shown */
+.rs__ansi { display: none; line-height: 0; }
+.rs__ansi img { vertical-align: top; image-rendering: pixelated; }
+.rs__ansi--8 { display: block; }
+@container (max-width: 486px) { .rs__ansi--8 { display: none; } .rs__ansi--5 { display: block; } }
+@container (max-width: 304px) { .rs__ansi--5 { display: none; } .rs__ansi--4 { display: block; } }
+.rs__gui { display: block; width: 100%; max-width: 748px; height: auto; border: 2px solid var(--frame); image-rendering: pixelated; }   /* 744 + the 2px frame on each side */
+/* narrower than 1x, the screen is shrunk, so smooth it there rather than keep hard pixels */
+@container (max-width: 747px) { .rs__stack .rs__gui { image-rendering: auto; } }
 .doc__title { margin: 0; text-align: center; font: 400 calc(var(--dot) * 2)/1.4 var(--f-dot); color: var(--hi); text-wrap: balance; }
 .doc__date { margin: 4px 0 0; text-align: center; font: var(--dot) var(--f-dot); color: var(--ink-dim); }
 .doc__lead { margin: 6px 0 24px; text-align: center; font: var(--dot)/1.8 var(--f-dot); color: var(--ink-dim); }
