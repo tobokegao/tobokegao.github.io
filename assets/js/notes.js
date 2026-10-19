@@ -233,10 +233,17 @@
     var handle = searchBox.dataset.handle || "";
     var showArt = function () {
       var a = pick(art);
+      // shrunk drawings come in more sizes for fine screens; small pixel art is enlarged by a
+      // whole number and keeps its dots hard
+      var set = function (name) {
+        return [imgTop + name + ".webp 1x"].concat((a.x || []).map(function (x) { return imgTop + name + "@" + x + ".webp " + x; })).join(", ");
+      };
       img.src = imgTop + a.d + ".webp";
+      img.srcset = set(a.d);
       img.width = a.w; img.height = a.h;
+      img.classList.toggle("is-hard", !!a.k);
       // a moving picture shows its first frame to those who asked for less motion
-      if (a.s) still.srcset = imgTop + a.d + "-still.webp"; else still.removeAttribute("srcset");
+      if (a.s) still.srcset = set(a.d + "-still"); else still.removeAttribute("srcset");
       link.href = "https://x.com/" + handle + "/status/" + a.p;
     };
     var L = function () { return MINI[en() ? "en" : "ja"]; };

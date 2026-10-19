@@ -19,7 +19,7 @@
      (no AI: notes.js picks a Pagefind hit and fills set phrases). The picture is one of the
      "diary" pixel arts, chosen at random (data/minitobo.json, scripts/minitobo_art.py). Decision 0032 */}}
   {{ $art := slice }}
-  {{ range $a := hugo.Data.minitobo.art }}{{ with $a.img }}{{ $art = $art | append (dict "d" $a.diary "p" $a.post "w" .w "h" .h "s" (cond (isset . "still") 1 0)) }}{{ end }}{{ end }}
+  {{ range $a := hugo.Data.minitobo.art }}{{ with $a.img }}{{ $art = $art | append (dict "d" $a.diary "p" $a.post "w" .w "h" .h "s" (cond (isset . "still") 1 0) "x" .x "k" .hard) }}{{ end }}{{ end }}
   <section class="mini" id="mini" aria-labelledby="mini-t" data-art="{{ $art | jsonify }}" data-img="{{ "img/minitobo/" | relURL }}" hidden>
     <h2 class="sub" id="mini-t">{{ partial "t.html" "miniTitle" }}</h2>
     <div class="mini__body">

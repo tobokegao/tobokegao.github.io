@@ -818,7 +818,8 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .mini { margin: 8px 0 24px; }
 .mini__body { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px; container-type: inline-size; }
 .mini__pic { flex: none; display: grid; place-items: center; width: 240px; height: 240px; }   /* no frame: the picture stands on the page */
-.mini__pic img { display: block; max-width: 240px; max-height: 240px; image-rendering: pixelated; }
+.mini__pic img { display: block; max-width: 240px; max-height: 240px; }
+.mini__pic img.is-hard { image-rendering: pixelated; }   /* small pixel art, enlarged by a whole number */
 .mini__talk { flex: 1 1 280px; min-width: 0; display: grid; gap: 12px; }
 .mini__say { position: relative; margin: 0 0 0 12px; padding: 12px 16px; min-height: 48px; background: var(--win-2); border: 2px solid var(--frame); font: 15px/1.8 var(--f-body); overflow-wrap: anywhere; }
 .mini__say::before { content: ""; position: absolute; left: -14px; top: 16px; border: 7px solid transparent; border-right-color: var(--frame); }

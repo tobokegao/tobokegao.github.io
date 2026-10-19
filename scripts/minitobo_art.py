@@ -10,7 +10,9 @@ it is shown (decision 0032):
 - large drawings (many are 1080 or 1600 px drawn dot by dot): shrunk to fit BOX
 - GIFs become animated WebP, with <diary>-still.webp (the first frame) for reduced motion
 
-It then writes the sizes back into data/minitobo.json ("img").
+Shrunk drawings also get <diary>@2x.webp and @3x.webp for fine screens. It then writes the
+sizes back into data/minitobo.json ("img": w, h, hard = whole-number enlargement, x = the
+extra scales written, as "2x" or "1.33x", still = a GIF).
 
     python scripts/minitobo_art.py
 """
@@ -65,6 +67,25 @@ def plan(w: int, h: int) -> tuple[int, int, bool]:
     return max(1, round(w * s)), max(1, round(h * s)), n <= BOX
 
 
+def scales(nw: int, nh: int, w: int, h: int, hard: bool) -> list[tuple[int, int, str]]:
+    """(width, height, file suffix) to write: 1x, and for a shrunk drawing also up to 2x and 3x,
+    no larger than the original, so phones with fine screens get a sharp picture instead of a
+    blown-up 240px one. The suffix is the scale as srcset writes it ("@1.5x" for 1.5x)."""
+    out = [(w, h, "")]
+    if hard:
+        return out
+    for k in (2, 3):
+        x = min(k, nw / w)
+        if x >= 1.25 and x > (float(out[-1][2][1:-1]) if out[-1][2] else 1) + 0.2:
+            out.append((round(w * x), round(h * x), f"@{x:.2f}".rstrip("0").rstrip(".") + "x"))
+    return out
+
+
+def save(im: Image.Image, path: Path, hard: bool, **kw) -> None:
+    # dots kept hard: lossless; shrunk drawings: lossy, which a drawing's flat colours take well
+    im.save(path, "WEBP", **({"lossless": True} if hard else {"quality": 88, "method": 6}), **kw)
+
+
 def main() -> int:
     data = json.loads(DATA.read_text(encoding="utf-8"))
     RAW.mkdir(parents=True, exist_ok=True)
@@ -88,8 +109,10 @@ def main() -> int:
             k = enlarged(im)
             im = im.resize((im.width // k, im.height // k), Image.NEAREST)
             w, h, hard = plan(*im.size)
-            im.resize((w, h), Image.NEAREST if hard else Image.BOX).save(dest, "WEBP", lossless=True)
-            a["img"] = {"w": w, "h": h}
+            ks = scales(*im.size, w, h, hard)
+            for sw, sh, sfx in ks:
+                save(im.resize((sw, sh), Image.NEAREST if hard else Image.BOX), OUT / f"{a['diary']}{sfx}.webp", hard)
+            a["img"] = {"w": w, "h": h, "hard": int(hard), "x": [k[2][1:] for k in ks[1:]]}
         else:
             mp4 = get(f"https://video.twimg.com/tweet_video/{name}.mp4", RAW / f"{name}.mp4")
             first = RAW / f"{name}_f0.png"
@@ -110,13 +133,14 @@ def main() -> int:
                                    "stream=r_frame_rate", "-of", "csv=p=0", str(mp4)],
                                   capture_output=True, text=True, check=True).stdout.strip()
             num, den = (int(x) for x in rate.split("/"))
-            frames = [Image.open(f).convert("RGB").resize((nw, nh), Image.NEAREST).resize((w, h), Image.NEAREST if hard else Image.BOX)
-                      for f in sorted(frames_dir.glob("f*.png"))]
-            frames[0].save(dest, "WEBP", save_all=True, append_images=frames[1:], duration=round(1000 * den / num),
-                           loop=0, lossless=True)
-            still = OUT / f"{a['diary']}-still.webp"
-            im.convert("RGB").resize((nw, nh), Image.NEAREST).resize((w, h), Image.NEAREST if hard else Image.BOX).save(still, "WEBP", lossless=True)
-            a["img"] = {"w": w, "h": h, "still": 1}
+            native = [Image.open(f).convert("RGB").resize((nw, nh), Image.NEAREST) for f in sorted(frames_dir.glob("f*.png"))]
+            ks = scales(nw, nh, w, h, hard)
+            for sw, sh, sfx in ks:
+                frames = [f.resize((sw, sh), Image.NEAREST if hard else Image.BOX) for f in native]
+                save(frames[0], OUT / f"{a['diary']}{sfx}.webp", hard, save_all=True, append_images=frames[1:],
+                     duration=round(1000 * den / num), loop=0)
+                save(frames[0], OUT / f"{a['diary']}-still{sfx}.webp", hard)
+            a["img"] = {"w": w, "h": h, "still": 1, "hard": int(hard), "x": [k[2][1:] for k in ks[1:]]}
         print(f"{a['diary']} {kind} x{k} -> {a['img']['w']}x{a['img']['h']} {dest.stat().st_size // 1024}KB")
     DATA.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     total = sum(f.stat().st_size for f in OUT.glob("*.webp"))
