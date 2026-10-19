@@ -26,6 +26,7 @@ import sys
 import urllib.request
 from pathlib import Path
 
+import numpy as np
 from PIL import Image, ImageChops, ImageStat
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -76,11 +77,29 @@ def scales(nw: int, nh: int, w: int, h: int, hard: bool) -> list[tuple[int, int,
     return [(w, h, ""), (w * 2, h * 2, "@2x"), (w * 3, h * 3, "@3x")]
 
 
+def scale2x(im: Image.Image) -> Image.Image:
+    """Scale2x (EPX): twice the size, filling the steps of diagonal lines with the colours that
+    are already there, so a line drawn dot by dot comes out smooth without blur."""
+    a = np.asarray(im)
+    p = np.pad(a, ((1, 1), (1, 1), (0, 0)), mode="edge")
+    c, up, down, left, right = p[1:-1, 1:-1], p[:-2, 1:-1], p[2:, 1:-1], p[1:-1, :-2], p[1:-1, 2:]
+    same = lambda x, y: np.all(x == y, axis=-1)[..., None]  # noqa: E731
+    e0 = np.where(same(left, up) & ~same(left, down) & ~same(up, right), up, c)
+    e1 = np.where(same(up, right) & ~same(up, left) & ~same(right, down), right, c)
+    e2 = np.where(same(down, left) & ~same(down, right) & ~same(left, up), left, c)
+    e3 = np.where(same(right, down) & ~same(right, up) & ~same(down, left), down, c)
+    h, w, ch = a.shape
+    out = np.empty((h * 2, w * 2, ch), dtype=a.dtype)
+    out[0::2, 0::2], out[0::2, 1::2], out[1::2, 0::2], out[1::2, 1::2] = e0, e1, e2, e3
+    return Image.fromarray(out, im.mode)
+
+
 def shrink(im: Image.Image, size: tuple[int, int]) -> Image.Image:
-    """A drawing drawn dot by dot, to any size without blur: enlarged by a whole number until
-    it is at least as large (each dot stays a square), then averaged down to the size."""
-    m = max(1, -(-size[0] // im.width), -(-size[1] // im.height))
-    return im.resize((im.width * m, im.height * m), Image.NEAREST).resize(size, Image.BOX)
+    """A drawing drawn dot by dot, to any size: enlarged with Scale2x until it is at least as
+    large (smooth lines, no blur), then averaged down to the size."""
+    while im.width < size[0] or im.height < size[1]:
+        im = scale2x(im)
+    return im.resize(size, Image.BOX)
 
 
 def save(im: Image.Image, path: Path, hard: bool, **kw) -> None:
