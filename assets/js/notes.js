@@ -79,6 +79,7 @@
   }
   // a post found in the account index is shown as it is on its month page (fetched once a month)
   var monthPages = {};
+  var picLists = {};
   function loadPost(memoTop, p) {
     var url = memoTop + (p.kind === "rt" ? "rt/" : "") + p.month + "/";
     monthPages[url] = monthPages[url] || fetch(url).then(function (r) { return r.text(); }).then(function (html) {
@@ -231,6 +232,7 @@
     var link = document.getElementById("mini-pic"), say = document.getElementById("mini-say");
     var form = document.getElementById("mini-ask"), q = document.getElementById("mini-q");
     var handle = searchBox.dataset.handle || "";
+    var memoTop = new URL(searchBox.dataset.pagefind.replace(/pagefind\/$/, ""), location.href).href;
     var showArt = function () {
       var a = pick(art);
       // shrunk drawings come in more sizes for fine screens; small pixel art is enlarged by a
@@ -288,19 +290,21 @@
         say.innerHTML = esc(pick(l.open) + (rt ? l.foundRt.replace("{u}", "@" + rt[1]) : l.found).replace("{d}", d)) +
           '<span class="mini__quote">' + text + "</span>" + esc(pick(l.aside)) +
           ' <a href="' + esc(s.url) + '">' + esc(l.more) + "</a>";
-        // the post's pictures, from the page the hit is on (the excerpt is text only)
-        var pageUrl = new URL(s.url, location.href).href.split("#")[0], pid = s.url.split("#")[1];
-        monthPages[pageUrl] = monthPages[pageUrl] || fetch(pageUrl).then(function (r) { return r.text(); }).then(function (html) {
-          return new DOMParser().parseFromString(html, "text/html");
-        });
-        monthPages[pageUrl].then(function (doc) {
-          var h = pid && doc.getElementById(pid), pics = h && h.closest("article") && h.closest("article").querySelector(".np__pics");
-          if (!pics || id !== asked) return;
-          pics.querySelectorAll("a[href], img[src]").forEach(function (el) {
-            var attr = el.hasAttribute("href") ? "href" : "src";
-            el.setAttribute(attr, new URL(el.getAttribute(attr), pageUrl).href);
-          });
-          say.querySelector(".mini__quote").insertAdjacentHTML("afterend", pics.outerHTML);
+        // the post's pictures, from the month's small list of pictures (scripts/memo_query_index.py),
+        // drawn as on the memo pages; the excerpt itself is text only
+        var pid = (s.url.split("#")[1] || "").replace(/^p/, "");
+        if (!/^\d+$/.test(pid)) return;
+        var file = memoTop + "m/" + (rt ? "rt-" : "") + dayOfId(pid).slice(0, 7) + ".json";
+        picLists[file] = picLists[file] || fetch(file).then(function (r) { if (!r.ok) throw r; return r.json(); });
+        picLists[file].then(function (list) {
+          var mx = list[pid];
+          if (!mx || id !== asked) return;
+          var post = rt ? "https://x.com/" + rt[1] : "https://x.com/" + handle + "/status/" + pid;
+          say.querySelector(".mini__quote").insertAdjacentHTML("afterend", '<p class="np__pics">' + mx.map(function (m) {
+            return '<a class="np__pic np__pic--' + esc(m[1]) + '" href="' + esc(post) + '" rel="noopener" target="_blank">' +
+              '<img class="np__img" src="https://pbs.twimg.com/' + esc(m[0]) + '?format=webp&amp;name=360x360" width="160" height="160" alt="">' +
+              '<span class="np__gone">' + (en() ? "Unavailable" : "見られない") + "</span></a>";
+          }).join("") + "</p>");
         }).catch(function () {});
       }).catch(function () {
         if (id === asked) say.textContent = en() ? "Search is not available here" : "ここでは検索を使えません";

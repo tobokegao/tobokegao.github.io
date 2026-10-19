@@ -12,7 +12,7 @@ it is shown (decision 0032):
 
 Shrunk drawings also get <diary>@2x.webp and @3x.webp for fine screens. It then writes the
 sizes back into data/minitobo.json ("img": w, h, hard = whole-number enlargement, x = the
-extra scales written, as "2x" or "1.33x", still = a GIF).
+extra scales written, as "2x" and "3x", still = a GIF).
 
     python scripts/minitobo_art.py
 """
@@ -69,16 +69,18 @@ def plan(w: int, h: int) -> tuple[int, int, bool]:
 
 def scales(nw: int, nh: int, w: int, h: int, hard: bool) -> list[tuple[int, int, str]]:
     """(width, height, file suffix) to write: 1x, and for a shrunk drawing also up to 2x and 3x,
-    no larger than the original, so phones with fine screens get a sharp picture instead of a
-    blown-up 240px one. The suffix is the scale as srcset writes it ("@1.5x" for 1.5x)."""
-    out = [(w, h, "")]
+    made from the original without blur (see shrink), so phones with fine screens get a sharp picture instead of a
+    blown-up 240px one."""
     if hard:
-        return out
-    for k in (2, 3):
-        x = min(k, nw / w)
-        if x >= 1.25 and x > (float(out[-1][2][1:-1]) if out[-1][2] else 1) + 0.2:
-            out.append((round(w * x), round(h * x), f"@{x:.2f}".rstrip("0").rstrip(".") + "x"))
-    return out
+        return [(w, h, "")]
+    return [(w, h, ""), (w * 2, h * 2, "@2x"), (w * 3, h * 3, "@3x")]
+
+
+def shrink(im: Image.Image, size: tuple[int, int]) -> Image.Image:
+    """A drawing drawn dot by dot, to any size without blur: enlarged by a whole number until
+    it is at least as large (each dot stays a square), then averaged down to the size."""
+    m = max(1, -(-size[0] // im.width), -(-size[1] // im.height))
+    return im.resize((im.width * m, im.height * m), Image.NEAREST).resize(size, Image.BOX)
 
 
 def save(im: Image.Image, path: Path, hard: bool, **kw) -> None:
@@ -111,7 +113,7 @@ def main() -> int:
             w, h, hard = plan(*im.size)
             ks = scales(*im.size, w, h, hard)
             for sw, sh, sfx in ks:
-                save(im.resize((sw, sh), Image.NEAREST if hard else Image.BOX), OUT / f"{a['diary']}{sfx}.webp", hard)
+                save(im.resize((sw, sh), Image.NEAREST) if hard else shrink(im, (sw, sh)), OUT / f"{a['diary']}{sfx}.webp", hard)
             a["img"] = {"w": w, "h": h, "hard": int(hard), "x": [k[2][1:] for k in ks[1:]]}
         else:
             mp4 = get(f"https://video.twimg.com/tweet_video/{name}.mp4", RAW / f"{name}.mp4")
@@ -136,7 +138,7 @@ def main() -> int:
             native = [Image.open(f).convert("RGB").resize((nw, nh), Image.NEAREST) for f in sorted(frames_dir.glob("f*.png"))]
             ks = scales(nw, nh, w, h, hard)
             for sw, sh, sfx in ks:
-                frames = [f.resize((sw, sh), Image.NEAREST if hard else Image.BOX) for f in native]
+                frames = [f.resize((sw, sh), Image.NEAREST) if hard else shrink(f, (sw, sh)) for f in native]
                 save(frames[0], OUT / f"{a['diary']}{sfx}.webp", hard, save_all=True, append_images=frames[1:],
                      duration=round(1000 * den / num), loop=0)
                 save(frames[0], OUT / f"{a['diary']}-still{sfx}.webp", hard)

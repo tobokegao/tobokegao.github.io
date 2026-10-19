@@ -14,6 +14,12 @@ Each file is {"f": {account: posts}, "t": {account: posts}}, with the account in
 and posts as "2026-10:id,id*;2026-09:id" (newest month first, newest post first; * marks a
 post with pictures or a video). The hash is FNV-1a (32 bit) of the name, & 255, as two hex
 digits; assets/js/notes.js computes the same.
+
+Next to it, m/YYYY-MM.json lists the pictures of each of the month's own posts that has any
+(m/rt-YYYY-MM.json those of the reposts), as {id: [[path, kind], ...]} (the same as "mx" in data/memo), so mini Tobokegao can show
+a post's pictures without loading its whole month or topic page:
+
+    python scripts/memo_query_index.py public/memo/q public/memo/m
 """
 
 from __future__ import annotations
@@ -35,10 +41,12 @@ def bucket(name: str) -> str:
 
 
 def main() -> int:
-    if len(sys.argv) != 2:
+    if len(sys.argv) not in (2, 3):
         print(__doc__)
         return 2
     out = Path(sys.argv[1])
+    pics_out = Path(sys.argv[2]) if len(sys.argv) == 3 else None
+    pics: dict[str, dict] = collections.defaultdict(dict)
     # account -> month -> [(id, media)]
     index = {"f": collections.defaultdict(lambda: collections.defaultdict(list)),
              "t": collections.defaultdict(lambda: collections.defaultdict(list))}
@@ -46,6 +54,8 @@ def main() -> int:
         for path in sorted((MEMO / kind).glob("*.json")):
             month = path.stem
             for p in json.loads(path.read_text(encoding="utf-8")).values():
+                if p.get("mx"):
+                    pics[("rt-" if kind == "rt" else "") + month][p["id"]] = p["mx"]
                 if p.get(field) and (kind == "rt" or p.get("k") == "reply"):
                     index[key][p[field].lower()][month].append((p["id"], bool(p.get("m"))))
     files: dict[str, dict] = collections.defaultdict(lambda: {"f": {}, "t": {}})
@@ -58,6 +68,11 @@ def main() -> int:
     for b in (f"{i:02x}" for i in range(256)):
         (out / f"{b}.json").write_text(json.dumps(files.get(b, {"f": {}, "t": {}}), ensure_ascii=False,
                                                   separators=(",", ":")), encoding="utf-8")
+    if pics_out:
+        pics_out.mkdir(parents=True, exist_ok=True)
+        for month, posts in pics.items():
+            (pics_out / f"{month}.json").write_text(json.dumps(posts, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        print(f"pictures of {sum(len(v) for v in pics.values())} posts in {len(pics)} month files")
     size = sum(p.stat().st_size for p in out.glob("*.json"))
     print(f"{sum(len(a) for a in index.values())} accounts in 256 files, {size / 1e6:.1f} MB")
     return 0

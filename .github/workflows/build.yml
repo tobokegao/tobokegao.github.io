@@ -69,9 +69,10 @@ jobs:
             hugo --minify --baseURL "https://tobokegao.github.io/"
           fi
 
-      # Who each memo post is from and to, for from: and to: in the search (public/memo/q).
+      # Who each memo post is from and to, for from: and to: in the search (public/memo/q),
+      # and each month's pictures, for mini Tobokegao (public/memo/m).
       - name: Post index
-        run: python scripts/memo_query_index.py public/memo/q
+        run: python scripts/memo_query_index.py public/memo/q public/memo/m
 
       # The MEMO search index, into public/memo/pagefind (settings in pagefind.yml).
       - name: Search index
