@@ -11,9 +11,19 @@ ReaScratchは、REAPERを音と映像の2デッキのスクラッチ環境にす
 <p class="win__more"><a class="btn" href="https://github.com/tobokegao/ReaScratch/releases/latest">ダウンロード</a></p>
 
 GitHubのReleasesから、最新版のzipファイルをダウンロードできます。ReaPackでも入れられ、新しいバージョンもReaPackで受け取れます（手順は説明書の「セットアップ手順」にあります）。
+{{< /lang >}}
 
-動いているところは、[Xの動画](https://x.com/to6okegao/status/2111040461242847714)で見られます。
+{{< lang en >}}
+ReaScratch is a free JSFX and Lua kit that turns REAPER into a two-deck scratch setup for audio and video. You can scratch with a DJ controller's jog wheel while maintaining the sound's pitch, and REAPER's video window follows frame by frame.
 
+<p class="win__more"><a class="btn" href="https://github.com/tobokegao/ReaScratch/releases/latest">Download</a></p>
+
+Download the latest zip from GitHub Releases. You can also install it with ReaPack and get new versions there (see "Setup" in the manual).
+{{< /lang >}}
+
+{{< nico sm46932309 >}}
+
+{{< lang ja >}}
 ## できること
 
 - 2デッキ、クロスフェーダー、ホットキューとメモリーキュー、SLIP、BEAT SYNC、ループ、フィルター
@@ -53,13 +63,6 @@ ReaScratchは、Claudeに手伝ってもらって作りました。
 {{< /lang >}}
 
 {{< lang en >}}
-ReaScratch is a free JSFX and Lua kit that turns REAPER into a two-deck scratch setup for audio and video. You can scratch with a DJ controller's jog wheel while maintaining the sound's pitch, and REAPER's video window follows frame by frame.
-
-<p class="win__more"><a class="btn" href="https://github.com/tobokegao/ReaScratch/releases/latest">Download</a></p>
-
-Download the latest zip from GitHub Releases. You can also install it with ReaPack and get new versions there (see "Setup" in the manual).
-
-See it in action in [the video on X](https://x.com/to6okegao/status/2111040461242847714).
 
 ## What it does
 

@@ -644,6 +644,10 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .rs__gui { display: block; width: 100%; max-width: 748px; height: auto; border: 2px solid var(--frame); image-rendering: pixelated; }   /* 744 + the 2px frame on each side */
 /* narrower than 1x, the screen is shrunk, so smooth it there rather than keep hard pixels */
 @container (max-width: 747px) { .rs__stack .rs__gui { image-rendering: auto; } }
+/* a niconico player (the nico shortcode), 16:9 in the same 2px frame as the plug-in screen */
+.nico { max-width: 748px; margin: 24px auto; }
+.nico__player { display: block; box-sizing: border-box; width: 100%; height: auto; aspect-ratio: 16 / 9; border: 2px solid var(--frame); background: var(--frame); }
+.nico__cap { margin-top: 8px; text-align: center; }
 .doc__title { margin: 0; text-align: center; font: 400 calc(var(--dot) * 2)/1.4 var(--f-dot); color: var(--hi); text-wrap: balance; }
 .doc__date { margin: 4px 0 0; text-align: center; font: var(--dot) var(--f-dot); color: var(--ink-dim); }
 .doc__lead { margin: 6px 0 24px; text-align: center; font: var(--dot)/1.8 var(--f-dot); color: var(--ink-dim); }
