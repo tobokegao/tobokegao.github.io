@@ -250,7 +250,7 @@
     showArt();
     say.textContent = pick(L().hello);
     box.hidden = false;
-    var asked = 0;
+    var asked = 0, recent = [];
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var words = q.value.trim();
@@ -260,7 +260,10 @@
       loadPagefind(searchBox.dataset.pagefind).then(function (pf) {
         return pf.search(words);
       }).then(function (found) {
-        return Promise.all(found.results.slice(0, 8).map(function (r) { return r.data(); }));
+        // eight pages at random from the forty best, so the same word brings different posts
+        var top = found.results.slice(0, 40);
+        for (var i = top.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = top[i]; top[i] = top[j]; top[j] = t; }
+        return Promise.all(top.slice(0, 8).map(function (r) { return r.data(); }));
       }).then(function (pages) {
         if (id !== asked) return;
         // the posts among the hits (their titles start with a date), own posts first
@@ -268,8 +271,12 @@
         pages.forEach(function (p) {
           (p.sub_results || []).forEach(function (s) { if (dayOf(s.title)) hits.push(s); });
         });
+        // own posts first, and not one shown in the last twenty answers
+        var fresh = hits.filter(function (s) { return recent.indexOf(s.url) < 0; });
+        if (fresh.length) hits = fresh;
         var own = hits.filter(function (s) { return !/RT @/.test(s.title); });
-        var s = pick((own.length ? own : hits).slice(0, 6));
+        var s = pick(own.length ? own : hits);
+        if (s) { recent.push(s.url); if (recent.length > 20) recent.shift(); }
         showArt();
         var l = L();
         if (!s) { say.textContent = pick(l.none); return; }
