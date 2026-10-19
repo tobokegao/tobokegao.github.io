@@ -65,7 +65,8 @@ def plan(w: int, h: int) -> tuple[int, int, bool]:
         k = BOX // n
         return w * k, h * k, True
     s = BOX / n
-    return max(1, round(w * s)), max(1, round(h * s)), n <= BOX
+    # 121 px and up: fitted to the box and drawn smooth (as 1:1 hard dots they looked coarse on phones)
+    return max(1, round(w * s)), max(1, round(h * s)), False
 
 
 def scales(nw: int, nh: int, w: int, h: int, hard: bool) -> list[tuple[int, int, str]]:
