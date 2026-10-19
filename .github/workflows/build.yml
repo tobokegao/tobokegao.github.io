@@ -69,6 +69,10 @@ jobs:
             hugo --minify --baseURL "https://tobokegao.github.io/"
           fi
 
+      # Who each memo post is from and to, for from: and to: in the search (public/memo/q).
+      - name: Post index
+        run: python scripts/memo_query_index.py public/memo/q
+
       # The MEMO search index, into public/memo/pagefind (settings in pagefind.yml).
       - name: Search index
         run: npx -y pagefind@1.3.0 --site public

@@ -27,40 +27,171 @@
     return pagefind;
   }
 
+  // Search words as on X: from:name (reposts from that account; from: oneself is one's own
+  // posts), to:name (replies to it), since:2025-01-01, until:2025-12-31, filter:media,
+  // filter:retweets, filter:replies, and the same with "-" to leave those out. The rest goes
+  // to Pagefind. Decision 0031.
+  function parseQuery(q) {
+    var o = { words: [], from: "", to: "", since: "", until: "", media: 0, kinds: null, notKinds: {} };
+    q.split(/\s+/).forEach(function (w) {
+      var m = w.match(/^(-?)(from|to|since|until|filter):(.+)$/i);
+      if (!m) { if (w) o.words.push(w); return; }
+      var not = m[1] === "-", key = m[2].toLowerCase(), v = m[3].replace(/^@/, "");
+      if (key === "from" || key === "to") o[key] = v.toLowerCase();
+      else if (key === "since" || key === "until") o[key] = v.replace(/\//g, "-");
+      else {
+        var kind = { media: "media", images: "media", videos: "media", retweets: "rt", nativeretweets: "rt", replies: "reply" }[v.toLowerCase()];
+        if (kind === "media") o.media = not ? -1 : 1;
+        else if (kind && not) o.notKinds[kind] = 1;
+        else if (kind) (o.kinds = o.kinds || {})[kind] = 1;
+      }
+    });
+    return o;
+  }
+  var dayOf = function (s) { var m = s.match(/(\d{4})[.\-](\d{2})[.\-](\d{2})/); return m ? m[1] + "-" + m[2] + "-" + m[3] : ""; };
+  // since: is the first day kept, until: the first day left out (as on X)
+  var inRange = function (o, day) { return (!o.since || day >= o.since) && (!o.until || day < o.until); };
+  // a month is kept when any of its days is
+  var monthInRange = function (o, m) { return (!o.since || m + "-31" >= o.since) && (!o.until || m + "-01" < o.until); };
+
+  // the account index (scripts/memo_query_index.py): 256 files by a hash of the name
+  var bucket = function (name) {
+    var h = 0x811c9dc5;
+    for (var i = 0; i < name.length; i++) h = Math.imul(h ^ name.charCodeAt(i), 0x01000193) >>> 0;
+    return ("0" + (h & 255).toString(16)).slice(-2);
+  };
+  var shards = {};
+  function accountPosts(memoTop, key, name) {
+    var b = bucket(name);
+    shards[b] = shards[b] || fetch(memoTop + "q/" + b + ".json").then(function (r) { if (!r.ok) throw r; return r.json(); });
+    return shards[b].then(function (d) {
+      var list = [];
+      (d[key][name] || "").split(";").forEach(function (part) {
+        var mi = part.indexOf(":");
+        if (mi < 0) return;
+        var month = part.slice(0, mi);
+        part.slice(mi + 1).split(",").forEach(function (x) {
+          list.push({ month: month, id: x.replace("*", ""), media: x.slice(-1) === "*", kind: key === "f" ? "rt" : "reply" });
+        });
+      });
+      return list;
+    });
+  }
+  // a post found in the account index is shown as it is on its month page (fetched once a month)
+  var monthPages = {};
+  function loadPost(memoTop, p) {
+    var url = memoTop + (p.kind === "rt" ? "rt/" : "") + p.month + "/";
+    monthPages[url] = monthPages[url] || fetch(url).then(function (r) { return r.text(); }).then(function (html) {
+      return new DOMParser().parseFromString(html, "text/html");
+    });
+    return monthPages[url].then(function (doc) {
+      var h = doc.getElementById("p" + p.id);
+      var a = h && h.closest("article");
+      if (!a) return "";
+      // links on the fetched page are relative to it
+      a.querySelectorAll("a[href], img[src]").forEach(function (el) {
+        var attr = el.hasAttribute("href") ? "href" : "src";
+        el.setAttribute(attr, new URL(el.getAttribute(attr), url).href);
+      });
+      return a.outerHTML;
+    });
+  }
+
   function initSearch(box) {
     var input = box.querySelector("input");
     var count = document.getElementById("notes-count");
     var list = document.getElementById("notes-results");
     var empty = document.getElementById("notes-empty");
-    var asked = 0;
+    var memoTop = new URL(box.dataset.pagefind.replace(/pagefind\/$/, ""), location.href).href;
+    var me = (box.dataset.handle || "").toLowerCase();
+    var asked = 0, timer = 0;
+    var say = function (ja, enText) { count.textContent = en() ? enText : ja; };
+    var showPosts = function (posts, id) {
+      var shown = 0;
+      var more = function () {
+        var next = posts.slice(shown, shown + 20);
+        shown += next.length;
+        Promise.all(next.map(function (p) { return loadPost(memoTop, p); })).then(function (html) {
+          if (id !== asked) return;
+          var old = list.querySelector(".notes__more");
+          if (old) old.remove();
+          list.insertAdjacentHTML("beforeend", html.map(function (h) { return '<li class="notes__hit">' + h + "</li>"; }).join(""));
+          if (shown < posts.length) {
+            list.insertAdjacentHTML("beforeend", '<li class="notes__more"><button type="button" class="btn">' + (en() ? "Load more" : "続きを読み込む") + "</button></li>");
+            list.querySelector(".notes__more button").addEventListener("click", more);
+          }
+        });
+      };
+      more();
+    };
     var run = function () {
       var q = input.value.trim();
       var id = ++asked;
-      if (!q) { list.innerHTML = ""; count.textContent = ""; empty.hidden = true; return; }
-      loadPagefind(box.dataset.pagefind).then(function (pf) {
-        return pf.debouncedSearch(q, {}, 250);
-      }).then(function (found) {
-        if (!found || id !== asked) return null;   // a newer search is on its way
-        count.textContent = found.results.length + (en() ? " pages" : " ページ");
-        empty.hidden = found.results.length !== 0;
-        return Promise.all(found.results.slice(0, 20).map(function (r) { return r.data(); }));
-      }).then(function (pages) {
-        if (!pages || id !== asked) return;
-        list.innerHTML = pages.map(function (p) {
-          // the page's own title (#page-t) is already the result's heading
-          var subs = (p.sub_results || []).filter(function (s) { return !/#page-t$/.test(s.url); }).slice(0, 4);
-          return '<li class="notes__hit"><a class="notes__hit-t" href="' + esc(p.url) + '">' + esc(p.meta.title) + "</a>" +
-            (subs.length ? subs.map(function (s) {
-              // Pagefind marks the hits with <mark> in an excerpt it has already escaped
-              // the excerpt starts with the post's date line, which is the link already
-              var text = s.excerpt.indexOf(s.title) === 0 ? s.excerpt.slice(s.title.length).replace(/^\.\s*/, "") : s.excerpt;
-              return '<p class="notes__hit-s"><a href="' + esc(s.url) + '">' + esc(s.title) + "</a> " + text + "</p>";
-            }).join("") : '<p class="notes__hit-s">' + p.excerpt + "</p>") + "</li>";
-        }).join("");
-      }).catch(function () {
-        // no index: `hugo server` alone does not run Pagefind
-        count.textContent = en() ? "Search is not available here" : "ここでは検索を使えません";
-      });
+      clearTimeout(timer);
+      list.innerHTML = ""; empty.hidden = true;
+      if (!q) { count.textContent = ""; return; }
+      var o = parseQuery(q);
+      var kindOk = function (k) { return (!o.kinds || o.kinds[k]) && !o.notKinds[k]; };
+      // from: / to: another account without words: the account index
+      if (!o.words.length && ((o.from && o.from !== me) || o.to)) {
+        timer = setTimeout(function () {
+          accountPosts(memoTop, o.to ? "t" : "f", o.to || o.from).then(function (posts) {
+            if (id !== asked) return;
+            posts = posts.filter(function (p) {
+              return monthInRange(o, p.month) && (o.media === 0 || (o.media > 0) === p.media) && kindOk(p.kind);
+            });
+            say(posts.length + " 件", posts.length + " posts");
+            empty.hidden = posts.length !== 0;
+            showPosts(posts, id);
+          }).catch(function () { say("ここでは検索を使えません", "Search is not available here"); });
+        }, 250);
+        return;
+      }
+      if (!o.words.length) {
+        say("言葉か、from:・to:を入れてください（since:などは、それと一緒に使えます）",
+          "Add a word, or from: / to: (since: and the rest work with them)");
+        return;
+      }
+      var filtered = o.from || o.to || o.since || o.until || o.kinds || Object.keys(o.notKinds).length;
+      timer = setTimeout(function () {
+        loadPagefind(box.dataset.pagefind).then(function (pf) {
+          return pf.search(o.words.join(" "));
+        }).then(function (found) {
+          if (!found || id !== asked) return null;
+          return Promise.all(found.results.slice(0, filtered ? 60 : 20).map(function (r) { return r.data(); }));
+        }).then(function (pages) {
+          if (!pages || id !== asked) return;
+          var keep = function (s) {
+            // the sub-result's title is the post's date line: "2025.01.02 03:04 RT @name" etc.
+            var rt = s.title.match(/RT @(\w+)/), to = !rt && s.title.match(/@(\w+)/);
+            var kind = rt ? "rt" : to ? "reply" : "own";
+            var from = rt ? rt[1].toLowerCase() : me;
+            return inRange(o, dayOf(s.title)) && kindOk(kind) &&
+              (!o.from || o.from === from) && (!o.to || (to && to[1].toLowerCase() === o.to));
+          };
+          var shown = 0;
+          list.innerHTML = pages.map(function (p) {
+            // the page's own title (#page-t) is already the result's heading
+            var subs = (p.sub_results || []).filter(function (s) { return !/#page-t$/.test(s.url); });
+            if (filtered) subs = subs.filter(function (s) { return dayOf(s.title) && keep(s); });
+            if (filtered && !subs.length) return "";
+            shown++;
+            return '<li class="notes__hit"><a class="notes__hit-t" href="' + esc(p.url) + '">' + esc(p.meta.title) + "</a>" +
+              (subs.length ? subs.slice(0, filtered ? 20 : 4).map(function (s) {
+                // Pagefind marks the hits with <mark> in an excerpt it has already escaped;
+                // the excerpt starts with the post's date line, which is the link already
+                var text = s.excerpt.indexOf(s.title) === 0 ? s.excerpt.slice(s.title.length).replace(/^\.\s*/, "") : s.excerpt;
+                return '<p class="notes__hit-s"><a href="' + esc(s.url) + '">' + esc(s.title) + "</a> " + text + "</p>";
+              }).join("") : '<p class="notes__hit-s">' + p.excerpt + "</p>") + "</li>";
+          }).join("");
+          say(shown + " ページ" + (o.media ? "（絵の有無は、from:かto:と一緒のときだけ絞れます）" : ""),
+            shown + " pages" + (o.media ? " (pictures can be told apart only with from: or to:)" : ""));
+          empty.hidden = shown !== 0;
+        }).catch(function () {
+          // no index: `hugo server` alone does not run Pagefind
+          say("ここでは検索を使えません", "Search is not available here");
+        });
+      }, 250);
     };
     input.addEventListener("input", run);
   }

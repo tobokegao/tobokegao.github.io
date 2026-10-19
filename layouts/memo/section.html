@@ -7,7 +7,7 @@
   {{ partial "win.html" (dict "file" `C:\TBK\MEMO\` "id" "page-t" "tag" "h1") }}
   <p class="vh">{{ partial "bi.html" (dict "ja" .Title "en" .Params.title_en) }}</p>
   <p class="doc__lead">{{ partial "bi.html" (dict "ja" .Description "en" .Params.description_en) }}</p>
-  <div class="search" data-notes-js="{{ $js.RelPermalink }}" data-notes-sri="{{ $js.Data.Integrity }}" data-pagefind="{{ "memo/pagefind/" | relURL }}">
+  <div class="search" data-notes-js="{{ $js.RelPermalink }}" data-notes-sri="{{ $js.Data.Integrity }}" data-pagefind="{{ "memo/pagefind/" | relURL }}" data-handle="{{ $g.handle }}">
     <label for="notes-search">{{ partial "t.html" "search" }}</label>
     <input id="notes-search" type="search" autocomplete="off">
     <output for="notes-search" id="notes-count"></output>
