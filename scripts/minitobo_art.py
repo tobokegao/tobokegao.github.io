@@ -27,7 +27,7 @@ import urllib.request
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageChops, ImageStat
+from PIL import Image, ImageChops, ImageFilter, ImageStat
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "minitobo.json"
@@ -95,24 +95,38 @@ def scale2x(im: Image.Image) -> Image.Image:
     return Image.fromarray(out, im.mode)
 
 
-def toned(im: Image.Image) -> bool:
-    """Whether the drawing has much screen tone: a one-dot checker pattern, which turns into
-    moire noise when scaled by an odd amount."""
-    a = np.asarray(im.convert("L")).astype(np.int16)
-    checker = (a[1:, 1:] == a[:-1, :-1]) & (a[1:, 1:] != a[:-1, 1:]) & (a[1:, 1:] != a[1:, :-1])
-    return checker.mean() > 0.03
+def toned(im: Image.Image) -> float:
+    """The period, in dots, of the drawing's screen tone when it would turn into moire noise on
+    a phone; 0 when there is none, or when it is coarse enough to show as it is. The tone is the
+    strongest repeat in the picture's spectrum (periods up to 16 dots, at least 120 times the
+    median); it is noise when it comes out under 6 screen pixels on the 3x picture shown on a
+    2.25x screen (540 px). Thresholds set by measuring all 148 pictures (2026-10-19)."""
+    a = np.asarray(im.convert("L")).astype(np.float32)
+    H, W = a.shape
+    n = min(512, H, W)
+    a = a[(H - n) // 2:(H - n) // 2 + n, (W - n) // 2:(W - n) // 2 + n]
+    f = np.abs(np.fft.fft2(a - a.mean()))
+    fy, fx = np.fft.fftfreq(n)[:, None], np.fft.fftfreq(n)[None, :]
+    band = np.maximum(np.abs(fx), np.abs(fy)) >= 1 / 16
+    i = np.argmax(np.where(band, f, 0))
+    py, px = np.unravel_index(i, f.shape)
+    period = 1 / max(abs(fx[0, px]), abs(fy[py, 0]))
+    if f.flat[i] / (np.median(f[band]) + 1e-6) < 120 or period > 16:
+        return 0
+    return period if period * 540 / max(H, W) < 6 else 0
 
 
-def shrink(im: Image.Image, size: tuple[int, int], tone: bool = False) -> Image.Image:
-    """A drawing drawn dot by dot, to any size: enlarged with Scale2x until it is at least as
-    large (smooth lines, no blur), then averaged down to the size. A toned drawing is first
-    evened out (each dot averaged with its neighbours: the checker becomes its flat colour)
-    and then scaled smoothly, without Scale2x, which would turn the checker into noise."""
+def shrink(im: Image.Image, size: tuple[int, int], tone: float = 0) -> Image.Image:
+    """A drawing drawn dot by dot, to any size. Without tone: enlarged with Scale2x until it is
+    at least as large (smooth lines, no blur), then averaged down to the size. With tone: first
+    softened just enough that nothing finer than a phone's screen pixel is left (the 3x
+    picture shown at 540 px), so tone finer than that becomes its flat colour and coarser tone
+    stays as clean dots; then scaled smoothly, without Scale2x, which turns tone into noise."""
     if tone:
-        a = np.asarray(im.convert("RGBA")).astype(np.float32)
-        p = np.pad(a, ((0, 1), (0, 1), (0, 0)), mode="edge")
-        flat = (p[:-1, :-1] + p[1:, :-1] + p[:-1, 1:] + p[1:, 1:]) / 4
-        return Image.fromarray(flat.round().astype(np.uint8), "RGBA").convert(im.mode).resize(size, Image.LANCZOS)
+        sigma = 0.5 * max(im.size) / 540
+        if sigma >= 0.3:
+            im = im.filter(ImageFilter.GaussianBlur(sigma))
+        return im.resize(size, Image.LANCZOS)
     while im.width < size[0] or im.height < size[1]:
         im = scale2x(im)
     return im.resize(size, Image.BOX)
@@ -180,7 +194,7 @@ def main() -> int:
                      duration=round(1000 * den / num), loop=0)
                 save(frames[0], OUT / f"{a['diary']}-still{sfx}.webp", hard)
             a["img"] = {"w": w, "h": h, "still": 1, "hard": int(hard), "x": [k[2][1:] for k in ks[1:]]}
-        print(f"{a['diary']} {kind} x{k}{' tone' if not hard and tone else ''} -> {a['img']['w']}x{a['img']['h']} {dest.stat().st_size // 1024}KB")
+        print(f"{a['diary']} {kind} x{k}{f' tone{tone:.1f}' if not hard and tone else ''} -> {a['img']['w']}x{a['img']['h']} {dest.stat().st_size // 1024}KB")
     DATA.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     total = sum(f.stat().st_size for f in OUT.glob("*.webp"))
     print(f"{len(data['art'])} pictures, {total / 1e6:.1f} MB")
