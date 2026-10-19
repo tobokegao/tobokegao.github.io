@@ -43,3 +43,5 @@
 - [0026 スクロールバーはTRACKMENTOの作りを流用する](0026-scrollbars-from-trackmento.md)
 - [0027 XとBlueskyのアイコンを、四角い色地に白抜きにする](0027-x-and-bluesky-on-tiles.md)
 - [0028 ReaScratchの紹介ページは、このサイトの中に置く](0028-reascratch-page.md)
+- [0029 アーカイブより新しいポストとリポストは、ブラウザでプロフィールから番号を拾って足す](0029-posts-after-archive-from-browser.md)
+- [0030 Xのポストとリポストは、1日1回Windowsのタスクで取り込み、プレビューまで出す](0030-daily-x-update.md)

@@ -7,6 +7,8 @@
   <h3 class="np__head" id="p{{ $p.id }}">
     {{- if eq $p.k "rt" -}}
     <time datetime="{{ replace $p.d " " "T" }}">{{ replace $p.d "-" "." }}</time>
+    {{- /* a repost read off the profile after the archive: the earliest it can have been made (scripts/x_browse.py) */}}
+    {{- if $p.est }} <span class="np__cut" title="{{ partial "tt.html" "rtTimeEstTip" }}">{{ partial "t.html" "rtTimeEst" }}</span>{{ end }}
     <a class="np__who" href="https://x.com/{{ $p.u }}{{ with $p.src }}/status/{{ . }}{{ end }}" rel="noopener" target="_blank">RT @{{ $p.u }}</a>
     {{- else -}}
     <a href="https://x.com/{{ $g.handle }}/status/{{ $p.id }}" rel="noopener" target="_blank"><time datetime="{{ replace $p.d " " "T" }}">{{ replace $p.d "-" "." }}</time></a>

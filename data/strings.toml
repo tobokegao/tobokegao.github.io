@@ -302,6 +302,14 @@ en = "Search for more"
 ja = "アーカイブで途切れています"
 en = "Cut off in the archive"
 
+[rtTimeEst]
+ja = "ごろ"
+en = "approx."
+
+[rtTimeEstTip]
+ja = "リポストした時刻はわからないので、元のポストの時刻から見積もりました"
+en = "The repost time is unknown, so it was estimated from the times of the reposted posts"
+
 [replyTo]
 ja = "返信先"
 en = "Reply to"

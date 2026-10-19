@@ -17,6 +17,8 @@ DOSのテキスト画面のような見た目で、日本語と英語を一つ�
 - `fetch_feeds.py`: リリースと動画の一覧を取ってくる
 - `collect_news.py` → `classify_news.py`: ニュースの候補を集め、ログに載せるものを選ぶ
 - `import_x_archive.py` → `review_x.py` → `x_to_timeline.py`: Xのアーカイブから出演や告知を拾ってログに足す（`work/`はGitに入れない）。アーカイブより新しいポストは、URLを`work/x/inbox.txt`に書いて`x_urls.py`で同じ候補に足す
+- `x_browse.py`: アーカイブより新しいポストとリポストを、ブラウザでプロフィールから拾った番号をもとにメモのデータに足す（0029）。足したら`x_notes.py`を回す
+- `x_daily.py` / `x_daily.ps1` / `x_daily_prompt.md` / `x_profile_collect.js`: 上の取り込みを1日1回、Windowsのタスクから動かす（0030）
 - `row_pics.py`: 絵のないログの行に、リンク先（Bandcamp、Apple Music、Spotifyなど）のジャケットを取ってくる
 - `cover_cache.py`: リリースと動画のカードに出すジャケットとサムネイルを、表示する大きさのWebPにしてサイトに置く（`static/img/covers/`、対応表は`data/covers.json`）。`fetch_feeds.py`のあとに動かす
 - `pixel_icons.py` / `hd_icons.py` / `banner.py` / `night_logos.py`: ドット絵のアイコン、ANSIのタイトル、夜のロゴを作る
@@ -54,7 +56,7 @@ DOSのテキスト画面のような見た目で、日本語と英語を一つ�
 - コミットとpushは、頼まれたときだけ。
 - 始める前に「何ができたら終わりか」を決める。終わりの条件には、必ず`check.py --all`が通ることを含める。
 - 同じ規則を2か所に書いたときや、回し忘れると困るスクリプトを足したときは、`check.py`の一覧（`SAME_LINE`、`SAME_LIST`、`REMINDERS`）にも足す。報告は「とぼけがおにしてほしいこと」から書き、確かめたことと確かめられなかったことを分ける。
-- データ（リリース、動画、ニュース）の更新は半自動。頼まれたときか、手動で動かすGitHub Actionsのワークフロー（PRを作る）でだけ動かし、定期実行はしない。
+- データ（リリース、動画、ニュース）の更新は半自動。頼まれたときか、手動で動かすGitHub Actionsのワークフロー（PRを作る）でだけ動かし、定期実行はしない。例外は、Xのポストとリポストのメモへの取り込み（1日1回、Windowsのタスクで`scripts/x_daily.ps1`。プレビューまで出し、本番には出さない。0030）。
 - 鍵やトークンはリポジトリに書かない。手元は`.env`、CIはGitHub Secrets。GitHub Pagesは全部公開される。
 - 外部のプラグインやMCPを入れる前に、ソースをgrepして、プロンプトや`.env`、環境変数が外へ出ないか確かめる。
 - 設計を変えるときは、`docs/decisions/`に記録を1つ足す（書き方は同じフォルダのREADME）。
