@@ -203,22 +203,25 @@
   // phrases around a Pagefind hit. Decision 0032.
   var MINI = {
     ja: {
-      hello: ["こんにちは…！気になる言葉を入れてもらえれば、メモから探してきます！",
+      hello: ["{hi}…！気になる言葉を入れてもらえれば、メモから探してきます！",
         "ミニとぼけがおです…！(メモの中のことなら答えられます)", "なにか気になる言葉、ありますか…？"],
       open: ["それ、", "あ、", "なるほど…！", "うお〜、", "ありました…！"],
       found: "{d}にこんなこと書いてました…！",
       foundRt: "{d}に、{u}さんのポストをリポストしてました…！",
       aside: ["(なつかしい)", "(メモより)", "(ほかにもあるかもです)"],
       none: ["うーん、メモには見つからなかったです…！(別の言葉で試してみてください)", "それはまだ書いてないかもです…！"],
+      // the greeting follows the visitor's own clock
+      hi: ["おはようございます", "こんにちは", "こんばんは"],
       more: "このポストを見る"
     },
     en: {
-      hello: ["Hi…! Type a word and I'll dig it out of the memo!", "Mini Tobokegao here…! (I can only answer things from the memo)", "Any word on your mind…?"],
+      hello: ["{hi}…! Type a word and I'll dig it out of the memo!", "Mini Tobokegao here…! (I can only answer things from the memo)", "Any word on your mind…?"],
       open: ["Oh, ", "Ah, ", "I see…! ", "Whoa, ", "Found it…! "],
       found: "I wrote this on {d}…!",
       foundRt: "On {d}, I reposted {u}'s post…!",
       aside: ["(good old days)", "(from the memo)", "(there may be more)"],
       none: ["Hmm, I couldn't find that in the memo…! (try another word)", "Maybe I haven't written about that yet…!"],
+      hi: ["Good morning", "Hi", "Good evening"],
       more: "See this post"
     }
   };
@@ -250,7 +253,8 @@
     };
     var L = function () { return MINI[en() ? "en" : "ja"]; };
     showArt();
-    say.textContent = pick(L().hello);
+    var hour = new Date().getHours();
+    say.textContent = pick(L().hello).replace("{hi}", L().hi[hour >= 5 && hour < 10 ? 0 : hour >= 10 && hour < 18 ? 1 : 2]);
     box.hidden = false;
     var asked = 0, recent = [];
     form.addEventListener("submit", function (e) {
