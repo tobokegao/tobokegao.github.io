@@ -826,13 +826,12 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .mini__quote { display: block; margin: 8px 0; padding-left: 12px; border-left: 3px solid var(--mark); }
 .mini__ask { margin: 0 0 0 12px; }
 .mini__note { margin: 0 0 0 12px; font-size: 12px; color: var(--ink-dim); }
-/* too narrow for the words beside the picture (240 + 16 + 280): the words go below and the tail points up */
+/* too narrow for the words beside the picture (240 + 16 + 280): the words go below and the tail points up at the middle of the picture */
 @container (max-width: 535px) {
-  .mini__pic { margin-inline: auto; }
   .mini__say, .mini__ask, .mini__note { margin-left: 0; }
   .mini__say { margin-top: 12px; }
-  .mini__say::before { left: 24px; top: -14px; border-right-color: transparent; border-bottom-color: var(--frame); }
-  .mini__say::after { left: 26px; top: -10px; border-right-color: transparent; border-bottom-color: var(--win-2); }
+  .mini__say::before { left: 111px; top: -14px; border-right-color: transparent; border-bottom-color: var(--frame); }
+  .mini__say::after { left: 113px; top: -10px; border-right-color: transparent; border-bottom-color: var(--win-2); }
 }
 .notes__hit-t { font: var(--dot)/2 var(--f-dot); }
 .notes__hit-s { margin: 2px 0 0; font: 14px/1.6 var(--f-body); overflow-wrap: anywhere; }
