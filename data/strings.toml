@@ -409,3 +409,23 @@ en = "Search genres"
 [findNone]
 ja = "見つかりませんでした"
 en = "No results"
+
+[miniTitle]
+ja = "ミニとぼけがお"
+en = "Mini Tobokegao"
+
+[miniPicTip]
+ja = "この絵のポスト（diary）を開く"
+en = "Open this picture's post (diary)"
+
+[miniAsk]
+ja = "話しかける"
+en = "Say"
+
+[miniSend]
+ja = "送る"
+en = "Send"
+
+[miniNote]
+ja = "メモの中から、言葉に合うポストを自動で選んで答えます。とぼけがお本人の返事ではありません。"
+en = "Automatically picks a matching post from the memo based on your words. It is not Tobokegao replying."

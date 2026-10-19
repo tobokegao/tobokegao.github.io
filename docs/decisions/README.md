@@ -46,3 +46,4 @@
 - [0029 アーカイブより新しいポストとリポストは、ブラウザでプロフィールから番号を拾って足す](0029-posts-after-archive-from-browser.md)
 - [0030 Xのポストとリポストは、1日1回Windowsのタスクで取り込み、プレビューまで出す](0030-daily-x-update.md)
 - [0031 メモの検索で、Xと同じfrom:やsince:を使えるようにする](0031-memo-search-operators.md)
+- [0032 メモのページに、ポストを引いて答える「ミニとぼけがお」を置く（AIは使わない）](0032-mini-tobokegao.md)

@@ -813,6 +813,19 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .notes__months { columns: 4 160px; }
 .notes__more, .notes__credit { margin: 16px 0 0; font: var(--dot)/2 var(--f-dot); color: var(--ink-dim); }
 .notes__results { list-style: none; margin: 0 0 16px; padding: 0; display: grid; gap: 12px; }
+/* mini Tobokegao (decision 0032): the picture in the bevel frame, the words in a square box
+   whose tail points at the picture (drawn with two borders, no curves) */
+.mini { margin: 8px 0 24px; }
+.mini__body { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px; }
+.mini__pic { flex: none; display: grid; place-items: center; width: 240px; height: 240px; background: var(--win); border: 2px solid; border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md); }
+.mini__pic img { display: block; max-width: 240px; max-height: 240px; image-rendering: pixelated; }
+.mini__talk { flex: 1 1 280px; min-width: 0; display: grid; gap: 12px; }
+.mini__say { position: relative; margin: 0 0 0 12px; padding: 12px 16px; min-height: 48px; background: var(--win-2); border: 2px solid var(--frame); font: 15px/1.8 var(--f-body); overflow-wrap: anywhere; }
+.mini__say::before { content: ""; position: absolute; left: -14px; top: 16px; border: 7px solid transparent; border-right-color: var(--frame); }
+.mini__say::after { content: ""; position: absolute; left: -10px; top: 18px; border: 5px solid transparent; border-right-color: var(--win-2); }
+.mini__quote { display: block; margin: 8px 0; padding-left: 12px; border-left: 3px solid var(--mark); }
+.mini__ask { margin: 0 0 0 12px; }
+.mini__note { margin: 0 0 0 12px; font-size: 12px; color: var(--ink-dim); }
 .notes__hit-t { font: var(--dot)/2 var(--f-dot); }
 .notes__hit-s { margin: 2px 0 0; font: 14px/1.6 var(--f-body); overflow-wrap: anywhere; }
 .notes__hit-s a { margin-right: 8px; font: var(--dot)/2 var(--f-dot); }

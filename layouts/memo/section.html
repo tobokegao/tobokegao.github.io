@@ -15,6 +15,27 @@
   <ol class="notes__results" id="notes-results"></ol>
   <p class="log__empty" id="notes-empty" hidden>{{ partial "t.html" "noResults" }}</p>
 
+  {{- /* mini Tobokegao: answers with a post from the memo, in Tobokegao's way of writing
+     (no AI: notes.js picks a Pagefind hit and fills set phrases). The picture is one of the
+     "diary" pixel arts, chosen at random (data/minitobo.json, scripts/minitobo_art.py). Decision 0032 */}}
+  {{ $art := slice }}
+  {{ range $a := hugo.Data.minitobo.art }}{{ with $a.img }}{{ $art = $art | append (dict "d" $a.diary "p" $a.post "w" .w "h" .h "s" (cond (isset . "still") 1 0)) }}{{ end }}{{ end }}
+  <section class="mini" id="mini" aria-labelledby="mini-t" data-art="{{ $art | jsonify }}" data-img="{{ "img/minitobo/" | relURL }}" hidden>
+    <h2 class="sub" id="mini-t">{{ partial "t.html" "miniTitle" }}</h2>
+    <div class="mini__body">
+      <a class="mini__pic" id="mini-pic" href="#" target="_blank" rel="noopener" title="{{ partial "tt.html" "miniPicTip" }}"><picture><source id="mini-still" media="(prefers-reduced-motion: reduce)"><img id="mini-img" alt="Tobokegao-chan" decoding="async"></picture></a>
+      <div class="mini__talk">
+        <p class="mini__say" id="mini-say" aria-live="polite"></p>
+        <form class="search mini__ask" id="mini-ask">
+          <label for="mini-q">{{ partial "t.html" "miniAsk" }}</label>
+          <input id="mini-q" type="text" autocomplete="off" enterkeyhint="send">
+          <button type="submit" class="btn">{{ partial "t.html" "miniSend" }}</button>
+        </form>
+        <p class="mini__note">{{ partial "t.html" "miniNote" }}</p>
+      </div>
+    </div>
+  </section>
+
   <p class="win__more"><a class="btn" href="{{ "/memo/roots/" | relURL }}">{{ partial "t.html" "timeline" }}</a></p>
 
   <h2 class="sub">{{ partial "t.html" "topics" }}</h2>

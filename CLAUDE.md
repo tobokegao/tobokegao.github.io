@@ -23,6 +23,8 @@ DOSのテキスト画面のような見た目で、日本語と英語を一つ�
 - `cover_cache.py`: リリースと動画のカードに出すジャケットとサムネイルを、表示する大きさのWebPにしてサイトに置く（`static/img/covers/`、対応表は`data/covers.json`）。`fetch_feeds.py`のあとに動かす
 - `pixel_icons.py` / `hd_icons.py` / `banner.py` / `night_logos.py`: ドット絵のアイコン、ANSIのタイトル、夜のロゴを作る
 - `subset_fonts.py`: ドットフォントを升目に合わせて作り直す
+- `minitobo_art.py`: メモのページのミニとぼけがおの絵（diaryのドット絵）を、`data/minitobo.json`から表示する大きさのWebPにする（0032）
+- `memo_query_index.py`: メモの検索のfrom:・to:のための索引。Actionsの組み立てで動く（0031）
 
 ## 見た目の決まり
 

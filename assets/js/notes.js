@@ -196,6 +196,90 @@
     input.addEventListener("input", run);
   }
 
+  // ---------- mini Tobokegao ----------
+  // Answers with a post from the memo in Tobokegao's way of writing: an opener, the post's
+  // date, the post itself and a short aside in brackets, closing with "…！". No AI: set
+  // phrases around a Pagefind hit. Decision 0032.
+  var MINI = {
+    ja: {
+      hello: ["こんにちは…！気になる言葉を入れてもらえれば、メモから探してきます！",
+        "ミニとぼけがおです…！(メモの中のことなら答えられます)", "なにか気になる言葉、ありますか…？"],
+      open: ["それ、", "あ、", "なるほど…！", "うお〜、", "ありました…！"],
+      found: "{d}にこんなこと書いてました…！",
+      foundRt: "{d}に、{u}さんのポストをリポストしてました…！",
+      aside: ["(なつかしい)", "(メモより)", "(ほかにもあるかもです)"],
+      none: ["うーん、メモには見つからなかったです…！(別の言葉で試してみてください)", "それはまだ書いてないかもです…！"],
+      more: "このポストを見る"
+    },
+    en: {
+      hello: ["Hi…! Type a word and I'll dig it out of the memo!", "Mini Tobokegao here…! (I can answer from the memo)", "Any word on your mind…?"],
+      open: ["Oh, ", "Ah, ", "I see…! ", "Whoa, ", "Found it…! "],
+      found: "I wrote this on {d}…!",
+      foundRt: "On {d} I reposted this from {u}…!",
+      aside: ["(good old days)", "(from the memo)", "(there may be more)"],
+      none: ["Hmm, I couldn't find that in the memo…! (try another word)", "Maybe I haven't written about that yet…!"],
+      more: "See this post"
+    }
+  };
+  var pick = function (a) { return a[Math.floor(Math.random() * a.length)]; };
+  function initMini(box, searchBox) {
+    var art = [];
+    try { art = JSON.parse(box.dataset.art || "[]"); } catch (e) { art = []; }
+    if (!art.length || !searchBox) return;
+    var imgTop = sitePath(box.dataset.img);
+    var img = document.getElementById("mini-img"), still = document.getElementById("mini-still");
+    var link = document.getElementById("mini-pic"), say = document.getElementById("mini-say");
+    var form = document.getElementById("mini-ask"), q = document.getElementById("mini-q");
+    var handle = searchBox.dataset.handle || "";
+    var showArt = function () {
+      var a = pick(art);
+      img.src = imgTop + a.d + ".webp";
+      img.width = a.w; img.height = a.h;
+      // a moving picture shows its first frame to those who asked for less motion
+      if (a.s) still.srcset = imgTop + a.d + "-still.webp"; else still.removeAttribute("srcset");
+      link.href = "https://x.com/" + handle + "/status/" + a.p;
+    };
+    var L = function () { return MINI[en() ? "en" : "ja"]; };
+    showArt();
+    say.textContent = pick(L().hello);
+    box.hidden = false;
+    var asked = 0;
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var words = q.value.trim();
+      if (!words) return;
+      var id = ++asked;
+      say.textContent = "…";
+      loadPagefind(searchBox.dataset.pagefind).then(function (pf) {
+        return pf.search(words);
+      }).then(function (found) {
+        return Promise.all(found.results.slice(0, 8).map(function (r) { return r.data(); }));
+      }).then(function (pages) {
+        if (id !== asked) return;
+        // the posts among the hits (their titles start with a date), own posts first
+        var hits = [];
+        pages.forEach(function (p) {
+          (p.sub_results || []).forEach(function (s) { if (dayOf(s.title)) hits.push(s); });
+        });
+        var own = hits.filter(function (s) { return !/RT @/.test(s.title); });
+        var s = pick((own.length ? own : hits).slice(0, 6));
+        showArt();
+        var l = L();
+        if (!s) { say.textContent = pick(l.none); return; }
+        var day = dayOf(s.title).split("-");
+        var d = en() ? day[0] + "." + day[1] + "." + day[2] : day[0] + "年" + (+day[1]) + "月" + (+day[2]) + "日";
+        var rt = s.title.match(/RT @(\w+)/);
+        var text = s.excerpt.indexOf(s.title) === 0 ? s.excerpt.slice(s.title.length).replace(/^\.\s*/, "") : s.excerpt;
+        // Pagefind's excerpt is already escaped, with the hits in <mark>
+        say.innerHTML = esc(pick(l.open) + (rt ? l.foundRt.replace("{u}", "@" + rt[1]) : l.found).replace("{d}", d)) +
+          '<span class="mini__quote">' + text + "</span>" + esc(pick(l.aside)) +
+          ' <a href="' + esc(s.url) + '">' + esc(l.more) + "</a>";
+      }).catch(function () {
+        if (id === asked) say.textContent = en() ? "Search is not available here" : "ここでは検索を使えません";
+      });
+    });
+  }
+
   // ---------- timeline ----------
   // When a genre was born: a year, or a part of a decade when only that is known (`era` in
   // the note: x the decade, x2 early, x3 the middle, x4 late; the year it is drawn at is the
@@ -890,6 +974,8 @@
     init: function () {
       var box = document.querySelector(".search[data-pagefind]");
       if (box) initSearch(box);
+      var mini = document.getElementById("mini");
+      if (mini) initMini(mini, box);
       var tl = document.getElementById("tl");
       if (tl) initTimeline(tl);
     }
