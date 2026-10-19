@@ -51,8 +51,8 @@
   var dayOf = function (s) { var m = s.match(/(\d{4})[.\-](\d{2})[.\-](\d{2})/); return m ? m[1] + "-" + m[2] + "-" + m[3] : ""; };
   // since: is the first day kept, until: the first day left out (as on X)
   var inRange = function (o, day) { return (!o.since || day >= o.since) && (!o.until || day < o.until); };
-  // a month is kept when any of its days is
-  var monthInRange = function (o, m) { return (!o.since || m + "-31" >= o.since) && (!o.until || m + "-01" < o.until); };
+  // the day (in Japan) an X id was made: ids carry their time (ms since 2010-11-04, << 22)
+  var dayOfId = function (id) { return new Date(Number(BigInt(id) >> 22n) + 1288834974657 + 9 * 3600e3).toISOString().slice(0, 10); };
 
   // the account index (scripts/memo_query_index.py): 256 files by a hash of the name
   var bucket = function (name) {
@@ -138,7 +138,7 @@
           accountPosts(memoTop, o.to ? "t" : "f", o.to || o.from).then(function (posts) {
             if (id !== asked) return;
             posts = posts.filter(function (p) {
-              return monthInRange(o, p.month) && (o.media === 0 || (o.media > 0) === p.media) && kindOk(p.kind);
+              return inRange(o, dayOfId(p.id)) && (o.media === 0 || (o.media > 0) === p.media) && kindOk(p.kind);
             });
             say(posts.length + " 件", posts.length + " posts");
             empty.hidden = posts.length !== 0;
