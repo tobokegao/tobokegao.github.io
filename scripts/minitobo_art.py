@@ -95,9 +95,24 @@ def scale2x(im: Image.Image) -> Image.Image:
     return Image.fromarray(out, im.mode)
 
 
-def shrink(im: Image.Image, size: tuple[int, int]) -> Image.Image:
+def toned(im: Image.Image) -> bool:
+    """Whether the drawing has much screen tone: a one-dot checker pattern, which turns into
+    moire noise when scaled by an odd amount."""
+    a = np.asarray(im.convert("L")).astype(np.int16)
+    checker = (a[1:, 1:] == a[:-1, :-1]) & (a[1:, 1:] != a[:-1, 1:]) & (a[1:, 1:] != a[1:, :-1])
+    return checker.mean() > 0.03
+
+
+def shrink(im: Image.Image, size: tuple[int, int], tone: bool = False) -> Image.Image:
     """A drawing drawn dot by dot, to any size: enlarged with Scale2x until it is at least as
-    large (smooth lines, no blur), then averaged down to the size."""
+    large (smooth lines, no blur), then averaged down to the size. A toned drawing is first
+    evened out (each dot averaged with its neighbours: the checker becomes its flat colour)
+    and then scaled smoothly, without Scale2x, which would turn the checker into noise."""
+    if tone:
+        a = np.asarray(im.convert("RGBA")).astype(np.float32)
+        p = np.pad(a, ((0, 1), (0, 1), (0, 0)), mode="edge")
+        flat = (p[:-1, :-1] + p[1:, :-1] + p[:-1, 1:] + p[1:, 1:]) / 4
+        return Image.fromarray(flat.round().astype(np.uint8), "RGBA").convert(im.mode).resize(size, Image.LANCZOS)
     while im.width < size[0] or im.height < size[1]:
         im = scale2x(im)
     return im.resize(size, Image.BOX)
@@ -132,8 +147,9 @@ def main() -> int:
             im = im.resize((im.width // k, im.height // k), Image.NEAREST)
             w, h, hard = plan(*im.size)
             ks = scales(*im.size, w, h, hard)
+            tone = toned(im)
             for sw, sh, sfx in ks:
-                save(im.resize((sw, sh), Image.NEAREST) if hard else shrink(im, (sw, sh)), OUT / f"{a['diary']}{sfx}.webp", hard)
+                save(im.resize((sw, sh), Image.NEAREST) if hard else shrink(im, (sw, sh), tone), OUT / f"{a['diary']}{sfx}.webp", hard)
             a["img"] = {"w": w, "h": h, "hard": int(hard), "x": [k[2][1:] for k in ks[1:]]}
         else:
             mp4 = get(f"https://video.twimg.com/tweet_video/{name}.mp4", RAW / f"{name}.mp4")
@@ -157,13 +173,14 @@ def main() -> int:
             num, den = (int(x) for x in rate.split("/"))
             native = [Image.open(f).convert("RGB").resize((nw, nh), Image.NEAREST) for f in sorted(frames_dir.glob("f*.png"))]
             ks = scales(nw, nh, w, h, hard)
+            tone = toned(native[0])
             for sw, sh, sfx in ks:
-                frames = [f.resize((sw, sh), Image.NEAREST) if hard else shrink(f, (sw, sh)) for f in native]
+                frames = [f.resize((sw, sh), Image.NEAREST) if hard else shrink(f, (sw, sh), tone) for f in native]
                 save(frames[0], OUT / f"{a['diary']}{sfx}.webp", hard, save_all=True, append_images=frames[1:],
                      duration=round(1000 * den / num), loop=0)
                 save(frames[0], OUT / f"{a['diary']}-still{sfx}.webp", hard)
             a["img"] = {"w": w, "h": h, "still": 1, "hard": int(hard), "x": [k[2][1:] for k in ks[1:]]}
-        print(f"{a['diary']} {kind} x{k} -> {a['img']['w']}x{a['img']['h']} {dest.stat().st_size // 1024}KB")
+        print(f"{a['diary']} {kind} x{k}{' tone' if not hard and tone else ''} -> {a['img']['w']}x{a['img']['h']} {dest.stat().st_size // 1024}KB")
     DATA.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     total = sum(f.stat().st_size for f in OUT.glob("*.webp"))
     print(f"{len(data['art'])} pictures, {total / 1e6:.1f} MB")
