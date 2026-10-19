@@ -99,10 +99,21 @@ def main() -> int:
             k = enlarged(im)
             nw, nh = im.width // k, im.height // k
             w, h, hard = plan(nw, nh)
-            flags = "neighbor" if hard else "area"
-            vf = f"scale={nw}:{nh}:flags=neighbor,scale={w}:{h}:flags={flags}"
-            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mp4), "-vf", vf, "-loop", "0",
-                            "-lossless", "1", str(dest)], check=True)
+            # the frames as PNG (RGB), put together by Pillow: ffmpeg's own WebP encoder shifted
+            # the colours of every frame after the first
+            frames_dir = RAW / f"{name}_frames"
+            if not frames_dir.exists():
+                frames_dir.mkdir()
+                subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mp4), "-pix_fmt", "rgb24",
+                                str(frames_dir / "f%04d.png")], check=True)
+            rate = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
+                                   "stream=r_frame_rate", "-of", "csv=p=0", str(mp4)],
+                                  capture_output=True, text=True, check=True).stdout.strip()
+            num, den = (int(x) for x in rate.split("/"))
+            frames = [Image.open(f).convert("RGB").resize((nw, nh), Image.NEAREST).resize((w, h), Image.NEAREST if hard else Image.BOX)
+                      for f in sorted(frames_dir.glob("f*.png"))]
+            frames[0].save(dest, "WEBP", save_all=True, append_images=frames[1:], duration=round(1000 * den / num),
+                           loop=0, lossless=True)
             still = OUT / f"{a['diary']}-still.webp"
             im.convert("RGB").resize((nw, nh), Image.NEAREST).resize((w, h), Image.NEAREST if hard else Image.BOX).save(still, "WEBP", lossless=True)
             a["img"] = {"w": w, "h": h, "still": 1}
