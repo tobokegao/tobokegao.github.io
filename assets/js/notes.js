@@ -274,6 +274,20 @@
         say.innerHTML = esc(pick(l.open) + (rt ? l.foundRt.replace("{u}", "@" + rt[1]) : l.found).replace("{d}", d)) +
           '<span class="mini__quote">' + text + "</span>" + esc(pick(l.aside)) +
           ' <a href="' + esc(s.url) + '">' + esc(l.more) + "</a>";
+        // the post's pictures, from the page the hit is on (the excerpt is text only)
+        var pageUrl = new URL(s.url, location.href).href.split("#")[0], pid = s.url.split("#")[1];
+        monthPages[pageUrl] = monthPages[pageUrl] || fetch(pageUrl).then(function (r) { return r.text(); }).then(function (html) {
+          return new DOMParser().parseFromString(html, "text/html");
+        });
+        monthPages[pageUrl].then(function (doc) {
+          var h = pid && doc.getElementById(pid), pics = h && h.closest("article") && h.closest("article").querySelector(".np__pics");
+          if (!pics || id !== asked) return;
+          pics.querySelectorAll("a[href], img[src]").forEach(function (el) {
+            var attr = el.hasAttribute("href") ? "href" : "src";
+            el.setAttribute(attr, new URL(el.getAttribute(attr), pageUrl).href);
+          });
+          say.querySelector(".mini__quote").insertAdjacentHTML("afterend", pics.outerHTML);
+        }).catch(function () {});
       }).catch(function () {
         if (id === asked) say.textContent = en() ? "Search is not available here" : "ここでは検索を使えません";
       });
