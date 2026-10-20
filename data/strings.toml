@@ -432,11 +432,11 @@ en = "Automatically picks a matching post from the memo based on your words. Rep
 
 [linkBanners]
 ja = "相互リンク用バナー"
-en = "Banners for link exchange"
+en = "Link exchange banners"
 
 [linkBannersNote]
-ja = "どれも実寸で並べています（468×60、200×40、88×31）。ドットがにじまないよう、1ドットを画面の画素の整数倍にそろえて表示するので、画面によっては少し大きく見えます。拡大や縮小をするとドットがにじむので、この大きさのまま貼ってください。動かないものがよければ「静止画版」を使ってください。"
-en = "All shown at actual size (468×60, 200×40, 88×31). To keep the dots sharp, each dot is snapped to a whole number of screen pixels, so they may look slightly larger on some screens. Resizing blurs the dots, so please use them at this size. If you prefer a static image, please use the still version."
+ja = "どれも実寸で並べています（468×60、200×40、88×31）。ドットがにじまないよう、画面に合わせてドットをきれいに拡大して表示しているため、画面によっては少し大きく見えます。拡大や縮小をするとドットがにじむので、この大きさのまま貼ってください。動かないものがよければ「静止画版」を使ってください。"
+en = "All shown at actual size (468×60, 200×40, 88×31). To keep the pixel art crisp, they are scaled by whole screen pixels, so they may look slightly larger on some screens. Resizing blurs the pixels, so please use them at this size. If you prefer one that does not move, please use the still version."
 
 [linkDayFace]
 ja = "デイカラー・イラスト"
@@ -456,4 +456,4 @@ en = "Night colors, pixel art"
 
 [linkStill]
 ja = "静止画版"
-en = "Still image"
+en = "Still version"
