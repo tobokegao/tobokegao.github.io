@@ -45,4 +45,26 @@
     <p class="win__more"><a class="btn" href="{{ "/news/" | relURL }}">{{ partial "t.html" "allNews" }}</a></p>
   </section>
 </div>
+
+<section class="win win--home-links" aria-labelledby="links-t">
+  {{ partial "win.html" (dict "file" "LINKS.HTM" "id" "links-t" "toggle" true) }}
+  {{- /* link banners (decision 0033, scripts/link_banners.py): 3 sizes x drawn face / pixel art x day / night colours.
+     The GIFs are what other sites take; reduced motion gets the still one */}}
+  <p class="win__caption">{{ partial "t.html" "linkBanners" }}</p>
+  {{ range slice (slice "day" "face" "linkDayFace") (slice "day" "dot" "linkDayDot") (slice "night" "face" "linkNightFace") (slice "night" "dot" "linkNightDot") }}{{ $c := index . 0 }}{{ $k := index . 1 }}
+  <div class="banners">
+    <p class="banners__label">{{ partial "t.html" (index . 2) }}</p>
+    <ul class="banners__list">
+      {{- /* named large / medium / small: ad blockers stop images named 468x60 */}}
+      {{ range slice (slice 468 60 "large") (slice 200 40 "medium") (slice 88 31 "small") }}{{ $w := index . 0 }}{{ $h := index . 1 }}{{ $n := printf "img/banners/tobokegao-%s-%s-%s" (index . 2) $k $c }}
+      <li class="banners__item">
+        <div class="banners__pic"><picture><source media="(prefers-reduced-motion: reduce)" srcset="{{ printf "%s-still.gif" $n | relURL }}"><img class="banners__img" src="{{ printf "%s.gif" $n | relURL }}" width="{{ $w }}" height="{{ $h }}" alt="Tobokegao" loading="lazy" style="--w: {{ $w }}; --h: {{ $h }}"></picture></div>
+        <p class="banners__size"><span>{{ $w }}x{{ $h }}</span><a href="{{ printf "%s-still.gif" $n | relURL }}">{{ partial "t.html" "linkStill" }}</a></p>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+  <p class="banners__note">{{ partial "t.html" "linkBannersNote" }}</p>
+</section>
 {{ end }}

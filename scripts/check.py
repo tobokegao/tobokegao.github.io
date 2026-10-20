@@ -79,6 +79,7 @@ REMINDERS = [
     (r"^icons-src/", "アイコンの元が変わった。scripts/hd_icons.py --from-grids（または pixel_icons.py）を回す"),
     (r"^scripts/banner\.py$", "ANSI のタイトルの作り方が変わった。scripts/banner.py を回す"),
     (r"^(data/minitobo\.json|scripts/minitobo_art\.py)$", "ミニとぼけがおの絵が変わった。scripts/minitobo_art.py を回す"),
+    (r"^scripts/link_(banners|letters)\.py$", "相互リンクのバナーの作り方が変わった。scripts/link_banners.py --zoom <作業用> を回し、拡大して確かめる"),
     (r"^(fonts-src/|scripts/subset_fonts\.py$)", "フォントが変わった。scripts/subset_fonts.py を回し、字がにじまないか拡大して確かめる"),
     (r"^scripts/(hd_icons|night_logos)\.py$", "夜の光の段階色を変えたなら、hd_icons.py と night_logos.py の両方を回す"),
     (r"^(content/memo/|scripts/x_notes\.py$|scripts/x_browse\.py$)", "ノートが変わった。scripts/x_notes.py を回して、リンクとポストの一覧を作り直す"),
@@ -355,7 +356,9 @@ def check_images(r: Result, added: set[str] | None) -> None:
         rel = p.relative_to(ROOT).as_posix()
         if not p.is_file() or (added is not None and rel not in added):
             continue
-        if p.suffix.lower() != ".webp" and p.name not in LEGACY_IMAGES:
+        # link banners are handed out to other sites, so they stay GIF (decision 0033)
+        handed_out = rel.startswith("static/img/banners/") and p.suffix.lower() == ".gif"
+        if p.suffix.lower() != ".webp" and p.name not in LEGACY_IMAGES and not handed_out:
             r.ng.append(f"WebP でない画像 {rel}: 表示する大きさの WebP にする")
         elif p.suffix.lower() == ".webp" and Image:
             with Image.open(p) as im:

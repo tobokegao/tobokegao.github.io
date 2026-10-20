@@ -429,3 +429,31 @@ en = "Send"
 [miniNote]
 ja = "メモの中から、言葉に合うポストを自動で選んで答えます。とぼけがお本人の返事ではありません。"
 en = "Automatically picks a matching post from the memo based on your words. Replies are not from Tobokegao in person."
+
+[linkBanners]
+ja = "相互リンク用バナー"
+en = "Banners for link exchange"
+
+[linkBannersNote]
+ja = "どれも実寸で並べています（468×60、200×40、88×31）。ドットがにじまないよう、1ドットを画面の画素の整数倍にそろえて表示するので、画面によっては少し大きく見えます。拡大や縮小をするとドットがにじむので、この大きさのまま貼ってください。動かないものがよければ「止まった版」を使ってください。"
+en = "All shown at actual size (468×60, 200×40, 88×31). To keep the dots sharp, each dot is snapped to a whole number of screen pixels, so they may look slightly larger on some screens. Resizing blurs the dots, so please use them at this size. If you prefer a static image, please use the still version."
+
+[linkDayFace]
+ja = "昼の色・描いた顔"
+en = "Day colors, drawn face"
+
+[linkDayDot]
+ja = "昼の色・ドット絵"
+en = "Day colors, pixel art"
+
+[linkNightFace]
+ja = "夜の色・描いた顔"
+en = "Night colors, drawn face"
+
+[linkNightDot]
+ja = "夜の色・ドット絵"
+en = "Night colors, pixel art"
+
+[linkStill]
+ja = "止まった版"
+en = "Still"

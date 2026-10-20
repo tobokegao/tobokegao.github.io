@@ -25,6 +25,7 @@ DOSのテキスト画面のような見た目で、日本語と英語を一つ�
 - `subset_fonts.py`: ドットフォントを升目に合わせて作り直す
 - `minitobo_art.py`: メモのページのミニとぼけがおの絵（diaryのドット絵）を、`data/minitobo.json`から表示する大きさのWebPにする（0032）
 - `memo_query_index.py`: メモの検索のfrom:・to:のための索引。Actionsの組み立てで動く（0031）
+- `link_banners.py` / `link_letters.py`: トップの相互リンク用バナー（468×60、200×40、88×31。絵と配色の違う版つき）を、ミニとぼけがおの絵と手で置いた字で作る（0033）
 
 ## 見た目の決まり
 
