@@ -23,7 +23,7 @@ import sys
 from functools import lru_cache
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageChops, ImageDraw, ImageFilter
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from link_letters import KANA, SMALL, TINY, lettering  # noqa: E402
@@ -38,23 +38,23 @@ WHITE = (255, 255, 255)
 GRAY = (221, 223, 223)    # the pixel art's light grey
 # by night the letters get a 1-dot ring that catches the yellow light from below: dim at the top, yellow at the bottom
 NIGHT_RING = [(60, 62, 60), (78, 75, 58), (104, 96, 58), (140, 126, 60)]
-# by day the same idea in pale: the site's light grey edge (--bevel-md) at the top to a pale yellow at the bottom
-DAY_RING = [(196, 204, 212), (208, 210, 204), (226, 220, 184), (240, 226, 150)]
+# the night name is lit like the night icons and logos (scripts/hd_icons.py ramp_n): whitish at the top to
+# yellow at the bottom, four steps joined with 2x2 Bayer dither (check.py keeps the three copies equal)
+NIGHT_NAME_RAMP = ["#c9ccd1", "#d4d5d2", "#dcd9c8", "#e0d4a6"]
+BAYER = ((0.125, 0.625), (0.875, 0.375))
 COLOURS = {
     # ground, frame, name, rings around the name, small line, its ring, 88x31 ground, colours always in the palette
-    "day": dict(ground=WHITE, frame=(13, 34, 51), name=BLUE, rings=((DAY_RING, 1),),
-                small=(13, 34, 51), small_ring=DAY_RING, g88=YEL, n88=BLUE, r88=DAY_RING,
-                fixed=[(228, 233, 239), (128, 196, 228), (236, 228, 196), (179, 38, 30)] + DAY_RING,
+    "day": dict(ground=WHITE, frame=(13, 34, 51), name=BLUE, rings=(),   # by day the letters keep a plain white ring (the user's choice over the stepped one)
+                small=(13, 34, 51), small_ring=WHITE, g88=YEL, n88=BLUE, r88=WHITE, band_rows88=None,   # 88x31 by day: blue on yellow
+                fixed=[(228, 233, 239), (128, 196, 228), (196, 204, 212), (236, 228, 196), (179, 38, 30)],
                 # the name in the colours of the site's ANSI title (--ansi-1..5), purple at the top to yellow at the bottom
                 bands=[(58, 29, 122), (44, 54, 144), (0, 101, 153), (91, 143, 90), (224, 176, 0)],
                 band_rows=[6, 2, 3, 3, 1]),   # rows of each band (15 in all): yellow is hard to read on white, so only a rim
     "night": dict(ground=(43, 49, 56), frame=(166, 171, 177), name=(251, 215, 67), rings=((NIGHT_RING, 1),),
-                  small=(239, 238, 235), small_ring=NIGHT_RING, g88=(43, 49, 56), n88=(251, 215, 67), r88=NIGHT_RING,
+                  small=(239, 238, 235), small_ring=NIGHT_RING, g88=(43, 49, 56), n88=(251, 215, 67), r88=NIGHT_RING, band_rows88="ramp",
                   fixed=[(18, 23, 27), (135, 212, 255)] + NIGHT_RING,
-                  # by night the name is all yellow: deep amber at the top to the site's lemon and paler at the bottom,
-                  # brightest where the light from below falls
-                  bands=[(176, 128, 44), (206, 160, 46), (232, 190, 56), (251, 215, 67), (255, 236, 140)],
-                  band_rows=[3, 3, 3, 3, 3]),
+                  bands=[tuple(int(h[i:i + 2], 16) for i in (1, 3, 5)) for h in NIGHT_NAME_RAMP],
+                  band_rows="ramp"),   # the icons' ramp, dithered (see letter)
 }
 NCOL = 22
 
@@ -133,7 +133,24 @@ def letter(img: Image.Image, xy: tuple, s: str, face: dict, col, rings, k: int =
                 img.paste(snap(ci), (x, y), part)
         else:
             img.paste(snap(c), (x, y), g)
-    if isinstance(col, list):   # bands of colour from top to bottom, band_rows rows each (in dots of the letters)
+    if isinstance(col, list) and band_rows == "ramp":
+        # the night icons' light: each dot of the letters (before enlarging) picks a step by its row, the steps
+        # joined with 2x2 Bayer dither, then the whole is enlarged k times so the dither stays a dot of the letters
+        m1 = lettering(s, face)
+        steps = len(col) - 1
+        idx = Image.new("L", m1.size, 0)
+        ip = idx.load()
+        for yy in range(m1.height):
+            t = yy / max(1, m1.height - 1) * steps
+            base = int(t)
+            for xx in range(m1.width):
+                ip[xx, yy] = min(steps, base + (1 if t - base > BAYER[yy % 2][xx % 2] else 0))
+        idx = idx.resize((m.width, m.height), Image.NEAREST)
+        for i, b in enumerate(col):
+            part = Image.new("L", core.size, 0)
+            part.paste(idx.point(lambda v, i=i: 255 if v == i else 0), (pad, pad))
+            img.paste(snap(b), (x, y), ImageChops.multiply(part, core))
+    elif isinstance(col, list):   # bands of colour from top to bottom, band_rows rows each (in dots of the letters)
         unit, top = m.height // sum(band_rows), 0
         for b, rows in zip(col, band_rows):
             band = Image.new("L", core.size, 0)
@@ -276,7 +293,8 @@ def b200(kind: str, i: int, c: dict) -> Image.Image:
 
 
 def b88(kind: str, i: int, c: dict) -> Image.Image:
-    """A plain ground, the name, a small face at the right (no room for air around it)."""
+    """A plain ground, the name, a small face at the right (no room for air around it). By night the name is lit
+    like the larger banners; by day it stays blue on yellow."""
     aw = 24   # the name takes 55 dots with its ring, 3 dots of air each side
     if kind == "face":
         d, box = c["faces"][i]
@@ -288,7 +306,10 @@ def b88(kind: str, i: int, c: dict) -> Image.Image:
         a = grid32(d).crop((0, top, 32, top + 29)).resize((32 * 4, 29 * 4), Image.NEAREST).convert("RGBA")
     f = picture(88, 31, a, (87 - aw, 1), c["g88"])
     ImageDraw.Draw(f).rectangle((1, 1, 86 - aw, 29), fill=snap(c["g88"]))
-    letter(f, (5, 10), "Tobokegao", SMALL, c["n88"], ((c["r88"], 1),))
+    if c["band_rows88"]:   # by night the name is lit like the larger banners
+        letter(f, (5, 10), "Tobokegao", SMALL, c["bands"], ((c["r88"], 1),), 1, c["band_rows88"])
+    else:
+        letter(f, (5, 10), "Tobokegao", SMALL, c["n88"], ((c["r88"], 1),))
     return framed(f, c)
 
 

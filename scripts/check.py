@@ -54,7 +54,8 @@ SAME_LINE = [
 ]
 SAME_LIST = [
     ("夜のアイコンとロゴの光の段階色", [("scripts/hd_icons.py", r"ramp_n = (\[[^\]]*\])"),
-                               ("scripts/night_logos.py", r"RAMP = (\[[^\]]*\])")]),
+                               ("scripts/night_logos.py", r"RAMP = (\[[^\]]*\])"),
+                               ("scripts/link_banners.py", r"NIGHT_NAME_RAMP = (\[[^\]]*\])")]),
     # a third item: what to compare in the matched text (colours when left out)
     ("年代の一部の書き方（前半・半ば・後半）", [("assets/js/notes.js", r"ja: \{ (x: \"\"[^}]*)\}"),
                                  ("layouts/_partials/era.html", r"\$ja := dict (\"x\" \"\"[^-]*)-")],
