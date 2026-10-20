@@ -48,3 +48,4 @@
 - [0031 メモの検索で、Xと同じfrom:やsince:を使えるようにする](0031-memo-search-operators.md)
 - [0032 メモのページに、ポストを引いて答える「ミニとぼけがお」を置く（AIは使わない）](0032-mini-tobokegao.md)
 - [0033 相互リンク用のバナーを、昔の個人サイトのバナーの作りでGIFにする](0033-link-banners.md)
+- [0034 プレビューにだけ出すものは、previewリポジトリの別の枝に置く](0034-preview-extras.md)

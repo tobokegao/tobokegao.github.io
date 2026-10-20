@@ -94,6 +94,20 @@ jobs:
             *) echo "unknown part: $PART"; exit 1 ;;
           esac
 
+      # Things only the preview shows (Web ReaScratch for now) live on the branch "extras"
+      # of the preview repository, laid over the built site after the checks. They stay out of
+      # main's history, so `git push preview renewal:main` is never refused (docs/decisions/0034).
+      - name: Preview extras
+        if: inputs.part == 'all'
+        env:
+          REPO: ${{ github.server_url }}/${{ github.repository }}
+        run: |
+          if git ls-remote --exit-code --heads "$REPO" extras >/dev/null; then
+            git clone --depth 1 --branch extras "$REPO" extras
+            rm -rf extras/.git
+            cp -r extras/. public/
+          fi
+
       - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4.0.0
         with:
           path: public
