@@ -1,0 +1,20 @@
+# Sites linked from the bottom of LINKS.HTM on the top page.
+# Banners are saved copies in static/img/links/ (no hotlinking), lined up at 200 wide.
+# pixel = true: pixel art, drawn dot for dot like our own banners; otherwise a smooth picture with a 2x copy.
+# When a site renews its banner, save it again.
+
+[[site]]
+name = "megahack.net"
+url = "https://megahack.net/"
+img = "img/links/megahack.webp"
+w = 200
+h = 40
+pixel = true
+
+[[site]]
+name = "なみぐる！ namigroove"
+url = "https://www.namigroove.com/"
+img = "img/links/namigroove.webp"
+img2x = "img/links/namigroove@2x.webp"
+w = 200
+h = 51

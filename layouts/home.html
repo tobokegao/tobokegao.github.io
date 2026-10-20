@@ -68,5 +68,16 @@
   <p class="banners__note">{{ partial "t.html" "linkBannersNote" }}</p>
   {{- /* hotlinking is welcome, so the banner file names never change: a redraw overwrites them (decision 0033) */}}
   <p class="banners__note">{{ partial "t.html" "linkBannersFree" }}</p>
+  {{- /* other sites' banners (data/link_sites.toml): saved copies, never hotlinked */}}
+  <div class="banners banners--sites">
+    <p class="banners__label">{{ partial "t.html" "linkSites" }}</p>
+    <ul class="banners__list">
+      {{ range hugo.Data.link_sites.site }}{{ $src := .img | relURL }}
+      <li class="banners__item">
+        <a class="banners__pic" href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}"><img class="banners__img{{ if not .pixel }} banners__img--smooth{{ end }}" src="{{ $src }}"{{ with .img2x }} srcset="{{ $src }} 1x, {{ . | relURL }} 2x"{{ end }} width="{{ .w }}" height="{{ .h }}" alt="{{ .name }}" loading="lazy" style="--w: {{ .w }}; --h: {{ .h }}"></a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
 </section>
 {{ end }}

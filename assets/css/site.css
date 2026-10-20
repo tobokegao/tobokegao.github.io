@@ -318,6 +318,8 @@ a.seg { text-decoration: none; }
 .banners__img { display: block; width: calc(var(--w) * var(--u)); height: calc(var(--h) * var(--u)); image-rendering: pixelated; }
 .banners__size { margin: 0; display: flex; gap: 16px; font: var(--dot)/1 var(--f-dot); color: var(--ink-dim); }
 .banners__note { margin: 20px 0 0; font: 14px/1.6 var(--f-body); color: var(--ink-dim); overflow-wrap: anywhere; }
+.banners--sites { margin: 40px 0 0; }
+.banners__img--smooth { image-rendering: auto; }   /* another site's drawn banner: 200 wide like the others, smooth not dotted */
 
 /* ---------- window: double-line frame, title set into the border ----------
    The whole site is lit from below (like the link icons): shadows fall straight up,

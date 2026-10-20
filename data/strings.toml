@@ -442,6 +442,10 @@ en = "All shown at actual size (468×60, 200×40, 88×31). To keep the pixel art
 ja = "リンクはご自由にどうぞ。バナーは今後描き直すことがあるので、画像のURLをそのまま貼り付けて使っていただいても大丈夫です（描き直したときは、自動で新しい絵に変わります）。もちろん、画像を保存して使っていただいてもかまいません。"
 en = "Feel free to link to this site. The banners may be updated in the future, so feel free to link directly to the image (it will update automatically). You are also welcome to save a copy and host it yourself."
 
+[linkSites]
+ja = "リンク先"
+en = "Links"
+
 [linkDayFace]
 ja = "デイカラー・イラスト"
 en = "Day colors, illustration"
