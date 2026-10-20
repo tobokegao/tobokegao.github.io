@@ -26,7 +26,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from link_letters import MID, SMALL, lettering  # noqa: E402
+from link_letters import KANA, SMALL, TINY, lettering  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 ART = ROOT / "static" / "img" / "minitobo"
@@ -38,12 +38,17 @@ WHITE = (255, 255, 255)
 GRAY = (221, 223, 223)    # the pixel art's light grey
 COLOURS = {
     # ground, frame, name, rings around the name, small line, its ring, 88x31 ground, colours always in the palette
-    "day": dict(ground=WHITE, frame=(13, 34, 51), name=BLUE, rings=(((128, 196, 228), 1), (WHITE, 2)),
+    "day": dict(ground=WHITE, frame=(13, 34, 51), name=BLUE, rings=(),   # blue on white needs no ring
                 small=(13, 34, 51), small_ring=WHITE, g88=YEL, n88=BLUE, r88=WHITE,
-                fixed=[(228, 233, 239), (128, 196, 228), (196, 204, 212), (236, 228, 196), (179, 38, 30)]),
+                fixed=[(228, 233, 239), (128, 196, 228), (196, 204, 212), (236, 228, 196), (179, 38, 30)],
+                # the name in the colours of the site's ANSI title (--ansi-1..5), purple at the top to yellow at the bottom
+                bands=[(58, 29, 122), (44, 54, 144), (0, 101, 153), (91, 143, 90), (224, 176, 0)],
+                band_rows=[6, 2, 3, 3, 1]),   # rows of each band (15 in all): yellow is hard to read on white, so only a rim
     "night": dict(ground=(27, 32, 37), frame=(166, 171, 177), name=(251, 215, 67), rings=(((18, 23, 27), 1),),
                   small=(239, 238, 235), small_ring=(18, 23, 27), g88=(27, 32, 37), n88=(251, 215, 67), r88=(18, 23, 27),
-                  fixed=[(18, 23, 27), (72, 70, 59), (135, 212, 255)]),
+                  fixed=[(18, 23, 27), (72, 70, 59), (135, 212, 255)],
+                  bands=[(74, 47, 143), (63, 79, 176), (79, 127, 192), (142, 166, 154), (216, 189, 106)],
+                  band_rows=[3, 2, 3, 3, 4]),   # on the dark ground yellow reads best, so it gets the most
 }
 NCOL = 22
 
@@ -85,7 +90,7 @@ def snap(c: tuple) -> tuple:
 def quant(f: Image.Image, c: dict, src: Image.Image | None = None, dither: bool = True) -> Image.Image:
     """22 colours: the fixed ones and the rest by median cut of src (the frame itself unless given).
     Floyd-Steinberg keeps the drawings' screen tone as a texture; the pixel art (4 inks) looks the same without it."""
-    fixed = [snap(x) for x in [c["frame"], BLUE, YEL, WHITE, GRAY, c["ground"], c["name"], c["small"]] + c["fixed"]]
+    fixed = [snap(x) for x in [c["frame"], BLUE, YEL, WHITE, GRAY, c["ground"], c["name"], c["small"]] + c["fixed"] + c["bands"]]
     fixed = list(dict.fromkeys(fixed))
     n = NCOL - len(fixed)
     pal = (src or f).quantize(colors=n, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE)
@@ -98,7 +103,7 @@ def quant(f: Image.Image, c: dict, src: Image.Image | None = None, dither: bool 
     return q
 
 
-def letter(img: Image.Image, xy: tuple, s: str, face: dict, col, rings, k: int = 1) -> None:
+def letter(img: Image.Image, xy: tuple, s: str, face: dict, col, rings, k: int = 1, band_rows: list | None = None) -> None:
     """No shadow; rings from the inside out, then the letters. k enlarges the letters by a whole number."""
     m = lettering(s, face)
     if k > 1:
@@ -114,7 +119,15 @@ def letter(img: Image.Image, xy: tuple, s: str, face: dict, col, rings, k: int =
     x, y = xy[0] - pad, xy[1] - pad
     for c, g in reversed(layers):
         img.paste(snap(c), (x, y), g)
-    img.paste(snap(col), (x, y), core)
+    if isinstance(col, list):   # bands of colour from top to bottom, band_rows rows each (in dots of the letters)
+        unit, top = m.height // sum(band_rows), 0
+        for b, rows in zip(col, band_rows):
+            band = Image.new("L", core.size, 0)
+            band.paste(core.crop((0, pad + top, core.width, pad + top + rows * unit)), (0, pad + top))
+            img.paste(snap(b), (x, y), band)
+            top += rows * unit
+    else:
+        img.paste(snap(col), (x, y), core)
 
 
 def fit(box: tuple, aspect: float) -> tuple:
@@ -216,34 +229,36 @@ def framed(f: Image.Image, c: dict) -> Image.Image:
     return f
 
 
-def named(W: int, H: int, kind: str, i: int, c: dict, mx: int, top: int, bottom: int, title: tuple, sub: tuple) -> Image.Image:
+def named(W: int, H: int, kind: str, i: int, c: dict, mx: int, top: int, bottom: int, title: tuple, sub: tuple, subface: dict = SMALL) -> Image.Image:
     """The name on the left, the picture on the right. The picture takes the rows of the letters
     (top to bottom), starts mx dots after the end of the letters (the air left of them), and keeps
     the same air from the right frame as from the top one. title / sub: (x, y, k) of the big name and the small line."""
-    tw = max(title[0] + lettering("Tobokegao", MID).width * title[2], sub[0] + lettering("Tobokegao's homepage", SMALL).width)
+    ink = lettering("とぼけがお", KANA).getbbox()   # the kana boxes have air at their sides: line up the ink
+    nx = title[0] - ink[0] * title[2]
+    tw = max(nx + ink[2] * title[2], sub[0] + lettering("Tobokegao's homepage", subface).width)
     x0, x1 = tw + mx, W - top
     a = art(kind, i, x1 - x0, bottom - top + 1, c, many=W >= 468)
     f = picture(W, H, a, (x0, top), c["ground"])
     # shrinking (and later the dither) smears the picture's edge a dot or two into the air around it:
     # wipe that back to the ground now, and again after the colours are cut (see quant)
-    f.info["air"] = [(x0, 1, W - 2, top - 1), (x0, bottom + 1, W - 2, H - 2), (x1, 1, W - 2, H - 2)]
+    f.info["air"] = [(x0, 1, W - 2, top - 1), (x0, bottom + 1, W - 2, H - 2), (x1, 1, W - 2, H - 2), (tw + 1, 1, x0 - 1, H - 2)]
     d = ImageDraw.Draw(f)
     for r in f.info["air"]:
         d.rectangle(r, fill=snap(c["ground"]))
     fade(f, x0, top, bottom, c["ground"])
-    letter(f, title[:2], "Tobokegao", MID, c["name"], c["rings"], title[2])
-    letter(f, sub[:2], "Tobokegao's homepage", SMALL, c["small"], ((c["small_ring"], 1),))   # over the big ring, so its feet stay whole
+    letter(f, (nx, title[1]), "とぼけがお", KANA, c["bands"], c["rings"], title[2], c["band_rows"])
+    letter(f, sub[:2], "Tobokegao's homepage", subface, c["small"], ((c["small_ring"], 1),))   # over the big ring, so its feet stay whole
     return framed(f, c)
 
 
 def b468(kind: str, i: int, c: dict) -> Image.Image:
-    # the 200x40 name twice as large: 38 rows; 3 dots above the small line, 3 below the g
-    return named(468, 60, kind, i, c, 13, 4, 55, (14, 18, 2), (16, 4))
+    # the 200x40 name twice as large (30 rows): 5 dots of air above, 5 between the lines, 6 below
+    return named(468, 60, kind, i, c, 13, 4, 55, (14, 23, 2), (14, 6))   # both lines start at the same dot
 
 
 def b200(kind: str, i: int, c: dict) -> Image.Image:
-    # 2 dots above the small line, 3 below the g
-    return named(200, 40, kind, i, c, 7, 3, 36, (8, 17, 1), (8, 3))   # the picture: 2 dots of air on three sides
+    # the small line in the tiny letters (shorter than the name); 5 dots of air above, 4 between, 5 below
+    return named(200, 40, kind, i, c, 7, 3, 36, (8, 19, 1), (8, 6), TINY)   # the picture: 2 dots of air on three sides
 
 
 def b88(kind: str, i: int, c: dict) -> Image.Image:
