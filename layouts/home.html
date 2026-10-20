@@ -66,5 +66,7 @@
   </div>
   {{ end }}
   <p class="banners__note">{{ partial "t.html" "linkBannersNote" }}</p>
+  {{- /* hotlinking is welcome, so the banner file names never change: a redraw overwrites them (decision 0033) */}}
+  <p class="banners__note">{{ partial "t.html" "linkBannersFree" }}</p>
 </section>
 {{ end }}
