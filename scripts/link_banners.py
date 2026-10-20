@@ -49,14 +49,17 @@ NCOL = 22
 
 # Drawn faces, other ones by day and by night so no drawing shows twice: (diary, crop box in the 240px picture).
 # faces: the 200x40 and 88x31; yheads / bheads: whole heads for 468x60, side by side (one face cut to
-# that band lost too much above and below), each frame yellow, blue, yellow by the drawings' own grounds
+# that band lost too much above and below), each frame yellow, blue, yellow by the drawings' own grounds,
+# six yellow and three blue so that no drawing shows twice in a round
 COLOURS["day"].update(
     faces=[("134", (45, 72, 205, 165)), ("147", (50, 40, 220, 140)), ("017", (35, 80, 215, 185))],
-    yheads=[("134", (10, 35, 215, 185)), ("147", (20, 5, 230, 155)), ("105", (10, 20, 235, 235))],
+    yheads=[("134", (10, 35, 215, 185)), ("147", (20, 5, 230, 155)), ("105", (10, 20, 235, 235)),
+            ("137", (10, 30, 235, 235)), ("152", (0, 0, 240, 200)), ("072", (60, 5, 185, 150))],
     bheads=[("017", (5, 25, 240, 185)), ("059", (10, 25, 230, 200)), ("026", (5, 20, 235, 200))])
 COLOURS["night"].update(
     faces=[("039", (30, 75, 210, 180)), ("112", (20, 115, 220, 225)), ("045", (25, 80, 205, 180))],
-    yheads=[("045", (20, 50, 215, 180)), ("039", (10, 35, 235, 215)), ("143", (25, 10, 225, 165))],
+    yheads=[("045", (20, 50, 215, 180)), ("039", (10, 35, 235, 215)), ("143", (25, 10, 225, 165)),
+            ("144", (55, 10, 230, 170)), ("149", (25, 25, 220, 200)), ("054", (10, 0, 230, 230))],
     bheads=[("112", (5, 20, 235, 230)), ("056", (10, 15, 230, 230)), ("020", (30, 45, 235, 235))])
 # pixel art (32x32): (diary, the row the face is centred on)
 DOTS = [("129", 15), ("128", 15), ("130", 13)]
@@ -162,7 +165,7 @@ def art(kind: str, i: int, w: int, h: int, c: dict, many: bool = False) -> Image
     if kind == "face" and many:   # three heads in a row: yellow, blue, yellow
         slot = w // 3
         out = Image.new("RGBA", (w * 4, h * 4), YEL)
-        for j, (d, box) in enumerate([c["yheads"][i], c["bheads"][i], c["yheads"][(i + 1) % 3]]):
+        for j, (d, box) in enumerate([c["yheads"][2 * i], c["bheads"][i], c["yheads"][2 * i + 1]]):
             im = Image.open(ART / f"{d}.webp").convert("RGBA").crop(fit(box, slot / h))
             ws = slot if j < 2 else w - 2 * slot
             out.paste(im.resize((ws * 4, h * 4), Image.LANCZOS), (j * slot * 4, 0))
