@@ -36,19 +36,25 @@ BLUE = (0, 101, 153)      # the drawings' blue, --accent by day
 YEL = (255, 204, 0)       # the drawings' yellow, --mark by day
 WHITE = (255, 255, 255)
 GRAY = (221, 223, 223)    # the pixel art's light grey
+# by night the letters get a 1-dot ring that catches the yellow light from below: dim at the top, yellow at the bottom
+NIGHT_RING = [(60, 62, 60), (78, 75, 58), (104, 96, 58), (140, 126, 60)]
+# by day the same idea in pale: the site's light grey edge (--bevel-md) at the top to a pale yellow at the bottom
+DAY_RING = [(196, 204, 212), (208, 210, 204), (226, 220, 184), (240, 226, 150)]
 COLOURS = {
     # ground, frame, name, rings around the name, small line, its ring, 88x31 ground, colours always in the palette
-    "day": dict(ground=WHITE, frame=(13, 34, 51), name=BLUE, rings=(),   # blue on white needs no ring
-                small=(13, 34, 51), small_ring=WHITE, g88=YEL, n88=BLUE, r88=WHITE,
-                fixed=[(228, 233, 239), (128, 196, 228), (196, 204, 212), (236, 228, 196), (179, 38, 30)],
+    "day": dict(ground=WHITE, frame=(13, 34, 51), name=BLUE, rings=((DAY_RING, 1),),
+                small=(13, 34, 51), small_ring=DAY_RING, g88=YEL, n88=BLUE, r88=DAY_RING,
+                fixed=[(228, 233, 239), (128, 196, 228), (236, 228, 196), (179, 38, 30)] + DAY_RING,
                 # the name in the colours of the site's ANSI title (--ansi-1..5), purple at the top to yellow at the bottom
                 bands=[(58, 29, 122), (44, 54, 144), (0, 101, 153), (91, 143, 90), (224, 176, 0)],
                 band_rows=[6, 2, 3, 3, 1]),   # rows of each band (15 in all): yellow is hard to read on white, so only a rim
-    "night": dict(ground=(27, 32, 37), frame=(166, 171, 177), name=(251, 215, 67), rings=(((18, 23, 27), 1),),
-                  small=(239, 238, 235), small_ring=(18, 23, 27), g88=(27, 32, 37), n88=(251, 215, 67), r88=(18, 23, 27),
-                  fixed=[(18, 23, 27), (72, 70, 59), (135, 212, 255)],
-                  bands=[(74, 47, 143), (63, 79, 176), (79, 127, 192), (142, 166, 154), (216, 189, 106)],
-                  band_rows=[3, 2, 3, 3, 4]),   # on the dark ground yellow reads best, so it gets the most
+    "night": dict(ground=(43, 49, 56), frame=(166, 171, 177), name=(251, 215, 67), rings=((NIGHT_RING, 1),),
+                  small=(239, 238, 235), small_ring=NIGHT_RING, g88=(43, 49, 56), n88=(251, 215, 67), r88=NIGHT_RING,
+                  fixed=[(18, 23, 27), (135, 212, 255)] + NIGHT_RING,
+                  # by night the name is all yellow: deep amber at the top to the site's lemon and paler at the bottom,
+                  # brightest where the light from below falls
+                  bands=[(176, 128, 44), (206, 160, 46), (232, 190, 56), (251, 215, 67), (255, 236, 140)],
+                  band_rows=[3, 3, 3, 3, 3]),
 }
 NCOL = 22
 
@@ -92,7 +98,7 @@ def quant(f: Image.Image, c: dict, src: Image.Image | None = None, dither: bool 
     Floyd-Steinberg keeps the drawings' screen tone as a texture; the pixel art (4 inks) looks the same without it."""
     fixed = [snap(x) for x in [c["frame"], BLUE, YEL, WHITE, GRAY, c["ground"], c["name"], c["small"]] + c["fixed"] + c["bands"]]
     fixed = list(dict.fromkeys(fixed))
-    n = NCOL - len(fixed)
+    n = max(NCOL - len(fixed), 8)   # the drawings keep at least 8 colours of their own
     pal = (src or f).quantize(colors=n, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE)
     p = [LUT[v] for v in pal.getpalette()[:n * 3]] + [v for x in fixed for v in x]
     pal.putpalette(p + [0] * (768 - len(p)))
@@ -118,7 +124,15 @@ def letter(img: Image.Image, xy: tuple, s: str, face: dict, col, rings, k: int =
         layers.append((c, grow))
     x, y = xy[0] - pad, xy[1] - pad
     for c, g in reversed(layers):
-        img.paste(snap(c), (x, y), g)
+        if isinstance(c, list):   # a ring in steps from top to bottom (lit from below: brightest at the bottom)
+            n = len(c)
+            for i, ci in enumerate(c):
+                y0, y1 = g.height * i // n, g.height * (i + 1) // n
+                part = Image.new("L", g.size, 0)
+                part.paste(g.crop((0, y0, g.width, y1)), (0, y0))
+                img.paste(snap(ci), (x, y), part)
+        else:
+            img.paste(snap(c), (x, y), g)
     if isinstance(col, list):   # bands of colour from top to bottom, band_rows rows each (in dots of the letters)
         unit, top = m.height // sum(band_rows), 0
         for b, rows in zip(col, band_rows):
