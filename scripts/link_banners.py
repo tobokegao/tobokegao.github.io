@@ -41,12 +41,15 @@ NIGHT_RING = [(60, 62, 60), (78, 75, 58), (104, 96, 58), (140, 126, 60)]
 # the night name is lit like the night icons and logos (scripts/hd_icons.py ramp_n): whitish at the top to
 # yellow at the bottom, four steps joined with 2x2 Bayer dither (check.py keeps the three copies equal)
 NIGHT_NAME_RAMP = ["#c9ccd1", "#d4d5d2", "#dcd9c8", "#e0d4a6"]
+# by day the letters of 468x60 and 200x40 get the same stepped ring in pale: the site's light grey edge
+# (--bevel-md) at the top to a pale yellow at the bottom (88x31 keeps its white ring on the yellow ground)
+DAY_RING = [(196, 204, 212), (208, 210, 204), (226, 220, 184), (240, 226, 150)]
 BAYER = ((0.125, 0.625), (0.875, 0.375))
 COLOURS = {
     # ground, frame, name, rings around the name, small line, its ring, 88x31 ground, colours always in the palette
-    "day": dict(ground=WHITE, frame=(13, 34, 51), name=BLUE, rings=(),   # by day the letters keep a plain white ring (the user's choice over the stepped one)
-                small=(13, 34, 51), small_ring=WHITE, g88=YEL, n88=BLUE, r88=WHITE, band_rows88=None,   # 88x31 by day: blue on yellow
-                fixed=[(228, 233, 239), (128, 196, 228), (196, 204, 212), (236, 228, 196), (179, 38, 30)],
+    "day": dict(ground=WHITE, frame=(13, 34, 51), name=BLUE, rings=((DAY_RING, 1),),
+                small=(13, 34, 51), small_ring=DAY_RING, g88=YEL, n88=BLUE, r88=WHITE, band_rows88=None,   # 88x31 by day: blue on yellow, white ring
+                fixed=[(228, 233, 239), (128, 196, 228), (236, 228, 196), (179, 38, 30)] + DAY_RING,
                 # the name in the colours of the site's ANSI title (--ansi-1..5), purple at the top to yellow at the bottom
                 bands=[(58, 29, 122), (44, 54, 144), (0, 101, 153), (91, 143, 90), (224, 176, 0)],
                 band_rows=[6, 2, 3, 3, 1]),   # rows of each band (15 in all): yellow is hard to read on white, so only a rim
