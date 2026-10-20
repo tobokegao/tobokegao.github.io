@@ -41,7 +41,7 @@ SMALL = dict(asc=3, x=7, desc=2, gap=1, glyphs={
 # These rounds are boxes with a dot off each corner, so they space like stems here; what is left
 # is the open side of T, whose arm reaches over the next letter, so that pair is kerned.
 MID["sb"] = {"T": (0, 0)}
-MID["kern"] = {"To": -2}   # o sits 2 dots from the stem, under the arm
+MID["kern"] = {"To": -2, "ke": -1}   # o sits 2 dots from the stem, under the arm; k opens to the right, so e comes a dot closer
 SMALL["sb"] = {"T": (0, 0), " ": (0, 0)}
 SMALL["kern"] = {"To": -1}
 

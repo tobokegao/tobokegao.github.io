@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import argparse
 import sys
+from functools import lru_cache
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter
@@ -46,14 +47,24 @@ COLOURS = {
 }
 NCOL = 22
 
-# drawn faces: (diary, crop box in the 240px picture) as the 200x40 and 88x31 use them
-FACES = [("134", (45, 72, 205, 165)), ("147", (50, 40, 220, 140)), ("017", (35, 80, 215, 185))]
-# whole heads for 468x60, side by side (one face cut to that band lost too much above and below):
-# each frame is yellow, blue, yellow, by the drawings' own grounds
-YHEADS = [("134", (10, 35, 215, 185)), ("147", (20, 5, 230, 155)), ("105", (10, 20, 235, 235))]
-BHEADS = [("017", (5, 25, 240, 185)), ("059", (10, 25, 230, 200)), ("026", (5, 20, 235, 200))]
+# Drawn faces, other ones by day and by night so no drawing shows twice: (diary, crop box in the 240px picture).
+# faces: the 200x40 and 88x31; yheads / bheads: whole heads for 468x60, side by side (one face cut to
+# that band lost too much above and below), each frame yellow, blue, yellow by the drawings' own grounds
+COLOURS["day"].update(
+    faces=[("134", (45, 72, 205, 165)), ("147", (50, 40, 220, 140)), ("017", (35, 80, 215, 185))],
+    yheads=[("134", (10, 35, 215, 185)), ("147", (20, 5, 230, 155)), ("105", (10, 20, 235, 235))],
+    bheads=[("017", (5, 25, 240, 185)), ("059", (10, 25, 230, 200)), ("026", (5, 20, 235, 200))])
+COLOURS["night"].update(
+    faces=[("039", (30, 75, 210, 180)), ("112", (20, 115, 220, 225)), ("045", (25, 80, 205, 180))],
+    yheads=[("045", (20, 50, 215, 180)), ("039", (10, 35, 235, 215)), ("143", (25, 10, 225, 165))],
+    bheads=[("112", (5, 20, 235, 230)), ("056", (10, 15, 230, 230)), ("020", (30, 45, 235, 235))])
 # pixel art (32x32): (diary, the row the face is centred on)
 DOTS = [("129", 15), ("128", 15), ("130", 13)]
+# 468x60: three side by side, each playing its own animation (139, 64x64, turns its head left and right),
+# on one clock of STEP ms going round in LOOP ms (a whole number of rounds of 129 and 139; 128 skips its last frames)
+# (diary, the row the face is centred on, the size of its grid)
+ROW = [("129", 15, 32), ("128", 15, 32), ("139", 30, 64)]
+STEP, LOOP = 20, 4800
 
 
 def mac15(v: int) -> int:
@@ -68,14 +79,16 @@ def snap(c: tuple) -> tuple:
     return tuple(LUT[v] for v in c)
 
 
-def quant(f: Image.Image, c: dict) -> Image.Image:
-    fixed = [snap(x) for x in [c["frame"], BLUE, YEL, WHITE, c["ground"], c["name"], c["small"]] + c["fixed"]]
+def quant(f: Image.Image, c: dict, src: Image.Image | None = None, dither: bool = True) -> Image.Image:
+    """22 colours: the fixed ones and the rest by median cut of src (the frame itself unless given).
+    Floyd-Steinberg keeps the drawings' screen tone as a texture; the pixel art (4 inks) looks the same without it."""
+    fixed = [snap(x) for x in [c["frame"], BLUE, YEL, WHITE, GRAY, c["ground"], c["name"], c["small"]] + c["fixed"]]
     fixed = list(dict.fromkeys(fixed))
     n = NCOL - len(fixed)
-    pal = f.quantize(colors=n, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE)
+    pal = (src or f).quantize(colors=n, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE)
     p = [LUT[v] for v in pal.getpalette()[:n * 3]] + [v for x in fixed for v in x]
     pal.putpalette(p + [0] * (768 - len(p)))
-    q = f.quantize(palette=pal, dither=Image.Dither.FLOYDSTEINBERG)
+    q = f.quantize(palette=pal, dither=Image.Dither.FLOYDSTEINBERG if dither else Image.Dither.NONE)
     g = n + fixed.index(snap(c["ground"]))
     for r in f.info.get("air", []):
         ImageDraw.Draw(q).rectangle(r, fill=g)
@@ -112,47 +125,66 @@ def fit(box: tuple, aspect: float) -> tuple:
     return tuple(round(v) for v in (x0, y0, x0 + bw, y0 + bh))
 
 
-def grid32(diary: str) -> Image.Image:
-    """The 32x32 pixel art (its first frame), its colours snapped back to the four inks."""
+@lru_cache(maxsize=None)
+def frames32(diary: str, n: int = 32) -> tuple:
+    """The n x n pixel art, every frame with its length in ms, colours snapped back to the four inks."""
     im = Image.open(ART / f"{diary}.webp")
-    im.seek(0)
-    im = im.convert("RGB")
-    cell = im.width // 32
-    g = Image.new("RGB", (32, 32))
-    for y in range(32):
-        for x in range(32):
-            p = im.getpixel((x * cell + cell // 2, y * cell + cell // 2))
-            g.putpixel((x, y), min((BLUE, YEL, WHITE, GRAY), key=lambda q: sum((a - b) ** 2 for a, b in zip(p, q))))
-    return g
+    out = []
+    for k in range(getattr(im, "n_frames", 1)):
+        im.seek(k)
+        im.load()
+        f = im.convert("RGB")
+        cell = f.width // n
+        g = Image.new("RGB", (n, n))
+        for y in range(n):
+            for x in range(n):
+                p = f.getpixel((x * cell + cell // 2, y * cell + cell // 2))
+                g.putpixel((x, y), min((BLUE, YEL, WHITE, GRAY), key=lambda q: sum((a - b) ** 2 for a, b in zip(p, q))))
+        out.append((g, im.info.get("duration") or 100))
+    return tuple(out)
 
 
-def art(kind: str, i: int, w: int, h: int, many: bool = False) -> Image.Image:
+def grid32(diary: str, t: int = 0, n: int = 32) -> Image.Image:
+    """The frame showing at t ms (the first frame at 0), the animation looping."""
+    fr = frames32(diary, n)
+    t %= sum(d for _, d in fr)
+    for g, d in fr:
+        if t < d:
+            return g
+        t -= d
+    return fr[0][0]
+
+
+def art(kind: str, i: int, w: int, h: int, c: dict, many: bool = False) -> Image.Image:
     """The picture for a w x h box, at 4x. Drawn faces are cut to the box; pixel art is enlarged
-    by a whole number (2 when the box is 32 rows or more) and set on its own yellow."""
+    by a whole number (2 when the box is 32 rows or more) and set on its own yellow.
+    i is the frame; for the pixel art in a row (many) it is the step of the clock."""
     if kind == "face" and many:   # three heads in a row: yellow, blue, yellow
         slot = w // 3
         out = Image.new("RGBA", (w * 4, h * 4), YEL)
-        for j, (d, box) in enumerate([YHEADS[i], BHEADS[i], YHEADS[(i + 1) % 3]]):
+        for j, (d, box) in enumerate([c["yheads"][i], c["bheads"][i], c["yheads"][(i + 1) % 3]]):
             im = Image.open(ART / f"{d}.webp").convert("RGBA").crop(fit(box, slot / h))
             ws = slot if j < 2 else w - 2 * slot
             out.paste(im.resize((ws * 4, h * 4), Image.LANCZOS), (j * slot * 4, 0))
         return out
     if kind == "face":
-        d, box = FACES[i]
+        d, box = c["faces"][i]
         im = Image.open(ART / f"{d}.webp").convert("RGBA").crop(fit(box, w / h))
         return im.resize((w * 4, h * 4), Image.LANCZOS)
-    k = 2 if h >= 32 else 1
-    n = h // k
-    picks = [DOTS[(i + j) % 3] for j in range(3)] if many else [DOTS[i]]   # many: three in a row, turning a place a frame
-    cols = min(32, w // k // len(picks))
+    big = 2 if h >= 32 else 1   # how much a 32x32 drawing is enlarged; a 64x64 one by half that
+    picks = ROW if many else [DOTS[i] + (32,)]   # many: all three in a row, each playing its own animation
+    slot = w // len(picks)
     out = Image.new("RGBA", (w * 4, h * 4), YEL)
-    x = (w - cols * k * len(picks)) // 2
-    for d, row in picks:
-        top = max(0, min(32 - n, row - n // 2))
-        left = (32 - cols) // 2
-        g = grid32(d).crop((left, top, left + cols, top + n)).resize((cols * k * 4, n * k * 4), Image.NEAREST)
-        out.paste(g, (x * 4, (h - n * k) // 2 * 4))
-        x += cols * k
+    x = (w - slot * len(picks)) // 2
+    for d, row, size in picks:
+        k = max(1, big * 32 // size)
+        n, cols = min(size, h // k), min(size, slot // k)
+        top = max(0, min(size - n, row - n // 2))
+        left = (size - cols) // 2
+        g = grid32(d, i * STEP if many else 0, size).crop((left, top, left + cols, top + n))
+        g = g.resize((cols * k * 4, n * k * 4), Image.NEAREST)
+        out.paste(g, ((x + (slot - cols * k) // 2) * 4, (h - n * k) // 2 * 4))
+        x += slot
     return out
 
 
@@ -187,7 +219,7 @@ def named(W: int, H: int, kind: str, i: int, c: dict, mx: int, top: int, bottom:
     the same air from the right frame as from the top one. title / sub: (x, y, k) of the big name and the small line."""
     tw = max(title[0] + lettering("Tobokegao", MID).width * title[2], sub[0] + lettering("Tobokegao's homepage", SMALL).width)
     x0, x1 = tw + mx, W - top
-    a = art(kind, i, x1 - x0, bottom - top + 1, many=W >= 468)
+    a = art(kind, i, x1 - x0, bottom - top + 1, c, many=W >= 468)
     f = picture(W, H, a, (x0, top), c["ground"])
     # shrinking (and later the dither) smears the picture's edge a dot or two into the air around it:
     # wipe that back to the ground now, and again after the colours are cut (see quant)
@@ -215,7 +247,7 @@ def b88(kind: str, i: int, c: dict) -> Image.Image:
     """A plain ground, the name, a small face at the right (no room for air around it)."""
     aw = 24   # the name takes 55 dots with its ring, 3 dots of air each side
     if kind == "face":
-        d, box = FACES[i]
+        d, box = c["faces"][i]
         a = Image.open(ART / f"{d}.webp").convert("RGBA").crop(box)
         a = a.resize((round(a.width * 29 * 4 / a.height), 29 * 4), Image.LANCZOS)
     else:
@@ -232,8 +264,14 @@ def b88(kind: str, i: int, c: dict) -> Image.Image:
 SIZES = {(468, 60, "large"): b468, (200, 40, "medium"): b200, (88, 31, "small"): b88}
 
 
-def save(name: str, frames: list, c: dict, zoom: Path | None, ms: int = 1500) -> None:
-    q = [quant(f, c) for f in frames]
+def save(name: str, frames: list, c: dict, zoom: Path | None, ms: int = 1500, dither: bool = True) -> None:
+    if len(frames) > 3:   # a long animation: one palette for all, so each frame only stores what moved
+        strip = Image.new("RGB", (frames[0].width, frames[0].height * len(frames)))
+        for k, f in enumerate(frames):
+            strip.paste(f, (0, k * f.height))
+        q = [quant(f, c, strip, dither) for f in frames]
+    else:   # three frames: each its own palette, as the 90s GIF tools did
+        q = [quant(f, c, dither=dither) for f in frames]
     q[0].save(OUT / f"{name}.gif", save_all=True, append_images=q[1:], duration=ms, loop=0, optimize=False, disposal=1)
     q[0].save(OUT / f"{name}-still.gif")
     if zoom:
@@ -254,8 +292,12 @@ def main() -> None:
     for (W, H, size), make in SIZES.items():
         for kind in ("face", "dot"):
             for cname, c in COLOURS.items():
-                frames = [make(kind, i, c) for i in range(3)]
-                save(f"tobokegao-{size}-{kind}-{cname}", frames, c, a.zoom)
+                if W == 468 and kind == "dot":
+                    frames = [make(kind, t, c) for t in range(LOOP // STEP)]
+                    save(f"tobokegao-{size}-{kind}-{cname}", frames, c, a.zoom, STEP, dither=False)
+                else:
+                    frames = [make(kind, i, c) for i in range(3)]
+                    save(f"tobokegao-{size}-{kind}-{cname}", frames, c, a.zoom, dither=kind == "face")
 
 
 if __name__ == "__main__":
