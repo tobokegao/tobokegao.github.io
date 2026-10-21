@@ -18,3 +18,11 @@ img = "img/links/namigroove.webp"
 img2x = "img/links/namigroove@2x.webp"
 w = 200
 h = 51
+
+[[site]]
+name = "blmsh.com"
+url = "https://blmsh.com/"
+img = "img/links/blmsh.webp"
+img2x = "img/links/blmsh@2x.webp"
+w = 200
+h = 40

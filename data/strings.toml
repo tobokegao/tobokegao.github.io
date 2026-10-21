@@ -431,8 +431,8 @@ ja = "メモの中から、言葉に合うポストを自動で選んで答え�
 en = "Automatically picks a matching post from the memo based on your words. Replies are not from Tobokegao in person."
 
 [linkBanners]
-ja = "相互リンク用バナー"
-en = "Link exchange banners"
+ja = "相互（でなくてもOKな）リンク用バナー"
+en = "Link banners (no need to link back)"
 
 [linkBannersNote]
 ja = "どれも実寸で並べています（468×60、200×40、88×31）。ドットがにじまないよう、画面に合わせてドットをきれいに拡大して表示しているため、画面によっては少し大きく見えます。拡大や縮小をするとドットがにじむので、この大きさのまま貼ってください。動かないものがよければ「静止画版」を使ってください。"
