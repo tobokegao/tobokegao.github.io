@@ -2,6 +2,7 @@
 # Banners are saved copies in static/img/links/ (no hotlinking), lined up at 200 wide.
 # pixel = true: pixel art, drawn dot for dot like our own banners; otherwise a smooth picture with a 2x copy.
 # small = true: a small button (88x31, 100x35 ...), on its own row at actual size (always pixel = true).
+# still: the first frame of a moving banner, shown to people who ask for reduced motion.
 # When a site renews its banner, save it again.
 
 [[site]]
@@ -56,6 +57,127 @@ name = "Aquellex"
 url = "https://aquellex.ws/"
 img = "img/links/aquellex.webp"
 w = 100
+h = 35
+pixel = true
+small = true
+
+[[site]]
+name = "yuinoid.neocities.org"
+url = "https://yuinoid.neocities.org/"
+img = "img/links/yuinoid.webp"
+still = "img/links/yuinoid-still.webp"
+w = 200
+h = 40
+pixel = true
+
+[[site]]
+name = "あごわーるど"
+url = "https://agoworld.neocities.org/"
+img = "img/links/agoworld.webp"
+w = 200
+h = 40
+pixel = true
+
+[[site]]
+name = "ROPchiptune Labo."
+url = "https://rophon.music.coocan.jp/"
+img = "img/links/ropchiptune.webp"
+w = 200
+h = 40
+pixel = true
+
+[[site]]
+name = "GIGAMIX"
+url = "https://www.gigamix.jp/"
+img = "img/links/gigamix.webp"
+w = 200
+h = 40
+pixel = true
+
+[[site]]
+name = "VORC"
+url = "http://www.vorc.org/"
+img = "img/links/vorc.webp"
+w = 200
+h = 40
+pixel = true
+
+[[site]]
+name = "xenoglossy"
+url = "https://xenoglossy.hariko.com/"
+img = "img/links/xenoglossy.webp"
+w = 200
+h = 40
+pixel = true
+
+[[site]]
+name = "orc2000.com"
+url = "http://www.orc2000.com/"
+img = "img/links/orc2000.webp"
+img2x = "img/links/orc2000@2x.webp"
+w = 200
+h = 40
+
+[[site]]
+name = "真島ゆろ Official Site"
+url = "https://myriico.com/"
+img = "img/links/myriico.webp"
+img2x = "img/links/myriico@2x.webp"
+w = 200
+h = 62
+
+[[site]]
+name = "波呂のホームページ"
+url = "https://note.com/c_alam_ela/n/nf0d72127403d"
+img = "img/links/haro.webp"
+img2x = "img/links/haro@2x.webp"
+w = 200
+h = 70
+
+[[site]]
+name = "thxdeeply"
+url = "https://thxdeeply.com/"
+img = "img/links/thxdeeply.webp"
+still = "img/links/thxdeeply-still.webp"
+w = 88
+h = 31
+pixel = true
+small = true
+
+[[site]]
+name = "dispatch blog"
+url = "https://blog.radicaldream.land/"
+img = "img/links/dispatch.webp"
+still = "img/links/dispatch-still.webp"
+w = 88
+h = 31
+pixel = true
+small = true
+
+[[site]]
+name = "UNAFFILIATED"
+url = "https://unaffiliated.fun/"
+img = "img/links/unaffiliated.webp"
+still = "img/links/unaffiliated-still.webp"
+w = 88
+h = 31
+pixel = true
+small = true
+
+[[site]]
+name = "すしさいと"
+url = "https://sushisite.neocities.org/"
+img = "img/links/sushisite.webp"
+w = 176
+h = 62
+pixel = true
+small = true
+
+[[site]]
+name = "higedriver"
+url = "https://higedriver.com/"
+img = "img/links/higedriver.webp"
+w = 148
 h = 35
 pixel = true
 small = true

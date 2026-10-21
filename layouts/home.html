@@ -76,7 +76,7 @@
     <ul class="banners__list{{ if $small }} banners__list--small{{ end }}">
       {{ range where hugo.Data.link_sites.site "small" (cond $small true nil) }}{{ $src := .img | relURL }}
       <li class="banners__item">
-        <a class="banners__pic" href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}"><img class="banners__img{{ if not .pixel }} banners__img--smooth{{ end }}" src="{{ $src }}"{{ with .img2x }} srcset="{{ $src }} 1x, {{ . | relURL }} 2x"{{ end }} width="{{ .w }}" height="{{ .h }}" alt="{{ .name }}" loading="lazy" style="--w: {{ .w }}; --h: {{ .h }}"></a>
+        <a class="banners__pic" href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}">{{ with .still }}<picture><source media="(prefers-reduced-motion: reduce)" srcset="{{ . | relURL }}">{{ end }}<img class="banners__img{{ if not .pixel }} banners__img--smooth{{ end }}" src="{{ $src }}"{{ with .img2x }} srcset="{{ $src }} 1x, {{ . | relURL }} 2x"{{ end }} width="{{ .w }}" height="{{ .h }}" alt="{{ .name }}" loading="lazy" style="--w: {{ .w }}; --h: {{ .h }}">{{ if .still }}</picture>{{ end }}</a>
       </li>
       {{ end }}
     </ul>
