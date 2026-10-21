@@ -1,5 +1,6 @@
 # Sites linked from the bottom of LINKS.HTM on the top page.
-# Banners are saved copies in static/img/links/ (no hotlinking), lined up at 200 wide.
+# Banners are saved copies in static/img/links/ (no hotlinking), lined up at 40 high (200x40 as they are;
+# other sizes keep their shape at 40 high, width rounded to whole pixels).
 # pixel = true: pixel art, drawn dot for dot like our own banners; otherwise a smooth picture with a 2x copy.
 # small = true: a small button (88x31, 100x35 ...), on its own row at actual size (always pixel = true).
 # still: the first frame of a moving banner, shown to people who ask for reduced motion.
@@ -18,8 +19,8 @@ name = "なみぐる！ namigroove"
 url = "https://www.namigroove.com/"
 img = "img/links/namigroove.webp"
 img2x = "img/links/namigroove@2x.webp"
-w = 200
-h = 51
+w = 156
+h = 40
 
 [[site]]
 name = "blmsh.com"
@@ -34,8 +35,8 @@ name = "mf_works"
 url = "https://mfworks.net/"
 img = "img/links/mfworks.webp"
 img2x = "img/links/mfworks@2x.webp"
-w = 200
-h = 41
+w = 197
+h = 40
 
 [[site]]
 name = "Private Atelier “N”"
@@ -123,16 +124,16 @@ name = "真島ゆろ Official Site"
 url = "https://myriico.com/"
 img = "img/links/myriico.webp"
 img2x = "img/links/myriico@2x.webp"
-w = 200
-h = 62
+w = 128
+h = 40
 
 [[site]]
 name = "波呂のホームページ"
 url = "https://note.com/c_alam_ela/n/nf0d72127403d"
 img = "img/links/haro.webp"
 img2x = "img/links/haro@2x.webp"
-w = 200
-h = 70
+w = 114
+h = 40
 
 [[site]]
 name = "thxdeeply"
@@ -168,10 +169,8 @@ small = true
 name = "すしさいと"
 url = "https://sushisite.neocities.org/"
 img = "img/links/sushisite.webp"
-w = 176
-h = 62
-pixel = true
-small = true
+w = 114
+h = 40
 
 [[site]]
 name = "higedriver"
