@@ -51,6 +51,28 @@
     ]
   },
   {
+    "date": "2026-10-21",
+    "id": "20261021-a59f45",
+    "kind": "other",
+    "ja": "「ReaScratch」のブラウザ体験版を公開",
+    "en": "Released a browser trial of ReaScratch",
+    "source": "web",
+    "links": [
+      {
+        "source": "web",
+        "url": "/reascratch/play/",
+        "name": "ReaScratchブラウザ体験版",
+        "name_en": "ReaScratch browser trial"
+      },
+      {
+        "source": "web",
+        "url": "/reascratch/",
+        "name": "ReaScratch特設ページ",
+        "name_en": "ReaScratch page"
+      }
+    ]
+  },
+  {
     "date": "2026-10-17",
     "id": "20261017-7e5c4a",
     "kind": "other",
