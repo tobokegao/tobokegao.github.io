@@ -1,6 +1,7 @@
 # Sites linked from the bottom of LINKS.HTM on the top page.
 # Banners are saved copies in static/img/links/ (no hotlinking), lined up at 200 wide.
 # pixel = true: pixel art, drawn dot for dot like our own banners; otherwise a smooth picture with a 2x copy.
+# small = true: a small button (88x31, 100x35 ...), on its own row at actual size (always pixel = true).
 # When a site renews its banner, save it again.
 
 [[site]]
@@ -49,3 +50,12 @@ url = "https://musmus.main.jp/"
 img = "img/links/musmus.webp"
 w = 200
 h = 40
+
+[[site]]
+name = "Aquellex"
+url = "https://aquellex.ws/"
+img = "img/links/aquellex.webp"
+w = 100
+h = 35
+pixel = true
+small = true

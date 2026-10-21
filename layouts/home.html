@@ -71,13 +71,16 @@
   {{- /* other sites' banners (data/link_sites.toml): saved copies, never hotlinked */}}
   <div class="banners banners--sites">
     <p class="banners__label">{{ partial "t.html" "linkSites" }}</p>
-    <ul class="banners__list">
-      {{ range hugo.Data.link_sites.site }}{{ $src := .img | relURL }}
+    {{- /* 200-wide banners first, then small buttons (88x31 and the like) on their own row at actual size */}}
+    {{ range slice false true }}{{ $small := . }}
+    <ul class="banners__list{{ if $small }} banners__list--small{{ end }}">
+      {{ range where hugo.Data.link_sites.site "small" (cond $small true nil) }}{{ $src := .img | relURL }}
       <li class="banners__item">
         <a class="banners__pic" href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}"><img class="banners__img{{ if not .pixel }} banners__img--smooth{{ end }}" src="{{ $src }}"{{ with .img2x }} srcset="{{ $src }} 1x, {{ . | relURL }} 2x"{{ end }} width="{{ .w }}" height="{{ .h }}" alt="{{ .name }}" loading="lazy" style="--w: {{ .w }}; --h: {{ .h }}"></a>
       </li>
       {{ end }}
     </ul>
+    {{ end }}
   </div>
 </section>
 {{ end }}
