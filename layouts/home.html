@@ -33,7 +33,7 @@
     {{ partial "win.html" (dict "file" "VIDEOS.MP4" "id" "videos-t" "toggle" true) }}
     <p class="win__caption">{{ partial "t.html" "latestVideos" }}</p>
     <div class="grid grid--videos">
-      {{ range first 8 (partial "videos.html" .) }}{{ partial "video-card.html" . }}{{ end }}
+      {{ range first 6 (partial "videos.html" .) }}{{ partial "video-card.html" . }}{{ end }}
     </div>
     <p class="win__more"><a class="btn" href="{{ "/videos/" | relURL }}">{{ partial "t.html" "allVideos" }}</a></p>
   </section>
@@ -41,7 +41,7 @@
   <section class="win win--home-log" aria-labelledby="log-t">
     {{ partial "win.html" (dict "file" "NEWS.LOG" "id" "log-t" "toggle" true) }}
     <p class="win__caption">{{ partial "t.html" "log" }}</p>
-    {{ partial "log.html" (dict "rows" (partial "timeline.html" .) "limit" 13) }}
+    {{ partial "log.html" (dict "rows" (partial "timeline.html" .) "limit" 11) }}
     <p class="win__more"><a class="btn" href="{{ "/news/" | relURL }}">{{ partial "t.html" "allNews" }}</a></p>
   </section>
 </div>

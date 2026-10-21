@@ -528,6 +528,7 @@ a.seg { text-decoration: none; }
 .grid--jackets { grid-template-columns: repeat(auto-fill, minmax(min(100%, 170px), 1fr)); }
 .grid--videos { grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); }
 .win--home-videos .grid--videos { grid-template-columns: repeat(2, minmax(0, 1fr)); }   /* the home page: two across, so the column is not a long stack */
+.win--home-releases .grid--jackets { grid-template-columns: repeat(4, minmax(0, 1fr)); }   /* eight releases: two full rows of four */
 
 /* jacket (TRACKMENTO bevel) */
 .jacket { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
@@ -741,6 +742,7 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
   .links { gap: 4px; }
   .grid--jackets, .grid--designs { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 14px; }
   /* the home page on phones: four releases and four videos (2 x 2), and a log about as tall */
+  .win--home-releases .grid--jackets,
   .win--home-videos .grid--videos { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 14px; }
   .win--home-releases .grid--jackets > :nth-child(n+5),
   .win--home-videos .grid--videos > :nth-child(n+5),
