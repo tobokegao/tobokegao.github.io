@@ -1,0 +1,163 @@
+/* ReaScratch Web — page style. Colours: the deck's own (dark panel, lamp yellow/blue) and Tobokegao's navy. */
+:root {
+  --bg: #0b141c;
+  --panel: #10141a;
+  --text: #e6e4d9;
+  --muted: #9fb0c2;
+  --lamp: #fbd743;
+  --lamp-b: #4fb3e0;
+  --line: #2a333d;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.5 Tahoma, Verdana, "Hiragino Sans", "Yu Gothic UI", sans-serif; }
+header { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 10px 16px; border-bottom: 1px solid var(--line); }
+h1 { margin: 0; font-size: 16px; display: flex; align-items: center; gap: 10px; }
+h1 img { image-rendering: pixelated; }
+.tagline { margin: 0; color: var(--muted); font-size: 13px; flex: 1 1 280px; }
+/* the bar's buttons in groups by what they do (load / save / connect and set up / language), a wider gap between the
+   groups than inside one; no filled colour (the demo is only to try it: the files to A / B are the main thing, user's
+   view 2026-10-21), the language a quiet outline (the same look all in a row left them unsure where to press) */
+nav { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; flex: 1 1 100%; }
+nav .grp { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+nav .grp.end { margin-left: auto; }
+/* a heading and joined buttons for the choices of one action (user's idea 2026-10-21: Load: Demo / A / B) */
+nav .glabel { color: var(--muted); font-size: 12px; }
+/* a choice group in a thin frame with its heading inside, so A / B / Demo read as the choices of Load (user's request
+   2026-10-21: the demo looked apart, unclear which group it went with) */
+nav .grp.box { border: 1px solid var(--line); border-radius: 4px; padding: 2px; }   /* the same space on all four sides (user's request) */
+nav .seg { display: inline-flex; }
+nav .seg button { border-radius: 0; min-width: 34px; }
+nav .seg button + button { margin-left: -1px; }
+nav .seg { border-radius: 3px; overflow: hidden; }   /* the ends round whichever buttons are hidden */
+button, select, nav a.full {
+  font: inherit; font-size: 13px; color: #1a1a1a; background: linear-gradient(#e7e4d9, #b4b9bf); border: 1px solid #585e6b;
+  border-radius: 3px; padding: 4px 10px; cursor: pointer; text-decoration: none;
+}
+button:hover, nav a.full:hover { background: linear-gradient(#fff2cf, #cfd1cf); }
+nav a.full { background: transparent; color: var(--lamp); border-color: #8a6d00; }   /* a link away: an outline, the fill is the demo's */
+nav a.full:hover { background: transparent; color: #fff0a8; border-color: var(--lamp); }
+button.quiet { background: transparent; color: var(--muted); border-color: var(--line); }
+button.quiet:hover { background: transparent; color: var(--text); border-color: var(--muted); }
+main { padding: 12px 16px 24px; max-width: 1532px; margin: 0 auto; }   /* two decks of 744 side by side: 744 * 2 + 12 + 32 */
+.stage-wrap { max-width: 960px; margin: 0 auto; }
+#stage { width: 100%; aspect-ratio: 16 / 9; height: auto; display: block; background: #000; border: 1px solid var(--line); }
+.xf-row { display: flex; align-items: center; gap: 10px; margin: 8px auto 12px; max-width: 360px; color: var(--muted); }
+.xf-row input { flex: 1; accent-color: var(--lamp); }
+.decks { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--deckw, 744px)), 1fr)); gap: 12px; }
+.deck { width: 100%; aspect-ratio: 744 / 340; height: auto; image-rendering: pixelated; display: block; margin: 0 auto;
+  touch-action: none; outline: none; }
+.deck.drop { filter: brightness(1.25); }
+.fxpanel { margin-top: 12px; border: 1px solid var(--line); border-radius: 4px; padding: 6px 12px 10px; }
+.fxpanel summary { cursor: pointer; color: var(--muted); }
+.fxpanel .blend { display: flex; gap: 8px; align-items: center; margin: 8px 0; font-size: 13px; }
+.fxdecks { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 10px; }
+.fxdeck { border: 1px solid var(--line); border-radius: 4px; display: grid; grid-template-columns: 1fr 1fr; gap: 6px 14px; font-size: 13px; }
+.fxdeck legend { color: var(--muted); padding: 0 4px; }
+.fxdeck label { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.fxdeck input[type=range] { width: 55%; accent-color: var(--lamp); }
+.fxdeck[data-d="1"] input[type=range] { accent-color: var(--lamp-b); }
+.midi-row { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; margin-top: 12px; color: var(--muted); font-size: 13px; }
+.privacy { color: var(--muted); font-size: 12px; margin-top: 8px; }
+.overlay { position: fixed; inset: 0; display: grid; place-items: center; background: rgba(5, 8, 12, 0.6); z-index: 5; }
+.overlay[hidden] { display: none; }
+.overlay button { font-size: 18px; padding: 14px 28px; }
+dialog { background: #0a0d12; color: var(--text); border: 1px solid #5b6b78; border-radius: 4px; max-width: min(720px, calc(100vw - 32px));
+  max-height: calc(100vh - 32px); padding: 16px 20px; }
+dialog::backdrop { background: rgba(0, 0, 0, 0.55); }
+dialog h2, dialog h3 { margin: 4px 0 8px; font-size: 14px; color: var(--muted); }
+dialog table { border-collapse: collapse; width: 100%; margin-bottom: 8px; }
+dialog th { text-align: right; color: var(--lamp); font: 12px Consolas, "Courier New", monospace; padding: 2px 10px 2px 0; white-space: nowrap; width: 9em; }
+dialog td { padding: 2px 0; font-size: 13px; }
+dialog .note { color: var(--muted); font-size: 12px; }
+dialog .close { margin-top: 8px; }
+.form { display: grid; gap: 6px; }
+.form label { display: flex; justify-content: space-between; gap: 12px; align-items: center; font-size: 13px; }
+.form input { width: 7em; font: inherit; background: #fff; color: #111; border: 1px solid #585e6b; padding: 2px 4px; }
+@media (max-width: 640px) { header { padding: 8px 12px; } main { padding: 8px 12px 20px; } }
+/* the phone (body.mobile, main.js): one screen, top to bottom: the bar, the picture (what height is left), the A / B
+   tabs, the short deck, the crossfader. Left out: the tab capture, the effects, MIDI, the link to the REAPER version */
+.m-only { display: none; }
+body.mobile .m-only { display: revert; }
+body.mobile .decktabs { display: flex; gap: 6px; width: 100%; max-width: 360px; }
+.decktabs button { flex: 1; padding: 6px 10px; }
+#midiBtn.on { background: linear-gradient(#fbd743, #d29c00); }
+.decktabs button.on { background: linear-gradient(#fbd743, #d29c00); }
+.decktabs button.on[data-deck="1"] { background: linear-gradient(#8fd3f2, #1d6c9c); }
+body.mobile header { padding: 6px 8px; gap: 6px 10px; }
+/* the phone: no file list (it is for a controller's browse knob and for dropping files; File loads one), and the bar
+   in one line when it fits (user's request 2026-10-21: two lines upright, the list broke the layout on its side) */
+body.mobile #filesBtn, body.mobile #files { display: none !important; }
+/* the language button short (EN / JA) on the phone; on its side both decks show, so A / B instead of File */
+#langBtn .short, body.mobile #langBtn .long { display: none; }
+body.mobile #langBtn .short { display: inline; }
+body.mobile.land #loadActive { display: none; }
+body.mobile.land nav [data-load] { display: revert !important; }
+@media (max-width: 380px) { body.mobile nav .glabel { display: none; } body.mobile nav { gap: 6px; } }
+body.mobile nav { gap: 6px 8px; }
+body.mobile nav .grp { gap: 3px; }
+body.mobile nav button { padding: 4px 5px; font-size: 12px; }
+body.mobile .tagline, body.mobile h1, body.mobile:not(.land) [data-load], body.mobile #capGrp, body.mobile nav a.full,
+body.mobile .fxpanel, body.mobile .midi-row { display: none !important; }
+/* the phone's setup button: the deck's setup and the effects (the blend among them) in one dialog (main.js) */
+body.mobile dialog .fxpanel { display: block !important; margin: 0 0 10px; }
+body.mobile dialog .fxdeck { grid-template-columns: 1fr; }
+/* the setup dialog at one width whatever is folded or open (it changed with the open groups, user's report 2026-10-21) */
+#setup { width: min(560px, calc(100vw - 32px)); box-sizing: border-box; }
+/* a long choice (pad mode, the headphones' output device) no wider than the dialog: on a phone it pushed its group's
+   rows past the right edge (⚪205) */
+#setup .form { grid-template-columns: minmax(0, 1fr); }
+#setup .form select { flex-shrink: 0; max-width: 60%; }
+/* the setup's groups (main.js showSetup) */
+.sgroup { border: 1px solid var(--line); border-radius: 4px; padding: 4px 10px 8px; }
+/* the setup's MIDI group and the Learn page (⚪205, main.js midiGroup / learnui.js) */
+#midiMon { margin: 0; min-height: 8.4em; max-height: 8.4em; overflow: hidden; background: #000; color: #9fd19f; padding: 4px 6px; font: 12px Consolas, "Courier New", monospace; white-space: pre; }
+.lnrow { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 6px 0; }
+.lnrow label { display: flex; gap: 6px; align-items: center; font-size: 13px; }
+#files { margin: 8px 0; padding: 6px 10px; border: 1px solid var(--line); border-radius: 4px; }
+#fileList { max-height: 12em; overflow: auto; margin: 4px 0; padding-left: 2.6em; font: 13px Consolas, "Courier New", monospace; }
+#fileList li { cursor: pointer; padding: 1px 4px; } #fileList li.sel { background: #2f6fb0; color: #fff; }
+#filesBtn.on { outline: 1px solid var(--lamp); }
+#recTake.rec { background: #b3261e; color: #fff; }
+#more { width: min(640px, calc(100vw - 32px)); box-sizing: border-box; }
+#more .form select { max-width: 16em; }
+#learn { width: min(640px, calc(100vw - 32px)); box-sizing: border-box; }
+#learn .lnins { font-size: 15px; min-height: 2.6em; }
+#learn .mono { font: 12px Consolas, "Courier New", monospace; color: var(--muted); }
+#learn .ok { color: #3fbf5a; } #learn .ng { color: #e0503c; } #learn .na { color: #888; }
+#learn .lnsum th { width: 9em; text-align: left; } #learn .lnsum td { font-size: 12px; } #learn .lnsum td:first-child { width: 1.2em; }
+#learn input[type=text] { font: inherit; width: 12em; }
+.sgroup summary { cursor: pointer; color: var(--muted); margin-bottom: 4px; }
+body.mobile main { padding: 6px 8px 4px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+body.mobile .stage-wrap { width: 100%; display: flex; justify-content: center; }
+body.mobile #stage { width: auto; max-width: 100%; touch-action: none; }
+/* the phone's picture as a filter / echo pad (main.js stagePad): the finger's place */
+body.mobile .stage-wrap { position: relative; }
+.paddot { position: absolute; width: 28px; height: 28px; margin: -14px 0 0 -14px; border: 2px solid var(--lamp);
+  border-radius: 50%; pointer-events: none; box-shadow: 0 0 8px var(--lamp); }
+body.mobile .decks { display: block; }
+body.mobile .deck { aspect-ratio: 360 / 440; }
+body.mobile .xf-row { order: 5; margin: 0; width: 100%; max-width: 360px; }
+body.mobile .xf-row input { height: 32px; }
+body.mobile .privacy { order: 6; margin: 0; font-size: 11px; text-align: center; }
+/* the phone on its side (main.js fitMobileLand): deck A on the left, deck B on the right, the picture over the
+   crossfader between them; both decks shown, no tabs (user's request 2026-10-21) */
+body.mobile.land main { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-rows: auto 1fr;
+  grid-template-areas: "deckA stage deckB" "deckA xf deckB"; align-items: start; justify-items: center; column-gap: 8px; row-gap: 6px; }
+body.mobile.land .stage-wrap { grid-area: stage; }
+body.mobile.land .xf-row { grid-area: xf; }
+body.mobile.land .decktabs { display: none; }
+body.mobile.land .decks { display: contents; }
+body.mobile.land #deckA { grid-area: deckA; }
+body.mobile.land #deckB { grid-area: deckB; }
+body.mobile.land .privacy { display: none; }
+/* the phone's tip under the privacy line (main.js: Android only, by the browser) */
+body.mobile .tip { order: 7; margin: 0; font-size: 11px; color: var(--lamp); text-align: center; }
+body.mobile .tip:empty, body.mobile.land .tip { display: none; }
+#capture .big { font: 20px Consolas, "Courier New", monospace; color: var(--lamp); }
+#capture .warn { color: #ff8a7a; }
+#capture p { max-width: 520px; }
+#capView { width: min(640px, calc(100vw - 72px)); height: auto; aspect-ratio: 16 / 9; display: block; background: #000; cursor: crosshair; touch-action: none; }
+#capture .caprow { display: flex; flex-wrap: wrap; gap: 6px; }
+#capture .caprow button[hidden] { display: none; }
+#capture .trim label { display: flex; gap: 10px; align-items: center; }
+#capture .trim input { flex: 1; accent-color: var(--lamp); }

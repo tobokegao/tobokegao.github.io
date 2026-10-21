@@ -11,6 +11,17 @@ ReaScratchは、REAPERを音と映像の2デッキのスクラッチ環境にす
 <p class="win__more"><a class="btn" href="https://github.com/tobokegao/ReaScratch/releases/latest">ダウンロード</a></p>
 
 GitHubのReleasesから、最新版のzipファイルをダウンロードできます。ReaPackでも入れられ、新しいバージョンもReaPackで受け取れます（手順は説明書の「セットアップ手順」にあります）。
+
+## ブラウザ体験版
+
+<p class="win__more"><a class="btn" href="/reascratch/play/">ブラウザで試す</a></p>
+
+音と映像をいっしょにスクラッチできる、ブラウザの体験版です。見本の動画で試せるほか、手元の音や動画のファイルも読み込めます。読み込んだファイルはブラウザの中だけで使い、どこにも送りません。
+
+- パソコン: ChromeかEdge。DJコントローラー（MIDI）もつなげます。
+- スマホ: 1デッキの画面になります。Androidでは、ChromeとFirefoxで試しました。Chromeで音が遅れるときは、Firefoxで開いてください。Firefoxで映るのはMJPEGのAVIの動画だけです。Chromeで読み込んで`Save as video`で保存すると、AVIの動画ができます。機種によっては、Firefoxでふつうに再生しているときに小さなプチノイズが入ることがあります。
+- iPhoneでは試していません。
+- ブラウザ版で使えない機能: コントローラーからの曲の選択・読み込み、REAPERのメトロノームと録音、自分で作ったパターンのファイル。
 {{< /lang >}}
 
 {{< lang en >}}
@@ -19,6 +30,17 @@ ReaScratch is a free JSFX and Lua kit that turns REAPER into a two-deck scratch 
 <p class="win__more"><a class="btn" href="https://github.com/tobokegao/ReaScratch/releases/latest">Download</a></p>
 
 Download the latest zip from GitHub Releases. You can also install it with ReaPack and get new versions there (see "Setup" in the manual).
+
+## Browser trial
+
+<p class="win__more"><a class="btn" href="/reascratch/play/">Try in browser</a></p>
+
+A trial version that runs in your browser and lets you scratch audio and video together. Try it with the sample videos, or load your own audio and video files. Files you load stay in your browser and are never sent anywhere.
+
+- Computer: Chrome or Edge. You can also connect a DJ controller (MIDI).
+- Phone: Displays a one-deck view. Tested on Android in Chrome and Firefox. If the sound lags in Chrome, open it in Firefox. Firefox only shows video from MJPEG AVI files: load your video in Chrome and use `Save as video` to make one. On some phones, Firefox may add small clicks during normal playback.
+- Not tested on iPhone.
+- Not included in the web version: browsing and loading tracks from the controller, the REAPER metronome and recording, pattern files of your own.
 {{< /lang >}}
 
 {{< nico sm46932309 >}}

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReaScratch Web</title>
+<meta name="description" content="ReaScratch Web: scratch the sound and the picture together in the browser. A trial of ReaScratch for REAPER.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_16.png">
+<link rel="apple-touch-icon" href="assets/favicon_192.png">
+<link rel="stylesheet" href="css/app.css">
+<script src="https://cdn.jsdelivr.net/npm/mp4box@0.5.2/dist/mp4box.all.min.js"></script>
+</head>
+<body>
+<header>
+  <h1><img src="assets/reascratch_logo.png" alt="ReaScratch" width="120" height="26"></h1>
+  <p class="tagline" data-t="tagline"></p>
+  <nav>
+    <span class="grp box">
+      <span class="glabel" data-t="loadHead"></span>
+      <span class="seg">
+        <button data-load="0" title="a file to deck A">A</button>
+        <button data-load="1" title="a file to deck B">B</button>
+        <button id="loadActive" class="m-only" data-t="file"></button>
+        <button id="demoBtn" hidden data-t="demo"></button>
+      </span>
+    </span>
+    <span class="grp box" id="capGrp" hidden>
+      <span class="glabel" data-t="capture"></span>
+      <span class="seg">
+        <button data-capture="0" title="deck A">A</button>
+        <button data-capture="1" title="deck B">B</button>
+      </span>
+    </span>
+    <span class="grp">
+      <button id="saveAvi" data-t="saveAvi" title="AVI (MJPEG)"></button>
+      <button id="recTake" data-t="takeRec"></button>
+    </span>
+    <span class="grp">
+      <button id="filesBtn" data-t="files"></button>
+      <button id="hidBtn" hidden title="NI Traktor Kontrol S2 / S3 / S4 (WebHID)">HID</button>
+      <button id="midiBtn" class="m-only">MIDI</button>
+      <button id="mSetup" class="m-only" data-t="setup"></button>
+    </span>
+    <span class="grp end">
+      <button id="langBtn" class="quiet"><span class="long" data-t="lang"></span><span class="short" data-t="langShort"></span></button>
+      <a class="full" href="https://github.com/tobokegao/ReaScratch/releases/latest" data-t="getFull"></a>
+    </span>
+  </nav>
+</header>
+
+<main>
+  <section class="stage-wrap">
+    <canvas id="stage" width="960" height="540"></canvas>
+  </section>
+  <div class="xf-row">
+    <span>A</span>
+    <input id="xf" type="range" min="0" max="1000" value="500" aria-label="crossfader">
+    <span>B</span>
+  </div>
+
+  <div class="decktabs m-only"><button data-deck="0">deck A</button><button data-deck="1">deck B</button></div>
+  <section class="decks">
+    <canvas id="deckA" class="deck" tabindex="0" aria-label="deck A"></canvas>
+    <canvas id="deckB" class="deck" tabindex="0" aria-label="deck B"></canvas>
+  </section>
+
+  <section id="files" hidden>
+    <div class="lnrow"><b data-t="files"></b><span id="filesInfo" class="note"></span>
+      <button id="filesAdd" data-t="filesAdd"></button><button id="filesAddDir" data-t="filesAddDir"></button>
+      <button id="filesLoadA">LOAD A</button><button id="filesLoadB">LOAD B</button><button id="filesPreview">PREVIEW</button>
+      <button id="filesClear" data-t="filesClear"></button></div>
+    <ol id="fileList"></ol>
+    <p class="note" data-t="filesHint"></p>
+    <input id="filesPick" type="file" multiple accept="video/*,audio/*,.avi,.mkv" hidden><input id="filesPickDir" type="file" webkitdirectory hidden>
+  </section>
+
+  <details class="fxpanel" open><summary data-t="fxTitle"></summary><div id="fxPanel"></div></details>
+
+  <section class="midi-row">
+    <span id="midiStatus"></span>
+    <label>A <select id="midiA"></select></label>
+    <label>B <select id="midiB"></select></label>
+  </section>
+  <p class="privacy" data-t="privacy"></p>
+  <p id="mobileTip" class="tip m-only"></p>
+</main>
+
+<input id="file" type="file" accept="video/*,audio/*,.mp4,.m4v,.mov,.webm,.mkv,.wav,.mp3,.flac,.ogg,.m4a" hidden>
+
+<input id="presetFile" type="file" accept=".reascratch-preset,text/plain" hidden>
+
+<div id="startOverlay" class="overlay"><button id="startBtn" data-t="start"></button></div>
+
+<dialog id="help">
+  <div id="helpBody"></div>
+  <button class="close" data-t="close"></button>
+</dialog>
+<dialog id="capture">
+  <h2 data-t="capTitle"></h2>
+  <p id="captureDeck" class="note"></p>
+  <canvas id="capView" width="640" height="360"></canvas>
+  <p id="captureHint"></p>
+  <p id="captureWarn" class="warn" data-t="capNoAudio" hidden></p>
+  <div id="capTrim" class="trim" hidden>
+    <label><span data-t="capStart"></span><input id="capTrimA" type="range" min="0" max="1" step="0.0333" value="0"></label>
+    <label><span data-t="capEnd"></span><input id="capTrimB" type="range" min="0" max="1" step="0.0333" value="1"></label>
+    <p id="capTrimTxt"></p>
+  </div>
+  <p id="captureMsg" class="big"></p>
+  <div class="caprow">
+    <button id="capAuto" data-t="capAuto"></button>
+    <button id="capAll" data-t="capAll"></button>
+    <button id="capRec" data-t="capRec"></button>
+    <button id="capStop" data-t="capStop" hidden></button>
+    <button id="capLoad" data-t="capLoad" hidden></button>
+    <button id="capCancel" data-t="capCancel"></button>
+  </div>
+  <p class="note" data-t="capRights"></p>
+</dialog>
+<dialog id="setup">
+  <h2 id="setupTitle"></h2>
+  <div id="setupBody" class="form"></div>
+  <button class="close" data-t="close"></button>
+</dialog>
+
+<dialog id="more">
+  <h2 data-t="moreTitle"></h2>
+  <div id="moreBody"></div>
+  <button class="close" data-t="close"></button>
+</dialog>
+<dialog id="learn">
+  <h2 data-t="lnTitle"></h2>
+  <div id="learnBody"></div>
+  <button class="close" data-t="close"></button>
+</dialog>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
