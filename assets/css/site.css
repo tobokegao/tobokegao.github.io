@@ -748,7 +748,7 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
   .win--home-videos .grid--videos { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 14px; }
   .win--home-releases .grid--jackets > :nth-child(n+5),
   .win--home-videos .grid--videos > :nth-child(n+5),
-  .win--home-log .log__row:nth-child(n+10) { display: none; }
+  .win--home-log .log__row:nth-child(n+7) { display: none; }
   .log__row { grid-template-columns: 7em 1fr; }
   .log__idx { display: none; }
   .log__text { grid-column: 1 / -1; }
