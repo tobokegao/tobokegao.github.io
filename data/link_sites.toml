@@ -181,3 +181,13 @@ w = 148
 h = 35
 pixel = true
 small = true
+
+[[site]]
+name = "DefenseMechanism"
+url = "https://defensemech.com/"
+img = "img/links/defensemech.webp"
+still = "img/links/defensemech-still.webp"
+w = 100
+h = 35
+pixel = true
+small = true
