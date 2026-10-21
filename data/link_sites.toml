@@ -206,3 +206,12 @@ img = "img/links/hoshi.webp"
 w = 200
 h = 40
 pixel = true
+
+[[site]]
+name = "Iridescent Audio"
+url = "https://blitzlunar.neocities.org/"
+img = "img/links/iridescent.webp"
+w = 88
+h = 31
+pixel = true
+small = true
