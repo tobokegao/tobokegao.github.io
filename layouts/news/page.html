@@ -18,7 +18,7 @@
   {{ end }}
   {{- /* where to hear or see it, right under the title so it is found before the write-up */}}
   {{ with $links }}
-  <nav class="doc__links doc__links--top" aria-label="{{ partial "tt.html" "rowLinks" }}">{{ range . }}{{ partial "src-chip.html" (dict "source" .source "url" .url "label" true) }}{{ end }}</nav>
+  <nav class="doc__links doc__links--top" aria-label="{{ partial "tt.html" "rowLinks" }}">{{ range . }}{{ partial "src-chip.html" (dict "source" .source "url" .url "label" true "name" .name "name_en" .name_en) }}{{ end }}</nav>
   {{ end }}
   {{- /* The row's own write-up, when it has one: "article": "<name>" in the row points to
      assets/news/<name>.ja.md and .en.md (a name of its own, as the page path changes with

@@ -60,7 +60,9 @@
     "links": [
       {
         "source": "web",
-        "url": "/reascratch/"
+        "url": "/reascratch/",
+        "name": "ReaScratch特設ページ",
+        "name_en": "ReaScratch page"
       },
       {
         "source": "x",

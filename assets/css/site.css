@@ -320,7 +320,7 @@ a.seg { text-decoration: none; }
 .banners__note { margin: 20px 0 0; font: 14px/1.6 var(--f-body); color: var(--ink-dim); overflow-wrap: anywhere; }
 .banners--sites { margin: 40px 0 0; }
 .banners__img--smooth { image-rendering: auto; }   /* another site's drawn banner: 200 wide like the others, smooth not dotted */
-.banners__list--small { margin: 20px 0 0; gap: 16px; }   /* 88x31-size buttons: actual size, whole screen pixels per dot */
+.banners__list--small { margin: 20px 0 0; gap: 16px; align-items: center; }   /* 88x31-size buttons: actual size, whole screen pixels per dot; 31 and 35 high ones share a middle line (never rescaled) */
 
 /* ---------- window: double-line frame, title set into the border ----------
    The whole site is lit from below (like the link icons): shadows fall straight up,

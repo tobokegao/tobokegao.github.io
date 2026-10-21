@@ -11,7 +11,7 @@
     {{- /* the whole row opens the row's own page (articles: the article) */}}
     <span class="log__text">{{ with $href }}<a href="{{ . }}"{{ if hasPrefix . "http" }} rel="noopener" target="_blank"{{ end }}>{{ end }}{{ partial "bi.html" (dict "ja" $r.ja "en" $r.en) }}{{ with $href }}</a>{{ end }}
       {{- /* where to hear it: small platform links, above the row-wide link */}}
-      {{- with partial "row-links.html" $r }}<span class="log__links">{{ range . }}{{ partial "src-chip.html" (dict "source" .source "url" .url) }}{{ end }}</span>{{ end }}</span>
+      {{- with partial "row-links.html" $r }}<span class="log__links">{{ range . }}{{ partial "src-chip.html" (dict "source" .source "url" .url "name" .name "name_en" .name_en) }}{{ end }}</span>{{ end }}</span>
   </li>
   {{ end }}
 </ol>

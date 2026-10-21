@@ -1,4 +1,5 @@
-{{- /* Platform chip with its pixel icon. Context: dict "source" "url" "label" (bool).
+{{- /* Platform chip with its pixel icon. Context: dict "source" "url" "label" (bool), and
+   optionally "name" / "name_en" (a link's own label in data, shown instead of the guess).
    "web" is any other site: a globe and the site's host name (a path on this site: its title). */ -}}
 {{- $name := partial "source-name.html" .source -}}
 {{- $url := .url -}}
@@ -6,9 +7,12 @@
   {{- $host := (urls.Parse .url).Host -}}
   {{- if $host }}{{ $name = replace $host "www." "" }}{{ else }}{{ $name = site.Title }}{{ $url = relURL .url }}{{ end -}}
 {{- end -}}
+{{- with .name }}{{ $name = . }}{{ end -}}
+{{- $label := $name -}}
+{{- with .name }}{{ $label = printf `<span data-l="ja">%s</span><span data-l="en" lang="en">%s</span>` (htmlEscape .) (htmlEscape ($.name_en | default .)) | safeHTML }}{{ end -}}
 {{- $icon := cond (eq .source "x") "x" .source -}}
 {{- if .url -}}
-<a class="src" href="{{ $url }}"{{ if hasPrefix $url "http" }} rel="noopener" target="_blank"{{ end }} title="{{ $name }}">{{ partial "icon.html" $icon }}{{ if .label }}<span>{{ $name }}</span>{{ else }}<span class="vh">{{ $name }}</span>{{ end }}</a>
+<a class="src" href="{{ $url }}"{{ if hasPrefix $url "http" }} rel="noopener" target="_blank"{{ end }} title="{{ $name }}">{{ partial "icon.html" $icon }}{{ if .label }}<span>{{ $label }}</span>{{ else }}<span class="vh">{{ $label }}</span>{{ end }}</a>
 {{- else -}}
-<span class="src" title="{{ $name }}">{{ partial "icon.html" $icon }}{{ if .label }}<span>{{ $name }}</span>{{ else }}<span class="vh">{{ $name }}</span>{{ end }}</span>
+<span class="src" title="{{ $name }}">{{ partial "icon.html" $icon }}{{ if .label }}<span>{{ $label }}</span>{{ else }}<span class="vh">{{ $label }}</span>{{ end }}</span>
 {{- end -}}
