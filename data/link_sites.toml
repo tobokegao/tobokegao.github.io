@@ -156,16 +156,6 @@ pixel = true
 small = true
 
 [[site]]
-name = "UNAFFILIATED"
-url = "https://unaffiliated.fun/"
-img = "img/links/unaffiliated.webp"
-still = "img/links/unaffiliated-still.webp"
-w = 88
-h = 31
-pixel = true
-small = true
-
-[[site]]
 name = "すしさいと"
 url = "https://sushisite.neocities.org/"
 img = "img/links/sushisite.webp"
