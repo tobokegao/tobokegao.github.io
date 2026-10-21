@@ -527,6 +527,7 @@ a.seg { text-decoration: none; }
 .grid { display: grid; gap: 28px 20px; }
 .grid--jackets { grid-template-columns: repeat(auto-fill, minmax(min(100%, 170px), 1fr)); }
 .grid--videos { grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); }
+.win--home-videos .grid--videos { grid-template-columns: repeat(2, minmax(0, 1fr)); }   /* the home page: two across, so the column is not a long stack */
 
 /* jacket (TRACKMENTO bevel) */
 .jacket { display: flex; flex-direction: column; gap: 10px; min-width: 0; }

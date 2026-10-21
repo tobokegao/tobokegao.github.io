@@ -190,3 +190,11 @@ w = 100
 h = 35
 pixel = true
 small = true
+
+[[site]]
+name = "happy busy"
+url = "https://sites.google.com/view/happy-busy/"
+img = "img/links/happybusy.webp"
+w = 200
+h = 40
+pixel = true

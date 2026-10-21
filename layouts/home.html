@@ -23,7 +23,7 @@
   {{ partial "win.html" (dict "file" "RELEASES.M3U" "id" "latest-t" "toggle" true) }}
   <p class="win__caption">{{ partial "t.html" "latest" }}</p>
   <div class="grid grid--jackets">
-    {{ range first 10 $own }}{{ partial "release-card.html" . }}{{ end }}
+    {{ range first 8 $own }}{{ partial "release-card.html" . }}{{ end }}
   </div>
   <p class="win__more"><a class="btn" href="{{ "/releases/" | relURL }}">{{ partial "t.html" "allReleases" }}</a></p>
 </section>
