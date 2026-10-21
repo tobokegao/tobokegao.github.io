@@ -280,8 +280,8 @@
       {
         "source": "web",
         "url": "https://docs.google.com/spreadsheets/d/1QCFPkBRGSDd4FsCiBhNNVXeAZxuimG3f0J4G4Fb08SA/htmlview?gid=951538516",
-        "name": "放送の一覧",
-        "name_en": "List of past shows"
+        "name": "過去の放送一覧",
+        "name_en": "Past shows"
       }
     ],
     "article": "20260117-3nin-otomad",
@@ -2837,8 +2837,8 @@
       {
         "source": "web",
         "url": "https://sites.google.com/view/caravanboomer-hp-english/",
-        "name": "キャラバンブーマーの公式サイト",
-        "name_en": "Caravan Boomer website"
+        "name": "公式サイト（キャラバンブーマー）",
+        "name_en": "Official website (Caravan Boomer)"
       },
       {
         "source": "youtube",
@@ -2867,8 +2867,8 @@
       {
         "source": "web",
         "url": "https://sites.google.com/view/caravanboomer-hp-english",
-        "name": "キャラバンブーマーの公式サイト",
-        "name_en": "Caravan Boomer website"
+        "name": "公式サイト（キャラバンブーマー）",
+        "name_en": "Official website (Caravan Boomer)"
       }
     ],
     "article": "20191004-caravanboomer-preview",

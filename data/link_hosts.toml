@@ -8,8 +8,8 @@ ja = "チケット（LivePocket）"
 en = "Tickets (LivePocket)"
 
 ["note.com"]
-ja = "noteの記事"
-en = "Article on note"
+ja = "記事（note）"
+en = "Article (note)"
 
 ["twipla.jp"]
 ja = "告知ページ（TwiPla）"
@@ -36,8 +36,8 @@ ja = "KARENT"
 en = "KARENT"
 
 ["iosysos.com"]
-ja = "IOSYSの作品ページ"
-en = "IOSYS release page"
+ja = "作品ページ（IOSYS）"
+en = "Release page (IOSYS)"
 
 ["store.steampowered.com"]
 ja = "Steam"
@@ -92,16 +92,16 @@ ja = "イベントページ（connpass）"
 en = "Event page (connpass)"
 
 ["blog.esctrax.com"]
-ja = "ESC TRAXのお知らせ"
-en = "ESC TRAX news"
+ja = "お知らせ（ESC TRAX）"
+en = "News (ESC TRAX)"
 
 ["munagerecords.tumblr.com"]
-ja = "胸毛レコーズのページ"
-en = "Munage Records page"
+ja = "作品ページ（胸毛レコーズ）"
+en = "Release page (Munage Records)"
 
 ["tmblr.co"]
-ja = "胸毛レコーズのページ"
-en = "Munage Records page"
+ja = "作品ページ（胸毛レコーズ）"
+en = "Release page (Munage Records)"
 
 ["sweeprecord.com"]
 ja = "SweepRecordの作品ページ"
