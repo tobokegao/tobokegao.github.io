@@ -438,6 +438,8 @@ a.seg { text-decoration: none; }
 .win__caption::before { content: "■ "; color: var(--mark); }
 :root[data-scheme="night"] .win__caption::before { color: var(--mark); }
 .win__more { margin: 24px 0 0; display: flex; justify-content: flex-end; }
+/* the button a page is for (Download, Try in browser) sits in the middle of the text */
+.win__more--center { justify-content: center; }
 
 /* Escapes like  a0 get mangled by the minifier, so these use the characters themselves. */
 /* ---------- buttons: text-mode, no bevels or drop shadows ----------

@@ -8,13 +8,13 @@ description_en: A free kit for scratching audio and video in REAPER
 {{< lang ja >}}
 ReaScratchは、REAPERを音と映像の2デッキのスクラッチ環境にする、無料のJSFXとLuaスクリプトのキットです。DJコントローラーのジョグを回すと、音の高さを保ったままスクラッチでき、REAPERのビデオ画面の映像もコマ単位でついてきます。
 
-<p class="win__more"><a class="btn" href="https://github.com/tobokegao/ReaScratch/releases/latest">ダウンロード</a></p>
+<p class="win__more win__more--center"><a class="btn" href="https://github.com/tobokegao/ReaScratch/releases/latest">ダウンロード</a></p>
 
 GitHubのReleasesから、最新版のzipファイルをダウンロードできます。ReaPackでも入れられ、新しいバージョンもReaPackで受け取れます（手順は説明書の「セットアップ手順」にあります）。
 
 ## ブラウザ体験版
 
-<p class="win__more"><a class="btn" href="/reascratch/play/">ブラウザで試す</a></p>
+<p class="win__more win__more--center"><a class="btn" href="/reascratch/play/">ブラウザで試す</a></p>
 
 音と映像をいっしょにスクラッチできる、ブラウザの体験版です。見本の動画で試せるほか、手元の音や動画のファイルも読み込めます。読み込んだファイルはブラウザの中だけで使い、どこにも送りません。
 
@@ -27,13 +27,13 @@ GitHubのReleasesから、最新版のzipファイルをダウンロードでき
 {{< lang en >}}
 ReaScratch is a free JSFX and Lua kit that turns REAPER into a two-deck scratch setup for audio and video. You can scratch with a DJ controller's jog wheel while maintaining the sound's pitch, and REAPER's video window follows frame by frame.
 
-<p class="win__more"><a class="btn" href="https://github.com/tobokegao/ReaScratch/releases/latest">Download</a></p>
+<p class="win__more win__more--center"><a class="btn" href="https://github.com/tobokegao/ReaScratch/releases/latest">Download</a></p>
 
 Download the latest zip from GitHub Releases. You can also install it with ReaPack and get new versions there (see "Setup" in the manual).
 
 ## Browser trial
 
-<p class="win__more"><a class="btn" href="/reascratch/play/">Try in browser</a></p>
+<p class="win__more win__more--center"><a class="btn" href="/reascratch/play/">Try in browser</a></p>
 
 A trial version that runs in your browser and lets you scratch audio and video together. Try it with the sample videos, or load your own audio and video files. Files you load stay in your browser and are never sent anywhere.
 
@@ -121,5 +121,5 @@ The manuals come with the kit (and are in the Releases zip).
 
 ReaScratch is licensed under GPL-3.0-or-later. The filters are ported from [Saike's JSFX](https://github.com/JoepVanlier/JSFX) (MIT License), and the VHS video effect from [zhuker's ntsc](https://github.com/zhuker/ntsc) (Apache License 2.0). Controller data comes from [Mixxx](https://github.com/mixxxdj/mixxx) mappings, manufacturers' MIDI lists, [SuperXtremeMapper](https://github.com/SuperXtremeMapper/super-xtreme-mapper) and community mappings. The idea of scratching inside a JSFX came from [tilr's TIME-1](https://github.com/tiagolr/time1). See [CREDITS.md](https://github.com/tobokegao/ReaScratch/blob/main/CREDITS.md) for details.
 
-Built with extensive AI assistance (Claude).
+Made with help from Claude.
 {{< /lang >}}
