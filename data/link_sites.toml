@@ -26,3 +26,26 @@ img = "img/links/blmsh.webp"
 img2x = "img/links/blmsh@2x.webp"
 w = 200
 h = 40
+
+[[site]]
+name = "mf_works"
+url = "https://mfworks.net/"
+img = "img/links/mfworks.webp"
+img2x = "img/links/mfworks@2x.webp"
+w = 200
+h = 41
+
+[[site]]
+name = "Private Atelier “N”"
+url = "https://naruto2413.squares.net/"
+img = "img/links/naruto2413.webp"
+w = 200
+h = 40
+pixel = true
+
+[[site]]
+name = "フリーBGM・音楽素材MusMus"
+url = "https://musmus.main.jp/"
+img = "img/links/musmus.webp"
+w = 200
+h = 40
