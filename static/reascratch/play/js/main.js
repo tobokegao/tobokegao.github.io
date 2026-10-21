@@ -445,7 +445,7 @@ function closeDialogs() { document.querySelectorAll('dialog[open]').forEach((x) 
 function showHelp() {
   const rows = (list) => list.map(([k, v]) => `<tr><th>${k}</th><td>${v}</td></tr>`).join('');
   $('#helpBody').innerHTML = `<h3>${t('keysTitle')}</h3><table>${rows(t('keys'))}</table><h3>${t('mouseTitle')}</h3><table>${rows(t('mouse'))}</table><p class="note">${t('notInTrial')}</p>`;
-  $('#help').showModal();
+  $('#help').showModal(); $('#help').scrollTop = 0;   // (the close button takes the focus and scrolled it to the end)
 }
 // the setup's rows: [key, lo, hi, step] a number; [key, [options]] a choice of words (t('o_' + option)); [key, [labels], 'n']
 // a choice by number (0, 1 ... ; labels as in the JSFX). ⚪205: the sound FX, the video FX's LFO / colours and the
@@ -500,8 +500,7 @@ function setupSet(d, k, v) {
   if (app.fxSync) app.fxSync(d);
 }
 // the setup's numbers in groups that fold up (user's request 2026-10-21). One open at a time (with the phone's effects
-// panel in the same dialog): opening one folds the others. On opening: the effects (phone) or the first group, or the
-// group of the number asked for (user's choice 2026-10-21)
+// panel in the same dialog): opening one folds the others. On opening: all folded, or the group of the number asked for
 const SETUP_GROUPS = [['g_tempo', ['bpm', 'grid', 'range', 'swing', 'pzQ']], ['g_platter', ['recSide', 'brake', 'brakeBeats', 'startT', 'spinRel', 'sbSpeed', 'sbTime']],
   ['g_xf', ['xfSide', 'cutIn', 'fadeW', 'xfCurve', 'mute', 'vmute']], ['g_pads', ['padSel', 'holdMs', 'spt']],
   ['g_sound', ['agOn', 'agTarget', 'fxSound', 'echoLen', 'echoFb', 'vibStep', 'vibWidth', 'gateStep', 'fltRes', 'fltMorph', 'discTone']],
@@ -534,11 +533,12 @@ function showSetup(d, focus) {
     : `<label><span>${t('s_' + k)}</span><input type="number" data-k="${k}" min="${lo}" max="${hi}" step="${st}" value="${setupVal(d, k)}"></label>`);
   const fxp = $('#setup .fxpanel');
   const grp = (f) => (SETUP_GROUPS.find(([g, ks]) => g === f || ks.includes(f)) || SETUP_GROUPS[0])[0];
-  const first = focus ? grp(focus) : fxp ? null : SETUP_GROUPS[0][0];
+  // all folded on opening, but for the group of a number asked for (user's view 2026-10-21: an open group ran off the screen)
+  const first = focus ? grp(focus) : null;
   $('#setupBody').innerHTML = SETUP_GROUPS.map(([g, ks]) => `<details class="sgroup" data-g="${g}"${g === first ? ' open' : ''}>
     <summary>${t(g)}</summary><div class="form">${g === 'g_midi' ? midiGroup(d) : ks.map((k) => (k === 'cueDev' ? `<label><span>${t('s_cueDev')}</span><select data-k="cueDev" id="cueDev"></select></label>` : row(SETUP.find((x) => x[0] === k)))).join('')}</div></details>`).join('');
   cueChoices().then((list) => { const el = $('#cueDev'); if (el) { el.innerHTML = list.map(([v, n]) => `<option value="${escH(v)}"${v === app.cueOut ? ' selected' : ''}>${escH(n)}</option>`).join(''); } });
-  if (fxp) fxp.open = !first;
+  if (fxp) fxp.open = false;
   const all = [...$('#setup').querySelectorAll('.sgroup, .fxpanel')];
   all.forEach((el) => { el.ontoggle = () => { if (el.open) all.forEach((o) => { if (o !== el) o.open = false; }); }; });
   $('#setupBody').querySelectorAll('input[data-k]').forEach((inp) => inp.addEventListener('change', () => {
@@ -778,6 +778,8 @@ async function main() {
     // thing to take the focus: a number box there brought up the phone's keyboard)
     $('#setup').insertBefore(document.querySelector('.fxpanel'), $('#setupBody'));
     $('#mSetup').addEventListener('click', () => app.showSetup(app.active));
+    // the phone's deck has no help button (the short deck): the help from the setup dialog
+    $('#mHelp').addEventListener('click', () => { $('#setup').close(); showHelp(); });
     stagePad();
     // a tip on Android (user's request 2026-10-20): Firefox shows a video's picture only from an MJPEG AVI. Chrome's tip
     // (open in Firefox) waits for the sound's delay (startAudio)
