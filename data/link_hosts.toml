@@ -1,0 +1,128 @@
+# What a "web" link of an activity-log row is, by its host, so a row's page says
+# "チケット（LivePocket）" instead of "t.livepocket.jp". A link's own "name" / "name_en"
+# in data/timeline.json wins over this; a host not listed here shows the host name.
+# A key matches the host itself or any host ending in "." + key (itch.io covers ikarisu.itch.io).
+
+["livepocket.jp"]
+ja = "チケット（LivePocket）"
+en = "Tickets (LivePocket)"
+
+["note.com"]
+ja = "noteの記事"
+en = "Article on note"
+
+["twipla.jp"]
+ja = "告知ページ（TwiPla）"
+en = "Event page (TwiPla)"
+
+["twitch.tv"]
+ja = "配信（Twitch）"
+en = "Stream (Twitch)"
+
+["facebook.com"]
+ja = "イベントページ（Facebook）"
+en = "Event page (Facebook)"
+
+["github.com"]
+ja = "ダウンロード（GitHub）"
+en = "Download (GitHub)"
+
+["akiba-pc.watch.impress.co.jp"]
+ja = "紹介記事（AKIBA PC Hotline!）"
+en = "Article (AKIBA PC Hotline!)"
+
+["karent.jp"]
+ja = "KARENT"
+en = "KARENT"
+
+["iosysos.com"]
+ja = "IOSYSの作品ページ"
+en = "IOSYS release page"
+
+["store.steampowered.com"]
+ja = "Steam"
+en = "Steam"
+
+["nintendo.com"]
+ja = "Nintendo eShop"
+en = "Nintendo eShop"
+
+["big-up.style"]
+ja = "配信リンク（BIG UP!）"
+en = "Streaming links (BIG UP!)"
+
+["instagram.com"]
+ja = "Instagram"
+en = "Instagram"
+
+["booth.pm"]
+ja = "BOOTH"
+en = "BOOTH"
+
+["amazon.co.jp"]
+ja = "Amazon"
+en = "Amazon"
+
+["vgmdb.net"]
+ja = "VGMdb"
+en = "VGMdb"
+
+["web.archive.org"]
+ja = "当時のページ（Wayback Machine）"
+en = "Archived page (Wayback Machine)"
+
+["discogs.com"]
+ja = "Discogs"
+en = "Discogs"
+
+["mixcloud.com"]
+ja = "Mixcloud"
+en = "Mixcloud"
+
+["archive.org"]
+ja = "Internet Archive"
+en = "Internet Archive"
+
+["itch.io"]
+ja = "ゲーム（itch.io）"
+en = "Game (itch.io)"
+
+["connpass.com"]
+ja = "イベントページ（connpass）"
+en = "Event page (connpass)"
+
+["blog.esctrax.com"]
+ja = "ESC TRAXのお知らせ"
+en = "ESC TRAX news"
+
+["munagerecords.tumblr.com"]
+ja = "胸毛レコーズのページ"
+en = "Munage Records page"
+
+["tmblr.co"]
+ja = "胸毛レコーズのページ"
+en = "Munage Records page"
+
+["sweeprecord.com"]
+ja = "SweepRecordの作品ページ"
+en = "SweepRecord release page"
+
+["plastictheater.com"]
+ja = "会場のスケジュール"
+en = "Venue schedule"
+
+["20nov.info"]
+ja = "イベントページ"
+en = "Event page"
+
+["tpxst.com"]
+ja = "イベントページ"
+en = "Event page"
+
+["twvt.me"]
+ja = "イベントページ"
+en = "Event page"
+
+["trackmento.com"]
+ja = "TRACKMENTO"
+en = "TRACKMENTO"

@@ -7,9 +7,19 @@
   {{- $host := (urls.Parse .url).Host -}}
   {{- if $host }}{{ $name = replace $host "www." "" }}{{ else }}{{ $name = site.Title }}{{ $url = relURL .url }}{{ end -}}
 {{- end -}}
-{{- with .name }}{{ $name = . }}{{ end -}}
+{{- /* what the link is: its own name, else data/link_hosts.toml by host, else an article
+   on this site, else the guess above */ -}}
+{{- $ja := .name -}}{{- $en := .name_en | default .name -}}
+{{- if and (not $ja) (eq .source "web") .url -}}
+  {{- $host := replace (urls.Parse .url).Host "www." "" -}}
+  {{- range $k, $v := hugo.Data.link_hosts -}}
+    {{- if and (not $ja) $host (or (eq $host $k) (hasSuffix $host (printf ".%s" $k))) }}{{ $ja = $v.ja }}{{ $en = $v.en }}{{ end -}}
+  {{- end -}}
+  {{- if and (not $ja) (not $host) (hasPrefix .url "/post/") }}{{ $ja = "記事" }}{{ $en = "Article" }}{{ end -}}
+{{- end -}}
+{{- with $ja }}{{ $name = . }}{{ end -}}
 {{- $label := $name -}}
-{{- with .name }}{{ $label = printf `<span data-l="ja">%s</span><span data-l="en" lang="en">%s</span>` (htmlEscape .) (htmlEscape ($.name_en | default .)) | safeHTML }}{{ end -}}
+{{- with $ja }}{{ $label = printf `<span data-l="ja">%s</span><span data-l="en" lang="en">%s</span>` (htmlEscape .) (htmlEscape $en) | safeHTML }}{{ end -}}
 {{- $icon := cond (eq .source "x") "x" .source -}}
 {{- if .url -}}
 <a class="src" href="{{ $url }}"{{ if hasPrefix $url "http" }} rel="noopener" target="_blank"{{ end }} title="{{ $name }}">{{ partial "icon.html" $icon }}{{ if .label }}<span>{{ $label }}</span>{{ else }}<span class="vh">{{ $label }}</span>{{ end }}</a>

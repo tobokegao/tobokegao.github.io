@@ -279,7 +279,9 @@
       },
       {
         "source": "web",
-        "url": "https://docs.google.com/spreadsheets/d/1QCFPkBRGSDd4FsCiBhNNVXeAZxuimG3f0J4G4Fb08SA/htmlview?gid=951538516"
+        "url": "https://docs.google.com/spreadsheets/d/1QCFPkBRGSDd4FsCiBhNNVXeAZxuimG3f0J4G4Fb08SA/htmlview?gid=951538516",
+        "name": "放送の一覧",
+        "name_en": "List of past shows"
       }
     ],
     "article": "20260117-3nin-otomad",
@@ -350,7 +352,9 @@
       },
       {
         "source": "web",
-        "url": "https://docs.google.com/spreadsheets/d/1AvwK2Jxqi742amVASkOmu2JWX0zA71lJ7FYQZYeiWLo/edit?usp=drivesdk"
+        "url": "https://docs.google.com/spreadsheets/d/1AvwK2Jxqi742amVASkOmu2JWX0zA71lJ7FYQZYeiWLo/edit?usp=drivesdk",
+        "name": "セットリスト",
+        "name_en": "Set list"
       }
     ],
     "article": "20251218-tbk26",
@@ -2832,7 +2836,9 @@
       },
       {
         "source": "web",
-        "url": "https://sites.google.com/view/caravanboomer-hp-english/"
+        "url": "https://sites.google.com/view/caravanboomer-hp-english/",
+        "name": "キャラバンブーマーの公式サイト",
+        "name_en": "Caravan Boomer website"
       },
       {
         "source": "youtube",
@@ -2860,7 +2866,9 @@
       },
       {
         "source": "web",
-        "url": "https://sites.google.com/view/caravanboomer-hp-english"
+        "url": "https://sites.google.com/view/caravanboomer-hp-english",
+        "name": "キャラバンブーマーの公式サイト",
+        "name_en": "Caravan Boomer website"
       }
     ],
     "article": "20191004-caravanboomer-preview",
