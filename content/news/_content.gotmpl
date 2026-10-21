@@ -13,11 +13,15 @@
    opens the release itself (see _partials/timeline.html) */ -}}
 {{- range $rows -}}
   {{- $id := .id | default (printf "%s-%s" (replace .date "-" "") (substr (md5 .ja) 0 6)) -}}
+  {{- /* an upcoming event keeps its own date, but is published now: Hugo leaves out pages
+     dated in the future, and the log row would link to nothing */ -}}
+  {{- $date := time.AsTime .date -}}
+  {{- $pub := cond ($date.After now) now $date -}}
   {{- $.AddPage (dict
       "path" $id
       "kind" "page"
       "title" .ja
-      "dates" (dict "date" (time.AsTime .date))
+      "dates" (dict "date" $date "publishDate" $pub)
       "params" (dict "title_en" .en "row" .)
   ) -}}
 {{- end -}}

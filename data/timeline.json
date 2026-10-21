@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-12-30",
+    "id": "20261230-a2c422",
+    "kind": "live",
+    "ja": "「身柄確保」のラウンジ企画「リアルタイム音MADチャレンジ」にReaScratchで出演",
+    "en": "Playing ReaScratch at the \"Real-time otoMAD Challenge\" in the lounge of \"Migara Kakuho\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/2111040461242847714"
+      },
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/2111041003012681867"
+      }
+    ],
+    "images": [
+      {
+        "src": "/img/news/20261230-2111040461242847714-1.webp",
+        "w": 1800,
+        "h": 1012
+      }
+    ]
+  },
+  {
+    "date": "2026-11-14",
+    "id": "20261114-1314d4",
+    "kind": "live",
+    "ja": "「臨界総決起集会！クズ天2026」にライブで出演",
+    "en": "Playing live at \"Kuzuten 2026\"",
+    "source": "x",
+    "links": [
+      {
+        "source": "x",
+        "url": "https://x.com/to6okegao/status/2112851282084106241"
+      }
+    ],
+    "images": [
+      {
+        "src": "/img/news/20261114-2112851282084106241-1.webp",
+        "w": 1033,
+        "h": 1458
+      },
+      {
+        "src": "/img/news/20261114-2112851282084106241-2.webp",
+        "w": 1033,
+        "h": 1458
+      }
+    ]
+  },
+  {
     "date": "2026-10-17",
     "id": "20261017-7e5c4a",
     "kind": "other",
@@ -2426,6 +2477,26 @@
     "pic": "https://i.ytimg.com/vi/arz3MVHav-c/mqdefault.jpg"
   },
   {
+    "date": "2020-11-06",
+    "id": "20201106-61919b",
+    "kind": "release",
+    "ja": "1st EP「SE Music EP」をリリース",
+    "en": "1st EP \"SE Music EP\" is released",
+    "source": "works",
+    "links": [
+      {
+        "source": "bandcamp",
+        "url": "https://tbkgao.bandcamp.com/album/se-music-ep"
+      },
+      {
+        "source": "apple",
+        "url": "https://music.apple.com/jp/album/se-music-ep/1546744903"
+      }
+    ],
+    "article": "20201106-semusic",
+    "pic": "https://f4.bcbits.com/img/a2866291560_5.jpg"
+  },
+  {
     "date": "2020-10-24",
     "id": "20201024-a2da4f",
     "kind": "other",
@@ -2452,26 +2523,6 @@
     ],
     "article": "20201024-otonokatamichi",
     "pic": "/img/log/2020-10-24.webp"
-  },
-  {
-    "date": "2020-11-06",
-    "id": "20201106-61919b",
-    "kind": "release",
-    "ja": "1st EP「SE Music EP」をリリース",
-    "en": "1st EP \"SE Music EP\" is released",
-    "source": "works",
-    "links": [
-      {
-        "source": "bandcamp",
-        "url": "https://tbkgao.bandcamp.com/album/se-music-ep"
-      },
-      {
-        "source": "apple",
-        "url": "https://music.apple.com/jp/album/se-music-ep/1546744903"
-      }
-    ],
-    "article": "20201106-semusic",
-    "pic": "https://f4.bcbits.com/img/a2866291560_5.jpg"
   },
   {
     "date": "2020-10-02",
