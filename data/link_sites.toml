@@ -198,3 +198,11 @@ img = "img/links/happybusy.webp"
 w = 200
 h = 40
 pixel = true
+
+[[site]]
+name = "悦楽舎 - Chiptune on Gameboy -"
+url = "http://hoshi.s54.xrea.com/"
+img = "img/links/hoshi.webp"
+w = 200
+h = 40
+pixel = true

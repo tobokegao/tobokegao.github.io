@@ -33,7 +33,7 @@
     {{ partial "win.html" (dict "file" "VIDEOS.MP4" "id" "videos-t" "toggle" true) }}
     <p class="win__caption">{{ partial "t.html" "latestVideos" }}</p>
     <div class="grid grid--videos">
-      {{ range first 4 (partial "videos.html" .) }}{{ partial "video-card.html" . }}{{ end }}
+      {{ range first 6 (partial "videos.html" .) }}{{ partial "video-card.html" . }}{{ end }}
     </div>
     <p class="win__more"><a class="btn" href="{{ "/videos/" | relURL }}">{{ partial "t.html" "allVideos" }}</a></p>
   </section>
