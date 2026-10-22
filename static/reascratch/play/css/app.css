@@ -25,6 +25,9 @@ nav .glabel { color: var(--muted); font-size: 12px; }
 /* a choice group in a thin frame with its heading inside, so A / B / Demo read as the choices of Load (user's request
    2026-10-21: the demo looked apart, unclear which group it went with) */
 nav .grp.box { border: 1px solid var(--line); border-radius: 4px; padding: 2px; }   /* the same space on all four sides (user's request) */
+/* (user's request 2026-10-22) the label's text as far from the frame / the buttons sideways as from the frame up and down
+   (about 10 px: the 2 px padding + 8 px, the 6 px gap + 4 px) */
+body:not(.mobile) nav .grp.box .glabel { padding: 0 4px 0 8px; }     /* (the PC's header; the phone's is narrow) */
 nav .seg { display: inline-flex; }
 nav .seg button { border-radius: 0; min-width: 34px; }
 nav .seg button + button { margin-left: -1px; }
