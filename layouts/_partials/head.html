@@ -12,8 +12,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{- /* the retweets' pages (other people's posts) stay out of search engines; see docs/decisions/0021 */}}
 {{ if or site.Params.preview (eq .Params.view "rt") }}<meta name="robots" content="noindex">{{ end }}
-{{- /* after a page's own title, the site's name as Tobokegao calls it (2026-10-17) */}}
-{{ $title := cond .IsHome "Tobokegaoオフィシャルホームページ" (printf "%s | Tobokegaoオフィシャルホームページ" .Title) }}
+{{- /* after a page's own title, the site's name as Tobokegao calls it (2026-10-17), in
+   English in both languages (2026-10-22) */}}
+{{ $title := cond .IsHome "Tobokegao Official Home Page" (printf "%s | Tobokegao Official Home Page" .Title) }}
 {{- /* the tab title in English, swapped in by site.js on a language switch */}}
 {{ $en := or .Params.title_en (and .Params.row .Params.row.en) .Title }}
 {{ $title_en := cond .IsHome "Tobokegao Official Home Page" (printf "%s | Tobokegao Official Home Page" $en) }}
