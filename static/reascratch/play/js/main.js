@@ -444,7 +444,12 @@ function screenPad(d, k, dn, sh) {
 function closeDialogs() { document.querySelectorAll('dialog[open]').forEach((x) => x.close()); }
 function showHelp() {
   const rows = (list) => list.map(([k, v]) => `<tr><th>${k}</th><td>${v}</td></tr>`).join('');
-  $('#helpBody').innerHTML = `<h3>${t('keysTitle')}</h3><table>${rows(t('keys'))}</table><h3>${t('mouseTitle')}</h3><table>${rows(t('mouse'))}</table><p class="note">${t('notInTrial')}</p>`;
+  // getting started, the browsers and the buttons first (user's request 2026-10-22); the phone: its buttons and touch
+  // in place of the keys and the mouse
+  const tbl = (title, list) => `<h3>${t(title)}</h3><table>${rows(t(list))}</table>`;
+  const start = `${tbl('startTitle', MOBILE ? 'startRowsM' : 'startRows')}<p class="note">${t('browsers')}</p>`;
+  $('#helpBody').innerHTML = MOBILE ? `${start}${tbl('btnTitle', 'btnsM')}${tbl('touchTitle', 'touch')}`
+    : `${start}${tbl('btnTitle', 'btns')}${tbl('keysTitle', 'keys')}${tbl('mouseTitle', 'mouse')}<p class="note">${t('notInTrial')}</p>`;
   $('#help').showModal(); $('#help').scrollTop = 0;   // (the close button takes the focus and scrolled it to the end)
 }
 // the setup's rows: [key, lo, hi, step] a number; [key, [options]] a choice of words (t('o_' + option)); [key, [labels], 'n']
@@ -560,6 +565,7 @@ function showSetup(d, focus) {
 function applyLang() {
   document.documentElement.lang = getLang();
   document.querySelectorAll('[data-t]').forEach((el) => { el.textContent = t(el.dataset.t); });
+  document.querySelectorAll('[data-tip]').forEach((el) => { el.title = t(el.dataset.tip); });
   document.title = t('title');
 }
 
