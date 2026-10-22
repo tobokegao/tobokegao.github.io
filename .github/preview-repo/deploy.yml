@@ -1,0 +1,45 @@
+# The only file of tobokegao/tbk-preview (as .github/workflows/deploy.yml). It builds the site's
+# source from tobokegao/tobokegao.github.io with everything in it (/memo/ and preview-extras/
+# too) and publishes it as this repository's Pages (https://tobokegao.github.io/tbk-preview/).
+# Nothing is committed here. Started by the site's own workflow (preview.yml) whenever the
+# branch "renewal" is pushed, or by hand. The source of this file lives in the site's
+# repository: .github/preview-repo/deploy.yml (docs/decisions/0037)
+name: Deploy preview
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "commit or branch of tobokegao/tobokegao.github.io to build"
+        default: renewal
+
+permissions: {}
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  # The build steps come from "renewal", the branch being previewed, so a change to
+  # build.yml shows here before it reaches main.
+  build:
+    uses: tobokegao/tobokegao.github.io/.github/workflows/build.yml@renewal
+    permissions:
+      contents: read
+    with:
+      part: all
+      repository: tobokegao/tobokegao.github.io
+      ref: ${{ inputs.ref }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5

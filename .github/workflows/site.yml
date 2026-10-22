@@ -14,14 +14,14 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # The real site leaves /memo/ to tobokegao/memo (docs/decisions/0022); the preview copy
-  # (tobokegao/tbk-preview) keeps everything.
+  # The real site leaves /memo/ to tobokegao/memo (docs/decisions/0022). The preview
+  # (tobokegao/tbk-preview) builds everything with its own workflow (preview.yml, 0037).
   build:
     uses: ./.github/workflows/build.yml
     permissions:
       contents: read
     with:
-      part: ${{ github.repository == 'tobokegao/tobokegao.github.io' && 'site' || 'all' }}
+      part: site
 
   deploy:
     needs: build

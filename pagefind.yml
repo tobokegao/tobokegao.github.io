@@ -1,4 +1,5 @@
-# Pagefind (the NOTES search), run after Hugo: npx -y pagefind@1.3.0
+# Pagefind (the NOTES search), run after Hugo: pagefind --site public
+# (the release binary, version and checksum in .github/workflows/build.yml)
 # Only the NOTES pages carry data-pagefind-body, so nothing else is indexed.
 site: public
 exclude_selectors:

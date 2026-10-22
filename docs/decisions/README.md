@@ -51,5 +51,7 @@
 - [0034 プレビューにだけ出すものは、previewリポジトリの別の枝に置く](0034-preview-extras.md)
 - [0035 リンク先のバナーは写しを置き、縦40にそろえ、小さいボタンは別の列に実寸で並べる](0035-other-sites-banners.md)
 - [0036 ログの行のリンクには、行き先が分かる名前を付ける](0036-link-names.md)
+- [0037 確認用ページは、このリポジトリに`renewal`をpushするだけで組み立て直す](0037-preview-from-one-push.md)
+- [0038 メモの検索の索引は、Node.jsを通さずPagefindの配布物で作る](0038-pagefind-without-node.md)
 - [0039 ReaScratchのページの英語表示では、デモ動画をYouTubeで出す](0039-reascratch-english-youtube.md)
 - [0040 トップのリンクの下に、TRACKMENTOとReaScratchのアイコンを別の列で置く](0040-home-projects-row.md)

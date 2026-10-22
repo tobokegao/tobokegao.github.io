@@ -1,5 +1,7 @@
 # 0030 Xのポストとリポストは、1日1回Windowsのタスクで取り込み、プレビューまで出す
 
+（pushの先は0037で変更。`git push origin renewal`で確認用ページに出す）
+
 - **日付**: 2026-10-19
 - **決めたこと**: Xの新しいポストとリポスト（0029）は、とぼけがおのPCのWindowsのタスクスケジューラーから1日1回、`scripts/x_daily.ps1`で取り込む。中では、Claude Codeを画面なしで動かし（`claude -p --chrome`）、`scripts/x_daily_prompt.md`の手順に沿わせる。点検（`check.py --all`）が通れば、`data/memo/`だけをコミットし、プレビュー（tbk-preview）に出す。本番には出さない（とぼけがおが頼んだときだけ）。
   - ブラウザで拾う部分は`scripts/x_profile_collect.js`、その前後は`scripts/x_daily.py`（`known`と`merge`）にまとめた。毎日のClaudeは、手順書と同じことしかしない。

@@ -1,0 +1,29 @@
+name: Start the preview
+
+# Pushing "renewal" here rebuilds the preview (tobokegao/tbk-preview) from the same commit,
+# so there is only one place to push to (docs/decisions/0037).
+on:
+  push:
+    branches: [renewal]
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: preview
+  cancel-in-progress: true
+
+jobs:
+  # The token (secret PREVIEW_DISPATCH_TOKEN) can only start workflows in tobokegao/tbk-preview;
+  # without it this step says so and stops.
+  preview:
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - name: Rebuild the preview
+        env:
+          GH_TOKEN: ${{ secrets.PREVIEW_DISPATCH_TOKEN }}
+          SHA: ${{ github.sha }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then echo "::warning::PREVIEW_DISPATCH_TOKEN is not set: the preview was not rebuilt"; exit 0; fi
+          gh workflow run deploy.yml -R tobokegao/tbk-preview -f ref="$SHA"

@@ -24,6 +24,10 @@ permissions: {}
 
 env:
   HUGO_VERSION: 0.168.0
+  # The extended build (it splits Japanese into words), the same one npx used to pick.
+  # The checksum is written here, not read from the release, so a changed file is refused.
+  PAGEFIND_VERSION: 1.3.0
+  PAGEFIND_SHA256: f983dec5507d87c7c497c450d2c5de97fc967a46d26e0ac3fb7184a87c94e434
 
 jobs:
   build:
@@ -53,6 +57,14 @@ jobs:
           grep " $deb\$" checksums.txt | sha256sum -c -
           sudo dpkg -i "$deb"
 
+      - name: Install Pagefind
+        run: |
+          tgz="pagefind_extended-v${PAGEFIND_VERSION}-x86_64-unknown-linux-musl.tar.gz"
+          curl -sSL -o "$tgz" "https://github.com/CloudCannon/pagefind/releases/download/v${PAGEFIND_VERSION}/$tgz"
+          echo "$PAGEFIND_SHA256  $tgz" | sha256sum -c -
+          tar -xzf "$tgz" pagefind_extended
+          sudo install pagefind_extended /usr/local/bin/pagefind
+
       - name: Subset dot fonts to the site's characters
         run: python scripts/subset_fonts.py
 
@@ -76,7 +88,7 @@ jobs:
 
       # The MEMO search index, into public/memo/pagefind (settings in pagefind.yml).
       - name: Search index
-        run: npx -y pagefind@1.3.0 --site public
+        run: pagefind --site public
 
       # The site rules a machine can decide, and every link in the built site (see CLAUDE.md).
       - name: Check
@@ -94,18 +106,13 @@ jobs:
             *) echo "unknown part: $PART"; exit 1 ;;
           esac
 
-      # Things only the preview shows (Web ReaScratch for now) live on the branch "extras"
-      # of the preview repository, laid over the built site after the checks. They stay out of
-      # main's history, so `git push preview renewal:main` is never refused (docs/decisions/0034).
+      # Things only the preview shows live in preview-extras/, laid over the built site after
+      # the checks, at the same paths (docs/decisions/0037).
       - name: Preview extras
         if: inputs.part == 'all'
-        env:
-          REPO: ${{ github.server_url }}/${{ github.repository }}
         run: |
-          if git ls-remote --exit-code --heads "$REPO" extras >/dev/null; then
-            git clone --depth 1 --branch extras "$REPO" extras
-            rm -rf extras/.git
-            cp -r extras/. public/
+          if [ -d preview-extras ]; then
+            cp -r preview-extras/. public/
           fi
 
       - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4.0.0

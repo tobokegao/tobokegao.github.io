@@ -11,6 +11,7 @@ DOSのテキスト画面のような見た目で、日本語と英語を一つ�
 - Pythonは`PYTHONUTF8=1`を付けて動かす。付けないとWindowsの文字コード（cp932）で文字化けしたり止まったりする。
 - 使い捨ての調査スクリプトはリポジトリに置かない。
 - 点検: `python scripts/check.py --all`（決まりの点検、Hugoでの組み立て、リンク）。コミットとpushの前にフックで、公開の前にActionsで回る。フックはクローンごとに1回`git config core.hooksPath .githooks`。HugoがPATHにないときは、環境変数`HUGO`に場所を入れる。
+- 確認用ページ（`https://tobokegao.github.io/tbk-preview/`）は、`git push origin renewal`で組み立て直される。プレビューにだけ出すものは`preview-extras/`に置く（0037）。
 
 主なスクリプト（`scripts/`）
 
@@ -52,7 +53,7 @@ DOSのテキスト画面のような見た目で、日本語と英語を一つ�
 - サイトの日本語の文では、英字・数字と日本語のあいだに半角スペースを入れない（「Bandcampで」「12曲」）。「」の中の題名、曲目の一覧、タイムテーブル、名前の一部のスペースはそのまま（0019）。
 - 「ゲームボーイ」ではなく「GAMEBOY」と書く（ゲームボーイアドバンスなどの製品名は別）。
 - 似たツールや先行するサービスを名指しで比べない。
-- 公開する文章は、ボタンや短い説明文も含めて、出す前に添削に回す。順番はlint（natural-japaneseの`lint.py`とtextlintのai-words-ja）→ Gemini。文法と事実の直しは採用し、書きぶりの直しはとぼけがおが選ぶ。添削せずに出したときは、そう伝える。
+- 公開する文章は、ボタンや短い説明文も含めて、出す前に添削に回す。順番はlint（natural-japaneseの`lint.py`とai-words-ja（Pythonに写した版、`~/tools/ai-words-ja-py`））→ Gemini。文法と事実の直しは採用し、書きぶりの直しはとぼけがおが選ぶ。添削せずに出したときは、そう伝える。
 
 ## 作業の進め方
 

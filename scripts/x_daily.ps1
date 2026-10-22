@@ -17,7 +17,7 @@ $allowed = @(
   "mcp__claude-in-chrome__javascript_tool", "mcp__claude-in-chrome__browser_batch",
   "mcp__claude-in-chrome__computer",
   "Bash(git branch --show-current)", "Bash(git status:*)", "Bash(git add data/memo)",
-  "Bash(git commit data/memo:*)", "Bash(git push preview renewal:main)",
+  "Bash(git commit data/memo:*)", "Bash(git push origin renewal)",
   "Bash(python scripts/x_daily.py:*)", "Bash(python scripts/check.py --all)"
 )
 $prompt = Get-Content -Raw -Encoding UTF8 (Join-Path $PSScriptRoot "x_daily_prompt.md")
