@@ -443,6 +443,12 @@ function screenPad(d, k, dn, sh) {
 // ---------- dialogs ----------
 function closeDialogs() { document.querySelectorAll('dialog[open]').forEach((x) => x.close()); }
 function showHelp() {
+  renderHelp();
+  $('#help').showModal(); $('#help').scrollTop = 0;   // (the close button takes the focus and scrolled it to the end)
+}
+// the help's text, also again when the language changes with the help open (found by the site's session 2026-10-22: it
+// kept the old language until opened again)
+function renderHelp() {
   const rows = (list) => list.map(([k, v]) => `<tr><th>${k}</th><td>${v}</td></tr>`).join('');
   // getting started, the browsers and the buttons first (user's request 2026-10-22); the phone: its buttons and touch
   // in place of the keys and the mouse
@@ -450,7 +456,6 @@ function showHelp() {
   const start = `${tbl('startTitle', MOBILE ? 'startRowsM' : 'startRows')}<p class="note">${t('browsers')}</p>`;
   $('#helpBody').innerHTML = MOBILE ? `${start}${tbl('btnTitle', 'btnsM')}${tbl('touchTitle', 'touch')}`
     : `${start}${tbl('btnTitle', 'btns')}${tbl('keysTitle', 'keys')}${tbl('mouseTitle', 'mouse')}<p class="note">${t('notInTrial')}</p>`;
-  $('#help').showModal(); $('#help').scrollTop = 0;   // (the close button takes the focus and scrolled it to the end)
 }
 // the setup's rows: [key, lo, hi, step] a number; [key, [options]] a choice of words (t('o_' + option)); [key, [labels], 'n']
 // a choice by number (0, 1 ... ; labels as in the JSFX). ⚪205: the sound FX, the video FX's LFO / colours and the
@@ -529,7 +534,9 @@ function midiGroup(d) {
     <div class="lnrow"><button id="sLearn">Learn</button><button id="sMore">More</button><button id="sLoadPreset">Load preset file</button>${p && p.maker === 'user' ? '<button id="sDelPreset">Delete user preset</button>' : ''}</div>
     <p class="note">${t('midiLearnHint')}</p><p id="sMidiMsg" class="note"></p>`;
 }
+let setupD = 0;   // the deck whose setup is (or was last) open
 function showSetup(d, focus) {
+  setupD = d;
   $('#setupTitle').textContent = `${t('setupTitle')} ${d ? 'B' : 'A'}`;
   const row = ([k, lo, hi, st]) => (hi === 'n'
     ? `<label><span>${t('s_' + k)}</span><select data-k="${k}" data-n="1">${lo.map((o, i) => `<option value="${i}"${+setupVal(d, k) === i ? ' selected' : ''}>${o}</option>`).join('')}</select></label>`
@@ -755,7 +762,11 @@ function showTip(key) {
 
 async function main() {
   applyLang();
-  $('#langBtn').addEventListener('click', () => { setLang(getLang() === 'ja' ? 'en' : 'ja'); applyLang(); });
+  $('#langBtn').addEventListener('click', () => {
+    setLang(getLang() === 'ja' ? 'en' : 'ja'); applyLang();
+    if ($('#help').open) renderHelp();   // (an open help or setup in the new language at once)
+    if ($('#setup').open) showSetup(setupD);
+  });
   $('#saveAvi').addEventListener('click', () => app.saveAvi());
   // NI Traktor Kontrol S2 / S3 / S4 through WebHID (hid.js = the kit's HID bridge, ⚪205): read as the bridge's MIDI
   if (navigator.hid && !MOBILE) $('#hidBtn').hidden = false;
