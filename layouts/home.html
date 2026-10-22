@@ -17,10 +17,25 @@
     <ul class="links links--projects" aria-label="{{ partial "tt.html" "projects" }}">
       {{ range site.Params.projects }}
       {{- $out := hasPrefix .url "http" }}
-      <li><a class="btn btn--link" href="{{ if $out }}{{ .url }}{{ else }}{{ .url | relURL }}{{ end }}"{{ if $out }} rel="noopener" target="_blank"{{ end }} title="{{ .name }}" aria-label="{{ .name }}"><span class="logo--day"><svg class="px px--hd" viewBox="0 0 30 30" width="60" height="60" aria-hidden="true" focusable="false"><use href="#hd-{{ .icon }}"/></svg></span><span class="logo--night"><svg class="px px--hd" viewBox="0 0 30 30" width="60" height="60" aria-hidden="true" focusable="false"><use href="#hdn-{{ .icon }}"/></svg></span></a></li>
+      <li><a class="btn btn--link" href="{{ if $out }}{{ .url }}{{ else }}{{ .url | relURL }}{{ end }}"{{ if $out }} rel="noopener" target="_blank"{{ end }}{{ if .about }} data-about="about-{{ .icon }}"{{ end }} title="{{ .name }}" aria-label="{{ .name }}"><span class="logo--day"><svg class="px px--hd" viewBox="0 0 30 30" width="60" height="60" aria-hidden="true" focusable="false"><use href="#hd-{{ .icon }}"/></svg></span><span class="logo--night"><svg class="px px--hd" viewBox="0 0 30 30" width="60" height="60" aria-hidden="true" focusable="false"><use href="#hdn-{{ .icon }}"/></svg></span></a></li>
       {{ end }}
     </ul>
   </div>
+  {{- /* a project with "about": its icon first opens this window (site.js); without scripts
+     the icon goes straight to the site */}}
+  {{ range site.Params.projects }}{{ if .about }}
+  <dialog class="zoom about" id="about-{{ .icon }}" aria-labelledby="about-{{ .icon }}-t">
+    <section class="win zoom__win about__win">
+      <p class="win__title"><span id="about-{{ .icon }}-t">{{ .file }}</span></p>
+      <button type="button" class="zoom__close" data-about-close><span aria-hidden="true">[■]</span><span class="vh">{{ partial "t.html" "close" }}</span></button>
+      <div class="about__body">
+        <span class="logo--day"><svg class="px px--hd" viewBox="0 0 30 30" width="60" height="60" aria-hidden="true" focusable="false"><use href="#hd-{{ .icon }}"/></svg></span><span class="logo--night"><svg class="px px--hd" viewBox="0 0 30 30" width="60" height="60" aria-hidden="true" focusable="false"><use href="#hdn-{{ .icon }}"/></svg></span>
+        <p class="about__text"><b>{{ .name }}</b><br>{{ partial "t.html" .about }}</p>
+      </div>
+      <p class="win__more win__more--center"><a class="btn" href="{{ .url }}" rel="noopener" target="_blank" data-about-close>{{ partial "t.html" "openSite" }}</a></p>
+    </section>
+  </dialog>
+  {{ end }}{{ end }}
 </section>
 
 {{ $own := slice }}

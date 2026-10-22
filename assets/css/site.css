@@ -383,6 +383,12 @@ a.seg { text-decoration: none; }
 }
 .zoom__close:hover, .zoom__close:focus-visible { background: var(--accent); color: var(--accent-ink); outline: none; }
 [data-zoom] { cursor: zoom-in; }
+/* a project's window on the home page (TRACKMENTO.URL): the icon beside a few lines about the site */
+.about__win { width: min(440px, calc(100vw - 32px)); box-sizing: border-box; padding: 28px 20px 20px; }
+.about__body { display: flex; gap: 16px; align-items: flex-start; }
+.about__body .px--hd { display: block; width: 60px; height: 60px; flex: none; }
+.about__text { margin: 0; }
+.about .win__more { margin-top: 20px; }
 
 /* LOAD.EXE: the small window site.js shows while the next page is on its way */
 .loading {

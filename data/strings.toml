@@ -209,6 +209,14 @@ en = "Links"
 ja = "作ったもの"
 en = "Projects"
 
+[aboutTrackmento]
+ja = "お気に入りの曲のジャケットや動画サムネイルをマス目に並べて、紹介画像が作れるツールです。1曲単位の曲や音MADも一緒にまとめられます。"
+en = "A site for making an image that introduces your favorite music, with cover art and video thumbnails laid out in a grid. Single tracks and otoMADs can go in together."
+
+[openSite]
+ja = "サイトを開く"
+en = "Open site"
+
 [labelReleases]
 ja = "レーベルのリリース"
 en = "Label releases"

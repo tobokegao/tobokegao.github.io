@@ -141,6 +141,22 @@
     zoom.addEventListener("close", function () { zoomImg.removeAttribute("src"); });
   }
 
+  // A project icon with data-about (the home page) first opens a small window about the
+  // site, with a button to it; clicking outside the window, the [■] box or that button
+  // closes it. Without the dialog element the icon goes straight to the site. See 0040.
+  document.addEventListener("click", function (e) {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    var a = e.target.closest && e.target.closest("a[data-about]");
+    var box = a && document.getElementById(a.getAttribute("data-about"));
+    if (box && box.showModal) {
+      e.preventDefault();
+      box.showModal();
+      return;
+    }
+    var open = e.target.closest && e.target.closest("dialog.about");
+    if (open && (e.target === open || e.target.closest("[data-about-close]"))) open.close();
+  });
+
   // Page changes without reloading: a link to another page of this site fetches that
   // page and swaps in its <main>, menu bar and status bar, so the screen is never
   // redrawn from blank. The page starts loading as soon as a finger or the pointer

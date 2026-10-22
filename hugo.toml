@@ -71,11 +71,15 @@ timeZone = "Asia/Tokyo"
     url = "https://github.com/tobokegao"
 
   # Under the link buttons, in a row of their own: things Tobokegao made, each with its
-  # own page (icons from their favicons, made by scripts/hd_icons.py like the links)
+  # own page (icons from their favicons, made by scripts/hd_icons.py like the links).
+  # about: a key in data/strings.toml; the icon then first opens a small window with that
+  # text and a button to the site (file: the window's title), see docs/decisions/0040
   [[params.projects]]
     name = "TRACKMENTO"
     icon = "trackmento"
     url = "https://trackmento.com/"
+    about = "aboutTrackmento"
+    file = "TRACKMENTO.URL"
   [[params.projects]]
     name = "ReaScratch"
     icon = "reascratch"

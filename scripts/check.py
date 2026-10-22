@@ -357,8 +357,10 @@ def check_images(r: Result, added: set[str] | None) -> None:
         rel = p.relative_to(ROOT).as_posix()
         if not p.is_file() or (added is not None and rel not in added):
             continue
-        # link banners are handed out to other sites, so they stay GIF (decision 0033)
-        handed_out = rel.startswith("static/img/banners/") and p.suffix.lower() == ".gif"
+        # link banners are handed out to other sites, so they stay GIF (decision 0033); so does
+        # the ReaScratch demo GIF that the REAPER forum post shows straight from here
+        handed_out = p.suffix.lower() == ".gif" and (rel.startswith("static/img/banners/")
+                                                     or rel == "static/img/reascratch/scratch.gif")
         if p.suffix.lower() != ".webp" and p.name not in LEGACY_IMAGES and not handed_out:
             r.ng.append(f"WebP でない画像 {rel}: 表示する大きさの WebP にする")
         elif p.suffix.lower() == ".webp" and Image:
