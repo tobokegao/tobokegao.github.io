@@ -5,9 +5,9 @@
    the hosts fetch_feeds.py accepts (ALLOWED_HOSTS) and row_pics.py keeps (PIC_HOSTS, adds Spotify's
    i.scdn.co); change them together. pbs.twimg.com: the MEMO pages' thumbnails, shown from X's server. 'unsafe-inline' for
    styles is for the style="--i:…" attributes on the pixel icons. 'wasm-unsafe-eval' lets the NOTES search
-   (Pagefind) run its WebAssembly. frame-src: the niconico player on the ReaScratch page (the nico
-   shortcode). See docs/decisions/0009, 0021 and 0028. */ -}}
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' '{{ $early.Data.Integrity }}' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com https://*.sndcdn.com https://*.bcbits.com https://*.nimg.jp https://*.mzstatic.com https://i.scdn.co https://pbs.twimg.com; connect-src 'self'; frame-src https://embed.nicovideo.jp; object-src 'none'; base-uri 'self'; form-action 'self'">
+   (Pagefind) run its WebAssembly. frame-src: the niconico player on the ReaScratch page and its English
+   YouTube player (the nico shortcode). See docs/decisions/0009, 0021, 0028 and 0039. */ -}}
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' '{{ $early.Data.Integrity }}' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com https://*.sndcdn.com https://*.bcbits.com https://*.nimg.jp https://*.mzstatic.com https://i.scdn.co https://pbs.twimg.com; connect-src 'self'; frame-src https://embed.nicovideo.jp https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{- /* the retweets' pages (other people's posts) stay out of search engines; see docs/decisions/0021 */}}

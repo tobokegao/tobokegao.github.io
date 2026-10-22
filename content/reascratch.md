@@ -10,7 +10,7 @@ ReaScratchは、REAPERを音と映像の2デッキのスクラッチ環境にす
 
 <p class="win__more win__more--center"><a class="btn" href="https://github.com/tobokegao/ReaScratch/releases/latest">ダウンロード</a></p>
 
-GitHubのReleasesから、最新版のzipファイルをダウンロードできます。ReaPackでも入れられ、新しいバージョンもReaPackで受け取れます（手順は説明書の「セットアップ手順」にあります）。
+GitHubのReleasesから、最新版のZIPファイルをダウンロードできます。ReaPackでも入れられ、新しいバージョンもReaPackで受け取れます（手順は説明書の「セットアップ手順」にあります）。
 
 ## ブラウザ体験版
 
@@ -29,7 +29,7 @@ ReaScratch is a free JSFX and Lua kit that turns REAPER into a two-deck scratch 
 
 <p class="win__more win__more--center"><a class="btn" href="https://github.com/tobokegao/ReaScratch/releases/latest">Download</a></p>
 
-Download the latest zip from GitHub Releases. You can also install it with ReaPack and get new versions there (see "Setup" in the manual).
+Download the latest ZIP from GitHub Releases. You can also install it with ReaPack and get new versions there (see "Setup" in the manual).
 
 ## Browser trial
 
@@ -43,7 +43,7 @@ A trial version that runs in your browser and lets you scratch audio and video t
 - Not included in the web version: browsing and loading tracks from the controller, the REAPER metronome and recording, pattern files of your own.
 {{< /lang >}}
 
-{{< nico sm46932309 >}}
+{{< nico sm46932309 df1NHGIj9aU >}}
 
 {{< lang ja >}}
 ## できること
@@ -72,10 +72,10 @@ A trial version that runs in your browser and lets you scratch audio and video t
 
 ## 説明書
 
-説明書はキットに入っています（Releasesのzipにも入っています）。
+説明書はキットに入っています（ReleasesのZIPにも入っています）。
 
-- 日本語: [ReaScratch_manual.pdf](https://github.com/tobokegao/ReaScratch/raw/main/ReaScratch_manual.pdf)（14MB）、[README.md](https://github.com/tobokegao/ReaScratch/blob/main/README.md)
-- 英語: [ReaScratch_manual_en.pdf](https://github.com/tobokegao/ReaScratch/raw/main/ReaScratch_manual_en.pdf)（14MB）、[README_en.md](https://github.com/tobokegao/ReaScratch/blob/main/README_en.md)
+- 日本語: [ReaScratch_manual.pdf](https://github.com/tobokegao/ReaScratch/raw/main/ReaScratch_manual.pdf)（14MB）、[README_ja.md](https://github.com/tobokegao/ReaScratch/blob/main/README_ja.md)
+- 英語: [ReaScratch_manual_en.pdf](https://github.com/tobokegao/ReaScratch/raw/main/ReaScratch_manual_en.pdf)（14MB）、[README.md](https://github.com/tobokegao/ReaScratch/blob/main/README.md)
 
 ## ライセンスとクレジット
 
@@ -112,10 +112,10 @@ If you own a controller marked ⚠, I'd be grateful if you could:
 
 ## Manuals
 
-The manuals come with the kit (and are in the Releases zip).
+The manuals come with the kit (and are in the Releases ZIP).
 
-- English: [ReaScratch_manual_en.pdf](https://github.com/tobokegao/ReaScratch/raw/main/ReaScratch_manual_en.pdf) (14 MB), [README_en.md](https://github.com/tobokegao/ReaScratch/blob/main/README_en.md)
-- Japanese: [ReaScratch_manual.pdf](https://github.com/tobokegao/ReaScratch/raw/main/ReaScratch_manual.pdf) (14 MB), [README.md](https://github.com/tobokegao/ReaScratch/blob/main/README.md)
+- English: [ReaScratch_manual_en.pdf](https://github.com/tobokegao/ReaScratch/raw/main/ReaScratch_manual_en.pdf) (14 MB), [README.md](https://github.com/tobokegao/ReaScratch/blob/main/README.md)
+- Japanese: [ReaScratch_manual.pdf](https://github.com/tobokegao/ReaScratch/raw/main/ReaScratch_manual.pdf) (14 MB), [README_ja.md](https://github.com/tobokegao/ReaScratch/blob/main/README_ja.md)
 
 ## License and credits
 

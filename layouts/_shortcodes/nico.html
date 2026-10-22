@@ -1,7 +1,22 @@
 {{- /* A niconico video (the ID, e.g. sm46932309): one player for both languages, put between the
-   lang blocks, with a link to the page on niconico under it. The CSP's frame-src allows only this host. */ -}}
+   lang blocks, with a link to the page on niconico under it. An optional second ID is a YouTube video
+   shown instead in English (youtube-nocookie). The CSP's frame-src allows only these two hosts (0039). */ -}}
 {{- $id := .Get 0 -}}
-<figure class="nico">
-  <iframe class="nico__player" src="https://embed.nicovideo.jp/watch/{{ $id }}" width="640" height="360" loading="lazy" allow="autoplay; fullscreen" allowfullscreen title="{{ .Page.Title }}: niconico"></iframe>
-  <figcaption class="nico__cap"><a href="https://www.nicovideo.jp/watch/{{ $id }}" rel="noopener" target="_blank">{{ partial "bi.html" (dict "ja" "ニコニコ動画で見る" "en" "Watch on niconico") }}</a></figcaption>
+{{- $yt := .Get 1 -}}
+{{- $nico := printf `<iframe class="nico__player" src="https://embed.nicovideo.jp/watch/%s" width="640" height="360" loading="lazy" allow="autoplay; fullscreen" allowfullscreen title="%s: niconico"></iframe>` $id .Page.Title | safeHTML -}}
+{{- $nicoLink := printf "https://www.nicovideo.jp/watch/%s" $id -}}
+{{- if $yt }}
+<figure class="nico" data-l="ja">
+  {{ $nico }}
+  <figcaption class="nico__cap"><a href="{{ $nicoLink }}" rel="noopener" target="_blank">ニコニコ動画で見る</a></figcaption>
 </figure>
+<figure class="nico" data-l="en" lang="en">
+  <iframe class="nico__player" src="https://www.youtube-nocookie.com/embed/{{ $yt }}" width="640" height="360" loading="lazy" allow="autoplay; fullscreen; encrypted-media; picture-in-picture" allowfullscreen title="{{ .Page.Title }}: YouTube"></iframe>
+  <figcaption class="nico__cap"><a href="https://www.youtube.com/watch?v={{ $yt }}" rel="noopener" target="_blank">Watch on YouTube</a></figcaption>
+</figure>
+{{- else }}
+<figure class="nico">
+  {{ $nico }}
+  <figcaption class="nico__cap"><a href="{{ $nicoLink }}" rel="noopener" target="_blank">{{ partial "bi.html" (dict "ja" "ニコニコ動画で見る" "en" "Watch on niconico") }}</a></figcaption>
+</figure>
+{{- end }}
