@@ -70,6 +70,17 @@ timeZone = "Asia/Tokyo"
     icon = "github"
     url = "https://github.com/tobokegao"
 
+  # Under the link buttons, in a row of their own: things Tobokegao made, each with its
+  # own page (icons from their favicons, made by scripts/hd_icons.py like the links)
+  [[params.projects]]
+    name = "TRACKMENTO"
+    icon = "trackmento"
+    url = "https://trackmento.com/"
+  [[params.projects]]
+    name = "ReaScratch"
+    icon = "reascratch"
+    url = "/reascratch/"
+
 # The flyers stay in static/ (the card links to the full-size file) and are also
 # mounted into assets/, so the Designs page can show a smaller copy of each.
 [module]

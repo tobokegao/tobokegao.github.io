@@ -84,6 +84,17 @@ ICONS = {
     "github":     dict(src=OFFICIAL / "github.svg",     kind="hull",  size=24, mark="#24292f", hole="#ffffff",
                        add_holes=((3, 6), (4, 6), (4, 7), (5, 7), (3, 17), (4, 17), (4, 16), (5, 16)),  # ears
                        close_circle=True),
+    # the projects under the link icons (asked for 2026-10-22), from their favicons
+    # the record of the ReaScratch favicon, drawn on the grid by icons-src/hand/reascratch_grid.py;
+    # grooves: rings of the disc a little lighter, at these distances from the centre
+    "reascratch": dict(src=HAND / "reascratch_grid.py", kind="hull",  size=24, mark="#16191d", hole="#ffcc00",
+                       hand_grid=True, grooves=(7.6, 9.6)),
+    # the swatches of the TRACKMENTO favicon, drawn on the grid by icons-src/hand/trackmento_grid.py:
+    # "swatch" = squares of several colors, each painted as its own badge; flat: the checks
+    "trackmento": dict(src=HAND / "trackmento_grid.py", kind="swatch", size=24, hand_grid=True,
+                       colors={"y": "#e6b731", "b": "#008bc7", "r": "#e5462c", "l": "#af9ee4", "m": "#80e2b9",
+                               "p": "#f594c3", "g": "#dcdbd7", "k": "#12171b", "w": "#f4f3ef"},
+                       flat="kw"),
 }
 
 WARM = "#ffcc00"   # the light is Tobokegao yellow: highlights and lit edges lean toward it
@@ -320,12 +331,19 @@ def volume(region):
 
 
 def cells_glyph(cfg):
+    if cfg["kind"] == "swatch":
+        return None
     return cfg["mark"] if cfg["kind"] == "tile" else (cfg.get("hole") or cfg["mark"])
 
 
 def badge(cfg, g):
     """Flat colors for the 24x24 icon (None = empty), plus which cells are the body."""
     kind = cfg["kind"]
+    if kind == "swatch":
+        cells = [[cfg["colors"].get(g[y][x]) for x in range(N)] for y in range(N)]
+        body_cells = {(y, x) for y in range(N) for x in range(N) if g[y][x] != "."}
+        body_c = cfg["colors"][next(iter(cfg["colors"]))]
+        return cells, body_cells, body_c, _mix(body_c, INK, 0.8)
     if kind == "tile":
         body_c, glyph_c, body, glyph = cfg["tile"], cfg["mark"], "T", "M"
     else:
@@ -398,36 +416,50 @@ def to_svg(cfg, g):
                     body.add((y + dy, x))
 
     # fill texture: oil-paint brush dabs, flat (no light direction), staggered per row
-    glyph_c = cfg["mark"] if cfg["kind"] == "tile" else (cfg.get("hole") or cfg["mark"])
-    dabs = {body_c: (_mix(body_c, WARM, 0.13), _mix(body_c, COOL, 0.11))}
+    swatch = cfg["kind"] == "swatch"
+    glyph_c = cells_glyph(cfg) or body_c
+    # the base color of each body pixel: one for a badge, one per square for swatches
+    # (the flat checks are left out of the gradient and the dabs)
+    if swatch:
+        base_of = {(y + P, x + P): cfg["colors"][g[y][x]] for y in range(N) for x in range(N)
+                   if g[y][x] != "." and g[y][x] not in cfg.get("flat", "")}
+        flat_px = {(y + P, x + P) for y in range(N) for x in range(N) if g[y][x] in cfg.get("flat", "")}
+    else:
+        base_of = {p_: body_c for p_ in body}
+        flat_px = set()
+    dabs = {c: (_mix(c, WARM, 0.13), _mix(c, COOL, 0.11)) for c in set(base_of.values())}
     if sum(_rgb(glyph_c)) / 765 > 0.92 and glyph_c != body_c:   # white marks: a faint cream / cool white
         dabs[glyph_c] = (_mix(glyph_c, "#f3e7c9", 0.18), _mix(glyph_c, "#c9d6ea", 0.16))
     if GRADIENT:
         # a 6-step gradient from a deep hue-shifted color at the top to the brand color at
         # the bottom (lit from below), each step blended into the next with a 2x2 Bayer
         # ordered dither - the smooth-but-pixelly gradients of Jazz Jackrabbit 2's art
-        deep = _mix(body_c, "#3a1d7a", 0.5)
-        # the bottom catches the yellow light; a near-black badge (GitHub) shows the same
-        # amount of yellow far more, so dark colors get less of it
-        glow = 0.3 if sum(_rgb(body_c)) / 765 > 0.2 else 0.12
-        lit = _mix(body_c, WARM, glow)
-        steps = [_mix(deep, lit, i / 5) for i in range(6)]
         bayer = ((0.125, 0.625), (0.875, 0.375))
-        for c in steps:
-            dabs.setdefault(c, (_mix(c, WARM, 0.1), _mix(c, COOL, 0.1)))
-        for (y, x) in body:
-            if grid[y][x] != body_c:
-                continue
-            t = (y - by0) / max(1, by1 - by0) * 5          # 0 at the top .. 5 at the bottom
-            i = int(t)
-            frac = t - i
-            k = min(5, i + (1 if frac > bayer[y % 2][x % 2] else 0))
-            grid[y][x] = steps[k]
+        for base in set(base_of.values()):
+            own = [p_ for p_, c in base_of.items() if c == base]
+            gy0 = min(y for y, _ in own); gy1 = max(y for y, _ in own)
+            # a small square gets a shallower gradient, or its top row turns near black
+            deep = _mix(base, "#3a1d7a", 0.3 if swatch else 0.5)
+            # the bottom catches the yellow light; a near-black badge (GitHub) shows the same
+            # amount of yellow far more, so dark colors get less of it
+            glow = 0.3 if sum(_rgb(base)) / 765 > 0.2 else 0.12
+            lit = _mix(base, WARM, glow)
+            steps = [_mix(deep, lit, i / 5) for i in range(6)]
+            for c in steps:
+                dabs.setdefault(c, (_mix(c, WARM, 0.1), _mix(c, COOL, 0.1)))
+            for (y, x) in own:
+                if grid[y][x] != base:
+                    continue
+                t = (y - gy0) / max(1, gy1 - gy0) * 5          # 0 at the top .. 5 at the bottom
+                i = int(t)
+                frac = t - i
+                k = min(5, i + (1 if frac > bayer[y % 2][x % 2] else 0))
+                grid[y][x] = steps[k]
     for y in range(size):
         shift = int(_hash(y, 7) * 4)
         for x in range(size):
             c = grid[y][x]
-            if c not in dabs or (y, x) not in body and c != glyph_c:
+            if c not in dabs or (y, x) in flat_px or (y, x) not in body and c != glyph_c:
                 continue
             stroke = (x + shift) // 4
             pick = _hash(y, stroke)
@@ -453,6 +485,12 @@ def to_svg(cfg, g):
             src = (y + 1, x - 1) if LIGHT == "below-left" else (y + 1, x)
             if src in inner and (y, x) not in inner and grid[y][x] is not None:
                 grid[y][x] = _mix(body_c, COOL, 0.35)
+    # the grooves of a record: rings of the disc a little lighter (the label stays as it is)
+    for r in cfg.get("grooves", ()):
+        c0 = P + (N - 1) / 2
+        for (y, x) in body:
+            if grid[y][x] is not None and g[y - P][x - P] == "M" and round(((y - c0) ** 2 + (x - c0) ** 2) ** 0.5 - r) == 0:
+                grid[y][x] = _mix(grid[y][x], "#9aa8c4", 0.22)
     # a dab cut to one pixel by an edge would be an orphan: give it back the base color
     for y in range(size):
         for x in range(size):
@@ -480,10 +518,16 @@ def to_svg(cfg, g):
                             nx -= dx
                 lx, ly = (-1 / 2 ** 0.5, 1 / 2 ** 0.5) if LIGHT == "below-left" else (0.0, 1.0)
                 facing = (nx * lx + ny * ly) / max(1e-6, (nx * nx + ny * ny) ** 0.5)
-                rim = 0.55 if sum(_rgb(body_c)) / 765 > 0.2 else 0.28
-                out[(y, x)] = (_mix(body_c, WARM, rim) if facing > 0.35   # rim lit yellow
-                               else edge if facing < -0.35
-                               else _mix(body_c, INK, 0.62))
+                # swatches: the line takes the color of the square it borders
+                nb_c = body_c
+                if swatch:
+                    near = [(y + dy, x + dx) for dy, dx in ((1, 0), (-1, 0), (0, 1), (0, -1), (1, 1), (1, -1), (-1, 1), (-1, -1))
+                            if (y + dy, x + dx) in solid]
+                    nb_c = cfg["colors"][g[near[0][0] - P][near[0][1] - P]]
+                rim = 0.55 if sum(_rgb(nb_c)) / 765 > 0.2 else 0.28
+                out[(y, x)] = (_mix(nb_c, WARM, rim) if facing > 0.35   # rim lit yellow
+                               else _mix(nb_c, INK, 0.8) if facing < -0.35
+                               else _mix(nb_c, INK, 0.62))
     piece = solid | set(out)
     # lit from below, the opaque piece throws its shadow up and to the right onto the wall
     # behind: two neutral tones (dark next to the piece, lighter further out) set by CSS,
@@ -572,7 +616,19 @@ def to_mono_svg(cfg, g):
     body, glyph = ("T", "M") if kind == "tile" else ("M", "H")
     size = N + 2 * P
     lit = set()
-    for y in range(N):
+    if kind == "swatch":
+        # each square as a one-pixel frame just outside it, where the day outline sits (drawn
+        # on the squares' own edges the mark looked smaller than the others); inside the
+        # checkered one, its dark checks are lit too
+        sq = {(y, x) for y in range(N) for x in range(N) if g[y][x] != "."}
+        for y in range(-1, N + 1):
+            for x in range(-1, N + 1):
+                if (y, x) in sq:
+                    if g[y][x] == "k":
+                        lit.add((y, x))
+                elif any((y + dy, x + dx) in sq for dy in (-1, 0, 1) for dx in (-1, 0, 1)):
+                    lit.add((y, x))
+    for y in range(N) if kind != "swatch" else ():
         for x in range(N):
             v = g[y][x]
             if cfg.get("line_art") or cfg.get("night_fill"):
@@ -581,7 +637,7 @@ def to_mono_svg(cfg, g):
                 continue
             if v == glyph:
                 lit.add((y, x))
-    if not (cfg.get("line_art") or cfg.get("night_fill")):
+    if not (cfg.get("line_art") or cfg.get("night_fill") or kind == "swatch"):
         # the silhouette's line runs just OUTSIDE the badge, where the day outline sits, so
         # the badge keeps its full size and the mark inside gets a pixel of air (drawn on the
         # badge's own edge it looked small and cramped)

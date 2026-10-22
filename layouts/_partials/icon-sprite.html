@@ -3,7 +3,7 @@
    waits for that file, and on a phone the icons came late after a page change). Context
    "small": the platform icons every page uses (_partials/icons/), placed once in baseof.html
    outside <main>, so it stays through page changes. Context "hd": the large link buttons of
-   the home page, day and night (_partials/icons-hd and icons-hd-night), placed in home.html.
+   the home page and the projects under them, day and night (_partials/icons-hd and icons-hd-night), placed in home.html.
    Inside a <use> the page's CSS classes do not reach the drawing, so the classes that take
    their colors from CSS become inline styles with the same custom properties (those do pass
    through): the outline and shadows, and the hover highlight, which is hidden until --px-hl
@@ -20,7 +20,7 @@
   {{- $body = printf `%s<symbol id="i-%s" viewBox="0 0 18 18" shape-rendering="crispEdges">%s</symbol>` $body . $inner -}}
 {{- end -}}
 {{- else -}}
-{{- range $l := site.Params.links -}}
+{{- range $l := site.Params.links | append site.Params.projects -}}
   {{- range $set := slice (dict "dir" "icons-hd" "id" "hd") (dict "dir" "icons-hd-night" "id" "hdn") -}}
     {{- $inner := replaceRE `^\s*<svg[^>]*>|</svg>\s*$` "" (partial (printf "%s/%s.html" $set.dir $l.icon) $l) -}}
     {{- $body = printf `%s<symbol id="%s-%s" viewBox="0 0 30 30" shape-rendering="crispEdges">%s</symbol>` $body $set.id $l.icon $inner -}}

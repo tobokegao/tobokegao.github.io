@@ -14,6 +14,12 @@
       <li><a class="btn btn--link" href="{{ .url }}" rel="noopener me" target="_blank" title="{{ .name }}" aria-label="{{ .name }}"><span class="logo--day"><svg class="px px--hd" viewBox="0 0 30 30" width="60" height="60" aria-hidden="true" focusable="false"><use href="#hd-{{ .icon }}"/></svg></span><span class="logo--night"><svg class="px px--hd" viewBox="0 0 30 30" width="60" height="60" aria-hidden="true" focusable="false"><use href="#hdn-{{ .icon }}"/></svg></span></a></li>
       {{ end }}
     </ul>
+    <ul class="links links--projects" aria-label="{{ partial "tt.html" "projects" }}">
+      {{ range site.Params.projects }}
+      {{- $out := hasPrefix .url "http" }}
+      <li><a class="btn btn--link" href="{{ if $out }}{{ .url }}{{ else }}{{ .url | relURL }}{{ end }}"{{ if $out }} rel="noopener" target="_blank"{{ end }} title="{{ .name }}" aria-label="{{ .name }}"><span class="logo--day"><svg class="px px--hd" viewBox="0 0 30 30" width="60" height="60" aria-hidden="true" focusable="false"><use href="#hd-{{ .icon }}"/></svg></span><span class="logo--night"><svg class="px px--hd" viewBox="0 0 30 30" width="60" height="60" aria-hidden="true" focusable="false"><use href="#hdn-{{ .icon }}"/></svg></span></a></li>
+      {{ end }}
+    </ul>
   </div>
 </section>
 

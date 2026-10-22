@@ -52,3 +52,4 @@
 - [0035 リンク先のバナーは写しを置き、縦40にそろえ、小さいボタンは別の列に実寸で並べる](0035-other-sites-banners.md)
 - [0036 ログの行のリンクには、行き先が分かる名前を付ける](0036-link-names.md)
 - [0039 ReaScratchのページの英語表示では、デモ動画をYouTubeで出す](0039-reascratch-english-youtube.md)
+- [0040 トップのリンクの下に、TRACKMENTOとReaScratchのアイコンを別の列で置く](0040-home-projects-row.md)

@@ -205,6 +205,10 @@ en = "Profile"
 ja = "リンク"
 en = "Links"
 
+[projects]
+ja = "作ったもの"
+en = "Projects"
+
 [labelReleases]
 ja = "レーベルのリリース"
 en = "Label releases"
