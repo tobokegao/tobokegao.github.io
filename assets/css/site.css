@@ -530,6 +530,7 @@ a.seg { text-decoration: none; }
 .hero__logo--label { width: min(210px, 34%); }
 .hero__logo--label img, .doc__art--label img { width: 100%; }
 .links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+.links > li { display: flex; }   /* the inline-flex link sat on the li's text baseline, and the fallback font (Noto CJK for ja, Roboto for en) moved the rows */
 /* the projects (TRACKMENTO, ReaScratch) in a row of their own under the links, past a groove
    (dark above, lit below, as the light comes from below) */
 .links--projects { margin-top: -8px; padding-top: 20px; border-top: 1px solid var(--bevel-dk); box-shadow: inset 0 1px var(--bevel-lt); }
