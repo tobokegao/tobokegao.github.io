@@ -2,7 +2,7 @@
 
 const S = {
   en: {
-    title: 'ReaScratch Web (trial)',
+    title: 'ReaScratch Web',
     tagline: 'Scratch audio and video together with this in-browser trial of ReaScratch for REAPER.',
     noPicture: 'this browser cannot show the video (audio only): use Chrome or an MJPEG AVI',
     aviNoSound: 'no audio in this AVI', aviSoundKind: 'audio is not PCM (silent)',
@@ -146,7 +146,7 @@ const S = {
   // Japanese: the words (buttons, headings, names of things, the tables) stay in English as on the deck; only the
   // sentences (hints, messages, notes) are in Japanese, with the DJ terms in them in English (user's choice 2026-10-20)
   ja: {
-    title: 'ReaScratch Web (trial)',
+    title: 'ReaScratch Web',
     tagline: '音と映像をいっしょにスクラッチできる、REAPER用ReaScratchのブラウザ体験版です。',
     noPicture: '映像を表示できません（音のみ）。ChromeかMJPEGのAVIで',
     aviNoSound: 'このAVIは無音です', aviSoundKind: '音声がPCMではありません（無音）',
