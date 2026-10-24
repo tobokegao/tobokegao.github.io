@@ -40,7 +40,7 @@ button, select, nav a.full {
 button:hover, nav a.full:hover { background: linear-gradient(#fff2cf, #cfd1cf); }
 nav a.full { background: transparent; color: var(--lamp); border-color: #8a6d00; }   /* a link away: an outline, the fill is the demo's */
 nav a.full:hover { background: transparent; color: #fff0a8; border-color: var(--lamp); }
-button.quiet { background: transparent; color: var(--muted); border-color: var(--line); }
+button.quiet { background: transparent; color: var(--muted); border-color: var(--frame); }   /* the language button: the same frame as Load / Save */
 button.quiet:hover { background: transparent; color: var(--text); border-color: var(--muted); }
 main { padding: 12px 16px 24px; max-width: 1532px; margin: 0 auto; }   /* two decks of 744 side by side: 744 * 2 + 12 + 32 */
 .stage-wrap { max-width: 960px; margin: 0 auto; }
