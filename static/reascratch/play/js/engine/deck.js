@@ -130,7 +130,7 @@ export class Deck {
 
   reset() {
     this.target = 0; this.headMid = 0; this.headMid2 = 0; this.head = 0;
-    this.hdV = 0; this.hdPrev = 0; this.hdTch = 0;
+    this.hdV = 0; this.hdPrev = 0; this.hdTch = 0; this.spAvg = 0; this.spT = 0;
     this.pfPrev = 0; this.pfV = 0; this.pfA = this.p.pitchBar; this.pfR = 1; this.pfRk = 1;
     this.spinOn = 0; this.spinV = 0; this.spinR = 0;
     this.headGrain = 0; this.headLast = 0; this.hopcnt = 0;
@@ -146,6 +146,7 @@ export class Deck {
     this.smoothK = 1 - Math.exp(-1 / (Math.max(p.smooth, 0.1) * 0.0005 * sr));
     this.tpK = 1 - Math.exp(-1 / (0.01 * sr));
     this.tpVk = 1 - Math.exp(-1 / (0.005 * sr));
+    this.spK = 1 - Math.exp(-1 / (0.08 * sr));   // (2026-10-22) the hand's speed before it lets go, over 80 ms (JSFX sp_k)
     this.tpXs = 1 / (0.005 * sr);
     this.nbK = 1 - Math.exp(-1 / (0.03 * sr));
     this.xfK = 1 - Math.exp(-1 / (0.001 * sr));
@@ -894,6 +895,8 @@ export class Deck {
     this.jq.push(t * this.spt);
   }
   jogAuto(t) { this.autoTouch = 1; this.touched = 1; this.jogIdle = 0; this.jogTicks(t); }   // no touch sensor
+  // (⚪209) DVS: the record moved sec seconds (at 1x): the head goes with it, touched as long as it comes (every block)
+  jogSec(sec) { this.autoTouch = 1; this.touched = 1; this.jogIdle = 0; this.jq.push(sec * this.fsr); }
   setTouch(on) { if (this.touched && !on) this.nbFree = 0; this.touched = on ? 1 : 0; this.autoTouch = 0; }
   jogFine(t) { this.jq.push(t * this.spt); }   // a fine ring tick goes straight to the head (L4718)
   jogSpeed(x) { this.jspV = x * this.fsr / this.srate; }   // CDJ jog top: x times speed while touched (L4696)
@@ -1022,7 +1025,7 @@ export class Deck {
         this.target += fs;
       } else {
         const spinGoal = this.playing ? this.te1x() : 0;
-        const relV = this.uiRelV ?? this.hdV;   // (a hand let go: the finger's speed, uiUp)
+        const relV = this.uiRelV ?? this.spAvg;   // (a hand let go: the finger's speed, uiUp)
         if (this.hdTch && !this.tch && this.spinA > 0 && !this.apcFwh && !this.apcSpd && Math.abs(relV - spinGoal) / fs >= 1) { this.spinOn = 1; this.spinV = relV; this.spinR = this.spinA; }
         if (this.hdTch && !this.tch) this.uiRelV = null;
         if (this.tch) this.spinOn = 0;
@@ -1061,6 +1064,7 @@ export class Deck {
         }
       }
       this.hdV += (this.head - this.hdPrev - this.hdV) * this.tpVk; this.hdPrev = this.head;
+      if (this.tch) { if (this.spT) this.spAvg += (this.hdV - this.spAvg) * this.spK; else this.spAvg = this.hdV; } this.spT = this.tch;   // (JSFX sp_avg)
       this.ended = 0;
       // (2) loop / end (L5574-L5595)
       const len = this.len;

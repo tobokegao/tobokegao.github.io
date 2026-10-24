@@ -16,6 +16,7 @@ import { mgPad, ppSemi, vfxPad } from './midi.js';
 import { Mixer } from './video/mixer.js';
 import { canCapture } from './capture.js';
 import { captureDialog } from './captureui.js';
+import { dvsChoices, dvsSet, dvsCfg, dvsResume, dvsState } from './dvs.js';
 
 const $ = (s) => document.querySelector(s);
 const app = {
@@ -99,7 +100,8 @@ async function startAudio() {
   app.ctx.addEventListener('statechange', () => { clk.length = 0; });
   await app.ctx.audioWorklet.addModule(new URL('./engine/processor.js', import.meta.url));
   // (output 1: the headphone cue, ⚪205 routeCue)
-  app.node = new AudioWorkletNode(app.ctx, 'reascratch', { numberOfInputs: 0, numberOfOutputs: 2, outputChannelCount: [2, 2] });
+  // (⚪209: inputs 0 / 1 = the decks' DVS timecode, dvs.js; stereo whatever the source)
+  app.node = new AudioWorkletNode(app.ctx, 'reascratch', { numberOfInputs: 2, numberOfOutputs: 2, outputChannelCount: [2, 2], channelCount: 2, channelCountMode: 'explicit' });
   // ?mute=1: automated tests run the engine without sound
   const out = new GainNode(app.ctx, { gain: /[?&]mute=1/.test(location.search) ? 0 : 1 });
   app.node.connect(out, 0).connect(app.ctx.destination);
@@ -117,6 +119,7 @@ async function startAudio() {
   }, 700);
   app.node.port.onmessage = (e) => {
     const m = e.data;
+    if (m.t === 'dvs') { m.s.forEach((x, i) => { dvsState[i] = x; }); dvsMon(); return; }
     if (m.t === 'ret') { const ui = app.decks[m.d]; Object.assign(ui.p, m.p); if (m.r) ui.status(typeof m.r === 'string' ? m.r : `bpm ${m.r}`); }
     if (m.t === 'state') {
       // the numbers come in a Float64Array each time, the lists only now and then (engine/processor.js): the last
@@ -130,6 +133,7 @@ async function startAudio() {
   for (const m of app.queue) app.node.port.postMessage(m);
   app.queue = [];
   await app.ctx.resume();
+  dvsResume(app).then(() => dvsMon());
 }
 
 app.loadFile = (d, file, k) => loadFile(d, file, k);
@@ -516,7 +520,7 @@ const SETUP_GROUPS = [['g_tempo', ['bpm', 'grid', 'range', 'swing', 'pzQ']], ['g
   ['g_sound', ['agOn', 'agTarget', 'fxSound', 'echoLen', 'echoFb', 'vibStep', 'vibWidth', 'gateStep', 'fltRes', 'fltMorph', 'discTone']],
   ['g_video', ['lfoShape', 'lfoRate', 'lfoDepth', 'tintDark', 'tintLight', 'vhsColor', 'vhsOsd']],
   ['g_mix', ['mfxType', 'mfxAmt', 'keyThresh', 'keySoft', 'camBlur', 'camOver', 'camShake']],
-  ['g_metro', ['mtOn', 'mtMode', 'mtHold', 'mtVol']], ['g_cue', ['cueDev', 'pfl', 'cueMix', 'mtOut']], ['g_midi', []]];
+  ['g_metro', ['mtOn', 'mtMode', 'mtHold', 'mtVol']], ['g_cue', ['cueDev', 'pfl', 'cueMix', 'mtOut']], ['g_dvs', []], ['g_midi', []]];
 // the MIDI that came last (the setup's MIDI group shows it; ⚪205)
 const heard = [];
 app.midiHeard = (data, src) => {
@@ -535,6 +539,36 @@ function midiGroup(d) {
     <p class="note">${t('midiLearnHint')}</p><p id="sMidiMsg" class="note"></p>`;
 }
 let setupD = 0;   // the deck whose setup is (or was last) open
+// (⚪209) DVS: the deck's timecode input and how to read it (dvs.js; kept in the browser, not with the deck's other settings)
+const DVS_ROWS = [['tc', ['Serato / rekordbox (1 kHz)', 'Traktor (2 kHz)', 'MixVibes (1.3 kHz)']], ['rpm45', ['33 1/3 rpm', '45 rpm']], ['rev', ['Normal', 'Reversed']]];
+function dvsGroup(d) {
+  const c = dvsCfg(d);
+  return `<p class="note">${t('dvsHint')}</p>
+    <label><span>${t('s_dvsDev')}</span><select data-dvs="dev" id="dvsDev"></select></label>
+    ${DVS_ROWS.map(([k, o]) => `<label><span>${t(k === 'tc' ? 's_dvsTc' : k === 'rpm45' ? 's_dvsRpm' : 's_dvsRev')}</span><select data-dvs="${k}">${o.map((x, i) => `<option value="${i}"${+c[k] === i ? ' selected' : ''}>${x}</option>`).join('')}</select></label>`).join('')}
+    <label><span>${t('s_dvsThr')}</span><input type="number" data-dvs="thrDb" min="-80" max="-10" step="1" value="${c.thrDb}"></label>
+    <p class="note">${t('dvsMon')}: <b id="dvsMon">—</b></p><p id="dvsMsg" class="note"></p>`;
+}
+function dvsMon() {
+  const el = document.querySelector('#dvsMon');
+  if (!el) return;
+  const [sp, lv] = dvsState[setupD];
+  el.textContent = dvsCfg(setupD).dev === 'off' ? '—' : `${sp.toFixed(2)}x / ${lv <= -150 ? '-inf' : lv.toFixed(1)} dB`;
+}
+function dvsFill(d) {
+  const say = (r) => { const el = document.querySelector('#dvsMsg'); if (el) el.textContent = r === 'fail' ? t('dvsFail') : r === 'mono' ? t('dvsMono') : ''; };
+  dvsChoices(t).then((list) => {
+    const el = document.querySelector('#dvsDev');
+    if (el) el.innerHTML = list.map(([v, n]) => `<option value="${escH(v)}"${v === dvsCfg(d).dev ? ' selected' : ''}>${escH(n)}</option>`).join('');
+  });
+  document.querySelectorAll('#setupBody [data-dvs]').forEach((el) => el.addEventListener('change', () => {
+    const k = el.dataset.dvs;
+    let v = el.value;
+    if (k === 'thrDb') { v = Math.max(-80, Math.min(-10, +v || -50)); el.value = v; }
+    dvsSet(app, d, k, v).then((r) => { if (r === 'asked') showSetup(d, 'g_dvs'); else { say(r); dvsMon(); } });
+  }));
+  dvsMon();
+}
 function showSetup(d, focus) {
   setupD = d;
   $('#setupTitle').textContent = `${t('setupTitle')} ${d ? 'B' : 'A'}`;
@@ -548,7 +582,8 @@ function showSetup(d, focus) {
   // all folded on opening, but for the group of a number asked for (user's view 2026-10-21: an open group ran off the screen)
   const first = focus ? grp(focus) : null;
   $('#setupBody').innerHTML = SETUP_GROUPS.map(([g, ks]) => `<details class="sgroup" data-g="${g}"${g === first ? ' open' : ''}>
-    <summary>${t(g)}</summary><div class="form">${g === 'g_midi' ? midiGroup(d) : ks.map((k) => (k === 'cueDev' ? `<label><span>${t('s_cueDev')}</span><select data-k="cueDev" id="cueDev"></select></label>` : row(SETUP.find((x) => x[0] === k)))).join('')}</div></details>`).join('');
+    <summary>${t(g)}</summary><div class="form">${g === 'g_midi' ? midiGroup(d) : g === 'g_dvs' ? dvsGroup(d) : ks.map((k) => (k === 'cueDev' ? `<label><span>${t('s_cueDev')}</span><select data-k="cueDev" id="cueDev"></select></label>` : row(SETUP.find((x) => x[0] === k)))).join('')}</div></details>`).join('');
+  dvsFill(d);
   cueChoices().then((list) => { const el = $('#cueDev'); if (el) { el.innerHTML = list.map(([v, n]) => `<option value="${escH(v)}"${v === app.cueOut ? ' selected' : ''}>${escH(n)}</option>`).join(''); } });
   if (fxp) fxp.open = false;
   const all = [...$('#setup').querySelectorAll('.sgroup, .fxpanel')];
@@ -559,7 +594,7 @@ function showSetup(d, focus) {
     setupSet(d, k, v);
   }));
   // (the record's side is the page's alone: deckui.js mirrored)
-  $('#setupBody').querySelectorAll('select').forEach((sel) => sel.addEventListener('change', () => setupSet(d, sel.dataset.k, sel.dataset.n ? +sel.value : sel.value)));
+  $('#setupBody').querySelectorAll('select[data-k]').forEach((sel) => sel.addEventListener('change', () => setupSet(d, sel.dataset.k, sel.dataset.n ? +sel.value : sel.value)));
   const on = (id, f) => { const el = $(`#setupBody ${id}`); if (el) el.addEventListener('click', f); };
   on('#sLearn', () => { $('#setup').close(); app.openLearn(d); });
   on('#sMore', () => { $('#setup').close(); app.openMore(d); });
