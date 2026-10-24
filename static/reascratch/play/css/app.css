@@ -7,6 +7,7 @@
   --lamp: #fbd743;
   --lamp-b: #4fb3e0;
   --line: #2a333d;
+  --frame: #5b6b78;   /* a frame that must read as one (Load / Save groups, dialogs): --line was too faint (user 2026-10-24) */
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.5 Tahoma, Verdana, "Hiragino Sans", "Yu Gothic UI", sans-serif; }
@@ -24,7 +25,7 @@ nav .grp.end { margin-left: auto; }
 nav .glabel { color: var(--muted); font-size: 12px; }
 /* a choice group in a thin frame with its heading inside, so A / B / Demo read as the choices of Load (user's request
    2026-10-21: the demo looked apart, unclear which group it went with) */
-nav .grp.box { border: 1px solid var(--line); border-radius: 4px; padding: 2px; }   /* the same space on all four sides (user's request) */
+nav .grp.box { border: 1px solid var(--frame); border-radius: 4px; padding: 2px; }   /* the same space on all four sides (user's request) */
 /* (user's request 2026-10-22) the label's text as far from the frame / the buttons sideways as from the frame up and down
    (about 10 px: the 2 px padding + 8 px, the 6 px gap + 4 px) */
 body:not(.mobile) nav .grp.box .glabel { padding: 0 4px 0 8px; }     /* (the PC's header; the phone's is narrow) */
@@ -64,7 +65,7 @@ main { padding: 12px 16px 24px; max-width: 1532px; margin: 0 auto; }   /* two de
 .overlay { position: fixed; inset: 0; display: grid; place-items: center; background: rgba(5, 8, 12, 0.6); z-index: 5; }
 .overlay[hidden] { display: none; }
 .overlay button { font-size: 18px; padding: 14px 28px; }
-dialog { background: #0a0d12; color: var(--text); border: 1px solid #5b6b78; border-radius: 4px; max-width: min(720px, calc(100vw - 32px));
+dialog { background: #0a0d12; color: var(--text); border: 1px solid var(--frame); border-radius: 4px; max-width: min(720px, calc(100vw - 32px));
   max-height: calc(100vh - 32px); padding: 16px 20px; }
 dialog::backdrop { background: rgba(0, 0, 0, 0.55); }
 dialog h2, dialog h3 { margin: 4px 0 8px; font-size: 14px; color: var(--muted); }
