@@ -6,6 +6,7 @@
 // in a Float64Array, state_keys.js; the lists now and then).
 import { Deck } from './deck.js';
 import { FAST } from './state_keys.js';
+import { DvsDecoder } from './dvs.js';
 
 // (in the order of FAST)
 function fastGet(d, f, o) {
@@ -38,6 +39,9 @@ class ReaScratchProcessor extends AudioWorkletProcessor {
     // gain since the last state; the cue / metronome buses the decks add into
     this.cueMix = 0.5; this.mxGc = 0.5; this.mxGm = 0.5; this.lmG = 1; this.lmMin = 1;
     this.cue = { l: new Float32Array(128), r: new Float32Array(128), m: new Float32Array(128) };
+    // (⚪209) DVS: the node's inputs 0 / 1 (deck A / B) = a timecode signal, read while its deck's DVS is on; its speed
+    // and level posted 10 times a second ({t: 'dvs', s: [[speed, level dB] A, B]})
+    this.dvs = [new DvsDecoder(sampleRate), new DvsDecoder(sampleRate)]; this.dvsPost = 0;
     this.port.onmessage = (e) => {
       const m = e.data;
       // any message wakes the deck it is for (the crossfader both)
@@ -53,6 +57,7 @@ class ReaScratchProcessor extends AudioWorkletProcessor {
     // the headphones' cue mix: absolute, or by a relative encoder (CV[130] / the SHIFT browse knob: +-1 % a tick, L4693)
     if (m.t === 'cueMix') { const v = Number(m.v); if (v === v) this.cueMix = Math.max(0, Math.min(1, v)); return; }
     if (m.t === 'cueMixRel') { const v = Number(m.v); if (v === v) this.cueMix = Math.max(0, Math.min(1, this.cueMix + v / 100)); return; }
+    if (m.t === 'dvs') { this.dvs[m.d | 0].set(m.p || {}); return; }
     const d = this.decks[m.d | 0];
     if (m.t === 'load') d.load(m.ch, m.rate, m.k | 0);
     else if (m.t === 'unload') { d.len = 0; d.playing = 0; }
@@ -68,6 +73,20 @@ class ReaScratchProcessor extends AudioWorkletProcessor {
   process(inputs, outputs) {
     const out = outputs[0], L = out[0], R = out[1] || out[0], n = L.length;
     L.fill(0); if (R !== L) R.fill(0);
+    // (⚪209) the records first: a deck on DVS follows its record (touched all the time, as a held jog; every block, 0 =
+    // the record stands)
+    for (let i = 0; i < 2; i++) {
+      const dv = this.dvs[i];
+      if (!dv.on) continue;
+      const inp = inputs && inputs[i];
+      this.decks[i].jogSec(dv.run(inp && inp[0], inp && (inp[1] || inp[0]), n));
+      this.asleep[i] = 0;
+    }
+    this.dvsPost += n;
+    if (this.dvsPost >= sampleRate / 10) {
+      this.dvsPost = 0;
+      if (this.dvs[0].on || this.dvs[1].on) this.port.postMessage({ t: 'dvs', s: this.dvs.map((x) => [x.on ? x.spd : 0, x.on ? x.level() : -150]) });
+    }
     // the cue output, when the page has one: the decks add their cue and clicks into this.cue
     const co = outputs[1], cL = co && co[0], cR = co && (co[1] || co[0]);
     let cue = null;

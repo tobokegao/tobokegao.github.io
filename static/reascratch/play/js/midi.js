@@ -1,4 +1,4 @@
-// ReaScratch Web — DJ controllers through Web MIDI. The presets are the JSFX's 124 (presets.json, made from preset_run by
+// ReaScratch Web — DJ controllers through Web MIDI. The presets are the JSFX's (132 since ⚪210; presets.json, made from preset_run by
 // tools/extract_presets.mjs); the decoding follows the JSFX's MIDI loop (spec/ui_spec.md §3.4, JSFX:4612-5063).
 // decode() is pure (no DOM, no Web MIDI): it turns one message into a list of actions, and initMidi() carries them out.
 // Channels in the presets are 1-16 (0 = none); "packed" settings are (channel - 1) * 128 + note.
@@ -25,7 +25,7 @@ export function newState(deck, shared = { sel: -1 }) {
   return {
     deck, shared, tempo: 0, range: 16,
     touched: 0, teMsb: 64, teLw: -1, teTk: 1, teMval: -1000, teMlast: -1000,
-    xfMsb: 0, xfLw: -1, absMsb: 0, absLsb: 0, dnMsb: 0, dnPrev: 0, dnHave: 0, jkLast: -1,
+    xfMsb: 0, xfLw: -1, absMsb: 0, absLsb: 0, dnMsb: 0, dnPrev: 0, dnHave: 0, rnPrev: 0, rnHave: 0, jkLast: -1,
     hcSh: 0, pdmHold: 0, cdjRev: 0,
     // pad modes (pdm_mode 1 = HOT CUE; JSFX:3450-3590), the SHIFT layer each pad went down on (pm_shm), the DDJ mode button
     // held (pb_hbn / pb_hmd, pv_hold), the filter knobs' SHIFT and pick-ups (fk_sh, fpk / fsk / fsl, JSFX:3629-3655)
@@ -664,6 +664,9 @@ export function decode(pe, s, bytes, now, aux = {}) {
         else touchNow();
         s.jkLast = m3;
         if (m3 < 20 || m3 > 107) { out.push({ t: 'out', bytes: [0xb0 | (cv[6] - 1), cv[7], 64] }); s.jkLast = 64; }
+      } else if (mode === 8) {   // (⚪210) Rane Twelve: the platter's count round 0-127 (rn_*, JSFX); the first only sets it
+        if (s.rnHave) { let d = m3 - s.rnPrev; if (d > 63) d -= 128; else if (d < -64) d += 128; jog(d); }
+        s.rnPrev = m3; s.rnHave = 1;
       } else jog(relTicks(m3));
     }
     if (cv[8] === 6 && st === 0xb0 && m2 === cv[7] + 22) {   // Denon platter position (dn_ticks, JSFX:2384)
@@ -1220,6 +1223,7 @@ export function apcInit(ty, sysex) {
 // ---------- choosing a preset ----------
 const norm = (x) => x.toLowerCase().replace(/[^a-z0-9]/g, '');
 // [deck A menu, deck B menu] for the connected devices' names (the longest model name found in them), or null
+const TT_ALIAS = [['plx-crss12', 'plxcrss12'], ['rp-8000 mk2', 'rp8000mk2'], ['rp-8000 (dvs)', 'rp8000'], ['rane twelve', 'twelve']];
 export function matchPresets(names, presets) {
   const dev = names.map(norm);
   let best = null, bestLen = 0;
@@ -1228,6 +1232,10 @@ export function matchPresets(names, presets) {
     const base = p.name.replace(/ deck 1$| \(ch 1\)$/, '');
     const maker = (p.maker || '').split(/[ /]/)[0];
     const bare = base.startsWith(maker + ' ') ? base.slice(maker.length + 1) : base;
+    // (⚪209 / ⚪213: the turntables by their port words only, as reascratch_lib.lua's PO_ALIAS: "RP8000MK2" takes the
+    // RP-8000 MK2 (the longer word), "RP8000" the first RP-8000)
+    const al = p.maker === 'Turntables / DVS' ? TT_ALIAS.find(([k]) => p.name.toLowerCase().includes(k)) : null;
+    if (p.maker === 'Turntables / DVS') { if (al && dev.some((d) => d.includes(al[1])) && al[1].length > bestLen) { best = p; bestLen = al[1].length; } continue; }
     const cands = new Set([base, bare, ...bare.split('/'), bare.split(' ')[0]].map(norm).filter((c) => c.length >= 4 && /\d|buddy|ready|touch|mixage|beatpad/.test(c)));
     for (const c of cands) if (c.length > bestLen && dev.some((d) => d.includes(c))) { best = p; bestLen = c.length; }
   }
