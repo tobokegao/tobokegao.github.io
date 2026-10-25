@@ -82,3 +82,4 @@ AIが意味のある間違いをしたら、ここに1行足す。
 - 本文に`@__name__`のような名前をそのまま書くと、`__`が太字の記号になって消える。バッククォートで囲む。
 - `relativeURLs`は`src`や`href`のパスしか書き換えない。`data-*`属性に入れた`/`始まりのパスはプレビューで404になるので、`site.js`の`sitePath`を通す。
 - プレビューは`/tbk-preview/`の下にあり、リンクがそのページから見た相対の形になる。ページ移動（`site.js`）を試すときは、サイトのいちばん上ではなく、同じ下の階層で配って試す（`HUGO_RELATIVEURLS=true HUGO_PARAMS_PREVIEW=true`で`<作業用>/site/tbk-preview`にビルドし、`<作業用>/site`を配る）。
+- 埋め込んだスクリプトは、`hugo --minify`がHTMLと一緒にもう一度圧縮する。変数の名前が付け直されるとCSPの指紋と合わなくなり、ブラウザに止められる（`hugo.toml`の`keepVarNames`、`check.py`が点検する）。

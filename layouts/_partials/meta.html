@@ -1,0 +1,64 @@
+{{- /* A page's title, description and link-preview picture in one language ("ja" or "en"):
+   head.html uses the Japanese ones, card.html (the small English page for link previews,
+   docs/decisions/0041) the English ones. Context: dict "p" (the page) "l" (the language). */ -}}
+{{- $p := .p -}}{{- $en := eq .l "en" -}}
+{{- /* after a page's own title, the site's name as Tobokegao calls it (2026-10-17), in
+   English in both languages (2026-10-22) */ -}}
+{{- $name := $p.Title -}}
+{{- if $en }}{{ $name = or $p.Params.title_en (and $p.Params.row $p.Params.row.en) $p.Title }}{{ end -}}
+{{- $title := cond $p.IsHome "Tobokegao Official Home Page" (printf "%s | Tobokegao Official Home Page" $name) -}}
+{{- /* a page without a text of its own says what the home page says (Tobokegao 2026-10-17) */ -}}
+{{- $desc := $p.Description -}}
+{{- if $en }}{{ $desc = $p.Params.description_en }}{{ end -}}
+{{- $desc = or $desc "Welcome to TBK zone!" -}}
+{{- /* a MEMO page without a description of its own (the posts go back to before the rename,
+   so "Twitter（現X）", Tobokegao 2026-10-17): a genre's summary (its start), else what
+   the page holds (a topic's posts, a month's posts); see docs/decisions/0021 */ -}}
+{{- if and (eq $p.Section "memo") (not $p.Description) $p.IsPage -}}
+  {{- $view := $p.Params.view | default "topic" -}}
+  {{- /* pages made in content/memo/_content.gotmpl carry it as a param */ -}}
+  {{- if $p.Params.description -}}{{- if not $en }}{{ $desc = $p.Params.description }}{{ end -}}
+  {{- else if eq $view "topic" -}}
+    {{- $g := hugo.Data.memo.graph }}{{ $key := $p.Params.key -}}
+    {{- if not $key }}{{ with $p.File }}{{ $key = index $g.files .ContentBaseName }}{{ end }}{{ end -}}
+    {{- with $key }}{{ with index $g.topics (string .) }}{{ $t := . -}}
+      {{- /* own posts only: the count leaves out retweets (other people's posts) */ -}}
+      {{- with $t.n -}}
+        {{- if $en }}{{ $desc = printf "Posts by Tobokegao on Twitter (now X) about \"%s\" (%d)." $t.title (int .) -}}
+        {{- else }}{{ $desc = printf "「%s」について、とぼけがおがTwitter（現X）に書いたポスト（%d件）。" $t.title (int .) }}{{ end -}}
+      {{- end -}}
+      {{- with index hugo.Data.memo.summaries.summaries $t.title }}{{ $s := . -}}
+        {{- $l := cond $en "en" "ja" -}}
+        {{- $o := index $s $l }}{{ $text := "" -}}
+        {{- if and $o (not $o.doubt) (not $o.skip) }}{{ $text = $o.text }}{{ else if index $s (printf "%s_own" $l) }}{{ $text = (index $s (printf "%s_own" $l)).text }}{{ else if index $s (printf "%s_tr" $l) }}{{ $text = (index $s (printf "%s_tr" $l)).text }}{{ end -}}
+        {{- with $text }}{{ $desc = . | truncate (cond $en 200 110) }}{{ end -}}
+      {{- end -}}
+    {{- end }}{{ end -}}
+  {{- else if in (slice "month" "rt") $view -}}
+    {{- $m := split $p.Params.month "-" -}}
+    {{- $y := index $m 0 }}{{ $mo := int (strings.TrimLeft "0" (index $m 1)) -}}
+    {{- if $en -}}
+      {{- $when := (time (printf "%s-01" $p.Params.month)).Format "January 2006" -}}
+      {{- $desc = printf "Posts by Tobokegao on Twitter (now X) in %s." $when -}}
+      {{- if eq $view "rt" }}{{ $desc = printf "Posts retweeted by Tobokegao on Twitter (now X) in %s." $when }}{{ end -}}
+    {{- else -}}
+      {{- $desc = printf "%s年%d月に、とぼけがおがTwitter（現X）に書いたポスト。" $y $mo -}}
+      {{- if eq $view "rt" }}{{ $desc = printf "%s年%d月に、とぼけがおがTwitter（現X）でリツイートしたポスト。" $y $mo }}{{ end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- /* the favicon figure (16 dots at 32px each); PNG, since link previews read it more widely than WebP */ -}}
+{{- $image := "img/og-icon.png" | absURL }}{{ $card := "summary" -}}
+{{- /* an activity-log row's page: the start of its write-up (else its date and kind) and its picture */ -}}
+{{- with $p.Params.row }}{{ $r := . -}}
+  {{- $kind := index hugo.Data.strings (printf "kind_%s" $r.kind) -}}
+  {{- $desc = printf "%s %s" (replace $r.date "-" ".") (index $kind (cond $en "en" "ja")) -}}
+  {{- with $r.article }}{{ with resources.Get (printf "news/%s.%s.md" . (cond $en "en" "ja")) }}{{ $desc = .Content | replaceRE `(?m)^#.*$` "" | $p.RenderString | plainify | htmlUnescape | replaceRE `\s+` " " | strings.TrimSpace | truncate (cond $en 200 110) }}{{ end }}{{ end -}}
+  {{- $found := partial "row-pic.html" (dict "row" $r "links" (partial "row-links.html" $r)) -}}
+  {{- with $found.pic -}}
+    {{- $image = cond $found.local (. | absURL) . -}}
+    {{- if $found.local }}{{ with resources.Get (strings.TrimPrefix "/" .) }}{{ if gt .Width 1200 }}{{ $image = (.Resize "1200x webp q82").Permalink }}{{ end }}{{ end }}{{ end -}}
+    {{- $card = "summary_large_image" -}}
+  {{- end -}}
+{{- end -}}
+{{- return (dict "title" $title "desc" $desc "image" $image "card" $card) -}}

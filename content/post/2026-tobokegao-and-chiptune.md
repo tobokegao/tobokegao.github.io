@@ -48,7 +48,7 @@ description_en: The difference between the parties I avoid and the places where 
 - 先にいた人が、新しく来た人にGAMEBOYや作曲ソフトを渡して、仲間を広げてきた。
 - 出る人を外から広く募っていて、内輪で固めていない。
 
-悪ふざけを隠さず、自分の名前で正面から言葉にする場が好きなのかもしれません。自分が苦手なのは、感じよく見せながら茶化されることでした。
+自分の名前でまっすぐ言葉にする場が好きなのかもしれません。
 
 シエスタは、北海道にいたころから配信でよく見ていました。ときどき投げ銭で応援もしていました。最近は配信がなくなったようで見られていませんが、遠くから応援するくらいの距離が、ちょうど合っていました。
 
@@ -115,7 +115,7 @@ When I looked into them, the two had things in common.
 - People who were there first handed GAMEBOYs and music software to newcomers and grew the circle that way.
 - They recruited performers widely from outside instead of keeping it among insiders.
 
-Maybe I like places where people don't hide their mischievous side and speak their minds openly, under their own names. What I find hard is teasing that hides behind a friendly face.
+Maybe I like places where people speak their minds openly, under their own names.
 
 I used to watch cafe la siesta's streams a lot, ever since I lived in Hokkaido, and sometimes sent a tip. The streams seem to have stopped lately, so I haven't been able to watch, but supporting them from afar was just the right distance for me.
 

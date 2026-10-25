@@ -12,53 +12,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{- /* the retweets' pages (other people's posts) stay out of search engines; see docs/decisions/0021 */}}
 {{ if or site.Params.preview (eq .Params.view "rt") }}<meta name="robots" content="noindex">{{ end }}
-{{- /* after a page's own title, the site's name as Tobokegao calls it (2026-10-17), in
-   English in both languages (2026-10-22) */}}
-{{ $title := cond .IsHome "Tobokegao Official Home Page" (printf "%s | Tobokegao Official Home Page" .Title) }}
+{{- /* the title, description and picture (shared with the English page for link previews, card.html) */}}
+{{ $m := partialCached "meta.html" (dict "p" . "l" "ja") .Path "ja" }}{{ $m_en := partialCached "meta.html" (dict "p" . "l" "en") .Path "en" }}
+{{ $title := $m.title }}{{ $desc := $m.desc }}{{ $image := $m.image }}{{ $card := $m.card }}
 {{- /* the tab title in English, swapped in by site.js on a language switch */}}
-{{ $en := or .Params.title_en (and .Params.row .Params.row.en) .Title }}
-{{ $title_en := cond .IsHome "Tobokegao Official Home Page" (printf "%s | Tobokegao Official Home Page" $en) }}
-<title data-ja="{{ $title }}" data-en="{{ $title_en }}">{{ $title }}</title>
-{{- /* a page without a text of its own says what the home page says (Tobokegao 2026-10-17) */}}
-{{ $desc := or .Description "Welcome to TBK zone!" }}
-{{- /* a MEMO page without a description of its own (the posts go back to before the rename,
-   so "Twitter（現X）", Tobokegao 2026-10-17): a genre's summary (its start), else what
-   the page holds (a topic's posts, a month's posts); see docs/decisions/0021 */}}
-{{ if and (eq .Section "memo") (not .Description) .IsPage }}
-  {{ $view := .Params.view | default "topic" }}
-  {{- /* pages made in content/memo/_content.gotmpl carry it as a param */}}
-  {{ if .Params.description }}{{ $desc = .Params.description }}
-  {{ else if eq $view "topic" }}
-    {{ $g := hugo.Data.memo.graph }}{{ $key := .Params.key }}
-    {{ if not $key }}{{ with .File }}{{ $key = index $g.files .ContentBaseName }}{{ end }}{{ end }}
-    {{ with $key }}{{ with index $g.topics (string .) }}{{ $t := . }}
-      {{- /* own posts only: the count leaves out retweets (other people's posts) */}}
-      {{ with $t.n }}{{ $desc = printf "「%s」について、とぼけがおがTwitter（現X）に書いたポスト（%d件）。" $t.title (int .) }}{{ end }}
-      {{ with index hugo.Data.memo.summaries.summaries $t.title }}{{ $s := . }}
-        {{ $o := index $s "ja" }}{{ $text := "" }}
-        {{ if and $o (not $o.doubt) (not $o.skip) }}{{ $text = $o.text }}{{ else if index $s "ja_own" }}{{ $text = (index $s "ja_own").text }}{{ else if index $s "ja_tr" }}{{ $text = (index $s "ja_tr").text }}{{ end }}
-        {{ with $text }}{{ $desc = . | truncate 110 }}{{ end }}
-      {{ end }}
-    {{ end }}{{ end }}
-  {{ else if in (slice "month" "rt") $view }}
-    {{ $m := split .Params.month "-" }}
-    {{ $desc = printf "%s年%d月に、とぼけがおがTwitter（現X）に書いたポスト。" (index $m 0) (int (strings.TrimLeft "0" (index $m 1))) }}
-    {{ if eq $view "rt" }}{{ $desc = printf "%s年%d月に、とぼけがおがTwitter（現X）でリツイートしたポスト。" (index $m 0) (int (strings.TrimLeft "0" (index $m 1))) }}{{ end }}
-  {{ end }}
-{{ end }}
-{{- /* the favicon figure (16 dots at 32px each); PNG, since link previews read it more widely than WebP */}}
-{{ $image := "img/og-icon.png" | absURL }}{{ $card := "summary" }}
-{{- /* an activity-log row's page: the start of its write-up (else its date and kind) and its picture */}}
-{{ with .Params.row }}{{ $r := . }}
-  {{ $desc = printf "%s %s" (replace $r.date "-" ".") (partial "t.html" (printf "kind_%s" $r.kind) | plainify | strings.TrimSpace) }}
-  {{ with $r.article }}{{ with resources.Get (printf "news/%s.ja.md" .) }}{{ $desc = .Content | replaceRE `(?m)^#.*$` "" | $.RenderString | plainify | htmlUnescape | replaceRE `\s+` " " | strings.TrimSpace | truncate 110 }}{{ end }}{{ end }}
-  {{ $found := partial "row-pic.html" (dict "row" $r "links" (partial "row-links.html" $r)) }}
-  {{ with $found.pic }}
-    {{ $image = cond $found.local (. | absURL) . }}
-    {{ if $found.local }}{{ with resources.Get (strings.TrimPrefix "/" .) }}{{ if gt .Width 1200 }}{{ $image = (.Resize "1200x webp q82").Permalink }}{{ end }}{{ end }}{{ end }}
-    {{ $card = "summary_large_image" }}
-  {{ end }}
-{{ end }}
+<title data-ja="{{ $title }}" data-en="{{ $m_en.title }}">{{ $title }}</title>
 <meta name="description" content="{{ $desc }}">
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $desc }}">

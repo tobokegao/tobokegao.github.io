@@ -55,3 +55,4 @@
 - [0038 メモの検索の索引は、Node.jsを通さずPagefindの配布物で作る](0038-pagefind-without-node.md)
 - [0039 ReaScratchのページの英語表示では、デモ動画をYouTubeで出す](0039-reascratch-english-youtube.md)
 - [0040 トップのリンクの下に、TRACKMENTOとReaScratchのアイコンを別の列で置く](0040-home-projects-row.md)
+- [0041 リンクのカードを英語で出すための、小さな英語のページを置く](0041-english-card-pages.md)

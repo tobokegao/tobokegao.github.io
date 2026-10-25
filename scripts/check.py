@@ -17,6 +17,8 @@ $HUGO, then on PATH. Pillow is optional (image sizes are skipped without it).
 from __future__ import annotations
 
 import argparse
+import base64
+import hashlib
 import json
 import os
 import re
@@ -457,6 +459,7 @@ def check_built(r: Result, site: Path) -> None:
     broken: dict[str, list[str]] = {}
     italics = []
     bad_titles = set()
+    blocked = []
 
     def exists(page_url: str, link: str) -> bool:
         url = urllib.parse.urljoin("https://" + SITE_HOST + page_url, link)
@@ -482,6 +485,15 @@ def check_built(r: Result, site: Path) -> None:
         for title in re.findall(r"class=\"?win__title\"?[^>]*><span>([^<]*)", html):
             if not re.search(r"(\.[A-Z0-9]{2,4}|\\)$", title):
                 bad_titles.add(title)
+        # an inline script runs only if its hash is in the page's CSP; hugo --minify minifies
+        # it again after the hash is taken (hugo.toml minify.tdewolff.js)
+        csp = re.search(r"Content-Security-Policy\"? content=\"([^\"]*)", html)
+        if csp:
+            for js in re.findall(r"<script>(.*?)</script>", html, re.S):
+                h = "sha256-" + base64.b64encode(hashlib.sha256(js.encode("utf-8")).digest()).decode()
+                if f"'{h}'" not in csp.group(1):
+                    blocked.append(page_url)
+                    break
         if re.search(r"<(em|i)>", html) and page_url not in ITALIC_OK:
             italics.append(page_url)
     for p in site.rglob("*.css"):
@@ -494,6 +506,9 @@ def check_built(r: Result, site: Path) -> None:
         r.ng.append(f"行き先のないリンク {link}（{pages[0]}{more}）")
     for title in sorted(bad_titles):
         r.ng.append(f"窓のタイトルに拡張子がない: {title}")
+    if blocked:
+        more = f" ほか {len(blocked) - 1} ページ" if len(blocked) > 1 else ""
+        r.ng.append(f"ページに埋め込んだスクリプトの指紋が CSP と合わず、ブラウザに止められる（{sorted(blocked)[0]}{more}）")
     if italics:
         r.info.append(f"斜体（<em>）のあるページが {len(italics)} つ: {', '.join(sorted(italics)[:5])}。作品名の慣習ならよいが、強調のための斜体なら外す")
 

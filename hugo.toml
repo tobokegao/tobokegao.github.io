@@ -97,3 +97,26 @@ timeZone = "Asia/Tokyo"
   [[module.mounts]]
     source = "static"
     target = "static"
+
+# The early script is inlined with its hash in the CSP (head.html). hugo --minify minifies the
+# page's HTML again, inline scripts too, and renamed the script's variables a second time, so
+# the hash no longer matched and the browser blocked it (found 2026-10-26: the stored language
+# and an English browser both got Japanese). Keeping the names makes the second pass change nothing.
+[minify.tdewolff.js]
+  keepVarNames = true
+
+# A small English page next to every page, for link previews (Bluesky and others read the
+# title and description from the HTML, before any script switches the language): /en/<path>/
+# holds only the English title, description and picture, and sends people on to the page
+# itself in English. Made by layouts/all.card.html; see docs/decisions/0041.
+[outputFormats.card]
+  mediaType = "text/html"
+  path = "en"
+  baseName = "index"
+  isHTML = true
+  noAlternative = true
+
+[outputs]
+  home = ["html", "rss", "card"]
+  section = ["html", "rss", "card"]
+  page = ["html", "card"]

@@ -1,0 +1,29 @@
+{{- /* The small English page for link previews, at /en/<path>/ (hugo.toml outputFormats.card):
+   the English title, description and picture for the services that read them from the HTML,
+   then on to the page itself with ?lang=en, which early.js turns into the English view.
+   Out of search engines; the page itself is the one to find. See docs/decisions/0041. */ -}}
+{{- $m := partialCached "meta.html" (dict "p" . "l" "en") .Path "en" -}}
+{{- $to := printf "%s?lang=en" (.OutputFormats.Get "html").Permalink -}}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta http-equiv="refresh" content="0; url={{ $to }}">
+<link rel="canonical" href="{{ (.OutputFormats.Get "html").Permalink }}">
+<title>{{ $m.title }}</title>
+<meta name="description" content="{{ $m.desc }}">
+<meta property="og:title" content="{{ $m.title }}">
+<meta property="og:description" content="{{ $m.desc }}">
+<meta property="og:type" content="{{ cond .IsPage "article" "website" }}">
+<meta property="og:url" content="{{ (.OutputFormats.Get "card").Permalink }}">
+<meta property="og:image" content="{{ $m.image }}">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="{{ $m.card }}">
+<meta name="twitter:site" content="@to6okegao">
+</head>
+<body>
+<p><a href="{{ $to }}">{{ $m.title }}</a></p>
+</body>
+</html>
