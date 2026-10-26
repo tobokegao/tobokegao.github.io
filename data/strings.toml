@@ -338,6 +338,10 @@ en = "Some connection data:"
 ja = "音楽相関図のもとになったデータ: ざっと"
 en = "Original music map data: zatto"
 
+[genreCredit_history]
+ja = "追加したジャンルの参考資料: 大衆音楽の歴史をまとめた文書（作者名は非公開）"
+en = "Reference for the added genres: a document on the history of popular music (author not named)"
+
 [withPosts]
 ja = "ポストの話題も含む"
 en = "Include post topics"

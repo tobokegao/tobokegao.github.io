@@ -84,7 +84,7 @@
     </ul>
     {{ if gt $t.nr (len .) }}<p class="notes__more">{{ partial "t.html" "moreBySearch" }}</p>{{ end }}
     {{ end }}
-    {{ with $t.credit }}<p class="notes__credit">{{ partial "t.html" "genreCredit" }}</p>{{ end }}
+    {{ with $t.credit }}<p class="notes__credit">{{ partial "t.html" (cond (eq . "zatto") "genreCredit" (printf "genreCredit_%s" .)) }}</p>{{ end }}
     {{ with $t.dbpedia }}<p class="notes__credit">{{ partial "t.html" "dbpediaCredit" }} <a href="https://dbpedia.org/{{ if ne . "*" }}page/{{ . }}{{ end }}">DBpedia</a> (Wikipedia, CC BY-SA)</p>{{ end }}
     {{ with $t.draft }}<p class="notes__credit notes__draft">{{ partial "t.html" "draftNote" }}</p>{{ end }}
 
@@ -173,6 +173,7 @@
     </div>
     <script type="application/json" id="tl-data">{{ $nodes | jsonify | safeJS }}</script>
     <p class="notes__credit">{{ partial "t.html" "genreCredit" }}</p>
+    <p class="notes__credit">{{ partial "t.html" "genreCredit_history" }}</p>
     <p class="notes__credit">{{ partial "t.html" "dbpediaCredit" }} <a href="https://dbpedia.org/">DBpedia</a> (Wikipedia, CC BY-SA)</p>
   {{ end }}
 </article>

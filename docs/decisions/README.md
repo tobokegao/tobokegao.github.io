@@ -56,3 +56,4 @@
 - [0039 ReaScratchのページの英語表示では、デモ動画をYouTubeで出す](0039-reascratch-english-youtube.md)
 - [0040 トップのリンクの下に、TRACKMENTOとReaScratchのアイコンを別の列で置く](0040-home-projects-row.md)
 - [0041 リンクのカードを英語で出すための、小さな英語のページを置く](0041-english-card-pages.md)
+- [0042 大衆音楽の歴史の文書から、ジャンルをなりたちに足す](0042-genres-from-history-document.md)

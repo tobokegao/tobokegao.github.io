@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-18",
+ "fetched": "2026-10-26",
  "source": "https://www.wikipedia.org/",
  "summaries": {
   "2-step": {
@@ -83,6 +83,54 @@
     "url": "https://en.wikipedia.org/wiki/Acid_rock"
    }
   },
+  "Acid Trance": {
+   "en": {
+    "title": "Acid trance",
+    "text": "Acid trance is a genre of trance music that emerged in the late 1980s, focusing on using the acid sound. The trademark sound of \"acid\" is produced with a Roland TB-303 by playing a sequenced melody while altering the instrument's filter cutoff frequency, resonance, envelope modulation, and accent controls.",
+    "url": "https://en.wikipedia.org/wiki/Acid_trance",
+    "doubt": [
+     "All articles lacking in-text citations",
+     "All articles that may contain original research",
+     "Articles lacking in-text citations from January 2017",
+     "Articles that may contain original research from July 2008"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from June 2017",
+     "Articles with unsourced statements from September 2015"
+    ]
+   }
+  },
+  "Afrobeat": {
+   "ja": {
+    "title": "アフロビート",
+    "text": "アフロビート（英: Afrobeat）とは、ナイジェリアの音楽家であるフェラ・クティによって1963年に創始された音楽のジャンル。ホーンやギターを中心とする明るく陽気なダンス音楽である西アフリカの「ハイライフ」にルーツを持ち、強烈なリズムと大規模なアンサンブル、長尺のグルーヴ、即興的なジャム演奏が重視され、バンドやバックコーラスによる派手な振り付け、政治的な演説などが導入される。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%95%E3%83%AD%E3%83%93%E3%83%BC%E3%83%88",
+    "part": [
+     "出典を必要とする節のある記事/2026年8月"
+    ]
+   },
+   "en": {
+    "title": "Afrobeat",
+    "text": "Afrobeat (also known as Afrofunk) is a West African music genre, fusing influences from Yoruba and Ghanaian (such as highlife) music with American funk, jazz, and soul influences. With a focus on chanted vocals, complex intersecting rhythms, and percussion, the style was pioneered in the 1960s by Nigerian multi-instrumentalist and bandleader Fela Kuti, who popularised it both within and outside Nigeria.",
+    "url": "https://en.wikipedia.org/wiki/Afrobeat",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from April 2019"
+    ]
+   }
+  },
+  "Afrobeats": {
+   "en": {
+    "title": "Afrobeats",
+    "text": "Afrobeats, not to be confused with Afrobeat or Afroswing, is an umbrella term to describe popular music from West Africa and the diaspora that initially developed in Nigeria, Ghana, and the UK in the 2000s and 2010s. Afrobeats is less of a style per se, and more of a descriptor for the fusion of sounds flowing out of Nigeria and Ghana.",
+    "url": "https://en.wikipedia.org/wiki/Afrobeats"
+   },
+   "ja_tr": {
+    "text": "アフロビーツ（アフロビートやアフロスウィングとは別のもの）は、2000年代から2010年代にかけて、まずナイジェリア、ガーナ、イギリスで育った、西アフリカとその移民の人々のポピュラー音楽をまとめて呼ぶ言葉。ひとつのスタイルというより、ナイジェリアとガーナから生まれるさまざまな音を合わせたものを指す呼び名に近い。",
+    "url": "https://en.wikipedia.org/wiki/Afrobeats"
+   }
+  },
   "Alternative R&B": {
    "ja": {
     "title": "オルタナティブR&B",
@@ -91,7 +139,7 @@
    },
    "en": {
     "title": "Alternative R&B",
-    "text": "Alternative R&B (also referred to as alt-R&B, indie R&B, and originally known as PBR&B, hipster R&B, emo R&B, or R-Neg-B) is a term used by music journalists to describe a stylistic alternative to contemporary R&B that began in the mid 2000s and came to prominence with musical artists such as Frank Ocean, Khalid, SZA, Summer Walker, Jhené Aiko, Brent Faiyaz, Zayn Malik, Tyler, the Creator, Steve Lacy, Childish Gambino, Miguel, Drake, The Weeknd, Kehlani, Tinashe, Bryson Tiller, PartyNextDoor, Tory Lanez, 6lack, and others. It is considered to be \"more progressive and diverse\" than its mainstream counterpart.",
+    "text": "Alternative R&B (also referred to as alt-R&B, indie R&B, and originally known as PBR&B, hipster R&B, emo R&B, or R-Neg-B) is a music genre denoting a stylistic alternative to contemporary R&B that began in the mid 2000s and came to prominence with musical artists such as Frank Ocean, Khalid, SZA, Summer Walker, Jhené Aiko, Brent Faiyaz, Zayn Malik, Tyler, the Creator, Steve Lacy, Childish Gambino, Miguel, Drake, The Weeknd, Kehlani, Tinashe, Bryson Tiller, PartyNextDoor, Tory Lanez, 6lack, and others. It is considered to be \"more progressive and diverse\" than its mainstream counterpart.",
     "url": "https://en.wikipedia.org/wiki/Alternative_R%26B"
    }
   },
@@ -134,6 +182,18 @@
     "url": "https://ja.wikipedia.org/wiki/%E7%92%B0%E5%A2%83%E9%9F%B3%E6%A5%BD"
    }
   },
+  "Ambient House": {
+   "ja": {
+    "title": "アンビエント・ハウス",
+    "text": "アンビエント・ハウス（Ambient house）は、ハウスの一ジャンル。踊るためのアップテンポな他のハウス音楽とは異なり、環境音楽的な、ゆったりとしたリラックスできるような音楽である。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%B3%E3%83%93%E3%82%A8%E3%83%B3%E3%83%88%E3%83%BB%E3%83%8F%E3%82%A6%E3%82%B9"
+   },
+   "en": {
+    "title": "Ambient house",
+    "text": "Ambient house is a downtempo subgenre of house music that first emerged in the late 1980s, combining elements of acid house and ambient music. The genre developed in chill-out rooms and specialist clubs as part of the UK's dance music scene.",
+    "url": "https://en.wikipedia.org/wiki/Ambient_house"
+   }
+  },
   "Ambient Techno": {
    "ja": {
     "title": "アンビエント・テクノ",
@@ -151,6 +211,25 @@
    "ja_tr": {
     "text": "アンビエント・テクノは、アンビエントの空気のような響きに、テクノのリズムや音作りを合わせたテクノの一分野。Aphex Twin、Carl Craig、The Orb、The Future Sound of London、The Black Dog、Pete Namlook、Biosphereなど、1990年代の電子音楽の作り手が切り開いた。",
     "url": "https://en.wikipedia.org/wiki/Ambient_techno"
+   }
+  },
+  "Arena Rock": {
+   "ja": {
+    "title": "スタジアム・ロック",
+    "text": "スタジアム・ロック（英語: Stadium rock）とは、1970年代以降の大会場を中心とした派手なライブや、強いコマーシャル性を特徴としたロックで、商業主義的なものを意味する用語である。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%A2%E3%83%A0%E3%83%BB%E3%83%AD%E3%83%83%E3%82%AF"
+   },
+   "en": {
+    "title": "Arena rock",
+    "text": "Arena rock (also known as stadium rock, pomp rock or corporate rock) is a style of rock music that became mainstream in the 1970s. It typically involves radio-friendly rock music that was designed to be played for large audiences.",
+    "url": "https://en.wikipedia.org/wiki/Arena_rock",
+    "doubt": [
+     "Articles that may contain original research from October 2017"
+    ]
+   },
+   "en_tr": {
+    "text": "Stadium rock is a term for rock built around showy concerts in large venues from the 1970s on and marked by a strong commercial character; it refers to commercially minded rock.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%A2%E3%83%A0%E3%83%BB%E3%83%AD%E3%83%83%E3%82%AF"
    }
   },
   "Art Rock": {
@@ -237,16 +316,20 @@
    },
    "en": {
     "title": "Bebop",
-    "text": "Bebop or bop is a style of jazz developed in the early to mid-1940s in the United States. It is characterized by a fast tempo, complex chord progressions—with rapid chord changes, changes of key, angular melodies and substitute chords—along with virtuosic improvisation based on a combination of harmonic structure, scales, and occasional references to the melody.",
+    "text": "Bebop or bop is a style of jazz developed in the early to mid-1940s in the United States. It is characterized by a fast tempo, complex chord progressions—with rapid chord changes, changes of key, angular melodies and substitute chords, along with virtuosic improvisation based on a combination of harmonic structure, scales, and occasional references to the melody.",
     "url": "https://en.wikipedia.org/wiki/Bebop",
     "doubt": [
+     "All articles lacking reliable references",
      "All articles needing additional references",
-     "Articles needing additional references from May 2018"
+     "Articles lacking reliable references from October 2026",
+     "Articles needing additional references from May 2018",
+     "Articles needing additional references from October 2026"
     ],
     "part": [
      "All articles with unsourced statements",
      "Articles with unsourced statements from July 2017",
-     "Articles with unsourced statements from November 2018"
+     "Articles with unsourced statements from November 2018",
+     "Articles with unsourced statements from October 2026"
     ]
    },
    "en_tr": {
@@ -353,6 +436,31 @@
     ]
    }
   },
+  "Bluegrass": {
+   "ja": {
+    "title": "ブルーグラス",
+    "text": "ブルーグラス（Bluegrass music）は、アコースティック音楽のジャンル。アメリカのアパラチア南部に入植したスコッチ・アイリッシュの伝承音楽をベースにして1945年ごろ、ビル・モンローのブルー・グラス・ボーイズにアール・スクラッグスが加わってから後に発展した。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B0%E3%83%A9%E3%82%B9"
+   },
+   "en": {
+    "title": "Bluegrass music",
+    "text": "Bluegrass music is a genre of American roots music that developed in the 1940s in the Appalachian region of the United States. The genre derives its name from the band Bill Monroe and the Blue Grass Boys.",
+    "url": "https://en.wikipedia.org/wiki/Bluegrass_music",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from April 2023"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from February 2025",
+     "Articles with unsourced statements from May 2021"
+    ]
+   },
+   "en_tr": {
+    "text": "Bluegrass is a genre of acoustic music. Based on the traditional music of the Scotch-Irish who settled in the southern Appalachians of the United States, it developed after Earl Scruggs joined Bill Monroe's Blue Grass Boys around 1945.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B0%E3%83%A9%E3%82%B9"
+   }
+  },
   "Blues": {
    "ja": {
     "title": "ブルース",
@@ -397,6 +505,30 @@
    "en_tr": {
     "text": "Boogie-woogie is a subgenre of the blues that became popular around the end of the 1920s. Its earliest forms are said to have existed in African-American communities from around the 1870s.",
     "url": "https://ja.wikipedia.org/wiki/%E3%83%96%E3%82%AE%E3%82%A6%E3%82%AE"
+   }
+  },
+  "Bossa Nova": {
+   "ja": {
+    "title": "ボサノヴァ",
+    "text": "ボサノヴァ（Bossa Nova、ボッサ・ノーヴァ、直訳:「新しい感覚」）は、ブラジル音楽のジャンルのひとつである。日本ではボサノバとも表記される。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1"
+   },
+   "en": {
+    "title": "Bossa nova",
+    "text": "Bossa nova (Portuguese pronunciation: [ˈbɔsɐ ˈnɔvɐ] ) is a relaxed style of samba developed in the late 1950s and early 1960s in Rio de Janeiro, Brazil. It is mainly characterized by a calm syncopated rhythm with chords and fingerstyle mimicking the beat of a samba groove, as if it were a simplification and stylization on the guitar of the rhythm produced by a samba school band.",
+    "url": "https://en.wikipedia.org/wiki/Bossa_nova",
+    "doubt": [
+     "All articles lacking reliable references",
+     "Articles lacking reliable references from May 2022"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from May 2022"
+    ]
+   },
+   "en_tr": {
+    "text": "Bossa nova (literally \"a new feeling\") is a genre of Brazilian music. In Japan it is also written ボサノバ.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1"
    }
   },
   "Brass Band": {
@@ -519,6 +651,18 @@
     "text": "Electronic dance music, and the dance that goes with it, from Davao City in the Philippines. Tracks run at about 140 BPM, driven by chunky bass, sirens and syncopated synths, layered with Bisaya vocals, animal and street sounds, and playful jokes. The name comes from Bisaya slang for a slacker. DJ Love (Sherwin Tuna) is widely credited as its pioneer, and it spread across the country through YouTube and TikTok.",
     "url": "https://www.nme.com/features/budots-genre-future-dj-love-boiler-room-manila-community-radio-3555062",
     "ref": "Khyne Palumar, \"Budots is no longer just 'dance for the slums'. Where does it go from here?\", NME (2023)"
+   }
+  },
+  "Canzone Napoletana": {
+   "ja": {
+    "title": "カンツォーネ",
+    "text": "カンツォーネ (伊: Canzone) は、イタリア語では単に「歌」を指す単語である。小規模のカンツォーネのことをカンツォネッタ (Canzonetta) と呼ぶ。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%B3%E3%83%84%E3%82%A9%E3%83%BC%E3%83%8D"
+   },
+   "en": {
+    "title": "Canzone napoletana",
+    "text": "Canzone napoletana (Italian: [kanˈtsoːne napoleˈtaːna]; Neapolitan: canzona napulitana [kanˈdzoːnə napuliˈtɑːnə]), sometimes referred to as Neapolitan song, is a generic term for a traditional form of music sung in the Neapolitan language, ordinarily for the male voice singing solo, although well represented by female soloists as well, and expressed in familiar genres such as the love song and serenade. Many of the songs are about the nostalgic longing for Naples as it once was.",
+    "url": "https://en.wikipedia.org/wiki/Canzone_napoletana"
    }
   },
   "Chicago House": {
@@ -659,6 +803,17 @@
     "url": "https://en.wikipedia.org/wiki/Cloud_rap"
    }
   },
+  "College Rock": {
+   "en": {
+    "title": "College rock",
+    "text": "College rock is rock music played on student-run university and college campus radio stations located in the United States and Canada in the 1980s and 1990s. The stations' playlists were often created by students who avoided the mainstream rock played on commercial radio stations.",
+    "url": "https://en.wikipedia.org/wiki/College_rock"
+   },
+   "ja_tr": {
+    "text": "カレッジ・ロックは、1980年代から1990年代に、アメリカとカナダの大学で学生が運営するラジオ局が流していたロック。選曲はたいてい学生が行い、商業ラジオで流れる主流のロックを避けていた。",
+    "url": "https://en.wikipedia.org/wiki/College_rock"
+   }
+  },
   "Contemporary R&B": {
    "ja": {
     "title": "コンテンポラリー・R&B",
@@ -683,6 +838,61 @@
     "url": "https://en.wikipedia.org/wiki/Cool_jazz"
    }
   },
+  "Country": {
+   "ja": {
+    "title": "カントリー・ミュージック",
+    "text": "カントリー・ミュージック（英語: country music）は、1920年代にアメリカ合衆国バージニア州ブリストル市で発祥したとされる音楽のジャンル。21世紀に入ってからも、カントリー・ミュージックは、アメリカ南部・中西部を中心に多くのファンを擁している。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC%E3%83%BB%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF"
+   },
+   "en": {
+    "title": "Country music",
+    "text": "Country music, also known as country and western or simply country, is a music genre originating from the United States. It is known for its ballads and dance tunes, identifiable by both traditional lyrics and harmonies accompanied by banjos, mandolins, fiddles, harmonicas, and many types of guitar; either acoustic, electric, steel, or resonator guitars.",
+    "url": "https://en.wikipedia.org/wiki/Country_music",
+    "doubt": [
+     "All articles lacking reliable references",
+     "All articles needing additional references",
+     "Articles lacking reliable references from February 2022",
+     "Articles needing additional references from April 2019",
+     "Articles needing additional references from March 2017"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from April 2023",
+     "Articles with unsourced statements from January 2026",
+     "Articles with unsourced statements from July 2022",
+     "Articles with unsourced statements from July 2025",
+     "Articles with unsourced statements from September 2025"
+    ]
+   },
+   "en_tr": {
+    "text": "Country music is a genre of music said to have begun in the 1920s in Bristol, Virginia, in the United States. In the 21st century it still has many fans, mainly in the American South and Midwest.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC%E3%83%BB%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF"
+   }
+  },
+  "Dancehall": {
+   "ja": {
+    "title": "ダンスホールレゲエ",
+    "text": "ダンスホール・レゲエ（dancehall reggae, または略してダンスホール dancehall）は、1970年代後半に、ジャマイカのサウンドシステム文化の中で生まれたレゲエ音楽のひとつ。 1980年代から90年代にかけてイエローマン、シャバ・ランクス、ショーン・ポール、ブジュ・バントン、ビーニー・マン、バウンティ・キラー、タイガー、シャインヘッド、スーパーキャットなどのDJやシンガーの活躍によって人気を拡大していった。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%80%E3%83%B3%E3%82%B9%E3%83%9B%E3%83%BC%E3%83%AB%E3%83%AC%E3%82%B2%E3%82%A8"
+   },
+   "en": {
+    "title": "Dancehall",
+    "text": "Dancehall is a genre of Jamaican popular music that originated in the late 1970s. Initially, dancehall was a more sparse version of reggae than the roots style, which had dominated much of the 1970s.",
+    "url": "https://en.wikipedia.org/wiki/Dancehall",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from August 2008"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from May 2024"
+    ]
+   },
+   "en_tr": {
+    "text": "Dancehall reggae (or dancehall for short) is a style of reggae born in Jamaica's sound system culture in the late 1970s. From the 1980s into the 1990s it grew in popularity through DJs and singers such as Yellowman, Shabba Ranks, Sean Paul, Buju Banton, Beenie Man, Bounty Killer, Tiger, Shinehead and Super Cat.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%80%E3%83%B3%E3%82%B9%E3%83%9B%E3%83%BC%E3%83%AB%E3%83%AC%E3%82%B2%E3%82%A8"
+   }
+  },
   "Dangdut": {
    "ja": {
     "title": "ダンドゥット",
@@ -697,6 +907,18 @@
      "All articles with unsourced statements",
      "Articles with unsourced statements from January 2025"
     ]
+   }
+  },
+  "Death Metal": {
+   "ja": {
+    "title": "デスメタル",
+    "text": "デスメタル (death metal) は、ヘヴィメタルのジャンルの一種。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%B9%E3%83%A1%E3%82%BF%E3%83%AB"
+   },
+   "en": {
+    "title": "Death metal",
+    "text": "Death metal is an extreme subgenre of heavy metal music. It typically employs heavily distorted and low-tuned guitars, played with techniques such as palm muting and tremolo picking; deep growling vocals; aggressive, powerful drumming, featuring double kick and blast beat techniques; minor keys or atonality; abrupt tempo, key, and time signature changes; and chromatic chord progressions.",
+    "url": "https://en.wikipedia.org/wiki/Death_metal"
    }
   },
   "Deep House": {
@@ -1026,7 +1248,7 @@
    },
    "en": {
     "title": "Electro house",
-    "text": "Electro house is a genre of electronic dance music and a subgenre of house music characterized by heavy bass and a tempo around 125–135 beats per minute. The term has been used to describe the music of many DJ Mag Top 100 DJs, including Benny Benassi, Skrillex, Steve Aoki, Porter Robinson and Deadmau5.",
+    "text": "Electro house is a genre of electronic dance music and a subgenre of house music characterized by heavy bass, prominent melodic riffs and a tempo around 125–135 beats per minute. The term has been used to describe the music of many DJ Mag Top 100 DJs, including David Guetta, Benny Benassi, Skrillex, Steve Aoki, Porter Robinson and Deadmau5.",
     "url": "https://en.wikipedia.org/wiki/Electro_house",
     "doubt": [
      "All articles that may contain original research",
@@ -1077,6 +1299,18 @@
     "url": "https://en.wikipedia.org/wiki/Electronica"
    }
   },
+  "Eurodance": {
+   "ja": {
+    "title": "ユーロダンス",
+    "text": "ユーロダンス（Eurodance）は、1990年代初頭にできた、ドイツ、イタリア、フランス、ベルギー、スウェーデン他の欧州諸国由来の、電子音楽のジャンルの一種である。このジャンルの曲は、ハウス、Hi-NRG、イタロ・ディスコの要素を含んでいる。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%A6%E3%83%BC%E3%83%AD%E3%83%80%E3%83%B3%E3%82%B9"
+   },
+   "en": {
+    "title": "Eurodance",
+    "text": "Eurodance (sometimes referred to as Euro-NRG) is a genre of electronic dance music that originated in the late 1980s in Western Europe. It combines many elements of rap, techno and Eurodisco.",
+    "url": "https://en.wikipedia.org/wiki/Eurodance"
+   }
+  },
   "Eurodisco": {
    "en": {
     "title": "Eurodisco",
@@ -1086,6 +1320,17 @@
    "ja_tr": {
     "text": "ユーロディスコは、1970年代半ばにディスコから育ったエレクトロニック・ダンス・ミュージック。「ユーロディスコ」という言葉はポピュラー音楽の雑誌に初めて現れ、イギリスの雑誌Blues & SoulがBoney Mの音楽を表現するのに使った。Giorgio Moroder、Frank Farian、Michael Kunze（Silver Convention）といったプロデューサーが先駆けとされる。",
     "url": "https://en.wikipedia.org/wiki/Eurodisco"
+   }
+  },
+  "Filmi": {
+   "en": {
+    "title": "Hindi film music",
+    "text": "Hindi film songs, more formally known as Hindi Geet or Filmi songs and informally known as Bollywood music, are songs featured in Hindi films. Derived from the song-and-dance routines common in Indian films, Bollywood songs, along with dance, are a characteristic motif of Hindi cinema which gives it enduring popular appeal, cultural value and context.",
+    "url": "https://en.wikipedia.org/wiki/Hindi_film_music"
+   },
+   "ja_tr": {
+    "text": "ヒンディー語映画の歌（正式にはヒンディー・ギート、またはフィルミー・ソング。くだけてボリウッド音楽とも）は、ヒンディー語の映画の中で使われる歌。インド映画によくある歌と踊りの場面から生まれたもので、踊りとともにヒンディー語映画の特徴になり、長く続く人気や文化的な価値を支えている。",
+    "url": "https://en.wikipedia.org/wiki/Hindi_film_music"
    }
   },
   "Folk": {
@@ -1121,6 +1366,30 @@
     "text": "Traditional music handed down by ear within families and small communities rather than learned from notation. It is mostly rural in origin and tied to everyday activities such as work and ritual.",
     "url": "https://www.britannica.com/art/folk-music",
     "ref": "Encyclopaedia Britannica, \"folk music\""
+   }
+  },
+  "Folk Rock": {
+   "ja": {
+    "title": "フォークロック",
+    "text": "フォークロック（英語: Folk rock）は、音楽のジャンルの一つで、民謡に、ロックリズムを加えたフォークソング、フォークにロックの要素を融合した音楽、フォーク特有の素朴なメロディにロックのビートを組み合わせて、エレクトリック・サウンドで処理する音楽を指す。1965年に「ミスター・タンブリン・マン」でデビューしたザ・バーズがその始まりとされる。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%83%AD%E3%83%83%E3%82%AF"
+   },
+   "en": {
+    "title": "Folk rock",
+    "text": "Folk rock is a fusion genre of rock music with heavy influences from English and American folk music. It arose in the United States, Canada, and the United Kingdom in the mid-1960s.",
+    "url": "https://en.wikipedia.org/wiki/Folk_rock",
+    "doubt": [
+     "All articles lacking reliable references",
+     "Articles lacking reliable references from June 2025"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from February 2017"
+    ]
+   },
+   "en_tr": {
+    "text": "Folk rock is a music genre: folk songs with rock rhythms added, folk fused with elements of rock, or folk's plain melodies set to a rock beat and given an electric sound. It is said to have begun with the Byrds, who debuted in 1965 with \"Mr. Tambourine Man\".",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%83%AD%E3%83%83%E3%82%AF"
    }
   },
   "Footwork": {
@@ -1301,6 +1570,22 @@
     ]
    }
   },
+  "Gangsta Rap": {
+   "ja": {
+    "title": "ギャングスタ・ラップ",
+    "text": "ギャングスタ・ラップ（Gangsta rap）は、ラップのジャンルの1つである。 一般的には、暴力的な日常をテーマにしたラップ・ミュージックを指す言葉で、代表的なアーティストには、ドクター・ドレー、スヌープ・ドッグ、N.W.A、2パックなどがいる。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%AE%E3%83%A3%E3%83%B3%E3%82%B0%E3%82%B9%E3%82%BF%E3%83%BB%E3%83%A9%E3%83%83%E3%83%97"
+   },
+   "en": {
+    "title": "Gangsta rap",
+    "text": "Gangsta rap (also spelled gangster rap), initially called reality rap, is a subgenre of hip-hop that conveys the culture, values, and experiences of urban gangs and street hustlers, frequently discussing unpleasant realities of the world in general through an urban lens. Emerging in the mid-to-late 1980s, gangsta rap's pioneers include Schoolly D and Ice-T, later expanding with artists such as N.W.A. In early-mid 1990s, via record producer and rapper Dr.",
+    "url": "https://en.wikipedia.org/wiki/Gangsta_rap",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from August 2026"
+    ]
+   }
+  },
   "Garage House": {
    "ja": {
     "title": "ガラージュ",
@@ -1341,6 +1626,18 @@
    "ja_tr": {
     "text": "ゲットー・ハウス（ブーティー・ハウスとも）は、1992年ごろから独自のスタイルとして知られるようになったハウスの一分野。808や909のドラムマシンを中心にした音数の少ない曲で、性的な歌詞が入ることもある。",
     "url": "https://en.wikipedia.org/wiki/Ghetto_house"
+   }
+  },
+  "Glam Metal": {
+   "ja": {
+    "title": "グラム・メタル",
+    "text": "グラム・メタル(LAメタル)（英語: Glam Metal）は、ヘヴィメタルのサブジャンルとするワードである。 1970年代末に生まれ、1980年代に世界的に人気を博した。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B0%E3%83%A9%E3%83%A0%E3%83%BB%E3%83%A1%E3%82%BF%E3%83%AB"
+   },
+   "en": {
+    "title": "Glam metal",
+    "text": "Glam metal is a subgenre of heavy metal that features pop-influenced hooks and guitar riffs, upbeat rock anthems, and slow power ballads. It borrows heavily from the fashion and image of 1970s glam rock.",
+    "url": "https://en.wikipedia.org/wiki/Glam_metal"
    }
   },
   "Glam Rock": {
@@ -1385,6 +1682,18 @@
      "Articles with unsourced statements from April 2015",
      "Articles with unsourced statements from September 2023"
     ]
+   }
+  },
+  "Golden Age Hip Hop": {
+   "ja": {
+    "title": "ゴールデンエイジ・ヒップホップ",
+    "text": "ゴールデンエイジ・ヒップホップ（golden age hip hop）は、ヒップホップ・ミュージックの歴史において、オールドスクール・ヒップホップに続く全盛期である。日本では、ミドルスクールと呼ばれたりもするが、世界的にはこの言葉はそれほど一般的ではない。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%87%E3%83%B3%E3%82%A8%E3%82%A4%E3%82%B8%E3%83%BB%E3%83%92%E3%83%83%E3%83%97%E3%83%9B%E3%83%83%E3%83%97"
+   },
+   "en": {
+    "title": "Golden age hip hop",
+    "text": "Golden age hip-hop refers to hip-hop music created from roughly the late 1980s to the mid-1990s, building on the genre's advances of the mid-1980s. The golden age is characterized by its diversity, quality, innovation, and influence on overall hip-hop, and is associated with the genre's development and mainstream success.",
+    "url": "https://en.wikipedia.org/wiki/Golden_age_hip_hop"
    }
   },
   "Gospel": {
@@ -1576,6 +1885,22 @@
     "ref": "Insomniac, \"10 Trance Subgenres You Need to Know\" (2015)"
    }
   },
+  "Hardcore Punk": {
+   "ja": {
+    "title": "ハードコア・パンク",
+    "text": "ハードコア・パンク (hardcore punk) は、ロックのジャンルのひとつ。パンク・ロックのロックン・ロール色を排し、より暴力性や攻撃性を強調したジャンルである。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%B3%E3%82%A2%E3%83%BB%E3%83%91%E3%83%B3%E3%82%AF"
+   },
+   "en": {
+    "title": "Hardcore punk",
+    "text": "Hardcore punk (commonly abbreviated to hardcore or hXc) is a punk rock subgenre and subculture that originated in the late 1970s. It is generally faster, harder, and more aggressive than other forms of punk rock music.",
+    "url": "https://en.wikipedia.org/wiki/Hardcore_punk",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from September 2024"
+    ]
+   }
+  },
   "Hardcore Techno": {
    "ja": {
     "title": "ハードコアテクノ",
@@ -1680,6 +2005,26 @@
     ]
    }
   },
+  "Highlife": {
+   "ja": {
+    "title": "ハイライフ",
+    "text": "ハイライフ（Highlife）は19世紀からガーナ、シエラレオネ、ナイジェリア、リベリア等西アフリカの英語圏に広まったギター、ジャズ、ブラスバンドなど、ポピュラー音楽の総称。 2025年、ガーナのハイライフ音楽とダンスはユネスコの無形文化遺産に登録された。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%95"
+   },
+   "en": {
+    "title": "Highlife",
+    "text": "Highlife is a Ghanaian music genre that originated along the coastal cities of present-day Ghana in the 19th century, during its history as a colony of the British and through its trade routes in coastal areas. It encompasses multiple local fusions of African metre and western jazz melodies.",
+    "url": "https://en.wikipedia.org/wiki/Highlife",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from December 2018"
+    ]
+   },
+   "en_tr": {
+    "text": "Highlife is a general name for popular music, with guitar, jazz, brass band and more, that spread from the 19th century through the English-speaking countries of West Africa, such as Ghana, Sierra Leone, Nigeria and Liberia. In 2025, Ghana's highlife music and dance was added to UNESCO's lists of intangible cultural heritage.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%95"
+   }
+  },
   "Hip Hop": {
    "ja": {
     "title": "ヒップホップ・ミュージック",
@@ -1694,6 +2039,42 @@
      "All articles with unsourced statements",
      "Articles with unsourced statements from October 2026"
     ]
+   }
+  },
+  "Hip Hop Soul": {
+   "ja": {
+    "title": "ヒップホップ・ソウル",
+    "text": "ヒップホップ・ソウル（Hip hop soul）とは、コンテンポラリー・R&Bのサブジャンルの一つ。一般的には、ヒップホップ風の、打ち込みやサンプリングによって作成されたトラックに、R&B・ソウルの歌唱を乗せるスタイルを指し、代表的なアーティストにメアリー・J・ブライジ等がいる。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%83%E3%83%97%E3%83%9B%E3%83%83%E3%83%97%E3%83%BB%E3%82%BD%E3%82%A6%E3%83%AB"
+   },
+   "en": {
+    "title": "Hip hop soul",
+    "text": "Hip-hop soul is a subgenre of contemporary R&B music, most popular during the early and mid 1990s, which fuses R&B or soul singing with hip-hop musical production. The subgenre had evolved from a previous R&B subgenre, new jack swing, which had incorporated hip-hop influences into R&B music.",
+    "url": "https://en.wikipedia.org/wiki/Hip_hop_soul"
+   }
+  },
+  "Honky-tonk": {
+   "ja": {
+    "title": "ホンキートンク",
+    "text": "ホンキートンク（英: honky tonk）は、カントリー・ミュージックを演奏するバーの一種。「ホンカトンク」または「トンク」とだけ呼ばれることもある。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%9B%E3%83%B3%E3%82%AD%E3%83%BC%E3%83%88%E3%83%B3%E3%82%AF"
+   },
+   "en": {
+    "title": "Honky-tonk",
+    "text": "The term honky-tonk (also called honkatonk, honkey-tonk, honky tonk, or tonk) refers either to a bar that provides country music for the entertainment of its patrons, or to the particular genre of music which is played at such establishments itself. It can also refer to the type of piano (a tack piano) used to play such music.",
+    "url": "https://en.wikipedia.org/wiki/Honky-tonk",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from June 2026"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from October 2025"
+    ]
+   },
+   "en_tr": {
+    "text": "A honky-tonk is a kind of bar where country music is played. It is also called a \"honkatonk\" or just a \"tonk\".",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%9B%E3%83%B3%E3%82%AD%E3%83%BC%E3%83%88%E3%83%B3%E3%82%AF"
    }
   },
   "House": {
@@ -1979,6 +2360,33 @@
     "url": "https://en.wikipedia.org/wiki/Jungle_music"
    }
   },
+  "K-POP": {
+   "ja": {
+    "title": "K-POP",
+    "text": "K-POP（ケーポップ、韓: 케이팝）は、ダンスミュージックを中心とした韓国のポピュラー音楽の通称である。",
+    "url": "https://ja.wikipedia.org/wiki/K-POP",
+    "doubt": [
+     "独自研究の除去が必要な記事/2025年1月"
+    ]
+   },
+   "en": {
+    "title": "K-pop",
+    "text": "K-pop (Korean: 케이팝; RR: Keipap; an abbreviation of \"Korean popular music\") is a form of popular music originating in South Korea. The music genre that the term is used to refer to colloquially emerged in the 1990s as a form of youth subculture, with Korean musicians influenced by Western dance music, hip-hop, R&B and rock.",
+    "url": "https://en.wikipedia.org/wiki/K-pop",
+    "doubt": [
+     "All articles lacking reliable references",
+     "Articles lacking reliable references from March 2013",
+     "Articles lacking reliable references from March 2021",
+     "Articles lacking reliable references from November 2024"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from August 2018",
+     "Articles with unsourced statements from August 2023",
+     "Articles with unsourced statements from January 2019"
+    ]
+   }
+  },
   "Krautrock": {
    "ja": {
     "title": "クラウトロック",
@@ -2040,6 +2448,17 @@
     "url": "https://en.wikipedia.org/wiki/Latin_music"
    }
   },
+  "Latin Trap": {
+   "en": {
+    "title": "Latin trap",
+    "text": "Latin trap is a subgenre of Latin hip hop music that originated in Puerto Rico. A direct descendant of southern hip hop and trap, and influenced by reggaeton, R&B and urbano music.",
+    "url": "https://en.wikipedia.org/wiki/Latin_trap"
+   },
+   "ja_tr": {
+    "text": "ラテン・トラップは、プエルトリコで生まれたラテン・ヒップホップの下位ジャンル。サザン・ヒップホップとトラップの直系にあたり、レゲトン、R&B、ウルバーノ音楽の影響を受けている。",
+    "url": "https://en.wikipedia.org/wiki/Latin_trap"
+   }
+  },
   "Liquid Drum & Bass": {
    "en": {
     "title": "Liquid funk",
@@ -2070,6 +2489,22 @@
    "ja_tr": {
     "text": "ローファイ・ヒップホップ（チルホップとも）は、ヒップホップのビートにチルアウトの要素を合わせたローファイ音楽のスタイル。ローファイ（lofi、lo-fiとも書き、「ロー・フィデリティ」を縮めた言葉）は、このスタイルによく見られる、磨きすぎない音作りのこと。",
     "url": "https://en.wikipedia.org/wiki/Lo-fi_hip_hop"
+   }
+  },
+  "Lovers Rock": {
+   "ja": {
+    "title": "ラヴァーズ・ロック",
+    "text": "ラヴァーズ・ロック（Lovers rock）は、レゲエのサブジャンルの一種。歌詞の主題は主に恋愛やロマンスであり、甘い質感のあるサウンドを特色とする。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%A9%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%BA%E3%83%BB%E3%83%AD%E3%83%83%E3%82%AF"
+   },
+   "en": {
+    "title": "Lovers rock",
+    "text": "Lovers rock is a style of reggae music noted for its romantic sound and content. While love songs had been an important part of reggae since the late 1960s, the style was given a greater focus and a name in London in the mid-1970s.",
+    "url": "https://en.wikipedia.org/wiki/Lovers_rock",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from May 2024"
+    ]
    }
   },
   "M-Base": {
@@ -2103,6 +2538,17 @@
    "ja_tr": {
     "text": "モールソフト（モールウェーブとも）は、ショッピングモールを題材にしたヴェイパーウェイヴの一分野。",
     "url": "https://en.wikipedia.org/wiki/Mallsoft"
+   }
+  },
+  "Mambo": {
+   "en": {
+    "title": "Mambo (music)",
+    "text": "Mambo is a genre of Cuban dance music pioneered by the charanga Arcaño y sus Maravillas in the late 1930s and later popularized in the big band style by Pérez Prado. It originated as a syncopated form of the danzón, known as danzón-mambo, with a final, improvised section, which incorporated the guajeos typical of son cubano (also known as montunos).",
+    "url": "https://en.wikipedia.org/wiki/Mambo_%28music%29"
+   },
+   "ja_tr": {
+    "text": "マンボは、1930年代後半にチャランガ楽団のアルカーニョ・イ・スス・マラビージャスが切り開き、のちにペレス・プラードがビッグバンドの形で広めた、キューバのダンス音楽のジャンル。ダンソンをシンコペーションさせた形（ダンソン・マンボ）として生まれ、最後に即興の部分があり、そこにソン・クバーノに典型的なグアヘオ（モントゥーノとも）を取り入れていた。",
+    "url": "https://en.wikipedia.org/wiki/Mambo_%28music%29"
    }
   },
   "Memphis Rap": {
@@ -2182,6 +2628,25 @@
     "url": "https://en.wikipedia.org/wiki/Modal_jazz"
    }
   },
+  "Moombahton": {
+   "ja": {
+    "title": "ムーンバートン",
+    "text": "ムーンバートン (Moombahton) は、エレクトロニック・ダンス・ミュージックの一種である。主にチョップド・アンド・スクリュードの手法を使用している。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%A0%E3%83%BC%E3%83%B3%E3%83%90%E3%83%BC%E3%83%88%E3%83%B3",
+    "doubt": [
+     "独自研究の除去が必要な記事/2011年7月-9月"
+    ]
+   },
+   "en": {
+    "title": "Moombahton",
+    "text": "Moombahton (, MOOM-bə-ton) is an electronic dance music genre, derived from house music and reggaeton, that was created by American DJ and producer Dave Nada in Washington, D.C., in 2009. Nada coined the name as a portmanteau of \"Moombah\" (a track by Surinamese house DJ Chuckie and Dutch producer/DJ Silvio Ecomo) and reggaeton (itself a neologism combining reggae with the Spanish suffix -ton, signifying big).",
+    "url": "https://en.wikipedia.org/wiki/Moombahton"
+   },
+   "ja_tr": {
+    "text": "ムーンバートンは、2009年にワシントンD.C.で、アメリカのDJ・プロデューサーのデイヴ・ナダが生み出した、ハウスとレゲトンから派生した電子ダンス音楽のジャンル。名前はナダが、「Moombah」（スリナム出身のハウスDJのチャッキーと、オランダのプロデューサー・DJのシルヴィオ・エコモの曲）とレゲトン（それ自体、レゲエに「大きい」を表すスペイン語の接尾辞-tonを付けた造語）を組み合わせて作った。",
+    "url": "https://en.wikipedia.org/wiki/Moombahton"
+   }
+  },
   "Musique Concrète": {
    "ja": {
     "title": "ミュジーク・コンクレート",
@@ -2203,6 +2668,18 @@
    "ja_tr": {
     "text": "ミュジーク・コンクレート（フランス語で「具体音楽」）は、録音した音を素材にする作曲の方法。音は信号処理やテープ音楽の技法で加工されることが多く、音のコラージュのように組み立てられることもある。",
     "url": "https://en.wikipedia.org/wiki/Musique_concr%C3%A8te"
+   }
+  },
+  "NWOBHM": {
+   "ja": {
+    "title": "NWOBHM",
+    "text": "NWOBHM（ニュー・ウェイヴ・オブ・ブリティッシュ・ヘヴィメタル、New Wave Of British Heavy Metal）は、1970年代後半のイギリスで勃発した音楽ムーブメントのことである。\"N.W.O.B.H.M.\"と表記されることもある。",
+    "url": "https://ja.wikipedia.org/wiki/NWOBHM"
+   },
+   "en": {
+    "title": "New wave of British heavy metal",
+    "text": "The new wave of British heavy metal (often abbreviated as NWOBHM) was a nationwide musical movement that began in England in the mid-1970s and achieved international attention by the early 1980s. Editor Alan Lewis coined the term for an article by Geoff Barton in a May 1979 issue of the British music newspaper Sounds to describe the emergence of heavy metal bands in the mid-to-late 1970s, as punk rock declined amid the dominance of new wave music.",
+    "url": "https://en.wikipedia.org/wiki/New_wave_of_British_heavy_metal"
    }
   },
   "Neo Soul": {
@@ -2283,6 +2760,21 @@
     "url": "https://en.wikipedia.org/wiki/New_beat"
    }
   },
+  "New Jack Swing": {
+   "ja": {
+    "title": "ニュージャックスウィング",
+    "text": "ニュージャックスウィング (New jack swing, NJS) とは、1980年代中盤にアメリカ合衆国で発生し、1980年代後半から1990年代前半にかけて流行した音楽スタイル。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%83%E3%82%AF%E3%82%B9%E3%82%A6%E3%82%A3%E3%83%B3%E3%82%B0",
+    "part": [
+     "出典を必要とする記述のある記事/2026年6月"
+    ]
+   },
+   "en": {
+    "title": "New jack swing",
+    "text": "New jack swing, new jack, or swingbeat is a fusion genre of the rhythms and production techniques of hip-hop and dance-pop, and the urban contemporary sound of R&B. Spearheaded by producers Teddy Riley, Bernard Belle, Jimmy Jam and Terry Lewis, and Dallas Austin, new jack swing was most popular from the late 1980s to early 1990s. New jack swing can be defined as \"pop music usually performed by black musicians that combines elements of jazz, funk, rap, and rhythm and blues.\" New jack swing producers created synthesized tunes and sampled beats, using digital synthesizers (such as the Yamaha DX7 and Roland D50), drum machines (such as the Roland TR-808 and LinnDrum, and frequently the Roland R-8) and samplers (such as the SP-1200 and Akai samplers), to lay an \"insistent beat under light melody lines and clearly enunciated vocals.\" The TR-808 in particular was sampled to create distinctive, syncopated, swung rhythms, with its snare sound being especially prominent.",
+    "url": "https://en.wikipedia.org/wiki/New_jack_swing"
+   }
+  },
   "New Wave": {
    "ja": {
     "title": "ニュー・ウェイヴ (音楽)",
@@ -2354,6 +2846,77 @@
     "url": "https://en.wikipedia.org/wiki/Noise_music"
    }
   },
+  "Old-school Hip Hop": {
+   "ja": {
+    "title": "オールドスクール・ヒップホップ",
+    "text": "オールドスクール・ヒップホップ(Old Skool Hip Hop)とは、ヒップホップ黎明期のラップを指す音楽用語である。エンジョイ・レコードやシュガーヒル・レコードなどのラッパー、DJらが代表的な存在。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%BC%E3%83%AB%E3%83%89%E3%82%B9%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%BB%E3%83%92%E3%83%83%E3%83%97%E3%83%9B%E3%83%83%E3%83%97"
+   },
+   "en": {
+    "title": "Old-school hip hop",
+    "text": "Old-school hip-hop, stylized as old school (originally known as disco-rap) is the earliest commercially recorded hip-hop music and the original style of the genre. It typically refers to the music created around 1973 to 1983, as well as any hip-hop that does not adhere to contemporary styles.",
+    "url": "https://en.wikipedia.org/wiki/Old-school_hip_hop",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from July 2025",
+     "Articles with unsourced statements from March 2026"
+    ]
+   }
+  },
+  "Opera": {
+   "ja": {
+    "title": "オペラ",
+    "text": "オペラ（イタリア語: opera、英語: opera、フランス語: opéra、ドイツ語: Oper）は、演劇と音楽によって構成される舞台芸術である。日本では歌劇（かげき）と呼ばれることもあるが、この語はより幅広い、歌唱を中心にした劇の総称としても用いられている。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%9A%E3%83%A9"
+   },
+   "en": {
+    "title": "Opera",
+    "text": "Opera is a form of Western theatre in which music is a fundamental component and dramatic roles are taken by singers. Such a \"work\" (the literal translation of the Italian word \"opera\") is typically a collaboration between a composer and a librettist and incorporates a number of the performing arts, such as acting, scenery, costume, and sometimes dance or ballet.",
+    "url": "https://en.wikipedia.org/wiki/Opera",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from October 2026"
+    ]
+   }
+  },
+  "Operetta": {
+   "ja": {
+    "title": "オペレッタ",
+    "text": "オペレッタ（伊: Operetta, 仏: Opérette オペレト, 独: Operette オペレテ）は、台詞と踊りのある歌劇。日本では、喜歌劇（きかげき）・軽歌劇（けいかげき）とも呼ばれる。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%9A%E3%83%AC%E3%83%83%E3%82%BF",
+    "doubt": [
+     "出典を必要とする記事/2018年10月"
+    ]
+   },
+   "en": {
+    "title": "Operetta",
+    "text": "Operetta is a form of theatre and a genre of light opera. It includes spoken dialogue, songs, and dances.",
+    "url": "https://en.wikipedia.org/wiki/Operetta"
+   },
+   "ja_tr": {
+    "text": "オペレッタは演劇の一形式で、軽いオペラのジャンル。台詞、歌、踊りを含む。",
+    "url": "https://en.wikipedia.org/wiki/Operetta"
+   }
+  },
+  "Philadelphia Soul": {
+   "ja": {
+    "title": "フィラデルフィア・ソウル",
+    "text": "フィラデルフィア・ソウル（英語: Philadelphia soul）は、1970年代前半に一世を風靡したフィラデルフィア発のソウルミュージック（ソウル）の一形態で、フィリー・ソウル（Philly soul）とも呼ばれる。 作品の大半がシグマ・スタジオで制作されたことから「シグマ・サウンド」とも言われる。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A3%E3%83%A9%E3%83%87%E3%83%AB%E3%83%95%E3%82%A3%E3%82%A2%E3%83%BB%E3%82%BD%E3%82%A6%E3%83%AB",
+    "doubt": [
+     "出典を必要とする記事/2024年10月"
+    ]
+   },
+   "en": {
+    "title": "Philadelphia soul",
+    "text": "Philadelphia soul, sometimes called Philly soul, the Philadelphia sound, Phillysound, or The Sound of Philadelphia (TSOP), is a genre of late 1960s–1970s soul music characterized by funk influences and lush string and horn arrangements. The genre laid the groundwork for the emergence of disco later in the 1970s by fusing the R&B rhythm sections of the 1960s with the pop vocal tradition, and featuring a more pronounced jazz influence in its melodic structures and arrangements.",
+    "url": "https://en.wikipedia.org/wiki/Philadelphia_soul"
+   },
+   "ja_tr": {
+    "text": "フィラデルフィア・ソウル（フィリー・ソウル、フィラデルフィア・サウンド、ザ・サウンド・オブ・フィラデルフィア（TSOP）とも）は、1960年代後半から1970年代のソウル音楽のジャンルで、ファンクの影響と、豊かな弦と管の編曲が特徴。1960年代のR&Bのリズム隊とポップの歌の伝統を合わせ、旋律や編曲にジャズの影響をより強く出すことで、1970年代後半のディスコの下地を作った。",
+    "url": "https://en.wikipedia.org/wiki/Philadelphia_soul"
+   }
+  },
   "Phonk": {
    "ja": {
     "title": "フォンク",
@@ -2364,6 +2927,61 @@
     "title": "Phonk",
     "text": "Phonk ( ) is a subgenre of hip hop that emerged in the early 2010s in the United States. The term was coined and popularized by American rapper and record producer SpaceGhostPurrp.",
     "url": "https://en.wikipedia.org/wiki/Phonk"
+   }
+  },
+  "Post-dubstep": {
+   "en": {
+    "title": "Post-dubstep",
+    "text": "Post-dubstep is an umbrella term applied to a range of musical styles that have been influenced by the sparse, syncopated rhythms and heavy sub-bass of the UK dubstep scene. The breadth of styles associated with the term post-dubstep precluded it from being a specific musical genre in the early 2010s.",
+    "url": "https://en.wikipedia.org/wiki/Post-dubstep",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from October 2011"
+    ]
+   },
+   "ja_tr": {
+    "text": "ポスト・ダブステップは、イギリスのダブステップのシーンの、すき間の多いシンコペーションしたリズムと重いサブベースに影響を受けた、さまざまな音楽のスタイルをまとめて呼ぶ言葉。含まれるスタイルの幅が広いため、2010年代初めには、ひとつの音楽ジャンルとはみなされなかった。",
+    "url": "https://en.wikipedia.org/wiki/Post-dubstep"
+   }
+  },
+  "Post-punk": {
+   "ja": {
+    "title": "ポストパンク",
+    "text": "ポストパンク（英: Post-punk）は、パンク・ロックのサブジャンル。1977年のパンク・ムーブメントを経て、パンクのDIY精神や生々しいサウンドに触発されつつも、セックス・ピストルズなどを単に模倣せずにロキシー・ミュージックやデヴィッド・ボウイ、ディスコ、ダブ、クラウトロックといった様々なアーティストやジャンルからの影響を受けた実験的な表現を試みるバンドが誕生した。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%9D%E3%82%B9%E3%83%88%E3%83%91%E3%83%B3%E3%82%AF"
+   },
+   "en": {
+    "title": "Post-punk",
+    "text": "Post-punk (or postpunk) is a loosely defined music genre and period that emerged in the late 1970s in the wake of punk rock. The concept was originally outlined by Jon Savage in his \"New Musick\" editorial for Sounds magazine in November 1977.",
+    "url": "https://en.wikipedia.org/wiki/Post-punk"
+   }
+  },
+  "Post-rock": {
+   "ja": {
+    "title": "ポストロック",
+    "text": "ポストロック (post-rock) は、ロックの一種。リズム・和音・音色・コード進行などの点で従来のロックには見られない特徴がある。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%9D%E3%82%B9%E3%83%88%E3%83%AD%E3%83%83%E3%82%AF"
+   },
+   "en": {
+    "title": "Post-rock",
+    "text": "Post-rock is a subgenre of experimental rock that emphasizes texture, atmosphere, and non-traditional song structures over conventional rock techniques. Post-rock acts can often combine rock instrumentation and stylings with unorthodox elements, such as patterns and minimal arrangements, or electronics and digital production, as a means of enabling the exploration of textures, timbres and different styles.",
+    "url": "https://en.wikipedia.org/wiki/Post-rock"
+   }
+  },
+  "Power Metal": {
+   "ja": {
+    "title": "パワーメタル",
+    "text": "パワーメタル (Power Metal)とは、ヘヴィメタルのジャンルの一つ。この記事では、現在パワーメタルと呼ばれているものとはやや別のアメリカン・パワーメタルについても記述する。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%AF%E3%83%BC%E3%83%A1%E3%82%BF%E3%83%AB"
+   },
+   "en": {
+    "title": "Power metal",
+    "text": "Power metal is a subgenre of heavy metal music combining characteristics of traditional heavy metal with speed metal. It developed along two main branches: a traditional branch that emerged in the early to mid-1980s (Manowar, Warlord, Helloween) characterized by mid-to-fast tempos, heavy and epic atmospheres and anthemic choruses; and a symphonic branch that emerged in the late 1990s (Rhapsody, Nightwish) which incorporates symphonic and orchestral elements and tends toward a lighter, more uplifting sound in contrast with the heaviness and dissonance prevalent in extreme metal.",
+    "url": "https://en.wikipedia.org/wiki/Power_metal",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from September 2024"
+    ]
    }
   },
   "Power Pop": {
@@ -2487,6 +3105,18 @@
     "url": "https://en.wikipedia.org/wiki/Punk_rock"
    }
   },
+  "Quiet Storm": {
+   "ja": {
+    "title": "クワイエット・ストーム",
+    "text": "クワイエット・ストーム （英: Quiet storm） は、コンテンポラリー・R&B、ジャズ・フュージョン、ポップ・ミュージックなどの影響を受けたソフト&メロウな曲調、スロー、もしくはミディアム・テンポ、リラックスしたリズムで特徴づけられる、ラジオ・フォーマットや音楽のジャンルである。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AF%E3%82%A4%E3%82%A8%E3%83%83%E3%83%88%E3%83%BB%E3%82%B9%E3%83%88%E3%83%BC%E3%83%A0"
+   },
+   "en": {
+    "title": "Quiet storm",
+    "text": "Quiet storm is a radio format and genre of R&B, performed in a smooth, romantic, jazz-influenced style. It was named after the title track of Smokey Robinson's 1975 album A Quiet Storm.",
+    "url": "https://en.wikipedia.org/wiki/Quiet_storm"
+   }
+  },
   "R&B": {
    "ja": {
     "title": "リズム・アンド・ブルース",
@@ -2514,6 +3144,56 @@
     "title": "Ragtime",
     "text": "Ragtime, also spelled rag-time or rag time, is a musical style noted for its syncopated or \"ragged\" rhythm. It originated in African American communities in the late 19th century and was propelled to popularity in the 1890s to 1910s by composers such as James Scott, Joseph Lamb, and particularly Scott Joplin.",
     "url": "https://en.wikipedia.org/wiki/Ragtime"
+   }
+  },
+  "Reggae": {
+   "ja": {
+    "title": "レゲエ",
+    "text": "レゲエ（英語: reggae、発音: [ˈrɛɡeɪ]、ジャマイカ・クレオール語:Rege）は、狭義においては1960年代後半ジャマイカで発祥し、1980年代前半まで流行したポピュラー音楽である。広義においてはジャマイカで成立したポピュラー音楽全般のことをいう。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%AC%E3%82%B2%E3%82%A8"
+   },
+   "en": {
+    "title": "Reggae",
+    "text": "Reggae ( ) is a music genre that originated in Jamaica in the late 1960s. The term also refers to the modern popular music of Jamaica and its diaspora.",
+    "url": "https://en.wikipedia.org/wiki/Reggae",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from April 2018"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from June 2019",
+     "Articles with unsourced statements from May 2014"
+    ]
+   },
+   "en_tr": {
+    "text": "Reggae, in the narrow sense, is popular music that began in Jamaica in the late 1960s and was popular until the early 1980s. In the broad sense, it means all popular music formed in Jamaica.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%AC%E3%82%B2%E3%82%A8"
+   }
+  },
+  "Reggaeton": {
+   "ja": {
+    "title": "レゲトン",
+    "text": "レゲトン（スペイン語: Reguetón、英語: Reggaeton）は、スペイン語のダンスホールレゲエ。1980年代半ばから後半にかけてパナマで出現した音楽。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%AC%E3%82%B2%E3%83%88%E3%83%B3",
+    "doubt": [
+     "出典を必要とする記事/2022年1月"
+    ]
+   },
+   "en": {
+    "title": "Reggaeton",
+    "text": "Reggaeton (UK: , US: ) is a style of popular dance music that arose from the Spanish reggae of Panama during the late 1980s. It has been popularized and dominated by artists from Puerto Rico since the early 1990s.",
+    "url": "https://en.wikipedia.org/wiki/Reggaeton",
+    "doubt": [
+     "All articles lacking reliable references",
+     "All articles needing additional references",
+     "Articles lacking reliable references from December 2018",
+     "Articles needing additional references from February 2026"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from February 2026"
+    ]
    }
   },
   "Rock": {
@@ -2559,6 +3239,59 @@
     "url": "https://en.wikipedia.org/wiki/Rock_and_roll"
    }
   },
+  "Rockabilly": {
+   "ja": {
+    "title": "ロカビリー",
+    "text": "ロカビリー（rockabilly）は、1950年代に誕生したポピュラー音楽の一ジャンル。ロッカビリー（Rock-A-Billy）とも呼ばれた。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%AD%E3%82%AB%E3%83%93%E3%83%AA%E3%83%BC"
+   },
+   "en": {
+    "title": "Rockabilly",
+    "text": "Rockabilly is one of the earliest styles of rock and roll music. It dates back to the early 1950s in the United States, especially the South.",
+    "url": "https://en.wikipedia.org/wiki/Rockabilly",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from January 2013",
+     "Articles with unsourced statements from January 2014",
+     "Articles with unsourced statements from July 2010",
+     "Articles with unsourced statements from July 2021",
+     "Articles with unsourced statements from July 2026",
+     "Articles with unsourced statements from June 2021"
+    ]
+   }
+  },
+  "Rocksteady": {
+   "ja": {
+    "title": "ロックステディ",
+    "text": "ロックステディ（rocksteady）は、1966年から1968年の間にジャマイカで流行したポピュラー音楽の一種。スカとレゲエの中間の時代に流行した。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%AD%E3%83%83%E3%82%AF%E3%82%B9%E3%83%86%E3%83%87%E3%82%A3"
+   },
+   "en": {
+    "title": "Rocksteady",
+    "text": "Rocksteady is a music genre that originated in Jamaica around 1966. A successor of ska and a precursor to reggae, rocksteady was the dominant style of music in Jamaica for nearly two years, performed by many of the artists who helped establish reggae, including harmony groups such as the Techniques, the Paragons, the Heptones and the Gaylads; soulful singers such as Alton Ellis, Delroy Wilson, Bob Andy, Ken Boothe and Phyllis Dillon; musicians such as Jackie Mittoo, Lynn Taitt and Tommy McCook.",
+    "url": "https://en.wikipedia.org/wiki/Rocksteady",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from May 2010"
+    ]
+   },
+   "en_tr": {
+    "text": "Rocksteady is a kind of popular music that was popular in Jamaica from 1966 to 1968, between the eras of ska and reggae.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%AD%E3%83%83%E3%82%AF%E3%82%B9%E3%83%86%E3%83%87%E3%82%A3"
+   }
+  },
+  "Roots Reggae": {
+   "ja": {
+    "title": "ルーツロックレゲエ",
+    "text": "ルーツロックレゲエ（ルーツ・レゲエ、あるいは単にルーツとも呼ぶ）という言葉は、ジャマイカでスカとロックステディから発展したレゲエの1ジャンルである。ボブ・マーリーによってその用語が世界的に有名になった。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%AB%E3%83%BC%E3%83%84%E3%83%AD%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B2%E3%82%A8"
+   },
+   "en": {
+    "title": "Roots reggae",
+    "text": "Roots reggae is a subgenre of reggae that deals with the everyday lives and aspirations of Africans and those in the African Diaspora, including the spiritual side of Rastafari, black liberation, revolution and the honouring of God, called Jah by Rastafarians. It is identified with the life of the ghetto sufferer, and the rural poor.",
+    "url": "https://en.wikipedia.org/wiki/Roots_reggae"
+   }
+  },
   "Salsa": {
    "ja": {
     "title": "サルサ (音楽)",
@@ -2573,6 +3306,49 @@
      "All articles with unsourced statements",
      "Articles with unsourced statements from April 2021"
     ]
+   }
+  },
+  "Samba": {
+   "ja": {
+    "title": "サンバ (ブラジル)",
+    "text": "サンバ（Samba）は、ブラジルの代表的な音楽（ブラジル音楽）の一つである。アフリカ人奴隷が持ち込んだ文化にルーツを持ち、音楽のみならずダンスなどを含んだ複合的なブラジルの大衆文化であり、ブラジルの国民文化として知られる。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%B3%E3%83%90_%28%E3%83%96%E3%83%A9%E3%82%B8%E3%83%AB%29"
+   },
+   "en": {
+    "title": "Samba",
+    "text": "Samba (Portuguese pronunciation: [ˈsɐ̃bɐ] ) is a broad term for many of the rhythms that compose the better known Brazilian music genres that originated in the Afro-Brazilian communities of Bahia in the late 19th century and early 20th century. It is a name or prefix used for several rhythmic variants, such as samba urbano carioca (urban Carioca samba), samba de roda (sometimes also called rural samba), among many other forms of samba, mostly originated in the Rio de Janeiro and Bahia states.",
+    "url": "https://en.wikipedia.org/wiki/Samba"
+   }
+  },
+  "Schlager": {
+   "ja": {
+    "title": "シュラーガー音楽",
+    "text": "シュラーガー音楽（シュラーガーおんがく、ドイツ語: Schlagermusik、ドイツ語: [ˈʃlaːɡɐ]）は、キャッチーなメロディや歌詞を持つヨーロッパにおけるポピュラー音楽の一種である。特にドイツなどの中央ヨーロッパや北ヨーロッパ、南東ヨーロッパで流行している。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%A5%E3%83%A9%E3%83%BC%E3%82%AC%E3%83%BC%E9%9F%B3%E6%A5%BD"
+   },
+   "en": {
+    "title": "Schlager music",
+    "text": "Schlager (German: [ˈʃlaːɡɐ], \"hit(s)\") is a style of European popular music generally defined by catchy instrumental accompaniments to vocal pieces of pop music with simple, easygoing, and often sentimental lyrics. Schlager tracks are typically light pop tunes or sweet, sentimental ballads with simple, catchy melodies.",
+    "url": "https://en.wikipedia.org/wiki/Schlager_music",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from May 2025"
+    ]
+   },
+   "en_tr": {
+    "text": "Schlager music (Schlagermusik) is a kind of European popular music with catchy melodies and lyrics. It is popular especially in Central Europe, such as Germany, and in Northern and Southeast Europe.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%A5%E3%83%A9%E3%83%BC%E3%82%AC%E3%83%BC%E9%9F%B3%E6%A5%BD"
+   }
+  },
+  "Sertanejo": {
+   "en": {
+    "title": "Sertanejo music",
+    "text": "Sertanejo music (Brazilian Portuguese pronunciation: [seʁ.taˈne.ʒu]) is a term used to refer to a musical style of Brazil. For some, it is the folk music of São Paulo, which emerged during the Brazilian colonial period, and popularized in the 1920s, while others argue that it is a variation or urbanization of Caipira music, which is integrated into Caipira culture.",
+    "url": "https://en.wikipedia.org/wiki/Sertanejo_music"
+   },
+   "ja_tr": {
+    "text": "セルタネージョは、ブラジルの音楽のスタイルを指す言葉。サンパウロの民俗音楽で、ブラジルの植民地時代に生まれて1920年代に広まったとする人もいれば、カイピラ文化に含まれるカイピラ音楽が変化し、都市化したものだとする人もいる。",
+    "url": "https://en.wikipedia.org/wiki/Sertanejo_music"
    }
   },
   "Shangaan Electro": {
@@ -2597,7 +3373,7 @@
    },
    "en": {
     "title": "Shoegaze",
-    "text": "Shoegaze (originally shoegazing and also known as dream rock) is a subgenre of indie and alternative rock characterised by ethereal soundscapes, obscured vocals, and extensive use of guitar effects and distortion. Rooted in Phil Spector's Wall of Sound, the Velvet Underground, and psychedelic pop of the 1960s, the genre originated in the late 1980s and early 1990s mainly among British acts who based their sound on groups such as Cocteau Twins, the Jesus and Mary Chain, and My Bloody Valentine.",
+    "text": "Shoegaze (originally shoegazing and also known as dream rock) is a subgenre of indie and alternative rock characterised by ethereal soundscapes, obscured vocals, and extensive use of guitar effects and distortion. Rooted in Phil Spector's Wall of Sound, the Velvet Underground, and psychedelic pop of the 1960s, the genre originated in the late 1980s and early 1990s mainly among acts who based their sound on Scottish bands Cocteau Twins and the Jesus and Mary Chain and Irish band My Bloody Valentine.",
     "url": "https://en.wikipedia.org/wiki/Shoegaze",
     "part": [
      "All articles with unsourced statements",
@@ -2635,6 +3411,22 @@
     "text": "Singeli is very fast dance music, at around 180–300 BPM, that spread from street parties in Dar es Salaam, Tanzania. It draws on Zaramo rhythms, mchiriku (played on Casio keyboards) and taarab, and became known abroad with Nyege Nyege Tapes' 2017 compilation Sounds of Sisso.",
     "url": "https://pan-african-music.com/en/singeli-the-future-sound-of-tanzania/",
     "ref": "Pan African Music, “Singeli, the future sound of Tanzania”"
+   }
+  },
+  "Ska": {
+   "ja": {
+    "title": "スカ",
+    "text": "スカ（Ska）は、1950年代にジャマイカで発祥したポピュラー音楽のジャンル。オフビートを強調したリズムが特徴。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%AB"
+   },
+   "en": {
+    "title": "Ska",
+    "text": "Ska (; Jamaican Patois: skia, [skjæ]) is a music genre that originated in Jamaica in the late 1950s and was the precursor to rocksteady and reggae. It combined elements of Caribbean mento (sometimes referred to as calypso) with American jazz and rhythm and blues.",
+    "url": "https://en.wikipedia.org/wiki/Ska",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from November 2023"
+    ]
    }
   },
   "Smooth Jazz": {
@@ -2706,6 +3498,18 @@
     "title": "Soul jazz",
     "text": "Soul jazz or funky jazz is a subgenre of jazz that incorporates strong influences from hard bop, blues, soul, gospel and rhythm and blues. Soul jazz is often characterized by organ trios featuring the Hammond organs and small combos including saxophones, brass instruments, electric guitars, double basses, bass guitars, drums, pianos, vocals and electric organs.",
     "url": "https://en.wikipedia.org/wiki/Soul_jazz"
+   }
+  },
+  "Southern Soul": {
+   "ja": {
+    "title": "ディープ・ソウル",
+    "text": "ディープ・ソウル (Deep Soul) とは、米国黒人のソウル・ミュージックの中でも南部を中心とした、ブルースやゴスペルを融合した音楽ジャンルのことである。南部ソウルの場合、カントリーからの影響も指摘されている。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%BB%E3%82%BD%E3%82%A6%E3%83%AB"
+   },
+   "en": {
+    "title": "Southern soul",
+    "text": "Southern soul or country soul is a type of soul and country music that emerged from the Southern United States. The music originated from a combination of styles, including blues (both 12 bar and jump), country, early R&B, and a strong gospel influence that emanated from the sounds of Southern black churches.",
+    "url": "https://en.wikipedia.org/wiki/Southern_soul"
    }
   },
   "Speed Garage": {
@@ -2788,7 +3592,7 @@
    },
    "en": {
     "title": "Swing music",
-    "text": "Swing music is a style of jazz that developed in the United States during the late 1920s and early 1930s. It became nationally popular from the mid-1930s.",
+    "text": "Swing music is a style of jazz that developed in the United States during the late 1920s and early 1930s before gaining widespread popularity in the mid-1930s. It represents the most famous era of jazz as a genre of entertainment, before the emergence of modern jazz.",
     "url": "https://en.wikipedia.org/wiki/Swing_music",
     "doubt": [
      "All articles needing additional references",
@@ -2854,6 +3658,22 @@
     "url": "https://en.wikipedia.org/wiki/Synthwave"
    }
   },
+  "Tango": {
+   "en": {
+    "title": "Tango music",
+    "text": "Tango ( or ; Spanish pronunciation: [ˈtaŋgo]) is a style of music in 24 or 44 time that originated in Argentina and Uruguay among European immigrants in the late 19th and early 20th centuries. It has mainly Spanish, Italian, Gaucho, African, and French cultural roots.",
+    "url": "https://en.wikipedia.org/wiki/Tango_music",
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from December 2020",
+     "Articles with unsourced statements from January 2021"
+    ]
+   },
+   "ja_tr": {
+    "text": "タンゴは、19世紀後半から20世紀初めに、アルゼンチンとウルグアイのヨーロッパからの移民のあいだで生まれた、2/4拍子または4/4拍子の音楽のスタイル。主にスペイン、イタリア、ガウチョ、アフリカ、フランスの文化に根を持つ。",
+    "url": "https://en.wikipedia.org/wiki/Tango_music"
+   }
+  },
   "Tech House": {
    "ja": {
     "title": "テックハウス",
@@ -2910,6 +3730,37 @@
     "url": "https://en.wikipedia.org/wiki/Techstep"
    }
   },
+  "Thrash Metal": {
+   "ja": {
+    "title": "スラッシュメタル",
+    "text": "スラッシュメタル (thrash metal) は、音楽のジャンルの一つ。従来のヘヴィメタルにハードコアの過激さを加えた音楽形態を指す。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%83%A1%E3%82%BF%E3%83%AB"
+   },
+   "en": {
+    "title": "Thrash metal",
+    "text": "Thrash metal (or simply thrash) is an extreme subgenre of heavy metal music characterized by its overall aggression and fast tempo. The songs usually use fast percussive beats and low-register guitar riffs, overlaid with shredding-style lead guitar work.",
+    "url": "https://en.wikipedia.org/wiki/Thrash_metal",
+    "doubt": [
+     "All articles lacking reliable references",
+     "All articles needing additional references",
+     "All articles that may contain original research",
+     "Articles lacking reliable references from March 2016",
+     "Articles lacking reliable references from September 2026",
+     "Articles needing additional references from February 2026",
+     "Articles that may contain original research from February 2026"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from April 2026",
+     "Articles with unsourced statements from February 2026",
+     "Articles with unsourced statements from September 2026"
+    ]
+   },
+   "en_tr": {
+    "text": "Thrash metal is a music genre. It adds the extremity of hardcore to traditional heavy metal.",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%83%A1%E3%82%BF%E3%83%AB"
+   }
+  },
   "Trance": {
    "ja": {
     "title": "トランス (音楽)",
@@ -2953,6 +3804,25 @@
     ]
    }
   },
+  "Trip Hop": {
+   "ja": {
+    "title": "トリップ・ホップ",
+    "text": "トリップ・ホップ (trip hop) は、音楽のジャンル。ヒップホップから影響を受け発展した音楽で、イギリスのブリストルが発祥地と言われる音楽であることから、ブリストル・サウンド (Bristol sound)とも呼ばれる。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%AA%E3%83%83%E3%83%97%E3%83%BB%E3%83%9B%E3%83%83%E3%83%97",
+    "doubt": [
+     "出典を必要とする記事/2026年10月"
+    ]
+   },
+   "en": {
+    "title": "Trip hop",
+    "text": "Trip hop is a music genre defined as a psychedelic fusion of hip-hop and electronica with slow tempos and an atmospheric sound. The style emerged as a more experimental variant of breakbeat from the Bristol sound scene of the late 1980s and early 1990s, incorporating influences from jazz, soul, funk, dub, rap, as well as sampling from movie soundtracks and other eclectic sources.",
+    "url": "https://en.wikipedia.org/wiki/Trip_hop"
+   },
+   "ja_tr": {
+    "text": "トリップホップは、ヒップホップとエレクトロニカをサイケデリックに融合させた、テンポが遅く空気感のある音楽ジャンル。1980年代後半から1990年代初めのブリストル・サウンドのシーンから、より実験的なブレイクビートとして生まれ、ジャズ、ソウル、ファンク、ダブ、ラップの影響や、映画のサウンドトラックなどさまざまなところからのサンプリングを取り入れている。",
+    "url": "https://en.wikipedia.org/wiki/Trip_hop"
+   }
+  },
   "Twee Pop": {
    "en": {
     "title": "Twee pop",
@@ -2962,6 +3832,22 @@
    "ja_tr": {
     "text": "トゥイー・ポップは、1980年代半ばから後半にイギリスで生まれた、インディー・ポップの一分野。「やりすぎなほど、あるいは気取ったほどに古風で、かわいらしく、感傷的」と言われることがあり、NMEのカセットのコンピ『C86』をきっかけに広く知られるようになった。AllMusicは、トゥイーを「素朴さと無垢さ」とし、男女のハーモニー、恋に悩む歌詞、耳に残る旋律、飾らない演奏を挙げている。",
     "url": "https://en.wikipedia.org/wiki/Twee_pop"
+   }
+  },
+  "UK Funky": {
+   "en": {
+    "title": "UK funky",
+    "text": "UK funky (sometimes known as UKF or funky) is a genre of electronic dance music which originated in England that is heavily influenced by soca, soulful house, tribal house, funky house, UK garage, broken beat and grime. Typically, UK funky blends beats, bass loops and synths with African and Latin percussion in the dembow rhythm with contemporary R&B-style vocals.",
+    "url": "https://en.wikipedia.org/wiki/UK_funky",
+    "doubt": [
+     "All articles needing additional references",
+     "Articles needing additional references from April 2010"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from June 2012",
+     "Articles with unsourced statements from March 2017"
+    ]
    }
   },
   "UK Garage": {
@@ -3034,6 +3920,41 @@
     "title": "West Coast jazz",
     "text": "West Coast jazz refers to styles of jazz that developed in the American West Coast cities of Los Angeles and San Francisco during the 1950s. West Coast jazz is often seen as a subgenre of cool jazz, which consisted of a calmer style than bebop or hard bop.",
     "url": "https://en.wikipedia.org/wiki/West_Coast_jazz"
+   }
+  },
+  "Yé-yé": {
+   "en": {
+    "title": "Yé-yé",
+    "text": "Yé-yé (French: [jeje] ) or yeyé (Spanish: [ɟʝeˈʝe]) was a style of pop music that emerged in Western and Southern Europe in the early 1960s. The French term yé-yé was derived from the English \"yeah!",
+    "url": "https://en.wikipedia.org/wiki/Y%C3%A9-y%C3%A9",
+    "doubt": [
+     "All articles that may contain original research",
+     "Articles that may contain original research from February 2015"
+    ],
+    "part": [
+     "All articles with unsourced statements",
+     "Articles with unsourced statements from March 2025"
+    ]
+   }
+  },
+  "アニソン": {
+   "ja": {
+    "title": "アニメソング",
+    "text": "アニメソングは、主にアニメ作品で使用される主題歌・挿入歌・イメージソングなどの歌曲、楽曲の総称。アニソンとも呼ばれる。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%8B%E3%83%A1%E3%82%BD%E3%83%B3%E3%82%B0",
+    "doubt": [
+     "出典を必要とする記事/2007年7月-12月",
+     "独自研究の除去が必要な記事/2011年1月-3月"
+    ]
+   },
+   "en": {
+    "title": "Anime song",
+    "text": "Anime song (Japanese: アニメソング, Hepburn: anime songu; also shortened to anison (アニソン)) is a genre of music originating from Japanese pop music. Anime songs consist of theme, insert, and image songs for anime, manga, video game, and audio drama CD series, as well as any other song released primarily for the anime market, including music from Japanese voice actors.",
+    "url": "https://en.wikipedia.org/wiki/Anime_song",
+    "doubt": [
+     "All articles lacking reliable references",
+     "Articles lacking reliable references from November 2023"
+    ]
    }
   },
   "ゲーム音楽": {
@@ -3123,6 +4044,18 @@
      "Articles with unsourced statements from February 2019",
      "Articles with unsourced statements from June 2015"
     ]
+   }
+  },
+  "ヴィジュアル系": {
+   "ja": {
+    "title": "ヴィジュアル系",
+    "text": "ヴィジュアル系（ヴィジュアルけい）は、日本のロックバンドおよびミュージシャンの様式の一つ。bounce.comの出嶌孝次は、「特定のサウンドを示す言葉ではなく、化粧やファッション等の視覚表現により世界観や様式美を構築するもの」と定義している。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%B4%E3%82%A3%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB%E7%B3%BB"
+   },
+   "en": {
+    "title": "Visual kei",
+    "text": "Visual kei (Japanese: ヴィジュアル系 or ビジュアル系, Hepburn: Vijuaru kei or Bijuaru kei; lit. \"Visual Style\"), abbreviated v-kei (V系, bui kei), is a subculture and category of Japanese musicians that have a strong focus on extravagant stage costumes that originated in Japan during the early 1980s.",
+    "url": "https://en.wikipedia.org/wiki/Visual_kei"
    }
   },
   "十二音技法": {
@@ -3282,6 +4215,26 @@
     "url": "https://en.wikipedia.org/wiki/Shibuya-kei"
    }
   },
+  "演歌": {
+   "ja": {
+    "title": "演歌",
+    "text": "演歌（えんか）は、 明治時代の自由民権運動において政府批判を歌に託した演説歌の略。 1920年代に演歌師によって広められた流行歌。",
+    "url": "https://ja.wikipedia.org/wiki/%E6%BC%94%E6%AD%8C",
+    "doubt": [
+     "出典を必要とする記事/2023年6月",
+     "独自研究の除去が必要な記事/2023年6月"
+    ]
+   },
+   "en": {
+    "title": "Enka",
+    "text": "Enka (演歌) is a Japanese music genre. It is considered to resemble traditional Japanese music stylistically.",
+    "url": "https://en.wikipedia.org/wiki/Enka"
+   },
+   "ja_tr": {
+    "text": "演歌は日本の音楽ジャンル。スタイルの面で、日本の伝統的な音楽に似ているとされる。",
+    "url": "https://en.wikipedia.org/wiki/Enka"
+   }
+  },
   "無調音楽": {
    "ja": {
     "title": "無調",
@@ -3408,7 +4361,7 @@
    },
    "en": {
     "title": "Noh",
-    "text": "Noh (能, Nō; Japanese pronunciation: [no(ꜜ)ː], Sino-Japanese for \"ability\") is a major form of classical Japanese dance-drama that has been performed since the 14th century. It is Japan's oldest major theater art that is still regularly performed today.",
+    "text": "Noh (能, Nō; Japanese pronunciation: [nó̞ò̞, nò̞ó̞, nó̞ó̞], Sino-Japanese for \"ability\") is a major form of classical Japanese dance-drama that has been performed since the 14th century. It is Japan's oldest major theater art that is still regularly performed today.",
     "url": "https://en.wikipedia.org/wiki/Noh"
    }
   },
@@ -3433,6 +4386,18 @@
     "title": "Gagaku",
     "text": "Gagaku (雅楽, lit. \"elegant music\") is a type of Japanese classical music that was historically used for imperial court music and dances.",
     "url": "https://en.wikipedia.org/wiki/Gagaku"
+   }
+  },
+  "電波ソング": {
+   "ja": {
+    "title": "萌えソング",
+    "text": "萌えソング（もえソング、萌え歌、萌える曲）は、歌に要素として萌えが含まれ、かつ歌手や作曲者・演奏者などでなく「萌えるか否か」のみが主題となる曲のことである。多くが電波ソングと同じ特徴を備え、共に言及されることが多く、両者の間に明確な境はない。",
+    "url": "https://ja.wikipedia.org/wiki/%E8%90%8C%E3%81%88%E3%82%BD%E3%83%B3%E3%82%B0"
+   },
+   "en": {
+    "title": "Denpa song",
+    "text": "A denpa song (電波ソング) is a type of Japanese music that is intentionally strange and catchy. Common features of denpa songs include intentionally off-key vocals, nonsensical lyrics, and an over-the-top tune.",
+    "url": "https://en.wikipedia.org/wiki/Denpa_song"
    }
   },
   "音MAD": {
