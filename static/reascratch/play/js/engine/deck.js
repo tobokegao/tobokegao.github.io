@@ -450,7 +450,11 @@ export class Deck {
   }
 
   // ---- transport (L1615-L1631, L1938-L1965) ----
-  playOn(on) { this.playing = on ? 1 : 0; this.spinOn = 0; this.runAt(on ? this.te1x() : 0); }
+  // ((⚪218) started some other way: a quantized PLAY still waiting is done with; stopped some other way: so is a PAUSE)
+  playOn(on) {
+    this.playing = on ? 1 : 0; this.spinOn = 0; this.runAt(on ? this.te1x() : 0);
+    if (on) this.pqWait = 0; else { this.pzWait = 0; this.pzCnt = 0; }
+  }
   spinTo(on, a) {
     if (a > 0 && !this.tch && !this.seek && this.len > 0) {
       this.playing = on ? 1 : 0;
@@ -513,7 +517,9 @@ export class Deck {
       this.cuePrev = 0;
     } else if (this.len > 0) {
       if (Math.abs(this.head - this.cue * this.fsr) > 0.002 * this.fsr) { this.cue = this.head / this.fsr; this.lpCalc(); }
-      this.cuePrev = 1; this.cueKeep = 0; this.playOn(1);
+      this.cuePrev = 1; this.cueKeep = 0;
+      if (this.syncOn) this.syncBeat();   // ((⚪218) with SYNC the preview starts on the other deck's beat, as PLAY does)
+      this.playOn(1);
     }
   }
   cueRelease() {
@@ -544,6 +550,7 @@ export class Deck {
     this.hcRet = this.head; this.hcRetPlay = this.playing;
     this.slipStart();
     this.jumpTo(this.hot[n] * this.fsr + off);
+    if (!this.playing && this.syncOn) this.syncBeat();   // ((⚪218) from stop with SYNC: onto the other deck's beat, as PLAY does)
     this.playOn(1);
     if (this.p.cueLoop) {   // CUE LOOP (s179): the hot cue starts a loop of the current length from the cue
       this.blA = this.hot[n] * this.fsr;
@@ -566,6 +573,7 @@ export class Deck {
   qSet(act, n) {
     const bf = Math.floor(this.gbB(this.head)), b = this.gbP(bf);
     this.qAct = act; this.qN = n;
+    this.pzWait = 0; this.pzCnt = 0;   // ((⚪218) a jump asked for while a quantized PAUSE waits: the later press rules)
     if (this.head - b < Q_LATE * this.fsr) { this.qAt = b; this.qFire(1); }
     else { this.qAt = this.gbP(bf + 1); if (this.qAt >= this.len - 1) this.qFire(0); }
   }
@@ -590,6 +598,9 @@ export class Deck {
     if (!o || o.p.bpm <= 0 || this.p.bpm <= 0) return;
     let d = o.gbB(o.head) * (this.teK || 1) - this.gbB(this.head);
     d -= Math.floor(d + 0.5);
+    // ((⚪218) at the sample's start (a CUE at 0) there is no room to go back: a beat later instead; at its end, earlier)
+    const p = this.gbP(this.gbB(this.head) + d);
+    if (p < 0) d += 1; else if (p > this.len - 1) d -= 1;
     if (Math.abs(d) > 0.002) this.jumpTo(this.gbP(this.gbB(this.head) + d));
   }
 
@@ -972,7 +983,8 @@ export class Deck {
     // back), or at once if it stopped / has no BPM / Quantize went off; dropped if this deck started some other way
     if (this.pqWait) {
       const o = this.other;
-      if (!(this.oBpm() > 0 && o.moved) || !this.p.quant || this.playing) { this.pqWait = 0; if (!this.playing) this.playGo(); }
+      if (this.tch || this.seek) this.pqWait = 0;   // ((⚪218) a touch or a search drops it, as it drops the jumps and PAUSE)
+      else if (!(this.oBpm() > 0 && o.moved) || !this.p.quant || this.playing) { this.pqWait = 0; if (!this.playing) this.playGo(); }
       else { const f = this.pqFrac(); if (f < this.pqLast - 0.5) { this.pqWait = 0; this.playGo(); } else this.pqLast = f; }
     }
     // a waiting quantized PAUSE (L5331-L5344): when its step comes round in this block, count the samples to it (the
