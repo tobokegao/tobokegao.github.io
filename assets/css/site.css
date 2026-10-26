@@ -682,7 +682,7 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .prose { max-width: 68ch; margin-inline: auto; overflow-wrap: anywhere; }
 .prose { max-width: 68ch; margin-inline: auto; }
 .prose > :first-child, .prose > [data-l] > :first-child { margin-top: 0; }
-.prose h1, .prose h2, .prose h3 { font: 400 calc(var(--dot) * 2)/1.4 var(--f-dot); color: var(--hi); text-wrap: balance; }
+.prose h1, .prose h2, .prose h3 { font: 400 calc(var(--dot) * 2)/1.4 var(--f-dot); color: var(--hi); text-wrap: balance; word-break: auto-phrase; }
 .prose h2 { margin-top: 2.2em; padding-bottom: 4px; border-bottom: 3px double var(--frame); }
 .prose h2::before { content: "■ "; color: var(--mark); }
 .prose h3 { font-size: var(--dot); }
