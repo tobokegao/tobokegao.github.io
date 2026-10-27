@@ -28,7 +28,7 @@ LSDjの画面やコマンドの説明は省いています。LSDjを触ったこ
 
 WAVでは、キック・スネアとベースを1chで交互に鳴らしています。キックとスネアの位置では音色をWKICK・WSNRに替えて、5tick後（グルーヴ02・03の2つ目のステップ）に、ベースの音色（SLAP）で打ち直します。単音なので、キックの瞬間はベースが必ず切れて、サイドチェインをかけたのと同じ形になります。
 
-WKICKはテーブルで、トランスポーズ`03`と`PB8`から`PD0`へとピッチを一気に下げて、6行目の`K00`で切っています。WSNRも`PD0`→`PD8`で下げています。
+WKICKはテーブルで、トランスポーズ`03`と、`PB8`→`PD0`のピッチベンドで音程を一気に下げて、6行目の`K00`で切っています。WSNRも`PD0`→`PD8`で下げています。
 
 さらに、WAVのキック・スネアは、NOISEのキック（NKICK）・スネア（SNR01）と同じ位置に重ねてレイヤーしています。WAVで低い胴鳴り、NOISEでアタックを足すイメージです。NKICKはテーブルのトランスポーズを`BF`→`B5`→`75`→`27`と下げて、ノイズの音程を落としています。
 
@@ -69,7 +69,7 @@ PU1の歌メロには、ハモリ用の音色（HRM+7・HRM+8・HRM+9）を使�
 
 ## 歌メロの置き方
 
-歌は、ステップの位置から`D04`や`D0A`のようにtick単位で遅らせて置いています。3半音以内で続けて歌う音は`L04`で滑らせて打ち直さず、長く伸ばす一部の音には、3ステップ後に`V01`をかけています。フレーズの終わりは、`K04`や`K05`のようにtickまで指定して切っています。
+歌は、ステップの位置から`D04`や`D0A`のようにtick単位で遅らせて置いています。3半音以内で続けて歌う音は打ち直さずに`L04`で滑らせ、長く伸ばす一部の音には、3ステップ後に`V01`をかけています。フレーズの終わりは、`K04`や`K05`のようにtickまで指定して切っています。
 
 - DAW：スナップを切るか細かいグリッドにして、歌のタイミングどおりに前後させます。
 - Serum 2：PortamentoをLegatoにすると、重なったノートだけ滑ります。ビブラートは、LFOのDelayを約3/16拍にしてOsc Fineにかけます。
@@ -118,7 +118,7 @@ Serum 2の数値は目安です。
 {{< lang en >}}
 I covered syrup16g's "Instant Color" in LSDj. The GAMEBOY has four channels, PU1, PU2, WAV and NOISE, and each one plays only one note at a time. Fitting a band song into that took a lot of tricks, so here they are, together with the actual settings I used. For each one I've also added how to do the same thing in a DAW piano roll or in Serum 2.
 
-I don't explain the LSDj screens or commands here. I'm planning a version for people who have never used LSDj on note.
+I don't explain the LSDj screens or commands here. I'm planning a version on note for people who have never used LSDj.
 
 ## Tempo and grooves
 
@@ -137,7 +137,7 @@ Grooves 02 and 03 put their 8ths in the same places as 00 and 01, with one more 
 
 On WAV, the kick and snare take turns with the bass on a single channel. On a kick or snare hit, the instrument switches to WKICK or WSNR, and 5 ticks later (the second step of groove 02 or 03) the bass instrument (SLAP) strikes again. Since the channel is monophonic, the bass always drops out at the kick, which works just like sidechain compression.
 
-WKICK's table drops the pitch fast, with a transpose of `03` and `PB8` then `PD0`, and cuts at row 6 with `K00`. WSNR also bends down with `PD0` then `PD8`.
+WKICK's table drops the pitch fast, with a transpose of `03` and pitch bends of `PB8` then `PD0`, and cuts at row 6 with `K00`. WSNR also bends down with `PD0` then `PD8`.
 
 On top of that, the WAV kick and snare are layered with the NOISE kick (NKICK) and snare (SNR01) at the same positions. WAV gives the low body, NOISE gives the attack. NKICK's table steps its transpose down `BF`, `B5`, `75`, `27`, so the noise pitch falls.
 
@@ -146,7 +146,7 @@ On top of that, the WAV kick and snare are layered with the NOISE kick (NKICK) a
 
 ## Chord arpeggios
 
-Chords are three-note tables that cycle every 4 ticks. Tables 0C (major), 0D (minor) and 0E (sus) hold each transpose for four rows (`00`, `04`, `07` / `00`, `03`, `07` / `00`, `05`, `07`), and `H00` on row 12 jumps back to the top.
+Chords are played using three-note tables that cycle every 4 ticks. Tables 0C (major), 0D (minor) and 0E (sus) hold each transpose for four rows (`00`, `04`, `07` / `00`, `03`, `07` / `00`, `05`, `07`), and `H00` on row 12 jumps back to the top.
 
 Even M7 and m7 chords drop the 7th and cycle as triads, so the tones don't clash. The voicing stays within one octave below the vocal melody.
 
@@ -169,7 +169,7 @@ The vocal melody on PU1 uses harmony instruments (HRM+7, HRM+8, HRM+9). Each is 
 
 The table runs on `G1D` (2 ticks per row): a few rows of the melody note, then two rows (4 ticks) of the harmony. Only the harmony rows have `O01` and `O02` in turn, so the melody stays in the center and the harmony moves left and right. `H06` on the last row loops back to the middle.
 
-The number in each name is the interval above the melody. The record's backing vocal sits below the melody, though, so they actually sound an octave lower (`FB` for +7, `FC` for +8, `FD` for +9).
+The number in each name is the interval above the melody. The record's backing vocals sit below the melody, though, so they actually sound an octave lower (`FB` for +7, `FC` for +8, `FD` for +9).
 
 Where the record has a backing vocal, I used its interval as is. Everywhere else, I picked a 3rd or a 6th per phrase, whichever lands on more chord tones, and swapped single notes to the other one when they clashed. Because each interval has its own instrument, the command column stays free for `D`.
 
@@ -193,7 +193,7 @@ The second copies the PU1 vocal onto PU2. There are three echo instruments, cent
 
 - Bridge: echoes 24 ticks (an 8th) after PU1, alternating left and right
 - Around 3:22: two echoes, one an 8th later and one a beat later (quieter still, with `E45`)
-- Second verse: a copy of the vocal one step later, panned left and right note by note with `O01` and `O02`. The backing comes back swelling with `E1B` from two steps before its hit
+- Second verse: a copy of the vocal one step later, panned left and right note by note with `O01` and `O02`. The backing comes back swelling with `E1B` from two steps before it enters
 
 In every case, `K00` stops the echo one step before the next vocal line.
 
