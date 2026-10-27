@@ -1,0 +1,8 @@
+{{- /* A YouTube video (the ID, e.g. 8K-__gzokdk): one player for both languages, put between the
+   lang blocks, with a link to the page on YouTube under it. Same look as nico.html; youtube-nocookie
+   is the only YouTube host the CSP's frame-src allows (0039). */ -}}
+{{- $id := .Get 0 -}}
+<figure class="nico">
+  <iframe class="nico__player" src="https://www.youtube-nocookie.com/embed/{{ $id }}" width="640" height="360" loading="lazy" allow="autoplay; fullscreen; encrypted-media; picture-in-picture" allowfullscreen title="{{ .Page.Title }}: YouTube"></iframe>
+  <figcaption class="nico__cap"><a href="https://www.youtube.com/watch?v={{ $id }}" rel="noopener" target="_blank">{{ partial "bi.html" (dict "ja" "YouTubeで見る" "en" "Watch on YouTube") }}</a></figcaption>
+</figure>
