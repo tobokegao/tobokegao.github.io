@@ -11,7 +11,7 @@ description_en: What I did to fit a band song into the GAMEBOY's four channels, 
 {{< lang ja >}}
 syrup16gの「Instant Color」を、LSDjでカバーしました。GAMEBOYで鳴らせるのはPU1・PU2・WAV・NOISEの4chで、どれも単音しか出せません。バンドの音を収めるためにいろいろ工夫したので、そのとき使った技を、実際の設定値と一緒にまとめておきます。DAWのピアノロールやSerum 2で同じことをするときの置き換えも書いておきます。
 
-LSDjの画面やコマンドの説明は省いています。LSDjを触ったことがない人向けの版は、[note](https://note.com/tobokegao/n/n046641cf7e0c)に書きました。
+LSDjの画面やコマンドの説明は省いています。LSDjを触ったことがない人向けの記事は、[note](https://note.com/tobokegao/n/n046641cf7e0c)に書きました。
 
 ## テンポとグルーヴ
 
@@ -120,7 +120,7 @@ Serum 2の数値は目安です。
 {{< lang en >}}
 I covered syrup16g's "Instant Color" in LSDj. The GAMEBOY has four channels, PU1, PU2, WAV and NOISE, and each one plays only one note at a time. Fitting a band song into that took a lot of tricks, so here they are, together with the actual settings I used. For each one I've also added how to do the same thing in a DAW piano roll or in Serum 2.
 
-I don't explain the LSDj screens or commands here. I've written a version on [note](https://note.com/tobokegao/n/n046641cf7e0c) for people who have never used LSDj.
+I don't explain the LSDj screens or commands here. I've written an article on [note](https://note.com/tobokegao/n/n046641cf7e0c) for people who have never used LSDj.
 
 ## Tempo and grooves
 
