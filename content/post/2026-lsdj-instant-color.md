@@ -1,6 +1,6 @@
 ---
 title: 「Instant Color」のGAMEBOYカバーで使った打ち込み方法tips
-title_en: Programming Tips from My GAMEBOY Cover of "Instant Color"
+title_en: Music Making Tips from My GAMEBOY Cover of "Instant Color"
 date: 2026-10-27
 description: 4chしかないGAMEBOYにバンドの曲を収めるためにやったこと（LSDjの設定値つき）
 description_en: What I did to fit a band song into the GAMEBOY's four channels, with the LSDj settings
