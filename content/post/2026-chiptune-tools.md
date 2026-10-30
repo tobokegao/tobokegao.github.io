@@ -9,7 +9,29 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 {{< lang ja >}}
 梅干茶漬けさんのブログ「あじたまのーと」の2021年の記事「[ピコピコ音楽の制作に役立つ音源10選](https://blog.ajitama-note.com/entry/2021/03/06/215656)」と、thetaさんの[ソフトウェアのページ](https://ss1.xrea.com/theta.s57.xrea.com/software/)をもとに、ほかのツールも足して、最新のバージョンに合わせてまとめ直しました。
 
-## まずは無料のプラグインから
+**目次**
+
+- [まずは無料のプラグインから](#ja-free-plugins)
+- [音にかけるエフェクト](#ja-effects)
+- [トラッカー・専用ソフト（値段の書いていないものは無料）](#ja-trackers)
+- [LSDjと、LSDjから生まれたトラッカー（無料）](#ja-lsdj)
+- [スマホ・携帯ゲーム機で使えるソフト](#ja-handheld)
+- [ゲーム機・昔のパソコンの実機で動くソフト](#ja-consoles)
+- [昔の日本のパソコン（X68000・PC-98・MSX）のツール](#ja-japanese-pcs)
+- [M8（ハードウェアのトラッカー）](#ja-m8)
+- [picoTracker（ハードウェアのトラッカー）](#ja-picotracker)
+- [そのほかのハードウェア](#ja-hardware)
+- [ブラウザで使えるソフト（無料）](#ja-browser)
+- [MMLで書くソフト](#ja-mml)
+- [有料のプラグイン](#ja-paid-plugins)
+- [サンプルパック](#ja-sample-packs)
+- [効果音を作るソフト](#ja-sfx)
+- [再生・変換・そのほか](#ja-players)
+- [Shiruさんのツール（無料）](#ja-shiru)
+- [もっと知りたい人へ](#ja-more)
+- [2021年のまとめから変わったこと](#ja-changes)
+
+## まずは無料のプラグインから {#ja-free-plugins}
 
 いつものDAWに入れて、ふつうの音源と同じように使えます。
 
@@ -36,7 +58,7 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 - [**OPNA FM Synth**](https://trpico.booth.pm/items/8351023) v1.0.1：とるぴさんの、YM2608（OPNA）のFM音源を再現したプラグイン。無料（支援つきは600円）、Windows（VST3）
   <img src="/img/chiptune-tools/opnafm.webp" alt="OPNA FM Synthの画面" width="560" height="382" loading="lazy" />
 
-## 音にかけるエフェクト
+## 音にかけるエフェクト {#ja-effects}
 
 - [**Deltanizer**](https://ss1.xrea.com/theta.s57.xrea.com/software/#deltanizer)（theta）v2.0.0：自分で打ち込んだ音を、ファミコンのDPCM（ドラムや声に使われた、ザラザラした粗い音）の質感に変える。無料、Windows 64bit（VST3）
   <img src="/img/chiptune-tools/deltanizer.webp" alt="Deltanizerの画面" width="292" height="313" loading="lazy" />
@@ -47,7 +69,7 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 - [**chipcrusher**](https://www.plogue.com/products/chipcrusher.html)（Plogue）：ファミコンの少しざらざらした声・ドラムの音や、スーパーファミコン独特の粗さとエコーなど、昔のゲーム機らしい音の質感をあとから加えられるエフェクト。39ドル
   <img src="/img/chiptune-tools/chipcrusher.webp" alt="chipcrusherの画面" width="560" height="189" loading="lazy" />
 
-## トラッカー・専用ソフト（値段の書いていないものは無料）
+## トラッカー・専用ソフト（値段の書いていないものは無料） {#ja-trackers}
 
 ゲーム機の音源の制限どおりに打ち込めるので、「本物っぽさ」が出やすい方法です。
 
@@ -132,7 +154,7 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 - [**DR-00M**](https://uniko-art.itch.io/dr-00m) 1.1：PICO-8で作られた、16ステップのドラムマシン。無料（投げ銭可）、PICO-8・Windows・Mac・Linux
   <img src="/img/chiptune-tools/dr00m.webp" alt="DR-00Mの画面" width="320" height="410" loading="lazy" />
 
-## LSDjと、LSDjから生まれたトラッカー（無料）
+## LSDjと、LSDjから生まれたトラッカー（無料） {#ja-lsdj}
 
 GAMEBOY用のLSDjと、その操作感を受け継いでほかのゲーム機や機材向けに作られたトラッカーを集めました。LSDj、Risa、little-scaleさん作の4つは、ゲーム機の実機かエミュレーターで動きます（PocketTrackerとChipNomadは、スマホやパソコン、携帯ゲーム機で動くアプリです）。
 
@@ -160,7 +182,7 @@ GAMEBOY用のLSDjと、その操作感を受け継いでほかのゲーム機や
 - [**ChipNomad**](https://chipnomad.org/)（Megus）v1.0.5：LSDjや人気の携帯型機「M8」に影響を受けたトラッカー。いまはAY-3-8910（MSXなどに載っていた音源）のみに対応。Windows・macOS・Linux・Android、携帯ゲーム機（RG35XX、Miyoo）で動きます
   <img src="/img/chiptune-tools/chipnomad.webp" alt="ChipNomadの画面" width="525" height="420" loading="lazy" />
 
-## スマホ・携帯ゲーム機で使えるソフト
+## スマホ・携帯ゲーム機で使えるソフト {#ja-handheld}
 
 スマホや携帯ゲーム機で、どこでも曲が作れます。
 
@@ -188,7 +210,7 @@ GAMEBOY用のLSDjと、その操作感を受け継いでほかのゲーム機や
 - [**ESPboy Tracker**](http://shiru.nedopc.com/software.shtml) v1.2：Shiruさんの、小さな携帯機ESPboy用の、LSDjに影響を受けたトラッカー。パソコン版もあります。無料
   <img src="/img/chiptune-tools/espboy.webp" alt="ESPboy Trackerの画面" width="315" height="420" loading="lazy" />
 
-## ゲーム機・昔のパソコンの実機で動くソフト
+## ゲーム機・昔のパソコンの実機で動くソフト {#ja-consoles}
 
 GAMEBOYやGBA、ファミコン、コモドール64などの実機（またはエミュレーター）で動くソフトです。
 
@@ -233,7 +255,7 @@ GAMEBOYやGBA、ファミコン、コモドール64などの実機（または�
 
 - [**QuadTrack**](https://pinkparrotstudio.itch.io/quadtrack)：Amigaのしくみで動く、4トラックのサンプル演奏用シーケンサー。25ユーロから（無料の体験版あり）、Windows・Mac・Amiga
 
-## 昔の日本のパソコン（X68000・PC-98・MSX）のツール
+## 昔の日本のパソコン（X68000・PC-98・MSX）のツール {#ja-japanese-pcs}
 
 X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツールです。
 
@@ -264,7 +286,7 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 
 - [**MSXPLAYer**](https://msxplayer.net/wp/)：MSXアソシエーション公式のMSXエミュレーター。いまの版は、技術評論社の本「MSX-BASICでゲームを作ろう」を持っている人が使えます。Windows
 
-## M8（ハードウェアのトラッカー）
+## M8（ハードウェアのトラッカー） {#ja-m8}
 
 GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップチューン向けの音源のほか、FM音源やサンプラーも入っています。
 
@@ -279,12 +301,12 @@ GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップ
 - [**M8 Music Tracker**](https://apps.apple.com/jp/app/m8-music-tracker/id6806721202)（iPhone・iPad）1.2.2：本体の機能をそのまま再現したアプリ版です（2026年9月リリース／App Storeで5,000円）。曲データは実機本体と相互にやりとりできます
   <img src="/img/chiptune-tools/m8-music-tracker.webp" alt="M8 Music Trackerの画面" width="560" height="420" loading="lazy" />
 
-## picoTracker（ハードウェアのトラッカー）
+## picoTracker（ハードウェアのトラッカー） {#ja-picotracker}
 
 - [**picoTracker**](https://xiphonics.com/)（Xiphonics）v2.4.0：名作トラッカー「LGPT」を小さなマイコン基板（Raspberry Pi Pico）に移植し、単体で動くようにしたハードウェアです。8トラックで、サンプラーやFM音源などが入っています。組み立てキット（基板と画面）は99ドル、完成品の「picoTracker Advance」は449ドル（公式ストア）。ソフトは[GitHub](https://github.com/xiphonics/picoTracker)で公開されています
   <img src="/img/chiptune-tools/picotracker.webp" alt="picoTrackerの画面" width="560" height="373" loading="lazy" />
 
-## そのほかのハードウェア
+## そのほかのハードウェア {#ja-hardware}
 
 - [**MIDISID**](https://peacockmedia.software/midisid/)：SIDの互換チップを2つ積んだ、MIDIで鳴らすシンセ。125ポンド
   <img src="/img/chiptune-tools/midisid.webp" alt="MIDISIDの画面" width="500" height="267" loading="lazy" />
@@ -298,7 +320,7 @@ GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップ
 - [**LAVIOR AURA**](https://hmfactory.jp/aura/)：HMFACTORYの、PSGや波形メモリ、SID、PCMなどの音を最大32チャンネルで鳴らす小さな音源ボード。Windowsのアプリ「AURA HOST」で操作します。2026年10月から先行配布
   <img src="/img/chiptune-tools/aura.webp" alt="LAVIOR AURAのAURA HOSTの画面" width="560" height="332" loading="lazy" />
 
-## ブラウザで使えるソフト（無料）
+## ブラウザで使えるソフト（無料） {#ja-browser}
 
 インストールなしで、ブラウザを開くだけで作れます。曲はURLに保存されるので、URLを送るだけで共有できます。WAVやMIDIへの書き出しもできます。
 
@@ -319,7 +341,7 @@ GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップ
 - [**Bitphase**](https://bitphase.app/)：ブラウザで動く、PSG音源（AY-3-8910・YM2149）とファミコン用のトラッカー。無料
   <img src="/img/chiptune-tools/bitphase.webp" alt="Bitphaseの画面" width="560" height="366" loading="lazy" />
 
-## MMLで書くソフト
+## MMLで書くソフト {#ja-mml}
 
 曲を文字（MML）で書いて鳴らす方法です。
 
@@ -341,7 +363,7 @@ GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップ
 
 - [**OFGS2tm**](https://x.com/EightbitMays/status/2086505645629718736) Ver0.93：ファミコン用のMMLのドライバー「OFGSv2」を、Maysさんが改造したもの。無料（Xの投稿から配布）
 
-## 有料のプラグイン
+## 有料のプラグイン {#ja-paid-plugins}
 
 - [**Plogueの音源**](https://www.plogue.com/products/)：実機の音源チップを、とても細かく再現しています。どれもWindows・Mac・Linux（VST3・CLAP、MacはAUも）。値段は2026年10月30日の公式ストアのもの
 
@@ -372,7 +394,7 @@ GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップ
 - [**inSIDious**](https://impactsoundworks.com/product/insidious/)：Impact Soundworksの、コモドール64の音源（SID）を再現した音源。64ドル（無料のReaktor Playerで動きます）
   <img src="/img/chiptune-tools/insidious.webp" alt="inSIDiousの画面" width="560" height="320" loading="lazy" />
 
-## サンプルパック
+## サンプルパック {#ja-sample-packs}
 
 - [**Bitkits**](https://www.uppercussion.com/products/bitkits)（Uppercussion）：8bitのドラムキット10種類。キックやスネア、ハイハットのほか、ピコピコした効果音もたくさん入っています。無料
 
@@ -381,7 +403,7 @@ GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップ
 - [**Super Audio Cart 2**](https://impactsoundworks.com/product/super-audio-cart/)（Impact Soundworks）：Atari 2600からゲームボーイアドバンスまで、様々なレトロゲーム機の音を集めた定番の音源集（初代の音もすべて収録）。199ドル（無料の「Kontakt Player」を導入すれば、普段お使いのDAWですぐに鳴らせます）
   <img src="/img/chiptune-tools/super-audio-cart-2.webp" alt="Super Audio Cart 2の画面" width="560" height="373" loading="lazy" />
 
-## 効果音を作るソフト
+## 効果音を作るソフト {#ja-sfx}
 
 ゲームの効果音のような短い音を、すぐに作れます。
 
@@ -394,7 +416,7 @@ GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップ
 - [**ChipTone**](https://sfbgames.itch.io/chiptone)：音を重ねて効果音を作るソフト。作った音は自由に使えます。無料（投げ銭可）、ブラウザ・Windows・Mac
   <img src="/img/chiptune-tools/chiptone.webp" alt="ChipToneの画面" width="560" height="315" loading="lazy" />
 
-## 再生・変換・そのほか
+## 再生・変換・そのほか {#ja-players}
 
 - [**LSDJ Converter**](https://defensemech.com/lsdj-to-midi)：LSDjの曲のファイルを、ブラウザでMIDIに変えるツール。DAWと一緒に使うときに便利です。無料
   <img src="/img/chiptune-tools/lsdj2midi.webp" alt="LSDJ Converterの画面" width="560" height="350" loading="lazy" />
@@ -413,7 +435,7 @@ GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップ
 - [**Shoot Chop Drop**](https://apps.apple.com/jp/app/shoot-chop-drop/id6768887559) 1.5.2：撮った動画を切ってパッドで鳴らす、ビデオサンプラー。無料、iPhone・iPad
   <img src="/img/chiptune-tools/scd.webp" alt="Shoot Chop Dropの画面" width="193" height="420" loading="lazy" />
 
-## Shiruさんのツール（無料）
+## Shiruさんのツール（無料） {#ja-shiru}
 
 Shiruさんが公開している音楽のツールです。どれも[Shiruさんのソフトウェアのページ](http://shiru.nedopc.com/software.shtml)からダウンロードできます。
 
@@ -444,7 +466,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 - **SoundFont**：ZX Spectrumのビーパーの音（wtbeepなど）や、中国のおもちゃのピアノの音（BF-630、TX-5488Aなど）。レトロでチープな機器独特の響きを再現できるデータ（インパルス応答）もあります
 
-## もっと知りたい人へ
+## もっと知りたい人へ {#ja-more}
 
 ここに載せていない、よりマニアックなトラッカーやツールは、チップチューンの投稿コミュニティ「Battle of the Bits」の解説ページ（英語）にまとまっています。
 
@@ -454,7 +476,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 - [便利なツールの一覧](https://battleofthebits.com/lyceum/View/Tools)
 
-## 2021年のまとめから変わったこと
+## 2021年のまとめから変わったこと {#ja-changes}
 
 - **SANA 8BIT VST**、**VOPM**：どちらも古い32bitのプラグインで、いまのDAWではそのままでは使えないことが多いです。ファミコン系はMagical 8bit Plug 2やNew DoReFAMI、YM2151はmy2151かchipsynth OPMZが代わりになります
 
@@ -464,7 +486,29 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 {{< lang en >}}
 This is an updated roundup based on Umeboshi Chazuke's 2021 article on their blog Ajitama Note, "[10 Sound Sources for Making Bleepy Music](https://blog.ajitama-note.com/entry/2021/03/06/215656)" (in Japanese) and theta's [software page](https://ss1.xrea.com/theta.s57.xrea.com/software/), with more tools added.
 
-## Start with free plugins
+**Contents**
+
+- [Start with free plugins](#en-free-plugins)
+- [Effects](#en-effects)
+- [Trackers and dedicated software (free unless a price is given)](#en-trackers)
+- [LSDj and trackers inspired by it (free)](#en-lsdj)
+- [Apps for phones and handhelds](#en-handheld)
+- [Software for real consoles and old computers](#en-consoles)
+- [Tools for old Japanese computers (X68000, PC-98, MSX)](#en-japanese-pcs)
+- [M8 (hardware tracker)](#en-m8)
+- [picoTracker (hardware tracker)](#en-picotracker)
+- [Other hardware](#en-hardware)
+- [Browser apps (free)](#en-browser)
+- [Writing music in MML](#en-mml)
+- [Paid plugins](#en-paid-plugins)
+- [Sample packs](#en-sample-packs)
+- [Sound effect makers](#en-sfx)
+- [Players, converters and more](#en-players)
+- [Shiru's tools (free)](#en-shiru)
+- [To dig deeper](#en-more)
+- [What changed since the 2021 roundup](#en-changes)
+
+## Start with free plugins {#en-free-plugins}
 
 These load in your usual DAW and play like any other instrument.
 
@@ -491,7 +535,7 @@ These load in your usual DAW and play like any other instrument.
 - [**OPNA FM Synth**](https://trpico.booth.pm/items/8351023) v1.0.1: torupi's plugin recreating the YM2608 (OPNA) FM chip. Free (600 yen support option), Windows (VST3)
   <img src="/img/chiptune-tools/opnafm.webp" alt="OPNA FM Synth screenshot" width="560" height="382" loading="lazy" />
 
-## Effects
+## Effects {#en-effects}
 
 - [**Deltanizer**](https://ss1.xrea.com/theta.s57.xrea.com/software/#deltanizer) (theta) v2.0.0: gives sounds you've programmed the texture of the NES's DPCM channel (the gritty, rough sound used for drums and voices). Free, Windows 64-bit (VST3)
   <img src="/img/chiptune-tools/deltanizer.webp" alt="Deltanizer screenshot" width="292" height="313" loading="lazy" />
@@ -502,7 +546,7 @@ These load in your usual DAW and play like any other instrument.
 - [**chipcrusher**](https://www.plogue.com/products/chipcrusher.html) (Plogue): adds the texture of old consoles after the fact, such as the slightly gritty voices and drums of the NES or the SNES's distinctive roughness and echo. $39
   <img src="/img/chiptune-tools/chipcrusher.webp" alt="chipcrusher screenshot" width="560" height="189" loading="lazy" />
 
-## Trackers and dedicated software (free unless a price is given)
+## Trackers and dedicated software (free unless a price is given) {#en-trackers}
 
 You program within the limits of the console's sound chip, which makes it easier to sound like the real thing.
 
@@ -587,7 +631,7 @@ You program within the limits of the console's sound chip, which makes it easier
 - [**DR-00M**](https://uniko-art.itch.io/dr-00m) 1.1: a 16-step drum machine made in PICO-8. Free (tips welcome), PICO-8, Windows, Mac, Linux
   <img src="/img/chiptune-tools/dr00m.webp" alt="DR-00M screenshot" width="320" height="410" loading="lazy" />
 
-## LSDj and trackers inspired by it (free)
+## LSDj and trackers inspired by it (free) {#en-lsdj}
 
 LSDj for the GAMEBOY, along with trackers that bring its workflow to other consoles and devices. LSDj, Risa, and four trackers by little-scale run on original hardware or an emulator (PocketTracker and ChipNomad are apps for smartphones, computers, and handheld consoles).
 
@@ -615,7 +659,7 @@ LSDj for the GAMEBOY, along with trackers that bring its workflow to other conso
 - [**ChipNomad**](https://chipnomad.org/) (Megus) v1.0.5: a tracker influenced by LSDj and the popular handheld M8. For now it supports only the AY-3-8910 (the sound chip in the MSX and others). Runs on Windows, macOS, Linux, Android and handhelds (RG35XX, Miyoo)
   <img src="/img/chiptune-tools/chipnomad.webp" alt="ChipNomad screenshot" width="525" height="420" loading="lazy" />
 
-## Apps for phones and handhelds
+## Apps for phones and handhelds {#en-handheld}
 
 Make music anywhere on a phone or a handheld.
 
@@ -643,7 +687,7 @@ Make music anywhere on a phone or a handheld.
 - [**ESPboy Tracker**](http://shiru.nedopc.com/software.shtml) v1.2: Shiru's LSDj-inspired tracker for the tiny ESPboy handheld, with a desktop version. Free
   <img src="/img/chiptune-tools/espboy.webp" alt="ESPboy Tracker screenshot" width="315" height="420" loading="lazy" />
 
-## Software for real consoles and old computers
+## Software for real consoles and old computers {#en-consoles}
 
 These run on real GAMEBOY, GBA, NES, Commodore 64 and other hardware (or an emulator).
 
@@ -688,7 +732,7 @@ These run on real GAMEBOY, GBA, NES, Commodore 64 and other hardware (or an emul
 
 - [**QuadTrack**](https://pinkparrotstudio.itch.io/quadtrack): a 4-track sample performance sequencer built on the Amiga's architecture. From 25 EUR (free demo), Windows, Mac, Amiga
 
-## Tools for old Japanese computers (X68000, PC-98, MSX)
+## Tools for old Japanese computers (X68000, PC-98, MSX) {#en-japanese-pcs}
 
 Tools for making and playing music for the X68000, PC-9801, PC-8801 and MSX.
 
@@ -719,7 +763,7 @@ Tools for making and playing music for the X68000, PC-9801, PC-8801 and MSX.
 
 - [**MSXPLAYer**](https://msxplayer.net/wp/): the official MSX emulator from the MSX Association. The current build is available to owners of the Gijutsu-Hyoron book "MSX-BASICでゲームを作ろう". Windows
 
-## M8 (hardware tracker)
+## M8 (hardware tracker) {#en-m8}
 
 A portable tracker influenced by the GAMEBOY's LSDj. Besides chiptune-style sound engines, it has FM synths and a sampler.
 
@@ -734,12 +778,12 @@ A portable tracker influenced by the GAMEBOY's LSDj. Besides chiptune-style soun
 - [**M8 Music Tracker**](https://apps.apple.com/jp/app/m8-music-tracker/id6806721202) (iPhone, iPad) 1.2.2: an app version with the same features as the hardware (released September 2026, 5,000 yen on the Japanese App Store). Songs can be moved back and forth between the app and the hardware
   <img src="/img/chiptune-tools/m8-music-tracker.webp" alt="M8 Music Tracker screenshot" width="560" height="420" loading="lazy" />
 
-## picoTracker (hardware tracker)
+## picoTracker (hardware tracker) {#en-picotracker}
 
 - [**picoTracker**](https://xiphonics.com/) (Xiphonics) v2.4.0: hardware that runs a port of the classic tracker LGPT on its own, on a small microcontroller board (Raspberry Pi Pico). It has 8 tracks, with a sampler, FM synths and more. The DIY kit (board and display) is $99, and the finished picoTracker Advance is $449 (official store). The software is on [GitHub](https://github.com/xiphonics/picoTracker)
   <img src="/img/chiptune-tools/picotracker.webp" alt="picoTracker screenshot" width="560" height="373" loading="lazy" />
 
-## Other hardware
+## Other hardware {#en-hardware}
 
 - [**MIDISID**](https://peacockmedia.software/midisid/): a MIDI synth with two SID-compatible chips. £125
   <img src="/img/chiptune-tools/midisid.webp" alt="MIDISID screenshot" width="500" height="267" loading="lazy" />
@@ -753,7 +797,7 @@ A portable tracker influenced by the GAMEBOY's LSDj. Besides chiptune-style soun
 - [**LAVIOR AURA**](https://hmfactory.jp/aura/): HMFACTORY's small sound board that plays PSG, wavetable, SID, PCM and other sounds in up to 32 channels, controlled from the Windows app AURA HOST. Early distribution started in October 2026
   <img src="/img/chiptune-tools/aura.webp" alt="AURA HOST for LAVIOR AURA screenshot" width="560" height="332" loading="lazy" />
 
-## Browser apps (free)
+## Browser apps (free) {#en-browser}
 
 Nothing to install: just open a browser and start. Songs are saved in the URL, so sharing a song is as easy as sending its URL. You can also export to WAV or MIDI.
 
@@ -774,7 +818,7 @@ Nothing to install: just open a browser and start. Songs are saved in the URL, s
 - [**Bitphase**](https://bitphase.app/): a browser tracker for PSG chips (AY-3-8910, YM2149) and the NES. Free
   <img src="/img/chiptune-tools/bitphase.webp" alt="Bitphase screenshot" width="560" height="366" loading="lazy" />
 
-## Writing music in MML
+## Writing music in MML {#en-mml}
 
 Write songs as text (MML) and play them.
 
@@ -796,7 +840,7 @@ Write songs as text (MML) and play them.
 
 - [**OFGS2tm**](https://x.com/EightbitMays/status/2086505645629718736) Ver0.93: Mays's modified version of OFGSv2, an MML sound driver for the NES. Free (shared via an X post)
 
-## Paid plugins
+## Paid plugins {#en-paid-plugins}
 
 - [**Plogue's instruments**](https://www.plogue.com/products/): very detailed recreations of real sound chips. All run on Windows, Mac and Linux (VST3, CLAP, plus AU on Mac). Prices are from the official store on October 30, 2026
 
@@ -827,7 +871,7 @@ Write songs as text (MML) and play them.
 - [**inSIDious**](https://impactsoundworks.com/product/insidious/): Impact Soundworks' Commodore 64 (SID) instrument. $64 (runs in the free Reaktor Player)
   <img src="/img/chiptune-tools/insidious.webp" alt="inSIDious screenshot" width="560" height="320" loading="lazy" />
 
-## Sample packs
+## Sample packs {#en-sample-packs}
 
 - [**Bitkits**](https://www.uppercussion.com/products/bitkits) (Uppercussion): ten 8-bit drum kits. Besides kicks, snares and hi-hats, there are lots of bleepy sound effects. Free
 
@@ -836,7 +880,7 @@ Write songs as text (MML) and play them.
 - [**Super Audio Cart 2**](https://impactsoundworks.com/product/super-audio-cart/) (Impact Soundworks): a well-known library of sounds from many retro consoles, from the Atari 2600 to the Game Boy Advance (includes all the sounds from the first version). $199 (runs in the free Kontakt Player, so you can play it right away in your usual DAW)
   <img src="/img/chiptune-tools/super-audio-cart-2.webp" alt="Super Audio Cart 2 screenshot" width="560" height="373" loading="lazy" />
 
-## Sound effect makers
+## Sound effect makers {#en-sfx}
 
 Quickly make short game-style sound effects.
 
@@ -849,7 +893,7 @@ Quickly make short game-style sound effects.
 - [**ChipTone**](https://sfbgames.itch.io/chiptone): a sound effect maker built from layered sounds; what you make is free to use. Free (tips welcome), browser, Windows, Mac
   <img src="/img/chiptune-tools/chiptone.webp" alt="ChipTone screenshot" width="560" height="315" loading="lazy" />
 
-## Players, converters and more
+## Players, converters and more {#en-players}
 
 - [**LSDJ Converter**](https://defensemech.com/lsdj-to-midi): a browser tool that converts LSDj song files to MIDI, handy alongside a DAW. Free
   <img src="/img/chiptune-tools/lsdj2midi.webp" alt="LSDJ Converter screenshot" width="560" height="350" loading="lazy" />
@@ -868,7 +912,7 @@ Quickly make short game-style sound effects.
 - [**Shoot Chop Drop**](https://apps.apple.com/jp/app/shoot-chop-drop/id6768887559) 1.5.2: a video sampler that chops clips you shoot onto pads. Free, iPhone and iPad
   <img src="/img/chiptune-tools/scd.webp" alt="Shoot Chop Drop screenshot" width="193" height="420" loading="lazy" />
 
-## Shiru's tools (free)
+## Shiru's tools (free) {#en-shiru}
 
 Music tools released by Shiru, all downloadable from [Shiru's software page](http://shiru.nedopc.com/software.shtml).
 
@@ -899,7 +943,7 @@ Music tools released by Shiru, all downloadable from [Shiru's software page](htt
 
 - **SoundFonts**: ZX Spectrum beeper sounds (wtbeep and more) and Chinese toy pianos (BF-630, TX-5488A and more), plus a pack of lo-fi device impulse responses
 
-## To dig deeper
+## To dig deeper {#en-more}
 
 For more obscure trackers and tools not covered here, see the wiki pages of the chiptune community Battle of the Bits.
 
@@ -909,7 +953,7 @@ For more obscure trackers and tools not covered here, see the wiki pages of the 
 
 - [Helper tools](https://battleofthebits.com/lyceum/View/Tools)
 
-## What changed since the 2021 roundup
+## What changed since the 2021 roundup {#en-changes}
 
 - **SANA 8BIT VST** and **VOPM**: both are old 32-bit plugins and often won't run as is in today's DAWs. For NES sounds, Magical 8bit Plug 2 or New DoReFAMI can take their place, and for the YM2151, my2151 or chipsynth OPMZ
 
