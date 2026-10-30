@@ -445,7 +445,7 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 
 - [**Rustico**](https://rustico.reploid.cafe/)：音の正確さにこだわった、ファミコンのエミュレーター。鳴っている音をピアノロールのように見られます。ブラウザで動きます。無料
 
-- [**Keitai World Launcher**](https://keitaiarchive.org/downloads.html)：日本のガラケー（iアプリ）のゲームを、パソコンで動かすためのランチャー。iアプリのエミュレーター（openDoJaなど）と、[Keitai Archive](https://keitaiarchive.org/)で保存されたゲームをまとめて扱えます。ガラケーのゲームの音楽を聴くのにも使えます。無料、Windows
+- [**Keitai World Launcher**](https://keitaiarchive.org/downloads.html)：日本のガラケー（iアプリ）のゲームをパソコンで動かすためのランチャー。iアプリを動かすソフト（openDoJaなどのエミュレーター）と、[Keitai Archive](https://keitaiarchive.org/)に保存されたゲームをまとめて管理できます。ガラケーのゲームの音楽を聴くのにも使えます。無料、Windows
 
 ## Shiruさんのツール（無料） {#ja-shiru}
 
@@ -934,7 +934,7 @@ Quickly make short game-style sound effects.
 
 - [**Rustico**](https://rustico.reploid.cafe/): an NES emulator focused on accurate sound, with a piano-roll-style audio visualizer, running in the browser. Free
 
-- [**Keitai World Launcher**](https://keitaiarchive.org/downloads.html): a launcher for running Japanese feature phone (i-appli) games on a PC, bringing together i-appli emulators (such as openDoJa) and the games preserved by [Keitai Archive](https://keitaiarchive.org/). Handy for listening to feature phone game music, too. Free, Windows
+- [**Keitai World Launcher**](https://keitaiarchive.org/downloads.html): a launcher for running Japanese feature phone (i-appli) games on PC, bringing together emulators (like openDoJa) and games preserved on [Keitai Archive](https://keitaiarchive.org/). Also great for listening to game soundtracks. Free, Windows
 
 ## Shiru's tools (free) {#en-shiru}
 
