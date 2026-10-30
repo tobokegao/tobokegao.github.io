@@ -7,7 +7,7 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 ---
 
 {{< lang ja >}}
-梅干茶漬けさんのブログ「あじたまのーと」の2021年の記事「[ピコピコ音楽の制作に役立つ音源10選](https://blog.ajitama-note.com/entry/2021/03/06/215656)」と、thetaさんの[ソフトウェアのページ](https://ss1.xrea.com/theta.s57.xrea.com/software/)をもとに、ほかのツールも足して、最新のバージョンに合わせてまとめ直しました。バージョンや値段は、2026年10月30日に各ツールの配布ページで確かめたものです。画面の画像は各ツールの公式ページから引用しました（BeepBox、JummBox、UltraBox、Slarmoo's Boxは、実際にサイトを開いて撮影したもの、little-scaleさんのトラッカーはlittle-scaleさんのXの投稿から、Dn-FamiTrackerはRei8bitさんの許可を得てRei8bitさんのXの投稿から引用したものです）。
+梅干茶漬けさんのブログ「あじたまのーと」の2021年の記事「[ピコピコ音楽の制作に役立つ音源10選](https://blog.ajitama-note.com/entry/2021/03/06/215656)」と、thetaさんの[ソフトウェアのページ](https://ss1.xrea.com/theta.s57.xrea.com/software/)をもとに、ほかのツールも足して、最新のバージョンに合わせてまとめ直しました。バージョンや値段は、2026年10月30日に各ツールの配布ページで確かめたものです。画面の画像は各ツールの公式ページから引用しました（BeepBox、JummBox、UltraBox、Slarmoo's Boxは、実際にサイトを開いて撮影したもの、little-scaleさんのトラッカーはlittle-scaleさんのXの投稿から、Dn-FamiTrackerはRei8bitさんの許可を得て[Rei8bitさんのXの投稿](https://x.com/Rei8bit/status/2114188303566352817)から引用したものです）。
 
 ## まずは無料のプラグインから
 
@@ -45,7 +45,7 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 - [**KiraStudio**](https://kirastudio.org/) 1.1.2：FamiStudioと同じ作者（BleuBleu）が2026年に公開した新作ソフト。ピアノロールで打ち込めて、ファミコン、GAMEBOY、ヤマハのFM音源などが使えます。実機の音の正確さよりも、作りやすさを大事にしているそうです。Windows版は無料。Mac・iPhone・iPad・Android版もあります
   <img src="/img/chiptune-tools/kirastudio.webp" alt="KiraStudioの画面" width="560" height="294" loading="lazy" />
 - [**Dn-FamiTracker**](https://github.com/Dn-Programming-Core-Management/Dn-FamiTracker) Dn0.5.3：ファミコン用のトラッカー。FamiTrackerの流れをくむバージョン。Windowsのみ
-  <img src="/img/chiptune-tools/dn-famitracker.webp" alt="Dn-FamiTrackerの画面" width="560" height="330" loading="lazy" />
+  <img src="/img/chiptune-tools/dn-famitracker.webp" alt="Dn-FamiTrackerの画面" width="560" height="316" loading="lazy" />
 - [**Furnace**](https://github.com/tildearrow/furnace) 0.6.8.3：ファミコン、GAMEBOY、メガドライブなど、たくさんの音源に対応したトラッカー。Windows・Mac・Linux
   <img src="/img/chiptune-tools/furnace.webp" alt="Furnaceの画面" width="560" height="350" loading="lazy" />
 - [**OpenMPT**](https://openmpt.org/) 1.32.11.00：特定のゲーム機に縛られない、昔からあるトラッカー。Windows
@@ -149,7 +149,7 @@ GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップ
 {{< /lang >}}
 
 {{< lang en >}}
-This is an updated roundup based on Umeboshi Chazuke's 2021 article on their blog Ajitama Note, "[10 Sound Sources for Making Bleepy Music](https://blog.ajitama-note.com/entry/2021/03/06/215656)" (in Japanese) and theta's [software page](https://ss1.xrea.com/theta.s57.xrea.com/software/), with more tools added. Versions and prices were checked on each tool's download page on October 30, 2026. Screenshots are sourced from each tool's official page (for BeepBox, JummBox, UltraBox, and Slarmoo's Box, I captured them directly from the sites; little-scale's trackers come from little-scale's posts on X, and Dn-FamiTracker from Rei8bit's post on X, with Rei8bit's permission).
+This is an updated roundup based on Umeboshi Chazuke's 2021 article on their blog Ajitama Note, "[10 Sound Sources for Making Bleepy Music](https://blog.ajitama-note.com/entry/2021/03/06/215656)" (in Japanese) and theta's [software page](https://ss1.xrea.com/theta.s57.xrea.com/software/), with more tools added. Versions and prices were checked on each tool's download page on October 30, 2026. Screenshots are sourced from each tool's official page (for BeepBox, JummBox, UltraBox, and Slarmoo's Box, I captured them directly from the sites; little-scale's trackers come from little-scale's posts on X, and Dn-FamiTracker from [Rei8bit's post on X](https://x.com/Rei8bit/status/2114188303566352817), with Rei8bit's permission).
 
 ## Start with free plugins
 
@@ -187,7 +187,7 @@ You program within the limits of the console's sound chip, which makes it easier
 - [**KiraStudio**](https://kirastudio.org/) 1.1.2: a new program released in 2026 by FamiStudio's author (BleuBleu). It has a piano roll and offers NES, GAMEBOY and Yamaha FM sound chips, among others. It values ease of use over hardware accuracy. The Windows version is free, and there are also Mac, iPhone, iPad and Android versions
   <img src="/img/chiptune-tools/kirastudio.webp" alt="KiraStudio screenshot" width="560" height="294" loading="lazy" />
 - [**Dn-FamiTracker**](https://github.com/Dn-Programming-Core-Management/Dn-FamiTracker) Dn0.5.3: an NES tracker, descended from FamiTracker. Windows only
-  <img src="/img/chiptune-tools/dn-famitracker.webp" alt="Dn-FamiTracker screenshot" width="560" height="330" loading="lazy" />
+  <img src="/img/chiptune-tools/dn-famitracker.webp" alt="Dn-FamiTracker screenshot" width="560" height="316" loading="lazy" />
 - [**Furnace**](https://github.com/tildearrow/furnace) 0.6.8.3: a tracker that supports many sound chips, including the NES, GAMEBOY and Mega Drive. Windows, Mac, Linux
   <img src="/img/chiptune-tools/furnace.webp" alt="Furnace screenshot" width="560" height="350" loading="lazy" />
 - [**OpenMPT**](https://openmpt.org/) 1.32.11.00: a long-standing tracker that isn't tied to any one console. Windows
