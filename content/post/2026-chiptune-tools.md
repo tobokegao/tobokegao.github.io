@@ -396,12 +396,17 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 - [**GameBoy Music Compiler（GBMC）**](http://mydocuments.g2.xrea.com/html/gb/sounddriver.html) 2025.07.31版：文字（MML）で曲を書いてGAMEBOYの音源で鳴らすソフト。曲データ（GBSファイル）やエミュレーター・実機で動くROMのほか、演奏のようすが見られるプレイヤー「GBDSP」としても書き出せます。無料、Windows
   <img src="/img/chiptune-tools/gbmc.webp" alt="GBMCで書き出したGBDSPの画面" width="336" height="342" loading="lazy" />
 
+- [**mml2vgm**](https://github.com/kuma4649/mml2vgm) TAG809：MMLから、メガドライブなどの音源で鳴らすVGMファイルを作るツール。YM2612やSN76489のほか、YM2151、YM2608、ファミコン、GAMEBOYなど多くの音源に対応し、統合環境（IDE）もあります。無料、Windows
+  - 同じ作者の[**MDPlayer**](https://github.com/kuma4649/MDPlayer) STBL567：VGMやMDX、NSF、GBS、SIDなど、たくさんの形式を鍵盤の表示つきで鳴らせるプレイヤー。mml2vgmで作った曲の確認にも使えます。無料、Windows
+
 - [**browser-mml-player**](https://github.com/t-sin/browser-mml-player)：ブラウザで動くMMLプレイヤー。シンセのしくみを学ぶ記事のために作られたものです。無料
   <img src="/img/chiptune-tools/bmml.webp" alt="browser-mml-playerの画面" width="560" height="350" loading="lazy" />
 
 - [**SiON**](https://github.com/keim/SiON)：MMLで鳴らすFlash用のソフトシンセ。今はGodot用（GDSiON）などに移されています。無料
 
 - [**PMD**](http://www5.airnet.ne.jp/kajapon/tool.html) Ver.4.8s：PC-9801などのFM音源で鳴らすMMLのドライバー。WindowsではFMPMD2000などで再生できます。無料（ソースも公開）
+
+- [**NSD.Lib**](https://shaw02.github.io/nsdlib/) v1.30：ファミコン用のサウンドドライバーとMMLのコンパイラー。NSFの曲づくりにも、自作のファミコンのゲームに組みこむのにも使えます。ファミコンでMMLを書くなら一番、とsdhizumiさんのおすすめです。無料、Windows
 
 - [**OFGS2tm**](https://x.com/EightbitMays/status/2086505645629718736) Ver0.93：ファミコン用のMMLのドライバー「OFGSv2」を、Maysさんが改造したもの。無料（Xの投稿から配布）
 
@@ -801,7 +806,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
   <img src="/img/chiptune-tools/botb-nitro.webp" alt="NitroTrackerの画面" width="200" height="300" loading="lazy" />
   <small>画像：[pouet.net](https://www.pouet.net/prod.php?which=24323)より</small>
 
-- [**KORG DS-10**](https://en.wikipedia.org/wiki/KORG_DS-10)：ニンテンドーDSで動く、KORGのシンセ（MS-20風）とドラムのソフト。今ならiPhone・iPad用のKORG iDS-10
+- [**KORG DS-10**](https://en.wikipedia.org/wiki/KORG_DS-10)：ニンテンドーDSで動く、KORGのシンセ（MS-20風）とドラムのソフト。iPhone・iPad版の「KORG iDS-10」も今は買えず、後継はありません
   <img src="/img/chiptune-tools/botb-ds10.webp" alt="KORG DS-10の画面" width="434" height="420" loading="lazy" />
   <small>画像：[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:KORG_DS-10.jpg)より</small>
 
@@ -914,7 +919,9 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 ## 2021年のまとめから変わったこと {#ja-changes}
 
-- **SANA 8BIT VST**、**VOPM**：どちらも古い32bitのプラグインで、いまのDAWではそのままでは使えないことが多いです。ファミコン系はMagical 8bit Plug 2やNew DoReFAMI、YM2151はmy2151かchipsynth OPMZが代わりになります
+- **SANA 8BIT VST**：配布されている最新のBeta 2.0は、64bitのVST3に対応しています。今のDAWでも使えます
+
+- **VOPM**：古い32bitのプラグインで、いまのDAWではそのままでは使えないことが多いです。YM2151なら、my2151かchipsynth OPMZが代わりになります
 
 各ツールのバージョンや価格は、2026年10月30日時点の各配布ページの情報に基づいています。掲載している画像の多くは、各ツールの公式ページ（App Storeを含む）や[Lospec](https://lospec.com/software/)から引用しました。なお、BeepBox、JummBox、UltraBox、Slarmoo's Box、FlMML on HTML5、browser-mml-player、NSF2MML、LSDJ Converter、SNDH Playerは実際にサイトを開いて撮影したものです。little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは各作者のX（旧Twitter）の投稿から引用し、Dn-FamiTracker、Furnace、furnace-piano-roll、FamiStudio、KiraStudio、OpenMPT、WaveTracker、GTUltra、SID Factory II、Bamboo Tracker、DefleMask、LabChirpの画像はRei8bitさんからご提供いただきました。機種別の欄の画像は、各ツールのページのほか、Battle of the Bits、Atarimania、pouet.net、Wikipedia、YouTubeの動画のサムネイルなどから引用しました。
 {{< /lang >}}
@@ -1309,12 +1316,17 @@ Write songs as text (MML) and play them.
 - [**GameBoy Music Compiler (GBMC)**](http://mydocuments.g2.xrea.com/html/gb/sounddriver.html) 2025.07.31: an MML compiler for the GAMEBOY sound chip that exports GBS files, ROMs for emulators and real hardware, as well as the visual player "GBDSP". Free, Windows
   <img src="/img/chiptune-tools/gbmc.webp" alt="GBDSP screen exported from GBMC" width="336" height="342" loading="lazy" />
 
+- [**mml2vgm**](https://github.com/kuma4649/mml2vgm) TAG809: a tool that turns MML into VGM files for the Mega Drive and many other chips (YM2151, YM2608, NES, GAMEBOY and more), with an IDE. Free, Windows
+  - [**MDPlayer**](https://github.com/kuma4649/MDPlayer) STBL567 by the same author: a player for VGM, MDX, NSF, GBS, SID and many more formats, with a keyboard display. Handy for checking songs made with mml2vgm. Free, Windows
+
 - [**browser-mml-player**](https://github.com/t-sin/browser-mml-player): a browser MML player made for an article introducing how synthesizers work. Free
   <img src="/img/chiptune-tools/bmml.webp" alt="browser-mml-player screenshot" width="560" height="350" loading="lazy" />
 
 - [**SiON**](https://github.com/keim/SiON): a Flash software synth driven by MML, now ported to Godot (GDSiON) and others. Free
 
 - [**PMD**](http://www5.airnet.ne.jp/kajapon/tool.html) Ver.4.8s: an MML driver for the FM sound of the PC-9801 and others, playable on Windows with FMPMD2000 and similar. Free (source available)
+
+- [**NSD.Lib**](https://shaw02.github.io/nsdlib/) v1.30: an NES sound driver and MML compiler, for both NSF chiptunes and NES homebrew games. sdhizumi recommends it as the best choice for writing NES music in MML. Free, Windows
 
 - [**OFGS2tm**](https://x.com/EightbitMays/status/2086505645629718736) Ver0.93: Mays's modified version of OFGSv2, an MML sound driver for the NES. Free (shared via an X post)
 
@@ -1714,7 +1726,7 @@ Trackers and tools listed on the wiki of the chiptune community [Battle of the B
   <img src="/img/chiptune-tools/botb-nitro.webp" alt="NitroTracker screenshot" width="200" height="300" loading="lazy" />
   <small>Image: from [pouet.net](https://www.pouet.net/prod.php?which=24323)</small>
 
-- [**KORG DS-10**](https://en.wikipedia.org/wiki/KORG_DS-10): a KORG synth (MS-20 style) and drum app for the Nintendo DS. Today, use KORG iDS-10 on iPhone and iPad
+- [**KORG DS-10**](https://en.wikipedia.org/wiki/KORG_DS-10): a KORG synth (MS-20 style) and drum app for the Nintendo DS. The iPhone and iPad version, KORG iDS-10, is no longer sold either, so there is no current successor
   <img src="/img/chiptune-tools/botb-ds10.webp" alt="KORG DS-10 screenshot" width="434" height="420" loading="lazy" />
   <small>Image: from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:KORG_DS-10.jpg)</small>
 
@@ -1827,7 +1839,9 @@ For more obscure trackers and tools not covered here, see the wiki pages of the 
 
 ## What changed since the 2021 roundup {#en-changes}
 
-- **SANA 8BIT VST** and **VOPM**: both are old 32-bit plugins and often won't run as is in today's DAWs. For NES sounds, Magical 8bit Plug 2 or New DoReFAMI can take their place, and for the YM2151, my2151 or chipsynth OPMZ
+- **SANA 8BIT VST**: the latest version, Beta 2.0, supports 64-bit VST3, so it works in today's DAWs
+
+- **VOPM**: an old 32-bit plugin that often won't run as is in today's DAWs. For the YM2151, my2151 or chipsynth OPMZ can take its place
 
 Tool versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). The screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, FlMML on HTML5, browser-mml-player, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me. Screenshots for little-scale's trackers, WebX68k, and NOTE MDX Workbench were sourced from the creators' posts on X, and those for Dn-FamiTracker, Furnace, furnace-piano-roll, FamiStudio, KiraStudio, OpenMPT, WaveTracker, GTUltra, SID Factory II, Bamboo Tracker, DefleMask, and LabChirp were kindly provided by Rei8bit. Images in the by-system section come from each tool's page as well as Battle of the Bits, Atarimania, pouet.net, Wikipedia, and YouTube video thumbnails.
 {{< /lang >}}
