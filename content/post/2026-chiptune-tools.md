@@ -406,6 +406,9 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 - [**my2151**](https://booth.pm/ja/items/8292567)：YM2151を再現したFM音源。VOPMの音色ファイル（.opm）が読めます。Windows 64bit（VST3）、BOOTHで販売（体験版あり）
   <img src="/img/chiptune-tools/my2151.webp" alt="my2151の画面" width="560" height="374" loading="lazy" />
 
+- [**Junior**](https://fors.fm/junior)（Fors）：GAMEBOYの音源をもとにした、4bitの波形メモリのシンセ。自分で描いた32個の値の波形とノイズを、LSDjやM8のテーブルのようなモジュレーションで動かせます。実機をそのまま再現するのではなく、今のシンセとして使いやすく広げています。39ドル（機能をしぼった無料の「Junior-Lite」もあります）、Windows・Linux（VST3・CLAP）、Mac（VST3・CLAP・AU）
+  <img src="/img/chiptune-tools/junior.webp" alt="Juniorの画面" width="420" height="420" loading="lazy" />
+
 - [**inSIDious**](https://impactsoundworks.com/product/insidious/)：Impact Soundworksの、コモドール64の音源（SID）を再現した音源。64ドル（無料のReaktor Playerで動きます）
   <img src="/img/chiptune-tools/insidious.webp" alt="inSIDiousの画面" width="560" height="320" loading="lazy" />
 
@@ -1220,6 +1223,9 @@ Write songs as text (MML) and play them.
 
 - [**my2151**](https://booth.pm/ja/items/8292567): an FM synth that recreates the YM2151. It can load VOPM patch files (.opm). Windows 64-bit (VST3), sold on BOOTH (demo available)
   <img src="/img/chiptune-tools/my2151.webp" alt="my2151 screenshot" width="560" height="374" loading="lazy" />
+
+- [**Junior**](https://fors.fm/junior) (Fors): a 4-bit wavetable synth based on the GAMEBOY sound chip. Draw a 32-step waveform, add noise, and move them with table modulators like those in LSDj and M8. Rather than a strict emulation, it expands the original into a modern synth. $39 (a free, pared-down Junior-Lite is also available), Windows and Linux (VST3, CLAP), Mac (VST3, CLAP, AU)
+  <img src="/img/chiptune-tools/junior.webp" alt="Junior screenshot" width="420" height="420" loading="lazy" />
 
 - [**inSIDious**](https://impactsoundworks.com/product/insidious/): Impact Soundworks' Commodore 64 (SID) instrument. $64 (runs in the free Reaktor Player)
   <img src="/img/chiptune-tools/insidious.webp" alt="inSIDious screenshot" width="560" height="320" loading="lazy" />
