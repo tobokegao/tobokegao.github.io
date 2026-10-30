@@ -57,3 +57,4 @@
 - [0040 トップのリンクの下に、TRACKMENTOとReaScratchのアイコンを別の列で置く](0040-home-projects-row.md)
 - [0041 リンクのカードを英語で出すための、小さな英語のページを置く](0041-english-card-pages.md)
 - [0042 大衆音楽の歴史の文書から、ジャンルをなりたちに足す](0042-genres-from-history-document.md)
+- [0043 記事の箇条書きに画像を入れるときは、1枚ずつ中央に置き、項目のあいだを広げる](0043-screenshots-in-lists.md)

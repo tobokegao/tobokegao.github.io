@@ -69,15 +69,15 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 - [**PICO-8**](https://www.lexaloffle.com/pico-8.php) v0.2.7：レトロなドット絵ゲームをまるごと作れる「架空のゲーム機」ソフトです。ソフトの中に、チップチューンを作るための音楽・効果音エディターがあらかじめ入っています。15ドル、Windows・Mac・Linux・Raspberry Pi
   <img src="/img/chiptune-tools/pico-8.webp" alt="PICO-8の画面" width="560" height="242" loading="lazy" />
 
-- [**LSDj**](https://www.littlesounddj.com/) v9.4.2：GAMEBOYの実機（またはPCなどのエミュレーター）で動く音楽制作ソフト。2020年から無料でダウンロードできます（寄付も受け付けています）
-  <img src="/img/chiptune-tools/lsdj.webp" alt="LSDjの画面" width="320" height="288" loading="lazy" />
-
 - [**ピストンコラージュ**](https://pxtone.org/downloads/) ver.0.9.4.56：自分で描いた波形や、読み込んだWAVに音程を付けて並べていく作曲ソフト。単体で曲が作れて、操作もかんたん。いまもこのソフトで作った曲を集めたコンピが出ています（2026年10月に出た「[PXTUNES 10th Anniversary: THE FUTURE OF PXTONE](https://pxtunes.bandcamp.com/album/pxtunes-10th-anniversary-the-future-of-pxtone)」など）。無料（Windows対応）
   <img src="/img/chiptune-tools/piston-collage.webp" alt="ピストンコラージュの画面" width="472" height="296" loading="lazy" />
 
-## LSDjから生まれたトラッカー（無料）
+## LSDjと、LSDjから生まれたトラッカー（無料）
 
-LSDjの操作感を、ほかのゲーム機や機材に持ちこんだトラッカーです。Risaとlittle-scaleさんの4つは、ゲーム機の実機かエミュレーターで動きます（PocketTrackerとChipNomadは、スマホやパソコン、携帯ゲーム機で動くアプリです）。
+GAMEBOY用のLSDjと、その操作感を受け継いでほかのゲーム機や機材向けに作られたトラッカーを集めました。LSDj、Risa、little-scaleさん作の4つは、ゲーム機の実機かエミュレーターで動きます（PocketTrackerとChipNomadは、スマホやパソコン、携帯ゲーム機で動くアプリです）。
+
+- [**LSDj**](https://www.littlesounddj.com/) v9.4.2：GAMEBOYの実機（またはPCなどのエミュレーター）で動く音楽制作ソフト。2020年から無料でダウンロードできます（寄付も受け付けています）
+  <img src="/img/chiptune-tools/lsdj.webp" alt="LSDjの画面" width="320" height="288" loading="lazy" />
 
 - [**Risa**](https://risa.laamaa.fi/)（laamaa）：ファミコン用の作曲ソフト（トラッカー）。名作「LSDj」に近い感覚で画面に直接打ち込めます。本体の音に加えて、カセット側の拡張音源（MMC5）によるピコピコ音（矩形波）が2音多く使えます。エミュレーター「Mesen」や、実機カートリッジ「EverDrive N8 Pro」での動作が推奨されています
   <img src="/img/chiptune-tools/risa.webp" alt="Risaの画面" width="256" height="240" loading="lazy" />
@@ -253,15 +253,15 @@ You program within the limits of the console's sound chip, which makes it easier
 - [**PICO-8**](https://www.lexaloffle.com/pico-8.php) v0.2.7: a "fantasy console" for making whole retro pixel-art games. It comes with built-in music and sound effect editors for making chiptunes. $15, Windows, Mac, Linux, Raspberry Pi
   <img src="/img/chiptune-tools/pico-8.webp" alt="PICO-8 screenshot" width="560" height="242" loading="lazy" />
 
-- [**LSDj**](https://www.littlesounddj.com/) v9.4.2: music software that runs on a real GAMEBOY (or an emulator on a PC and so on). Free to download since 2020 (donations welcome)
-  <img src="/img/chiptune-tools/lsdj.webp" alt="LSDj screenshot" width="320" height="288" loading="lazy" />
-
 - [**Piston Collage**](https://pxtone.org/downloads/) (pxtone) ver.0.9.4.56: a music program where you put pitches on waveforms you've drawn or WAVs you've loaded and arrange them. You can make a whole song in it alone, and it's easy to use. Compilations of songs made with it still come out, such as "[PXTUNES 10th Anniversary: THE FUTURE OF PXTONE](https://pxtunes.bandcamp.com/album/pxtunes-10th-anniversary-the-future-of-pxtone)" from October 2026. Free (Windows)
   <img src="/img/chiptune-tools/piston-collage.webp" alt="Piston Collage screenshot" width="472" height="296" loading="lazy" />
 
-## Trackers born from LSDj (free)
+## LSDj and trackers inspired by it (free)
 
-These bring the LSDj workflow to other consoles and devices. Risa and little-scale's four run on the real console or an emulator (PocketTracker and ChipNomad are apps for phones, computers and handhelds).
+LSDj for the GAMEBOY, along with trackers that bring its workflow to other consoles and devices. LSDj, Risa, and four trackers by little-scale run on original hardware or an emulator (PocketTracker and ChipNomad are apps for smartphones, computers, and handheld consoles).
+
+- [**LSDj**](https://www.littlesounddj.com/) v9.4.2: music software that runs on a real GAMEBOY (or an emulator on a PC and so on). Free to download since 2020 (donations welcome)
+  <img src="/img/chiptune-tools/lsdj.webp" alt="LSDj screenshot" width="320" height="288" loading="lazy" />
 
 - [**Risa**](https://risa.laamaa.fi/) (laamaa): a music program (tracker) for the NES. You type notes straight onto the screen, much like the classic LSDj. On top of the console's own sound, it gives you two more pulse channels (bleepy square waves) from the cartridge's expansion chip (MMC5). Both the Mesen emulator and the EverDrive N8 Pro cartridge on real hardware are recommended
   <img src="/img/chiptune-tools/risa.webp" alt="Risa screenshot" width="256" height="240" loading="lazy" />
