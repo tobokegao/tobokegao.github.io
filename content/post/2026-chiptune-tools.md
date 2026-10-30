@@ -57,6 +57,9 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 - [**Soraboy**](https://shadowsora211.itch.io/soraboy)（ShadowSora）v1.1.1：GAMEBOYの音源から着想したもの。無料（投げ銭可）、Windows 64bit・Mac（VST3）
   <img src="/img/chiptune-tools/soraboy.webp" alt="Soraboyの画面" width="560" height="420" loading="lazy" />
 
+- [**SANA 8BIT VST**](https://github.com/m-masaki72/SANA_8BIT_VST)（Masaki Mori）Beta v2.00：チップチューン向けのシンプルなシンセ。矩形波などの波形を切り替えられるほか、自分で波形を描ける「波形メモリ」、音程を動かすピッチスイープやビブラート、アルペジオ機能も付いています。無料、Windows（VST・VST3、32bit・64bit）・Mac（VST・AU）
+  <img src="/img/chiptune-tools/sana-8bit.webp" alt="SANA 8BIT VSTの画面" width="560" height="377" loading="lazy" />
+
 - [**C700**](https://github.com/osoumen/C700)（osoumen）ver20211031：スーパーファミコンの音源を再現したサンプラー。自分で用意した波形や音を読み込んで鳴らします。作った曲を、スーパーファミコンの音楽ファイル（.spc）に書き出すこともできます。無料、Windows（VST2）・Mac（VST2・AU）
   <img src="/img/chiptune-tools/c700.webp" alt="C700の画面" width="513" height="420" loading="lazy" />
 
@@ -64,15 +67,15 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
   <img src="/img/chiptune-tools/vopmex.webp" alt="VOPMexの画面" width="560" height="399" loading="lazy" />
   <small>画像：[Xの投稿](https://x.com/freevstbot/status/2020608131357675659)より</small>
 
-- [**OPNA FM Synth**](https://trpico.booth.pm/items/8351023) v1.0.1：とるぴさんの、YM2608（OPNA）のFM音源を再現したプラグイン。無料（支援つきは600円）、Windows（VST3）
+- [**OPNA FM Synth**](https://trpico.booth.pm/items/8351023) v1.0.1：とるぴさんの、YM2608（OPNA）のFM音源を再現したプラグイン。無料（支援つきは600円）、Windowsのみ（VST3）
   <img src="/img/chiptune-tools/opnafm.webp" alt="OPNA FM Synthの画面" width="560" height="382" loading="lazy" />
 
 ## 音にかけるエフェクト {#ja-effects}
 
-- [**Deltanizer**](https://ss1.xrea.com/theta.s57.xrea.com/software/#deltanizer)（theta）v2.0.0：自分で打ち込んだ音を、ファミコンのDPCM（ドラムや声に使われた、ザラザラした粗い音）の質感に変える。無料、Windows 64bit（VST3）
+- [**Deltanizer**](https://ss1.xrea.com/theta.s57.xrea.com/software/#deltanizer)（theta）v2.0.0：自分で打ち込んだ音を、ファミコンのDPCM（ドラムや声に使われた、ザラザラした粗い音）の質感に変える。無料、Windows 64bitのみ（VST3）
   <img src="/img/chiptune-tools/deltanizer.webp" alt="Deltanizerの画面" width="292" height="313" loading="lazy" />
 
-- [**Interruptor**](https://ss1.xrea.com/theta.s57.xrea.com/software/#interruptor)（theta）v0.0.2：メロディのすき間に高速で効果音やドラムを挟み込む、昔のゲーム特有の鳴らし方（割り込み）を再現する。無料、Windows 64bit（VST3）
+- [**Interruptor**](https://ss1.xrea.com/theta.s57.xrea.com/software/#interruptor)（theta）v0.0.2：メロディのすき間に高速で効果音やドラムを挟み込む、昔のゲーム特有の鳴らし方（割り込み）を再現する。無料、Windows 64bitのみ（VST3）
   <img src="/img/chiptune-tools/interruptor.webp" alt="Interruptorの画面" width="291" height="310" loading="lazy" />
 
 - [**chipcrusher**](https://www.plogue.com/products/chipcrusher.html)（Plogue）：ファミコンの少しざらざらした声・ドラムの音や、スーパーファミコン独特の粗さとエコーなど、昔のゲーム機らしい音の質感をあとから加えられるエフェクト。39ドル
@@ -86,23 +89,23 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
   <img src="/img/chiptune-tools/famistudio.webp" alt="FamiStudioの画面" width="560" height="307" loading="lazy" />
   <small>画像：Rei8bitさん提供</small>
 
-- [**KiraStudio**](https://kirastudio.org/) 1.1.2：FamiStudioと同じ作者（BleuBleu）が2026年に公開した新作ソフト。ピアノロールで打ち込めて、ファミコン、GAMEBOY、ヤマハのFM音源などが使えます。実機の音の正確さよりも、作りやすさを大事にしているそうです。Windows版は無料。Mac・iPhone・iPad・Android版もあります
+- [**KiraStudio**](https://kirastudio.org/) 1.1.2：FamiStudioと同じ作者（BleuBleu）が2026年に公開した新作ソフト。ピアノロールで打ち込めて、ファミコン、GAMEBOY、ヤマハのFM音源などが使えます。実機の音の正確さよりも、作りやすさを大事にしているそうです。Windowsバージョンは無料。Mac・iPhone・iPad・Androidバージョンもあります
   <img src="/img/chiptune-tools/kirastudio.webp" alt="KiraStudioの画面" width="560" height="307" loading="lazy" />
   <small>画像：Rei8bitさん提供</small>
 
 - [**Dn-FamiTracker**](https://github.com/Dn-Programming-Core-Management/Dn-FamiTracker) Dn0.5.3：ファミコン用のトラッカー。FamiTrackerの流れをくむバージョン。Windowsのみ
   <img src="/img/chiptune-tools/dn-famitracker.webp" alt="Dn-FamiTrackerの画面" width="560" height="315" loading="lazy" />
   <small>画像：Rei8bitさん提供</small>
-  - [**Ruikajさんの改造版**](https://github.com/Ruikaj/Dn-FamiTracker)：NSFに書き出すときに音色のデータがあふれにくくなるよう改造したもの。無料、Windowsのみ
+  - [**Ruikajさんの改造バージョン**](https://github.com/Ruikaj/Dn-FamiTracker)：NSFに書き出すときに音色のデータがあふれにくくなるよう改造したもの。無料、Windowsのみ
 
 - [**Furnace**](https://github.com/tildearrow/furnace) 0.6.8.3：ファミコン、GAMEBOY、メガドライブなど、たくさんの音源に対応したトラッカー。Windows・Mac・Linux
   <img src="/img/chiptune-tools/furnace.webp" alt="Furnaceの画面" width="560" height="307" loading="lazy" />
   <small>画像：Rei8bitさん提供</small>
-  - [**furnace-piano-roll**](https://github.com/rednoobmusic/furnace-piano-roll) v14：Furnaceにピアノロールなどを足した派生版。無料、Windows・Linux
+  - [**furnace-piano-roll**](https://github.com/rednoobmusic/furnace-piano-roll) v14：Furnaceにピアノロールなどを足した派生バージョン。無料、Windows・Linux
     <img src="/img/chiptune-tools/furnace-piano-roll.webp" alt="furnace-piano-rollの画面" width="560" height="307" loading="lazy" />
     <small>画像：Rei8bitさん提供</small>
 
-- [**OpenMPT**](https://openmpt.org/) 1.32.11.00：特定のゲーム機に縛られない、昔からあるトラッカー。Windows
+- [**OpenMPT**](https://openmpt.org/) 1.32.11.00：特定のゲーム機に縛られない、昔からあるトラッカー。Windowsのみ
   <img src="/img/chiptune-tools/openmpt.webp" alt="OpenMPTの画面" width="560" height="315" loading="lazy" />
   <small>画像：Rei8bitさん提供</small>
 
@@ -112,10 +115,10 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 - [**PICO-8**](https://www.lexaloffle.com/pico-8.php) v0.2.7：レトロなドット絵ゲームをまるごと作れる「架空のゲーム機」ソフトです。ソフトの中に、チップチューンを作るための音楽・効果音エディターがあらかじめ入っています。15ドル、Windows・Mac・Linux・Raspberry Pi
   <img src="/img/chiptune-tools/pico-8.webp" alt="PICO-8の画面" width="560" height="242" loading="lazy" />
 
-- [**TIC-80**](https://tic80.com/) v1.4.1：小さなゲームを作るための「架空のゲーム機」ソフト。4チャンネルの音楽と効果音のエディターが入っています。無料（機能が増えるPRO版は10ドル）、Windows・Mac・Linux・Android・ブラウザ。TIC-80で波形メモリのシンセを試した自分の動画も、[Xに載せています](https://x.com/to6okegao/status/1244441165102854145)
+- [**TIC-80**](https://tic80.com/) v1.4.1：小さなゲームを作るための「架空のゲーム機」ソフト。4チャンネルの音楽と効果音のエディターが入っています。無料（機能が増えるPROバージョンは10ドル）、Windows・Mac・Linux・Android・ブラウザ。TIC-80で波形メモリのシンセを試した自分の動画も、[Xに載せています](https://x.com/to6okegao/status/1244441165102854145)
   <img src="/img/chiptune-tools/tic80.webp" alt="TIC-80の画面" width="560" height="317" loading="lazy" />
 
-- [**ピストンコラージュ**](https://pxtone.org/downloads/) ver.0.9.4.56：自分で描いた波形や、読み込んだWAVに音程を付けて並べていく作曲ソフト。単体で曲が作れて、操作もかんたん。いまもこのソフトで作った曲を集めたコンピが出ています（2026年10月に出た「[PXTUNES 10th Anniversary: THE FUTURE OF PXTONE](https://pxtunes.bandcamp.com/album/pxtunes-10th-anniversary-the-future-of-pxtone)」など）。無料（Windows対応）
+- [**ピストンコラージュ**](https://pxtone.org/downloads/) ver.0.9.4.56：自分で描いた波形や、読み込んだWAVに音程を付けて並べていく作曲ソフト。単体で曲が作れて、操作もかんたん。いまもこのソフトで作った曲を集めたコンピが出ています（2026年10月に出た「[PXTUNES 10th Anniversary: THE FUTURE OF PXTONE](https://pxtunes.bandcamp.com/album/pxtunes-10th-anniversary-the-future-of-pxtone)」など）。無料、Windowsのみ
   <img src="/img/chiptune-tools/piston-collage.webp" alt="ピストンコラージュの画面" width="472" height="296" loading="lazy" />
 
 - [**ptcollab**](https://yuxshao.github.io/ptcollab/) v0.6.4.11：ピストンコラージュの音のしくみをもとにした作曲ソフト。友だちとネットでつないで、一緒に1曲を作れます。MIDIでも打ち込めます。無料、Windows・Mac・Linux
@@ -128,7 +131,7 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 - [**Arkos Tracker 3**](https://www.julien-nevo.com/arkostracker/) 3.7：MSXやZX Spectrum、Atari STなどのPSG音源（AY-3-8910・YM2149）用のトラッカー。無料、Windows・Mac・Linux
   <img src="/img/chiptune-tools/arkos.webp" alt="Arkos Tracker 3の画面" width="560" height="350" loading="lazy" />
 
-- [**Vortex Tracker**](https://github.com/benbaker76/VortexTracker) 3.0.0：PSG音源（AY-3-8910・YM2149）用の、昔からあるトラッカーを作り直したバージョン。無料、Windows
+- [**Vortex Tracker**](https://github.com/benbaker76/VortexTracker) 3.0.0：PSG音源（AY-3-8910・YM2149）用の、昔からあるトラッカーを作り直したバージョン。無料、Windowsのみ
   <img src="/img/chiptune-tools/vortex.webp" alt="Vortex Trackerの画面" width="277" height="420" loading="lazy" />
 
 - [**Osctet**](https://jangle.dev/osctet/) 1.4.1：シンセとサンプラーを使うトラッカー。めずらしい音律やリズムも扱えます。無料、Windows・Linux
@@ -138,7 +141,7 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
   <img src="/img/chiptune-tools/wavetracker.webp" alt="WaveTrackerの画面" width="560" height="307" loading="lazy" />
   <small>画像：Rei8bitさん提供</small>
 
-- [**DefleMask**](https://www.deflemask.com/)：メガドライブ、マスターシステム、GAMEBOY、PCエンジン、ファミコンなど、たくさんの音源に対応したトラッカー。Steam版は1,700円、スマホ版もあります（iOS・Android）。古い無料版もありますが、サポートは終わっています
+- [**DefleMask**](https://www.deflemask.com/)：メガドライブ、マスターシステム、GAMEBOY、PCエンジン、ファミコンなど、たくさんの音源に対応したトラッカー。Steamバージョンは1,700円、スマホバージョンもあります（iOS・Android）。古い無料バージョンもありますが、サポートは終わっています
   <img src="/img/chiptune-tools/deflemask.webp" alt="DefleMask（v1）の画面" width="560" height="307" loading="lazy" />
   <small>画像：Rei8bitさん提供</small>
   <img src="/img/chiptune-tools/deflemask-legacy.webp" alt="DefleMask Legacyの画面" width="560" height="307" loading="lazy" />
@@ -152,11 +155,11 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
   <img src="/img/chiptune-tools/schism.webp" alt="Schism Trackerの画面" width="560" height="360" loading="lazy" />
   <small>画像：[Lospec](https://lospec.com/software/schism-tracker/screenshots)より</small>
 
-- [**SunVox**](https://warmplace.ru/soft/sunvox/) 2.1.4d：モジュールをつないで音を作るシンセと、トラッカーを合わせた作曲ソフト。軽くて古いパソコンでも動きます。パソコン版は無料、iOS版は1,000円（Android版もあります）
+- [**SunVox**](https://warmplace.ru/soft/sunvox/) 2.1.4d：モジュールをつないで音を作るシンセと、トラッカーを合わせた作曲ソフト。軽くて古いパソコンでも動きます。パソコンバージョンは無料、iOSバージョンは1,000円（Androidバージョンもあります）
   <img src="/img/chiptune-tools/sunvox.webp" alt="SunVoxの画面" width="560" height="315" loading="lazy" />
   <small>画像：[Lospec](https://lospec.com/software/sunvox/screenshots)より</small>
 
-- [**Bosca Ceoil Blue**](https://yurisizov.itch.io/boscaceoil-blue) 3.1.2：1画面で曲が作れる、初心者向けの作曲ソフト。無料（投げ銭可）、Windows・Mac・Linux、ブラウザ版もあります
+- [**Bosca Ceoil Blue**](https://yurisizov.itch.io/boscaceoil-blue) 3.1.2：1画面で曲が作れる、初心者向けの作曲ソフト。無料（投げ銭可）、Windows・Mac・Linux、ブラウザバージョンもあります
   <img src="/img/chiptune-tools/bosca.webp" alt="Bosca Ceoil Blueの画面" width="560" height="315" loading="lazy" />
   <small>画像：[Lospec](https://lospec.com/software/bosca-ceoil-blue/screenshots)より</small>
 
@@ -164,7 +167,7 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
   <img src="/img/chiptune-tools/hugetracker.webp" alt="hUGETrackerの画面" width="560" height="311" loading="lazy" />
   <small>画像：[Lospec](https://lospec.com/software/hugetracker/screenshots)より</small>
 
-- [**GTUltra**](https://github.com/jpage8580/GTUltra) v1.5.8：GoatTracker 2（ステレオ版）を大きく改造して、機能を増やしたコモドール64（SID）のトラッカー。特別なこだわりがなければ、GoatTracker 2よりこちらがおすすめです（Rei8bitさんのおすすめ）。無料、Windows・Mac・Linux
+- [**GTUltra**](https://github.com/jpage8580/GTUltra) v1.5.8：GoatTracker 2（ステレオバージョン）を大きく改造して、機能を増やしたコモドール64（SID）のトラッカー。特別なこだわりがなければ、GoatTracker 2よりこちらがおすすめです（Rei8bitさんのおすすめ）。無料、Windows・Mac・Linux
   <img src="/img/chiptune-tools/gtultra.webp" alt="GTUltraの画面" width="559" height="420" loading="lazy" />
   <small>画像：Rei8bitさん提供</small>
 
@@ -176,10 +179,10 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
   <img src="/img/chiptune-tools/sidfactory2.webp" alt="SID Factory IIの画面" width="560" height="285" loading="lazy" />
   <small>画像：Rei8bitさん提供</small>
 
-- [**PIRORO**](https://store.steampowered.com/app/2905900/PIRORO/) ver.3.4.0：ピアノロールで打ち込むチップチューン作曲ソフト。GAMEBOYやGBAの実機で鳴らせるROMに書き出せて、MIDIも読みこめます。1,300円（Steam）、Windows
+- [**PIRORO**](https://store.steampowered.com/app/2905900/PIRORO/) ver.3.4.0：ピアノロールで打ち込むチップチューン作曲ソフト。GAMEBOYやGBAの実機で鳴らせるROMに書き出せて、MIDIも読みこめます。1,300円（Steam）、Windowsのみ
   <img src="/img/chiptune-tools/piroro.webp" alt="PIROROの画面" width="560" height="315" loading="lazy" />
 
-- [**メキメキボーイ**](https://amuru9.wixsite.com/my-site/mekimeki-chip)：PIROROと同じ作者の、ピアノロールで打ち込む作曲ソフト。GAMEBOYで鳴らせるROMに書き出せます。無料、Windows
+- [**メキメキボーイ**](https://amuru9.wixsite.com/my-site/mekimeki-chip)：PIROROと同じ作者の、ピアノロールで打ち込む作曲ソフト。GAMEBOYで鳴らせるROMに書き出せます。無料、Windowsのみ
   <img src="/img/chiptune-tools/mekimeki.webp" alt="メキメキボーイの画面" width="560" height="298" loading="lazy" />
 
 - [**Lovely Composer**](https://booth.pm/ja/items/3006558)：家庭用ゲーム機の作曲ソフトの流れをくむ、かわいい作曲ソフト。レトロゲームのような曲や効果音を作って、WAVやMIDIに書き出せます。990円（BOOTH）、Windows（一部のLinuxも）
@@ -227,12 +230,12 @@ GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップ
 - [**M8 Tracker Model:02**](https://dirtywave.com/)：本体。699ドル（Dirtywave公式ストア）
   <img src="/img/chiptune-tools/m8.webp" alt="M8 Tracker Model:02の画面" width="560" height="344" loading="lazy" />
 
-- [**M8 Headless**](https://github.com/Dirtywave/M8HeadlessFirmware)：「Teensy 4.1」という市販の小さな基板に書き込み、パソコンにつないで使う無料版。画面と操作はパソコン側のソフト（m8cなど）で行います
+- [**M8 Headless**](https://github.com/Dirtywave/M8HeadlessFirmware)：「Teensy 4.1」という市販の小さな基板に書き込み、パソコンにつないで使う無料バージョン。画面と操作はパソコン側のソフト（m8cなど）で行います
   <img src="/img/chiptune-tools/m8gd.webp" alt="M8 Headlessをm8gdで表示した画面" width="560" height="315" loading="lazy" />
 
   - パソコン側の表示ソフトは、[**m8gd**](https://github.com/octoocto/m8gd)（無料、Windows・Mac・Linux）がおすすめです。M8の画面を3Dの本体のような見た目で表示できます（自分も使っています）。
 
-- [**M8 Music Tracker**](https://apps.apple.com/jp/app/m8-music-tracker/id6806721202)（iPhone・iPad）1.2.2：本体の機能をそのまま再現したアプリ版です（2026年9月リリース／App Storeで5,000円）。曲データは実機本体と相互にやりとりできます
+- [**M8 Music Tracker**](https://apps.apple.com/jp/app/m8-music-tracker/id6806721202)（iPhone・iPad）1.2.2：本体の機能をそのまま再現したアプリバージョンです（2026年9月リリース／App Storeで5,000円）。曲データは実機本体と相互にやりとりできます
   <img src="/img/chiptune-tools/m8-music-tracker.webp" alt="M8 Music Trackerの画面" width="560" height="420" loading="lazy" />
 
 ## picoTracker（ハードウェアのトラッカー） {#ja-picotracker}
@@ -258,14 +261,14 @@ GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップ
 
 スマホや携帯ゲーム機で、どこでも曲が作れます。
 
-- [**nanoloop**](https://nanoloop.com/)：4×4のマス目で打ち込むシーケンサー兼シンセ。GAMEBOY用・GBA用のカートリッジ、専用の機械（nanoloop q）、スマホ版があります。スマホ版はiOS 600円・Android 390円
+- [**nanoloop**](https://nanoloop.com/)：4×4のマス目で打ち込むシーケンサー兼シンセ。GAMEBOY用・GBA用のカートリッジ、専用の機械（nanoloop q）、スマホバージョンがあります。スマホバージョンはiOS 600円・Android 390円
   <img src="/img/chiptune-tools/nanoloop.webp" alt="nanoloopの画面" width="560" height="229" loading="lazy" />
 
-- [**naive tracker**](https://nanoloop.com/naive/index.html) 1.0.6：nanoloopの作者による、タッチ画面向けの4トラックのサンプラー兼トラッカー。600円、iPhone・iPad（Android版は準備中）
+- [**naive tracker**](https://nanoloop.com/naive/index.html) 1.0.6：nanoloopの作者による、タッチ画面向けの4トラックのサンプラー兼トラッカー。600円、iPhone・iPad（Androidバージョンは準備中）
   <img src="/img/chiptune-tools/naive.webp" alt="naive trackerの画面" width="194" height="420" loading="lazy" />
   <small>画像：[App Store](https://apps.apple.com/jp/app/naive-tracker/id6758921004)より</small>
 
-- [**snibbetracker**](https://apps.apple.com/jp/app/snibbetracker/id1065797528)：シンプルな音源を持った、チップチューン風のトラッカー。無料、iPhone・iPad（Windows・Mac版もあります）
+- [**snibbetracker**](https://apps.apple.com/jp/app/snibbetracker/id1065797528)：シンプルな音源を持った、チップチューン風のトラッカー。無料、iPhone・iPad（Windows・Macバージョンもあります）
   <img src="/img/chiptune-tools/snibbe.webp" alt="snibbetrackerの画面" width="315" height="420" loading="lazy" />
 
 - [**SidTracker64**](https://apps.apple.com/jp/app/sidtracker64/id955421205) 1.0.5：コモドール64の音源（SID）を再現した、iPad用のトラッカー。1,800円
@@ -277,17 +280,17 @@ GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップ
 - [**Pocket Acid**](https://github.com/boomlinde/pocketacid) v1.11.0：アシッド（TB-303風）の曲を作るためのソフト。ゲームパッドで操作し、安い携帯ゲーム機（R36Sなど）でも動きます。無料、Linuxの携帯ゲーム機・Windows
   <img src="/img/chiptune-tools/pocketacid.webp" alt="Pocket Acidの画面" width="315" height="420" loading="lazy" />
 
-- [**4TRKmini**](https://jasonbmusic.itch.io/4trk-mini)：ドラム1つとシンセ3つの4トラックで作る、携帯ゲーム機向けの作曲ソフト。Amiga版の4TRK-500もあります。無料（投げ銭可）、携帯ゲーム機・Windows・Mac・Linux
+- [**4TRKmini**](https://jasonbmusic.itch.io/4trk-mini)：ドラム1つとシンセ3つの4トラックで作る、携帯ゲーム機向けの作曲ソフト。Amigaバージョンの4TRK-500もあります。無料（投げ銭可）、携帯ゲーム機・Windows・Mac・Linux
   <img src="/img/chiptune-tools/4trk.webp" alt="4TRKminiの画面" width="531" height="420" loading="lazy" />
 
-- [**ESPboy Tracker**](http://shiru.nedopc.com/software.shtml) v1.2：Shiruさんの、小さな携帯機ESPboy用の、LSDjに影響を受けたトラッカー。パソコン版もあります。無料
+- [**ESPboy Tracker**](http://shiru.nedopc.com/software.shtml) v1.2：Shiruさんの、小さな携帯機ESPboy用の、LSDjに影響を受けたトラッカー。パソコンバージョンもあります。無料
   <img src="/img/chiptune-tools/espboy.webp" alt="ESPboy Trackerの画面" width="315" height="420" loading="lazy" />
 
 ## ゲーム機・昔のパソコンの実機で動くソフト {#ja-consoles}
 
 GAMEBOYやGBA、ファミコン、コモドール64などの実機（またはエミュレーター）で動くソフトです。
 
-- [**FMS**](https://lobit-club.itch.io/fms) 1.31：GBA用のグルーヴボックス。2オペレーターのFM音源4トラックと、GAMEBOYのノイズで鳴らします。10ドルから（無料の体験版あり）。カートリッジ版や、パソコン用のプラグイン（ベータ版）もあります
+- [**FMS**](https://lobit-club.itch.io/fms) 1.31：GBA用のグルーヴボックス。2オペレーターのFM音源4トラックと、GAMEBOYのノイズで鳴らします。10ドルから（無料の体験版あり）。カートリッジバージョンや、パソコン用のプラグイン（ベータ版）もあります
   <img src="/img/chiptune-tools/fms.webp" alt="FMSの画面" width="560" height="324" loading="lazy" />
 
 - [**STEPPER**](https://badd10de.itch.io/stepper-gba) 1.9：GBAで動く16ステップのシーケンサー。GAMEBOYの4つの音を鳴らします。無料（投げ銭可）、GBA・3DS
@@ -340,17 +343,17 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
   <img src="/img/chiptune-tools/webx68k.webp" alt="WebX68kの画面" width="507" height="420" loading="lazy" />
   <small>画像：[Xの投稿](https://x.com/haruuraran/status/2084989176400031951)より</small>
 
-- [**NOTE MDX Workbench**](https://github.com/ickaze/NOTE-MDX-Workbench) v2.10.0：ickazeさんの、X68000の音楽（MDX）を作る統合環境。note.x互換のMMLで書けて、FM音源の音色やPCM（PDX）も作れ、WAVやVGMにも書き出せます。無料、Windows
+- [**NOTE MDX Workbench**](https://github.com/ickaze/NOTE-MDX-Workbench) v2.10.0：ickazeさんの、X68000の音楽（MDX）を作る統合環境。note.x互換のMMLで書けて、FM音源の音色やPCM（PDX）も作れ、WAVやVGMにも書き出せます。無料、Windowsのみ
   <img src="/img/chiptune-tools/notemdxwb.webp" alt="NOTE MDX Workbenchの画面" width="560" height="315" loading="lazy" />
   <small>画像：[Xの投稿](https://x.com/ickaze/status/2114383336525484527)より</small>
 
-- [**PDXEditor**](https://github.com/ickaze/PDXEditor) v1.1.1：ickazeさんの、X68000のPCM（PDX）を作る・直すツール。無料、Windows
+- [**PDXEditor**](https://github.com/ickaze/PDXEditor) v1.1.1：ickazeさんの、X68000のPCM（PDX）を作る・直すツール。無料、Windowsのみ
 
-- [**NoteMDX**](https://github.com/ickaze/noteMDX) 0.8 rev5：ickazeさんの、note.x互換のMMLをMDXに変えるコンバーター。無料、Windows
+- [**NoteMDX**](https://github.com/ickaze/noteMDX) 0.8 rev5：ickazeさんの、note.x互換のMMLをMDXに変えるコンバーター。無料、Windowsのみ
 
-- [**IndependentMDX**](https://github.com/ickaze/IndependentMDX) 0.33.5：ickazeさんの、MDXやYM2151のVGMを再生するプレイヤー。無料、Windows
+- [**IndependentMDX**](https://github.com/ickaze/IndependentMDX) 0.33.5：ickazeさんの、MDXやYM2151のVGMを再生するプレイヤー。無料、Windowsのみ
 
-- [**OPMChord**](https://github.com/ickaze/OPMChord) 1.2.3：ickazeさんの、YM2151の1チャンネルで和音を鳴らす楽器。MIDIで弾けます。無料、Windows
+- [**OPMChord**](https://github.com/ickaze/OPMChord) 1.2.3：ickazeさんの、YM2151の1チャンネルで和音を鳴らす楽器。MIDIで弾けます。無料、Windowsのみ
 
 - [**mxv2**](https://github.com/gorry/mxv2) 2026.1015.2：X68000の音楽（MDX）を再生して、演奏のようすも見られるプレイヤー。無料、Windows・Android
   <img src="/img/chiptune-tools/mxv2.webp" alt="mxv2の画面" width="303" height="420" loading="lazy" />
@@ -360,22 +363,22 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 - [**NDP**](https://ndp.squares.net/web/) 1.51：MSX用のPSGドライバーと、そのMMLを書くためのエディター。ブラウザで使える「[NDP Online](https://ndp.squares.net/online/)」もあります。無料、Windows・ブラウザ
   <img src="/img/chiptune-tools/ndp.webp" alt="NDPの画面" width="560" height="403" loading="lazy" />
 
-- [**MSXPLAYer**](https://msxplayer.net/wp/)：MSXアソシエーション公式のMSXエミュレーター。いまの版は、技術評論社の本「MSX-BASICでゲームを作ろう」を持っている人が使えます。Windows
+- [**MSXPLAYer**](https://msxplayer.net/wp/)：MSXアソシエーション公式のMSXエミュレーター。いまのバージョンは、技術評論社の本「MSX-BASICでゲームを作ろう」を持っている人が使えます。Windowsのみ
 
 ## ブラウザで使えるソフト（無料） {#ja-browser}
 
 インストールなしで、ブラウザを開くだけで作れます。曲はURLに保存されるので、URLを送るだけで共有できます。WAVやMIDIへの書き出しもできます。
 
-- [**BeepBox**](https://www.beepbox.co/) 4.2.2：画面のマス目に音を置いていくだけで曲が作れる、いちばんシンプルな作曲ソフト。オフライン版もあります
+- [**BeepBox**](https://www.beepbox.co/) 4.2.2：画面のマス目に音を置いていくだけで曲が作れる、いちばんシンプルな作曲ソフト。オフラインバージョンもあります
   <img src="/img/chiptune-tools/beepbox.webp" alt="BeepBoxの画面" width="515" height="420" loading="lazy" />
 
-- [**JummBox**](https://jummb.us/) 2.6：BeepBoxをもとに、ピッチベンドや細かい音量の調整などを足した派生版
+- [**JummBox**](https://jummb.us/) 2.6：BeepBoxをもとに、ピッチベンドや細かい音量の調整などを足した派生バージョン
   <img src="/img/chiptune-tools/jummbox.webp" alt="JummBoxの画面" width="515" height="420" loading="lazy" />
 
-- [**UltraBox**](https://ultraabox.github.io/)：さまざまなBeepBox派生版の便利機能をひとまとめにしたバージョン。現在もっとも人気のある派生版の一つです
+- [**UltraBox**](https://ultraabox.github.io/)：さまざまなBeepBox派生バージョンの便利機能をひとまとめにしたバージョン。現在もっとも人気のある派生バージョンの一つです
   <img src="/img/chiptune-tools/ultrabox.webp" alt="UltraBoxの画面" width="515" height="420" loading="lazy" />
 
-- [**Slarmoo's Box**](https://slarmoo.github.io/slarmoosbox/) 1.4.11：UltraBoxをもとに、エフェクトや音量変化（エンベロープ）の設定などを増やした派生版
+- [**Slarmoo's Box**](https://slarmoo.github.io/slarmoosbox/) 1.4.11：UltraBoxをもとに、エフェクトや音量変化（エンベロープ）の設定などを増やした派生バージョン
   <img src="/img/chiptune-tools/slarmoos-box.webp" alt="Slarmoo's Boxの画面" width="515" height="420" loading="lazy" />
 
 - [**Efflux**](https://www.igorski.nl/application/efflux/) 3.1.1：ブラウザで動くトラッカー。ピアノロールでも打ち込めます。無料
@@ -397,11 +400,11 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 - [**NSF2MML**](https://famic.prioris.jp/mml/labo/nsf2mml)：ファミコンの音楽ファイル（NSF）をMMLに変えるブラウザのツール。無料
   <img src="/img/chiptune-tools/nsf2mml.webp" alt="NSF2MMLの画面" width="560" height="350" loading="lazy" />
 
-- [**GameBoy Music Compiler（GBMC）**](http://mydocuments.g2.xrea.com/html/gb/sounddriver.html) 2025.07.31版：文字（MML）で曲を書いてGAMEBOYの音源で鳴らすソフト。曲データ（GBSファイル）やエミュレーター・実機で動くROMのほか、演奏のようすが見られるプレイヤー「GBDSP」としても書き出せます。無料、Windows
+- [**GameBoy Music Compiler（GBMC）**](http://mydocuments.g2.xrea.com/html/gb/sounddriver.html) 2025.07.31：文字（MML）で曲を書いてGAMEBOYの音源で鳴らすソフト。曲データ（GBSファイル）やエミュレーター・実機で動くROMのほか、演奏のようすが見られるプレイヤー「GBDSP」としても書き出せます。無料、Windowsのみ
   <img src="/img/chiptune-tools/gbmc.webp" alt="GBMCで書き出したGBDSPの画面" width="336" height="342" loading="lazy" />
 
-- [**mml2vgm**](https://github.com/kuma4649/mml2vgm) TAG809：MMLから、メガドライブなどの音源で鳴らすVGMファイルを作るツール。YM2612やSN76489のほか、YM2151、YM2608、ファミコン、GAMEBOYなど多くの音源に対応し、作業しやすい編集画面（IDE）もあります。無料、Windows
-  - [**MDPlayer**](https://github.com/kuma4649/MDPlayer) STBL567：mml2vgmと同じ作者による、VGMやMDX、NSF、GBS、SIDなど、たくさんの形式を鍵盤の表示つきで鳴らせるプレイヤー。mml2vgmで作った曲の確認にも使えます。無料、Windows
+- [**mml2vgm**](https://github.com/kuma4649/mml2vgm) TAG809：MMLから、メガドライブなどの音源で鳴らすVGMファイルを作るツール。YM2612やSN76489のほか、YM2151、YM2608、ファミコン、GAMEBOYなど多くの音源に対応し、作業しやすい編集画面（IDE）もあります。無料、Windowsのみ
+  - [**MDPlayer**](https://github.com/kuma4649/MDPlayer) STBL567：mml2vgmと同じ作者による、VGMやMDX、NSF、GBS、SIDなど、たくさんの形式を鍵盤の表示つきで鳴らせるプレイヤー。mml2vgmで作った曲の確認にも使えます。無料、Windowsのみ
 
 - [**browser-mml-player**](https://github.com/t-sin/browser-mml-player)：ブラウザで動くMMLプレイヤー。シンセのしくみを学ぶ記事のために作られたものです。無料
   <img src="/img/chiptune-tools/bmml.webp" alt="browser-mml-playerの画面" width="560" height="350" loading="lazy" />
@@ -410,7 +413,7 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 
 - [**PMD**](http://www5.airnet.ne.jp/kajapon/tool.html) Ver.4.8s：PC-9801などのFM音源で鳴らすMMLのドライバー。WindowsではFMPMD2000などで再生できます。無料（ソースも公開）
 
-- [**NSD.Lib**](https://shaw02.github.io/nsdlib/) v1.30：ファミコン用のサウンドドライバーとMMLのコンパイラー。NSFの曲づくりにも、自作のファミコンのゲームに組みこむのにも使えます。ファミコンでMMLを書くなら一番、とsdhizumiさんもおすすめしています。無料、Windows
+- [**NSD.Lib**](https://shaw02.github.io/nsdlib/) v1.30：ファミコン用のサウンドドライバーとMMLのコンパイラー。NSFの曲づくりにも、自作のファミコンのゲームに組みこむのにも使えます。ファミコンでMMLを書くなら一番、とsdhizumiさんもおすすめしています。無料、Windowsのみ
 
 - [**OFGS2tm**](https://x.com/EightbitMays/status/2086505645629718736) Ver0.93：ファミコン用のMMLのドライバー「OFGSv2」を、Maysさんが改造したもの。無料（Xの投稿から配布）
 
@@ -439,7 +442,7 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
   - chipspeech（75ドル）：アーケードゲームや昔のパソコンで使われた、80年代の音声合成チップで歌わせる音源
     <img src="/img/chiptune-tools/chipspeech.webp" alt="chipspeechの画面" width="341" height="420" loading="lazy" />
 
-- [**my2151**](https://booth.pm/ja/items/8292567)：YM2151を再現したFM音源。VOPMの音色ファイル（.opm）が読めます。Windows 64bit（VST3）、BOOTHで販売（体験版あり）
+- [**my2151**](https://booth.pm/ja/items/8292567)：YM2151を再現したFM音源。VOPMの音色ファイル（.opm）が読めます。Windows 64bitのみ（VST3）、BOOTHで販売（体験版あり）
   <img src="/img/chiptune-tools/my2151.webp" alt="my2151の画面" width="560" height="374" loading="lazy" />
 
 - [**Junior**](https://fors.fm/junior)（Fors）：GAMEBOYの音源をもとにした、4bitの波形メモリのシンセ。自分で描いた32個の値の波形とノイズを、LSDjやM8のテーブルのようなモジュレーションで動かせます。実機をそのまま再現するのではなく、今のシンセとして使いやすく広げています。39ドル（機能をしぼった無料の「Junior-Lite」もあります）、Windows・Linux（VST3・CLAP）、Mac（VST3・CLAP・AUv2）
@@ -462,7 +465,7 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 
 ゲームの効果音のような短い音を、すぐに作れます。
 
-- [**sfxr**](https://www.drpetter.se/project_sfxr.html)：ボタンひとつでレトロな効果音を作れる、元祖の効果音ソフト。無料、Windows（ブラウザ版もあります）
+- [**sfxr**](https://www.drpetter.se/project_sfxr.html)：ボタンひとつでレトロな効果音を作れる、元祖の効果音ソフト。無料、Windows（ブラウザバージョンもあります）
   <img src="/img/chiptune-tools/sfxr.webp" alt="sfxrの画面" width="541" height="420" loading="lazy" />
   <small>画像：[Lospec](https://lospec.com/software/sfxr/screenshots)より</small>
 
@@ -482,7 +485,7 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 - [**LSDJ Converter**](https://defensemech.com/lsdj-to-midi)：LSDjの曲のファイルを、ブラウザでMIDIに変えるツール。DAWと一緒に使うときに便利です。無料
   <img src="/img/chiptune-tools/lsdj2midi.webp" alt="LSDJ Converterの画面" width="560" height="350" loading="lazy" />
 
-- [**rePlayer**](https://github.com/arnaud-neny/rePlayer) v0.22.16：トラッカーの曲やチップチューンのファイルをたくさんの形式で再生できるプレイヤー。無料、Windows
+- [**rePlayer**](https://github.com/arnaud-neny/rePlayer) v0.22.16：トラッカーの曲やチップチューンのファイルをたくさんの形式で再生できるプレイヤー。無料、Windowsのみ
   <img src="/img/chiptune-tools/replayer.webp" alt="rePlayerの画面" width="317" height="191" loading="lazy" />
 
 - [**Open Cubic Player**](https://stian.cubic.org/project-ocp.php) v3.5.0：トラッカーの曲やチップチューンを、文字の画面で見ながら再生できるプレイヤー。無料、Windows・Mac・Linux
@@ -494,23 +497,23 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 
 - [**Rustico**](https://rustico.reploid.cafe/)：音の正確さにこだわった、ファミコンのエミュレーター。鳴っている音をピアノロールのように見られます。ブラウザで動きます。無料
 
-- [**Keitai World Launcher**](https://keitaiarchive.org/downloads.html)：日本のガラケー（iアプリ）のゲームをパソコンで動かすためのランチャー。iアプリを動かすソフト（openDoJaなどのエミュレーター）と、[Keitai Archive](https://keitaiarchive.org/)に保存されたゲームをまとめて管理できます。ガラケーのゲームの音楽を聴くのにも使えます。無料、Windows
+- [**Keitai World Launcher**](https://keitaiarchive.org/downloads.html)：日本のガラケー（iアプリ）のゲームをパソコンで動かすためのランチャー。iアプリを動かすソフト（openDoJaなどのエミュレーター）と、[Keitai Archive](https://keitaiarchive.org/)に保存されたゲームをまとめて管理できます。ガラケーのゲームの音楽を聴くのにも使えます。無料、Windowsのみ
 
 ## Shiruさんのツール（無料） {#ja-shiru}
 
 Shiruさんが公開している音楽のツールです。どれも[Shiruさんのソフトウェアのページ](http://shiru.nedopc.com/software.shtml)からダウンロードできます。
 
-- **1tracker** v0.47：ZX Spectrumのビーパー（1bit音）を中心に、さまざまな発音方式（エンジン）に対応した実験的なトラッカー。Windows
+- **1tracker** v0.47：ZX Spectrumのビーパー（1bit音）を中心に、さまざまな発音方式（エンジン）に対応した実験的なトラッカー。Windowsのみ
   <img src="/img/chiptune-tools/shiru-1tracker.webp" alt="1trackerの画面" width="560" height="361" loading="lazy" />
 
-- **SNES Game Sound System** v1.42：スーパーファミコンの自作ゲーム用に、曲と効果音を作るためのトラッカーとドライバーのセット。Windows
+- **SNES Game Sound System** v1.42：スーパーファミコンの自作ゲーム用に、曲と効果音を作るためのトラッカーとドライバーのセット。Windowsのみ
   <img src="/img/chiptune-tools/shiru-snesgss.webp" alt="SNES Game Sound Systemの画面" width="560" height="383" loading="lazy" />
 
 - **SnevenTracker mod**：スーパーファミコン用のトラッカー「SnevenTracker」を改造したもの
 
 - **0CC-LLTracker**：0CC-FamiTrackerをもとに、FM音源チップ「YM2413（OPLL）」の音を鳴らせるようにしたもの
 
-- **Yach*PMS** v1.02：昔の音楽機器「MuzCell」用のトラッカー。音を再現したWindows版もあります
+- **Yach*PMS** v1.02：昔の音楽機器「MuzCell」用のトラッカー。音を再現したWindowsバージョンもあります
   <img src="/img/chiptune-tools/shiru-yachpms.webp" alt="Yach*PMSの画面" width="560" height="361" loading="lazy" />
 
 - **AYFX Editor** v0.7：PSG音源（AY-3-8910・YM2149）用の効果音エディター
@@ -601,7 +604,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
   <img src="/img/chiptune-tools/atari-psg-tracker.webp" alt="PSG Trackerの画面" width="560" height="350" loading="lazy" />
   <small>画像：[Atarimania](https://www.atarimania.com/games/atari-st-utilities-psg-tracker-22030)より</small>
 
-- [**The Music Studio**](https://www.atarimania.com/games/atari-st-utilities-music-studio-the-36357)：Activisionの楽譜の作曲ソフトのST版。STの音源かMIDIで鳴らします（1986年）。今ならmaxYMiserかFurnace
+- [**The Music Studio**](https://www.atarimania.com/games/atari-st-utilities-music-studio-the-36357)：Activisionの楽譜の作曲ソフトのSTバージョン。STの音源かMIDIで鳴らします（1986年）。今ならmaxYMiserかFurnace
   <img src="/img/chiptune-tools/atari-music-studio-st.webp" alt="The Music Studioの画面" width="560" height="350" loading="lazy" />
   <small>画像：[Atarimania](https://www.atarimania.com/games/atari-st-utilities-music-studio-the-36357)より</small>
 
@@ -617,7 +620,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
   <img src="/img/chiptune-tools/atari-tcb-tracker.webp" alt="TCB Trackerの画面" width="320" height="200" loading="lazy" />
   <small>画像：[Atarimania](https://www.atarimania.com/games/atari-st-utilities-tcb-tracker-31405)より</small>
 
-- [**ProTracker ST**](https://www.atarimania.com/games/atari-st-utilities-protracker-st-30690)：ProTrackerのST版。4チャンネルのMOD曲を作れるソフト。今ならFurnaceやOpenMPT（STの実機ならmaxYMiser）
+- [**ProTracker ST**](https://www.atarimania.com/games/atari-st-utilities-protracker-st-30690)：ProTrackerのSTバージョン。4チャンネルのMOD曲を作れるソフト。今ならFurnaceやOpenMPT（STの実機ならmaxYMiser）
   <img src="/img/chiptune-tools/atari-protracker-st.webp" alt="ProTracker STの画面" width="320" height="200" loading="lazy" />
   <small>画像：[Atarimania](https://www.atarimania.com/games/atari-st-utilities-protracker-st-30690)より</small>
 
@@ -635,7 +638,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 ### Atari 8bit（POKEY）
 
-- [**Raster Music Tracker**](http://raster.infos.cz/atari/rmt/rmt.htm)：Atari 8bitの音源（POKEY）用の、Windowsのトラッカー。無料、Windows
+- [**Raster Music Tracker**](http://raster.infos.cz/atari/rmt/rmt.htm)：Atari 8bitの音源（POKEY）用の、Windowsのトラッカー。無料、Windowsのみ
   <img src="/img/chiptune-tools/botb-rmt.webp" alt="Raster Music Trackerの画面" width="400" height="300" loading="lazy" />
 
 - [**Chaos Music Composer**](https://atariki.krap.pl/index.php/Chaos_Music_Composer)：Atari 8bitの実機で動く、ポーランドで人気だった作曲ソフト。今ならRaster Music TrackerかFurnace
@@ -698,7 +701,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
   <img src="/img/chiptune-tools/botb-ft2.webp" alt="FastTracker IIの画面" width="400" height="253" loading="lazy" />
   <small>画像：[pouet.net](https://www.pouet.net/prod.php?which=13350)より</small>
 
-- [**Impulse Tracker**](https://en.wikipedia.org/wiki/Impulse_Tracker)：IT形式を生んだDOSのトラッカー。最後の版は1999年です。今ならSchism Tracker
+- [**Impulse Tracker**](https://en.wikipedia.org/wiki/Impulse_Tracker)：IT形式を生んだDOSのトラッカー。最後のバージョンは1999年です。今ならSchism Tracker
   <img src="/img/chiptune-tools/botb-it.webp" alt="Impulse Trackerの画面" width="560" height="350" loading="lazy" />
   <small>画像：[Wikipedia](https://en.wikipedia.org/wiki/Impulse_Tracker)より</small>
 
@@ -747,7 +750,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 ### ファミコン
 
-- [**j0CC-FamiTracker**](https://github.com/nyanpasu64/j0CC-FamiTracker)：0CC-FamiTrackerの不具合を直した派生版。今ならその後継のDn-FamiTracker
+- [**j0CC-FamiTracker**](https://github.com/nyanpasu64/j0CC-FamiTracker)：0CC-FamiTrackerの不具合を直した派生バージョン。今ならその後継のDn-FamiTracker
   <img src="/img/chiptune-tools/botb-j0cc.webp" alt="j0CC-FamiTrackerの画面" width="480" height="360" loading="lazy" />
   <small>画像：[YouTubeの動画](https://www.youtube.com/watch?v=899ZnSlLk3Q)より</small>
 
@@ -765,7 +768,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 ### セガ（マスターシステム・メガドライブ）
 
-- [**Genny**](https://github.com/superjoebob/genny) v1.54 Beta：メガドライブ（YM2612・SN76489）の音源を再現したVSTプラグイン。VGMにも書き出せます。無料、Windows
+- [**Genny**](https://github.com/superjoebob/genny) v1.54 Beta：メガドライブ（YM2612・SN76489）の音源を再現したVSTプラグイン。VGMにも書き出せます。無料、Windowsのみ
   <img src="/img/chiptune-tools/botb-genny.webp" alt="Gennyの画面" width="560" height="324" loading="lazy" />
 
 - [**Mod2PSG2**](https://www.smspower.org/Music/Mod2PSG2)：マスターシステム・ゲームギアの音源（SN76489）用のトラッカー。今ならFurnaceかDefleMask
@@ -786,7 +789,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 ### ZX Spectrum
 
-- [**Beepola**](https://freestuff.grok.co.uk/beepola/) v1.08.01：ZX Spectrumのビーパー用のトラッカー。無料、Windows
+- [**Beepola**](https://freestuff.grok.co.uk/beepola/) v1.08.01：ZX Spectrumのビーパー用のトラッカー。無料、Windowsのみ
   <img src="/img/chiptune-tools/botb-beepola.webp" alt="Beepolaの画面" width="560" height="386" loading="lazy" />
 
 - [**Sound-Tracker (ZX)**](https://spectrumcomputing.co.uk/alt/25080/ZX-Spectrum/Soundtracker)：1990年ごろの、ZX Spectrumの実機で動くAY音源の作曲ソフト。今ならVortex Tracker
@@ -810,7 +813,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
   <img src="/img/chiptune-tools/botb-nitro.webp" alt="NitroTrackerの画面" width="200" height="300" loading="lazy" />
   <small>画像：[pouet.net](https://www.pouet.net/prod.php?which=24323)より</small>
 
-- [**KORG DS-10**](https://en.wikipedia.org/wiki/KORG_DS-10)：ニンテンドーDSで動く、KORGのシンセ（MS-20風）とドラムのソフト。iPhone・iPad版の「KORG iDS-10」も今は買えず、後継はありません
+- [**KORG DS-10**](https://en.wikipedia.org/wiki/KORG_DS-10)：ニンテンドーDSで動く、KORGのシンセ（MS-20風）とドラムのソフト。iPhone・iPadバージョンの「KORG iDS-10」も今は買えず、後継はありません
   <img src="/img/chiptune-tools/botb-ds10.webp" alt="KORG DS-10の画面" width="434" height="420" loading="lazy" />
   <small>画像：[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:KORG_DS-10.jpg)より</small>
 
@@ -831,7 +834,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 ### Mario Paint
 
-- [**Mario Sequencer**](https://github.com/minghai/MarioSequencer)：マリオペイント風の作曲ソフト。Windows版とブラウザ版があります。今ならパソコン用のSuper Mario Paint
+- [**Mario Sequencer**](https://github.com/minghai/MarioSequencer)：マリオペイント風の作曲ソフト。Windowsバージョンとブラウザバージョンがあります。今ならパソコン用のSuper Mario Paint
   <img src="/img/chiptune-tools/botb-mariosequencer.webp" alt="Mario Sequencerの画面" width="413" height="420" loading="lazy" />
 
 ### 携帯型・そのほかのトラッカー
@@ -867,11 +870,11 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 - [**Nite (Nokia Internal Tune Editor)**](http://onj3.andrelouis.com/phonetones/Software%20and%20Soundbanks/Software/Nokia/Nokia%20Internal%20Tune%20Editor.zip)：Nokiaの社内で使われていた、単音の着メロを作るツール
 
-- **Nokia PC Composer**（Windows）
+- **Nokia PC Composer**（Windowsのみ）
 
-- **CMX Studio**（Windows）
+- **CMX Studio**（Windowsのみ）
 
-- **ATS-MA SMAF tools**（Windows）
+- **ATS-MA SMAF tools**（Windowsのみ）
 
 ### 補助ツール・プレイヤー
 
@@ -888,7 +891,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 - [**Maxmod**](https://maxmod.org/) v2.1.0：GBAやDSの自作ゲームで、MOD・XM・ITなどの曲を鳴らすライブラリ。無料
   <img src="/img/chiptune-tools/botb-maxmod.webp" alt="Maxmodの画面" width="512" height="384" loading="lazy" />
 
-- [**NSFPlay**](https://bbbradsmith.github.io/nsfplay/) 2.6：ファミコンの音楽ファイル（NSF）を正確に鳴らすプレイヤー。無料、Windows
+- [**NSFPlay**](https://bbbradsmith.github.io/nsfplay/) 2.6：ファミコンの音楽ファイル（NSF）を正確に鳴らすプレイヤー。無料、Windowsのみ
   <img src="/img/chiptune-tools/botb-nsfplay.webp" alt="NSFPlayの画面" width="373" height="115" loading="lazy" />
   <small>画像：[GitHub](https://github.com/bbbradsmith/nsfplay)より</small>
 
@@ -904,10 +907,10 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 - [**VirtuaNSF**](http://virtuanes.s1.xrea.com/)：エミュレーター「VirtuaNES」をもとにした、NSFのプレイヤー。今ならNSFPlay
 
-- [**hoot**](http://dmpsoft.s17.xrea.com/hoot/)：日本のパソコンやゲーム機の音楽を、音源を再現して鳴らすプレイヤー。Windows
+- [**hoot**](http://dmpsoft.s17.xrea.com/hoot/)：日本のパソコンやゲーム機の音楽を、音源を再現して鳴らすプレイヤー。Windowsのみ
   <img src="/img/chiptune-tools/botb-hoot.webp" alt="hootの画面" width="525" height="420" loading="lazy" />
 
-- **Mumml**（Windows）
+- **Mumml**（Windowsのみ）
 
 - **OpenSPC**（DOS・Windows）
 
@@ -925,7 +928,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 - **SANA 8BIT VST**：配布されている最新のBeta 2.0は64bitのVST3に対応しており、最近のDAWでも使えます
 
-- **VOPM**：古い32bitのプラグインで、いまのDAWではそのまま使えないことが多いです。osoumenさんによる改良版「VOPMex」なら、64bitのDAWでも使えます。my2151やchipsynth OPMZも代わりになります
+- **VOPM**：古い32bitのプラグインで、いまのDAWではそのまま使えないことが多いです。osoumenさんによる改良バージョン「VOPMex」なら、64bitのDAWでも使えます。my2151やchipsynth OPMZも代わりになります
 
 各ツールのバージョンや価格は、2026年10月30日時点の各配布ページの情報に基づいています。掲載している画像の多くは、各ツールの公式ページ（App Storeを含む）や[Lospec](https://lospec.com/software/)から引用しました。なお、BeepBox、JummBox、UltraBox、Slarmoo's Box、FlMML on HTML5、browser-mml-player、NSF2MML、LSDJ Converter、SNDH Playerは実際にサイトを開いて撮影したものです。little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは各作者のX（旧Twitter）の投稿から引用し、Dn-FamiTracker、Furnace、furnace-piano-roll、FamiStudio、KiraStudio、OpenMPT、WaveTracker、GTUltra、SID Factory II、Bamboo Tracker、DefleMask、LabChirpの画像はRei8bitさんからご提供いただきました。機種別の欄の画像は、各ツールのページのほか、Battle of the Bits、Atarimania、pouet.net、Wikipedia、YouTubeの動画のサムネイルなどから引用しました。
 {{< /lang >}}
@@ -981,6 +984,9 @@ These load in your usual DAW and play like any other instrument.
 - [**Soraboy**](https://shadowsora211.itch.io/soraboy) (ShadowSora) v1.1.1: inspired by the GAMEBOY sound chip. Free (tips welcome), Windows 64-bit and Mac (VST3)
   <img src="/img/chiptune-tools/soraboy.webp" alt="Soraboy screenshot" width="560" height="420" loading="lazy" />
 
+- [**SANA 8BIT VST**](https://github.com/m-masaki72/SANA_8BIT_VST) (Masaki Mori) Beta v2.00: a simple synth for chiptune. You can switch between waveforms such as square waves, draw your own waveforms with "waveform memory", and use pitch sweep, vibrato, and arpeggios. Free, Windows (VST, VST3, 32-bit and 64-bit) and Mac (VST, AU)
+  <img src="/img/chiptune-tools/sana-8bit.webp" alt="SANA 8BIT VST screenshot" width="560" height="377" loading="lazy" />
+
 - [**C700**](https://github.com/osoumen/C700) (osoumen) ver20211031: a sampler that recreates the SNES sound chip. You load your own waveforms and sounds into it. It can also export your song as an SNES music file (.spc). Free, Windows (VST2) and Mac (VST2, AU)
   <img src="/img/chiptune-tools/c700.webp" alt="C700 screenshot" width="513" height="420" loading="lazy" />
 
@@ -988,15 +994,15 @@ These load in your usual DAW and play like any other instrument.
   <img src="/img/chiptune-tools/vopmex.webp" alt="VOPMex screenshot" width="560" height="399" loading="lazy" />
   <small>Image: from [a post on X](https://x.com/freevstbot/status/2020608131357675659)</small>
 
-- [**OPNA FM Synth**](https://trpico.booth.pm/items/8351023) v1.0.1: torupi's plugin recreating the YM2608 (OPNA) FM chip. Free (600 yen support option), Windows (VST3)
+- [**OPNA FM Synth**](https://trpico.booth.pm/items/8351023) v1.0.1: torupi's plugin recreating the YM2608 (OPNA) FM chip. Free (600 yen support option), Windows only (VST3)
   <img src="/img/chiptune-tools/opnafm.webp" alt="OPNA FM Synth screenshot" width="560" height="382" loading="lazy" />
 
 ## Effects {#en-effects}
 
-- [**Deltanizer**](https://ss1.xrea.com/theta.s57.xrea.com/software/#deltanizer) (theta) v2.0.0: gives sounds you've programmed the texture of the NES's DPCM channel (the gritty, rough sound used for drums and voices). Free, Windows 64-bit (VST3)
+- [**Deltanizer**](https://ss1.xrea.com/theta.s57.xrea.com/software/#deltanizer) (theta) v2.0.0: gives sounds you've programmed the texture of the NES's DPCM channel (the gritty, rough sound used for drums and voices). Free, Windows 64-bit only (VST3)
   <img src="/img/chiptune-tools/deltanizer.webp" alt="Deltanizer screenshot" width="292" height="313" loading="lazy" />
 
-- [**Interruptor**](https://ss1.xrea.com/theta.s57.xrea.com/software/#interruptor) (theta) v0.0.2: recreates "interrupts," the old game-music trick of slipping quick sound effects or drums into the gaps of a melody. Free, Windows 64-bit (VST3)
+- [**Interruptor**](https://ss1.xrea.com/theta.s57.xrea.com/software/#interruptor) (theta) v0.0.2: recreates "interrupts," the old game-music trick of slipping quick sound effects or drums into the gaps of a melody. Free, Windows 64-bit only (VST3)
   <img src="/img/chiptune-tools/interruptor.webp" alt="Interruptor screenshot" width="291" height="310" loading="lazy" />
 
 - [**chipcrusher**](https://www.plogue.com/products/chipcrusher.html) (Plogue): adds the texture of old consoles after the fact, such as the slightly gritty voices and drums of the NES or the SNES's distinctive roughness and echo. $39
@@ -1026,7 +1032,7 @@ You program within the limits of the console's sound chip, which makes it easier
     <img src="/img/chiptune-tools/furnace-piano-roll.webp" alt="furnace-piano-roll screenshot" width="560" height="307" loading="lazy" />
     <small>Image: provided by Rei8bit</small>
 
-- [**OpenMPT**](https://openmpt.org/) 1.32.11.00: a long-standing tracker that isn't tied to any one console. Windows
+- [**OpenMPT**](https://openmpt.org/) 1.32.11.00: a long-standing tracker that isn't tied to any one console. Windows only
   <img src="/img/chiptune-tools/openmpt.webp" alt="OpenMPT screenshot" width="560" height="315" loading="lazy" />
   <small>Image: provided by Rei8bit</small>
 
@@ -1039,7 +1045,7 @@ You program within the limits of the console's sound chip, which makes it easier
 - [**TIC-80**](https://tic80.com/) v1.4.1: a "fantasy computer" for making tiny games, with built-in 4-channel music and sound effect editors. Free (PRO version with extra features is $10), Windows, Mac, Linux, Android, browser. I also [posted a video on X](https://x.com/to6okegao/status/1244441165102854145) of a wavetable synth I tried in TIC-80
   <img src="/img/chiptune-tools/tic80.webp" alt="TIC-80 screenshot" width="560" height="317" loading="lazy" />
 
-- [**Piston Collage**](https://pxtone.org/downloads/) (pxtone) ver.0.9.4.56: a music program where you put pitches on waveforms you've drawn or WAVs you've loaded and arrange them. You can make a whole song in it alone, and it's easy to use. Compilations of songs made with it still come out, such as "[PXTUNES 10th Anniversary: THE FUTURE OF PXTONE](https://pxtunes.bandcamp.com/album/pxtunes-10th-anniversary-the-future-of-pxtone)" from October 2026. Free (Windows)
+- [**Piston Collage**](https://pxtone.org/downloads/) (pxtone) ver.0.9.4.56: a music program where you put pitches on waveforms you've drawn or WAVs you've loaded and arrange them. You can make a whole song in it alone, and it's easy to use. Compilations of songs made with it still come out, such as "[PXTUNES 10th Anniversary: THE FUTURE OF PXTONE](https://pxtunes.bandcamp.com/album/pxtunes-10th-anniversary-the-future-of-pxtone)" from October 2026. Free, Windows only
   <img src="/img/chiptune-tools/piston-collage.webp" alt="Piston Collage screenshot" width="472" height="296" loading="lazy" />
 
 - [**ptcollab**](https://yuxshao.github.io/ptcollab/) v0.6.4.11: a music editor built on the pxtone (Piston Collage) engine that lets you make a song together with friends over the network, with MIDI input support. Free, Windows, Mac, Linux
@@ -1052,7 +1058,7 @@ You program within the limits of the console's sound chip, which makes it easier
 - [**Arkos Tracker 3**](https://www.julien-nevo.com/arkostracker/) 3.7: a tracker for PSG chips (AY-3-8910, YM2149) used in the MSX, ZX Spectrum, Atari ST and more. Free, Windows, Mac, Linux
   <img src="/img/chiptune-tools/arkos.webp" alt="Arkos Tracker 3 screenshot" width="560" height="350" loading="lazy" />
 
-- [**Vortex Tracker**](https://github.com/benbaker76/VortexTracker) 3.0.0: a rebuilt version of the long-standing tracker for PSG chips (AY-3-8910, YM2149). Free, Windows
+- [**Vortex Tracker**](https://github.com/benbaker76/VortexTracker) 3.0.0: a rebuilt version of the long-standing tracker for PSG chips (AY-3-8910, YM2149). Free, Windows only
   <img src="/img/chiptune-tools/vortex.webp" alt="Vortex Tracker screenshot" width="277" height="420" loading="lazy" />
 
 - [**Osctet**](https://jangle.dev/osctet/) 1.4.1: a synth-and-sampler tracker that also handles unusual tunings and rhythms. Free, Windows, Linux
@@ -1100,10 +1106,10 @@ You program within the limits of the console's sound chip, which makes it easier
   <img src="/img/chiptune-tools/sidfactory2.webp" alt="SID Factory II screenshot" width="560" height="285" loading="lazy" />
   <small>Image: provided by Rei8bit</small>
 
-- [**PIRORO**](https://store.steampowered.com/app/2905900/PIRORO/) ver.3.4.0: a piano-roll chiptune composer that exports ROMs for real GAMEBOY and GBA hardware and imports MIDI. 1,300 yen on Steam, Windows
+- [**PIRORO**](https://store.steampowered.com/app/2905900/PIRORO/) ver.3.4.0: a piano-roll chiptune composer that exports ROMs for real GAMEBOY and GBA hardware and imports MIDI. 1,300 yen on Steam, Windows only
   <img src="/img/chiptune-tools/piroro.webp" alt="PIRORO screenshot" width="560" height="315" loading="lazy" />
 
-- [**MEKIMEKI BOY (メキメキボーイ)**](https://amuru9.wixsite.com/my-site/mekimeki-chip): a piano-roll composer by the author of PIRORO that exports GAMEBOY ROMs. Free, Windows
+- [**MEKIMEKI BOY (メキメキボーイ)**](https://amuru9.wixsite.com/my-site/mekimeki-chip): a piano-roll composer by the author of PIRORO that exports GAMEBOY ROMs. Free, Windows only
   <img src="/img/chiptune-tools/mekimeki.webp" alt="MEKIMEKI BOY screenshot" width="560" height="298" loading="lazy" />
 
 - [**Lovely Composer**](https://booth.pm/ja/items/3006558): a cute music maker in the spirit of console music-making software. Make retro game-style songs and sound effects and export to WAV or MIDI. 990 yen (BOOTH), Windows (and some Linux)
@@ -1264,17 +1270,17 @@ Tools for making and playing music for the X68000, PC-9801, PC-8801 and MSX.
   <img src="/img/chiptune-tools/webx68k.webp" alt="WebX68k screenshot" width="507" height="420" loading="lazy" />
   <small>Image: from [a post on X](https://x.com/haruuraran/status/2084989176400031951)</small>
 
-- [**NOTE MDX Workbench**](https://github.com/ickaze/NOTE-MDX-Workbench) v2.10.0: ickaze's all-in-one environment for X68000 music (MDX). Write note.x-compatible MML, make FM voices and PCM banks (PDX), and export to WAV or VGM. Free, Windows
+- [**NOTE MDX Workbench**](https://github.com/ickaze/NOTE-MDX-Workbench) v2.10.0: ickaze's all-in-one environment for X68000 music (MDX). Write note.x-compatible MML, make FM voices and PCM banks (PDX), and export to WAV or VGM. Free, Windows only
   <img src="/img/chiptune-tools/notemdxwb.webp" alt="NOTE MDX Workbench screenshot" width="560" height="315" loading="lazy" />
   <small>Image: from [a post on X](https://x.com/ickaze/status/2114383336525484527)</small>
 
-- [**PDXEditor**](https://github.com/ickaze/PDXEditor) v1.1.1: ickaze's tool for making and editing X68000 PCM banks (PDX). Free, Windows
+- [**PDXEditor**](https://github.com/ickaze/PDXEditor) v1.1.1: ickaze's tool for making and editing X68000 PCM banks (PDX). Free, Windows only
 
-- [**NoteMDX**](https://github.com/ickaze/noteMDX) 0.8 rev5: ickaze's converter from note.x-compatible MML to MDX. Free, Windows
+- [**NoteMDX**](https://github.com/ickaze/noteMDX) 0.8 rev5: ickaze's converter from note.x-compatible MML to MDX. Free, Windows only
 
-- [**IndependentMDX**](https://github.com/ickaze/IndependentMDX) 0.33.5: ickaze's player for MDX and YM2151 VGM files. Free, Windows
+- [**IndependentMDX**](https://github.com/ickaze/IndependentMDX) 0.33.5: ickaze's player for MDX and YM2151 VGM files. Free, Windows only
 
-- [**OPMChord**](https://github.com/ickaze/OPMChord) 1.2.3: ickaze's instrument that plays chords on a single YM2151 channel, playable over MIDI. Free, Windows
+- [**OPMChord**](https://github.com/ickaze/OPMChord) 1.2.3: ickaze's instrument that plays chords on a single YM2151 channel, playable over MIDI. Free, Windows only
 
 - [**mxv2**](https://github.com/gorry/mxv2) 2026.1015.2: a player and visualizer for X68000 music (MDX). Free, Windows, Android
   <img src="/img/chiptune-tools/mxv2.webp" alt="mxv2 screenshot" width="303" height="420" loading="lazy" />
@@ -1284,7 +1290,7 @@ Tools for making and playing music for the X68000, PC-9801, PC-8801 and MSX.
 - [**NDP**](https://ndp.squares.net/web/) 1.51: a PSG sound driver for the MSX and an MML editor for it, with a browser version, [NDP Online](https://ndp.squares.net/online/). Free, Windows, browser
   <img src="/img/chiptune-tools/ndp.webp" alt="NDP screenshot" width="560" height="403" loading="lazy" />
 
-- [**MSXPLAYer**](https://msxplayer.net/wp/): the official MSX emulator from the MSX Association. The current build is available to owners of the Gijutsu-Hyoron book "MSX-BASICでゲームを作ろう". Windows
+- [**MSXPLAYer**](https://msxplayer.net/wp/): the official MSX emulator from the MSX Association. The current build is available to owners of the Gijutsu-Hyoron book "MSX-BASICでゲームを作ろう". Windows only
 
 ## Browser apps (free) {#en-browser}
 
@@ -1321,11 +1327,11 @@ Write songs as text (MML) and play them.
 - [**NSF2MML**](https://famic.prioris.jp/mml/labo/nsf2mml): a browser tool that converts NES music files (NSF) to MML. Free
   <img src="/img/chiptune-tools/nsf2mml.webp" alt="NSF2MML screenshot" width="560" height="350" loading="lazy" />
 
-- [**GameBoy Music Compiler (GBMC)**](http://mydocuments.g2.xrea.com/html/gb/sounddriver.html) 2025.07.31: an MML compiler for the GAMEBOY sound chip that exports GBS files, ROMs for emulators and real hardware, as well as the visual player "GBDSP". Free, Windows
+- [**GameBoy Music Compiler (GBMC)**](http://mydocuments.g2.xrea.com/html/gb/sounddriver.html) 2025.07.31: an MML compiler for the GAMEBOY sound chip that exports GBS files, ROMs for emulators and real hardware, as well as the visual player "GBDSP". Free, Windows only
   <img src="/img/chiptune-tools/gbmc.webp" alt="GBDSP screen exported from GBMC" width="336" height="342" loading="lazy" />
 
-- [**mml2vgm**](https://github.com/kuma4649/mml2vgm) TAG809: a tool that turns MML into VGM files for the Mega Drive and many other chips (YM2151, YM2608, NES, GAMEBOY and more), with an included IDE. Free, Windows
-  - [**MDPlayer**](https://github.com/kuma4649/MDPlayer) STBL567: a player by the same author for VGM, MDX, NSF, GBS, SID and many more formats, with a keyboard display. Handy for checking songs made with mml2vgm. Free, Windows
+- [**mml2vgm**](https://github.com/kuma4649/mml2vgm) TAG809: a tool that turns MML into VGM files for the Mega Drive and many other chips (YM2151, YM2608, NES, GAMEBOY and more), with an included IDE. Free, Windows only
+  - [**MDPlayer**](https://github.com/kuma4649/MDPlayer) STBL567: a player by the same author for VGM, MDX, NSF, GBS, SID and many more formats, with a keyboard display. Handy for checking songs made with mml2vgm. Free, Windows only
 
 - [**browser-mml-player**](https://github.com/t-sin/browser-mml-player): a browser MML player made for an article introducing how synthesizers work. Free
   <img src="/img/chiptune-tools/bmml.webp" alt="browser-mml-player screenshot" width="560" height="350" loading="lazy" />
@@ -1334,7 +1340,7 @@ Write songs as text (MML) and play them.
 
 - [**PMD**](http://www5.airnet.ne.jp/kajapon/tool.html) Ver.4.8s: an MML driver for the FM sound of the PC-9801 and others, playable on Windows with FMPMD2000 and similar. Free (source available)
 
-- [**NSD.Lib**](https://shaw02.github.io/nsdlib/) v1.30: an NES sound driver and MML compiler, for both NSF chiptunes and NES homebrew games. sdhizumi recommends it as the best choice for writing NES music in MML. Free, Windows
+- [**NSD.Lib**](https://shaw02.github.io/nsdlib/) v1.30: an NES sound driver and MML compiler, for both NSF chiptunes and NES homebrew games. sdhizumi recommends it as the best choice for writing NES music in MML. Free, Windows only
 
 - [**OFGS2tm**](https://x.com/EightbitMays/status/2086505645629718736) Ver0.93: Mays's modified version of OFGSv2, an MML sound driver for the NES. Free (shared via an X post)
 
@@ -1363,7 +1369,7 @@ Write songs as text (MML) and play them.
   - chipspeech ($75): sings with '80s speech synthesis chips used in arcade games and old computers
     <img src="/img/chiptune-tools/chipspeech.webp" alt="chipspeech screenshot" width="341" height="420" loading="lazy" />
 
-- [**my2151**](https://booth.pm/ja/items/8292567): an FM synth that recreates the YM2151. It can load VOPM patch files (.opm). Windows 64-bit (VST3), sold on BOOTH (demo available)
+- [**my2151**](https://booth.pm/ja/items/8292567): an FM synth that recreates the YM2151. It can load VOPM patch files (.opm). Windows 64-bit only (VST3), sold on BOOTH (demo available)
   <img src="/img/chiptune-tools/my2151.webp" alt="my2151 screenshot" width="560" height="374" loading="lazy" />
 
 - [**Junior**](https://fors.fm/junior) (Fors): a 4-bit wavetable synth based on the GAMEBOY sound chip. Draw a 32-step waveform, add noise, and move them with table modulators like those in LSDj and M8. Rather than a strict emulation, it expands the original into a modern synth. $39 (a free, pared-down Junior-Lite is also available), Windows and Linux (VST3, CLAP), Mac (VST3, CLAP, AUv2)
@@ -1406,7 +1412,7 @@ Quickly make short game-style sound effects.
 - [**LSDJ Converter**](https://defensemech.com/lsdj-to-midi): a browser tool that converts LSDj song files to MIDI, handy alongside a DAW. Free
   <img src="/img/chiptune-tools/lsdj2midi.webp" alt="LSDJ Converter screenshot" width="560" height="350" loading="lazy" />
 
-- [**rePlayer**](https://github.com/arnaud-neny/rePlayer) v0.22.16: a player for many tracker and chiptune formats. Free, Windows
+- [**rePlayer**](https://github.com/arnaud-neny/rePlayer) v0.22.16: a player for many tracker and chiptune formats. Free, Windows only
   <img src="/img/chiptune-tools/replayer.webp" alt="rePlayer screenshot" width="317" height="191" loading="lazy" />
 
 - [**Open Cubic Player**](https://stian.cubic.org/project-ocp.php) v3.5.0: a text-mode player and visualizer for tracker and chiptune music. Free, Windows, Mac, Linux
@@ -1418,16 +1424,16 @@ Quickly make short game-style sound effects.
 
 - [**Rustico**](https://rustico.reploid.cafe/): an NES emulator focused on accurate sound, with a piano-roll-style audio visualizer, running in the browser. Free
 
-- [**Keitai World Launcher**](https://keitaiarchive.org/downloads.html): a launcher for running Japanese feature phone (i-appli) games on PC, bringing together emulators (like openDoJa) and games preserved on [Keitai Archive](https://keitaiarchive.org/). Also great for listening to game soundtracks. Free, Windows
+- [**Keitai World Launcher**](https://keitaiarchive.org/downloads.html): a launcher for running Japanese feature phone (i-appli) games on PC, bringing together emulators (like openDoJa) and games preserved on [Keitai Archive](https://keitaiarchive.org/). Also great for listening to game soundtracks. Free, Windows only
 
 ## Shiru's tools (free) {#en-shiru}
 
 Music tools released by Shiru, all downloadable from [Shiru's software page](http://shiru.nedopc.com/software.shtml).
 
-- **1tracker** v0.47: an experimental multi-engine tracker focused on ZX Spectrum beeper (1-bit) routines, with support for a few other systems. Windows
+- **1tracker** v0.47: an experimental multi-engine tracker focused on ZX Spectrum beeper (1-bit) routines, with support for a few other systems. Windows only
   <img src="/img/chiptune-tools/shiru-1tracker.webp" alt="1tracker screenshot" width="560" height="361" loading="lazy" />
 
-- **SNES Game Sound System** v1.42: a tracker and sound driver set for making music and sound effects for SNES homebrew games. Windows
+- **SNES Game Sound System** v1.42: a tracker and sound driver set for making music and sound effects for SNES homebrew games. Windows only
   <img src="/img/chiptune-tools/shiru-snesgss.webp" alt="SNES Game Sound System screenshot" width="560" height="383" loading="lazy" />
 
 - **SnevenTracker mod**: a modified version of the SNES tracker SnevenTracker
@@ -1559,7 +1565,7 @@ Trackers and tools listed on the wiki of the chiptune community [Battle of the B
 
 ### Atari 8-bit (POKEY)
 
-- [**Raster Music Tracker**](http://raster.infos.cz/atari/rmt/rmt.htm): a Windows tracker for the Atari 8-bit POKEY chip. Free, Windows
+- [**Raster Music Tracker**](http://raster.infos.cz/atari/rmt/rmt.htm): a Windows tracker for the Atari 8-bit POKEY chip. Free, Windows only
   <img src="/img/chiptune-tools/botb-rmt.webp" alt="Raster Music Tracker screenshot" width="400" height="300" loading="lazy" />
 
 - [**Chaos Music Composer**](https://atariki.krap.pl/index.php/Chaos_Music_Composer): a popular Polish music editor running on the Atari 8-bit. Today, use Raster Music Tracker or Furnace
@@ -1689,7 +1695,7 @@ Trackers and tools listed on the wiki of the chiptune community [Battle of the B
 
 ### Sega (Master System, Mega Drive)
 
-- [**Genny**](https://github.com/superjoebob/genny) v1.54 Beta: a VST instrument recreating the Mega Drive sound (YM2612, SN76489) that can log VGM. Free, Windows
+- [**Genny**](https://github.com/superjoebob/genny) v1.54 Beta: a VST instrument recreating the Mega Drive sound (YM2612, SN76489) that can log VGM. Free, Windows only
   <img src="/img/chiptune-tools/botb-genny.webp" alt="Genny screenshot" width="560" height="324" loading="lazy" />
 
 - [**Mod2PSG2**](https://www.smspower.org/Music/Mod2PSG2): a tracker for the Master System and Game Gear PSG (SN76489). Today, use Furnace or DefleMask
@@ -1710,7 +1716,7 @@ Trackers and tools listed on the wiki of the chiptune community [Battle of the B
 
 ### ZX Spectrum
 
-- [**Beepola**](https://freestuff.grok.co.uk/beepola/) v1.08.01: a tracker for ZX Spectrum beeper engines. Free, Windows
+- [**Beepola**](https://freestuff.grok.co.uk/beepola/) v1.08.01: a tracker for ZX Spectrum beeper engines. Free, Windows only
   <img src="/img/chiptune-tools/botb-beepola.webp" alt="Beepola screenshot" width="560" height="386" loading="lazy" />
 
 - [**Sound-Tracker (ZX)**](https://spectrumcomputing.co.uk/alt/25080/ZX-Spectrum/Soundtracker): an early AY music editor running on the ZX Spectrum (c. 1990). Today, use Vortex Tracker
@@ -1791,11 +1797,11 @@ Trackers and tools listed on the wiki of the chiptune community [Battle of the B
 
 - [**Nite (Nokia Internal Tune Editor)**](http://onj3.andrelouis.com/phonetones/Software%20and%20Soundbanks/Software/Nokia/Nokia%20Internal%20Tune%20Editor.zip): Nokia's leaked internal editor for monophonic ringtones
 
-- **Nokia PC Composer** (Windows)
+- **Nokia PC Composer** (Windows only)
 
-- **CMX Studio** (Windows)
+- **CMX Studio** (Windows only)
 
-- **ATS-MA SMAF tools** (Windows)
+- **ATS-MA SMAF tools** (Windows only)
 
 ### Helper tools and players
 
@@ -1812,7 +1818,7 @@ Trackers and tools listed on the wiki of the chiptune community [Battle of the B
 - [**Maxmod**](https://maxmod.org/) v2.1.0: a library for playing MOD, XM, IT and more in GBA and DS homebrew. Free
   <img src="/img/chiptune-tools/botb-maxmod.webp" alt="Maxmod screenshot" width="512" height="384" loading="lazy" />
 
-- [**NSFPlay**](https://bbbradsmith.github.io/nsfplay/) 2.6: an accurate player for NES music files (NSF). Free, Windows
+- [**NSFPlay**](https://bbbradsmith.github.io/nsfplay/) 2.6: an accurate player for NES music files (NSF). Free, Windows only
   <img src="/img/chiptune-tools/botb-nsfplay.webp" alt="NSFPlay screenshot" width="373" height="115" loading="lazy" />
   <small>Image: from [GitHub](https://github.com/bbbradsmith/nsfplay)</small>
 
@@ -1828,10 +1834,10 @@ Trackers and tools listed on the wiki of the chiptune community [Battle of the B
 
 - [**VirtuaNSF**](http://virtuanes.s1.xrea.com/): an NSF player based on the VirtuaNES emulator. Today, use NSFPlay
 
-- [**hoot**](http://dmpsoft.s17.xrea.com/hoot/): a player that emulates sound hardware for Japanese computer and console music. Windows
+- [**hoot**](http://dmpsoft.s17.xrea.com/hoot/): a player that emulates sound hardware for Japanese computer and console music. Windows only
   <img src="/img/chiptune-tools/botb-hoot.webp" alt="hoot screenshot" width="525" height="420" loading="lazy" />
 
-- **Mumml** (Windows)
+- **Mumml** (Windows only)
 
 - **OpenSPC** (DOS, Windows)
 
