@@ -406,7 +406,7 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 - [**my2151**](https://booth.pm/ja/items/8292567)：YM2151を再現したFM音源。VOPMの音色ファイル（.opm）が読めます。Windows 64bit（VST3）、BOOTHで販売（体験版あり）
   <img src="/img/chiptune-tools/my2151.webp" alt="my2151の画面" width="560" height="374" loading="lazy" />
 
-- [**Junior**](https://fors.fm/junior)（Fors）：GAMEBOYの音源をもとにした、4bitの波形メモリのシンセ。自分で描いた32個の値の波形とノイズを、LSDjやM8のテーブルのようなモジュレーションで動かせます。実機をそのまま再現するのではなく、今のシンセとして使いやすく広げています。39ドル（機能をしぼった無料の「Junior-Lite」もあります）、Windows・Linux（VST3・CLAP）、Mac（VST3・CLAP・AU）
+- [**Junior**](https://fors.fm/junior)（Fors）：GAMEBOYの音源をもとにした、4bitの波形メモリのシンセ。自分で描いた32個の値の波形とノイズを、LSDjやM8のテーブルのようなモジュレーションで動かせます。実機をそのまま再現するのではなく、今のシンセとして使いやすく広げています。39ドル（機能をしぼった無料の「Junior-Lite」もあります）、Windows・Linux（VST3・CLAP）、Mac（VST3・CLAP・AUv2）
   <img src="/img/chiptune-tools/junior.webp" alt="Juniorの画面" width="420" height="420" loading="lazy" />
 
 - [**inSIDious**](https://impactsoundworks.com/product/insidious/)：Impact Soundworksの、コモドール64の音源（SID）を再現した音源。64ドル（無料のReaktor Playerで動きます）
@@ -644,7 +644,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 - [**Paragon5**](http://www.nullsleep.com/programs/p5_tracker.zip)：GAMEBOYの音源用の、Windowsのトラッカー。今ならhUGETrackerかFurnace
   <img src="/img/chiptune-tools/botb-paragon5.webp" alt="Paragon5の画面" width="480" height="360" loading="lazy" />
 
-- [**BoyScout**](https://www.gbadev.org/tools.php?showinfo=187)：GAMEBOYの4つの音源用の、Windowsのトラッカー。今ならhUGETrackerかFurnace
+- [**BoyScout**](https://www.gbadev.org/tools.php?showinfo=187)：GAMEBOYの4チャンネル用の、Windowsのトラッカー。今ならhUGETrackerかFurnace
 
 - [**Fatass Tracker**](http://jeremyevers.com/fatass/)：GAMEBOYカラーの実機で動く、FastTracker II風のトラッカー。今ならLSDj
   <img src="/img/chiptune-tools/botb-fatass.webp" alt="Fatass Trackerの画面" width="320" height="288" loading="lazy" />
@@ -737,7 +737,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 ### 携帯型・そのほかのトラッカー
 
-- [**LittleGPTracker (Little Piggy Tracker)**](https://github.com/djdiskmachine/LittleGPTracker) Little Piggy Tracker 1.5.0：LSDjに似た、8チャンネルのサンプルのトラッカー。picoTrackerのもとになったソフトです。無料、Windows・Mac・Linux・携帯ゲーム機など
+- [**LittleGPTracker (Little Piggy Tracker)**](https://github.com/djdiskmachine/LittleGPTracker) 1.5.0：LSDjに似た、8チャンネルのサンプルのトラッカー。picoTrackerのもとになったソフトです。無料、Windows・Mac・Linux・携帯ゲーム機など
   <img src="/img/chiptune-tools/botb-lgpt.webp" alt="LittleGPTracker (Little Piggy Tracker)の画面" width="560" height="420" loading="lazy" />
 
 - [**ProTrekkr**](https://github.com/hitchhikr/protrekkr) v2.8.3_PRE_2：デモやイントロのための、データの小さな曲を作るトラッカー兼シンセ。無料、Windows・Mac・Linux
@@ -1224,7 +1224,7 @@ Write songs as text (MML) and play them.
 - [**my2151**](https://booth.pm/ja/items/8292567): an FM synth that recreates the YM2151. It can load VOPM patch files (.opm). Windows 64-bit (VST3), sold on BOOTH (demo available)
   <img src="/img/chiptune-tools/my2151.webp" alt="my2151 screenshot" width="560" height="374" loading="lazy" />
 
-- [**Junior**](https://fors.fm/junior) (Fors): a 4-bit wavetable synth based on the GAMEBOY sound chip. Draw a 32-step waveform, add noise, and move them with table modulators like those in LSDj and M8. Rather than a strict emulation, it expands the original into a modern synth. $39 (a free, pared-down Junior-Lite is also available), Windows and Linux (VST3, CLAP), Mac (VST3, CLAP, AU)
+- [**Junior**](https://fors.fm/junior) (Fors): a 4-bit wavetable synth based on the GAMEBOY sound chip. Draw a 32-step waveform, add noise, and move them with table modulators like those in LSDj and M8. Rather than a strict emulation, it expands the original into a modern synth. $39 (a free, pared-down Junior-Lite is also available), Windows and Linux (VST3, CLAP), Mac (VST3, CLAP, AUv2)
   <img src="/img/chiptune-tools/junior.webp" alt="Junior screenshot" width="420" height="420" loading="lazy" />
 
 - [**inSIDious**](https://impactsoundworks.com/product/insidious/): Impact Soundworks' Commodore 64 (SID) instrument. $64 (runs in the free Reaktor Player)
@@ -1527,7 +1527,7 @@ Trackers and tools listed on the wiki of the chiptune community [Battle of the B
 
 ### Nintendo DS
 
-- [**NitroTracker**](https://github.com/0xtob/nitrotracker): an FT2-style tracker for the Nintendo DS, played with the stylus. Today, use citratracker on 3DS, or Furnace or MilkyTracker on a PC
+- [**NitroTracker**](https://github.com/0xtob/nitrotracker): an FT2-style tracker for the Nintendo DS, operated with a stylus. Today, use citratracker on 3DS, or Furnace or MilkyTracker on a PC
   <img src="/img/chiptune-tools/botb-nitro.webp" alt="NitroTracker screenshot" width="200" height="300" loading="lazy" />
 
 - [**KORG DS-10**](https://en.wikipedia.org/wiki/KORG_DS-10): a KORG synth (MS-20 style) and drum app for the Nintendo DS. Today, use KORG iDS-10 on iPhone and iPad
@@ -1555,7 +1555,7 @@ Trackers and tools listed on the wiki of the chiptune community [Battle of the B
 
 ### Portable and other trackers
 
-- [**LittleGPTracker (Little Piggy Tracker)**](https://github.com/djdiskmachine/LittleGPTracker) Little Piggy Tracker 1.5.0: an LSDj-like 8-channel sample tracker, the basis of picoTracker. Free, Windows, Mac, Linux, handhelds and more
+- [**LittleGPTracker (Little Piggy Tracker)**](https://github.com/djdiskmachine/LittleGPTracker) 1.5.0: an LSDj-like 8-channel sample tracker, the basis of picoTracker. Free, Windows, Mac, Linux, handhelds and more
   <img src="/img/chiptune-tools/botb-lgpt.webp" alt="LittleGPTracker (Little Piggy Tracker) screenshot" width="560" height="420" loading="lazy" />
 
 - [**ProTrekkr**](https://github.com/hitchhikr/protrekkr) v2.8.3_PRE_2: a tracker and synth for small-size demo and intro music. Free, Windows, Mac, Linux
@@ -1639,5 +1639,5 @@ For more obscure trackers and tools not covered here, see the wiki pages of the 
 
 - **SANA 8BIT VST** and **VOPM**: both are old 32-bit plugins and often won't run as is in today's DAWs. For NES sounds, Magical 8bit Plug 2 or New DoReFAMI can take their place, and for the YM2151, my2151 or chipsynth OPMZ
 
-Tool versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). The screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, FlMML on HTML5, browser-mml-player, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me. Screenshots for little-scale's trackers, WebX68k, and NOTE MDX Workbench were sourced from the creators' posts on X, and those for Dn-FamiTracker, Furnace, furnace-piano-roll, FamiStudio, KiraStudio, OpenMPT, WaveTracker, GTUltra, SID Factory II, Bamboo Tracker, DefleMask, and LabChirp were kindly provided by Rei8bit. Images in the by-system section come from each tool's page as well as Battle of the Bits, Atarimania, pouet.net, Wikipedia and YouTube video thumbnails.
+Tool versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). The screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, FlMML on HTML5, browser-mml-player, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me. Screenshots for little-scale's trackers, WebX68k, and NOTE MDX Workbench were sourced from the creators' posts on X, and those for Dn-FamiTracker, Furnace, furnace-piano-roll, FamiStudio, KiraStudio, OpenMPT, WaveTracker, GTUltra, SID Factory II, Bamboo Tracker, DefleMask, and LabChirp were kindly provided by Rei8bit. Images in the by-system section come from each tool's page as well as Battle of the Bits, Atarimania, pouet.net, Wikipedia, and YouTube video thumbnails.
 {{< /lang >}}
