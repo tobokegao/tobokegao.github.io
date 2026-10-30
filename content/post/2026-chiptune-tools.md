@@ -185,8 +185,8 @@ GAMEBOY用のLSDjと、その操作感を受け継いでほかのゲーム機や
 - [**4TRKmini**](https://jasonbmusic.itch.io/4trk-mini)：ドラム1つとシンセ3つの4トラックで作る、携帯ゲーム機向けの作曲ソフト。Amiga版の4TRK-500もあります。無料（投げ銭可）、携帯ゲーム機・Windows・Mac・Linux
   <img src="/img/chiptune-tools/4trk.webp" alt="4TRKminiの画面" width="531" height="420" loading="lazy" />
 
-- [**EBT**](https://github.com/ESPboy-edu/ESPboy_EBT_Tracker) v1.1：小さな携帯機ESPboy用の4チャンネルのトラッカー。パソコン版もあります。無料
-  <img src="/img/chiptune-tools/espboy.webp" alt="EBTの画面" width="315" height="420" loading="lazy" />
+- [**ESPboy Tracker**](http://shiru.nedopc.com/software.shtml) v1.2：Shiruさんの、小さな携帯機ESPboy用の、LSDjに影響を受けたトラッカー。パソコン版もあります。無料
+  <img src="/img/chiptune-tools/espboy.webp" alt="ESPboy Trackerの画面" width="315" height="420" loading="lazy" />
 
 ## ゲーム機・昔のパソコンの実機で動くソフト
 
@@ -413,6 +413,37 @@ GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップ
 - [**Shoot Chop Drop**](https://apps.apple.com/jp/app/shoot-chop-drop/id6768887559) 1.5.2：撮った動画を切ってパッドで鳴らす、ビデオサンプラー。無料、iPhone・iPad
   <img src="/img/chiptune-tools/scd.webp" alt="Shoot Chop Dropの画面" width="193" height="420" loading="lazy" />
 
+## Shiruさんのツール（無料）
+
+Shiruさんが公開している音楽のツールです。どれも[Shiruさんのソフトウェアのページ](http://shiru.nedopc.com/software.shtml)からダウンロードできます。
+
+- **1tracker** v0.47：ZX Spectrumのビーパー（1bit音）を中心に、さまざまな発音方式（エンジン）に対応した実験的なトラッカー。Windows
+  <img src="/img/chiptune-tools/shiru-1tracker.webp" alt="1trackerの画面" width="560" height="361" loading="lazy" />
+
+- **SNES Game Sound System** v1.42：スーパーファミコンの自作ゲーム用に、曲と効果音を作るためのトラッカーとドライバーのセット。Windows
+  <img src="/img/chiptune-tools/shiru-snesgss.webp" alt="SNES Game Sound Systemの画面" width="560" height="383" loading="lazy" />
+
+- **SnevenTracker mod**：スーパーファミコン用のトラッカー「SnevenTracker」を改造したもの
+
+- **0CC-LLTracker**：0CC-FamiTrackerをもとに、FM音源チップ「YM2413（OPLL）」の音を鳴らせるようにしたもの
+
+- **Yach*PMS** v1.02：昔の音楽機器「MuzCell」用のトラッカー。音を再現したWindows版もあります
+  <img src="/img/chiptune-tools/shiru-yachpms.webp" alt="Yach*PMSの画面" width="560" height="361" loading="lazy" />
+
+- **AYFX Editor** v0.7：PSG音源（AY-3-8910・YM2149）用の効果音エディター
+  <img src="/img/chiptune-tools/shiru-ayfx.webp" alt="AYFX Editorの画面" width="560" height="414" loading="lazy" />
+
+- **BeepFX** v1.2：ZX Spectrumのビーパー用の効果音エディター
+  <img src="/img/chiptune-tools/shiru-beepfx.webp" alt="BeepFXの画面" width="519" height="420" loading="lazy" />
+
+- **NSF2VGM** v1.1：FamiTrackerで作ったNSFを、VGMに変えるコマンドラインのツール
+
+- **SuBoard**：キーボード付きのファミコン互換機（Subor互換機）を、ライブで弾けるチップチューンの楽器にするソフト
+
+- **VSTプラグイン**：1bitの音を作る「1bitstudio」、昔の音源の特徴を混ぜたシンセ「ChipWave」とドラムシンセ「ChipDrum」、ファミコンの音源を再現してFamiTrackerの音色が使える「FTplug」、PSG音源を再現してVortex Tracker IIの音色が使える「VT2i」、ファミコンのDPCMの歪みを再現する「CrushDMC」、PCのスピーカーの音楽を作る「PCSPE」、フロッピードライブで鳴らす音楽を再現する「Flopster」など
+
+- **SoundFont**：ZX Spectrumのビーパーの音（wtbeepなど）や、中国のおもちゃのピアノの音（BF-630、TX-5488Aなど）。レトロでチープな機器独特の響きを再現できるデータ（インパルス応答）もあります
+
 ## もっと知りたい人へ
 
 ここに載せていない、よりマニアックなトラッカーやツールは、チップチューンの投稿コミュニティ「Battle of the Bits」の解説ページ（英語）にまとまっています。
@@ -609,8 +640,8 @@ Make music anywhere on a phone or a handheld.
 - [**4TRKmini**](https://jasonbmusic.itch.io/4trk-mini): a 4-track workstation (one drum and three synth tracks) for retro handhelds, with an Amiga version called 4TRK-500. Free (tips welcome), handhelds, Windows, Mac, Linux
   <img src="/img/chiptune-tools/4trk.webp" alt="4TRKmini screenshot" width="531" height="420" loading="lazy" />
 
-- [**EBT**](https://github.com/ESPboy-edu/ESPboy_EBT_Tracker) v1.1: a 4-channel tracker for the tiny ESPboy handheld, with a desktop version. Free
-  <img src="/img/chiptune-tools/espboy.webp" alt="EBT screenshot" width="315" height="420" loading="lazy" />
+- [**ESPboy Tracker**](http://shiru.nedopc.com/software.shtml) v1.2: Shiru's LSDj-inspired tracker for the tiny ESPboy handheld, with a desktop version. Free
+  <img src="/img/chiptune-tools/espboy.webp" alt="ESPboy Tracker screenshot" width="315" height="420" loading="lazy" />
 
 ## Software for real consoles and old computers
 
@@ -836,6 +867,37 @@ Quickly make short game-style sound effects.
 
 - [**Shoot Chop Drop**](https://apps.apple.com/jp/app/shoot-chop-drop/id6768887559) 1.5.2: a video sampler that chops clips you shoot onto pads. Free, iPhone and iPad
   <img src="/img/chiptune-tools/scd.webp" alt="Shoot Chop Drop screenshot" width="193" height="420" loading="lazy" />
+
+## Shiru's tools (free)
+
+Music tools released by Shiru, all downloadable from [Shiru's software page](http://shiru.nedopc.com/software.shtml).
+
+- **1tracker** v0.47: an experimental multi-engine tracker focused on ZX Spectrum beeper (1-bit) routines, with support for a few other systems. Windows
+  <img src="/img/chiptune-tools/shiru-1tracker.webp" alt="1tracker screenshot" width="560" height="361" loading="lazy" />
+
+- **SNES Game Sound System** v1.42: a tracker and sound driver set for making music and sound effects for SNES homebrew games. Windows
+  <img src="/img/chiptune-tools/shiru-snesgss.webp" alt="SNES Game Sound System screenshot" width="560" height="383" loading="lazy" />
+
+- **SnevenTracker mod**: a modified version of the SNES tracker SnevenTracker
+
+- **0CC-LLTracker**: 0CC-FamiTracker retargeted to the YM2413 (OPLL) FM chip
+
+- **Yach*PMS** v1.02: a tracker for the old music device MuzCell, with a Windows version that emulates its sound
+  <img src="/img/chiptune-tools/shiru-yachpms.webp" alt="Yach*PMS screenshot" width="560" height="361" loading="lazy" />
+
+- **AYFX Editor** v0.7: a sound effect editor for PSG chips (AY-3-8910, YM2149)
+  <img src="/img/chiptune-tools/shiru-ayfx.webp" alt="AYFX Editor screenshot" width="560" height="414" loading="lazy" />
+
+- **BeepFX** v1.2: a sound effect editor for the ZX Spectrum beeper
+  <img src="/img/chiptune-tools/shiru-beepfx.webp" alt="BeepFX screenshot" width="519" height="420" loading="lazy" />
+
+- **NSF2VGM** v1.1: a command-line tool that converts NSF files made with FamiTracker to VGM
+
+- **SuBoard**: turns Famiclones with a keyboard (Subor-compatible) into a chiptune instrument for live playing
+
+- **VST plugins**: a variety of plugins, including 1bitstudio (1-bit sound), ChipWave and ChipDrum (synth and drum synth blending vintage chip traits), FTplug (NES sound using FamiTracker instruments), VT2i (PSG sound using Vortex Tracker II instruments), CrushDMC (NES DPCM-style distortion), PCSPE (PC speaker sound) and Flopster (floppy drive music)
+
+- **SoundFonts**: ZX Spectrum beeper sounds (wtbeep and more) and Chinese toy pianos (BF-630, TX-5488A and more), plus a pack of lo-fi device impulse responses
 
 ## To dig deeper
 
