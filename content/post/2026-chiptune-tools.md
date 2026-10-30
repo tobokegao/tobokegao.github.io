@@ -431,6 +431,9 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 - [**ChipTone**](https://sfbgames.itch.io/chiptone)：音を重ねて効果音を作るソフト。作った音は自由に使えます。無料（投げ銭可）、ブラウザ・Windows・Mac
   <img src="/img/chiptune-tools/chiptone.webp" alt="ChipToneの画面" width="560" height="315" loading="lazy" />
 
+- [**LabChirp**](https://labbed.net/software/labchirp/) v1.75：最大8チャンネルを重ねて、波形やエンベロープ、エフェクトで効果音を作るソフト。ランダムに作る機能もあります。効果音づくりならこれが好き、とRei8bitさんのおすすめです。無料、Windows（Mono経由でMac・Linuxも）
+  <img src="/img/chiptune-tools/labchirp.webp" alt="LabChirpの画面" width="503" height="420" loading="lazy" />
+
 ## 再生・変換・そのほか {#ja-players}
 
 - [**LSDJ Converter**](https://defensemech.com/lsdj-to-midi)：LSDjの曲のファイルを、ブラウザでMIDIに変えるツール。DAWと一緒に使うときに便利です。無料
@@ -732,9 +735,6 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 - [**FMPMD2000**](http://c60.la.coocan.jp/fmpmd.html)：PC-88・PC-98のPMDの曲を、Windowsで鳴らすプレイヤー。無料
 
-- [**VCV Rack**](https://vcvrack.com/Rack) Rack 2：パソコンで動く、ユーロラック風のモジュラーシンセ。無料（DAWで使えるPro版は有料）、Windows・Mac・Linux
-  <img src="/img/chiptune-tools/botb-vcv.webp" alt="VCV Rackの画面" width="560" height="309" loading="lazy" />
-
 - [**it2nsf**](https://github.com/mukunda-/it2nsf)：ITの曲をNSFに変えるツール。今ならDn-FamiTrackerかFurnace
 
 - [**s3m2nsf**](https://github.com/mukunda-/s3m2nsf)：S3Mの曲をNSFに変えるツール。今ならDn-FamiTrackerかFurnace
@@ -766,7 +766,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 - **SANA 8BIT VST**、**VOPM**：どちらも古い32bitのプラグインで、いまのDAWではそのままでは使えないことが多いです。ファミコン系はMagical 8bit Plug 2やNew DoReFAMI、YM2151はmy2151かchipsynth OPMZが代わりになります
 
-各ツールのバージョンや価格は、2026年10月30日時点の各配布ページの情報に基づいています。掲載している画像の多くは、各ツールの公式ページ（App Storeを含む）や[Lospec](https://lospec.com/software/)から引用しました。なお、BeepBox、JummBox、UltraBox、Slarmoo's Box、FlMML on HTML5、browser-mml-player、NSF2MML、LSDJ Converter、SNDH Playerは実際にサイトを開いて撮影したものです。little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは各作者のX（旧Twitter）の投稿から引用し、Dn-FamiTracker、Furnace、furnace-piano-roll、FamiStudio、KiraStudio、OpenMPT、WaveTracker、GTUltra、SID Factory II、Bamboo Tracker、DefleMaskの画像はRei8bitさんからご提供いただきました。機種別の欄の画像は、各ツールのページのほか、Battle of the Bits、pouet.net、Wikipedia、YouTubeの動画のサムネイルなどから引用しました。
+各ツールのバージョンや価格は、2026年10月30日時点の各配布ページの情報に基づいています。掲載している画像の多くは、各ツールの公式ページ（App Storeを含む）や[Lospec](https://lospec.com/software/)から引用しました。なお、BeepBox、JummBox、UltraBox、Slarmoo's Box、FlMML on HTML5、browser-mml-player、NSF2MML、LSDJ Converter、SNDH Playerは実際にサイトを開いて撮影したものです。little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは各作者のX（旧Twitter）の投稿から引用し、Dn-FamiTracker、Furnace、furnace-piano-roll、FamiStudio、KiraStudio、OpenMPT、WaveTracker、GTUltra、SID Factory II、Bamboo Tracker、DefleMask、LabChirpの画像はRei8bitさんからご提供いただきました。機種別の欄の画像は、各ツールのページのほか、Battle of the Bits、pouet.net、Wikipedia、YouTubeの動画のサムネイルなどから引用しました。
 {{< /lang >}}
 
 {{< lang en >}}
@@ -1194,6 +1194,9 @@ Quickly make short game-style sound effects.
 - [**ChipTone**](https://sfbgames.itch.io/chiptone): a sound effect maker built from layered sounds; what you make is free to use. Free (tips welcome), browser, Windows, Mac
   <img src="/img/chiptune-tools/chiptone.webp" alt="ChipTone screenshot" width="560" height="315" loading="lazy" />
 
+- [**LabChirp**](https://labbed.net/software/labchirp/) v1.75: a sound effect maker that layers up to eight channels with waveforms, envelopes and effects, plus a randomizer. Rei8bit's favorite for making sound effects. Free, Windows (Mac and Linux via Mono)
+  <img src="/img/chiptune-tools/labchirp.webp" alt="LabChirp screenshot" width="503" height="420" loading="lazy" />
+
 ## Players, converters and more {#en-players}
 
 - [**LSDJ Converter**](https://defensemech.com/lsdj-to-midi): a browser tool that converts LSDj song files to MIDI, handy alongside a DAW. Free
@@ -1495,9 +1498,6 @@ Trackers and tools listed on the wiki of the chiptune community [Battle of the B
 
 - [**FMPMD2000**](http://c60.la.coocan.jp/fmpmd.html): a Windows player for PC-88 and PC-98 PMD music. Free
 
-- [**VCV Rack**](https://vcvrack.com/Rack) Rack 2: a virtual Eurorack modular synth. Free (Rack Pro, usable in a DAW, is paid), Windows, Mac, Linux
-  <img src="/img/chiptune-tools/botb-vcv.webp" alt="VCV Rack screenshot" width="560" height="309" loading="lazy" />
-
 - [**it2nsf**](https://github.com/mukunda-/it2nsf): converts specially made IT files into NSF. Today, use Dn-FamiTracker or Furnace
 
 - [**s3m2nsf**](https://github.com/mukunda-/s3m2nsf): converts specially made S3M files into NSF. Today, use Dn-FamiTracker or Furnace
@@ -1529,5 +1529,5 @@ For more obscure trackers and tools not covered here, see the wiki pages of the 
 
 - **SANA 8BIT VST** and **VOPM**: both are old 32-bit plugins and often won't run as is in today's DAWs. For NES sounds, Magical 8bit Plug 2 or New DoReFAMI can take their place, and for the YM2151, my2151 or chipsynth OPMZ
 
-Tool versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). The screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, FlMML on HTML5, browser-mml-player, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me. Screenshots for little-scale's trackers, WebX68k, and NOTE MDX Workbench were sourced from the creators' posts on X, and those for Dn-FamiTracker, Furnace, furnace-piano-roll, FamiStudio, KiraStudio, OpenMPT, WaveTracker, GTUltra, SID Factory II, Bamboo Tracker, and DefleMask were kindly provided by Rei8bit. Images in the by-system section come from each tool's page as well as Battle of the Bits, pouet.net, Wikipedia and YouTube video thumbnails.
+Tool versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). The screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, FlMML on HTML5, browser-mml-player, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me. Screenshots for little-scale's trackers, WebX68k, and NOTE MDX Workbench were sourced from the creators' posts on X, and those for Dn-FamiTracker, Furnace, furnace-piano-roll, FamiStudio, KiraStudio, OpenMPT, WaveTracker, GTUltra, SID Factory II, Bamboo Tracker, DefleMask, and LabChirp were kindly provided by Rei8bit. Images in the by-system section come from each tool's page as well as Battle of the Bits, pouet.net, Wikipedia and YouTube video thumbnails.
 {{< /lang >}}
