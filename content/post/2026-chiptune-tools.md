@@ -7,7 +7,7 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 ---
 
 {{< lang ja >}}
-梅干茶漬けさんのブログ「あじたまのーと」の2021年の記事「[ピコピコ音楽の制作に役立つ音源10選](https://blog.ajitama-note.com/entry/2021/03/06/215656)」と、thetaさんの[ソフトウェアのページ](https://ss1.xrea.com/theta.s57.xrea.com/software/)をもとに、ほかのツールも足して、最新バージョンでまとめ直しました。バージョンや値段は、2026年10月30日に各ツールの配布ページで確かめたものです。画面の画像は各ツールの公式ページから引用しました（BeepBox、JummBox、UltraBox、Slarmoo's Boxは、実際にサイトを開いて撮影したものです）。
+梅干茶漬けさんのブログ「あじたまのーと」の2021年の記事「[ピコピコ音楽の制作に役立つ音源10選](https://blog.ajitama-note.com/entry/2021/03/06/215656)」と、thetaさんの[ソフトウェアのページ](https://ss1.xrea.com/theta.s57.xrea.com/software/)をもとに、ほかのツールも足して、最新のバージョンに合わせてまとめ直しました。バージョンや値段は、2026年10月30日に各ツールの配布ページで確かめたものです。画面の画像は各ツールの公式ページから引用しました（BeepBox、JummBox、UltraBox、Slarmoo's Boxは、実際にサイトを開いて撮影したもの、little-scaleさんのトラッカーはlittle-scaleさんのXの投稿から引用したものです）。
 
 ## まずは無料のプラグインから
 
@@ -35,7 +35,7 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 - [**chipcrusher**](https://www.plogue.com/products/chipcrusher.html)（Plogue）：ファミコンの少しざらざらした声・ドラムの音や、スーパーファミコン独特の粗さとエコーなど、昔のゲーム機らしい音の質感をあとから加えられるエフェクト。39ドル
   <img src="/img/chiptune-tools/chipcrusher.webp" alt="chipcrusherの画面" width="560" height="189" loading="lazy" />
 
-## トラッカー・専用ソフト（PICO-8以外は無料）
+## トラッカー・専用ソフト（PICO-8とRenoise以外は無料）
 
 ゲーム機の音源の制限どおりに打ち込めるので、「本物っぽさ」が出やすい方法です。
 
@@ -48,6 +48,8 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
   <img src="/img/chiptune-tools/furnace.webp" alt="Furnaceの画面" width="560" height="350" loading="lazy" />
 - [**OpenMPT**](https://openmpt.org/) 1.32.11.00：特定のゲーム機に縛られない、昔からあるトラッカー。Windows
   <img src="/img/chiptune-tools/openmpt.webp" alt="OpenMPTの画面" width="300" height="202" loading="lazy" />
+- [**Renoise**](https://www.renoise.com/) 3.5.4：録音した音（サンプル）を使った曲づくりに強い、DAWのように使えるトラッカー。音色や効果を追加する機能（VSTなどのプラグイン）も使えます。76ユーロ、Windows・Mac・Linux
+  <img src="/img/chiptune-tools/renoise.webp" alt="Renoiseの画面" width="560" height="397" loading="lazy" />
 - [**PICO-8**](https://www.lexaloffle.com/pico-8.php) v0.2.7：レトロなドット絵ゲームをまるごと作れる「架空のゲーム機」ソフトです。ソフトの中に、チップチューンを作るための音楽・効果音エディターがあらかじめ入っています。15ドル、Windows・Mac・Linux・Raspberry Pi
   <img src="/img/chiptune-tools/pico-8.webp" alt="PICO-8の画面" width="560" height="242" loading="lazy" />
 - [**LSDj**](https://www.littlesounddj.com/) v9.4.2：GAMEBOYの実機（またはPCなどのエミュレーター）で動く音楽制作ソフト。2020年から無料でダウンロードできます（寄付も受け付けています）
@@ -62,12 +64,17 @@ LSDjの操作感を、ほかのゲーム機や機材に持ちこんだトラッ�
 - [**Risa**](https://risa.laamaa.fi/)（laamaa）：ファミコン用の作曲ソフト（トラッカー）。名作「LSDj」に近い感覚で画面に直接打ち込めます。本体の音に加えて、カセット側の拡張音源（MMC5）によるピコピコ音（矩形波）が2音多く使えます。エミュレーター「Mesen」や、実機カートリッジ「EverDrive N8 Pro」での動作が推奨されています
   <img src="/img/chiptune-tools/risa.webp" alt="Risaの画面" width="256" height="240" loading="lazy" />
 - [**genmddj**](https://github.com/little-scale/genmddj)（little-scale）v0.25：メガドライブ用
+  <img src="/img/chiptune-tools/genmddj.webp" alt="genmddjの画面" width="560" height="420" loading="lazy" />
 - [**smsggdj**](https://github.com/little-scale/smsggdj)（little-scale）v0.48：セガ・マスターシステムとゲームギア用
+  <img src="/img/chiptune-tools/smsggdj.webp" alt="smsggdjのカートリッジ" width="525" height="420" loading="lazy" />
 - [**sndj**](https://github.com/little-scale/sndj)（little-scale）v0.15：スーパーファミコン用
+  <img src="/img/chiptune-tools/sndj.webp" alt="sndjを実機で動かしているところ" width="560" height="420" loading="lazy" />
 - [**alynxdj**](https://github.com/little-scale/alynxdj)（little-scale）v0.60：Atari Lynx用
+  <img src="/img/chiptune-tools/alynxdj.webp" alt="alynxdjを実機で動かしているところ" width="560" height="315" loading="lazy" />
 - [**PocketTracker**](https://conanizer.github.io/pockettracker/)（conanizer）v0.9.9.1：携帯型トラッカーの名機（LSDj、LGPT、M8）の使い心地を受け継いだ、Android用の作曲ソフト（トラッカー）です。自分で用意した音声素材（サンプル）やSF2（音色ファイル）を読み込めるため、音MADやYTPMVの素材を刻んで鳴らすのにも向いています（最大8トラック）。スマホでも、ボタン付きのAndroid携帯ゲーム機でも動きます
   <img src="/img/chiptune-tools/pockettracker.webp" alt="PocketTrackerの画面" width="560" height="294" loading="lazy" />
 - [**ChipNomad**](https://chipnomad.org/)（Megus）v1.0.5：LSDjや人気の携帯型機「M8」に影響を受けたトラッカー。いまはAY-3-8910（MSXなどに載っていた音源）のみに対応。Windows・macOS・Linux・Android、携帯ゲーム機（RG35XX、Miyoo）で動きます
+  <img src="/img/chiptune-tools/chipnomad.webp" alt="ChipNomadの画面" width="525" height="420" loading="lazy" />
 
 ## M8（ハードウェアのトラッカー）
 
@@ -140,7 +147,7 @@ GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップ
 {{< /lang >}}
 
 {{< lang en >}}
-This is an updated roundup based on Umeboshi Chazuke's 2021 article on their blog Ajitama Note, "[10 Sound Sources for Making Bleepy Music](https://blog.ajitama-note.com/entry/2021/03/06/215656)" (in Japanese) and theta's [software page](https://ss1.xrea.com/theta.s57.xrea.com/software/), with more tools added. Versions and prices were checked on each tool's download page on October 30, 2026. Screenshots are sourced from each tool's official page (for BeepBox, JummBox, UltraBox, and Slarmoo's Box, I captured them directly from the sites).
+This is an updated roundup based on Umeboshi Chazuke's 2021 article on their blog Ajitama Note, "[10 Sound Sources for Making Bleepy Music](https://blog.ajitama-note.com/entry/2021/03/06/215656)" (in Japanese) and theta's [software page](https://ss1.xrea.com/theta.s57.xrea.com/software/), with more tools added. Versions and prices were checked on each tool's download page on October 30, 2026. Screenshots are sourced from each tool's official page (for BeepBox, JummBox, UltraBox, and Slarmoo's Box, I captured them directly from the sites; little-scale's trackers come from little-scale's posts on X).
 
 ## Start with free plugins
 
@@ -168,7 +175,7 @@ These load in your usual DAW and play like any other instrument.
 - [**chipcrusher**](https://www.plogue.com/products/chipcrusher.html) (Plogue): adds the texture of old consoles after the fact, such as the slightly gritty voices and drums of the NES or the SNES's distinctive roughness and echo. $39
   <img src="/img/chiptune-tools/chipcrusher.webp" alt="chipcrusher screenshot" width="560" height="189" loading="lazy" />
 
-## Trackers and dedicated software (all free except PICO-8)
+## Trackers and dedicated software (all free except PICO-8 and Renoise)
 
 You program within the limits of the console's sound chip, which makes it easier to sound like the real thing.
 
@@ -181,6 +188,8 @@ You program within the limits of the console's sound chip, which makes it easier
   <img src="/img/chiptune-tools/furnace.webp" alt="Furnace screenshot" width="560" height="350" loading="lazy" />
 - [**OpenMPT**](https://openmpt.org/) 1.32.11.00: a long-standing tracker that isn't tied to any one console. Windows
   <img src="/img/chiptune-tools/openmpt.webp" alt="OpenMPT screenshot" width="300" height="202" loading="lazy" />
+- [**Renoise**](https://www.renoise.com/) 3.5.4: a tracker that works like a DAW, great for making music with samples. It also supports plugins like VSTs. 76 EUR, Windows, Mac, Linux
+  <img src="/img/chiptune-tools/renoise.webp" alt="Renoise screenshot" width="560" height="397" loading="lazy" />
 - [**PICO-8**](https://www.lexaloffle.com/pico-8.php) v0.2.7: a "fantasy console" for making whole retro pixel-art games. It comes with built-in music and sound effect editors for making chiptunes. $15, Windows, Mac, Linux, Raspberry Pi
   <img src="/img/chiptune-tools/pico-8.webp" alt="PICO-8 screenshot" width="560" height="242" loading="lazy" />
 - [**LSDj**](https://www.littlesounddj.com/) v9.4.2: music software that runs on a real GAMEBOY (or an emulator on a PC and so on). Free to download since 2020 (donations welcome)
@@ -195,12 +204,17 @@ These bring the LSDj workflow to other consoles and devices. Risa and little-sca
 - [**Risa**](https://risa.laamaa.fi/) (laamaa): a music program (tracker) for the NES. You type notes straight onto the screen, much like the classic LSDj. On top of the console's own sound, it gives you two more pulse channels (bleepy square waves) from the cartridge's expansion chip (MMC5). Both the Mesen emulator and the EverDrive N8 Pro cartridge on real hardware are recommended
   <img src="/img/chiptune-tools/risa.webp" alt="Risa screenshot" width="256" height="240" loading="lazy" />
 - [**genmddj**](https://github.com/little-scale/genmddj) (little-scale) v0.25: for the Mega Drive
+  <img src="/img/chiptune-tools/genmddj.webp" alt="genmddj screenshot" width="560" height="420" loading="lazy" />
 - [**smsggdj**](https://github.com/little-scale/smsggdj) (little-scale) v0.48: for the Sega Master System and Game Gear
+  <img src="/img/chiptune-tools/smsggdj.webp" alt="smsggdj cartridge" width="525" height="420" loading="lazy" />
 - [**sndj**](https://github.com/little-scale/sndj) (little-scale) v0.15: for the SNES
+  <img src="/img/chiptune-tools/sndj.webp" alt="sndj running on real hardware" width="560" height="420" loading="lazy" />
 - [**alynxdj**](https://github.com/little-scale/alynxdj) (little-scale) v0.60: for the Atari Lynx
+  <img src="/img/chiptune-tools/alynxdj.webp" alt="alynxdj running on real hardware" width="560" height="315" loading="lazy" />
 - [**PocketTracker**](https://conanizer.github.io/pockettracker/) (conanizer) v0.9.9.1: an Android music program (tracker) that carries over the feel of the classic handheld trackers (LSDj, LGPT, M8). It loads your own audio (samples) and SF2 sound files, so it's also good for chopping up and playing otoMAD or YTPMV source material (up to 8 tracks). Runs on phones and on Android handhelds with physical buttons
   <img src="/img/chiptune-tools/pockettracker.webp" alt="PocketTracker screenshot" width="560" height="294" loading="lazy" />
 - [**ChipNomad**](https://chipnomad.org/) (Megus) v1.0.5: a tracker influenced by LSDj and the popular handheld M8. For now it supports only the AY-3-8910 (the sound chip in the MSX and others). Runs on Windows, macOS, Linux, Android and handhelds (RG35XX, Miyoo)
+  <img src="/img/chiptune-tools/chipnomad.webp" alt="ChipNomad screenshot" width="525" height="420" loading="lazy" />
 
 ## M8 (hardware tracker)
 
