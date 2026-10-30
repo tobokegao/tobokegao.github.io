@@ -691,6 +691,9 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .prose p { margin: 0 0 1.2em; }
 .prose img { margin: 1em auto; border: 2px solid; border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md); }
 .prose li img { display: block; max-width: 100%; height: auto; }
+/* lists of items with screenshots (tool roundups): a clear gap between entries */
+.prose ul:has(img) > li + li { margin-top: 32px; }
+.prose ul:has(img) > li > ul { margin-bottom: 16px; }
 /* Quotes are DOS message boxes: a title bar, a double frame, a hard shadow,
    and the speaker on a status line at the bottom. */
 .prose blockquote {
