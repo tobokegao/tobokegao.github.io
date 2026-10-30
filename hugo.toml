@@ -84,6 +84,10 @@ timeZone = "Asia/Tokyo"
     name = "ReaScratch"
     icon = "reascratch"
     url = "/reascratch/"
+  [[params.projects]]
+    name = "チップチューンづくりのおすすめツール / Recommended Chiptune Tools"
+    icon = "chiptune-tools"
+    url = "/post/2026-chiptune-tools/"
 
 # The flyers stay in static/ (the card links to the full-size file) and are also
 # mounted into assets/, so the Designs page can show a smaller copy of each.

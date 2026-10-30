@@ -95,6 +95,12 @@ ICONS = {
                        colors={"y": "#e6b731", "b": "#008bc7", "r": "#e5462c", "l": "#af9ee4", "m": "#80e2b9",
                                "p": "#f594c3", "g": "#dcdbd7", "k": "#12171b", "w": "#f4f3ef"},
                        flat="kw"),
+    # the chiptune tools post: a closed leather book with a gold title, after the old desktop
+    # dictionary icons, drawn on the grid by icons-src/hand/chiptune_tools_grid.py (asked for 2026-10-31)
+    "chiptune-tools": dict(src=HAND / "chiptune_tools_grid.py", kind="hull", size=24, mark="#4a1d18", hole="#ffe08a",
+                       flat_mark=True,            # flat paper: the pillow volume muddied the pages
+                       shadow=(1, 1, 2, 2),       # the open book stands up off the wall: a longer shadow
+                       hand_grid=True),
 }
 
 WARM = "#ffcc00"   # the light is Tobokegao yellow: highlights and lit edges lean toward it
@@ -532,13 +538,15 @@ def to_svg(cfg, g):
     # lit from below, the opaque piece throws its shadow up and to the right onto the wall
     # behind: two neutral tones (dark next to the piece, lighter further out) set by CSS,
     # so the shadow suits both the day and the night background
+    # (an icon of a thing with depth can cast a longer one: "shadow" lists the tone, 1 or 2,
+    # of each step up from the piece)
     shade = {1: "sh1", 2: "sh2"}
     shadow = {}
-    for k in (1, 2):
+    for k, tone in enumerate(cfg.get("shadow", (1, 2)), 1):
         for (y, x) in piece:
             p = (y - k, x + k) if LIGHT == "below-left" else (y - k, x)
             if p not in piece and p not in shadow and 0 <= p[0] < size and 0 <= p[1] < size:
-                shadow[p] = shade[k]
+                shadow[p] = shade[tone]
     # the night ring hugs the piece itself (around the shadow it detached from the piece and
     # looked broken); it is drawn over the shadow, which shows beyond it. By day the ring is
     # transparent, so the shadow shows in full.
