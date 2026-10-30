@@ -484,7 +484,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 - **SANA 8BIT VST**、**VOPM**：どちらも古い32bitのプラグインで、いまのDAWではそのままでは使えないことが多いです。ファミコン系はMagical 8bit Plug 2やNew DoReFAMI、YM2151はmy2151かchipsynth OPMZが代わりになります
 
-バージョンや値段は、2026年10月30日に各ツールの配布ページで確かめたものです。画面の画像は各ツールの公式ページ（App Storeを含む）と[Lospec](https://lospec.com/software/)から引用しました（BeepBox、JummBox、UltraBox、Slarmoo's Box、FlMML on HTML5、browser-mml-player、NSF2MML、LSDJ Converter、SNDH Playerは、実際にサイトを開いて撮影したもの、little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは作者のXの投稿から、Dn-FamiTrackerはRei8bitさんの許可を得て[Rei8bitさんのXの投稿](https://x.com/Rei8bit/status/2114188303566352817)から引用したものです）。
+各ツールのバージョンや価格は、2026年10月30日時点の各配布ページの情報に基づいています。掲載している画面の画像の多くは、各ツールの公式ページ（App Storeを含む）や[Lospec](https://lospec.com/software/)から引用しました（BeepBox、JummBox、UltraBox、Slarmoo's Box、FlMML on HTML5、browser-mml-player、NSF2MML、LSDJ Converter、SNDH Playerは実際にサイトを開いて撮影した画像、little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは各作者のXの投稿からの引用、Dn-FamiTrackerはRei8bitさんからご提供いただいた画像です）。
 {{< /lang >}}
 
 {{< lang en >}}
@@ -965,5 +965,5 @@ For more obscure trackers and tools not covered here, see the wiki pages of the 
 
 - **SANA 8BIT VST** and **VOPM**: both are old 32-bit plugins and often won't run as is in today's DAWs. For NES sounds, Magical 8bit Plug 2 or New DoReFAMI can take their place, and for the YM2151, my2151 or chipsynth OPMZ
 
-Versions and prices were checked on each tool's download page on October 30, 2026. Screenshots are sourced from each tool's official page (including the App Store) and [Lospec](https://lospec.com/software/) (for BeepBox, JummBox, UltraBox, Slarmoo's Box, FlMML on HTML5, browser-mml-player, NSF2MML, LSDJ Converter and SNDH Player, I captured them directly from the sites; little-scale's trackers, WebX68k and NOTE MDX Workbench come from their authors' posts on X, and Dn-FamiTracker from [Rei8bit's post on X](https://x.com/Rei8bit/status/2114188303566352817), with Rei8bit's permission).
+Versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). Additionally, screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, FlMML on HTML5, browser-mml-player, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me; those for little-scale's trackers, WebX68k, and NOTE MDX Workbench are from the creators' posts on X; and the Dn-FamiTracker screenshot was kindly provided by Rei8bit.
 {{< /lang >}}
