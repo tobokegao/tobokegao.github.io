@@ -85,8 +85,8 @@ GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップ
 - [**M8 Tracker Model:02**](https://dirtywave.com/)：本体。699ドル（Dirtywave公式ストア）
   <img src="/img/chiptune-tools/m8.webp" alt="M8 Tracker Model:02の画面" width="560" height="344" loading="lazy" />
 - [**M8 Headless**](https://github.com/Dirtywave/M8HeadlessFirmware)：「Teensy 4.1」という市販の小さな基板に書き込み、パソコンにつないで使う無料版。画面と操作はパソコン側のソフト（m8cなど）で行います
+  <img src="/img/chiptune-tools/m8gd.webp" alt="M8 Headlessをm8gdで表示した画面" width="560" height="315" loading="lazy" />
   - パソコン側の表示ソフトは、[**m8gd**](https://github.com/octoocto/m8gd)（無料、Windows・Mac・Linux）がおすすめです。M8の画面を3Dの本体のような見た目で表示できます（自分も使っています）。
-    <img src="/img/chiptune-tools/m8gd.webp" alt="m8gdの画面" width="560" height="315" loading="lazy" />
 - [**M8 Music Tracker**](https://apps.apple.com/jp/app/m8-music-tracker/id6806721202)（iPhone・iPad）1.2.2：本体の機能をそのまま再現したアプリ版です（2026年9月リリース／App Storeで5,000円）。曲データは実機本体と相互にやりとりできます
   <img src="/img/chiptune-tools/m8-music-tracker.webp" alt="M8 Music Trackerの画面" width="560" height="420" loading="lazy" />
 
@@ -227,8 +227,8 @@ A portable tracker influenced by the GAMEBOY's LSDj. Besides chiptune-style soun
 - [**M8 Tracker Model:02**](https://dirtywave.com/): the hardware. $699 (Dirtywave's official store)
   <img src="/img/chiptune-tools/m8.webp" alt="M8 Tracker Model:02 screenshot" width="560" height="344" loading="lazy" />
 - [**M8 Headless**](https://github.com/Dirtywave/M8HeadlessFirmware): a free version you flash onto a small off-the-shelf board called the Teensy 4.1 and connect to a computer. The screen and controls are handled by software on the computer (m8c and others)
+  <img src="/img/chiptune-tools/m8gd.webp" alt="M8 Headless shown in m8gd" width="560" height="315" loading="lazy" />
   - For the computer side, I recommend [**m8gd**](https://github.com/octoocto/m8gd) (free, Windows, Mac, Linux). It shows the M8's screen on a 3D model of the hardware (I use it myself).
-    <img src="/img/chiptune-tools/m8gd.webp" alt="m8gd screenshot" width="560" height="315" loading="lazy" />
 - [**M8 Music Tracker**](https://apps.apple.com/jp/app/m8-music-tracker/id6806721202) (iPhone, iPad) 1.2.2: an app version with the same features as the hardware (released September 2026, 5,000 yen on the Japanese App Store). Songs can be moved back and forth between the app and the hardware
   <img src="/img/chiptune-tools/m8-music-tracker.webp" alt="M8 Music Tracker screenshot" width="560" height="420" loading="lazy" />
 
