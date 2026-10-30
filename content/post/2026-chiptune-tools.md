@@ -589,6 +589,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 - [**BoyScout**](https://www.gbadev.org/tools.php?showinfo=187)：GAMEBOYの4つの音源用の、Windowsのトラッカー。今ならhUGETrackerかFurnace
 
 - [**Fatass Tracker**](http://jeremyevers.com/fatass/)：GAMEBOYカラーの実機で動く、FastTracker II風のトラッカー。今ならLSDj
+  <img src="/img/chiptune-tools/botb-fatass.webp" alt="Fatass Trackerの画面" width="320" height="288" loading="lazy" />
 
 - [**Furious Advance Tracker**](https://github.com/cbrouillard/furiousadvancetracker)：GBAで動く、LSDjに似たトラッカー。今ならLSDjかFurnace
   <img src="/img/chiptune-tools/botb-fat.webp" alt="Furious Advance Trackerの画面" width="480" height="320" loading="lazy" />
@@ -1251,7 +1252,7 @@ Trackers and tools listed on the wiki of the chiptune community [Battle of the B
 - [**Adlib Tracker II**](https://adlibtracker.net/downloads.php): a text-mode tracker for the OPL3 FM chip with 4-op instruments. Free, DOS, Windows, Linux
   <img src="/img/chiptune-tools/botb-at2.webp" alt="Adlib Tracker II screenshot" width="400" height="266" loading="lazy" />
 
-- [**Reality Adlib Tracker (RAD 2)**](https://www.pouet.net/prod.php?which=75963): an OPL tracker for tiny module sizes; v2 added OPL3. Free, DOS, Windows, Mac
+- [**Reality Adlib Tracker (RAD 2)**](https://www.pouet.net/prod.php?which=75963): an OPL tracker for tiny module sizes; v2 added OPL3 support. Free, DOS, Windows, Mac
   <img src="/img/chiptune-tools/botb-rad.webp" alt="Reality Adlib Tracker (RAD 2) screenshot" width="400" height="249" loading="lazy" />
 
 - [**Faust Music Creator**](https://www.pouet.net/prod.php?which=55235): a keyboard-only DOS tracker for the AdLib (OPL2). Today, use Adlib Tracker II or Furnace
@@ -1351,6 +1352,7 @@ Trackers and tools listed on the wiki of the chiptune community [Battle of the B
 - [**BoyScout**](https://www.gbadev.org/tools.php?showinfo=187): a Windows tracker for the four GAMEBOY channels. Today, use hUGETracker or Furnace
 
 - [**Fatass Tracker**](http://jeremyevers.com/fatass/): an FT2-style tracker running on a real GAMEBOY COLOR. Today, use LSDj
+  <img src="/img/chiptune-tools/botb-fatass.webp" alt="Fatass Tracker screenshot" width="320" height="288" loading="lazy" />
 
 - [**Furious Advance Tracker**](https://github.com/cbrouillard/furiousadvancetracker): an LSDj-like tracker for the GBA. Today, use LSDj or Furnace
   <img src="/img/chiptune-tools/botb-fat.webp" alt="Furious Advance Tracker screenshot" width="480" height="320" loading="lazy" />
