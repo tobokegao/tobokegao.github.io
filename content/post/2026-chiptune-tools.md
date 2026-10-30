@@ -9,6 +9,8 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 {{< lang ja >}}
 梅干茶漬けさんのブログ「あじたまのーと」の2021年の記事「[ピコピコ音楽の制作に役立つ音源10選](https://blog.ajitama-note.com/entry/2021/03/06/215656)」と、thetaさんの[ソフトウェアのページ](https://ss1.xrea.com/theta.s57.xrea.com/software/)をもとに、ほかのツールも足して、最新のバージョンに合わせてまとめ直しました。
 
+<nav class="toc">
+
 **目次**
 
 - [まずは無料のプラグインから](#ja-free-plugins)
@@ -30,6 +32,8 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 - [Shiruさんのツール（無料）](#ja-shiru)
 - [もっと知りたい人へ](#ja-more)
 - [2021年のまとめから変わったこと](#ja-changes)
+
+</nav>
 
 ## まずは無料のプラグインから {#ja-free-plugins}
 
@@ -486,6 +490,8 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 {{< lang en >}}
 This is an updated roundup based on Umeboshi Chazuke's 2021 article on their blog Ajitama Note, "[10 Sound Sources for Making Bleepy Music](https://blog.ajitama-note.com/entry/2021/03/06/215656)" (in Japanese) and theta's [software page](https://ss1.xrea.com/theta.s57.xrea.com/software/), with more tools added.
 
+<nav class="toc">
+
 **Contents**
 
 - [Start with free plugins](#en-free-plugins)
@@ -507,6 +513,8 @@ This is an updated roundup based on Umeboshi Chazuke's 2021 article on their blo
 - [Shiru's tools (free)](#en-shiru)
 - [To dig deeper](#en-more)
 - [What changed since the 2021 roundup](#en-changes)
+
+</nav>
 
 ## Start with free plugins {#en-free-plugins}
 

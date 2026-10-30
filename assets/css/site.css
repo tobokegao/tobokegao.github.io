@@ -694,6 +694,9 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 /* lists of items with screenshots (tool roundups): a clear gap between entries */
 .prose ul:has(img) > li + li { margin-top: 32px; }
 .prose ul:has(img) > li > ul { margin-bottom: 16px; }
+.prose .toc { margin: 0 0 1.2em; padding: 12px 16px 4px; border: 2px solid var(--frame); background: var(--win-2); }
+.prose .toc p { margin: 0 0 4px; }
+.prose .toc ul { margin: 0 0 8px; }
 /* Quotes are DOS message boxes: a title bar, a double frame, a hard shadow,
    and the speaker on a status line at the bottom. */
 .prose blockquote {
