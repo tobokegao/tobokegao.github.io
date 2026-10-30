@@ -431,7 +431,7 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 - [**ChipTone**](https://sfbgames.itch.io/chiptone)：音を重ねて効果音を作るソフト。作った音は自由に使えます。無料（投げ銭可）、ブラウザ・Windows・Mac
   <img src="/img/chiptune-tools/chiptone.webp" alt="ChipToneの画面" width="560" height="315" loading="lazy" />
 
-- [**LabChirp**](https://labbed.net/software/labchirp/) v1.75：最大8チャンネルを重ねて、波形やエンベロープ、エフェクトで効果音を作るソフト。ランダムに作る機能もあります。効果音づくりならこれが好き、とRei8bitさんのおすすめです。無料、Windows（Mono経由でMac・Linuxも）
+- [**LabChirp**](https://labbed.net/software/labchirp/) v1.75：最大8つの音を重ねて、音の波や強弱の変化（エンベロープ）、エフェクトを組み合わせて効果音を作るソフト。自動でランダム生成する機能もあります。「効果音制作だとこれが好き」とRei8bitさんもおすすめしています。無料、Windows（Mono経由でMac・Linuxも）
   <img src="/img/chiptune-tools/labchirp.webp" alt="LabChirpの画面" width="503" height="420" loading="lazy" />
 
 ## 再生・変換・そのほか {#ja-players}
@@ -1194,7 +1194,7 @@ Quickly make short game-style sound effects.
 - [**ChipTone**](https://sfbgames.itch.io/chiptone): a sound effect maker built from layered sounds; what you make is free to use. Free (tips welcome), browser, Windows, Mac
   <img src="/img/chiptune-tools/chiptone.webp" alt="ChipTone screenshot" width="560" height="315" loading="lazy" />
 
-- [**LabChirp**](https://labbed.net/software/labchirp/) v1.75: a sound effect maker that layers up to eight channels with waveforms, envelopes and effects, plus a randomizer. Rei8bit's favorite for making sound effects. Free, Windows (Mac and Linux via Mono)
+- [**LabChirp**](https://labbed.net/software/labchirp/) v1.75: a sound effect generator that lets you layer up to eight channels using waveforms, envelopes, and effects, complete with a handy randomizer. Recommended by Rei8bit as a go-to tool for sound design. Free, Windows (Mac and Linux via Mono)
   <img src="/img/chiptune-tools/labchirp.webp" alt="LabChirp screenshot" width="503" height="420" loading="lazy" />
 
 ## Players, converters and more {#en-players}
