@@ -18,6 +18,22 @@
   toTop();
   window.addEventListener("pageshow", toTop);
 
+  // The back-to-top button shows once the page has been scrolled down a screen.
+  var totop = document.getElementById("totop");
+  if (totop) {
+    var showTotop = function () { totop.hidden = window.scrollY < window.innerHeight; };
+    showTotop();
+    window.addEventListener("scroll", showTotop, { passive: true });
+    window.addEventListener("pageshow", showTotop);
+    totop.addEventListener("click", function () {
+      window.scrollTo(0, 0);
+      // keyboard users carry on from the top of the page, not from the button that is now hidden
+      var main = document.getElementById("main");
+      if (main) { main.setAttribute("tabindex", "-1"); main.focus({ preventScroll: true }); }
+      showTotop();
+    });
+  }
+
   // Page changes: when the next page takes more than 0.3 s, a small LOAD.EXE window
   // shows a block meter on the old page. The meter only guesses (the browser does not
   // report progress). Its timing lives in CSS (site.css, .loading): the window is put on

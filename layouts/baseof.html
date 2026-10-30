@@ -10,6 +10,8 @@
 {{ block "main" . }}{{ end }}
 </main>
 {{ partial "statusbar.html" . }}
+{{- /* Back to the top: site.js shows it once the page has been scrolled down a screen. */}}
+<button type="button" class="totop" id="totop" title="{{ partial "tt.html" "backTop" }}" hidden>{{ partial "icons/up.html" . }}<span class="vh">{{ partial "t.html" "backTop" }}</span></button>
 {{- /* the small platform icons as symbols, outside <main> so they stay through page changes */}}
 {{ partialCached "icon-sprite.html" "small" "small" | safeHTML }}
 {{- /* Shown by site.js when the next page takes a while to arrive. */}}

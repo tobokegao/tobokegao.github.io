@@ -28,6 +28,5 @@
   <div class="grid grid--jackets">{{ range $label }}{{ partial "release-card.html" . }}{{ end }}</div>
   {{ end }}
   <p class="win__more"><a class="btn" href="{{ "/" | relURL }}">{{ partial "t.html" "backHome" }}</a></p>
-  {{ if eq .Section "post" }}<a class="btn totop" href="#page-t">{{ partial "t.html" "backTop" }}</a>{{ end }}
 </article>
 {{ end }}

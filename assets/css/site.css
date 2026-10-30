@@ -467,8 +467,11 @@ a.seg { text-decoration: none; }
 .btn::before { content: "< "; }
 .btn::after { content: " >"; }
 .btn:hover, .btn:focus-visible { background: var(--accent); color: var(--accent-ink); }
-/* back-to-top on posts: fixed at the bottom right, on the window colour so it stays readable over the text */
-.totop { position: fixed; right: 16px; bottom: 16px; z-index: 20; padding: 4px 8px; background: var(--win); border: 2px solid var(--frame); }
+/* back to the top: fixed at the bottom right, on the window colour so it stays readable over the text */
+.totop { position: fixed; right: 16px; bottom: 16px; z-index: 20; padding: 4px; color: var(--frame); background: var(--win); border: 2px solid var(--frame); cursor: pointer; }
+.totop .px { display: block; width: 36px; height: 36px; }   /* the 18px arrow at twice its size */
+.totop:hover, .totop:focus-visible { background: var(--accent); color: var(--accent-ink); }
+.totop[hidden] { display: none; }
 .chip { color: var(--ink); }
 .chip::before { content: "( ) "; }
 .chip::after { content: none; }
@@ -780,6 +783,7 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
   .menubar__nav { display: none; }
   .menubar { justify-content: space-between; }
   body { padding-bottom: calc(48px + env(safe-area-inset-bottom, 0px)); }
+  .totop { bottom: calc(64px + env(safe-area-inset-bottom, 0px)); }   /* 16px above the tab bar */
   .statusbar__keys {
     position: fixed; left: 0; right: 0; bottom: 0; z-index: 5;
     display: grid; grid-template-columns: repeat(7, 1fr); gap: 0;
