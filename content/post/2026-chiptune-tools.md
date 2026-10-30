@@ -143,13 +143,13 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 - [**hUGETracker**](https://superdisk.github.io/hUGETracker/) v1.0.11：GAMEBOY用のトラッカー。作った曲を、自作のGAMEBOYゲームに組みこめます。無料、Windows・Mac・Linux
   <img src="/img/chiptune-tools/hugetracker.webp" alt="hUGETrackerの画面" width="560" height="311" loading="lazy" />
 
-- [**GTUltra**](https://github.com/jpage8580/GTUltra) v1.5.8：GoatTracker 2（ステレオ版）を大きく改造して、機能を増やしたコモドール64（SID）のトラッカー。特別なこだわりがなければ、GoatTracker 2よりこちらがおすすめです（Rei8bitさんより）。無料、Windows・Mac・Linux
+- [**GTUltra**](https://github.com/jpage8580/GTUltra) v1.5.8：GoatTracker 2（ステレオ版）を大きく改造して、機能を増やしたコモドール64（SID）のトラッカー。特別なこだわりがなければ、GoatTracker 2よりこちらがおすすめです（Rei8bitさんのおすすめ）。無料、Windows・Mac・Linux
   <img src="/img/chiptune-tools/gtultra.webp" alt="GTUltraの画面" width="559" height="420" loading="lazy" />
 
 - [**GoatTracker 2**](https://sourceforge.net/projects/goattracker2/) 2.77：コモドール64（SID）用のトラッカー。作った曲を実機で鳴らせます。今から使うなら、上のGTUltraがおすすめです。無料、Windows・Mac・Linux
   <img src="/img/chiptune-tools/goattracker.webp" alt="GoatTracker 2の画面" width="534" height="420" loading="lazy" />
 
-- [**SID Factory II**](https://github.com/Chordian/sidfactory2) release-20260314：コモドール64の実機で鳴らせる曲を作る、SID用のエディター。いまはオープンベータです。無料、Windows・Mac・Linux
+- [**SID Factory II**](https://github.com/Chordian/sidfactory2) release-20260314：コモドール64の実機で鳴る音楽を作れる、SID音源用のエディター。現在はオープンベータ版です。無料、Windows・Mac・Linux
   <img src="/img/chiptune-tools/sidfactory2.webp" alt="SID Factory IIの画面" width="560" height="285" loading="lazy" />
 
 - [**PIRORO**](https://store.steampowered.com/app/2905900/PIRORO/) ver.3.4.0：ピアノロールで打ち込むチップチューン作曲ソフト。GAMEBOYやGBAの実機で鳴らせるROMに書き出せて、MIDIも読みこめます。1,300円（Steam）、Windows
@@ -630,13 +630,13 @@ You program within the limits of the console's sound chip, which makes it easier
 - [**hUGETracker**](https://superdisk.github.io/hUGETracker/) v1.0.11: a GAMEBOY tracker whose songs can be built into your own GAMEBOY homebrew games. Free, Windows, Mac, Linux
   <img src="/img/chiptune-tools/hugetracker.webp" alt="hUGETracker screenshot" width="560" height="311" loading="lazy" />
 
-- [**GTUltra**](https://github.com/jpage8580/GTUltra) v1.5.8: a heavily extended version of GoatTracker 2 (Stereo) for the Commodore 64 (SID). Unless you have a specific reason, Rei8bit recommends it over GoatTracker 2. Free, Windows, Mac, Linux
+- [**GTUltra**](https://github.com/jpage8580/GTUltra) v1.5.8: a heavily extended version of GoatTracker 2 (Stereo) for the Commodore 64 (SID). Rei8bit recommends this over GoatTracker 2 unless you have a specific reason to use the original. Free, Windows, Mac, Linux
   <img src="/img/chiptune-tools/gtultra.webp" alt="GTUltra screenshot" width="559" height="420" loading="lazy" />
 
-- [**GoatTracker 2**](https://sourceforge.net/projects/goattracker2/) 2.77: a Commodore 64 (SID) tracker whose songs play on the real machine. If you're starting now, GTUltra above is the better pick. Free, Windows, Mac, Linux
+- [**GoatTracker 2**](https://sourceforge.net/projects/goattracker2/) 2.77: a Commodore 64 (SID) tracker whose songs play on the real machine. If you're just starting out, GTUltra above is the better pick. Free, Windows, Mac, Linux
   <img src="/img/chiptune-tools/goattracker.webp" alt="GoatTracker 2 screenshot" width="534" height="420" loading="lazy" />
 
-- [**SID Factory II**](https://github.com/Chordian/sidfactory2) release-20260314: an editor for SID music that plays on a real Commodore 64, currently in open beta. Free, Windows, Mac, Linux
+- [**SID Factory II**](https://github.com/Chordian/sidfactory2) release-20260314: an editor for composing SID music that runs on real Commodore 64 hardware, currently in open beta. Free, Windows, Mac, Linux
   <img src="/img/chiptune-tools/sidfactory2.webp" alt="SID Factory II screenshot" width="560" height="285" loading="lazy" />
 
 - [**PIRORO**](https://store.steampowered.com/app/2905900/PIRORO/) ver.3.4.0: a piano-roll chiptune composer that exports ROMs for real GAMEBOY and GBA hardware and imports MIDI. 1,300 yen on Steam, Windows
