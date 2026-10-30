@@ -467,6 +467,8 @@ a.seg { text-decoration: none; }
 .btn::before { content: "< "; }
 .btn::after { content: " >"; }
 .btn:hover, .btn:focus-visible { background: var(--accent); color: var(--accent-ink); }
+/* back-to-top on posts: fixed at the bottom right, on the window colour so it stays readable over the text */
+.totop { position: fixed; right: 16px; bottom: 16px; z-index: 20; padding: 4px 8px; background: var(--win); border: 2px solid var(--frame); }
 .chip { color: var(--ink); }
 .chip::before { content: "( ) "; }
 .chip::after { content: none; }
