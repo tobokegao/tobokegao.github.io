@@ -143,8 +143,14 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 - [**hUGETracker**](https://superdisk.github.io/hUGETracker/) v1.0.11：GAMEBOY用のトラッカー。作った曲を、自作のGAMEBOYゲームに組みこめます。無料、Windows・Mac・Linux
   <img src="/img/chiptune-tools/hugetracker.webp" alt="hUGETrackerの画面" width="560" height="311" loading="lazy" />
 
-- [**GoatTracker 2**](https://sourceforge.net/projects/goattracker2/) 2.77：コモドール64（SID）用のトラッカー。作った曲を実機で鳴らせます。無料、Windows・Mac・Linux
+- [**GTUltra**](https://github.com/jpage8580/GTUltra) v1.5.8：GoatTracker 2（ステレオ版）を大きく改造して、機能を増やしたコモドール64（SID）のトラッカー。特別なこだわりがなければ、GoatTracker 2よりこちらがおすすめです（Rei8bitさんより）。無料、Windows・Mac・Linux
+  <img src="/img/chiptune-tools/gtultra.webp" alt="GTUltraの画面" width="559" height="420" loading="lazy" />
+
+- [**GoatTracker 2**](https://sourceforge.net/projects/goattracker2/) 2.77：コモドール64（SID）用のトラッカー。作った曲を実機で鳴らせます。今から使うなら、上のGTUltraがおすすめです。無料、Windows・Mac・Linux
   <img src="/img/chiptune-tools/goattracker.webp" alt="GoatTracker 2の画面" width="534" height="420" loading="lazy" />
+
+- [**SID Factory II**](https://github.com/Chordian/sidfactory2) release-20260314：コモドール64の実機で鳴らせる曲を作る、SID用のエディター。いまはオープンベータです。無料、Windows・Mac・Linux
+  <img src="/img/chiptune-tools/sidfactory2.webp" alt="SID Factory IIの画面" width="560" height="285" loading="lazy" />
 
 - [**PIRORO**](https://store.steampowered.com/app/2905900/PIRORO/) ver.3.4.0：ピアノロールで打ち込むチップチューン作曲ソフト。GAMEBOYやGBAの実機で鳴らせるROMに書き出せて、MIDIも読みこめます。1,300円（Steam）、Windows
   <img src="/img/chiptune-tools/piroro.webp" alt="PIROROの画面" width="560" height="315" loading="lazy" />
@@ -484,7 +490,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 - **SANA 8BIT VST**、**VOPM**：どちらも古い32bitのプラグインで、いまのDAWではそのままでは使えないことが多いです。ファミコン系はMagical 8bit Plug 2やNew DoReFAMI、YM2151はmy2151かchipsynth OPMZが代わりになります
 
-各ツールのバージョンや価格は、2026年10月30日時点の各配布ページの情報に基づいています。掲載している画像の多くは、各ツールの公式ページ（App Storeを含む）や[Lospec](https://lospec.com/software/)から引用しました。なお、BeepBox、JummBox、UltraBox、Slarmoo's Box、FlMML on HTML5、browser-mml-player、NSF2MML、LSDJ Converter、SNDH Playerは実際にサイトを開いて撮影したものです。little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは各作者のX（旧Twitter）の投稿から引用し、Dn-FamiTracker、Furnace、furnace-piano-roll、FamiStudio、KiraStudio、OpenMPT、WaveTrackerの画像はRei8bitさんからご提供いただきました。
+各ツールのバージョンや価格は、2026年10月30日時点の各配布ページの情報に基づいています。掲載している画像の多くは、各ツールの公式ページ（App Storeを含む）や[Lospec](https://lospec.com/software/)から引用しました。なお、BeepBox、JummBox、UltraBox、Slarmoo's Box、FlMML on HTML5、browser-mml-player、NSF2MML、LSDJ Converter、SNDH Playerは実際にサイトを開いて撮影したものです。little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは各作者のX（旧Twitter）の投稿から引用し、Dn-FamiTracker、Furnace、furnace-piano-roll、FamiStudio、KiraStudio、OpenMPT、WaveTracker、GTUltra、SID Factory IIの画像はRei8bitさんからご提供いただきました。
 {{< /lang >}}
 
 {{< lang en >}}
@@ -624,8 +630,14 @@ You program within the limits of the console's sound chip, which makes it easier
 - [**hUGETracker**](https://superdisk.github.io/hUGETracker/) v1.0.11: a GAMEBOY tracker whose songs can be built into your own GAMEBOY homebrew games. Free, Windows, Mac, Linux
   <img src="/img/chiptune-tools/hugetracker.webp" alt="hUGETracker screenshot" width="560" height="311" loading="lazy" />
 
-- [**GoatTracker 2**](https://sourceforge.net/projects/goattracker2/) 2.77: a Commodore 64 (SID) tracker whose songs play on the real machine. Free, Windows, Mac, Linux
+- [**GTUltra**](https://github.com/jpage8580/GTUltra) v1.5.8: a heavily extended version of GoatTracker 2 (Stereo) for the Commodore 64 (SID). Unless you have a specific reason, Rei8bit recommends it over GoatTracker 2. Free, Windows, Mac, Linux
+  <img src="/img/chiptune-tools/gtultra.webp" alt="GTUltra screenshot" width="559" height="420" loading="lazy" />
+
+- [**GoatTracker 2**](https://sourceforge.net/projects/goattracker2/) 2.77: a Commodore 64 (SID) tracker whose songs play on the real machine. If you're starting now, GTUltra above is the better pick. Free, Windows, Mac, Linux
   <img src="/img/chiptune-tools/goattracker.webp" alt="GoatTracker 2 screenshot" width="534" height="420" loading="lazy" />
+
+- [**SID Factory II**](https://github.com/Chordian/sidfactory2) release-20260314: an editor for SID music that plays on a real Commodore 64, currently in open beta. Free, Windows, Mac, Linux
+  <img src="/img/chiptune-tools/sidfactory2.webp" alt="SID Factory II screenshot" width="560" height="285" loading="lazy" />
 
 - [**PIRORO**](https://store.steampowered.com/app/2905900/PIRORO/) ver.3.4.0: a piano-roll chiptune composer that exports ROMs for real GAMEBOY and GBA hardware and imports MIDI. 1,300 yen on Steam, Windows
   <img src="/img/chiptune-tools/piroro.webp" alt="PIRORO screenshot" width="560" height="315" loading="lazy" />
@@ -965,5 +977,5 @@ For more obscure trackers and tools not covered here, see the wiki pages of the 
 
 - **SANA 8BIT VST** and **VOPM**: both are old 32-bit plugins and often won't run as is in today's DAWs. For NES sounds, Magical 8bit Plug 2 or New DoReFAMI can take their place, and for the YM2151, my2151 or chipsynth OPMZ
 
-Tool versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). The screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, FlMML on HTML5, browser-mml-player, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me. Screenshots for little-scale's trackers, WebX68k, and NOTE MDX Workbench were sourced from the creators' posts on X, and those for Dn-FamiTracker, Furnace, furnace-piano-roll, FamiStudio, KiraStudio, OpenMPT, and WaveTracker were kindly provided by Rei8bit.
+Tool versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). The screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, FlMML on HTML5, browser-mml-player, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me. Screenshots for little-scale's trackers, WebX68k, and NOTE MDX Workbench were sourced from the creators' posts on X, and those for Dn-FamiTracker, Furnace, furnace-piano-roll, FamiStudio, KiraStudio, OpenMPT, WaveTracker, GTUltra, and SID Factory II were kindly provided by Rei8bit.
 {{< /lang >}}
