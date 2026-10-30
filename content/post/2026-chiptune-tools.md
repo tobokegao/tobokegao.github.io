@@ -60,6 +60,8 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 - [**C700**](https://github.com/osoumen/C700)（osoumen）ver20211031：スーパーファミコンの音源を再現したサンプラー。自分で用意した波形や音を読み込んで鳴らします。作った曲を、スーパーファミコンの音楽ファイル（.spc）に書き出すこともできます。無料、Windows（VST2）・Mac（VST2・AU）
   <img src="/img/chiptune-tools/c700.webp" alt="C700の画面" width="513" height="420" loading="lazy" />
 
+- [**VOPMex**](http://picopicose.com/software.html)（osoumen）20210501：Samさんが作った、YM2151（OPM）のFM音源を再現したプラグイン「VOPM」を、osoumenさんが改良したもの。YM2151は、80〜90年代のゲームセンターやX68000で使われた音源です。64bitのDAWやApple Siliconでも使えます。本物の音源チップをUSBでつなぐ機械「[GIMIC](http://gimic.jp/)」にYM2151を挿せば、実機ならではの音で鳴らせます（Windowsでは「c86ctl」も必要）。無料、Windows（VST、32bit・64bit）・Mac（VST・AU）
+
 - [**OPNA FM Synth**](https://trpico.booth.pm/items/8351023) v1.0.1：とるぴさんの、YM2608（OPNA）のFM音源を再現したプラグイン。無料（支援つきは600円）、Windows（VST3）
   <img src="/img/chiptune-tools/opnafm.webp" alt="OPNA FM Synthの画面" width="560" height="382" loading="lazy" />
 
@@ -396,8 +398,8 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 - [**GameBoy Music Compiler（GBMC）**](http://mydocuments.g2.xrea.com/html/gb/sounddriver.html) 2025.07.31版：文字（MML）で曲を書いてGAMEBOYの音源で鳴らすソフト。曲データ（GBSファイル）やエミュレーター・実機で動くROMのほか、演奏のようすが見られるプレイヤー「GBDSP」としても書き出せます。無料、Windows
   <img src="/img/chiptune-tools/gbmc.webp" alt="GBMCで書き出したGBDSPの画面" width="336" height="342" loading="lazy" />
 
-- [**mml2vgm**](https://github.com/kuma4649/mml2vgm) TAG809：MMLから、メガドライブなどの音源で鳴らすVGMファイルを作るツール。YM2612やSN76489のほか、YM2151、YM2608、ファミコン、GAMEBOYなど多くの音源に対応し、統合環境（IDE）もあります。無料、Windows
-  - 同じ作者の[**MDPlayer**](https://github.com/kuma4649/MDPlayer) STBL567：VGMやMDX、NSF、GBS、SIDなど、たくさんの形式を鍵盤の表示つきで鳴らせるプレイヤー。mml2vgmで作った曲の確認にも使えます。無料、Windows
+- [**mml2vgm**](https://github.com/kuma4649/mml2vgm) TAG809：MMLから、メガドライブなどの音源で鳴らすVGMファイルを作るツール。YM2612やSN76489のほか、YM2151、YM2608、ファミコン、GAMEBOYなど多くの音源に対応し、作業しやすい編集画面（IDE）もあります。無料、Windows
+  - [**MDPlayer**](https://github.com/kuma4649/MDPlayer) STBL567：mml2vgmと同じ作者による、VGMやMDX、NSF、GBS、SIDなど、たくさんの形式を鍵盤の表示つきで鳴らせるプレイヤー。mml2vgmで作った曲の確認にも使えます。無料、Windows
 
 - [**browser-mml-player**](https://github.com/t-sin/browser-mml-player)：ブラウザで動くMMLプレイヤー。シンセのしくみを学ぶ記事のために作られたものです。無料
   <img src="/img/chiptune-tools/bmml.webp" alt="browser-mml-playerの画面" width="560" height="350" loading="lazy" />
@@ -406,7 +408,7 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 
 - [**PMD**](http://www5.airnet.ne.jp/kajapon/tool.html) Ver.4.8s：PC-9801などのFM音源で鳴らすMMLのドライバー。WindowsではFMPMD2000などで再生できます。無料（ソースも公開）
 
-- [**NSD.Lib**](https://shaw02.github.io/nsdlib/) v1.30：ファミコン用のサウンドドライバーとMMLのコンパイラー。NSFの曲づくりにも、自作のファミコンのゲームに組みこむのにも使えます。ファミコンでMMLを書くなら一番、とsdhizumiさんのおすすめです。無料、Windows
+- [**NSD.Lib**](https://shaw02.github.io/nsdlib/) v1.30：ファミコン用のサウンドドライバーとMMLのコンパイラー。NSFの曲づくりにも、自作のファミコンのゲームに組みこむのにも使えます。ファミコンでMMLを書くなら一番、とsdhizumiさんもおすすめしています。無料、Windows
 
 - [**OFGS2tm**](https://x.com/EightbitMays/status/2086505645629718736) Ver0.93：ファミコン用のMMLのドライバー「OFGSv2」を、Maysさんが改造したもの。無料（Xの投稿から配布）
 
@@ -919,9 +921,9 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 ## 2021年のまとめから変わったこと {#ja-changes}
 
-- **SANA 8BIT VST**：配布されている最新のBeta 2.0は、64bitのVST3に対応しています。今のDAWでも使えます
+- **SANA 8BIT VST**：配布されている最新のBeta 2.0は64bitのVST3に対応しており、最近のDAWでも使えます
 
-- **VOPM**：古い32bitのプラグインで、いまのDAWではそのままでは使えないことが多いです。YM2151なら、my2151かchipsynth OPMZが代わりになります
+- **VOPM**：古い32bitのプラグインで、いまのDAWではそのまま使えないことが多いです。osoumenさんによる改良版「VOPMex」なら、64bitのDAWでも使えます。my2151やchipsynth OPMZも代わりになります
 
 各ツールのバージョンや価格は、2026年10月30日時点の各配布ページの情報に基づいています。掲載している画像の多くは、各ツールの公式ページ（App Storeを含む）や[Lospec](https://lospec.com/software/)から引用しました。なお、BeepBox、JummBox、UltraBox、Slarmoo's Box、FlMML on HTML5、browser-mml-player、NSF2MML、LSDJ Converter、SNDH Playerは実際にサイトを開いて撮影したものです。little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは各作者のX（旧Twitter）の投稿から引用し、Dn-FamiTracker、Furnace、furnace-piano-roll、FamiStudio、KiraStudio、OpenMPT、WaveTracker、GTUltra、SID Factory II、Bamboo Tracker、DefleMask、LabChirpの画像はRei8bitさんからご提供いただきました。機種別の欄の画像は、各ツールのページのほか、Battle of the Bits、Atarimania、pouet.net、Wikipedia、YouTubeの動画のサムネイルなどから引用しました。
 {{< /lang >}}
@@ -979,6 +981,8 @@ These load in your usual DAW and play like any other instrument.
 
 - [**C700**](https://github.com/osoumen/C700) (osoumen) ver20211031: a sampler that recreates the SNES sound chip. You load your own waveforms and sounds into it. It can also export your song as an SNES music file (.spc). Free, Windows (VST2) and Mac (VST2, AU)
   <img src="/img/chiptune-tools/c700.webp" alt="C700 screenshot" width="513" height="420" loading="lazy" />
+
+- [**VOPMex**](http://picopicose.com/software.html) (osoumen) 20210501: osoumen's updated version of Sam's VOPM, which recreates the YM2151 (OPM) FM chip used in '80s and '90s arcade games and the X68000. It runs in 64-bit DAWs and on Apple Silicon. If you connect [GIMIC](http://gimic.jp/) (a USB device for real sound chips) with a YM2151 installed, you can play authentic hardware sounds (Windows also requires c86ctl). Free, Windows (VST, 32-bit and 64-bit) and Mac (VST, AU)
 
 - [**OPNA FM Synth**](https://trpico.booth.pm/items/8351023) v1.0.1: torupi's plugin recreating the YM2608 (OPNA) FM chip. Free (600 yen support option), Windows (VST3)
   <img src="/img/chiptune-tools/opnafm.webp" alt="OPNA FM Synth screenshot" width="560" height="382" loading="lazy" />
@@ -1316,8 +1320,8 @@ Write songs as text (MML) and play them.
 - [**GameBoy Music Compiler (GBMC)**](http://mydocuments.g2.xrea.com/html/gb/sounddriver.html) 2025.07.31: an MML compiler for the GAMEBOY sound chip that exports GBS files, ROMs for emulators and real hardware, as well as the visual player "GBDSP". Free, Windows
   <img src="/img/chiptune-tools/gbmc.webp" alt="GBDSP screen exported from GBMC" width="336" height="342" loading="lazy" />
 
-- [**mml2vgm**](https://github.com/kuma4649/mml2vgm) TAG809: a tool that turns MML into VGM files for the Mega Drive and many other chips (YM2151, YM2608, NES, GAMEBOY and more), with an IDE. Free, Windows
-  - [**MDPlayer**](https://github.com/kuma4649/MDPlayer) STBL567 by the same author: a player for VGM, MDX, NSF, GBS, SID and many more formats, with a keyboard display. Handy for checking songs made with mml2vgm. Free, Windows
+- [**mml2vgm**](https://github.com/kuma4649/mml2vgm) TAG809: a tool that turns MML into VGM files for the Mega Drive and many other chips (YM2151, YM2608, NES, GAMEBOY and more), with an included IDE. Free, Windows
+  - [**MDPlayer**](https://github.com/kuma4649/MDPlayer) STBL567: a player by the same author for VGM, MDX, NSF, GBS, SID and many more formats, with a keyboard display. Handy for checking songs made with mml2vgm. Free, Windows
 
 - [**browser-mml-player**](https://github.com/t-sin/browser-mml-player): a browser MML player made for an article introducing how synthesizers work. Free
   <img src="/img/chiptune-tools/bmml.webp" alt="browser-mml-player screenshot" width="560" height="350" loading="lazy" />
@@ -1343,16 +1347,16 @@ Write songs as text (MML) and play them.
   - chipsynth SFC ($39.95): the SNES sound chip
     <img src="/img/chiptune-tools/chipsynth-sfc.webp" alt="chipsynth SFC screenshot" width="560" height="344" loading="lazy" />
 
-  - chipsynth OPMZ ($49.95): a full-featured FM chip widely used in 80s and 90s arcade games and old computers (such as the X68000). Just released in September 2026
+  - chipsynth OPMZ ($49.95): a full-featured FM chip widely used in '80s and '90s arcade games and old computers (such as the X68000). Just released in September 2026
     <img src="/img/chiptune-tools/chipsynth-opmz.webp" alt="chipsynth OPMZ screenshot" width="560" height="341" loading="lazy" />
 
-  - chipsynth PortaFM ($29.95): simple FM chips used in Yamaha's small 80s keyboards (the PSS series) and in PC sound cards (AdLib, Sound Blaster)
+  - chipsynth PortaFM ($29.95): simple FM chips used in Yamaha's small '80s keyboards (the PSS series) and in PC sound cards (AdLib, Sound Blaster)
     <img src="/img/chiptune-tools/chipsynth-portafm.webp" alt="chipsynth PortaFM screenshot" width="560" height="264" loading="lazy" />
 
   - chipsounds ($75): 15 sound chips from the 8-bit era, such as the NES and Commodore 64, in one instrument. An older product from 2009, now succeeded by the chipsynth series
     <img src="/img/chiptune-tools/chipsounds.webp" alt="chipsounds screenshot" width="560" height="297" loading="lazy" />
 
-  - chipspeech ($75): sings with 80s speech synthesis chips used in arcade games and old computers
+  - chipspeech ($75): sings with '80s speech synthesis chips used in arcade games and old computers
     <img src="/img/chiptune-tools/chipspeech.webp" alt="chipspeech screenshot" width="341" height="420" loading="lazy" />
 
 - [**my2151**](https://booth.pm/ja/items/8292567): an FM synth that recreates the YM2151. It can load VOPM patch files (.opm). Windows 64-bit (VST3), sold on BOOTH (demo available)
@@ -1841,7 +1845,7 @@ For more obscure trackers and tools not covered here, see the wiki pages of the 
 
 - **SANA 8BIT VST**: the latest version, Beta 2.0, supports 64-bit VST3, so it works in today's DAWs
 
-- **VOPM**: an old 32-bit plugin that often won't run as is in today's DAWs. For the YM2151, my2151 or chipsynth OPMZ can take its place
+- **VOPM**: an old 32-bit plugin that often won't run as is in today's DAWs. osoumen's VOPMex runs in 64-bit DAWs, and my2151 or chipsynth OPMZ are also great alternatives
 
 Tool versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). The screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, FlMML on HTML5, browser-mml-player, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me. Screenshots for little-scale's trackers, WebX68k, and NOTE MDX Workbench were sourced from the creators' posts on X, and those for Dn-FamiTracker, Furnace, furnace-piano-roll, FamiStudio, KiraStudio, OpenMPT, WaveTracker, GTUltra, SID Factory II, Bamboo Tracker, DefleMask, and LabChirp were kindly provided by Rei8bit. Images in the by-system section come from each tool's page as well as Battle of the Bits, Atarimania, pouet.net, Wikipedia, and YouTube video thumbnails.
 {{< /lang >}}
