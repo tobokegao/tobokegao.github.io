@@ -30,6 +30,7 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 - [効果音を作るソフト](#ja-sfx)
 - [再生・変換・そのほか](#ja-players)
 - [Shiruさんのツール（無料）](#ja-shiru)
+- [機種別のトラッカーとツール（Battle of the Bitsの一覧より）](#ja-botb)
 - [もっと知りたい人へ](#ja-more)
 - [2021年のまとめから変わったこと](#ja-changes)
 
@@ -111,7 +112,7 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
   <img src="/img/chiptune-tools/ptcollab.webp" alt="ptcollabの画面" width="560" height="315" loading="lazy" />
 
 - [**Bamboo Tracker**](https://bambootracker.github.io/BambooTracker/) v0.6.5：PC-8801やPC-9801で使われたFM音源（YM2608）用のトラッカー。無料、Windows・Mac・Linux
-  <img src="/img/chiptune-tools/bambootracker.webp" alt="Bamboo Trackerの画面" width="473" height="420" loading="lazy" />
+  <img src="/img/chiptune-tools/bambootracker.webp" alt="Bamboo Trackerの画面" width="560" height="307" loading="lazy" />
 
 - [**Arkos Tracker 3**](https://www.julien-nevo.com/arkostracker/) 3.7：MSXやZX Spectrum、Atari STなどのPSG音源（AY-3-8910・YM2149）用のトラッカー。無料、Windows・Mac・Linux
   <img src="/img/chiptune-tools/arkos.webp" alt="Arkos Tracker 3の画面" width="560" height="350" loading="lazy" />
@@ -126,7 +127,8 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
   <img src="/img/chiptune-tools/wavetracker.webp" alt="WaveTrackerの画面" width="560" height="307" loading="lazy" />
 
 - [**DefleMask**](https://www.deflemask.com/)：メガドライブ、マスターシステム、GAMEBOY、PCエンジン、ファミコンなど、たくさんの音源に対応したトラッカー。Steam版は1,700円、スマホ版もあります（iOS・Android）。古い無料版もありますが、サポートは終わっています
-  <img src="/img/chiptune-tools/deflemask.webp" alt="DefleMaskの画面" width="560" height="315" loading="lazy" />
+  <img src="/img/chiptune-tools/deflemask.webp" alt="DefleMask（v1）の画面" width="560" height="307" loading="lazy" />
+  <img src="/img/chiptune-tools/deflemask-legacy.webp" alt="DefleMask Legacyの画面" width="560" height="307" loading="lazy" />
 
 - [**MilkyTracker**](https://milkytracker.org/) v1.05.01：FastTracker IIと互換の、サンプルを使うトラッカー（XM・MOD形式）。無料、Windows・Mac・Linux
   <img src="/img/chiptune-tools/milkytracker.webp" alt="MilkyTrackerの画面" width="544" height="420" loading="lazy" />
@@ -478,6 +480,277 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 - **SoundFont**：ZX Spectrumのビーパーの音（wtbeepなど）や、中国のおもちゃのピアノの音（BF-630、TX-5488Aなど）。レトロでチープな機器独特の響きを再現できるデータ（インパルス応答）もあります
 
+## 機種別のトラッカーとツール（Battle of the Bitsの一覧より） {#ja-botb}
+
+チップチューンの投稿コミュニティ「[Battle of the Bits](https://battleofthebits.com/)」の解説ページ（見るにはログインが必要）に載っているトラッカーとツールのうち、ここまでに出てこなかったものを機種ごとにまとめました。「今なら○○」と書いてあるものは、いまはもっと使いやすいツールがあるものです。
+
+### AdLib・OPL（パソコンのFM音源）
+
+- [**Adlib Tracker II**](https://adlibtracker.net/downloads.php)：OPL3のFM音源（4オペレーター）用の、文字の画面のトラッカー。無料、DOS・Windows・Linux
+  <img src="/img/chiptune-tools/botb-at2.webp" alt="Adlib Tracker IIの画面" width="400" height="266" loading="lazy" />
+
+- [**Reality Adlib Tracker (RAD 2)**](https://www.pouet.net/prod.php?which=75963)：小さな曲データ向けのOPLトラッカー。v2でOPL3に対応しました。無料、DOS・Windows・Mac
+  <img src="/img/chiptune-tools/botb-rad.webp" alt="Reality Adlib Tracker (RAD 2)の画面" width="400" height="249" loading="lazy" />
+
+- [**Faust Music Creator**](https://www.pouet.net/prod.php?which=55235)：AdLib（OPL2）用の、キーボードだけで操作するDOSのトラッカー。今ならAdlib Tracker IIかFurnace
+  <img src="/img/chiptune-tools/botb-fmc.webp" alt="Faust Music Creatorの画面" width="400" height="250" loading="lazy" />
+
+- [**Scream Tracker 3**](https://www.pouet.net/prod.php?which=13351)：1994年のDOSのトラッカー。S3M形式を生みました。今ならSchism TrackerかOpenMPT
+  <img src="/img/chiptune-tools/botb-st3.webp" alt="Scream Tracker 3の画面" width="400" height="250" loading="lazy" />
+
+- **AMusic**（AdLib）
+
+### Amiga
+
+- [**ProTracker 2 clone (pt2-clone)**](https://16-bits.org/pt.php)：Amigaの「ProTracker 2」を、今のパソコンでそのまま使えるように作り直したもの。無料、Windows・Mac・Linux
+  <img src="/img/chiptune-tools/botb-pt2clone.webp" alt="ProTracker 2 clone (pt2-clone)の画面" width="491" height="420" loading="lazy" />
+
+- [**HivelyTracker**](https://github.com/pete-gordon/hivelytracker)：AHXをもとにした、4〜16チャンネルのチップチューン用トラッカー。無料、Windows・Mac・Linuxなど
+  <img src="/img/chiptune-tools/botb-hively.webp" alt="HivelyTrackerの画面" width="400" height="300" loading="lazy" />
+
+- [**ProTracker**](https://en.wikipedia.org/wiki/Protracker)：MOD形式のもとになった、Amigaの4チャンネルのトラッカー。今ならProTracker 2のクローンかOpenMPT
+  <img src="/img/chiptune-tools/botb-protracker.webp" alt="ProTrackerの画面" width="525" height="420" loading="lazy" />
+
+- [**AHX Tracker**](http://amigascne.org/abyss/ahx/)：コモドール64のSIDのような音を、Amigaで合成して鳴らすトラッカー。今ならHivelyTracker
+  <img src="/img/chiptune-tools/botb-ahx.webp" alt="AHX Trackerの画面" width="320" height="256" loading="lazy" />
+
+- [**DigiBooster 3**](http://www.digibooster.de/en/)：チャンネル数の多いAmigaのトラッカー。今ならOpenMPT
+  <img src="/img/chiptune-tools/botb-digibooster.webp" alt="DigiBooster 3の画面" width="324" height="259" loading="lazy" />
+
+- [**OctaMED**](https://en.wikipedia.org/wiki/OctaMED)：8チャンネルを鳴らせるAmigaのトラッカー。今ならOpenMPTかProTracker 2のクローン
+  <img src="/img/chiptune-tools/botb-octamed.webp" alt="OctaMEDの画面" width="480" height="360" loading="lazy" />
+
+### Atari 2600
+
+- [**TIATracker**](https://bitbucket.org/kylearan/tiatracker) 1.3.1：Atari 2600の音源（TIA）で曲を作るためのトラッカーと再生ルーチン。無料、Windows・Mac・Linux
+  <img src="/img/chiptune-tools/botb-tiatracker.webp" alt="TIATrackerの画面" width="391" height="300" loading="lazy" />
+
+- [**LoopCart**](https://www.qotile.net/loopcart.html)：Atari 2600の実機で動く、作りかけのループシーケンサー。今ならTIATrackerかFurnace
+  <img src="/img/chiptune-tools/botb-loopcart.webp" alt="LoopCartの画面" width="320" height="240" loading="lazy" />
+
+### Atari ST（YM2149）
+
+- [**maxYMiser**](https://www.preromanbritain.com/maxymiser/)：Atari STの実機で動く、YM2149用のトラッカー。MIDIにも対応しています。無料、Atari ST（実機またはエミュレーター）
+  <img src="/img/chiptune-tools/botb-maxymiser.webp" alt="maxYMiserの画面" width="320" height="200" loading="lazy" />
+
+- [**MusicMon**](https://dhs.nu/files.php?t=single&ID=52)：Atari STの実機で動くトラッカー。今ならmaxYMiser
+  <img src="/img/chiptune-tools/botb-musicmon.webp" alt="MusicMonの画面" width="320" height="200" loading="lazy" />
+
+### Atari 8bit（POKEY）
+
+- [**Raster Music Tracker**](http://raster.infos.cz/atari/rmt/rmt.htm)：Atari 8bitの音源（POKEY）用の、Windowsのトラッカー。無料、Windows
+  <img src="/img/chiptune-tools/botb-rmt.webp" alt="Raster Music Trackerの画面" width="400" height="300" loading="lazy" />
+
+- [**Chaos Music Composer**](https://atariki.krap.pl/index.php/Chaos_Music_Composer)：Atari 8bitの実機で動く、ポーランドで人気だった作曲ソフト。今ならRaster Music TrackerかFurnace
+  <img src="/img/chiptune-tools/botb-cmc.webp" alt="Chaos Music Composerの画面" width="336" height="240" loading="lazy" />
+
+- [**Delta Music Composer**](https://atariki.krap.pl/index.php/Delta_Music_Composer)：1990年代半ばのAtari 8bitの作曲ソフト。今ならRaster Music TrackerかFurnace
+  <img src="/img/chiptune-tools/botb-dmc-atari.webp" alt="Delta Music Composerの画面" width="336" height="240" loading="lazy" />
+
+- [**Music ProTracker**](https://atariki.krap.pl/index.php/Music_ProTracker)：サンプルも使える、Atari 8bitの作曲ソフト。今ならRaster Music TrackerかFurnace
+  <img src="/img/chiptune-tools/botb-mpt.webp" alt="Music ProTrackerの画面" width="336" height="241" loading="lazy" />
+
+- [**Theta Music Composer**](https://atariki.krap.pl/index.php/Theta_Music_Composer)：Atari 8bitで、はじめて8チャンネルの曲を作れた作曲ソフト。今ならRaster Music TrackerかFurnace
+  <img src="/img/chiptune-tools/botb-tmc.webp" alt="Theta Music Composerの画面" width="336" height="240" loading="lazy" />
+
+### DOSのモジュール（MOD・S3M・XM・IT）
+
+- [**FT2 clone (ft2-clone)**](https://16-bits.org/ft2.php)：XM形式を生んだ「FastTracker II」を、今のパソコンでそのまま使えるように作り直したもの。無料、Windows・Mac・Linux
+  <img src="/img/chiptune-tools/botb-ft2clone.webp" alt="FT2 clone (ft2-clone)の画面" width="560" height="371" loading="lazy" />
+
+- [**FastTracker II**](https://www.pouet.net/prod.php?which=13350)：1994年のDOSのトラッカー。XM形式を生みました。今ならFT2 cloneかMilkyTracker
+  <img src="/img/chiptune-tools/botb-ft2.webp" alt="FastTracker IIの画面" width="400" height="253" loading="lazy" />
+
+- [**Impulse Tracker**](https://en.wikipedia.org/wiki/Impulse_Tracker)：IT形式を生んだDOSのトラッカー。最後の版は1999年です。今ならSchism Tracker
+  <img src="/img/chiptune-tools/botb-it.webp" alt="Impulse Trackerの画面" width="560" height="350" loading="lazy" />
+
+- [**ChibiTracker**](https://sourceforge.net/projects/chibitracker.berlios/files)：Impulse Trackerに似た、オープンソースのトラッカー。今ならSchism TrackerかOpenMPT
+  <img src="/img/chiptune-tools/botb-chibi.webp" alt="ChibiTrackerの画面" width="400" height="292" loading="lazy" />
+
+- [**Composer 669**](https://www.pouet.net/prod.php?which=63357)：1992年の、8チャンネルのDOSのトラッカー。今ならOpenMPTかSchism Tracker
+  <img src="/img/chiptune-tools/botb-c669.webp" alt="Composer 669の画面" width="400" height="250" loading="lazy" />
+
+### コモドール64
+
+- [**CheeseCutter**](https://github.com/theyamo/CheeseCutter)：作った曲をコモドール64の実機で鳴らせる、SIDのトラッカー。無料、Windows・Linux
+  <img src="/img/chiptune-tools/botb-cheesecutter.webp" alt="CheeseCutterの画面" width="381" height="300" loading="lazy" />
+
+- [**DMC (Demo Music Creator)**](http://tnd64.unikat.sk/music_scene.html)：1990年からある、コモドール64の実機で動く作曲ソフト。今ならGTUltraかCheeseCutter
+  <img src="/img/chiptune-tools/botb-dmc.webp" alt="DMC (Demo Music Creator)の画面" width="384" height="271" loading="lazy" />
+
+### GAMEBOY・GBA
+
+- [**Carillon Editor**](http://gbdev.gg8.se/files/musictools/Aleksi%20Eeben/Carillon%20Editor.zip)：GAMEBOYの実機で動く作曲ソフトと再生エンジン。今ならLSDjかhUGETracker
+  <img src="/img/chiptune-tools/botb-carillon.webp" alt="Carillon Editorの画面" width="320" height="288" loading="lazy" />
+
+- [**Paragon5**](http://www.nullsleep.com/programs/p5_tracker.zip)：GAMEBOYの音源用の、Windowsのトラッカー。今ならhUGETrackerかFurnace
+  <img src="/img/chiptune-tools/botb-paragon5.webp" alt="Paragon5の画面" width="480" height="360" loading="lazy" />
+
+- [**BoyScout**](https://www.gbadev.org/tools.php?showinfo=187)：GAMEBOYの4つの音源用の、Windowsのトラッカー。今ならhUGETrackerかFurnace
+
+- [**Fatass Tracker**](http://jeremyevers.com/fatass/)：GAMEBOYカラーの実機で動く、FastTracker II風のトラッカー。今ならLSDj
+
+- [**Furious Advance Tracker**](https://github.com/cbrouillard/furiousadvancetracker)：GBAで動く、LSDjに似たトラッカー。今ならLSDjかFurnace
+  <img src="/img/chiptune-tools/botb-fat.webp" alt="Furious Advance Trackerの画面" width="480" height="320" loading="lazy" />
+
+- [**M4G Tracker**](http://web.archive.org/web/20160524034134/http://m4gtracker.stereoboom.com:80/)：GBAで動くFastTracker II風のトラッカー。ベータ版のまま開発が止まりました。今ならFurnace
+  <img src="/img/chiptune-tools/botb-m4g.webp" alt="M4G Trackerの画面" width="480" height="360" loading="lazy" />
+
+- **Ditty Editor**（GBA）
+
+### ファミコン
+
+- [**j0CC-FamiTracker**](https://github.com/nyanpasu64/j0CC-FamiTracker)：0CC-FamiTrackerの不具合を直した派生版。今ならその後継のDn-FamiTracker
+  <img src="/img/chiptune-tools/botb-j0cc.webp" alt="j0CC-FamiTrackerの画面" width="480" height="360" loading="lazy" />
+
+- [**NerdTracker II**](https://www.nesdev.org/nt2/)：昔のNSFの多くを生んだ、DOSのファミコンのトラッカー。今ならDn-FamiTrackerかFurnace
+  <img src="/img/chiptune-tools/botb-nt2.webp" alt="NerdTracker IIの画面" width="474" height="402" loading="lazy" />
+
+- [**NesTracker**](https://www.pouet.net/prod.php?which=56165)：NSFを書き出せる、ファミコンの音源用のトラッカー。今ならDn-FamiTrackerかFurnace
+  <img src="/img/chiptune-tools/botb-nestracker.webp" alt="NesTrackerの画面" width="358" height="300" loading="lazy" />
+
+- [**Musetracker**](https://files.scene.org/view/resources/music/trackers/musetracker-v15.zip)：PCMに強い、ファミコンの音源用のトラッカー。今ならDn-FamiTrackerかFurnace
+  <img src="/img/chiptune-tools/botb-musetracker.webp" alt="Musetrackerの画面" width="530" height="418" loading="lazy" />
+
+### セガ（マスターシステム・メガドライブ）
+
+- [**Genny**](https://github.com/superjoebob/genny) v1.54 Beta：メガドライブ（YM2612・SN76489）の音源を再現したVSTプラグイン。VGMにも書き出せます。無料、Windows
+  <img src="/img/chiptune-tools/botb-genny.webp" alt="Gennyの画面" width="560" height="324" loading="lazy" />
+
+- [**Mod2PSG2**](https://www.smspower.org/Music/Mod2PSG2)：マスターシステム・ゲームギアの音源（SN76489）用のトラッカー。今ならFurnaceかDefleMask
+  <img src="/img/chiptune-tools/botb-mod2psg2.webp" alt="Mod2PSG2の画面" width="480" height="360" loading="lazy" />
+
+- [**SnevenTracker**](https://github.com/HertzDevil/SnevenTracker)：FamiTrackerを改造して、SN76489の音源を鳴らせるようにしたもの。今ならFurnace
+  <img src="/img/chiptune-tools/botb-sneven.webp" alt="SnevenTrackerの画面" width="480" height="360" loading="lazy" />
+
+- [**VGM Music Maker**](http://shiru.untergrund.net/)：メガドライブのFM音源とPSG用の、VGMを書き出せるトラッカー。今ならFurnaceかDefleMask
+  <img src="/img/chiptune-tools/botb-vgmmm.webp" alt="VGM Music Makerの画面" width="480" height="360" loading="lazy" />
+
+- [**TFM Music Maker**](http://shiru.untergrund.net/)：メガドライブのFM音源（YM2612）用の、VGMを書き出せるトラッカー。今ならFurnaceかDefleMask
+  <img src="/img/chiptune-tools/botb-tfmmm.webp" alt="TFM Music Makerの画面" width="300" height="300" loading="lazy" />
+
+### ZX Spectrum
+
+- [**Beepola**](https://freestuff.grok.co.uk/beepola/) v1.08.01：ZX Spectrumのビーパー用のトラッカー。無料、Windows
+  <img src="/img/chiptune-tools/botb-beepola.webp" alt="Beepolaの画面" width="560" height="386" loading="lazy" />
+
+- [**Sound-Tracker (ZX)**](https://spectrumcomputing.co.uk/alt/25080/ZX-Spectrum/Soundtracker)：1990年ごろの、ZX Spectrumの実機で動くAY音源の作曲ソフト。今ならVortex Tracker
+  <img src="/img/chiptune-tools/botb-zx-soundtracker.webp" alt="Sound-Tracker (ZX)の画面" width="512" height="384" loading="lazy" />
+
+- [**SQ-Tracker**](https://worldofspectrum.org/archive/software/utilities/sq-tracker-proxima-software)：1993年の、ZX Spectrum 128Kの実機で動くAY音源のトラッカー。今ならVortex Tracker
+  <img src="/img/chiptune-tools/botb-sqtracker.webp" alt="SQ-Trackerの画面" width="512" height="384" loading="lazy" />
+
+### VIC-20
+
+- [**baby-k (vixxen20)**](https://langel.github.io/vixxen20/) v0.8.2：ブラウザで動く、VIC-20用のトラッカー。無料
+  <img src="/img/chiptune-tools/botb-babyk.webp" alt="baby-k (vixxen20)の画面" width="480" height="360" loading="lazy" />
+
+- [**VIC-TRACKER**](http://www.kahlin.net/daniel/victracker/)：VIC-20の実機で動くトラッカー。今ならbaby-kかFurnace
+  <img src="/img/chiptune-tools/botb-victracker.webp" alt="VIC-TRACKERの画面" width="400" height="333" loading="lazy" />
+
+### ニンテンドーDS
+
+- [**NitroTracker**](https://github.com/0xtob/nitrotracker)：ニンテンドーDSで動く、FastTracker II風のトラッカー。タッチペンで操作します。今なら、3DSではcitratracker、パソコンではFurnaceかMilkyTracker
+  <img src="/img/chiptune-tools/botb-nitro.webp" alt="NitroTrackerの画面" width="200" height="300" loading="lazy" />
+
+- [**KORG DS-10**](https://en.wikipedia.org/wiki/KORG_DS-10)：ニンテンドーDSで動く、KORGのシンセ（MS-20風）とドラムのソフト。今ならiPhone・iPad用のKORG iDS-10
+  <img src="/img/chiptune-tools/botb-ds10.webp" alt="KORG DS-10の画面" width="434" height="420" loading="lazy" />
+
+- [**Mario Paint Composer DS**](https://github.com/DerrickGold/MarioPaintComposer-NDS)：ニンテンドーDSで動く、マリオペイント風の作曲ソフト。今ならパソコン用のSuper Mario Paint
+  <img src="/img/chiptune-tools/botb-mpcds.webp" alt="Mario Paint Composer DSの画面" width="256" height="384" loading="lazy" />
+
+- **ProteinDS**（ニンテンドーDS）
+
+- **Seno DS**（ニンテンドーDS）
+
+### Channel F
+
+- [**Sleizsa Trio**](https://github.com/utz82/SleizsaTrio) v0.1：Fairchild Channel Fで3チャンネルを鳴らせる音楽ルーチン。XMのトラッカーやブラウザで作曲できます。無料
+
+- [**Sleizsa**](https://web.archive.org/web/20170926123546/http://average.truechiptilldeath.com/channelf/sleizsa_v0_31.zip)：Channel F用の、1音だけのシーケンサー（2008年）。今ならSleizsa Trio
+
+- [**Sleizsa Duo**](https://github.com/utz82/SleizsaDuo)：Channel Fで2チャンネルを鳴らせる音楽ルーチン（2015年）。今ならSleizsa Trio
+
+### Mario Paint
+
+- [**Mario Sequencer**](https://github.com/minghai/MarioSequencer)：マリオペイント風の作曲ソフト。Windows版とブラウザ版があります。今ならパソコン用のSuper Mario Paint
+  <img src="/img/chiptune-tools/botb-mariosequencer.webp" alt="Mario Sequencerの画面" width="413" height="420" loading="lazy" />
+
+### 携帯型・そのほかのトラッカー
+
+- [**LittleGPTracker (Little Piggy Tracker)**](https://github.com/djdiskmachine/LittleGPTracker) Little Piggy Tracker 1.5.0：LSDjに似た、8チャンネルのサンプルのトラッカー。picoTrackerのもとになったソフトです。無料、Windows・Mac・Linux・携帯ゲーム機など
+  <img src="/img/chiptune-tools/botb-lgpt.webp" alt="LittleGPTracker (Little Piggy Tracker)の画面" width="560" height="420" loading="lazy" />
+
+- [**ProTrekkr**](https://github.com/hitchhikr/protrekkr) v2.8.3_PRE_2：デモやイントロのための、データの小さな曲を作るトラッカー兼シンセ。無料、Windows・Mac・Linux
+  <img src="/img/chiptune-tools/botb-protrekkr.webp" alt="ProTrekkrの画面" width="400" height="298" loading="lazy" />
+
+- [**klystrack**](https://kometbomb.github.io/klystrack/)：SIDやファミコン風の音を合成できる、チップチューン用のトラッカー。無料、Windows・Mac・Linux
+  <img src="/img/chiptune-tools/botb-klystrack.webp" alt="klystrackの画面" width="560" height="420" loading="lazy" />
+
+- [**Radium**](https://radium.dog/) 8.2.55：音符やオートメーションを画面上で描ける、トラッカー風の作曲ソフト。体験版は無料、Windows・Mac・Linux
+  <img src="/img/chiptune-tools/botb-radium.webp" alt="Radiumの画面" width="560" height="315" loading="lazy" />
+
+- [**Polyend Tracker**](https://polyend.com/tracker/)：単体で動くハードウェアのトラッカー。いまはTracker+とTracker Miniもあります
+  <img src="/img/chiptune-tools/botb-polyend.webp" alt="Polyend Trackerの画面" width="420" height="420" loading="lazy" />
+
+### MML・スクリプト
+
+- [**HuSIC**](https://github.com/BouKiCHi/HuSIC)：PCエンジン用のMMLのドライバー。無料
+
+- [**XPMCK**](http://jiggawatt.org/muzak/xpmck/)：コモドール64、GAMEBOY、PCエンジン、マスターシステム、メガドライブなどに対応したMMLのコンパイラー。今ならFurnaceか、機種ごとのMMLのドライバー
+
+- [**athtune**](http://ftp.modland.com/pub/software/trackers/Windows/Athtune/)：C#で音を定義する、MMLに近いスクリプトの作曲ツール。今ならFurnaceかMMLのコンパイラー
+
+- **NDS BGMFILER**（ニンテンドーDS）
+
+### 携帯電話の着メロ
+
+- [**Nite (Nokia Internal Tune Editor)**](http://onj3.andrelouis.com/phonetones/Software%20and%20Soundbanks/Software/Nokia/Nokia%20Internal%20Tune%20Editor.zip)：Nokiaの社内で使われていた、単音の着メロを作るツール
+
+- **Nokia PC Composer**（Windows）
+
+- **CMX Studio**（Windows）
+
+- **ATS-MA SMAF tools**（Windows）
+
+### 補助ツール・プレイヤー
+
+- [**LSDPatch**](https://github.com/jkotlinski/lsdpatch) v1.13.3：LSDjの曲の管理と、ROMのカスタマイズ（ドラムキット、フォント、色）ができるツール。無料、Windows・Mac・Linux
+  <img src="/img/chiptune-tools/botb-lsdpatch.webp" alt="LSDPatchの画面" width="480" height="360" loading="lazy" />
+
+- [**GBT Player**](https://github.com/AntonioND/gbt-player) v4.4.1：GAMEBOYやGBAの自作ゲームで曲を鳴らすためのライブラリと変換ツール。無料
+
+- [**SNESMOD**](https://github.com/mukunda-/snesmod)：ITの曲を、スーパーファミコンで鳴らせるデータ（SPC）に変えるツール。無料
+  <img src="/img/chiptune-tools/botb-snesmod.webp" alt="SNESMODの画面" width="480" height="360" loading="lazy" />
+
+- [**Maxmod**](https://maxmod.org/) v2.1.0：GBAやDSの自作ゲームで、MOD・XM・ITなどの曲を鳴らすライブラリ。無料
+  <img src="/img/chiptune-tools/botb-maxmod.webp" alt="Maxmodの画面" width="512" height="384" loading="lazy" />
+
+- [**NSFPlay**](https://bbbradsmith.github.io/nsfplay/) 2.6：ファミコンの音楽ファイル（NSF）を正確に鳴らすプレイヤー。無料、Windows
+  <img src="/img/chiptune-tools/botb-nsfplay.webp" alt="NSFPlayの画面" width="373" height="115" loading="lazy" />
+
+- [**FMPMD2000**](http://c60.la.coocan.jp/fmpmd.html)：PC-88・PC-98のPMDの曲を、Windowsで鳴らすプレイヤー。無料
+
+- [**VCV Rack**](https://vcvrack.com/Rack) Rack 2：パソコンで動く、ユーロラック風のモジュラーシンセ。無料（DAWで使えるPro版は有料）、Windows・Mac・Linux
+  <img src="/img/chiptune-tools/botb-vcv.webp" alt="VCV Rackの画面" width="560" height="309" loading="lazy" />
+
+- [**it2nsf**](https://github.com/mukunda-/it2nsf)：ITの曲をNSFに変えるツール。今ならDn-FamiTrackerかFurnace
+
+- [**s3m2nsf**](https://github.com/mukunda-/s3m2nsf)：S3Mの曲をNSFに変えるツール。今ならDn-FamiTrackerかFurnace
+
+- [**it2vgm.py**](http://web.archive.org/web/20101123045821/http://pubacc.wilcox-tech.com/~greaser/stuff/it2vgm.py.txt)：ITの曲を、SN76489用のVGMに変えるPythonのスクリプト。今ならFurnace
+
+- [**FTM2GBMC**](https://github.com/Savestate2A03/FTM2GBMC)：FamiTrackerの曲を、GBMCのMMLに変えるツール。今ならFurnaceかhUGETracker
+
+- [**VirtuaNSF**](http://virtuanes.s1.xrea.com/)：エミュレーター「VirtuaNES」をもとにした、NSFのプレイヤー。今ならNSFPlay
+
+- [**hoot**](http://dmpsoft.s17.xrea.com/hoot/)：日本のパソコンやゲーム機の音楽を、音源を再現して鳴らすプレイヤー。Windows
+  <img src="/img/chiptune-tools/botb-hoot.webp" alt="hootの画面" width="525" height="420" loading="lazy" />
+
+- **Mumml**（Windows）
+
+- **OpenSPC**（DOS・Windows）
+
 ## もっと知りたい人へ {#ja-more}
 
 ここに載せていない、よりマニアックなトラッカーやツールは、チップチューンの投稿コミュニティ「Battle of the Bits」の解説ページ（英語）にまとまっています。
@@ -492,7 +765,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 - **SANA 8BIT VST**、**VOPM**：どちらも古い32bitのプラグインで、いまのDAWではそのままでは使えないことが多いです。ファミコン系はMagical 8bit Plug 2やNew DoReFAMI、YM2151はmy2151かchipsynth OPMZが代わりになります
 
-各ツールのバージョンや価格は、2026年10月30日時点の各配布ページの情報に基づいています。掲載している画像の多くは、各ツールの公式ページ（App Storeを含む）や[Lospec](https://lospec.com/software/)から引用しました。なお、BeepBox、JummBox、UltraBox、Slarmoo's Box、FlMML on HTML5、browser-mml-player、NSF2MML、LSDJ Converter、SNDH Playerは実際にサイトを開いて撮影したものです。little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは各作者のX（旧Twitter）の投稿から引用し、Dn-FamiTracker、Furnace、furnace-piano-roll、FamiStudio、KiraStudio、OpenMPT、WaveTracker、GTUltra、SID Factory IIの画像はRei8bitさんからご提供いただきました。
+各ツールのバージョンや価格は、2026年10月30日時点の各配布ページの情報に基づいています。掲載している画像の多くは、各ツールの公式ページ（App Storeを含む）や[Lospec](https://lospec.com/software/)から引用しました。なお、BeepBox、JummBox、UltraBox、Slarmoo's Box、FlMML on HTML5、browser-mml-player、NSF2MML、LSDJ Converter、SNDH Playerは実際にサイトを開いて撮影したものです。little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは各作者のX（旧Twitter）の投稿から引用し、Dn-FamiTracker、Furnace、furnace-piano-roll、FamiStudio、KiraStudio、OpenMPT、WaveTracker、GTUltra、SID Factory II、Bamboo Tracker、DefleMaskの画像はRei8bitさんからご提供いただきました。機種別の欄の画像は、各ツールのページのほか、Battle of the Bits、pouet.net、Wikipedia、YouTubeの動画のサムネイルなどから引用しました。
 {{< /lang >}}
 
 {{< lang en >}}
@@ -519,6 +792,7 @@ This is an updated roundup based on Umeboshi Chazuke's 2021 article on their blo
 - [Sound effect makers](#en-sfx)
 - [Players, converters and more](#en-players)
 - [Shiru's tools (free)](#en-shiru)
+- [Trackers and tools by system (from the Battle of the Bits list)](#en-botb)
 - [To dig deeper](#en-more)
 - [What changed since the 2021 roundup](#en-changes)
 
@@ -600,7 +874,7 @@ You program within the limits of the console's sound chip, which makes it easier
   <img src="/img/chiptune-tools/ptcollab.webp" alt="ptcollab screenshot" width="560" height="315" loading="lazy" />
 
 - [**Bamboo Tracker**](https://bambootracker.github.io/BambooTracker/) v0.6.5: a tracker for the YM2608 FM chip used in the PC-8801 and PC-9801. Free, Windows, Mac, Linux
-  <img src="/img/chiptune-tools/bambootracker.webp" alt="Bamboo Tracker screenshot" width="473" height="420" loading="lazy" />
+  <img src="/img/chiptune-tools/bambootracker.webp" alt="Bamboo Tracker screenshot" width="560" height="307" loading="lazy" />
 
 - [**Arkos Tracker 3**](https://www.julien-nevo.com/arkostracker/) 3.7: a tracker for PSG chips (AY-3-8910, YM2149) used in the MSX, ZX Spectrum, Atari ST and more. Free, Windows, Mac, Linux
   <img src="/img/chiptune-tools/arkos.webp" alt="Arkos Tracker 3 screenshot" width="560" height="350" loading="lazy" />
@@ -615,7 +889,8 @@ You program within the limits of the console's sound chip, which makes it easier
   <img src="/img/chiptune-tools/wavetracker.webp" alt="WaveTracker screenshot" width="560" height="307" loading="lazy" />
 
 - [**DefleMask**](https://www.deflemask.com/): a tracker for many sound chips, including the Mega Drive, Master System, GAMEBOY, PC Engine and NES. 1,700 yen on Steam, with mobile versions too (iOS, Android). An old free version exists but is no longer supported
-  <img src="/img/chiptune-tools/deflemask.webp" alt="DefleMask screenshot" width="560" height="315" loading="lazy" />
+  <img src="/img/chiptune-tools/deflemask.webp" alt="DefleMask (v1) screenshot" width="560" height="307" loading="lazy" />
+  <img src="/img/chiptune-tools/deflemask-legacy.webp" alt="DefleMask Legacy screenshot" width="560" height="307" loading="lazy" />
 
 - [**MilkyTracker**](https://milkytracker.org/) v1.05.01: a FastTracker II-compatible sample tracker (XM and MOD). Free, Windows, Mac, Linux
   <img src="/img/chiptune-tools/milkytracker.webp" alt="MilkyTracker screenshot" width="544" height="420" loading="lazy" />
@@ -967,6 +1242,277 @@ Music tools released by Shiru, all downloadable from [Shiru's software page](htt
 
 - **SoundFonts**: ZX Spectrum beeper sounds (wtbeep and more) and Chinese toy pianos (BF-630, TX-5488A and more), plus a pack of lo-fi device impulse responses
 
+## Trackers and tools by system (from the Battle of the Bits list) {#en-botb}
+
+Trackers and tools listed on the wiki of the chiptune community [Battle of the Bits](https://battleofthebits.com/) (login required to view) that are not covered above, grouped by system. Entries that say "Today, use..." have a better option available now.
+
+### AdLib and OPL (PC FM sound)
+
+- [**Adlib Tracker II**](https://adlibtracker.net/downloads.php): a text-mode tracker for the OPL3 FM chip with 4-op instruments. Free, DOS, Windows, Linux
+  <img src="/img/chiptune-tools/botb-at2.webp" alt="Adlib Tracker II screenshot" width="400" height="266" loading="lazy" />
+
+- [**Reality Adlib Tracker (RAD 2)**](https://www.pouet.net/prod.php?which=75963): an OPL tracker for tiny module sizes; v2 added OPL3. Free, DOS, Windows, Mac
+  <img src="/img/chiptune-tools/botb-rad.webp" alt="Reality Adlib Tracker (RAD 2) screenshot" width="400" height="249" loading="lazy" />
+
+- [**Faust Music Creator**](https://www.pouet.net/prod.php?which=55235): a keyboard-only DOS tracker for the AdLib (OPL2). Today, use Adlib Tracker II or Furnace
+  <img src="/img/chiptune-tools/botb-fmc.webp" alt="Faust Music Creator screenshot" width="400" height="250" loading="lazy" />
+
+- [**Scream Tracker 3**](https://www.pouet.net/prod.php?which=13351): a 1994 DOS tracker that gave us the S3M format. Today, use Schism Tracker or OpenMPT
+  <img src="/img/chiptune-tools/botb-st3.webp" alt="Scream Tracker 3 screenshot" width="400" height="250" loading="lazy" />
+
+- **AMusic** (AdLib)
+
+### Amiga
+
+- [**ProTracker 2 clone (pt2-clone)**](https://16-bits.org/pt.php): an accurate remake of ProTracker 2 for today's computers. Free, Windows, Mac, Linux
+  <img src="/img/chiptune-tools/botb-pt2clone.webp" alt="ProTracker 2 clone (pt2-clone) screenshot" width="491" height="420" loading="lazy" />
+
+- [**HivelyTracker**](https://github.com/pete-gordon/hivelytracker): a 4-16 channel chip tracker based on AHX. Free, Windows, Mac, Linux and more
+  <img src="/img/chiptune-tools/botb-hively.webp" alt="HivelyTracker screenshot" width="400" height="300" loading="lazy" />
+
+- [**ProTracker**](https://en.wikipedia.org/wiki/Protracker): the classic 4-channel Amiga tracker behind the MOD format. Today, use the ProTracker 2 clone or OpenMPT
+  <img src="/img/chiptune-tools/botb-protracker.webp" alt="ProTracker screenshot" width="525" height="420" loading="lazy" />
+
+- [**AHX Tracker**](http://amigascne.org/abyss/ahx/): an Amiga tracker that synthesizes C64 SID-like sounds. Today, use HivelyTracker
+  <img src="/img/chiptune-tools/botb-ahx.webp" alt="AHX Tracker screenshot" width="320" height="256" loading="lazy" />
+
+- [**DigiBooster 3**](http://www.digibooster.de/en/): a multichannel Amiga tracker. Today, use OpenMPT
+  <img src="/img/chiptune-tools/botb-digibooster.webp" alt="DigiBooster 3 screenshot" width="324" height="259" loading="lazy" />
+
+- [**OctaMED**](https://en.wikipedia.org/wiki/OctaMED): an 8-channel Amiga tracker. Today, use OpenMPT or the ProTracker 2 clone
+  <img src="/img/chiptune-tools/botb-octamed.webp" alt="OctaMED screenshot" width="480" height="360" loading="lazy" />
+
+### Atari 2600
+
+- [**TIATracker**](https://bitbucket.org/kylearan/tiatracker) 1.3.1: a tracker and replay routine for Atari 2600 (TIA) music. Free, Windows, Mac, Linux
+  <img src="/img/chiptune-tools/botb-tiatracker.webp" alt="TIATracker screenshot" width="391" height="300" loading="lazy" />
+
+- [**LoopCart**](https://www.qotile.net/loopcart.html): an unfinished loop sequencer running on a real Atari 2600. Today, use TIATracker or Furnace
+  <img src="/img/chiptune-tools/botb-loopcart.webp" alt="LoopCart screenshot" width="320" height="240" loading="lazy" />
+
+### Atari ST (YM2149)
+
+- [**maxYMiser**](https://www.preromanbritain.com/maxymiser/): a YM2149 tracker running on a real Atari ST, with MIDI support. Free, Atari ST (hardware or emulator)
+  <img src="/img/chiptune-tools/botb-maxymiser.webp" alt="maxYMiser screenshot" width="320" height="200" loading="lazy" />
+
+- [**MusicMon**](https://dhs.nu/files.php?t=single&ID=52): a tracker running on a real Atari ST. Today, use maxYMiser
+  <img src="/img/chiptune-tools/botb-musicmon.webp" alt="MusicMon screenshot" width="320" height="200" loading="lazy" />
+
+### Atari 8-bit (POKEY)
+
+- [**Raster Music Tracker**](http://raster.infos.cz/atari/rmt/rmt.htm): a Windows tracker for the Atari 8-bit POKEY chip. Free, Windows
+  <img src="/img/chiptune-tools/botb-rmt.webp" alt="Raster Music Tracker screenshot" width="400" height="300" loading="lazy" />
+
+- [**Chaos Music Composer**](https://atariki.krap.pl/index.php/Chaos_Music_Composer): a popular Polish music editor running on the Atari 8-bit. Today, use Raster Music Tracker or Furnace
+  <img src="/img/chiptune-tools/botb-cmc.webp" alt="Chaos Music Composer screenshot" width="336" height="240" loading="lazy" />
+
+- [**Delta Music Composer**](https://atariki.krap.pl/index.php/Delta_Music_Composer): a mid-1990s Atari 8-bit music editor. Today, use Raster Music Tracker or Furnace
+  <img src="/img/chiptune-tools/botb-dmc-atari.webp" alt="Delta Music Composer screenshot" width="336" height="240" loading="lazy" />
+
+- [**Music ProTracker**](https://atariki.krap.pl/index.php/Music_ProTracker): an Atari 8-bit music tool with sample support. Today, use Raster Music Tracker or Furnace
+  <img src="/img/chiptune-tools/botb-mpt.webp" alt="Music ProTracker screenshot" width="336" height="241" loading="lazy" />
+
+- [**Theta Music Composer**](https://atariki.krap.pl/index.php/Theta_Music_Composer): the first Atari 8-bit editor to allow 8-channel songs. Today, use Raster Music Tracker or Furnace
+  <img src="/img/chiptune-tools/botb-tmc.webp" alt="Theta Music Composer screenshot" width="336" height="240" loading="lazy" />
+
+### DOS modules (MOD, S3M, XM, IT)
+
+- [**FT2 clone (ft2-clone)**](https://16-bits.org/ft2.php): a faithful remake of FastTracker II, the tracker behind the XM format, for today's computers. Free, Windows, Mac, Linux
+  <img src="/img/chiptune-tools/botb-ft2clone.webp" alt="FT2 clone (ft2-clone) screenshot" width="560" height="371" loading="lazy" />
+
+- [**FastTracker II**](https://www.pouet.net/prod.php?which=13350): a 1994 DOS tracker that defined the XM format. Today, use the FT2 clone or MilkyTracker
+  <img src="/img/chiptune-tools/botb-ft2.webp" alt="FastTracker II screenshot" width="400" height="253" loading="lazy" />
+
+- [**Impulse Tracker**](https://en.wikipedia.org/wiki/Impulse_Tracker): the DOS tracker that introduced the IT format; last released in 1999. Today, use Schism Tracker
+  <img src="/img/chiptune-tools/botb-it.webp" alt="Impulse Tracker screenshot" width="560" height="350" loading="lazy" />
+
+- [**ChibiTracker**](https://sourceforge.net/projects/chibitracker.berlios/files): an open-source Impulse Tracker-style clone. Today, use Schism Tracker or OpenMPT
+  <img src="/img/chiptune-tools/botb-chibi.webp" alt="ChibiTracker screenshot" width="400" height="292" loading="lazy" />
+
+- [**Composer 669**](https://www.pouet.net/prod.php?which=63357): an early 8-channel DOS tracker from 1992. Today, use OpenMPT or Schism Tracker
+  <img src="/img/chiptune-tools/botb-c669.webp" alt="Composer 669 screenshot" width="400" height="250" loading="lazy" />
+
+### Commodore 64
+
+- [**CheeseCutter**](https://github.com/theyamo/CheeseCutter): a SID tracker whose packed tunes play on a real Commodore 64. Free, Windows, Linux
+  <img src="/img/chiptune-tools/botb-cheesecutter.webp" alt="CheeseCutter screenshot" width="381" height="300" loading="lazy" />
+
+- [**DMC (Demo Music Creator)**](http://tnd64.unikat.sk/music_scene.html): a native C64 music editor since 1990. Today, use GTUltra or CheeseCutter
+  <img src="/img/chiptune-tools/botb-dmc.webp" alt="DMC (Demo Music Creator) screenshot" width="384" height="271" loading="lazy" />
+
+### GAMEBOY and GBA
+
+- [**Carillon Editor**](http://gbdev.gg8.se/files/musictools/Aleksi%20Eeben/Carillon%20Editor.zip): a music editor and player engine running on a real GAMEBOY. Today, use LSDj or hUGETracker
+  <img src="/img/chiptune-tools/botb-carillon.webp" alt="Carillon Editor screenshot" width="320" height="288" loading="lazy" />
+
+- [**Paragon5**](http://www.nullsleep.com/programs/p5_tracker.zip): a Windows tracker for the GAMEBOY sound chip. Today, use hUGETracker or Furnace
+  <img src="/img/chiptune-tools/botb-paragon5.webp" alt="Paragon5 screenshot" width="480" height="360" loading="lazy" />
+
+- [**BoyScout**](https://www.gbadev.org/tools.php?showinfo=187): a Windows tracker for the four GAMEBOY channels. Today, use hUGETracker or Furnace
+
+- [**Fatass Tracker**](http://jeremyevers.com/fatass/): an FT2-style tracker running on a real GAMEBOY COLOR. Today, use LSDj
+
+- [**Furious Advance Tracker**](https://github.com/cbrouillard/furiousadvancetracker): an LSDj-like tracker for the GBA. Today, use LSDj or Furnace
+  <img src="/img/chiptune-tools/botb-fat.webp" alt="Furious Advance Tracker screenshot" width="480" height="320" loading="lazy" />
+
+- [**M4G Tracker**](http://web.archive.org/web/20160524034134/http://m4gtracker.stereoboom.com:80/): an FT2-style GBA tracker that stopped in early beta. Today, use Furnace
+  <img src="/img/chiptune-tools/botb-m4g.webp" alt="M4G Tracker screenshot" width="480" height="360" loading="lazy" />
+
+- **Ditty Editor** (GBA)
+
+### NES
+
+- [**j0CC-FamiTracker**](https://github.com/nyanpasu64/j0CC-FamiTracker): a bug-fixed fork of 0CC-FamiTracker. Today, use its successor, Dn-FamiTracker
+  <img src="/img/chiptune-tools/botb-j0cc.webp" alt="j0CC-FamiTracker screenshot" width="480" height="360" loading="lazy" />
+
+- [**NerdTracker II**](https://www.nesdev.org/nt2/): an early DOS NES tracker behind many old NSFs. Today, use Dn-FamiTracker or Furnace
+  <img src="/img/chiptune-tools/botb-nt2.webp" alt="NerdTracker II screenshot" width="474" height="402" loading="lazy" />
+
+- [**NesTracker**](https://www.pouet.net/prod.php?which=56165): an NES tracker that can save NSF. Today, use Dn-FamiTracker or Furnace
+  <img src="/img/chiptune-tools/botb-nestracker.webp" alt="NesTracker screenshot" width="358" height="300" loading="lazy" />
+
+- [**Musetracker**](https://files.scene.org/view/resources/music/trackers/musetracker-v15.zip): a PCM-focused NES tracker. Today, use Dn-FamiTracker or Furnace
+  <img src="/img/chiptune-tools/botb-musetracker.webp" alt="Musetracker screenshot" width="530" height="418" loading="lazy" />
+
+### Sega (Master System, Mega Drive)
+
+- [**Genny**](https://github.com/superjoebob/genny) v1.54 Beta: a VST instrument recreating the Mega Drive sound (YM2612, SN76489) that can log VGM. Free, Windows
+  <img src="/img/chiptune-tools/botb-genny.webp" alt="Genny screenshot" width="560" height="324" loading="lazy" />
+
+- [**Mod2PSG2**](https://www.smspower.org/Music/Mod2PSG2): a tracker for the Master System and Game Gear PSG (SN76489). Today, use Furnace or DefleMask
+  <img src="/img/chiptune-tools/botb-mod2psg2.webp" alt="Mod2PSG2 screenshot" width="480" height="360" loading="lazy" />
+
+- [**SnevenTracker**](https://github.com/HertzDevil/SnevenTracker): a FamiTracker mod that emulates the SN76489. Today, use Furnace
+  <img src="/img/chiptune-tools/botb-sneven.webp" alt="SnevenTracker screenshot" width="480" height="360" loading="lazy" />
+
+- [**VGM Music Maker**](http://shiru.untergrund.net/): a tracker for the Mega Drive FM and PSG that exports VGM. Today, use Furnace or DefleMask
+  <img src="/img/chiptune-tools/botb-vgmmm.webp" alt="VGM Music Maker screenshot" width="480" height="360" loading="lazy" />
+
+- [**TFM Music Maker**](http://shiru.untergrund.net/): a tracker for the Mega Drive FM chip (YM2612) that exports VGM. Today, use Furnace or DefleMask
+  <img src="/img/chiptune-tools/botb-tfmmm.webp" alt="TFM Music Maker screenshot" width="300" height="300" loading="lazy" />
+
+### ZX Spectrum
+
+- [**Beepola**](https://freestuff.grok.co.uk/beepola/) v1.08.01: a tracker for ZX Spectrum beeper engines. Free, Windows
+  <img src="/img/chiptune-tools/botb-beepola.webp" alt="Beepola screenshot" width="560" height="386" loading="lazy" />
+
+- [**Sound-Tracker (ZX)**](https://spectrumcomputing.co.uk/alt/25080/ZX-Spectrum/Soundtracker): an early AY music editor running on the ZX Spectrum (c. 1990). Today, use Vortex Tracker
+  <img src="/img/chiptune-tools/botb-zx-soundtracker.webp" alt="Sound-Tracker (ZX) screenshot" width="512" height="384" loading="lazy" />
+
+- [**SQ-Tracker**](https://worldofspectrum.org/archive/software/utilities/sq-tracker-proxima-software): a 1993 AY tracker for the ZX Spectrum 128K. Today, use Vortex Tracker
+  <img src="/img/chiptune-tools/botb-sqtracker.webp" alt="SQ-Tracker screenshot" width="512" height="384" loading="lazy" />
+
+### VIC-20
+
+- [**baby-k (vixxen20)**](https://langel.github.io/vixxen20/) v0.8.2: a browser-based VIC-20 tracker. Free
+  <img src="/img/chiptune-tools/botb-babyk.webp" alt="baby-k (vixxen20) screenshot" width="480" height="360" loading="lazy" />
+
+- [**VIC-TRACKER**](http://www.kahlin.net/daniel/victracker/): a tracker running on a real VIC-20. Today, use baby-k or Furnace
+  <img src="/img/chiptune-tools/botb-victracker.webp" alt="VIC-TRACKER screenshot" width="400" height="333" loading="lazy" />
+
+### Nintendo DS
+
+- [**NitroTracker**](https://github.com/0xtob/nitrotracker): an FT2-style tracker for the Nintendo DS, played with the stylus. Today, use citratracker on 3DS, or Furnace or MilkyTracker on a PC
+  <img src="/img/chiptune-tools/botb-nitro.webp" alt="NitroTracker screenshot" width="200" height="300" loading="lazy" />
+
+- [**KORG DS-10**](https://en.wikipedia.org/wiki/KORG_DS-10): a KORG synth (MS-20 style) and drum app for the Nintendo DS. Today, use KORG iDS-10 on iPhone and iPad
+  <img src="/img/chiptune-tools/botb-ds10.webp" alt="KORG DS-10 screenshot" width="434" height="420" loading="lazy" />
+
+- [**Mario Paint Composer DS**](https://github.com/DerrickGold/MarioPaintComposer-NDS): a Mario Paint-style composer for the Nintendo DS. Today, use Super Mario Paint on a PC
+  <img src="/img/chiptune-tools/botb-mpcds.webp" alt="Mario Paint Composer DS screenshot" width="256" height="384" loading="lazy" />
+
+- **ProteinDS** (Nintendo DS)
+
+- **Seno DS** (Nintendo DS)
+
+### Channel F
+
+- [**Sleizsa Trio**](https://github.com/utz82/SleizsaTrio) v0.1: a three-channel music routine for the Fairchild Channel F, composed in an XM tracker or the browser. Free
+
+- [**Sleizsa**](https://web.archive.org/web/20170926123546/http://average.truechiptilldeath.com/channelf/sleizsa_v0_31.zip): a monophonic sequencer for the Channel F (2008). Today, use Sleizsa Trio
+
+- [**Sleizsa Duo**](https://github.com/utz82/SleizsaDuo): a two-channel Channel F music routine (2015). Today, use Sleizsa Trio
+
+### Mario Paint
+
+- [**Mario Sequencer**](https://github.com/minghai/MarioSequencer): a Mario Paint-style composer for Windows and the browser. Today, use Super Mario Paint on a PC
+  <img src="/img/chiptune-tools/botb-mariosequencer.webp" alt="Mario Sequencer screenshot" width="413" height="420" loading="lazy" />
+
+### Portable and other trackers
+
+- [**LittleGPTracker (Little Piggy Tracker)**](https://github.com/djdiskmachine/LittleGPTracker) Little Piggy Tracker 1.5.0: an LSDj-like 8-channel sample tracker, the basis of picoTracker. Free, Windows, Mac, Linux, handhelds and more
+  <img src="/img/chiptune-tools/botb-lgpt.webp" alt="LittleGPTracker (Little Piggy Tracker) screenshot" width="560" height="420" loading="lazy" />
+
+- [**ProTrekkr**](https://github.com/hitchhikr/protrekkr) v2.8.3_PRE_2: a tracker and synth for small-size demo and intro music. Free, Windows, Mac, Linux
+  <img src="/img/chiptune-tools/botb-protrekkr.webp" alt="ProTrekkr screenshot" width="400" height="298" loading="lazy" />
+
+- [**klystrack**](https://kometbomb.github.io/klystrack/): a chiptune tracker with SID and NES-style synthesis. Free, Windows, Mac, Linux
+  <img src="/img/chiptune-tools/botb-klystrack.webp" alt="klystrack screenshot" width="560" height="420" loading="lazy" />
+
+- [**Radium**](https://radium.dog/) 8.2.55: a tracker-like music editor with graphical editing of notes and automation. Free demo, Windows, Mac, Linux
+  <img src="/img/chiptune-tools/botb-radium.webp" alt="Radium screenshot" width="560" height="315" loading="lazy" />
+
+- [**Polyend Tracker**](https://polyend.com/tracker/): a standalone hardware tracker groovebox, now also available as Tracker+ and Tracker Mini
+  <img src="/img/chiptune-tools/botb-polyend.webp" alt="Polyend Tracker screenshot" width="420" height="420" loading="lazy" />
+
+### MML and scripts
+
+- [**HuSIC**](https://github.com/BouKiCHi/HuSIC): an MML sound driver for the PC Engine. Free
+
+- [**XPMCK**](http://jiggawatt.org/muzak/xpmck/): an MML compiler kit for the C64, GAMEBOY, PC Engine, Master System, Mega Drive and more. Today, use Furnace or a chip-specific MML driver
+
+- [**athtune**](http://ftp.modland.com/pub/software/trackers/Windows/Athtune/): a script-based, MML-like tool where sounds are defined in C#. Today, use Furnace or an MML compiler
+
+- **NDS BGMFILER** (Nintendo DS)
+
+### Phone ringtones
+
+- [**Nite (Nokia Internal Tune Editor)**](http://onj3.andrelouis.com/phonetones/Software%20and%20Soundbanks/Software/Nokia/Nokia%20Internal%20Tune%20Editor.zip): Nokia's leaked internal editor for monophonic ringtones
+
+- **Nokia PC Composer** (Windows)
+
+- **CMX Studio** (Windows)
+
+- **ATS-MA SMAF tools** (Windows)
+
+### Helper tools and players
+
+- [**LSDPatch**](https://github.com/jkotlinski/lsdpatch) v1.13.3: manage LSDj songs and customize LSDj ROMs (kits, fonts, palettes). Free, Windows, Mac, Linux
+  <img src="/img/chiptune-tools/botb-lsdpatch.webp" alt="LSDPatch screenshot" width="480" height="360" loading="lazy" />
+
+- [**GBT Player**](https://github.com/AntonioND/gbt-player) v4.4.1: libraries and converters for music in GAMEBOY and GBA homebrew. Free
+
+- [**SNESMOD**](https://github.com/mukunda-/snesmod): converts IT modules to SNES sound (SPC). Free
+  <img src="/img/chiptune-tools/botb-snesmod.webp" alt="SNESMOD screenshot" width="480" height="360" loading="lazy" />
+
+- [**Maxmod**](https://maxmod.org/) v2.1.0: a library for playing MOD, XM, IT and more in GBA and DS homebrew. Free
+  <img src="/img/chiptune-tools/botb-maxmod.webp" alt="Maxmod screenshot" width="512" height="384" loading="lazy" />
+
+- [**NSFPlay**](https://bbbradsmith.github.io/nsfplay/) 2.6: an accurate player for NES music files (NSF). Free, Windows
+  <img src="/img/chiptune-tools/botb-nsfplay.webp" alt="NSFPlay screenshot" width="373" height="115" loading="lazy" />
+
+- [**FMPMD2000**](http://c60.la.coocan.jp/fmpmd.html): a Windows player for PC-88 and PC-98 PMD music. Free
+
+- [**VCV Rack**](https://vcvrack.com/Rack) Rack 2: a virtual Eurorack modular synth. Free (Rack Pro, usable in a DAW, is paid), Windows, Mac, Linux
+  <img src="/img/chiptune-tools/botb-vcv.webp" alt="VCV Rack screenshot" width="560" height="309" loading="lazy" />
+
+- [**it2nsf**](https://github.com/mukunda-/it2nsf): converts specially made IT files into NSF. Today, use Dn-FamiTracker or Furnace
+
+- [**s3m2nsf**](https://github.com/mukunda-/s3m2nsf): converts specially made S3M files into NSF. Today, use Dn-FamiTracker or Furnace
+
+- [**it2vgm.py**](http://web.archive.org/web/20101123045821/http://pubacc.wilcox-tech.com/~greaser/stuff/it2vgm.py.txt): a Python script that converts IT files into SN76489 VGM. Today, use Furnace
+
+- [**FTM2GBMC**](https://github.com/Savestate2A03/FTM2GBMC): converts FamiTracker text exports into GBMC MML. Today, use Furnace or hUGETracker
+
+- [**VirtuaNSF**](http://virtuanes.s1.xrea.com/): an NSF player based on the VirtuaNES emulator. Today, use NSFPlay
+
+- [**hoot**](http://dmpsoft.s17.xrea.com/hoot/): a player that emulates sound hardware for Japanese computer and console music. Windows
+  <img src="/img/chiptune-tools/botb-hoot.webp" alt="hoot screenshot" width="525" height="420" loading="lazy" />
+
+- **Mumml** (Windows)
+
+- **OpenSPC** (DOS, Windows)
+
 ## To dig deeper {#en-more}
 
 For more obscure trackers and tools not covered here, see the wiki pages of the chiptune community Battle of the Bits.
@@ -981,5 +1527,5 @@ For more obscure trackers and tools not covered here, see the wiki pages of the 
 
 - **SANA 8BIT VST** and **VOPM**: both are old 32-bit plugins and often won't run as is in today's DAWs. For NES sounds, Magical 8bit Plug 2 or New DoReFAMI can take their place, and for the YM2151, my2151 or chipsynth OPMZ
 
-Tool versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). The screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, FlMML on HTML5, browser-mml-player, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me. Screenshots for little-scale's trackers, WebX68k, and NOTE MDX Workbench were sourced from the creators' posts on X, and those for Dn-FamiTracker, Furnace, furnace-piano-roll, FamiStudio, KiraStudio, OpenMPT, WaveTracker, GTUltra, and SID Factory II were kindly provided by Rei8bit.
+Tool versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). The screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, FlMML on HTML5, browser-mml-player, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me. Screenshots for little-scale's trackers, WebX68k, and NOTE MDX Workbench were sourced from the creators' posts on X, and those for Dn-FamiTracker, Furnace, furnace-piano-roll, FamiStudio, KiraStudio, OpenMPT, WaveTracker, GTUltra, SID Factory II, Bamboo Tracker, and DefleMask were kindly provided by Rei8bit. Images in the by-system section come from each tool's page as well as Battle of the Bits, pouet.net, Wikipedia and YouTube video thumbnails.
 {{< /lang >}}
