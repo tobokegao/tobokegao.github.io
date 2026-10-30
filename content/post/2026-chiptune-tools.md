@@ -30,7 +30,7 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 - [効果音を作るソフト](#ja-sfx)
 - [再生・変換・そのほか](#ja-players)
 - [Shiruさんのツール（無料）](#ja-shiru)
-- [機種別のトラッカーとツール（Battle of the Bitsの一覧より）](#ja-botb)
+- [機種別のトラッカーとツール](#ja-botb)
 - [もっと知りたい人へ](#ja-more)
 - [2021年のまとめから変わったこと](#ja-changes)
 
@@ -483,9 +483,9 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 - **SoundFont**：ZX Spectrumのビーパーの音（wtbeepなど）や、中国のおもちゃのピアノの音（BF-630、TX-5488Aなど）。レトロでチープな機器独特の響きを再現できるデータ（インパルス応答）もあります
 
-## 機種別のトラッカーとツール（Battle of the Bitsの一覧より） {#ja-botb}
+## 機種別のトラッカーとツール {#ja-botb}
 
-チップチューンの投稿コミュニティ「[Battle of the Bits](https://battleofthebits.com/)」の解説ページ（見るにはログインが必要）に載っているトラッカーとツールのうち、ここまでに出てこなかったものを機種ごとにまとめました。「今なら○○」と書いてあるものは、いまはもっと使いやすいツールがあるものです。
+チップチューンの投稿コミュニティ「[Battle of the Bits](https://battleofthebits.com/)」の解説ページ（見るにはログインが必要）と、Atariのソフトのデータベース「[Atarimania](https://www.atarimania.com/)」に載っているトラッカーとツールのうち、ここまでに出てこなかったものを機種ごとにまとめました。「今なら○○」と書いてあるものは、いまはもっと使いやすいツールがあるものです。
 
 ### AdLib・OPL（パソコンのFM音源）
 
@@ -531,7 +531,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 - [**LoopCart**](https://www.qotile.net/loopcart.html)：Atari 2600の実機で動く、作りかけのループシーケンサー。今ならTIATrackerかFurnace
   <img src="/img/chiptune-tools/botb-loopcart.webp" alt="LoopCartの画面" width="320" height="240" loading="lazy" />
 
-### Atari ST（YM2149）
+### Atari ST（YM2149・サンプル）
 
 - [**maxYMiser**](https://www.preromanbritain.com/maxymiser/)：Atari STの実機で動く、YM2149用のトラッカー。MIDIにも対応しています。無料、Atari ST（実機またはエミュレーター）
   <img src="/img/chiptune-tools/botb-maxymiser.webp" alt="maxYMiserの画面" width="320" height="200" loading="lazy" />
@@ -539,12 +539,40 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 - [**MusicMon**](https://dhs.nu/files.php?t=single&ID=52)：Atari STの実機で動くトラッカー。今ならmaxYMiser
   <img src="/img/chiptune-tools/botb-musicmon.webp" alt="MusicMonの画面" width="320" height="200" loading="lazy" />
 
+- [**PSG Tracker**](https://www.atarimania.com/games/atari-st-utilities-psg-tracker-22030)：YM2149用の、フィンランドで作られたトラッカー（1992年）。今ならmaxYMiser
+  <img src="/img/chiptune-tools/atari-psg-tracker.webp" alt="PSG Trackerの画面" width="560" height="350" loading="lazy" />
+
+- [**The Music Studio**](https://www.atarimania.com/games/atari-st-utilities-music-studio-the-36357)：Activisionの楽譜の作曲ソフトのST版。STの音源かMIDIで鳴らします（1986年）。今ならRaster Music TrackerかFurnace
+  <img src="/img/chiptune-tools/atari-music-studio-st.webp" alt="The Music Studioの画面" width="560" height="350" loading="lazy" />
+
+- [**Quartet**](https://www.atarimania.com/games/atari-st-utilities-quartet-29599)：サンプルの楽器4音を、楽譜で打ち込んで鳴らすソフト（1990年）。今ならFurnaceやOpenMPT（STの実機ならmaxYMiser）
+  <img src="/img/chiptune-tools/atari-quartet.webp" alt="Quartetの画面" width="320" height="200" loading="lazy" />
+
+- [**Audio Sculpture**](https://www.atarimania.com/games/atari-st-utilities-audio-sculpture-25173)：AmigaのMOD風の、4チャンネルのサンプルのトラッカー（1990年）。今ならFurnaceやOpenMPT（STの実機ならmaxYMiser）
+  <img src="/img/chiptune-tools/atari-audio-sculpture.webp" alt="Audio Sculptureの画面" width="560" height="317" loading="lazy" />
+
+- [**TCB Tracker**](https://www.atarimania.com/games/atari-st-utilities-tcb-tracker-31405)：デモグループThe Carebearsの、4チャンネルのサンプルのトラッカー（1990年）。今ならFurnaceやOpenMPT（STの実機ならmaxYMiser）
+  <img src="/img/chiptune-tools/atari-tcb-tracker.webp" alt="TCB Trackerの画面" width="320" height="200" loading="lazy" />
+
+- [**ProTracker ST**](https://www.atarimania.com/games/atari-st-utilities-protracker-st-30690)：ProTrackerのST版。4チャンネルのMODの曲を作れます。今ならFurnaceやOpenMPT（STの実機ならmaxYMiser）
+  <img src="/img/chiptune-tools/atari-protracker-st.webp" alt="ProTracker STの画面" width="320" height="200" loading="lazy" />
+
+- [**The Empire Noisetracker (ST-NoiseTracker)**](https://www.atarimania.com/games/atari-st-utilities-empire-noisetracker-the-30689)：AmigaのSoundtrackerやNoisetrackerをもとにした、STのトラッカー。今ならFurnaceやOpenMPT（STの実機ならmaxYMiser）
+  <img src="/img/chiptune-tools/atari-empire-noisetracker.webp" alt="The Empire Noisetracker (ST-NoiseTracker)の画面" width="320" height="200" loading="lazy" />
+
+- [**The HMS Soundtracker**](https://www.atarimania.com/games/atari-st-utilities-hms-soundtracker-the-23807)：フランスで売られていた、MIDIにも対応したサンプルのトラッカー。今ならFurnaceやOpenMPT（STの実機ならmaxYMiser）
+  <img src="/img/chiptune-tools/atari-hms-soundtracker.webp" alt="The HMS Soundtrackerの画面" width="320" height="200" loading="lazy" />
+
+- [**Hyper Sound Digital**](https://www.atarimania.com/games/atari-st-utilities-hyper-sound-digital-27492)：Delphine Softwareの、3チャンネルのトラッカー。今ならFurnaceやOpenMPT（STの実機ならmaxYMiser）
+  <img src="/img/chiptune-tools/atari-hyper-sound-digital.webp" alt="Hyper Sound Digitalの画面" width="320" height="200" loading="lazy" />
+
 ### Atari 8bit（POKEY）
 
 - [**Raster Music Tracker**](http://raster.infos.cz/atari/rmt/rmt.htm)：Atari 8bitの音源（POKEY）用の、Windowsのトラッカー。無料、Windows
   <img src="/img/chiptune-tools/botb-rmt.webp" alt="Raster Music Trackerの画面" width="400" height="300" loading="lazy" />
 
 - [**Chaos Music Composer**](https://atariki.krap.pl/index.php/Chaos_Music_Composer)：Atari 8bitの実機で動く、ポーランドで人気だった作曲ソフト。今ならRaster Music TrackerかFurnace
+  <img src="/img/chiptune-tools/atari-chaos-music-composer.webp" alt="Chaos Music Composerの画面" width="336" height="240" loading="lazy" />
   <img src="/img/chiptune-tools/botb-cmc.webp" alt="Chaos Music Composerの画面" width="336" height="240" loading="lazy" />
 
 - [**Delta Music Composer**](https://atariki.krap.pl/index.php/Delta_Music_Composer)：1990年代半ばのAtari 8bitの作曲ソフト。今ならRaster Music TrackerかFurnace
@@ -555,6 +583,30 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 - [**Theta Music Composer**](https://atariki.krap.pl/index.php/Theta_Music_Composer)：Atari 8bitで、はじめて8チャンネルの曲を作れた作曲ソフト。今ならRaster Music TrackerかFurnace
   <img src="/img/chiptune-tools/botb-tmc.webp" alt="Theta Music Composerの画面" width="336" height="240" loading="lazy" />
+
+- [**Music Composer**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-music-composer-15784)：Atari純正の、4音の曲を打ち込んで鳴らすカートリッジ（1979年）。今ならRaster Music TrackerかFurnace
+  <img src="/img/chiptune-tools/atari-music-composer.webp" alt="Music Composerの画面" width="384" height="240" loading="lazy" />
+
+- [**Advanced MusicSystem**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-advanced-musicsystem-27136)：POKEYの曲を小節ごとに打ち込める、APXの作曲ソフト（1982年）。今ならRaster Music TrackerかFurnace
+  <img src="/img/chiptune-tools/atari-advanced-musicsystem.webp" alt="Advanced MusicSystemの画面" width="384" height="240" loading="lazy" />
+
+- [**Sound Editor**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-sound-editor-29817)：POKEYの効果音を作る、APXのソフト（1981年）。今ならRaster Music TrackerかFurnace
+  <img src="/img/chiptune-tools/atari-sound-editor.webp" alt="Sound Editorの画面" width="336" height="224" loading="lazy" />
+
+- [**Music Construction Set**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-music-construction-set-14317)：五線譜に音符を置いて作曲する、Electronic Artsのソフト（1984年）。今ならRaster Music TrackerかFurnace
+  <img src="/img/chiptune-tools/atari-music-construction-set-8bit.webp" alt="Music Construction Setの画面" width="336" height="240" loading="lazy" />
+
+- [**Bank Street MusicWriter**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-bank-street-musicwriter-29755)：五線譜で作曲して、印刷もできるソフト（1984年）。今ならRaster Music TrackerかFurnace
+  <img src="/img/chiptune-tools/atari-bank-street-musicwriter.webp" alt="Bank Street MusicWriterの画面" width="384" height="240" loading="lazy" />
+
+- [**The Music Studio**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-music-studio-the-14318)：Activisionの、楽譜で作曲するソフト（1986年）。今ならRaster Music TrackerかFurnace
+  <img src="/img/chiptune-tools/atari-music-studio-8bit.webp" alt="The Music Studioの画面" width="336" height="224" loading="lazy" />
+
+- [**The Rhythm Composer**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-rhythm-composer-the-30576)：バスドラム、スネア、ハイハット、手拍子でリズムを組むソフト（1986年）。今ならRaster Music TrackerかFurnace
+  <img src="/img/chiptune-tools/atari-rhythm-composer.webp" alt="The Rhythm Composerの画面" width="384" height="240" loading="lazy" />
+
+- [**Sound Tracker**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-sound-tracker-30280)：ポーランドで作られた、パターンで打ち込むPOKEYのトラッカー（1992年）。今ならRaster Music TrackerかFurnace
+  <img src="/img/chiptune-tools/atari-sound-tracker-asf.webp" alt="Sound Trackerの画面" width="336" height="240" loading="lazy" />
 
 ### DOSのモジュール（MOD・S3M・XM・IT）
 
@@ -766,7 +818,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 - **SANA 8BIT VST**、**VOPM**：どちらも古い32bitのプラグインで、いまのDAWではそのままでは使えないことが多いです。ファミコン系はMagical 8bit Plug 2やNew DoReFAMI、YM2151はmy2151かchipsynth OPMZが代わりになります
 
-各ツールのバージョンや価格は、2026年10月30日時点の各配布ページの情報に基づいています。掲載している画像の多くは、各ツールの公式ページ（App Storeを含む）や[Lospec](https://lospec.com/software/)から引用しました。なお、BeepBox、JummBox、UltraBox、Slarmoo's Box、FlMML on HTML5、browser-mml-player、NSF2MML、LSDJ Converter、SNDH Playerは実際にサイトを開いて撮影したものです。little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは各作者のX（旧Twitter）の投稿から引用し、Dn-FamiTracker、Furnace、furnace-piano-roll、FamiStudio、KiraStudio、OpenMPT、WaveTracker、GTUltra、SID Factory II、Bamboo Tracker、DefleMask、LabChirpの画像はRei8bitさんからご提供いただきました。機種別の欄の画像は、各ツールのページのほか、Battle of the Bits、pouet.net、Wikipedia、YouTubeの動画のサムネイルなどから引用しました。
+各ツールのバージョンや価格は、2026年10月30日時点の各配布ページの情報に基づいています。掲載している画像の多くは、各ツールの公式ページ（App Storeを含む）や[Lospec](https://lospec.com/software/)から引用しました。なお、BeepBox、JummBox、UltraBox、Slarmoo's Box、FlMML on HTML5、browser-mml-player、NSF2MML、LSDJ Converter、SNDH Playerは実際にサイトを開いて撮影したものです。little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは各作者のX（旧Twitter）の投稿から引用し、Dn-FamiTracker、Furnace、furnace-piano-roll、FamiStudio、KiraStudio、OpenMPT、WaveTracker、GTUltra、SID Factory II、Bamboo Tracker、DefleMask、LabChirpの画像はRei8bitさんからご提供いただきました。機種別の欄の画像は、各ツールのページのほか、Battle of the Bits、Atarimania、pouet.net、Wikipedia、YouTubeの動画のサムネイルなどから引用しました。
 {{< /lang >}}
 
 {{< lang en >}}
@@ -793,7 +845,7 @@ This is an updated roundup based on Umeboshi Chazuke's 2021 article on their blo
 - [Sound effect makers](#en-sfx)
 - [Players, converters and more](#en-players)
 - [Shiru's tools (free)](#en-shiru)
-- [Trackers and tools by system (from the Battle of the Bits list)](#en-botb)
+- [Trackers and tools by system](#en-botb)
 - [To dig deeper](#en-more)
 - [What changed since the 2021 roundup](#en-changes)
 
@@ -1246,9 +1298,9 @@ Music tools released by Shiru, all downloadable from [Shiru's software page](htt
 
 - **SoundFonts**: ZX Spectrum beeper sounds (wtbeep and more) and Chinese toy pianos (BF-630, TX-5488A and more), plus a pack of lo-fi device impulse responses
 
-## Trackers and tools by system (from the Battle of the Bits list) {#en-botb}
+## Trackers and tools by system {#en-botb}
 
-Trackers and tools listed on the wiki of the chiptune community [Battle of the Bits](https://battleofthebits.com/) (login required to view) that are not covered above, grouped by system. Entries that say "Today, use..." have a better option available now.
+Trackers and tools listed on the wiki of the chiptune community [Battle of the Bits](https://battleofthebits.com/) (login required to view) and the Atari software database [Atarimania](https://www.atarimania.com/) that are not covered above, grouped by system. Entries that say "Today, use..." have a better option available now.
 
 ### AdLib and OPL (PC FM sound)
 
@@ -1294,7 +1346,7 @@ Trackers and tools listed on the wiki of the chiptune community [Battle of the B
 - [**LoopCart**](https://www.qotile.net/loopcart.html): an unfinished loop sequencer running on a real Atari 2600. Today, use TIATracker or Furnace
   <img src="/img/chiptune-tools/botb-loopcart.webp" alt="LoopCart screenshot" width="320" height="240" loading="lazy" />
 
-### Atari ST (YM2149)
+### Atari ST (YM2149 and samples)
 
 - [**maxYMiser**](https://www.preromanbritain.com/maxymiser/): a YM2149 tracker running on a real Atari ST, with MIDI support. Free, Atari ST (hardware or emulator)
   <img src="/img/chiptune-tools/botb-maxymiser.webp" alt="maxYMiser screenshot" width="320" height="200" loading="lazy" />
@@ -1302,12 +1354,40 @@ Trackers and tools listed on the wiki of the chiptune community [Battle of the B
 - [**MusicMon**](https://dhs.nu/files.php?t=single&ID=52): a tracker running on a real Atari ST. Today, use maxYMiser
   <img src="/img/chiptune-tools/botb-musicmon.webp" alt="MusicMon screenshot" width="320" height="200" loading="lazy" />
 
+- [**PSG Tracker**](https://www.atarimania.com/games/atari-st-utilities-psg-tracker-22030): a Finnish tracker for the YM2149 (1992). Today, use maxYMiser
+  <img src="/img/chiptune-tools/atari-psg-tracker.webp" alt="PSG Tracker screenshot" width="560" height="350" loading="lazy" />
+
+- [**The Music Studio**](https://www.atarimania.com/games/atari-st-utilities-music-studio-the-36357): the ST version of Activision's notation composer, playing through the ST sound chip or MIDI (1986). Today, use Raster Music Tracker or Furnace
+  <img src="/img/chiptune-tools/atari-music-studio-st.webp" alt="The Music Studio screenshot" width="560" height="350" loading="lazy" />
+
+- [**Quartet**](https://www.atarimania.com/games/atari-st-utilities-quartet-29599): a four-voice sample music editor in staff notation (1990). Today, use Furnace or OpenMPT (or maxYMiser on a real ST)
+  <img src="/img/chiptune-tools/atari-quartet.webp" alt="Quartet screenshot" width="320" height="200" loading="lazy" />
+
+- [**Audio Sculpture**](https://www.atarimania.com/games/atari-st-utilities-audio-sculpture-25173): a 4-channel Amiga MOD-style sample tracker (1990). Today, use Furnace or OpenMPT (or maxYMiser on a real ST)
+  <img src="/img/chiptune-tools/atari-audio-sculpture.webp" alt="Audio Sculpture screenshot" width="560" height="317" loading="lazy" />
+
+- [**TCB Tracker**](https://www.atarimania.com/games/atari-st-utilities-tcb-tracker-31405): a 4-channel sample tracker from the demo group The Carebears (1990). Today, use Furnace or OpenMPT (or maxYMiser on a real ST)
+  <img src="/img/chiptune-tools/atari-tcb-tracker.webp" alt="TCB Tracker screenshot" width="320" height="200" loading="lazy" />
+
+- [**ProTracker ST**](https://www.atarimania.com/games/atari-st-utilities-protracker-st-30690): the ST version of ProTracker for 4-channel MOD music. Today, use Furnace or OpenMPT (or maxYMiser on a real ST)
+  <img src="/img/chiptune-tools/atari-protracker-st.webp" alt="ProTracker ST screenshot" width="320" height="200" loading="lazy" />
+
+- [**The Empire Noisetracker (ST-NoiseTracker)**](https://www.atarimania.com/games/atari-st-utilities-empire-noisetracker-the-30689): an ST tracker based on the Amiga Soundtracker and Noisetracker. Today, use Furnace or OpenMPT (or maxYMiser on a real ST)
+  <img src="/img/chiptune-tools/atari-empire-noisetracker.webp" alt="The Empire Noisetracker (ST-NoiseTracker) screenshot" width="320" height="200" loading="lazy" />
+
+- [**The HMS Soundtracker**](https://www.atarimania.com/games/atari-st-utilities-hms-soundtracker-the-23807): a French commercial sample tracker with MIDI. Today, use Furnace or OpenMPT (or maxYMiser on a real ST)
+  <img src="/img/chiptune-tools/atari-hms-soundtracker.webp" alt="The HMS Soundtracker screenshot" width="320" height="200" loading="lazy" />
+
+- [**Hyper Sound Digital**](https://www.atarimania.com/games/atari-st-utilities-hyper-sound-digital-27492): a three-channel tracker from Delphine Software. Today, use Furnace or OpenMPT (or maxYMiser on a real ST)
+  <img src="/img/chiptune-tools/atari-hyper-sound-digital.webp" alt="Hyper Sound Digital screenshot" width="320" height="200" loading="lazy" />
+
 ### Atari 8-bit (POKEY)
 
 - [**Raster Music Tracker**](http://raster.infos.cz/atari/rmt/rmt.htm): a Windows tracker for the Atari 8-bit POKEY chip. Free, Windows
   <img src="/img/chiptune-tools/botb-rmt.webp" alt="Raster Music Tracker screenshot" width="400" height="300" loading="lazy" />
 
 - [**Chaos Music Composer**](https://atariki.krap.pl/index.php/Chaos_Music_Composer): a popular Polish music editor running on the Atari 8-bit. Today, use Raster Music Tracker or Furnace
+  <img src="/img/chiptune-tools/atari-chaos-music-composer.webp" alt="Chaos Music Composer screenshot" width="336" height="240" loading="lazy" />
   <img src="/img/chiptune-tools/botb-cmc.webp" alt="Chaos Music Composer screenshot" width="336" height="240" loading="lazy" />
 
 - [**Delta Music Composer**](https://atariki.krap.pl/index.php/Delta_Music_Composer): a mid-1990s Atari 8-bit music editor. Today, use Raster Music Tracker or Furnace
@@ -1318,6 +1398,30 @@ Trackers and tools listed on the wiki of the chiptune community [Battle of the B
 
 - [**Theta Music Composer**](https://atariki.krap.pl/index.php/Theta_Music_Composer): the first Atari 8-bit editor to allow 8-channel songs. Today, use Raster Music Tracker or Furnace
   <img src="/img/chiptune-tools/botb-tmc.webp" alt="Theta Music Composer screenshot" width="336" height="240" loading="lazy" />
+
+- [**Music Composer**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-music-composer-15784): Atari's own cartridge for entering and playing 4-voice music (1979). Today, use Raster Music Tracker or Furnace
+  <img src="/img/chiptune-tools/atari-music-composer.webp" alt="Music Composer screenshot" width="384" height="240" loading="lazy" />
+
+- [**Advanced MusicSystem**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-advanced-musicsystem-27136): an APX music editor for entering POKEY music measure by measure (1982). Today, use Raster Music Tracker or Furnace
+  <img src="/img/chiptune-tools/atari-advanced-musicsystem.webp" alt="Advanced MusicSystem screenshot" width="384" height="240" loading="lazy" />
+
+- [**Sound Editor**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-sound-editor-29817): an APX sound effect editor for the POKEY (1981). Today, use Raster Music Tracker or Furnace
+  <img src="/img/chiptune-tools/atari-sound-editor.webp" alt="Sound Editor screenshot" width="336" height="224" loading="lazy" />
+
+- [**Music Construction Set**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-music-construction-set-14317): Electronic Arts' notation editor where you place notes on a staff (1984). Today, use Raster Music Tracker or Furnace
+  <img src="/img/chiptune-tools/atari-music-construction-set-8bit.webp" alt="Music Construction Set screenshot" width="336" height="240" loading="lazy" />
+
+- [**Bank Street MusicWriter**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-bank-street-musicwriter-29755): a notation-based composer that can also print scores (1984). Today, use Raster Music Tracker or Furnace
+  <img src="/img/chiptune-tools/atari-bank-street-musicwriter.webp" alt="Bank Street MusicWriter screenshot" width="384" height="240" loading="lazy" />
+
+- [**The Music Studio**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-music-studio-the-14318): Activision's notation-based composer (1986). Today, use Raster Music Tracker or Furnace
+  <img src="/img/chiptune-tools/atari-music-studio-8bit.webp" alt="The Music Studio screenshot" width="336" height="224" loading="lazy" />
+
+- [**The Rhythm Composer**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-rhythm-composer-the-30576): a drum pattern composer with bass drum, snare, hi-hat and hand-clap sounds (1986). Today, use Raster Music Tracker or Furnace
+  <img src="/img/chiptune-tools/atari-rhythm-composer.webp" alt="The Rhythm Composer screenshot" width="384" height="240" loading="lazy" />
+
+- [**Sound Tracker**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-sound-tracker-30280): a Polish pattern-based POKEY tracker (1992). Today, use Raster Music Tracker or Furnace
+  <img src="/img/chiptune-tools/atari-sound-tracker-asf.webp" alt="Sound Tracker screenshot" width="336" height="240" loading="lazy" />
 
 ### DOS modules (MOD, S3M, XM, IT)
 
@@ -1529,5 +1633,5 @@ For more obscure trackers and tools not covered here, see the wiki pages of the 
 
 - **SANA 8BIT VST** and **VOPM**: both are old 32-bit plugins and often won't run as is in today's DAWs. For NES sounds, Magical 8bit Plug 2 or New DoReFAMI can take their place, and for the YM2151, my2151 or chipsynth OPMZ
 
-Tool versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). The screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, FlMML on HTML5, browser-mml-player, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me. Screenshots for little-scale's trackers, WebX68k, and NOTE MDX Workbench were sourced from the creators' posts on X, and those for Dn-FamiTracker, Furnace, furnace-piano-roll, FamiStudio, KiraStudio, OpenMPT, WaveTracker, GTUltra, SID Factory II, Bamboo Tracker, DefleMask, and LabChirp were kindly provided by Rei8bit. Images in the by-system section come from each tool's page as well as Battle of the Bits, pouet.net, Wikipedia and YouTube video thumbnails.
+Tool versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). The screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, FlMML on HTML5, browser-mml-player, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me. Screenshots for little-scale's trackers, WebX68k, and NOTE MDX Workbench were sourced from the creators' posts on X, and those for Dn-FamiTracker, Furnace, furnace-piano-roll, FamiStudio, KiraStudio, OpenMPT, WaveTracker, GTUltra, SID Factory II, Bamboo Tracker, DefleMask, and LabChirp were kindly provided by Rei8bit. Images in the by-system section come from each tool's page as well as Battle of the Bits, Atarimania, pouet.net, Wikipedia and YouTube video thumbnails.
 {{< /lang >}}
