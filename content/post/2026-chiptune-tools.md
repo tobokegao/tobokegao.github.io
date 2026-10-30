@@ -84,7 +84,7 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
   <img src="/img/chiptune-tools/kirastudio.webp" alt="KiraStudioの画面" width="560" height="294" loading="lazy" />
 
 - [**Dn-FamiTracker**](https://github.com/Dn-Programming-Core-Management/Dn-FamiTracker) Dn0.5.3：ファミコン用のトラッカー。FamiTrackerの流れをくむバージョン。Windowsのみ
-  <img src="/img/chiptune-tools/dn-famitracker.webp" alt="Dn-FamiTrackerの画面" width="560" height="316" loading="lazy" />
+  <img src="/img/chiptune-tools/dn-famitracker.webp" alt="Dn-FamiTrackerの画面" width="560" height="315" loading="lazy" />
   - [**Ruikajさんの改造版**](https://github.com/Ruikaj/Dn-FamiTracker)：NSFに書き出すときに音色のデータがあふれにくくなるよう改造したもの。無料、Windowsのみ
 
 - [**Furnace**](https://github.com/tildearrow/furnace) 0.6.8.3：ファミコン、GAMEBOY、メガドライブなど、たくさんの音源に対応したトラッカー。Windows・Mac・Linux
@@ -267,7 +267,7 @@ GAMEBOYやGBA、ファミコン、コモドール64などの実機（または�
 - [**Merzboy**](https://github.com/purefunktion/Merzboy)：GAMEBOYでノイズを鳴らすためのソフト。無料
   <img src="/img/chiptune-tools/merzboy.webp" alt="Merzboyの画面" width="320" height="288" loading="lazy" />
 
-- [**Droneboy**](https://github.com/purefunktion/Droneboy) v1.09：GAMEBOYでドローンを鳴らすシンセ。和音やシーケンスも使え、MIDIでも操作できます。無料（カートリッジは26.50ドル、HobbyChop）
+- [**Droneboy**](https://github.com/purefunktion/Droneboy) v1.09：GAMEBOYでドローンを鳴らすシンセ。和音やシーケンスも使え、MIDIでも操作できます。無料、カートリッジは26.50ドル（HobbyChop）
 
 - [**DMGo!**](https://audiowanderer.com/AW/drum-machina-go-or/) v1：GAMEBOYの4チャンネルで鳴らすドラムマシン。2026年9月に出たばかり。無料（寄付可）
   <img src="/img/chiptune-tools/dmgo.webp" alt="DMGo!の画面" width="467" height="420" loading="lazy" />
@@ -358,7 +358,7 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 - [**NSF2MML**](https://famic.prioris.jp/mml/labo/nsf2mml)：ファミコンの音楽ファイル（NSF）をMMLに変えるブラウザのツール。無料
   <img src="/img/chiptune-tools/nsf2mml.webp" alt="NSF2MMLの画面" width="560" height="350" loading="lazy" />
 
-- [**GameBoy Music Compiler（GBMC）**](http://mydocuments.g2.xrea.com/html/gb/sounddriver.html) 2025.07.31版：GAMEBOYの音源で鳴らすMMLのコンパイラー。GBSファイルや、エミュレーター・実機で動くROMに書き出せます。演奏のようすが見られるプレイヤー「GBDSP」としても書き出せます。無料、Windows
+- [**GameBoy Music Compiler（GBMC）**](http://mydocuments.g2.xrea.com/html/gb/sounddriver.html) 2025.07.31版：文字（MML）で曲を書いてGAMEBOYの音源で鳴らすソフト。曲データ（GBSファイル）やエミュレーター・実機で動くROMのほか、演奏のようすが見られるプレイヤー「GBDSP」としても書き出せます。無料、Windows
   <img src="/img/chiptune-tools/gbmc.webp" alt="GBMCで書き出したGBDSPの画面" width="336" height="342" loading="lazy" />
 
 - [**browser-mml-player**](https://github.com/t-sin/browser-mml-player)：ブラウザで動くMMLプレイヤー。シンセのしくみを学ぶ記事のために作られたものです。無料
@@ -565,7 +565,7 @@ You program within the limits of the console's sound chip, which makes it easier
   <img src="/img/chiptune-tools/kirastudio.webp" alt="KiraStudio screenshot" width="560" height="294" loading="lazy" />
 
 - [**Dn-FamiTracker**](https://github.com/Dn-Programming-Core-Management/Dn-FamiTracker) Dn0.5.3: an NES tracker, descended from FamiTracker. Windows only
-  <img src="/img/chiptune-tools/dn-famitracker.webp" alt="Dn-FamiTracker screenshot" width="560" height="316" loading="lazy" />
+  <img src="/img/chiptune-tools/dn-famitracker.webp" alt="Dn-FamiTracker screenshot" width="560" height="315" loading="lazy" />
   - [**Ruikaj's fork**](https://github.com/Ruikaj/Dn-FamiTracker): modified so instrument data is less likely to overflow when exporting NSF. Free, Windows only
 
 - [**Furnace**](https://github.com/tildearrow/furnace) 0.6.8.3: a tracker that supports many sound chips, including the NES, GAMEBOY and Mega Drive. Windows, Mac, Linux
@@ -630,8 +630,8 @@ You program within the limits of the console's sound chip, which makes it easier
 - [**PIRORO**](https://store.steampowered.com/app/2905900/PIRORO/) ver.3.4.0: a piano-roll chiptune composer that exports ROMs for real GAMEBOY and GBA hardware and imports MIDI. 1,300 yen on Steam, Windows
   <img src="/img/chiptune-tools/piroro.webp" alt="PIRORO screenshot" width="560" height="315" loading="lazy" />
 
-- [**メキメキボーイ**](https://amuru9.wixsite.com/my-site/mekimeki-chip): a piano-roll composer by the author of PIRORO that exports GAMEBOY ROMs. Free, Windows
-  <img src="/img/chiptune-tools/mekimeki.webp" alt="メキメキボーイ screenshot" width="560" height="298" loading="lazy" />
+- [**MEKIMEKI BOY (メキメキボーイ)**](https://amuru9.wixsite.com/my-site/mekimeki-chip): a piano-roll composer by the author of PIRORO that exports GAMEBOY ROMs. Free, Windows
+  <img src="/img/chiptune-tools/mekimeki.webp" alt="MEKIMEKI BOY screenshot" width="560" height="298" loading="lazy" />
 
 - [**Lovely Composer**](https://booth.pm/ja/items/3006558): a cute music maker in the spirit of console music-making software. Make retro game-style songs and sound effects and export to WAV or MIDI. 990 yen (BOOTH), Windows (and some Linux)
   <img src="/img/chiptune-tools/lovelycomposer.webp" alt="Lovely Composer screenshot" width="560" height="364" loading="lazy" />
@@ -748,13 +748,13 @@ These run on real GAMEBOY, GBA, NES, Commodore 64 and other hardware (or an emul
 - [**Merzboy**](https://github.com/purefunktion/Merzboy): a noise generator for the GAMEBOY. Free
   <img src="/img/chiptune-tools/merzboy.webp" alt="Merzboy screenshot" width="320" height="288" loading="lazy" />
 
-- [**Droneboy**](https://github.com/purefunktion/Droneboy) v1.09: a drone synth for the GAMEBOY with chords, sequencing and MIDI control. Free (cartridge $26.50 at HobbyChop)
+- [**Droneboy**](https://github.com/purefunktion/Droneboy) v1.09: a drone synth for the GAMEBOY with chords, sequencing and MIDI control. Free, cartridge $26.50 (HobbyChop)
 
 - [**DMGo!**](https://audiowanderer.com/AW/drum-machina-go-or/) v1: a drum machine using all four GAMEBOY channels, released in September 2026. Free (donations welcome)
   <img src="/img/chiptune-tools/dmgo.webp" alt="DMGo! screenshot" width="467" height="420" loading="lazy" />
 
-- [**Neil BaldwinさんのNESのツール**](https://neilbaldwin.codeberg.page/nes-audio/index.html): a collection of NES music software that runs on real hardware, including the LSDj-like tracker Pulsar, the tracker NTRQ and the drum machine PR8. Free
-  <img src="/img/chiptune-tools/neil.webp" alt="Neil BaldwinさんのNESのツール screenshot" width="280" height="262" loading="lazy" />
+- [**Neil Baldwin's NES tools**](https://neilbaldwin.codeberg.page/nes-audio/index.html): a collection of NES music software that runs on real hardware, including the LSDj-like tracker Pulsar, the tracker NTRQ and the drum machine PR8. Free
+  <img src="/img/chiptune-tools/neil.webp" alt="Neil Baldwin's NES tools screenshot" width="280" height="262" loading="lazy" />
 
 - [**SID-Wizard**](https://csdb.dk/release/?id=262561) 1.97: a tracker that runs on a real Commodore 64. Free
   <img src="/img/chiptune-tools/sidwizard.webp" alt="SID-Wizard screenshot" width="544" height="420" loading="lazy" />
@@ -839,7 +839,7 @@ Write songs as text (MML) and play them.
 - [**NSF2MML**](https://famic.prioris.jp/mml/labo/nsf2mml): a browser tool that converts NES music files (NSF) to MML. Free
   <img src="/img/chiptune-tools/nsf2mml.webp" alt="NSF2MML screenshot" width="560" height="350" loading="lazy" />
 
-- [**GameBoy Music Compiler (GBMC)**](http://mydocuments.g2.xrea.com/html/gb/sounddriver.html) 2025.07.31: an MML compiler for the GAMEBOY sound chip that outputs GBS files or ROMs for emulators and real hardware, including the visual player GBDSP. Free, Windows
+- [**GameBoy Music Compiler (GBMC)**](http://mydocuments.g2.xrea.com/html/gb/sounddriver.html) 2025.07.31: an MML compiler for the GAMEBOY sound chip that exports GBS files, ROMs for emulators and real hardware, as well as the visual player "GBDSP". Free, Windows
   <img src="/img/chiptune-tools/gbmc.webp" alt="GBDSP screen exported from GBMC" width="336" height="342" loading="lazy" />
 
 - [**browser-mml-player**](https://github.com/t-sin/browser-mml-player): a browser MML player made for an article introducing how synthesizers work. Free
