@@ -15,12 +15,12 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 - [音にかけるエフェクト](#ja-effects)
 - [トラッカー・専用ソフト（値段の書いていないものは無料）](#ja-trackers)
 - [LSDjと、LSDjから生まれたトラッカー（無料）](#ja-lsdj)
-- [スマホ・携帯ゲーム機で使えるソフト](#ja-handheld)
-- [ゲーム機・昔のパソコンの実機で動くソフト](#ja-consoles)
-- [昔の日本のパソコン（X68000・PC-98・MSX）のツール](#ja-japanese-pcs)
 - [M8（ハードウェアのトラッカー）](#ja-m8)
 - [picoTracker（ハードウェアのトラッカー）](#ja-picotracker)
 - [そのほかのハードウェア](#ja-hardware)
+- [スマホ・携帯ゲーム機で使えるソフト](#ja-handheld)
+- [ゲーム機・昔のパソコンの実機で動くソフト](#ja-consoles)
+- [昔の日本のパソコン（X68000・PC-98・MSX）のツール](#ja-japanese-pcs)
 - [ブラウザで使えるソフト（無料）](#ja-browser)
 - [MMLで書くソフト](#ja-mml)
 - [有料のプラグイン](#ja-paid-plugins)
@@ -182,6 +182,40 @@ GAMEBOY用のLSDjと、その操作感を受け継いでほかのゲーム機や
 - [**ChipNomad**](https://chipnomad.org/)（Megus）v1.0.5：LSDjや人気の携帯型機「M8」に影響を受けたトラッカー。いまはAY-3-8910（MSXなどに載っていた音源）のみに対応。Windows・macOS・Linux・Android、携帯ゲーム機（RG35XX、Miyoo）で動きます
   <img src="/img/chiptune-tools/chipnomad.webp" alt="ChipNomadの画面" width="525" height="420" loading="lazy" />
 
+## M8（ハードウェアのトラッカー） {#ja-m8}
+
+GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップチューン向けの音源のほか、FM音源やサンプラーも入っています。
+
+- [**M8 Tracker Model:02**](https://dirtywave.com/)：本体。699ドル（Dirtywave公式ストア）
+  <img src="/img/chiptune-tools/m8.webp" alt="M8 Tracker Model:02の画面" width="560" height="344" loading="lazy" />
+
+- [**M8 Headless**](https://github.com/Dirtywave/M8HeadlessFirmware)：「Teensy 4.1」という市販の小さな基板に書き込み、パソコンにつないで使う無料版。画面と操作はパソコン側のソフト（m8cなど）で行います
+  <img src="/img/chiptune-tools/m8gd.webp" alt="M8 Headlessをm8gdで表示した画面" width="560" height="315" loading="lazy" />
+
+  - パソコン側の表示ソフトは、[**m8gd**](https://github.com/octoocto/m8gd)（無料、Windows・Mac・Linux）がおすすめです。M8の画面を3Dの本体のような見た目で表示できます（自分も使っています）。
+
+- [**M8 Music Tracker**](https://apps.apple.com/jp/app/m8-music-tracker/id6806721202)（iPhone・iPad）1.2.2：本体の機能をそのまま再現したアプリ版です（2026年9月リリース／App Storeで5,000円）。曲データは実機本体と相互にやりとりできます
+  <img src="/img/chiptune-tools/m8-music-tracker.webp" alt="M8 Music Trackerの画面" width="560" height="420" loading="lazy" />
+
+## picoTracker（ハードウェアのトラッカー） {#ja-picotracker}
+
+- [**picoTracker**](https://xiphonics.com/)（Xiphonics）v2.4.0：名作トラッカー「LGPT」を小さなマイコン基板（Raspberry Pi Pico）に移植し、単体で動くようにしたハードウェアです。8トラックで、サンプラーやFM音源などが入っています。組み立てキット（基板と画面）は99ドル、完成品の「picoTracker Advance」は449ドル（公式ストア）。ソフトは[GitHub](https://github.com/xiphonics/picoTracker)で公開されています
+  <img src="/img/chiptune-tools/picotracker.webp" alt="picoTrackerの画面" width="560" height="373" loading="lazy" />
+
+## そのほかのハードウェア {#ja-hardware}
+
+- [**MIDISID**](https://peacockmedia.software/midisid/)：SIDの互換チップを2つ積んだ、MIDIで鳴らすシンセ。125ポンド
+  <img src="/img/chiptune-tools/midisid.webp" alt="MIDISIDの画面" width="500" height="267" loading="lazy" />
+
+- [**LIVEN MEGA SYNTHESIS**](https://ja.sonicware.jp/pages/liven-mega-synthesis)：16ビットのゲーム機のFM音源を再現した、6トラックのシーケンサー付きのグルーヴボックス。49,800円（ACアダプター付きは54,800円）
+  <img src="/img/chiptune-tools/megasyn.webp" alt="LIVEN MEGA SYNTHESISの画面" width="420" height="420" loading="lazy" />
+
+- [**NullPerator**](https://203.io/products/operator-deposit)：picoTrackerをもとにしたソフトで動く、小さな携帯型トラッカー。249ドルから（予約）。iPhone・iPad用の無料アプリもあります
+  <img src="/img/chiptune-tools/nullperator.webp" alt="NullPeratorの画面" width="420" height="420" loading="lazy" />
+
+- [**LAVIOR AURA**](https://hmfactory.jp/aura/)：HMFACTORYの、PSGや波形メモリ、SID、PCMなどの音を最大32チャンネルで鳴らす小さな音源ボード。Windowsのアプリ「AURA HOST」で操作します。2026年10月から先行配布
+  <img src="/img/chiptune-tools/aura.webp" alt="LAVIOR AURAのAURA HOSTの画面" width="560" height="332" loading="lazy" />
+
 ## スマホ・携帯ゲーム機で使えるソフト {#ja-handheld}
 
 スマホや携帯ゲーム機で、どこでも曲が作れます。
@@ -286,40 +320,6 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 
 - [**MSXPLAYer**](https://msxplayer.net/wp/)：MSXアソシエーション公式のMSXエミュレーター。いまの版は、技術評論社の本「MSX-BASICでゲームを作ろう」を持っている人が使えます。Windows
 
-## M8（ハードウェアのトラッカー） {#ja-m8}
-
-GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップチューン向けの音源のほか、FM音源やサンプラーも入っています。
-
-- [**M8 Tracker Model:02**](https://dirtywave.com/)：本体。699ドル（Dirtywave公式ストア）
-  <img src="/img/chiptune-tools/m8.webp" alt="M8 Tracker Model:02の画面" width="560" height="344" loading="lazy" />
-
-- [**M8 Headless**](https://github.com/Dirtywave/M8HeadlessFirmware)：「Teensy 4.1」という市販の小さな基板に書き込み、パソコンにつないで使う無料版。画面と操作はパソコン側のソフト（m8cなど）で行います
-  <img src="/img/chiptune-tools/m8gd.webp" alt="M8 Headlessをm8gdで表示した画面" width="560" height="315" loading="lazy" />
-
-  - パソコン側の表示ソフトは、[**m8gd**](https://github.com/octoocto/m8gd)（無料、Windows・Mac・Linux）がおすすめです。M8の画面を3Dの本体のような見た目で表示できます（自分も使っています）。
-
-- [**M8 Music Tracker**](https://apps.apple.com/jp/app/m8-music-tracker/id6806721202)（iPhone・iPad）1.2.2：本体の機能をそのまま再現したアプリ版です（2026年9月リリース／App Storeで5,000円）。曲データは実機本体と相互にやりとりできます
-  <img src="/img/chiptune-tools/m8-music-tracker.webp" alt="M8 Music Trackerの画面" width="560" height="420" loading="lazy" />
-
-## picoTracker（ハードウェアのトラッカー） {#ja-picotracker}
-
-- [**picoTracker**](https://xiphonics.com/)（Xiphonics）v2.4.0：名作トラッカー「LGPT」を小さなマイコン基板（Raspberry Pi Pico）に移植し、単体で動くようにしたハードウェアです。8トラックで、サンプラーやFM音源などが入っています。組み立てキット（基板と画面）は99ドル、完成品の「picoTracker Advance」は449ドル（公式ストア）。ソフトは[GitHub](https://github.com/xiphonics/picoTracker)で公開されています
-  <img src="/img/chiptune-tools/picotracker.webp" alt="picoTrackerの画面" width="560" height="373" loading="lazy" />
-
-## そのほかのハードウェア {#ja-hardware}
-
-- [**MIDISID**](https://peacockmedia.software/midisid/)：SIDの互換チップを2つ積んだ、MIDIで鳴らすシンセ。125ポンド
-  <img src="/img/chiptune-tools/midisid.webp" alt="MIDISIDの画面" width="500" height="267" loading="lazy" />
-
-- [**LIVEN MEGA SYNTHESIS**](https://ja.sonicware.jp/pages/liven-mega-synthesis)：16ビットのゲーム機のFM音源を再現した、6トラックのシーケンサー付きのグルーヴボックス。49,800円（ACアダプター付きは54,800円）
-  <img src="/img/chiptune-tools/megasyn.webp" alt="LIVEN MEGA SYNTHESISの画面" width="420" height="420" loading="lazy" />
-
-- [**NullPerator**](https://203.io/products/operator-deposit)：picoTrackerをもとにしたソフトで動く、小さな携帯型トラッカー。249ドルから（予約）。iPhone・iPad用の無料アプリもあります
-  <img src="/img/chiptune-tools/nullperator.webp" alt="NullPeratorの画面" width="420" height="420" loading="lazy" />
-
-- [**LAVIOR AURA**](https://hmfactory.jp/aura/)：HMFACTORYの、PSGや波形メモリ、SID、PCMなどの音を最大32チャンネルで鳴らす小さな音源ボード。Windowsのアプリ「AURA HOST」で操作します。2026年10月から先行配布
-  <img src="/img/chiptune-tools/aura.webp" alt="LAVIOR AURAのAURA HOSTの画面" width="560" height="332" loading="lazy" />
-
 ## ブラウザで使えるソフト（無料） {#ja-browser}
 
 インストールなしで、ブラウザを開くだけで作れます。曲はURLに保存されるので、URLを送るだけで共有できます。WAVやMIDIへの書き出しもできます。
@@ -353,6 +353,9 @@ GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップ
 
 - [**NSF2MML**](https://famic.prioris.jp/mml/labo/nsf2mml)：ファミコンの音楽ファイル（NSF）をMMLに変えるブラウザのツール。無料
   <img src="/img/chiptune-tools/nsf2mml.webp" alt="NSF2MMLの画面" width="560" height="350" loading="lazy" />
+
+- [**GameBoy Music Compiler（GBMC）**](http://mydocuments.g2.xrea.com/html/gb/sounddriver.html) 2025.07.31版：GAMEBOYの音源で鳴らすMMLのコンパイラー。GBSファイルや、エミュレーター・実機で動くROMに書き出せます。演奏のようすが見られるプレイヤー「GBDSP」としても書き出せます。無料、Windows
+  <img src="/img/chiptune-tools/gbmc.webp" alt="GBMCで書き出したGBDSPの画面" width="336" height="342" loading="lazy" />
 
 - [**browser-mml-player**](https://github.com/t-sin/browser-mml-player)：ブラウザで動くMMLプレイヤー。シンセのしくみを学ぶ記事のために作られたものです。無料
   <img src="/img/chiptune-tools/bmml.webp" alt="browser-mml-playerの画面" width="560" height="350" loading="lazy" />
@@ -432,9 +435,6 @@ GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップ
 
 - [**Rustico**](https://rustico.reploid.cafe/)：音の正確さにこだわった、ファミコンのエミュレーター。鳴っている音をピアノロールのように見られます。ブラウザで動きます。無料
 
-- [**Shoot Chop Drop**](https://apps.apple.com/jp/app/shoot-chop-drop/id6768887559) 1.5.2：撮った動画を切ってパッドで鳴らす、ビデオサンプラー。無料、iPhone・iPad
-  <img src="/img/chiptune-tools/scd.webp" alt="Shoot Chop Dropの画面" width="193" height="420" loading="lazy" />
-
 ## Shiruさんのツール（無料） {#ja-shiru}
 
 Shiruさんが公開している音楽のツールです。どれも[Shiruさんのソフトウェアのページ](http://shiru.nedopc.com/software.shtml)からダウンロードできます。
@@ -492,12 +492,12 @@ This is an updated roundup based on Umeboshi Chazuke's 2021 article on their blo
 - [Effects](#en-effects)
 - [Trackers and dedicated software (free unless a price is given)](#en-trackers)
 - [LSDj and trackers inspired by it (free)](#en-lsdj)
-- [Apps for phones and handhelds](#en-handheld)
-- [Software for real consoles and old computers](#en-consoles)
-- [Tools for old Japanese computers (X68000, PC-98, MSX)](#en-japanese-pcs)
 - [M8 (hardware tracker)](#en-m8)
 - [picoTracker (hardware tracker)](#en-picotracker)
 - [Other hardware](#en-hardware)
+- [Apps for phones and handhelds](#en-handheld)
+- [Software for real consoles and old computers](#en-consoles)
+- [Tools for old Japanese computers (X68000, PC-98, MSX)](#en-japanese-pcs)
 - [Browser apps (free)](#en-browser)
 - [Writing music in MML](#en-mml)
 - [Paid plugins](#en-paid-plugins)
@@ -659,6 +659,40 @@ LSDj for the GAMEBOY, along with trackers that bring its workflow to other conso
 - [**ChipNomad**](https://chipnomad.org/) (Megus) v1.0.5: a tracker influenced by LSDj and the popular handheld M8. For now it supports only the AY-3-8910 (the sound chip in the MSX and others). Runs on Windows, macOS, Linux, Android and handhelds (RG35XX, Miyoo)
   <img src="/img/chiptune-tools/chipnomad.webp" alt="ChipNomad screenshot" width="525" height="420" loading="lazy" />
 
+## M8 (hardware tracker) {#en-m8}
+
+A portable tracker influenced by the GAMEBOY's LSDj. Besides chiptune-style sound engines, it has FM synths and a sampler.
+
+- [**M8 Tracker Model:02**](https://dirtywave.com/): the hardware. $699 (Dirtywave's official store)
+  <img src="/img/chiptune-tools/m8.webp" alt="M8 Tracker Model:02 screenshot" width="560" height="344" loading="lazy" />
+
+- [**M8 Headless**](https://github.com/Dirtywave/M8HeadlessFirmware): a free version you flash onto a small off-the-shelf board called the Teensy 4.1 and connect to a computer. The screen and controls are handled by software on the computer (m8c and others)
+  <img src="/img/chiptune-tools/m8gd.webp" alt="M8 Headless shown in m8gd" width="560" height="315" loading="lazy" />
+
+  - For the computer side, I recommend [**m8gd**](https://github.com/octoocto/m8gd) (free, Windows, Mac, Linux). It shows the M8's screen on a 3D model of the hardware (I use it myself).
+
+- [**M8 Music Tracker**](https://apps.apple.com/jp/app/m8-music-tracker/id6806721202) (iPhone, iPad) 1.2.2: an app version with the same features as the hardware (released September 2026, 5,000 yen on the Japanese App Store). Songs can be moved back and forth between the app and the hardware
+  <img src="/img/chiptune-tools/m8-music-tracker.webp" alt="M8 Music Tracker screenshot" width="560" height="420" loading="lazy" />
+
+## picoTracker (hardware tracker) {#en-picotracker}
+
+- [**picoTracker**](https://xiphonics.com/) (Xiphonics) v2.4.0: hardware that runs a port of the classic tracker LGPT on its own, on a small microcontroller board (Raspberry Pi Pico). It has 8 tracks, with a sampler, FM synths and more. The DIY kit (board and display) is $99, and the finished picoTracker Advance is $449 (official store). The software is on [GitHub](https://github.com/xiphonics/picoTracker)
+  <img src="/img/chiptune-tools/picotracker.webp" alt="picoTracker screenshot" width="560" height="373" loading="lazy" />
+
+## Other hardware {#en-hardware}
+
+- [**MIDISID**](https://peacockmedia.software/midisid/): a MIDI synth with two SID-compatible chips. £125
+  <img src="/img/chiptune-tools/midisid.webp" alt="MIDISID screenshot" width="500" height="267" loading="lazy" />
+
+- [**LIVEN MEGA SYNTHESIS**](https://ja.sonicware.jp/pages/liven-mega-synthesis): a groovebox with a 6-track sequencer that recreates the FM sound of 16-bit consoles. 49,800 yen (54,800 yen with AC adapter)
+  <img src="/img/chiptune-tools/megasyn.webp" alt="LIVEN MEGA SYNTHESIS screenshot" width="420" height="420" loading="lazy" />
+
+- [**NullPerator**](https://203.io/products/operator-deposit): a small handheld tracker running heavily modified picoTracker software. From $249 (pre-order), with a free iPhone and iPad app
+  <img src="/img/chiptune-tools/nullperator.webp" alt="NullPerator screenshot" width="420" height="420" loading="lazy" />
+
+- [**LAVIOR AURA**](https://hmfactory.jp/aura/): HMFACTORY's small sound board that plays PSG, wavetable, SID, PCM and other sounds in up to 32 channels, controlled from the Windows app AURA HOST. Early distribution started in October 2026
+  <img src="/img/chiptune-tools/aura.webp" alt="AURA HOST for LAVIOR AURA screenshot" width="560" height="332" loading="lazy" />
+
 ## Apps for phones and handhelds {#en-handheld}
 
 Make music anywhere on a phone or a handheld.
@@ -763,40 +797,6 @@ Tools for making and playing music for the X68000, PC-9801, PC-8801 and MSX.
 
 - [**MSXPLAYer**](https://msxplayer.net/wp/): the official MSX emulator from the MSX Association. The current build is available to owners of the Gijutsu-Hyoron book "MSX-BASICでゲームを作ろう". Windows
 
-## M8 (hardware tracker) {#en-m8}
-
-A portable tracker influenced by the GAMEBOY's LSDj. Besides chiptune-style sound engines, it has FM synths and a sampler.
-
-- [**M8 Tracker Model:02**](https://dirtywave.com/): the hardware. $699 (Dirtywave's official store)
-  <img src="/img/chiptune-tools/m8.webp" alt="M8 Tracker Model:02 screenshot" width="560" height="344" loading="lazy" />
-
-- [**M8 Headless**](https://github.com/Dirtywave/M8HeadlessFirmware): a free version you flash onto a small off-the-shelf board called the Teensy 4.1 and connect to a computer. The screen and controls are handled by software on the computer (m8c and others)
-  <img src="/img/chiptune-tools/m8gd.webp" alt="M8 Headless shown in m8gd" width="560" height="315" loading="lazy" />
-
-  - For the computer side, I recommend [**m8gd**](https://github.com/octoocto/m8gd) (free, Windows, Mac, Linux). It shows the M8's screen on a 3D model of the hardware (I use it myself).
-
-- [**M8 Music Tracker**](https://apps.apple.com/jp/app/m8-music-tracker/id6806721202) (iPhone, iPad) 1.2.2: an app version with the same features as the hardware (released September 2026, 5,000 yen on the Japanese App Store). Songs can be moved back and forth between the app and the hardware
-  <img src="/img/chiptune-tools/m8-music-tracker.webp" alt="M8 Music Tracker screenshot" width="560" height="420" loading="lazy" />
-
-## picoTracker (hardware tracker) {#en-picotracker}
-
-- [**picoTracker**](https://xiphonics.com/) (Xiphonics) v2.4.0: hardware that runs a port of the classic tracker LGPT on its own, on a small microcontroller board (Raspberry Pi Pico). It has 8 tracks, with a sampler, FM synths and more. The DIY kit (board and display) is $99, and the finished picoTracker Advance is $449 (official store). The software is on [GitHub](https://github.com/xiphonics/picoTracker)
-  <img src="/img/chiptune-tools/picotracker.webp" alt="picoTracker screenshot" width="560" height="373" loading="lazy" />
-
-## Other hardware {#en-hardware}
-
-- [**MIDISID**](https://peacockmedia.software/midisid/): a MIDI synth with two SID-compatible chips. £125
-  <img src="/img/chiptune-tools/midisid.webp" alt="MIDISID screenshot" width="500" height="267" loading="lazy" />
-
-- [**LIVEN MEGA SYNTHESIS**](https://ja.sonicware.jp/pages/liven-mega-synthesis): a groovebox with a 6-track sequencer that recreates the FM sound of 16-bit consoles. 49,800 yen (54,800 yen with AC adapter)
-  <img src="/img/chiptune-tools/megasyn.webp" alt="LIVEN MEGA SYNTHESIS screenshot" width="420" height="420" loading="lazy" />
-
-- [**NullPerator**](https://203.io/products/operator-deposit): a small handheld tracker running heavily modified picoTracker software. From $249 (pre-order), with a free iPhone and iPad app
-  <img src="/img/chiptune-tools/nullperator.webp" alt="NullPerator screenshot" width="420" height="420" loading="lazy" />
-
-- [**LAVIOR AURA**](https://hmfactory.jp/aura/): HMFACTORY's small sound board that plays PSG, wavetable, SID, PCM and other sounds in up to 32 channels, controlled from the Windows app AURA HOST. Early distribution started in October 2026
-  <img src="/img/chiptune-tools/aura.webp" alt="AURA HOST for LAVIOR AURA screenshot" width="560" height="332" loading="lazy" />
-
 ## Browser apps (free) {#en-browser}
 
 Nothing to install: just open a browser and start. Songs are saved in the URL, so sharing a song is as easy as sending its URL. You can also export to WAV or MIDI.
@@ -830,6 +830,9 @@ Write songs as text (MML) and play them.
 
 - [**NSF2MML**](https://famic.prioris.jp/mml/labo/nsf2mml): a browser tool that converts NES music files (NSF) to MML. Free
   <img src="/img/chiptune-tools/nsf2mml.webp" alt="NSF2MML screenshot" width="560" height="350" loading="lazy" />
+
+- [**GameBoy Music Compiler (GBMC)**](http://mydocuments.g2.xrea.com/html/gb/sounddriver.html) 2025.07.31: an MML compiler for the GAMEBOY sound chip that outputs GBS files or ROMs for emulators and real hardware, including the visual player GBDSP. Free, Windows
+  <img src="/img/chiptune-tools/gbmc.webp" alt="GBDSP screen exported from GBMC" width="336" height="342" loading="lazy" />
 
 - [**browser-mml-player**](https://github.com/t-sin/browser-mml-player): a browser MML player made for an article introducing how synthesizers work. Free
   <img src="/img/chiptune-tools/bmml.webp" alt="browser-mml-player screenshot" width="560" height="350" loading="lazy" />
@@ -908,9 +911,6 @@ Quickly make short game-style sound effects.
   <img src="/img/chiptune-tools/sndh.webp" alt="SNDH Player screenshot" width="560" height="350" loading="lazy" />
 
 - [**Rustico**](https://rustico.reploid.cafe/): an NES emulator focused on accurate sound, with a piano-roll-style audio visualizer, running in the browser. Free
-
-- [**Shoot Chop Drop**](https://apps.apple.com/jp/app/shoot-chop-drop/id6768887559) 1.5.2: a video sampler that chops clips you shoot onto pads. Free, iPhone and iPad
-  <img src="/img/chiptune-tools/scd.webp" alt="Shoot Chop Drop screenshot" width="193" height="420" loading="lazy" />
 
 ## Shiru's tools (free) {#en-shiru}
 
