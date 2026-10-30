@@ -61,6 +61,8 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
   <img src="/img/chiptune-tools/c700.webp" alt="C700の画面" width="513" height="420" loading="lazy" />
 
 - [**VOPMex**](http://picopicose.com/software.html)（osoumen）20210501：Samさんが作った、YM2151（OPM）のFM音源を再現したプラグイン「VOPM」を、osoumenさんが改良したもの。YM2151は、80〜90年代のゲームセンターやX68000で使われた音源です。64bitのDAWやApple Siliconでも使えます。本物の音源チップをUSBでつなぐ機械「[GIMIC](http://gimic.jp/)」にYM2151を挿せば、実機ならではの音で鳴らせます（Windowsでは「c86ctl」も必要）。無料、Windows（VST、32bit・64bit）・Mac（VST・AU）
+  <img src="/img/chiptune-tools/vopmex.webp" alt="VOPMexの画面" width="560" height="399" loading="lazy" />
+  <small>画像：[Xの投稿](https://x.com/freevstbot/status/2020608131357675659)より</small>
 
 - [**OPNA FM Synth**](https://trpico.booth.pm/items/8351023) v1.0.1：とるぴさんの、YM2608（OPNA）のFM音源を再現したプラグイン。無料（支援つきは600円）、Windows（VST3）
   <img src="/img/chiptune-tools/opnafm.webp" alt="OPNA FM Synthの画面" width="560" height="382" loading="lazy" />
@@ -983,6 +985,8 @@ These load in your usual DAW and play like any other instrument.
   <img src="/img/chiptune-tools/c700.webp" alt="C700 screenshot" width="513" height="420" loading="lazy" />
 
 - [**VOPMex**](http://picopicose.com/software.html) (osoumen) 20210501: osoumen's updated version of Sam's VOPM, which recreates the YM2151 (OPM) FM chip used in '80s and '90s arcade games and the X68000. It runs in 64-bit DAWs and on Apple Silicon. If you connect [GIMIC](http://gimic.jp/) (a USB device for real sound chips) with a YM2151 installed, you can play authentic hardware sounds (Windows also requires c86ctl). Free, Windows (VST, 32-bit and 64-bit) and Mac (VST, AU)
+  <img src="/img/chiptune-tools/vopmex.webp" alt="VOPMex screenshot" width="560" height="399" loading="lazy" />
+  <small>Image: from [a post on X](https://x.com/freevstbot/status/2020608131357675659)</small>
 
 - [**OPNA FM Synth**](https://trpico.booth.pm/items/8351023) v1.0.1: torupi's plugin recreating the YM2608 (OPNA) FM chip. Free (600 yen support option), Windows (VST3)
   <img src="/img/chiptune-tools/opnafm.webp" alt="OPNA FM Synth screenshot" width="560" height="382" loading="lazy" />
