@@ -533,7 +533,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 ### Atari ST（YM2149・サンプル）
 
-- [**maxYMiser**](https://www.preromanbritain.com/maxymiser/)：Atari STの実機で動く、YM2149用のトラッカー。MIDIにも対応しています。無料、Atari ST（実機またはエミュレーター）
+- [**maxYMiser**](https://www.preromanbritain.com/maxymiser/)：Atari STの実機で動く、YM2149用のトラッカー。MIDIにも対応。無料、Atari ST（実機またはエミュレーター）
   <img src="/img/chiptune-tools/botb-maxymiser.webp" alt="maxYMiserの画面" width="320" height="200" loading="lazy" />
 
 - [**MusicMon**](https://dhs.nu/files.php?t=single&ID=52)：Atari STの実機で動くトラッカー。今ならmaxYMiser
@@ -542,7 +542,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 - [**PSG Tracker**](https://www.atarimania.com/games/atari-st-utilities-psg-tracker-22030)：YM2149用の、フィンランドで作られたトラッカー（1992年）。今ならmaxYMiser
   <img src="/img/chiptune-tools/atari-psg-tracker.webp" alt="PSG Trackerの画面" width="560" height="350" loading="lazy" />
 
-- [**The Music Studio**](https://www.atarimania.com/games/atari-st-utilities-music-studio-the-36357)：Activisionの楽譜の作曲ソフトのST版。STの音源かMIDIで鳴らします（1986年）。今ならRaster Music TrackerかFurnace
+- [**The Music Studio**](https://www.atarimania.com/games/atari-st-utilities-music-studio-the-36357)：Activisionの楽譜の作曲ソフトのST版。STの音源かMIDIで鳴らします（1986年）。今ならmaxYMiserかFurnace
   <img src="/img/chiptune-tools/atari-music-studio-st.webp" alt="The Music Studioの画面" width="560" height="350" loading="lazy" />
 
 - [**Quartet**](https://www.atarimania.com/games/atari-st-utilities-quartet-29599)：サンプルの楽器4音を、楽譜で打ち込んで鳴らすソフト（1990年）。今ならFurnaceやOpenMPT（STの実機ならmaxYMiser）
@@ -554,7 +554,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 - [**TCB Tracker**](https://www.atarimania.com/games/atari-st-utilities-tcb-tracker-31405)：デモグループThe Carebearsの、4チャンネルのサンプルのトラッカー（1990年）。今ならFurnaceやOpenMPT（STの実機ならmaxYMiser）
   <img src="/img/chiptune-tools/atari-tcb-tracker.webp" alt="TCB Trackerの画面" width="320" height="200" loading="lazy" />
 
-- [**ProTracker ST**](https://www.atarimania.com/games/atari-st-utilities-protracker-st-30690)：ProTrackerのST版。4チャンネルのMODの曲を作れます。今ならFurnaceやOpenMPT（STの実機ならmaxYMiser）
+- [**ProTracker ST**](https://www.atarimania.com/games/atari-st-utilities-protracker-st-30690)：ProTrackerのST版。4チャンネルのMOD曲を作れるソフト。今ならFurnaceやOpenMPT（STの実機ならmaxYMiser）
   <img src="/img/chiptune-tools/atari-protracker-st.webp" alt="ProTracker STの画面" width="320" height="200" loading="lazy" />
 
 - [**The Empire Noisetracker (ST-NoiseTracker)**](https://www.atarimania.com/games/atari-st-utilities-empire-noisetracker-the-30689)：AmigaのSoundtrackerやNoisetrackerをもとにした、STのトラッカー。今ならFurnaceやOpenMPT（STの実機ならmaxYMiser）
@@ -1357,7 +1357,7 @@ Trackers and tools listed on the wiki of the chiptune community [Battle of the B
 - [**PSG Tracker**](https://www.atarimania.com/games/atari-st-utilities-psg-tracker-22030): a Finnish tracker for the YM2149 (1992). Today, use maxYMiser
   <img src="/img/chiptune-tools/atari-psg-tracker.webp" alt="PSG Tracker screenshot" width="560" height="350" loading="lazy" />
 
-- [**The Music Studio**](https://www.atarimania.com/games/atari-st-utilities-music-studio-the-36357): the ST version of Activision's notation composer, playing through the ST sound chip or MIDI (1986). Today, use Raster Music Tracker or Furnace
+- [**The Music Studio**](https://www.atarimania.com/games/atari-st-utilities-music-studio-the-36357): the ST version of Activision's notation music editor, playing through the ST sound chip or MIDI (1986). Today, use maxYMiser or Furnace
   <img src="/img/chiptune-tools/atari-music-studio-st.webp" alt="The Music Studio screenshot" width="560" height="350" loading="lazy" />
 
 - [**Quartet**](https://www.atarimania.com/games/atari-st-utilities-quartet-29599): a four-voice sample music editor in staff notation (1990). Today, use Furnace or OpenMPT (or maxYMiser on a real ST)
@@ -1375,7 +1375,7 @@ Trackers and tools listed on the wiki of the chiptune community [Battle of the B
 - [**The Empire Noisetracker (ST-NoiseTracker)**](https://www.atarimania.com/games/atari-st-utilities-empire-noisetracker-the-30689): an ST tracker based on the Amiga Soundtracker and Noisetracker. Today, use Furnace or OpenMPT (or maxYMiser on a real ST)
   <img src="/img/chiptune-tools/atari-empire-noisetracker.webp" alt="The Empire Noisetracker (ST-NoiseTracker) screenshot" width="320" height="200" loading="lazy" />
 
-- [**The HMS Soundtracker**](https://www.atarimania.com/games/atari-st-utilities-hms-soundtracker-the-23807): a French commercial sample tracker with MIDI. Today, use Furnace or OpenMPT (or maxYMiser on a real ST)
+- [**The HMS Soundtracker**](https://www.atarimania.com/games/atari-st-utilities-hms-soundtracker-the-23807): a French commercial sample tracker with MIDI support. Today, use Furnace or OpenMPT (or maxYMiser on a real ST)
   <img src="/img/chiptune-tools/atari-hms-soundtracker.webp" alt="The HMS Soundtracker screenshot" width="320" height="200" loading="lazy" />
 
 - [**Hyper Sound Digital**](https://www.atarimania.com/games/atari-st-utilities-hyper-sound-digital-27492): a three-channel tracker from Delphine Software. Today, use Furnace or OpenMPT (or maxYMiser on a real ST)
@@ -1411,13 +1411,13 @@ Trackers and tools listed on the wiki of the chiptune community [Battle of the B
 - [**Music Construction Set**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-music-construction-set-14317): Electronic Arts' notation editor where you place notes on a staff (1984). Today, use Raster Music Tracker or Furnace
   <img src="/img/chiptune-tools/atari-music-construction-set-8bit.webp" alt="Music Construction Set screenshot" width="336" height="240" loading="lazy" />
 
-- [**Bank Street MusicWriter**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-bank-street-musicwriter-29755): a notation-based composer that can also print scores (1984). Today, use Raster Music Tracker or Furnace
+- [**Bank Street MusicWriter**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-bank-street-musicwriter-29755): a notation-based music editor that can also print scores (1984). Today, use Raster Music Tracker or Furnace
   <img src="/img/chiptune-tools/atari-bank-street-musicwriter.webp" alt="Bank Street MusicWriter screenshot" width="384" height="240" loading="lazy" />
 
-- [**The Music Studio**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-music-studio-the-14318): Activision's notation-based composer (1986). Today, use Raster Music Tracker or Furnace
+- [**The Music Studio**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-music-studio-the-14318): Activision's notation-based music editor (1986). Today, use Raster Music Tracker or Furnace
   <img src="/img/chiptune-tools/atari-music-studio-8bit.webp" alt="The Music Studio screenshot" width="336" height="224" loading="lazy" />
 
-- [**The Rhythm Composer**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-rhythm-composer-the-30576): a drum pattern composer with bass drum, snare, hi-hat and hand-clap sounds (1986). Today, use Raster Music Tracker or Furnace
+- [**The Rhythm Composer**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-rhythm-composer-the-30576): a drum sequencer with bass drum, snare, hi-hat and handclap sounds (1986). Today, use Raster Music Tracker or Furnace
   <img src="/img/chiptune-tools/atari-rhythm-composer.webp" alt="The Rhythm Composer screenshot" width="384" height="240" loading="lazy" />
 
 - [**Sound Tracker**](https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-sound-tracker-30280): a Polish pattern-based POKEY tracker (1992). Today, use Raster Music Tracker or Furnace
