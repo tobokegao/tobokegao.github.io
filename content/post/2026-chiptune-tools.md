@@ -78,22 +78,22 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 ゲーム機の音源の制限どおりに打ち込めるので、「本物っぽさ」が出やすい方法です。
 
 - [**FamiStudio**](https://famistudio.org/) 4.5.3：ファミコン用。ピアノロールで打ち込めるので、トラッカーが初めてでもとっつきやすい。Windows・Mac・Linux
-  <img src="/img/chiptune-tools/famistudio.webp" alt="FamiStudioの画面" width="560" height="245" loading="lazy" />
+  <img src="/img/chiptune-tools/famistudio.webp" alt="FamiStudioの画面" width="560" height="307" loading="lazy" />
 
 - [**KiraStudio**](https://kirastudio.org/) 1.1.2：FamiStudioと同じ作者（BleuBleu）が2026年に公開した新作ソフト。ピアノロールで打ち込めて、ファミコン、GAMEBOY、ヤマハのFM音源などが使えます。実機の音の正確さよりも、作りやすさを大事にしているそうです。Windows版は無料。Mac・iPhone・iPad・Android版もあります
-  <img src="/img/chiptune-tools/kirastudio.webp" alt="KiraStudioの画面" width="560" height="294" loading="lazy" />
+  <img src="/img/chiptune-tools/kirastudio.webp" alt="KiraStudioの画面" width="560" height="307" loading="lazy" />
 
 - [**Dn-FamiTracker**](https://github.com/Dn-Programming-Core-Management/Dn-FamiTracker) Dn0.5.3：ファミコン用のトラッカー。FamiTrackerの流れをくむバージョン。Windowsのみ
   <img src="/img/chiptune-tools/dn-famitracker.webp" alt="Dn-FamiTrackerの画面" width="560" height="315" loading="lazy" />
   - [**Ruikajさんの改造版**](https://github.com/Ruikaj/Dn-FamiTracker)：NSFに書き出すときに音色のデータがあふれにくくなるよう改造したもの。無料、Windowsのみ
 
 - [**Furnace**](https://github.com/tildearrow/furnace) 0.6.8.3：ファミコン、GAMEBOY、メガドライブなど、たくさんの音源に対応したトラッカー。Windows・Mac・Linux
-  <img src="/img/chiptune-tools/furnace.webp" alt="Furnaceの画面" width="560" height="350" loading="lazy" />
+  <img src="/img/chiptune-tools/furnace.webp" alt="Furnaceの画面" width="560" height="307" loading="lazy" />
   - [**furnace-piano-roll**](https://github.com/rednoobmusic/furnace-piano-roll) v14：Furnaceにピアノロールなどを足した派生版。無料、Windows・Linux
-    <img src="/img/chiptune-tools/furnace-piano-roll.webp" alt="furnace-piano-rollの画面" width="560" height="350" loading="lazy" />
+    <img src="/img/chiptune-tools/furnace-piano-roll.webp" alt="furnace-piano-rollの画面" width="560" height="307" loading="lazy" />
 
 - [**OpenMPT**](https://openmpt.org/) 1.32.11.00：特定のゲーム機に縛られない、昔からあるトラッカー。Windows
-  <img src="/img/chiptune-tools/openmpt.webp" alt="OpenMPTの画面" width="300" height="202" loading="lazy" />
+  <img src="/img/chiptune-tools/openmpt.webp" alt="OpenMPTの画面" width="560" height="315" loading="lazy" />
 
 - [**Renoise**](https://www.renoise.com/) 3.5.4：録音した音（サンプル）を使った曲づくりに強い、DAWのように使えるトラッカー。音色や効果を追加する機能（VSTなどのプラグイン）も使えます。76ユーロ、Windows・Mac・Linux
   <img src="/img/chiptune-tools/renoise.webp" alt="Renoiseの画面" width="560" height="397" loading="lazy" />
@@ -123,7 +123,7 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
   <img src="/img/chiptune-tools/osctet.webp" alt="Osctetの画面" width="560" height="419" loading="lazy" />
 
 - [**WaveTracker**](https://wavetracker.org) v1.1.2：自分で描いた波形（波形メモリ）とサンプルで鳴らすトラッカー。無料（投げ銭可）、Windowsのみ
-  <img src="/img/chiptune-tools/wavetracker.webp" alt="WaveTrackerの画面" width="400" height="260" loading="lazy" />
+  <img src="/img/chiptune-tools/wavetracker.webp" alt="WaveTrackerの画面" width="560" height="307" loading="lazy" />
 
 - [**DefleMask**](https://www.deflemask.com/)：メガドライブ、マスターシステム、GAMEBOY、PCエンジン、ファミコンなど、たくさんの音源に対応したトラッカー。Steam版は1,700円、スマホ版もあります（iOS・Android）。古い無料版もありますが、サポートは終わっています
   <img src="/img/chiptune-tools/deflemask.webp" alt="DefleMaskの画面" width="560" height="315" loading="lazy" />
@@ -484,7 +484,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 - **SANA 8BIT VST**、**VOPM**：どちらも古い32bitのプラグインで、いまのDAWではそのままでは使えないことが多いです。ファミコン系はMagical 8bit Plug 2やNew DoReFAMI、YM2151はmy2151かchipsynth OPMZが代わりになります
 
-各ツールのバージョンや価格は、2026年10月30日時点の各配布ページの情報に基づいています。掲載している画面の画像の多くは、各ツールの公式ページ（App Storeを含む）や[Lospec](https://lospec.com/software/)から引用しました（BeepBox、JummBox、UltraBox、Slarmoo's Box、FlMML on HTML5、browser-mml-player、NSF2MML、LSDJ Converter、SNDH Playerは実際にサイトを開いて撮影した画像、little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは各作者のXの投稿からの引用、Dn-FamiTrackerはRei8bitさんからご提供いただいた画像です）。
+各ツールのバージョンや価格は、2026年10月30日時点の各配布ページの情報に基づいています。掲載している画面の画像の多くは、各ツールの公式ページ（App Storeを含む）や[Lospec](https://lospec.com/software/)から引用しました（BeepBox、JummBox、UltraBox、Slarmoo's Box、FlMML on HTML5、browser-mml-player、NSF2MML、LSDJ Converter、SNDH Playerは実際にサイトを開いて撮影した画像、little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは各作者のXの投稿からの引用、Dn-FamiTracker、Furnace、furnace-piano-roll、FamiStudio、KiraStudio、OpenMPT、WaveTrackerはRei8bitさんからご提供いただいた画像です）。
 {{< /lang >}}
 
 {{< lang en >}}
@@ -559,22 +559,22 @@ These load in your usual DAW and play like any other instrument.
 You program within the limits of the console's sound chip, which makes it easier to sound like the real thing.
 
 - [**FamiStudio**](https://famistudio.org/) 4.5.3: for the NES. It has a piano roll, so it's approachable even if you've never used a tracker. Windows, Mac, Linux
-  <img src="/img/chiptune-tools/famistudio.webp" alt="FamiStudio screenshot" width="560" height="245" loading="lazy" />
+  <img src="/img/chiptune-tools/famistudio.webp" alt="FamiStudio screenshot" width="560" height="307" loading="lazy" />
 
 - [**KiraStudio**](https://kirastudio.org/) 1.1.2: a new program released in 2026 by FamiStudio's author (BleuBleu). It has a piano roll and offers NES, GAMEBOY and Yamaha FM sound chips, among others. It values ease of use over hardware accuracy. The Windows version is free, and there are also Mac, iPhone, iPad and Android versions
-  <img src="/img/chiptune-tools/kirastudio.webp" alt="KiraStudio screenshot" width="560" height="294" loading="lazy" />
+  <img src="/img/chiptune-tools/kirastudio.webp" alt="KiraStudio screenshot" width="560" height="307" loading="lazy" />
 
 - [**Dn-FamiTracker**](https://github.com/Dn-Programming-Core-Management/Dn-FamiTracker) Dn0.5.3: an NES tracker, descended from FamiTracker. Windows only
   <img src="/img/chiptune-tools/dn-famitracker.webp" alt="Dn-FamiTracker screenshot" width="560" height="315" loading="lazy" />
   - [**Ruikaj's fork**](https://github.com/Ruikaj/Dn-FamiTracker): modified so instrument data is less likely to overflow when exporting NSF. Free, Windows only
 
 - [**Furnace**](https://github.com/tildearrow/furnace) 0.6.8.3: a tracker that supports many sound chips, including the NES, GAMEBOY and Mega Drive. Windows, Mac, Linux
-  <img src="/img/chiptune-tools/furnace.webp" alt="Furnace screenshot" width="560" height="350" loading="lazy" />
+  <img src="/img/chiptune-tools/furnace.webp" alt="Furnace screenshot" width="560" height="307" loading="lazy" />
   - [**furnace-piano-roll**](https://github.com/rednoobmusic/furnace-piano-roll) v14: a fork of Furnace that adds a piano roll and more. Free, Windows, Linux
-    <img src="/img/chiptune-tools/furnace-piano-roll.webp" alt="furnace-piano-roll screenshot" width="560" height="350" loading="lazy" />
+    <img src="/img/chiptune-tools/furnace-piano-roll.webp" alt="furnace-piano-roll screenshot" width="560" height="307" loading="lazy" />
 
 - [**OpenMPT**](https://openmpt.org/) 1.32.11.00: a long-standing tracker that isn't tied to any one console. Windows
-  <img src="/img/chiptune-tools/openmpt.webp" alt="OpenMPT screenshot" width="300" height="202" loading="lazy" />
+  <img src="/img/chiptune-tools/openmpt.webp" alt="OpenMPT screenshot" width="560" height="315" loading="lazy" />
 
 - [**Renoise**](https://www.renoise.com/) 3.5.4: a tracker that works like a DAW, great for making music with samples. It also supports plugins like VSTs. 76 EUR, Windows, Mac, Linux
   <img src="/img/chiptune-tools/renoise.webp" alt="Renoise screenshot" width="560" height="397" loading="lazy" />
@@ -604,7 +604,7 @@ You program within the limits of the console's sound chip, which makes it easier
   <img src="/img/chiptune-tools/osctet.webp" alt="Osctet screenshot" width="560" height="419" loading="lazy" />
 
 - [**WaveTracker**](https://wavetracker.org) v1.1.2: a tracker that plays waveforms you draw yourself (wavetables) and samples. Free (tips welcome), Windows only
-  <img src="/img/chiptune-tools/wavetracker.webp" alt="WaveTracker screenshot" width="400" height="260" loading="lazy" />
+  <img src="/img/chiptune-tools/wavetracker.webp" alt="WaveTracker screenshot" width="560" height="307" loading="lazy" />
 
 - [**DefleMask**](https://www.deflemask.com/): a tracker for many sound chips, including the Mega Drive, Master System, GAMEBOY, PC Engine and NES. 1,700 yen on Steam, with mobile versions too (iOS, Android). An old free version exists but is no longer supported
   <img src="/img/chiptune-tools/deflemask.webp" alt="DefleMask screenshot" width="560" height="315" loading="lazy" />
@@ -965,5 +965,5 @@ For more obscure trackers and tools not covered here, see the wiki pages of the 
 
 - **SANA 8BIT VST** and **VOPM**: both are old 32-bit plugins and often won't run as is in today's DAWs. For NES sounds, Magical 8bit Plug 2 or New DoReFAMI can take their place, and for the YM2151, my2151 or chipsynth OPMZ
 
-Versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). Additionally, screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, FlMML on HTML5, browser-mml-player, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me; those for little-scale's trackers, WebX68k, and NOTE MDX Workbench are from the creators' posts on X; and the Dn-FamiTracker screenshot was kindly provided by Rei8bit.
+Versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). Additionally, screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, FlMML on HTML5, browser-mml-player, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me; those for little-scale's trackers, WebX68k, and NOTE MDX Workbench are from the creators' posts on X; and the screenshots of Dn-FamiTracker, Furnace, furnace-piano-roll, FamiStudio, KiraStudio, OpenMPT and WaveTracker were kindly provided by Rei8bit.
 {{< /lang >}}
