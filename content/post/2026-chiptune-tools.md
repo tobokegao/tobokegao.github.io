@@ -166,6 +166,10 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
   <img src="/img/chiptune-tools/hugetracker.webp" alt="hUGETrackerの画面" width="560" height="311" loading="lazy" />
   <small>画像：[Lospec](https://lospec.com/software/hugetracker/screenshots)より</small>
 
+- [**Trackerboy**](https://github.com/stoneface86/trackerboy) v0.6.6：GAMEBOY用のトラッカー。まだ開発の途中です。無料、Windows（ひとつ前のv0.6.5はMac・Linuxでも使えます）
+  <img src="/img/chiptune-tools/trackerboy.webp" alt="Trackerboyの画面" width="560" height="356" loading="lazy" />
+  <small>画像：[GitHub](https://github.com/stoneface86/trackerboy)より</small>
+
 - [**GTUltra**](https://github.com/jpage8580/GTUltra) v1.5.8：GoatTracker 2（ステレオバージョン）を大きく改造して、機能を増やしたコモドール64（SID）のトラッカー。特別なこだわりがなければ、GoatTracker 2よりこちらがおすすめです（Rei8bitさんのおすすめ）。無料、Windows・Mac・Linux
   <img src="/img/chiptune-tools/gtultra.webp" alt="GTUltraの画面" width="559" height="420" loading="lazy" />
   <small>画像：Rei8bitさん提供</small>
@@ -306,6 +310,14 @@ GAMEBOYやGBA、ファミコン、コモドール64などの実機（または�
 
 - [**Droneboy**](https://github.com/purefunktion/Droneboy) v1.09：GAMEBOYでドローンを鳴らすシンセ。和音やシーケンスも使え、MIDIでも操作できます。無料、カートリッジは26.50ドル（HobbyChop）
 
+- [**mGB**](https://github.com/trash80/mGB)：GAMEBOYを、MIDIで鳴らす音源にするソフト。4つの音を別々に操作できるほか、3音の和音を弾けるポリモードもあります。MIDIはArduinoboyでつなぎます。無料
+  <img src="/img/chiptune-tools/mgb.webp" alt="mGBの画面" width="320" height="288" loading="lazy" />
+  <small>画像：[GitHub](https://github.com/trash80/mGB)より</small>
+
+- [**Rez**](https://web.archive.org/web/20210513211420/https://blog.gg8.se/wordpress/2012/12/11/rez-a-unique-gameboy-synth-rom/)：nitro2k01さんの、レゾナントフィルターのような音を出すGAMEBOY用のシンセ。初代GAMEBOYの実機向けで、エミュレーターならBGBかGambatteが作者のおすすめです。十字キーで音の高さと響きを変え、A・Bボタンで波形を切り替えます。音階には合わせていないので、ほかの楽器と鳴らすときは耳で合わせます。無料（配布ページはInternet Archiveの記録）
+  <img src="/img/chiptune-tools/rez.webp" alt="Rezの画面" width="320" height="288" loading="lazy" />
+  <small>画像：[配布ページ](https://web.archive.org/web/20210513211420/https://blog.gg8.se/wordpress/2012/12/11/rez-a-unique-gameboy-synth-rom/)より</small>
+
 - [**DMGo!**](https://audiowanderer.com/AW/drum-machina-go-or/) v1：GAMEBOYの4チャンネルで鳴らすドラムマシン。2026年9月に出たばかり。無料（寄付可）
   <img src="/img/chiptune-tools/dmgo.webp" alt="DMGo!の画面" width="467" height="420" loading="lazy" />
 
@@ -363,7 +375,7 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 
 ## ブラウザで使えるソフト（無料） {#ja-browser}
 
-インストールなしで、ブラウザを開くだけで作れます。曲はURLに保存されるので、URLを送るだけで共有できます。WAVやMIDIへの書き出しもできます。
+インストールなしで、ブラウザを開くだけで曲を作れます。BeepBoxとその派生バージョンは、曲がURLに保存されるので、URLを送るだけで共有できます。WAVやMIDIへの書き出しもできます。
 
 - [**BeepBox**](https://www.beepbox.co/) 4.2.2：画面のマス目に音を置いていくだけで曲が作れる、いちばんシンプルな作曲ソフト。オフラインバージョンもあります
   <img src="/img/chiptune-tools/beepbox.webp" alt="BeepBoxの画面" width="515" height="420" loading="lazy" />
@@ -382,6 +394,9 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 - [**Bitphase**](https://bitphase.app/)：ブラウザで動く、PSG音源（AY-3-8910・YM2149）とファミコン用のトラッカー。無料
   <img src="/img/chiptune-tools/bitphase.webp" alt="Bitphaseの画面" width="560" height="366" loading="lazy" />
   <small>画像：[GitHub](https://github.com/paator/bitphase)より</small>
+
+- [**GBS Music**](https://music.gbstudio.dev/)：GB Studioを作っているチームによる、GAMEBOYの音で曲を作るソフト。ピアノロールでもトラッカーでも打ち込めて、MIDIキーボードも使えます。曲はhUGETrackerの形式（.uge）で扱い、MP3・FLAC・WAVに書き出せます。無料
+  <img src="/img/chiptune-tools/gbs-music.webp" alt="GBS Musicの画面" width="560" height="348" loading="lazy" />
 
 ## MMLで書くソフト {#ja-mml}
 
@@ -877,6 +892,8 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 - [**GBT Player**](https://github.com/AntonioND/gbt-player) v4.4.1：GAMEBOYやGBAの自作ゲームで曲を鳴らすためのライブラリと変換ツール。無料
 
+- [**famitoneGB**](https://github.com/nesdoug/famitoneGB)：Doug Frakerさんの、FamiTrackerの4チャンネルで書いた曲を、GAMEBOYの自作ゲームで鳴らすライブラリ。無料
+
 - [**SNESMOD**](https://github.com/mukunda-/snesmod)：ITの曲を、スーパーファミコンで鳴らせるデータ（SPC）に変えるツール。無料
   <img src="/img/chiptune-tools/botb-snesmod.webp" alt="SNESMODの画面" width="480" height="360" loading="lazy" />
   <small>画像：[YouTubeの動画](https://www.youtube.com/watch?v=d_ZII9GdDBQ)より</small>
@@ -923,7 +940,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 - **VOPM**：古い32bitのプラグインで、いまのDAWではそのまま使えないことが多いです。osoumenさんによる改良バージョン「VOPMex」なら、64bitのDAWでも使えます。my2151やchipsynth OPMZも代わりになります
 
-各ツールのバージョンや価格は、2026年10月30日時点の各配布ページの情報に基づいています。掲載している画像の多くは、各ツールの公式ページ（App Storeを含む）や[Lospec](https://lospec.com/software/)から引用しました。なお、BeepBox、JummBox、UltraBox、Slarmoo's Box、FlMML on HTML5、NSF2MML、LSDJ Converter、SNDH Playerは実際にサイトを開いて撮影したものです。little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは各作者のX（旧Twitter）の投稿から引用し、Dn-FamiTracker、Furnace、furnace-piano-roll、FamiStudio、KiraStudio、OpenMPT、WaveTracker、GTUltra、SID Factory II、Bamboo Tracker、DefleMask、LabChirpの画像はRei8bitさんからご提供いただきました。機種別の欄の画像は、各ツールのページのほか、Battle of the Bits、Atarimania、pouet.net、Wikipedia、YouTubeの動画のサムネイルなどから引用しました。
+各ツールのバージョンや価格は、2026年10月30日時点の各配布ページの情報に基づいています。掲載している画像の多くは、各ツールの公式ページ（App Storeを含む）や[Lospec](https://lospec.com/software/)から引用しました。なお、BeepBox、JummBox、UltraBox、Slarmoo's Box、GBS Music、FlMML on HTML5、NSF2MML、LSDJ Converter、SNDH Playerは実際にサイトを開いて撮影したものです。little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは各作者のX（旧Twitter）の投稿から引用し、Dn-FamiTracker、Furnace、furnace-piano-roll、FamiStudio、KiraStudio、OpenMPT、WaveTracker、GTUltra、SID Factory II、Bamboo Tracker、DefleMask、LabChirpの画像はRei8bitさんからご提供いただきました。機種別の欄の画像は、各ツールのページのほか、Battle of the Bits、Atarimania、pouet.net、Wikipedia、YouTubeの動画のサムネイルなどから引用しました。
 {{< /lang >}}
 
 {{< lang en >}}
@@ -1086,6 +1103,10 @@ You program within the limits of the console's sound chip, which makes it easier
   <img src="/img/chiptune-tools/hugetracker.webp" alt="hUGETracker screenshot" width="560" height="311" loading="lazy" />
   <small>Image: from [Lospec](https://lospec.com/software/hugetracker/screenshots)</small>
 
+- [**Trackerboy**](https://github.com/stoneface86/trackerboy) v0.6.6: a GAMEBOY tracker, still in early development. Free, Windows (the previous v0.6.5 also runs on Mac and Linux)
+  <img src="/img/chiptune-tools/trackerboy.webp" alt="Trackerboy screenshot" width="560" height="356" loading="lazy" />
+  <small>Image: from [GitHub](https://github.com/stoneface86/trackerboy)</small>
+
 - [**GTUltra**](https://github.com/jpage8580/GTUltra) v1.5.8: a heavily extended version of GoatTracker 2 (Stereo) for the Commodore 64 (SID). Rei8bit recommends this over GoatTracker 2 unless you have a specific reason to use the original. Free, Windows, Mac, Linux
   <img src="/img/chiptune-tools/gtultra.webp" alt="GTUltra screenshot" width="559" height="420" loading="lazy" />
   <small>Image: provided by Rei8bit</small>
@@ -1226,6 +1247,14 @@ These run on real GAMEBOY, GBA, NES, Commodore 64 and other hardware (or an emul
 
 - [**Droneboy**](https://github.com/purefunktion/Droneboy) v1.09: a drone synth for the GAMEBOY with chords, sequencing and MIDI control. Free, cartridge $26.50 (HobbyChop)
 
+- [**mGB**](https://github.com/trash80/mGB): turns a GAMEBOY into a MIDI sound module. You can control the four channels separately, or use poly mode to play three-note chords. Connects via an Arduinoboy. Free
+  <img src="/img/chiptune-tools/mgb.webp" alt="mGB screenshot" width="320" height="288" loading="lazy" />
+  <small>Image: from [GitHub](https://github.com/trash80/mGB)</small>
+
+- [**Rez**](https://web.archive.org/web/20210513211420/https://blog.gg8.se/wordpress/2012/12/11/rez-a-unique-gameboy-synth-rom/): nitro2k01's GAMEBOY synth that imitates a resonant filter. It's meant for a real original GAMEBOY; for emulators, the author suggests BGB or Gambatte. The D-pad changes the pitch and resonance, and the A and B buttons switch the waveform. It isn't tuned to a scale, so tune it by ear when playing with other instruments. Free (download page preserved on the Internet Archive)
+  <img src="/img/chiptune-tools/rez.webp" alt="Rez screenshot" width="320" height="288" loading="lazy" />
+  <small>Image: from [the download page](https://web.archive.org/web/20210513211420/https://blog.gg8.se/wordpress/2012/12/11/rez-a-unique-gameboy-synth-rom/)</small>
+
 - [**DMGo!**](https://audiowanderer.com/AW/drum-machina-go-or/) v1: a drum machine using all four GAMEBOY channels, released in September 2026. Free (donations welcome)
   <img src="/img/chiptune-tools/dmgo.webp" alt="DMGo! screenshot" width="467" height="420" loading="lazy" />
 
@@ -1283,7 +1312,7 @@ Tools for making and playing music for the X68000, PC-9801, PC-8801 and MSX.
 
 ## Browser apps (free) {#en-browser}
 
-Nothing to install: just open a browser and start. Songs are saved in the URL, so sharing a song is as easy as sending its URL. You can also export to WAV or MIDI.
+Nothing to install: just open a browser and start. BeepBox and its offshoots save songs in the URL, so sharing a song is as easy as sending its URL. They can also export to WAV or MIDI.
 
 - [**BeepBox**](https://www.beepbox.co/) 4.2.2: the simplest of them all. You make a song just by placing notes on a grid. There's an offline version too
   <img src="/img/chiptune-tools/beepbox.webp" alt="BeepBox screenshot" width="515" height="420" loading="lazy" />
@@ -1302,6 +1331,9 @@ Nothing to install: just open a browser and start. Songs are saved in the URL, s
 - [**Bitphase**](https://bitphase.app/): a browser tracker for PSG chips (AY-3-8910, YM2149) and the NES. Free
   <img src="/img/chiptune-tools/bitphase.webp" alt="Bitphase screenshot" width="560" height="366" loading="lazy" />
   <small>Image: from [GitHub](https://github.com/paator/bitphase)</small>
+
+- [**GBS Music**](https://music.gbstudio.dev/): a GAMEBOY music editor from the makers of GB Studio. Write in a piano roll or a tracker, with MIDI keyboard input. Songs use the hUGETracker format (.uge) and can be exported to MP3, FLAC or WAV. Free
+  <img src="/img/chiptune-tools/gbs-music.webp" alt="GBS Music screenshot" width="560" height="348" loading="lazy" />
 
 ## Writing music in MML {#en-mml}
 
@@ -1797,6 +1829,8 @@ Trackers and tools listed on the wiki of the chiptune community [Battle of the B
 
 - [**GBT Player**](https://github.com/AntonioND/gbt-player) v4.4.1: libraries and converters for music in GAMEBOY and GBA homebrew. Free
 
+- [**famitoneGB**](https://github.com/nesdoug/famitoneGB): Doug Fraker's library for playing four-channel FamiTracker songs in GAMEBOY homebrew games. Free
+
 - [**SNESMOD**](https://github.com/mukunda-/snesmod): converts IT modules to SNES sound (SPC). Free
   <img src="/img/chiptune-tools/botb-snesmod.webp" alt="SNESMOD screenshot" width="480" height="360" loading="lazy" />
   <small>Image: from [a YouTube video](https://www.youtube.com/watch?v=d_ZII9GdDBQ)</small>
@@ -1843,5 +1877,5 @@ For more obscure trackers and tools not covered here, see the wiki pages of the 
 
 - **VOPM**: an old 32-bit plugin that often won't run as is in today's DAWs. osoumen's VOPMex runs in 64-bit DAWs, and my2151 or chipsynth OPMZ are also great alternatives
 
-Tool versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). The screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, FlMML on HTML5, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me. Screenshots for little-scale's trackers, WebX68k, and NOTE MDX Workbench were sourced from the creators' posts on X, and those for Dn-FamiTracker, Furnace, furnace-piano-roll, FamiStudio, KiraStudio, OpenMPT, WaveTracker, GTUltra, SID Factory II, Bamboo Tracker, DefleMask, and LabChirp were kindly provided by Rei8bit. Images in the by-system section come from each tool's page as well as Battle of the Bits, Atarimania, pouet.net, Wikipedia, and YouTube video thumbnails.
+Tool versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). The screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, GBS Music, FlMML on HTML5, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me. Screenshots for little-scale's trackers, WebX68k, and NOTE MDX Workbench were sourced from the creators' posts on X, and those for Dn-FamiTracker, Furnace, furnace-piano-roll, FamiStudio, KiraStudio, OpenMPT, WaveTracker, GTUltra, SID Factory II, Bamboo Tracker, DefleMask, and LabChirp were kindly provided by Rei8bit. Images in the by-system section come from each tool's page as well as Battle of the Bits, Atarimania, pouet.net, Wikipedia, and YouTube video thumbnails.
 {{< /lang >}}
