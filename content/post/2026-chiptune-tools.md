@@ -6,6 +6,8 @@ description: プラグイン、トラッカー、ハードウェア、ブラウ�
 description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser tools, and sample packs, all updated with their latest versions.
 ---
 
+{{< tool-filter >}}
+
 {{< lang ja >}}
 梅干茶漬けさんのブログ「あじたまのーと」の2021年の記事「[ピコピコ音楽の制作に役立つ音源10選](https://blog.ajitama-note.com/entry/2021/03/06/215656)」と、thetaさんの[ソフトウェアのページ](https://ss1.xrea.com/theta.s57.xrea.com/software/)をもとに、ほかのツールも足して、最新のバージョンに合わせてまとめ直しました。
 
@@ -584,7 +586,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 - **SNES Game Sound System** v1.42：スーパーファミコンの自作ゲーム用に、曲と効果音を作るためのトラッカーとドライバーのセット。Windowsのみ
   <img src="/img/chiptune-tools/shiru-snesgss.webp" alt="SNES Game Sound Systemの画面" width="560" height="383" loading="lazy" />
 
-- **SnevenTracker mod**：スーパーファミコン用のトラッカー「SnevenTracker」を改造したもの
+- **SnevenTracker mod**：SN76489用のトラッカー「SnevenTracker」を改造したもの
 
 - **0CC-LLTracker**：0CC-FamiTrackerをもとに、FM音源チップ「YM2413（OPLL）」の音を鳴らせるようにしたもの
 
@@ -1620,7 +1622,7 @@ Music tools released by Shiru, all downloadable from [Shiru's software page](htt
 - **SNES Game Sound System** v1.42: a tracker and sound driver set for making music and sound effects for SNES homebrew games. Windows only
   <img src="/img/chiptune-tools/shiru-snesgss.webp" alt="SNES Game Sound System screenshot" width="560" height="383" loading="lazy" />
 
-- **SnevenTracker mod**: a modified version of the SNES tracker SnevenTracker
+- **SnevenTracker mod**: a modified version of SnevenTracker, a tracker for the SN76489
 
 - **0CC-LLTracker**: 0CC-FamiTracker retargeted to the YM2413 (OPLL) FM chip
 

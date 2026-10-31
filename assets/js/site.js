@@ -470,6 +470,118 @@
       applyLog();
     }
 
+    // Tool list in a post: tag buttons and a text search (0044).
+    var toolBox = document.getElementById("tool-filter");
+    var toolData = document.getElementById("tool-tags");
+    if (toolBox && toolData) {
+      var toolTags = {};
+      JSON.parse(toolData.textContent).forEach(function (t) {
+        toolTags[t.name + "\t" + (t.url || "")] = t.tags;
+        if (t.name_en) toolTags[t.name_en + "\t" + (t.url || "")] = t.tags;
+      });
+      var toolPage = toolBox.parentNode;
+      var toolUnits = [];
+      var toolGroups = [];
+      var toolTocs = toolPage.querySelectorAll(".toc");
+      toolPage.querySelectorAll(":scope > [data-l]").forEach(function (block) {
+        // A group is a heading and what follows it, up to the next heading.
+        var group = null, h2 = null;
+        Array.prototype.forEach.call(block.children, function (el) {
+          if (el.tagName === "H2" || el.tagName === "H3") {
+            group = { els: [], units: 0, h2: el.tagName === "H3" ? h2 : null };
+            if (el.tagName === "H2") h2 = group;
+            toolGroups.push(group);
+          }
+          if (group) group.els.push(el);
+          if (!group || el.tagName !== "UL") return;
+          el.querySelectorAll("li").forEach(function (li) {
+            var strong = li.querySelector("strong");
+            if (!strong || li.textContent.trim().indexOf(strong.textContent) !== 0) return;
+            var link = strong.closest("a");
+            // Markdown has curled the apostrophes in the names.
+            var name = strong.textContent.replace(/’/g, "'");
+            var tags = toolTags[name + "\t" + (link ? link.getAttribute("href") : "")];
+            if (tags) toolUnits.push({ li: li, tags: tags, group: group, lang: block.dataset.l, text: li.textContent.toLowerCase() });
+          });
+        });
+      });
+      toolUnits.forEach(function (u) {
+        var up = u.li.parentNode.closest("li");
+        u.parent = toolUnits.filter(function (p) { return p.li === up; })[0] || null;
+      });
+      var toolButtons = toolBox.querySelectorAll(".chip[data-tag]");
+      var toolSearch = document.getElementById("tool-search");
+      var toolReset = document.getElementById("tool-reset");
+      var toolCount = document.getElementById("tool-count");
+      var toolEmpty = document.getElementById("tool-empty");
+      var toolOn = function (b) { return b.getAttribute("aria-pressed") === "true"; };
+      var applyTools = function () {
+        var q = toolSearch.value.trim().toLowerCase();
+        var picked = {};
+        var names = [];
+        toolButtons.forEach(function (b) {
+          if (!toolOn(b)) return;
+          (picked[b.dataset.axis] = picked[b.dataset.axis] || []).push(b.dataset.tag);
+          names.push(b.dataset.tag);
+        });
+        var active = !!(q || names.length);
+        toolUnits.forEach(function (u) {
+          u.ok = !q || u.text.indexOf(q) !== -1;
+          Object.keys(picked).forEach(function (axis) {
+            u.ok = u.ok && picked[axis].some(function (t) { return u.tags.indexOf(t) !== -1; });
+          });
+          u.show = u.ok;
+        });
+        // A tool stays with its parent, so a match inside a list keeps the item it hangs from.
+        toolUnits.forEach(function (u) {
+          for (var p = u.parent; u.ok && p; p = p.parent) p.show = true;
+        });
+        toolGroups.forEach(function (g) { g.units = 0; });
+        var shown = 0;
+        var lang = root.dataset.lang === "en" ? "en" : "ja";
+        toolUnits.forEach(function (u) {
+          u.li.hidden = !u.show;
+          if (u.show) {
+            u.group.units++;
+            if (u.group.h2) u.group.h2.units++;
+          }
+          if (u.ok && u.lang === lang) shown++;
+        });
+        toolGroups.forEach(function (g) {
+          g.els.forEach(function (el) { el.hidden = active && !g.units; });
+        });
+        toolTocs.forEach(function (t) { t.hidden = active; });
+        toolCount.textContent = shown + (lang === "en" ? " items" : " 件");
+        toolEmpty.hidden = shown !== 0;
+        toolReset.hidden = !active;
+        var url = new URL(location.href);
+        url.searchParams.delete("tags");
+        url.searchParams.delete("q");
+        if (names.length) url.searchParams.set("tags", names.join(","));
+        if (q) url.searchParams.set("q", q);
+        history.replaceState(history.state, "", url);
+      };
+      var toolParams = new URLSearchParams(location.search);
+      var toolStart = (toolParams.get("tags") || "").split(",");
+      toolButtons.forEach(function (b) {
+        if (toolStart.indexOf(b.dataset.tag) !== -1) b.setAttribute("aria-pressed", "true");
+        b.addEventListener("click", function () {
+          b.setAttribute("aria-pressed", String(!toolOn(b)));
+          applyTools();
+        });
+      });
+      toolSearch.value = toolParams.get("q") || "";
+      toolSearch.addEventListener("input", applyTools);
+      toolReset.addEventListener("click", function () {
+        toolButtons.forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
+        toolSearch.value = "";
+        applyTools();
+      });
+      toolBox.hidden = false;
+      langHooks.push(applyTools);
+      applyTools();
+    }
+
     // Home windows fold up with the [-] / [+] box on their border; each one is remembered
     // per browser.
     document.querySelectorAll(".win__toggle").forEach(function (b) {

@@ -1,0 +1,24 @@
+{{- /* Tag buttons and a text search over the tools in a post (0044). Hidden until site.js wakes it, so the list reads whole without scripts. */ -}}
+{{- $d := hugo.Data.chiptune_tools -}}
+<div class="toolf" id="tool-filter" hidden>
+  <div class="toolf__axes">
+  {{- range $d.axis }}
+    <div class="toolf__axis" role="group" aria-labelledby="tool-axis-{{ .key }}">
+      <div class="toolf__name" id="tool-axis-{{ .key }}"><span data-l="ja">{{ .ja }}</span><span data-l="en" lang="en">{{ .en }}</span></div>
+      <div class="filters filters--tool">
+      {{- $axis := .key }}{{ range .tags }}
+        <button type="button" class="btn chip chip--check" data-axis="{{ $axis }}" data-tag="{{ .id }}" aria-pressed="false"><span data-l="ja">{{ .ja }}</span><span data-l="en" lang="en">{{ .en }}</span></button>
+      {{- end }}
+      </div>
+    </div>
+  {{- end }}
+  </div>
+  <div class="search">
+    <label for="tool-search">{{ partial "t.html" "search" }}</label>
+    <input id="tool-search" type="search" autocomplete="off">
+    <output for="tool-search" id="tool-count"></output>
+    <button type="button" class="btn" id="tool-reset" hidden><span data-l="ja">条件を消す</span><span data-l="en" lang="en">Clear</span></button>
+  </div>
+  <p class="log__empty" id="tool-empty" hidden>{{ partial "t.html" "noResults" }}</p>
+</div>
+<script type="application/json" id="tool-tags">{{ $d.tool | jsonify | safeJS }}</script>

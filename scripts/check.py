@@ -370,6 +370,35 @@ def check_json(r: Result) -> None:
             r.ng.append(f"JSON が読めない data/{p.name}: {e}")
 
 
+def check_tools(r: Result) -> None:
+    """Every tool in the tools post needs tags, in both languages (0044)."""
+    data = tomllib.loads((ROOT / "data/chiptune_tools.toml").read_text("utf-8"))
+    known = {t["id"]: a["key"] for a in data["axis"] for t in a["tags"]}
+    kinds = {t["id"] for a in data["axis"] if a["key"] == "kind" for t in a["tags"]}
+    entries = {}
+    for t in data["tool"]:
+        for name in {t["name"], t.get("name_en", t["name"])}:
+            entries[(name, t.get("url", ""))] = t
+        if not set(t["tags"]) & kinds:
+            r.ng.append(f"ツールの種類のタグがない: {t['name']}")
+        for tag in set(t["tags"]) - set(known):
+            r.ng.append(f"知らないタグ {tag}: {t['name']}")
+    text = (ROOT / "content/post/2026-chiptune-tools.md").read_text("utf-8")
+    item = re.compile(r"^\s*- \[?\*\*(.+?)\*\*(?:\]\(([^)]+)\))?", re.M)
+    seen = set()
+    for block in re.findall(r"\{\{< lang \w+ >\}\}(.*?)\{\{< /lang >\}\}", text, re.S):
+        # the list of tools ends where the reading list starts
+        tools = re.split(r"^## .*\{#\w+-more\}", block, flags=re.M)[0]
+        for name, url in item.findall(tools):
+            if (name, url) in entries:
+                seen.add(id(entries[(name, url)]))
+            else:
+                r.ng.append(f"タグのないツール: {name}（data/chiptune_tools.toml に足す）")
+    for t in data["tool"]:
+        if id(t) not in seen:
+            r.ng.append(f"記事にないツールのタグ: {t['name']}")
+
+
 def check_images(r: Result, added: set[str] | None) -> None:
     try:
         from PIL import Image
@@ -570,6 +599,8 @@ def main() -> int:
             jobs.append(("版", lambda r: check_ban(r, changed)))
     if touched(r"^data/.*\.json$"):
         jobs.append(("JSON", check_json))
+    if touched(r"^(content/post/2026-chiptune-tools\.md|data/chiptune_tools\.toml)$"):
+        jobs.append(("ツールのタグ", check_tools))
     if touched(r"^static/img/"):
         jobs.append(("画像", lambda r: check_images(r, added)))
     doubles = [p for _, _, ps in SAME_LINE for p in ps] + [p for e in SAME_LIST for p, _ in e[1]]

@@ -1,0 +1,1383 @@
+# Tags for the tools in content/post/2026-chiptune-tools.md (0044). The article stays the source
+# of the text; this file only sorts it. check.py stops the build if a tool has no entry here.
+# An entry is found by its bold name and link, so edit both places together. name_en is there
+# only when the English name differs. A tool needs a tag from "kind"; the other axes are
+# left out when they say nothing (a plugin for no chip in particular has no chip tag).
+
+[[axis]]
+key = "kind"
+ja = "種類"
+en = "Type"
+tags = [
+  { id = "plugin", ja = "プラグイン", en = "Plugins" },
+  { id = "effect", ja = "エフェクト", en = "Effects" },
+  { id = "tracker", ja = "トラッカー・作曲ソフト", en = "Trackers and music software" },
+  { id = "mml", ja = "MML", en = "MML" },
+  { id = "hardware", ja = "ハードウェア", en = "Hardware" },
+  { id = "samples", ja = "サンプルパック", en = "Sample packs" },
+  { id = "sfx", ja = "効果音", en = "Sound effects" },
+  { id = "tool", ja = "再生・変換・補助", en = "Players and utilities" },
+  { id = "legacy", ja = "昔のプラグイン", en = "Older plugins" },
+]
+
+[[axis]]
+key = "chip"
+ja = "音源"
+en = "Sound"
+tags = [
+  { id = "nes", ja = "ファミコン", en = "NES" },
+  { id = "gb", ja = "GAMEBOY", en = "GAMEBOY" },
+  { id = "sid", ja = "SID", en = "SID" },
+  { id = "fm", ja = "FM音源", en = "FM" },
+  { id = "psg", ja = "PSG", en = "PSG" },
+  { id = "snes", ja = "スーパーファミコン", en = "SNES" },
+  { id = "sega", ja = "セガ", en = "Sega" },
+  { id = "amiga", ja = "Amiga", en = "Amiga" },
+  { id = "atari", ja = "Atari", en = "Atari" },
+  { id = "msx", ja = "MSX", en = "MSX" },
+  { id = "jpc", ja = "X68000・PC-98", en = "X68000 / PC-98" },
+]
+
+[[axis]]
+key = "os"
+ja = "動く場所"
+en = "Runs on"
+tags = [
+  { id = "win", ja = "Windows", en = "Windows" },
+  { id = "mac", ja = "Mac", en = "Mac" },
+  { id = "linux", ja = "Linux", en = "Linux" },
+  { id = "phone", ja = "スマホ", en = "Mobile" },
+  { id = "web", ja = "ブラウザ", en = "Browser" },
+  { id = "real", ja = "実機", en = "Real hardware" },
+]
+
+[[axis]]
+key = "price"
+ja = "値段"
+en = "Price"
+tags = [
+  { id = "free", ja = "無料", en = "Free" },
+  { id = "paid", ja = "有料", en = "Paid" },
+]
+
+[[tool]]
+name = "Magical 8bit Plug 2"
+url = "https://ymck.net/app/magical-8bit-plug"
+tags = ["plugin", "nes", "win", "mac", "free"]
+
+[[tool]]
+name = "Magical FDS Plug"
+url = "https://ymck.net/app/magical-fds-plug/"
+tags = ["plugin", "nes", "win", "mac", "free"]
+
+[[tool]]
+name = "New DoReFAMI"
+url = "https://ss1.xrea.com/theta.s57.xrea.com/software/#newdorefami"
+tags = ["plugin", "nes", "win", "free"]
+
+[[tool]]
+name = "Twin DoReFAMI"
+url = "https://ss1.xrea.com/theta.s57.xrea.com/software/#twindorefami"
+tags = ["plugin", "gb", "win", "free"]
+
+[[tool]]
+name = "Soraboy"
+url = "https://shadowsora211.itch.io/soraboy"
+tags = ["plugin", "gb", "win", "mac", "free"]
+
+[[tool]]
+name = "SANA 8BIT VST"
+url = "https://github.com/m-masaki72/SANA_8BIT_VST"
+tags = ["plugin", "win", "mac", "free"]
+
+[[tool]]
+name = "C700"
+url = "https://github.com/osoumen/C700"
+tags = ["plugin", "snes", "win", "mac", "free"]
+
+[[tool]]
+name = "VOPMex"
+url = "http://picopicose.com/software.html"
+tags = ["plugin", "fm", "jpc", "win", "mac", "free"]
+
+[[tool]]
+name = "OPNA FM Synth"
+url = "https://trpico.booth.pm/items/8351023"
+tags = ["plugin", "fm", "win", "free"]
+
+[[tool]]
+name = "Deltanizer"
+url = "https://ss1.xrea.com/theta.s57.xrea.com/software/#deltanizer"
+tags = ["effect", "nes", "win", "free"]
+
+[[tool]]
+name = "Interruptor"
+url = "https://ss1.xrea.com/theta.s57.xrea.com/software/#interruptor"
+tags = ["effect", "win", "free"]
+
+[[tool]]
+name = "chipcrusher"
+url = "https://www.plogue.com/products/chipcrusher.html"
+tags = ["effect", "nes", "snes", "paid"]
+
+[[tool]]
+name = "FamiStudio"
+url = "https://famistudio.org/"
+tags = ["tracker", "nes", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "KiraStudio"
+url = "https://kirastudio.org/"
+tags = ["tracker", "nes", "gb", "fm", "win", "mac", "phone", "free", "paid"]
+
+[[tool]]
+name = "Dn-FamiTracker"
+url = "https://github.com/Dn-Programming-Core-Management/Dn-FamiTracker"
+tags = ["tracker", "nes", "win", "free"]
+
+[[tool]]
+name = "Furnace"
+url = "https://github.com/tildearrow/furnace"
+tags = ["tracker", "nes", "gb", "sid", "fm", "psg", "snes", "sega", "amiga", "msx", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "furnace-piano-roll"
+url = "https://github.com/rednoobmusic/furnace-piano-roll"
+tags = ["tracker", "nes", "gb", "sid", "fm", "psg", "snes", "sega", "amiga", "msx", "win", "linux", "free"]
+
+[[tool]]
+name = "OpenMPT"
+url = "https://openmpt.org/"
+tags = ["tracker", "win", "free"]
+
+[[tool]]
+name = "Renoise"
+url = "https://www.renoise.com/"
+tags = ["tracker", "win", "mac", "linux", "paid"]
+
+[[tool]]
+name = "PICO-8"
+url = "https://www.lexaloffle.com/pico-8.php"
+tags = ["tracker", "win", "mac", "linux", "paid"]
+
+[[tool]]
+name = "TIC-80"
+url = "https://tic80.com/"
+tags = ["tracker", "win", "mac", "linux", "phone", "web", "free"]
+
+[[tool]]
+name = "ピストンコラージュ"
+name_en = "Piston Collage"
+url = "https://pxtone.org/downloads/"
+tags = ["tracker", "win", "free"]
+
+[[tool]]
+name = "ptcollab"
+url = "https://yuxshao.github.io/ptcollab/"
+tags = ["tracker", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "Bamboo Tracker"
+url = "https://bambootracker.github.io/BambooTracker/"
+tags = ["tracker", "fm", "jpc", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "Arkos Tracker 3"
+url = "https://www.julien-nevo.com/arkostracker/"
+tags = ["tracker", "psg", "atari", "msx", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "Vortex Tracker"
+url = "https://github.com/benbaker76/VortexTracker"
+tags = ["tracker", "psg", "win", "free"]
+
+[[tool]]
+name = "Osctet"
+url = "https://jangle.dev/osctet/"
+tags = ["tracker", "win", "linux", "free"]
+
+[[tool]]
+name = "WaveTracker"
+url = "https://wavetracker.org"
+tags = ["tracker", "win", "free"]
+
+[[tool]]
+name = "DefleMask"
+url = "https://www.deflemask.com/"
+tags = ["tracker", "nes", "gb", "fm", "psg", "sega", "win", "mac", "linux", "phone", "paid"]
+
+[[tool]]
+name = "MilkyTracker"
+url = "https://milkytracker.org/"
+tags = ["tracker", "amiga", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "Schism Tracker"
+url = "https://schismtracker.org/"
+tags = ["tracker", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "SunVox"
+url = "https://warmplace.ru/soft/sunvox/"
+tags = ["tracker", "win", "mac", "linux", "phone", "free"]
+
+[[tool]]
+name = "Bosca Ceoil Blue"
+url = "https://yurisizov.itch.io/boscaceoil-blue"
+tags = ["tracker", "win", "mac", "linux", "web", "free"]
+
+[[tool]]
+name = "hUGETracker"
+url = "https://superdisk.github.io/hUGETracker/"
+tags = ["tracker", "gb", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "Trackerboy"
+url = "https://github.com/stoneface86/trackerboy"
+tags = ["tracker", "gb", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "GTUltra"
+url = "https://github.com/jpage8580/GTUltra"
+tags = ["tracker", "sid", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "GoatTracker 2"
+url = "https://sourceforge.net/projects/goattracker2/"
+tags = ["tracker", "sid", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "SID Factory II"
+url = "https://github.com/Chordian/sidfactory2"
+tags = ["tracker", "sid", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "PIRORO"
+url = "https://store.steampowered.com/app/2905900/PIRORO/"
+tags = ["tracker", "gb", "win", "paid"]
+
+[[tool]]
+name = "メキメキボーイ"
+name_en = "MEKIMEKI BOY (メキメキボーイ)"
+url = "https://amuru9.wixsite.com/my-site/mekimeki-chip"
+tags = ["tracker", "gb", "win", "free"]
+
+[[tool]]
+name = "Lovely Composer"
+url = "https://booth.pm/ja/items/3006558"
+tags = ["tracker", "win", "linux", "paid"]
+
+[[tool]]
+name = "DR-00M"
+url = "https://uniko-art.itch.io/dr-00m"
+tags = ["tracker", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "LSDj"
+url = "https://www.littlesounddj.com/"
+tags = ["tracker", "gb", "real", "free"]
+
+[[tool]]
+name = "Risa"
+url = "https://risa.laamaa.fi/"
+tags = ["tracker", "nes", "real", "free"]
+
+[[tool]]
+name = "genmddj"
+url = "https://github.com/little-scale/genmddj"
+tags = ["tracker", "sega", "real", "free"]
+
+[[tool]]
+name = "smsggdj"
+url = "https://github.com/little-scale/smsggdj"
+tags = ["tracker", "sega", "real", "free"]
+
+[[tool]]
+name = "sndj"
+url = "https://github.com/little-scale/sndj"
+tags = ["tracker", "snes", "real", "free"]
+
+[[tool]]
+name = "alynxdj"
+url = "https://github.com/little-scale/alynxdj"
+tags = ["tracker", "atari", "real", "free"]
+
+[[tool]]
+name = "PocketTracker"
+url = "https://conanizer.github.io/pockettracker/"
+tags = ["tracker", "phone", "free"]
+
+[[tool]]
+name = "ChipNomad"
+url = "https://chipnomad.org/"
+tags = ["tracker", "psg", "msx", "win", "mac", "linux", "phone", "free"]
+
+[[tool]]
+name = "M8 Tracker Model:02"
+url = "https://dirtywave.com/"
+tags = ["hardware", "real", "paid"]
+
+[[tool]]
+name = "M8 Headless"
+url = "https://github.com/Dirtywave/M8HeadlessFirmware"
+tags = ["hardware", "real", "free"]
+
+[[tool]]
+name = "M8 Music Tracker"
+url = "https://apps.apple.com/jp/app/m8-music-tracker/id6806721202"
+tags = ["hardware", "phone", "paid"]
+
+[[tool]]
+name = "picoTracker"
+url = "https://xiphonics.com/"
+tags = ["hardware", "fm", "real", "paid"]
+
+[[tool]]
+name = "MIDISID"
+url = "https://peacockmedia.software/midisid/"
+tags = ["hardware", "sid", "real", "paid"]
+
+[[tool]]
+name = "LIVEN MEGA SYNTHESIS"
+url = "https://ja.sonicware.jp/pages/liven-mega-synthesis"
+tags = ["hardware", "fm", "real", "paid"]
+
+[[tool]]
+name = "NullPerator"
+url = "https://203.io/products/operator-deposit"
+tags = ["hardware", "phone", "real", "paid"]
+
+[[tool]]
+name = "LAVIOR AURA"
+url = "https://hmfactory.jp/aura/"
+tags = ["hardware", "sid", "psg", "win", "real"]
+
+[[tool]]
+name = "nanoloop"
+url = "https://nanoloop.com/"
+tags = ["tracker", "gb", "phone", "real", "paid"]
+
+[[tool]]
+name = "naive tracker"
+url = "https://nanoloop.com/naive/index.html"
+tags = ["tracker", "phone", "paid"]
+
+[[tool]]
+name = "snibbetracker"
+url = "https://apps.apple.com/jp/app/snibbetracker/id1065797528"
+tags = ["tracker", "win", "mac", "phone", "free"]
+
+[[tool]]
+name = "SidTracker64"
+url = "https://apps.apple.com/jp/app/sidtracker64/id955421205"
+tags = ["tracker", "sid", "phone", "paid"]
+
+[[tool]]
+name = "GTMobile"
+url = "https://github.com/2bt/GTMobile"
+tags = ["tracker", "sid", "phone", "free"]
+
+[[tool]]
+name = "Pocket Acid"
+url = "https://github.com/boomlinde/pocketacid"
+tags = ["tracker", "win", "linux", "free"]
+
+[[tool]]
+name = "4TRKmini"
+url = "https://jasonbmusic.itch.io/4trk-mini"
+tags = ["tracker", "amiga", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "ESPboy Tracker"
+url = "http://shiru.nedopc.com/software.shtml"
+tags = ["tracker", "win", "real", "free"]
+
+[[tool]]
+name = "FMS"
+url = "https://lobit-club.itch.io/fms"
+tags = ["tracker", "gb", "fm", "real", "paid"]
+
+[[tool]]
+name = "STEPPER"
+url = "https://badd10de.itch.io/stepper-gba"
+tags = ["tracker", "gb", "real", "free"]
+
+[[tool]]
+name = "GB303 MIDI"
+url = "https://zerabosk.itch.io/gb303midi"
+tags = ["tracker", "gb", "real", "paid"]
+
+[[tool]]
+name = "STUTTER"
+url = "https://stutter.hobbychop.com/"
+tags = ["tracker", "gb", "real", "paid"]
+
+[[tool]]
+name = "Merzboy"
+url = "https://github.com/purefunktion/Merzboy"
+tags = ["tracker", "gb", "real", "free"]
+
+[[tool]]
+name = "Droneboy"
+url = "https://github.com/purefunktion/Droneboy"
+tags = ["tracker", "gb", "real", "free"]
+
+[[tool]]
+name = "mGB"
+url = "https://github.com/trash80/mGB"
+tags = ["tracker", "gb", "real", "free"]
+
+[[tool]]
+name = "Rez"
+url = "https://web.archive.org/web/20210513211420/https://blog.gg8.se/wordpress/2012/12/11/rez-a-unique-gameboy-synth-rom/"
+tags = ["tracker", "gb", "real", "free"]
+
+[[tool]]
+name = "DMGo!"
+url = "https://audiowanderer.com/AW/drum-machina-go-or/"
+tags = ["tracker", "gb", "real", "free"]
+
+[[tool]]
+name = "Neil BaldwinさんのNESのツール"
+name_en = "Neil Baldwin's NES tools"
+url = "https://neilbaldwin.codeberg.page/nes-audio/index.html"
+tags = ["tracker", "nes", "real", "free"]
+
+[[tool]]
+name = "SID-Wizard"
+url = "https://csdb.dk/release/?id=262561"
+tags = ["tracker", "sid", "real", "free"]
+
+[[tool]]
+name = "MiniSEQ"
+url = "https://4mat.itch.io/miniseq"
+tags = ["tracker", "sid", "real", "free"]
+
+[[tool]]
+name = "Patchwork"
+url = "https://4mat.itch.io/patchwork"
+tags = ["tracker", "sid", "real", "free"]
+
+[[tool]]
+name = "SIDLab"
+url = "https://4mat.itch.io/sidlab"
+tags = ["tracker", "sid", "real", "free"]
+
+[[tool]]
+name = "SID SYNTH"
+url = "https://lukhash.bandcamp.com/album/neon-airlines"
+tags = ["tracker", "sid", "real", "paid"]
+
+[[tool]]
+name = "Realfun 3"
+url = "https://www.msx.org/node/60323"
+tags = ["tracker", "psg", "msx", "real"]
+
+[[tool]]
+name = "QuadTrack"
+url = "https://pinkparrotstudio.itch.io/quadtrack"
+tags = ["tracker", "amiga", "win", "mac", "real", "paid"]
+
+[[tool]]
+name = "WebX68k"
+url = "https://uraraworks.github.io/WebX68k/"
+tags = ["tool", "jpc", "web", "free"]
+
+[[tool]]
+name = "NOTE MDX Workbench"
+url = "https://github.com/ickaze/NOTE-MDX-Workbench"
+tags = ["mml", "fm", "jpc", "win", "free"]
+
+[[tool]]
+name = "PDXEditor"
+url = "https://github.com/ickaze/PDXEditor"
+tags = ["tool", "jpc", "win", "free"]
+
+[[tool]]
+name = "NoteMDX"
+url = "https://github.com/ickaze/noteMDX"
+tags = ["mml", "jpc", "win", "free"]
+
+[[tool]]
+name = "IndependentMDX"
+url = "https://github.com/ickaze/IndependentMDX"
+tags = ["tool", "fm", "jpc", "win", "free"]
+
+[[tool]]
+name = "OPMChord"
+url = "https://github.com/ickaze/OPMChord"
+tags = ["tool", "fm", "win", "free"]
+
+[[tool]]
+name = "mxv2"
+url = "https://github.com/gorry/mxv2"
+tags = ["tool", "fm", "jpc", "win", "phone", "free"]
+
+[[tool]]
+name = "VGMDRV"
+url = "https://sites.google.com/site/waveknife7/vgmdrv"
+tags = ["tool", "fm", "sega", "jpc", "free"]
+
+[[tool]]
+name = "NDP"
+url = "https://ndp.squares.net/web/"
+tags = ["mml", "psg", "msx", "win", "web", "real", "free"]
+
+[[tool]]
+name = "MSXPLAYer"
+url = "https://msxplayer.net/wp/"
+tags = ["tool", "msx", "win"]
+
+[[tool]]
+name = "BeepBox"
+url = "https://www.beepbox.co/"
+tags = ["tracker", "web", "free"]
+
+[[tool]]
+name = "JummBox"
+url = "https://jummb.us/"
+tags = ["tracker", "web", "free"]
+
+[[tool]]
+name = "UltraBox"
+url = "https://ultraabox.github.io/"
+tags = ["tracker", "web", "free"]
+
+[[tool]]
+name = "Slarmoo's Box"
+url = "https://slarmoo.github.io/slarmoosbox/"
+tags = ["tracker", "web", "free"]
+
+[[tool]]
+name = "Efflux"
+url = "https://www.igorski.nl/application/efflux/"
+tags = ["tracker", "web", "free"]
+
+[[tool]]
+name = "Bitphase"
+url = "https://bitphase.app/"
+tags = ["tracker", "nes", "psg", "web", "free"]
+
+[[tool]]
+name = "GBS Music"
+url = "https://music.gbstudio.dev/"
+tags = ["tracker", "gb", "web", "free"]
+
+[[tool]]
+name = "FlMML on HTML5"
+url = "https://github.com/argentum384/flmml-on-html5"
+tags = ["mml", "web", "free"]
+
+[[tool]]
+name = "FAMIC on USB MML Playground"
+url = "https://famic.prioris.jp/mml/"
+tags = ["mml", "web", "free"]
+
+[[tool]]
+name = "NSF2MML"
+url = "https://famic.prioris.jp/mml/labo/nsf2mml"
+tags = ["mml", "nes", "web", "free"]
+
+[[tool]]
+name = "GameBoy Music Compiler（GBMC）"
+name_en = "GameBoy Music Compiler (GBMC)"
+url = "http://mydocuments.g2.xrea.com/html/gb/sounddriver.html"
+tags = ["mml", "gb", "win", "real", "free"]
+
+[[tool]]
+name = "mml2vgm"
+url = "https://github.com/kuma4649/mml2vgm"
+tags = ["mml", "nes", "gb", "fm", "sega", "win", "free"]
+
+[[tool]]
+name = "MDPlayer"
+url = "https://github.com/kuma4649/MDPlayer"
+tags = ["mml", "nes", "gb", "sid", "fm", "jpc", "win", "free"]
+
+[[tool]]
+name = "SiON"
+url = "https://github.com/keim/SiON"
+tags = ["mml", "free"]
+
+[[tool]]
+name = "PMD"
+url = "http://www5.airnet.ne.jp/kajapon/tool.html"
+tags = ["mml", "fm", "jpc", "win", "free"]
+
+[[tool]]
+name = "NSD.Lib"
+url = "https://shaw02.github.io/nsdlib/"
+tags = ["mml", "nes", "win", "free"]
+
+[[tool]]
+name = "OFGS2tm"
+url = "https://x.com/EightbitMays/status/2086505645629718736"
+tags = ["mml", "nes", "free"]
+
+[[tool]]
+name = "Plogueの音源"
+name_en = "Plogue's instruments"
+url = "https://www.plogue.com/products/"
+tags = ["plugin", "nes", "gb", "sid", "fm", "snes", "sega", "win", "mac", "linux", "paid"]
+
+[[tool]]
+name = "my2151"
+url = "https://booth.pm/ja/items/8292567"
+tags = ["plugin", "fm", "win", "paid"]
+
+[[tool]]
+name = "Junior"
+url = "https://fors.fm/junior"
+tags = ["plugin", "gb", "win", "mac", "linux", "paid"]
+
+[[tool]]
+name = "inSIDious"
+url = "https://impactsoundworks.com/product/insidious/"
+tags = ["plugin", "sid", "paid"]
+
+[[tool]]
+name = "BitBoy"
+url = "https://plugins4free.com/plugin/253/"
+tags = ["plugin", "legacy", "win", "free"]
+
+[[tool]]
+name = "pooBoy 2"
+url = "https://web.archive.org/web/20260513175227/https://woolyss.com/chipmusic/chipmusic-plugins/pooBoy_2.zip"
+tags = ["plugin", "legacy", "gb", "win", "free"]
+
+[[tool]]
+name = "Retro Boy"
+url = "https://plugins4free.com/plugin/1852/"
+tags = ["plugin", "legacy", "win", "free"]
+
+[[tool]]
+name = "Peach"
+url = "https://plugins4free.com/plugin/1775"
+tags = ["plugin", "legacy", "nes", "win", "free"]
+
+[[tool]]
+name = "Triforce"
+url = "https://plugins4free.com/plugin/1781"
+tags = ["plugin", "legacy", "nes", "win", "free"]
+
+[[tool]]
+name = "Toad"
+url = "https://plugins4free.com/plugin/257"
+tags = ["plugin", "legacy", "nes", "win", "free"]
+
+[[tool]]
+name = "Magical 8bit Plug（初代）"
+name_en = "Magical 8bit Plug (original)"
+url = "https://ymck.net/app/magical-8bit-plug"
+tags = ["plugin", "legacy", "win", "mac", "free"]
+
+[[tool]]
+name = "NES VST"
+url = "https://www.mattmontag.com/projects-page/nintendo-vst"
+tags = ["plugin", "legacy", "nes", "win", "free"]
+
+[[tool]]
+name = "Pure6581"
+url = "https://web.archive.org/web/20260116132555/https://woolyss.com/chipmusic/chipmusic-plugins/Pure6581.zip"
+tags = ["plugin", "legacy", "sid", "win", "free"]
+
+[[tool]]
+name = "miniSID"
+url = "https://delamanchavst.wordpress.com/2013/10/21/minisid/"
+tags = ["plugin", "legacy", "sid", "win", "free"]
+
+[[tool]]
+name = "38911 Bytes"
+url = "https://plugins4free.com/plugin/1377/"
+tags = ["plugin", "legacy", "sid", "win", "free"]
+
+[[tool]]
+name = "DrSid"
+url = "https://plugins4free.com/plugin/1384/"
+tags = ["plugin", "legacy", "sid", "win", "free"]
+
+[[tool]]
+name = "Bleep"
+url = "https://plugins4free.com/plugin/1105/"
+tags = ["plugin", "legacy", "sid", "win", "free"]
+
+[[tool]]
+name = "ymVST"
+url = "http://www.preromanbritain.com/ymvst/"
+tags = ["plugin", "legacy", "psg", "atari", "win", "free"]
+
+[[tool]]
+name = "vst2413"
+url = "https://github.com/keijiro/vst2413"
+tags = ["plugin", "legacy", "fm", "sega", "msx", "win", "free"]
+
+[[tool]]
+name = "JuceOPLVSTi"
+url = "https://github.com/bsutherland/JuceOPLVSTi"
+tags = ["plugin", "legacy", "fm", "win", "free"]
+
+[[tool]]
+name = "Chip32"
+url = "https://plugins4free.com/plugin/1067"
+tags = ["plugin", "legacy", "msx", "win", "mac", "free"]
+
+[[tool]]
+name = "LM358N"
+url = "/dl/LM358N-vst.zip"
+tags = ["effect", "legacy", "win", "free"]
+
+[[tool]]
+name = "Bitkits"
+url = "https://www.uppercussion.com/products/bitkits"
+tags = ["samples", "free"]
+
+[[tool]]
+name = "Shirobon Presents: Chiptune for Serum"
+url = "https://shirobon.bandcamp.com/album/shirobon-presents-chiptune-for-serum"
+tags = ["samples", "gb", "paid"]
+
+[[tool]]
+name = "Super Audio Cart 2"
+url = "https://impactsoundworks.com/product/super-audio-cart/"
+tags = ["samples", "nes", "gb", "sid", "snes", "sega", "atari", "paid"]
+
+[[tool]]
+name = "sfxr"
+url = "https://www.drpetter.se/project_sfxr.html"
+tags = ["sfx", "win", "web", "free"]
+
+[[tool]]
+name = "Bfxr"
+url = "https://www.bfxr.net/"
+tags = ["sfx", "web", "free"]
+
+[[tool]]
+name = "ChipTone"
+url = "https://sfbgames.itch.io/chiptone"
+tags = ["sfx", "win", "mac", "web", "free"]
+
+[[tool]]
+name = "LabChirp"
+url = "https://labbed.net/software/labchirp/"
+tags = ["sfx", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "LSDJ Converter"
+url = "https://defensemech.com/lsdj-to-midi"
+tags = ["tool", "web", "free"]
+
+[[tool]]
+name = "rePlayer"
+url = "https://github.com/arnaud-neny/rePlayer"
+tags = ["tool", "win", "free"]
+
+[[tool]]
+name = "Open Cubic Player"
+url = "https://stian.cubic.org/project-ocp.php"
+tags = ["tool", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "SNDH Player"
+url = "https://sndh.oxygenedemos.com/"
+tags = ["tool", "atari", "web", "free"]
+
+[[tool]]
+name = "Rustico"
+url = "https://rustico.reploid.cafe/"
+tags = ["tool", "nes", "web", "free"]
+
+[[tool]]
+name = "Keitai World Launcher"
+url = "https://keitaiarchive.org/downloads.html"
+tags = ["tool", "win", "free"]
+
+[[tool]]
+name = "1tracker"
+tags = ["tracker", "psg", "win", "free"]
+
+[[tool]]
+name = "SNES Game Sound System"
+tags = ["tracker", "snes", "win", "free"]
+
+[[tool]]
+name = "SnevenTracker mod"
+tags = ["tracker", "sega", "free"]
+
+[[tool]]
+name = "0CC-LLTracker"
+tags = ["tracker", "nes", "fm", "free"]
+
+[[tool]]
+name = "Yach*PMS"
+tags = ["tracker", "win", "free"]
+
+[[tool]]
+name = "AYFX Editor"
+tags = ["sfx", "psg", "win", "free"]
+
+[[tool]]
+name = "BeepFX"
+tags = ["sfx", "psg", "win", "free"]
+
+[[tool]]
+name = "NSF2VGM"
+tags = ["tool", "nes", "free"]
+
+[[tool]]
+name = "SuBoard"
+tags = ["tool", "nes", "free"]
+
+[[tool]]
+name = "VSTプラグイン"
+name_en = "VST plugins"
+tags = ["plugin", "nes", "psg", "win", "free"]
+
+[[tool]]
+name = "SoundFont"
+name_en = "SoundFonts"
+tags = ["samples", "psg", "free"]
+
+[[tool]]
+name = "Adlib Tracker II"
+url = "https://adlibtracker.net/downloads.php"
+tags = ["tracker", "fm", "win", "linux", "real", "free"]
+
+[[tool]]
+name = "Reality Adlib Tracker (RAD 2)"
+url = "https://www.pouet.net/prod.php?which=75963"
+tags = ["tracker", "fm", "win", "mac", "real", "free"]
+
+[[tool]]
+name = "Faust Music Creator"
+url = "https://www.pouet.net/prod.php?which=55235"
+tags = ["tracker", "fm", "real"]
+
+[[tool]]
+name = "Scream Tracker 3"
+url = "https://www.pouet.net/prod.php?which=13351"
+tags = ["tracker", "fm", "real"]
+
+[[tool]]
+name = "AMusic"
+tags = ["tracker", "fm"]
+
+[[tool]]
+name = "ProTracker 2 clone (pt2-clone)"
+url = "https://16-bits.org/pt.php"
+tags = ["tracker", "amiga", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "HivelyTracker"
+url = "https://github.com/pete-gordon/hivelytracker"
+tags = ["tracker", "amiga", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "ProTracker"
+url = "https://en.wikipedia.org/wiki/Protracker"
+tags = ["tracker", "amiga"]
+
+[[tool]]
+name = "AHX Tracker"
+url = "http://amigascne.org/abyss/ahx/"
+tags = ["tracker", "amiga"]
+
+[[tool]]
+name = "DigiBooster 3"
+url = "http://www.digibooster.de/en/"
+tags = ["tracker", "amiga"]
+
+[[tool]]
+name = "OctaMED"
+url = "https://en.wikipedia.org/wiki/OctaMED"
+tags = ["tracker", "amiga"]
+
+[[tool]]
+name = "PreTracker"
+url = "https://www.pouet.net/prod.php?which=91409"
+tags = ["tracker", "amiga", "win", "free"]
+
+[[tool]]
+name = "TIATracker"
+url = "https://bitbucket.org/kylearan/tiatracker"
+tags = ["tracker", "atari", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "LoopCart"
+url = "https://www.qotile.net/loopcart.html"
+tags = ["tracker", "atari", "real"]
+
+[[tool]]
+name = "maxYMiser"
+url = "https://www.preromanbritain.com/maxymiser/"
+tags = ["tracker", "psg", "atari", "real", "free"]
+
+[[tool]]
+name = "MusicMon"
+url = "https://dhs.nu/files.php?t=single&ID=52"
+tags = ["tracker", "atari", "real"]
+
+[[tool]]
+name = "PSG Tracker"
+url = "https://www.atarimania.com/games/atari-st-utilities-psg-tracker-22030"
+tags = ["tracker", "psg", "atari"]
+
+[[tool]]
+name = "The Music Studio"
+url = "https://www.atarimania.com/games/atari-st-utilities-music-studio-the-36357"
+tags = ["tracker", "atari"]
+
+[[tool]]
+name = "Quartet"
+url = "https://www.atarimania.com/games/atari-st-utilities-quartet-29599"
+tags = ["tracker", "atari"]
+
+[[tool]]
+name = "Audio Sculpture"
+url = "https://www.atarimania.com/games/atari-st-utilities-audio-sculpture-25173"
+tags = ["tracker", "atari"]
+
+[[tool]]
+name = "TCB Tracker"
+url = "https://www.atarimania.com/games/atari-st-utilities-tcb-tracker-31405"
+tags = ["tracker", "atari"]
+
+[[tool]]
+name = "ProTracker ST"
+url = "https://www.atarimania.com/games/atari-st-utilities-protracker-st-30690"
+tags = ["tracker", "atari"]
+
+[[tool]]
+name = "The Empire Noisetracker (ST-NoiseTracker)"
+url = "https://www.atarimania.com/games/atari-st-utilities-empire-noisetracker-the-30689"
+tags = ["tracker", "atari"]
+
+[[tool]]
+name = "The HMS Soundtracker"
+url = "https://www.atarimania.com/games/atari-st-utilities-hms-soundtracker-the-23807"
+tags = ["tracker", "atari"]
+
+[[tool]]
+name = "Hyper Sound Digital"
+url = "https://www.atarimania.com/games/atari-st-utilities-hyper-sound-digital-27492"
+tags = ["tracker", "atari"]
+
+[[tool]]
+name = "Raster Music Tracker"
+url = "http://raster.infos.cz/atari/rmt/rmt.htm"
+tags = ["tracker", "atari", "win", "free"]
+
+[[tool]]
+name = "Chaos Music Composer"
+url = "https://atariki.krap.pl/index.php/Chaos_Music_Composer"
+tags = ["tracker", "atari", "real"]
+
+[[tool]]
+name = "Delta Music Composer"
+url = "https://atariki.krap.pl/index.php/Delta_Music_Composer"
+tags = ["tracker", "atari"]
+
+[[tool]]
+name = "Music ProTracker"
+url = "https://atariki.krap.pl/index.php/Music_ProTracker"
+tags = ["tracker", "atari"]
+
+[[tool]]
+name = "Theta Music Composer"
+url = "https://atariki.krap.pl/index.php/Theta_Music_Composer"
+tags = ["tracker", "atari"]
+
+[[tool]]
+name = "Music Composer"
+url = "https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-music-composer-15784"
+tags = ["tracker", "atari", "real"]
+
+[[tool]]
+name = "Advanced MusicSystem"
+url = "https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-advanced-musicsystem-27136"
+tags = ["tracker", "atari"]
+
+[[tool]]
+name = "Sound Editor"
+url = "https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-sound-editor-29817"
+tags = ["tracker", "atari"]
+
+[[tool]]
+name = "Music Construction Set"
+url = "https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-music-construction-set-14317"
+tags = ["tracker", "atari"]
+
+[[tool]]
+name = "Bank Street MusicWriter"
+url = "https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-bank-street-musicwriter-29755"
+tags = ["tracker", "atari"]
+
+[[tool]]
+name = "The Music Studio"
+url = "https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-music-studio-the-14318"
+tags = ["tracker", "atari"]
+
+[[tool]]
+name = "The Rhythm Composer"
+url = "https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-rhythm-composer-the-30576"
+tags = ["tracker", "atari"]
+
+[[tool]]
+name = "Sound Tracker"
+url = "https://www.atarimania.com/games/atari-400-800-xl-xe-utilities-sound-tracker-30280"
+tags = ["tracker", "atari"]
+
+[[tool]]
+name = "FT2 clone (ft2-clone)"
+url = "https://16-bits.org/ft2.php"
+tags = ["tracker", "win", "mac", "linux", "real", "free"]
+
+[[tool]]
+name = "FastTracker II"
+url = "https://www.pouet.net/prod.php?which=13350"
+tags = ["tracker", "real"]
+
+[[tool]]
+name = "Impulse Tracker"
+url = "https://en.wikipedia.org/wiki/Impulse_Tracker"
+tags = ["tracker", "real"]
+
+[[tool]]
+name = "ChibiTracker"
+url = "https://sourceforge.net/projects/chibitracker.berlios/files"
+tags = ["tracker", "real"]
+
+[[tool]]
+name = "Composer 669"
+url = "https://www.pouet.net/prod.php?which=63357"
+tags = ["tracker", "real"]
+
+[[tool]]
+name = "CheeseCutter"
+url = "https://github.com/theyamo/CheeseCutter"
+tags = ["tracker", "sid", "win", "linux", "free"]
+
+[[tool]]
+name = "DMC (Demo Music Creator)"
+url = "http://tnd64.unikat.sk/music_scene.html"
+tags = ["tracker", "sid", "real"]
+
+[[tool]]
+name = "mah-tracker"
+url = "https://github.com/AnnoyedArt1256/mah-tracker"
+tags = ["tracker", "sid", "real", "free"]
+
+[[tool]]
+name = "Blackbird"
+url = "https://linusakesson.net/software/blackbird/index.php"
+tags = ["tracker", "sid", "real", "free"]
+
+[[tool]]
+name = "Fake SID"
+url = "https://github.com/2bt/fakesid"
+tags = ["tracker", "sid", "win", "phone", "free"]
+
+[[tool]]
+name = "GoatFM (Goattracker 2 FM)"
+url = "https://xentax.org/index.php/goatfm"
+tags = ["tracker", "sid", "fm", "win", "real"]
+
+[[tool]]
+name = "SIDwinder"
+url = "https://github.com/trident64/SIDwinder"
+tags = ["tool", "sid", "free"]
+
+[[tool]]
+name = "Carillon Editor"
+url = "http://gbdev.gg8.se/files/musictools/Aleksi%20Eeben/Carillon%20Editor.zip"
+tags = ["tracker", "gb", "real"]
+
+[[tool]]
+name = "Paragon5"
+url = "http://www.nullsleep.com/programs/p5_tracker.zip"
+tags = ["tracker", "gb", "win"]
+
+[[tool]]
+name = "BoyScout"
+url = "https://www.gbadev.org/tools.php?showinfo=187"
+tags = ["tracker", "gb", "win"]
+
+[[tool]]
+name = "Fatass Tracker"
+url = "http://jeremyevers.com/fatass/"
+tags = ["tracker", "gb", "real"]
+
+[[tool]]
+name = "Furious Advance Tracker"
+url = "https://github.com/cbrouillard/furiousadvancetracker"
+tags = ["tracker", "gb"]
+
+[[tool]]
+name = "M4G Tracker"
+url = "http://web.archive.org/web/20160524034134/http://m4gtracker.stereoboom.com:80/"
+tags = ["tracker", "gb"]
+
+[[tool]]
+name = "Ditty Editor"
+tags = ["tracker", "gb"]
+
+[[tool]]
+name = "j0CC-FamiTracker"
+url = "https://github.com/nyanpasu64/j0CC-FamiTracker"
+tags = ["tracker", "nes"]
+
+[[tool]]
+name = "NerdTracker II"
+url = "https://www.nesdev.org/nt2/"
+tags = ["tracker", "nes", "real"]
+
+[[tool]]
+name = "NesTracker"
+url = "https://www.pouet.net/prod.php?which=56165"
+tags = ["tracker", "nes"]
+
+[[tool]]
+name = "Musetracker"
+url = "https://files.scene.org/view/resources/music/trackers/musetracker-v15.zip"
+tags = ["tracker", "nes"]
+
+[[tool]]
+name = "Genny"
+url = "https://github.com/superjoebob/genny"
+tags = ["plugin", "fm", "sega", "win", "free"]
+
+[[tool]]
+name = "Mod2PSG2"
+url = "https://www.smspower.org/Music/Mod2PSG2"
+tags = ["tracker", "psg", "sega"]
+
+[[tool]]
+name = "SnevenTracker"
+url = "https://github.com/HertzDevil/SnevenTracker"
+tags = ["tracker", "sega"]
+
+[[tool]]
+name = "VGM Music Maker"
+url = "http://shiru.untergrund.net/"
+tags = ["tracker", "fm", "psg", "sega"]
+
+[[tool]]
+name = "TFM Music Maker"
+url = "http://shiru.untergrund.net/"
+tags = ["tracker", "fm", "sega"]
+
+[[tool]]
+name = "Beepola"
+url = "https://freestuff.grok.co.uk/beepola/"
+tags = ["tracker", "psg", "win", "free"]
+
+[[tool]]
+name = "Sound-Tracker (ZX)"
+url = "https://spectrumcomputing.co.uk/alt/25080/ZX-Spectrum/Soundtracker"
+tags = ["tracker", "psg", "real"]
+
+[[tool]]
+name = "SQ-Tracker"
+url = "https://worldofspectrum.org/archive/software/utilities/sq-tracker-proxima-software"
+tags = ["tracker", "psg", "real"]
+
+[[tool]]
+name = "baby-k (vixxen20)"
+url = "https://langel.github.io/vixxen20/"
+tags = ["tracker", "web", "free"]
+
+[[tool]]
+name = "VIC-TRACKER"
+url = "http://www.kahlin.net/daniel/victracker/"
+tags = ["tracker", "real"]
+
+[[tool]]
+name = "NitroTracker"
+url = "https://github.com/0xtob/nitrotracker"
+tags = ["tracker", "real"]
+
+[[tool]]
+name = "KORG DS-10"
+url = "https://en.wikipedia.org/wiki/KORG_DS-10"
+tags = ["tracker", "phone", "real"]
+
+[[tool]]
+name = "Mario Paint Composer DS"
+url = "https://github.com/DerrickGold/MarioPaintComposer-NDS"
+tags = ["tracker", "real"]
+
+[[tool]]
+name = "ProteinDS"
+tags = ["tracker", "real"]
+
+[[tool]]
+name = "Seno DS"
+tags = ["tracker", "real"]
+
+[[tool]]
+name = "Sleizsa Trio"
+url = "https://github.com/utz82/SleizsaTrio"
+tags = ["tracker", "web", "free"]
+
+[[tool]]
+name = "Sleizsa"
+url = "https://web.archive.org/web/20170926123546/http://average.truechiptilldeath.com/channelf/sleizsa_v0_31.zip"
+tags = ["tracker"]
+
+[[tool]]
+name = "Sleizsa Duo"
+url = "https://github.com/utz82/SleizsaDuo"
+tags = ["tracker"]
+
+[[tool]]
+name = "Mario Sequencer"
+url = "https://github.com/minghai/MarioSequencer"
+tags = ["tracker", "win", "web"]
+
+[[tool]]
+name = "LittleGPTracker (Little Piggy Tracker)"
+url = "https://github.com/djdiskmachine/LittleGPTracker"
+tags = ["tracker", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "ProTrekkr"
+url = "https://github.com/hitchhikr/protrekkr"
+tags = ["tracker", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "klystrack"
+url = "https://kometbomb.github.io/klystrack/"
+tags = ["tracker", "nes", "sid", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "Radium"
+url = "https://radium.dog/"
+tags = ["tracker", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "Polyend Tracker"
+url = "https://polyend.com/tracker/"
+tags = ["hardware", "real"]
+
+[[tool]]
+name = "prototracker-opll"
+url = "https://github.com/kometbomb/prototracker-opll"
+tags = ["tracker", "fm", "msx", "free"]
+
+[[tool]]
+name = "bambooCopy"
+url = "https://github.com/nobuyukinyuu/bambooCopy"
+tags = ["tool", "fm", "win", "free"]
+
+[[tool]]
+name = "HuSIC"
+url = "https://github.com/BouKiCHi/HuSIC"
+tags = ["mml", "free"]
+
+[[tool]]
+name = "XPMCK"
+url = "http://jiggawatt.org/muzak/xpmck/"
+tags = ["mml", "gb", "sid", "sega"]
+
+[[tool]]
+name = "athtune"
+url = "http://ftp.modland.com/pub/software/trackers/Windows/Athtune/"
+tags = ["mml"]
+
+[[tool]]
+name = "NDS BGMFILER"
+tags = ["mml"]
+
+[[tool]]
+name = "mmlsid"
+url = "https://github.com/h-o-soft/mmlsid"
+tags = ["mml", "free"]
+
+[[tool]]
+name = "Nite (Nokia Internal Tune Editor)"
+url = "http://onj3.andrelouis.com/phonetones/Software%20and%20Soundbanks/Software/Nokia/Nokia%20Internal%20Tune%20Editor.zip"
+tags = ["tracker"]
+
+[[tool]]
+name = "Nokia PC Composer"
+tags = ["tracker", "win"]
+
+[[tool]]
+name = "CMX Studio"
+tags = ["tracker", "win"]
+
+[[tool]]
+name = "ATS-MA SMAF tools"
+tags = ["tracker", "win"]
+
+[[tool]]
+name = "LSDPatch"
+url = "https://github.com/jkotlinski/lsdpatch"
+tags = ["tool", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "GBT Player"
+url = "https://github.com/AntonioND/gbt-player"
+tags = ["tool", "gb", "free"]
+
+[[tool]]
+name = "famitoneGB"
+url = "https://github.com/nesdoug/famitoneGB"
+tags = ["tool", "gb", "free"]
+
+[[tool]]
+name = "SNESMOD"
+url = "https://github.com/mukunda-/snesmod"
+tags = ["tool", "snes", "free"]
+
+[[tool]]
+name = "Maxmod"
+url = "https://maxmod.org/"
+tags = ["tool", "gb", "free"]
+
+[[tool]]
+name = "NSFPlay"
+url = "https://bbbradsmith.github.io/nsfplay/"
+tags = ["tool", "nes", "win", "free"]
+
+[[tool]]
+name = "FMPMD2000"
+url = "http://c60.la.coocan.jp/fmpmd.html"
+tags = ["tool", "fm", "jpc", "win", "free"]
+
+[[tool]]
+name = "it2nsf"
+url = "https://github.com/mukunda-/it2nsf"
+tags = ["tool", "nes"]
+
+[[tool]]
+name = "s3m2nsf"
+url = "https://github.com/mukunda-/s3m2nsf"
+tags = ["tool", "nes"]
+
+[[tool]]
+name = "it2vgm.py"
+url = "http://web.archive.org/web/20101123045821/http://pubacc.wilcox-tech.com/~greaser/stuff/it2vgm.py.txt"
+tags = ["tool", "fm"]
+
+[[tool]]
+name = "FTM2GBMC"
+url = "https://github.com/Savestate2A03/FTM2GBMC"
+tags = ["tool", "nes", "gb"]
+
+[[tool]]
+name = "VirtuaNSF"
+url = "http://virtuanes.s1.xrea.com/"
+tags = ["tool", "nes"]
+
+[[tool]]
+name = "hoot"
+url = "http://dmpsoft.s17.xrea.com/hoot/"
+tags = ["tool", "win"]
+
+[[tool]]
+name = "Mumml"
+tags = ["tool", "win"]
+
+[[tool]]
+name = "OpenSPC"
+tags = ["tool", "win", "real"]

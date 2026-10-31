@@ -649,6 +649,17 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .posts time { font: var(--dot) var(--f-dot); color: var(--ink-dim); margin-right: 12px; }
 .filters { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 0 0 28px; }
 .filters--log { margin-bottom: 16px; }
+.toolf { margin: 0 0 24px; padding: 12px; border: 2px solid var(--frame); background: var(--win-2); }
+.toolf[hidden], .prose [hidden] { display: none; }
+.toolf__axes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.toolf__axis { padding: 8px 12px 12px; background: var(--win); border: 2px solid; border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md); }
+.toolf__name { font: var(--dot)/2 var(--f-dot); color: var(--hi); }
+.toolf__name::before { content: "■ "; color: var(--mark); }
+.toolf .search { margin: 12px 0 0; }
+.filters--tool { gap: 4px 12px; margin: 0; }
+@media (max-width: 640px) { .toolf__axes { grid-template-columns: minmax(0, 1fr); } }
+.chip--check::before { content: "[ ] "; }
+.chip--check[aria-pressed="true"]::before { content: "[x] "; }
 .chip .count { margin-left: 6px; opacity: .7; }
 .search { display: flex; align-items: center; gap: 8px; margin: 0 0 22px; font: var(--dot)/1 var(--f-dot); }
 .search label { color: var(--ink-dim); white-space: nowrap; }
