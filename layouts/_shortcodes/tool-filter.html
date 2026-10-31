@@ -1,7 +1,8 @@
 {{- /* Tag buttons and a text search over the tools in a post (0044). Hidden until site.js wakes it, so the list reads whole without scripts. */ -}}
 {{- $d := hugo.Data.chiptune_tools -}}
 <div class="toolf" id="tool-filter" hidden>
-  <div class="toolf__axes">
+  <button type="button" class="btn chip chip--fold" id="tool-fold" aria-expanded="false" aria-controls="tool-axes"><span data-l="ja">絞り込む</span><span data-l="en" lang="en">Filter</span><span class="count" id="tool-picked"></span></button>
+  <div class="toolf__axes" id="tool-axes">
   {{- range $d.axis }}
     <div class="toolf__axis" role="group" aria-labelledby="tool-axis-{{ .key }}">
       <div class="toolf__name" id="tool-axis-{{ .key }}"><span data-l="ja">{{ .ja }}</span><span data-l="en" lang="en">{{ .en }}</span></div>

@@ -657,7 +657,14 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .toolf__name::before { content: "■ "; color: var(--mark); }
 .toolf .search { margin: 12px 0 0; }
 .filters--tool { gap: 4px 12px; margin: 0; }
-@media (max-width: 640px) { .toolf__axes { grid-template-columns: minmax(0, 1fr); } }
+.chip--fold { display: none; }
+.chip--fold::before { content: "[+] "; }
+.chip--fold[aria-expanded="true"]::before { content: "[-] "; }
+@media (max-width: 640px) {
+  .toolf__axes { grid-template-columns: minmax(0, 1fr); margin-top: 12px; }
+  .chip--fold { display: inline-block; }
+  .chip--fold[aria-expanded="false"] + .toolf__axes { display: none; }
+}
 .chip--check::before { content: "[ ] "; }
 .chip--check[aria-pressed="true"]::before { content: "[x] "; }
 .chip .count { margin-left: 6px; opacity: .7; }

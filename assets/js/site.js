@@ -514,6 +514,8 @@
       var toolReset = document.getElementById("tool-reset");
       var toolCount = document.getElementById("tool-count");
       var toolEmpty = document.getElementById("tool-empty");
+      var toolFold = document.getElementById("tool-fold");
+      var toolPicked = document.getElementById("tool-picked");
       var toolOn = function (b) { return b.getAttribute("aria-pressed") === "true"; };
       var applyTools = function () {
         var q = toolSearch.value.trim().toLowerCase();
@@ -557,6 +559,7 @@
         toolCount.textContent = shown + (lang === "en" ? " items" : " 件");
         toolEmpty.hidden = shown !== 0;
         toolReset.hidden = !active;
+        toolPicked.textContent = names.length ? String(names.length) : "";
         var url = new URL(location.href);
         url.searchParams.delete("tags");
         url.searchParams.delete("q");
@@ -572,6 +575,11 @@
           b.setAttribute("aria-pressed", String(!toolOn(b)));
           applyTools();
         });
+      });
+      // Only phones see this button: there the choices start folded, unless a link picked some.
+      toolFold.setAttribute("aria-expanded", String(!!toolParams.get("tags")));
+      toolFold.addEventListener("click", function () {
+        toolFold.setAttribute("aria-expanded", String(toolFold.getAttribute("aria-expanded") !== "true"));
       });
       toolSearch.value = toolParams.get("q") || "";
       toolSearch.addEventListener("input", applyTools);
