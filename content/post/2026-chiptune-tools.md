@@ -1,9 +1,9 @@
 ---
-title: チップチューンづくりのおすすめツール（2026年10月版）
-title_en: Recommended Chiptune Tools (October 2026)
+title: チップチューンづくりのおすすめツール
+title_en: Recommended Chiptune Tools
 date: 2026-10-30
-description: プラグイン、トラッカー、ハードウェア、ブラウザのソフト、サンプルパックまで、最新バージョンでまとめ直しました
-description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser tools, and sample packs, all updated with their latest versions.
+description: プラグイン、トラッカー、ハードウェア、ブラウザで使えるツール、サンプルパックまで、最新バージョンでまとめ直しました（2026年10月31日更新）
+description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-based tools, and sample packs, all updated with their latest versions. Last updated October 31, 2026.
 ---
 
 {{< tool-filter >}}
@@ -405,8 +405,11 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 
 曲を文字（MML）で書いて鳴らす方法です。
 
-- [**FlMML on HTML5**](https://github.com/argentum384/flmml-on-html5) v2.0.3：Flashで動いていたMMLプレイヤー「FlMML」をブラウザで動くようにしたもの。WAVにも書き出せます。無料
+- [**FlMML on HTML5**](https://github.com/argentum384/flmml-on-html5) v2.0.3：Flashで動いていたMMLプレイヤー「FlMML」をブラウザで動くようにしたもの。WAVにも書き出せます。FlMMLで作った曲は、ニコニコ大百科の掲示板にある「[ピコカキコ](https://dic.nicovideo.jp/a/%E3%83%94%E3%82%B3%E3%82%AB%E3%82%AD%E3%82%B3)」機能を使って投稿できます。無料
   <img src="/img/chiptune-tools/flmml.webp" alt="FlMML on HTML5の画面" width="560" height="350" loading="lazy" />
+
+- [**MMLxr**](https://mersenne-sister.github.io/mmlxr/)：FlMMLやピコカキコの曲を、音符の並び（ピアノロール）を見ながら作れるブラウザ用のエディター。ピアノロールからMMLの本文に移れます。「現状最強環境」と、れねさんもおすすめしています。パソコン向け。無料
+  <img src="/img/chiptune-tools/mmlxr.webp" alt="MMLxrの画面" width="341" height="420" loading="lazy" />
 
 - [**FAMIC on USB MML Playground**](https://famic.prioris.jp/mml/)：ブラウザでMMLを書いて鳴らせるページ。電子楽器「FAMIC on USB」に曲を書きこむこともできます。無料
   <img src="/img/chiptune-tools/famicmml.webp" alt="FAMIC on USB MML Playgroundの画面" width="560" height="294" loading="lazy" />
@@ -870,11 +873,11 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
   <img src="/img/chiptune-tools/botb-sneven.webp" alt="SnevenTrackerの画面" width="480" height="360" loading="lazy" />
   <small>画像：[YouTubeの動画](https://www.youtube.com/watch?v=5N7ym-jQNUg)より</small>
 
-- [**VGM Music Maker**](http://shiru.untergrund.net/)：メガドライブのFM音源とPSG用の、VGMを書き出せるトラッカー。今ならFurnaceかDefleMask
+- [**VGM Music Maker**](http://ftp.modland.com/pub/software/trackers/Windows/VGM%20Music%20Maker/)：メガドライブのFM音源とPSG用の、VGMを書き出せるトラッカー。今ならFurnaceかDefleMask
   <img src="/img/chiptune-tools/botb-vgmmm.webp" alt="VGM Music Makerの画面" width="480" height="360" loading="lazy" />
   <small>画像：[YouTubeの動画](https://www.youtube.com/watch?v=InvoZSQp_gg)より</small>
 
-- [**TFM Music Maker**](http://shiru.untergrund.net/)：メガドライブのFM音源（YM2612）用の、VGMを書き出せるトラッカー。今ならFurnaceかDefleMask
+- [**TFM Music Maker**](http://ftp.modland.com/pub/software/trackers/Windows/TFM%20Music%20Maker/)：メガドライブのFM音源（YM2612）用の、VGMを書き出せるトラッカー。今ならFurnaceかDefleMask
   <img src="/img/chiptune-tools/botb-tfmmm.webp" alt="TFM Music Makerの画面" width="300" height="300" loading="lazy" />
   <small>画像：[pouet.net](https://www.pouet.net/prod.php?which=53467)より</small>
 
@@ -1041,7 +1044,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 - **VOPM**：古い32bitのプラグインで、いまのDAWではそのまま使えないことが多いです。osoumenさんによる改良バージョン「VOPMex」なら、64bitのDAWでも使えます。my2151やchipsynth OPMZも代わりになります
 
-各ツールのバージョンや価格は、2026年10月30日時点の各配布ページの情報に基づいています。掲載している画像の多くは、各ツールの公式ページ（App Storeを含む）や[Lospec](https://lospec.com/software/)から引用しました。なお、BeepBox、JummBox、UltraBox、Slarmoo's Box、GBS Music、FlMML on HTML5、NSF2MML、LSDJ Converter、SNDH Playerは実際にサイトを開いて撮影したものです。little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは各作者のX（旧Twitter）の投稿から引用し、Dn-FamiTracker、Furnace、furnace-piano-roll、FamiStudio、KiraStudio、OpenMPT、WaveTracker、GTUltra、SID Factory II、Bamboo Tracker、DefleMask、LabChirpの画像はRei8bitさんからご提供いただきました。機種別の欄の画像は、各ツールのページのほか、Battle of the Bits、Atarimania、pouet.net、Wikipedia、YouTubeの動画のサムネイルなどから引用しました。
+各ツールのバージョンや価格は、2026年10月30日時点の各配布ページの情報に基づいています。掲載している画像の多くは、各ツールの公式ページ（App Storeを含む）や[Lospec](https://lospec.com/software/)から引用しました。なお、BeepBox、JummBox、UltraBox、Slarmoo's Box、GBS Music、FlMML on HTML5、MMLxr、NSF2MML、LSDJ Converter、SNDH Playerは実際にサイトを開いて撮影したものです。little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは各作者のX（旧Twitter）の投稿から引用し、Dn-FamiTracker、Furnace、furnace-piano-roll、FamiStudio、KiraStudio、OpenMPT、WaveTracker、GTUltra、SID Factory II、Bamboo Tracker、DefleMask、LabChirpの画像はRei8bitさんからご提供いただきました。機種別の欄の画像は、各ツールのページのほか、Battle of the Bits、Atarimania、pouet.net、Wikipedia、YouTubeの動画のサムネイルなどから引用しました。
 {{< /lang >}}
 
 {{< lang en >}}
@@ -1441,8 +1444,11 @@ Nothing to install: just open a browser and start. BeepBox and its offshoots sav
 
 Write songs as text (MML) and play them.
 
-- [**FlMML on HTML5**](https://github.com/argentum384/flmml-on-html5) v2.0.3: the Flash MML player FlMML, brought to the browser, with WAV export. Free
+- [**FlMML on HTML5**](https://github.com/argentum384/flmml-on-html5) v2.0.3: the Flash MML player FlMML, brought to the browser, with WAV export. You can share your FlMML music on Niconico Pedia forum threads using the "[Pikokakiko](https://dic.nicovideo.jp/a/%E3%83%94%E3%82%B3%E3%82%AB%E3%82%AD%E3%82%B3)" feature. Free
   <img src="/img/chiptune-tools/flmml.webp" alt="FlMML on HTML5 screenshot" width="560" height="350" loading="lazy" />
+
+- [**MMLxr**](https://mersenne-sister.github.io/mmlxr/): a browser-based editor for FlMML and Pikokakiko music. It has a piano roll that lets you jump to the MML text. Rene also recommends it as the go-to tool for writing FlMML. Desktop only. Free
+  <img src="/img/chiptune-tools/mmlxr.webp" alt="MMLxr screenshot" width="341" height="420" loading="lazy" />
 
 - [**FAMIC on USB MML Playground**](https://famic.prioris.jp/mml/): a page for writing and playing MML in the browser, which can also send songs to the FAMIC on USB device. Free
   <img src="/img/chiptune-tools/famicmml.webp" alt="FAMIC on USB MML Playground screenshot" width="560" height="294" loading="lazy" />
@@ -1906,11 +1912,11 @@ Here are trackers and tools listed on the wiki of the chiptune community [Battle
   <img src="/img/chiptune-tools/botb-sneven.webp" alt="SnevenTracker screenshot" width="480" height="360" loading="lazy" />
   <small>Image: from [a YouTube video](https://www.youtube.com/watch?v=5N7ym-jQNUg)</small>
 
-- [**VGM Music Maker**](http://shiru.untergrund.net/): a tracker for the Mega Drive FM and PSG that exports VGM. Today, use Furnace or DefleMask
+- [**VGM Music Maker**](http://ftp.modland.com/pub/software/trackers/Windows/VGM%20Music%20Maker/): a tracker for the Mega Drive FM and PSG that exports VGM. Today, use Furnace or DefleMask
   <img src="/img/chiptune-tools/botb-vgmmm.webp" alt="VGM Music Maker screenshot" width="480" height="360" loading="lazy" />
   <small>Image: from [a YouTube video](https://www.youtube.com/watch?v=InvoZSQp_gg)</small>
 
-- [**TFM Music Maker**](http://shiru.untergrund.net/): a tracker for the Mega Drive FM chip (YM2612) that exports VGM. Today, use Furnace or DefleMask
+- [**TFM Music Maker**](http://ftp.modland.com/pub/software/trackers/Windows/TFM%20Music%20Maker/): a tracker for the Mega Drive FM chip (YM2612) that exports VGM. Today, use Furnace or DefleMask
   <img src="/img/chiptune-tools/botb-tfmmm.webp" alt="TFM Music Maker screenshot" width="300" height="300" loading="lazy" />
   <small>Image: from [pouet.net](https://www.pouet.net/prod.php?which=53467)</small>
 
@@ -2077,5 +2083,5 @@ You can also compare Commodore 64 music editors in Chordian's [comparison table]
 
 - **VOPM**: an old 32-bit plugin that often won't run as is in today's DAWs. osoumen's VOPMex runs in 64-bit DAWs, and my2151 or chipsynth OPMZ are also great alternatives
 
-Tool versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). The screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, GBS Music, FlMML on HTML5, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me. Screenshots for little-scale's trackers, WebX68k, and NOTE MDX Workbench were sourced from the creators' posts on X, and those for Dn-FamiTracker, Furnace, furnace-piano-roll, FamiStudio, KiraStudio, OpenMPT, WaveTracker, GTUltra, SID Factory II, Bamboo Tracker, DefleMask, and LabChirp were kindly provided by Rei8bit. Images in the by-system section come from each tool's page as well as Battle of the Bits, Atarimania, pouet.net, Wikipedia, and YouTube video thumbnails.
+Tool versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). The screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, GBS Music, FlMML on HTML5, MMLxr, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me. Screenshots for little-scale's trackers, WebX68k, and NOTE MDX Workbench were sourced from the creators' posts on X, and those for Dn-FamiTracker, Furnace, furnace-piano-roll, FamiStudio, KiraStudio, OpenMPT, WaveTracker, GTUltra, SID Factory II, Bamboo Tracker, DefleMask, and LabChirp were kindly provided by Rei8bit. Images in the by-system section come from each tool's page as well as Battle of the Bits, Atarimania, pouet.net, Wikipedia, and YouTube video thumbnails.
 {{< /lang >}}
