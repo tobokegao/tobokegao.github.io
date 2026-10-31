@@ -40,7 +40,7 @@ tags = [
 
 [[axis]]
 key = "os"
-ja = "動く場所"
+ja = "動作機器"
 en = "Runs on"
 tags = [
   { id = "win", ja = "Windows", en = "Windows" },

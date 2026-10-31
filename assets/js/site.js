@@ -539,6 +539,9 @@
         toolGroups.forEach(function (g) { g.units = 0; });
         var shown = 0;
         var lang = root.dataset.lang === "en" ? "en" : "ja";
+        // One box for both languages: it sits under the contents of the one on show.
+        var toc = toolPage.querySelector(':scope > [data-l="' + lang + '"] .toc');
+        if (toc && toc.nextElementSibling !== toolBox) toc.after(toolBox);
         toolUnits.forEach(function (u) {
           u.li.hidden = !u.show;
           if (u.show) {
