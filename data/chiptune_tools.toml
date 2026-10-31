@@ -660,6 +660,11 @@ url = "https://web.archive.org/web/20260513175227/https://woolyss.com/chipmusic/
 tags = ["plugin", "legacy", "gb", "win", "free"]
 
 [[tool]]
+name = "nanofuu"
+url = "https://www.kvraudio.com/forum/viewtopic.php?p=6865863#p6865863"
+tags = ["plugin", "legacy", "gb", "win", "free"]
+
+[[tool]]
 name = "Retro Boy"
 url = "https://plugins4free.com/plugin/1852/"
 tags = ["plugin", "legacy", "fantasy", "win", "free"]

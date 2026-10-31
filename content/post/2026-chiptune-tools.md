@@ -2,8 +2,8 @@
 title: チップチューンづくりのおすすめツール
 title_en: Recommended Chiptune Tools
 date: 2026-10-30
-description: プラグイン、トラッカー、ハードウェア、ブラウザで使えるツール、サンプルパックまで、最新バージョンでまとめ直しました（2026年10月31日更新）
-description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-based tools, and sample packs, all updated with their latest versions. Last updated October 31, 2026.
+description: プラグイン、トラッカー、ハードウェア、ブラウザで使えるツール、サンプルパックまで、最新バージョンでまとめ直しました（2026年11月1日更新）
+description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-based tools, and sample packs, all updated with their latest versions. Last updated November 1, 2026.
 ---
 
 {{< tool-filter >}}
@@ -146,6 +146,10 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-bas
 - [**pooBoy 2**](https://web.archive.org/web/20260513175227/https://woolyss.com/chipmusic/chipmusic-plugins/pooBoy_2.zip)（Pontonius）：GAMEBOYの音源をまねた、単音のシンセ。パルス波3種類とノイズを、0〜Fの値を選んで調整します。設定できる項目は少ないものの、音の種類を多く選べる初代も一緒に入っています。配布していたWoolyssが2026年に閉じたので、リンク先はInternet Archiveの記録です。Windows（VST、32bit）。今ならSoraboy
   <img src="/img/chiptune-tools/legacy-pooboy2.webp" alt="pooBoy 2の画面" width="431" height="357" loading="lazy" />
   <small>画像：[NitroAnilinさんのブログ](https://nitroanilinlab.wordpress.com/2020/10/29/pooboy-synth-showcase-s01-bonus/)より</small>
+
+- [**nanofuu**](https://www.kvraudio.com/forum/viewtopic.php?p=6865863#p6865863)（tagomago）：SynthEditで作られた、nanoloop風のGAMEBOYのシンセ。シーケンサーが付いていて、画面もGAMEBOYの形です。パルス波（12.5%、25%、50%）、波形メモリ（32サンプル、4bit）、ノイズが、それぞれ別のVSTになっています。[作者のページ](https://web.archive.org/web/20130721072318/http://love1kt.harisen.jp/vst.html)は閉じていて、最後のver0.6eのファイルは見つかっていません。リンク先はKVRの掲示板の投稿で、そこで共有されているパックに2008年3月のファイルが入っています。投稿した人の環境では、波形メモリの`nanofuu_pcm`は動かなかったそうです。同じパックの`error`は、発作を起こすおそれがあると投稿した人が注意しています。Windows（VST、32bit）。今ならSoraboy
+  <img src="/img/chiptune-tools/legacy-nanofuu.webp" alt="nanofuuの画面" width="160" height="125" loading="lazy" />
+  <small>画像：[作者のページの記録](https://web.archive.org/web/20130721072318/http://love1kt.harisen.jp/vst.html)より</small>
 
 - [**Retro Boy**](https://plugins4free.com/plugin/1852/)（Sound-Base Audio）：昔のゲーム機のような音を作るアナログ風のシンセ。12.5%、25%、50%のパルス波など、7種類の波形を切り替えられます。Windows（VST、32bit）
   <img src="/img/chiptune-tools/legacy-retro-boy.webp" alt="Retro Boyの画面" width="240" height="382" loading="lazy" />
@@ -1220,6 +1224,10 @@ These are old plugins that are no longer updated, mostly ones I keep on my own c
 - [**pooBoy 2**](https://web.archive.org/web/20260513175227/https://woolyss.com/chipmusic/chipmusic-plugins/pooBoy_2.zip) (Pontonius): a monophonic synth imitating the GAMEBOY sound chip. You adjust three pulse waves and noise by picking values from 0 to F. The download also includes the first version, which has fewer options but more oscillator choices. Woolyss, which hosted it, closed in 2026, so the link goes to the Internet Archive copy. Windows (VST, 32-bit). Today, try Soraboy
   <img src="/img/chiptune-tools/legacy-pooboy2.webp" alt="pooBoy 2 screenshot" width="431" height="357" loading="lazy" />
   <small>Image: from [NitroAnilin's blog](https://nitroanilinlab.wordpress.com/2020/10/29/pooboy-synth-showcase-s01-bonus/)</small>
+
+- [**nanofuu**](https://www.kvraudio.com/forum/viewtopic.php?p=6865863#p6865863) (tagomago): a nanoloop-style GAMEBOY synth made with SynthEdit. It has a built-in sequencer and a GAMEBOY-shaped interface. Pulse waves (12.5%, 25%, 50%), wavetable (32 samples, 4-bit), and noise each come as a separate VST. The [author's site](https://web.archive.org/web/20130721072318/http://love1kt.harisen.jp/vst.html) is gone, and the final ver0.6e hasn't been found. The link goes to a post on the KVR forum, where a shared pack includes the files from March 2008. The poster couldn't get the wavetable plugin `nanofuu_pcm` to work, and warns that `error`, in the same pack, may trigger seizures. Windows (VST, 32-bit). Today, try Soraboy
+  <img src="/img/chiptune-tools/legacy-nanofuu.webp" alt="nanofuu screenshot" width="160" height="125" loading="lazy" />
+  <small>Image: from [an archived copy of the author's page](https://web.archive.org/web/20130721072318/http://love1kt.harisen.jp/vst.html)</small>
 
 - [**Retro Boy**](https://plugins4free.com/plugin/1852/) (Sound-Base Audio): a virtual analog synth for retro console sounds. You can switch between seven waveforms, including 12.5%, 25%, and 50% pulse waves. Windows (VST, 32-bit)
   <img src="/img/chiptune-tools/legacy-retro-boy.webp" alt="Retro Boy screenshot" width="240" height="382" loading="lazy" />
