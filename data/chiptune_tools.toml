@@ -17,6 +17,7 @@ tags = [
   { id = "samples", ja = "サンプルパック", en = "Sample Packs" },
   { id = "sfx", ja = "効果音", en = "Sound Effects" },
   { id = "tool", ja = "再生・変換・補助", en = "Players and Utilities" },
+  { id = "visual", ja = "ビジュアライザー", en = "Visualizers" },
   { id = "legacy", ja = "昔のプラグイン", en = "Older Plugins" },
 ]
 
@@ -1394,3 +1395,80 @@ tags = ["tool", "win", "free"]
 [[tool]]
 name = "OpenSPC"
 tags = ["tool", "snes", "win", "real", "free"]
+
+[[tool]]
+name = "RetroPlug"
+url = "https://github.com/tommitytom/RetroPlug"
+tags = ["plugin", "gb", "nes", "sega", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "T98H.sf2"
+url = "https://0x41n.github.io/pages/download"
+tags = ["samples", "fm", "jpc", "free"]
+
+[[tool]]
+name = "NostapC.sf2"
+url = "https://0x41n.github.io/pages/download"
+tags = ["samples", "free"]
+
+[[tool]]
+name = "ハケイラー"
+name_en = "Hacayler"
+url = "https://0x41n.github.io/Hacayler/"
+tags = ["tool", "web", "free"]
+
+[[tool]]
+name = "Super MIDI Pak"
+url = "https://www.supermidipak.com/"
+tags = ["hardware", "snes", "real", "paid"]
+
+[[tool]]
+name = "HoustonTracker 2"
+url = "https://irrlichtproject.de/houston/"
+tags = ["tracker", "onebit", "othersys", "real", "free"]
+
+[[tool]]
+name = "MMDSP"
+url = "https://github.com/gaolay/MMDSP"
+tags = ["tool", "fm", "jpc", "real", "free"]
+
+[[tool]]
+name = "黒猫SPC"
+name_en = "Kuroneko SPC"
+url = "https://kurohane.net/seisanbutu.html"
+tags = ["tool", "snes", "win", "free"]
+
+[[tool]]
+name = "defMON"
+url = "https://defmon.vandervecken.com/doku.php?id=download:download"
+tags = ["tracker", "sid", "real", "free"]
+
+[[tool]]
+name = "GBPresenter"
+url = "https://github.com/nununoisy/gb-presenter-rs"
+tags = ["visual", "gb", "win", "free"]
+
+[[tool]]
+name = "NSFPresenter"
+url = "https://github.com/nununoisy/nsf-presenter-rs"
+tags = ["visual", "nes", "win", "free"]
+
+[[tool]]
+name = "SPCPresenter"
+url = "https://github.com/nununoisy/spc-presenter-rs"
+tags = ["visual", "snes", "win", "free"]
+
+[[tool]]
+name = "SidWizPlus"
+url = "https://github.com/maxim-zhao/SidWizPlus"
+tags = ["visual", "win", "free"]
+
+[[tool]]
+name = "corrscope"
+url = "https://github.com/corrscope/corrscope"
+tags = ["visual", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "LSVJ"
+url = "https://onehitkill.itch.io/lsvj"
+tags = ["visual", "gb", "web", "real", "free"]

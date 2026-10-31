@@ -17,6 +17,10 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-bas
 
 - [まずは無料のプラグインから](#ja-free-plugins)
 - [音にかけるエフェクト](#ja-effects)
+- [サンプルパック](#ja-sample-packs)
+- [有料のプラグイン](#ja-paid-plugins)
+- [昔のプラグイン（無料）](#ja-legacy)
+- [ブラウザで使えるソフト（無料）](#ja-browser)
 - [トラッカー・専用ソフト（値段の書いていないものは無料）](#ja-trackers)
 - [LSDjと、LSDjから生まれたトラッカー（無料）](#ja-lsdj)
 - [M8（ハードウェアのトラッカー）](#ja-m8)
@@ -25,13 +29,10 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-bas
 - [スマホ・携帯ゲーム機で使えるソフト](#ja-handheld)
 - [ゲーム機・昔のパソコンの実機で動くソフト](#ja-consoles)
 - [昔の日本のパソコン（X68000・PC-98・MSX）のツール](#ja-japanese-pcs)
-- [ブラウザで使えるソフト（無料）](#ja-browser)
 - [MMLで書くソフト](#ja-mml)
-- [有料のプラグイン](#ja-paid-plugins)
-- [昔のプラグイン（無料）](#ja-legacy)
-- [サンプルパック](#ja-sample-packs)
 - [効果音を作るソフト](#ja-sfx)
 - [再生・変換・そのほか](#ja-players)
+- [演奏を映像にするソフト（ビジュアライザー）](#ja-visualizers)
 - [Shiruさんのツール（無料）](#ja-shiru)
 - [機種別のトラッカーとツール](#ja-botb)
 - [もっと知りたい人へ](#ja-more)
@@ -73,6 +74,8 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-bas
 - [**OPNA FM Synth**](https://trpico.booth.pm/items/8351023) v1.0.1：とるぴさんの、YM2608（OPNA）のFM音源を再現したプラグイン。無料（支援つきは600円）、Windowsのみ（VST3）
   <img src="/img/chiptune-tools/opnafm.webp" alt="OPNA FM Synthの画面" width="560" height="382" loading="lazy" />
 
+- [**RetroPlug**](https://github.com/tommitytom/RetroPlug) v0.7.4：GAMEBOYやファミコンなどのエミュレーターを、プラグインとしてDAWの中で動かせるソフト。LSDj、mGB、risa、smsggdjなどをDAWのテンポに合わせて鳴らせます。ROMは自分で用意します。単体でも動きます。無料、Windows・Mac・Linux（VST2・VST3・CLAP、MacはAUも）
+
 ## 音にかけるエフェクト {#ja-effects}
 
 - [**Deltanizer**](https://ss1.xrea.com/theta.s57.xrea.com/software/#deltanizer)（theta）v2.0.0：自分で打ち込んだ音を、ファミコンのDPCM（ドラムや声に使われた、ザラザラした粗い音）の質感に変える。無料、Windows 64bitのみ（VST3）
@@ -83,6 +86,147 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-bas
 
 - [**chipcrusher**](https://www.plogue.com/products/chipcrusher.html)（Plogue）：ファミコンの少しざらざらした声・ドラムの音や、スーパーファミコン独特の粗さとエコーなど、昔のゲーム機らしい音の質感をあとから加えられるエフェクト。39ドル
   <img src="/img/chiptune-tools/chipcrusher.webp" alt="chipcrusherの画面" width="560" height="189" loading="lazy" />
+
+## サンプルパック {#ja-sample-packs}
+
+- [**Bitkits**](https://www.uppercussion.com/products/bitkits)（Uppercussion）：8bitのドラムキット10種類。キックやスネア、ハイハットのほか、ピコピコした効果音もたくさん入っています。無料
+
+- [**T98H.sf2**](https://0x41n.github.io/pages/download)（0x41n）：東方の旧作（PC-98）の音に似せたサウンドフォント。再現度よりも、容量の小ささを大事にしています。無料
+
+- [**NostapC.sf2**](https://0x41n.github.io/pages/download)（0x41n）：チップチューンらしい音のサウンドフォント。無料
+
+- [**Shirobon Presents: Chiptune for Serum**](https://shirobon.bandcamp.com/album/shirobon-presents-chiptune-for-serum)（Shirobon）：定番シンセ「Serum」用のプリセット100種類と、GAMEBOYの実機から録音した波形・ノイズが入っています。15ポンドから（Serum 1.107以降が必要）
+
+- [**Super Audio Cart 2**](https://impactsoundworks.com/product/super-audio-cart/)（Impact Soundworks）：Atari 2600からゲームボーイアドバンスまで、様々なレトロゲーム機の音を集めた定番の音源集（初代の音もすべて収録）。199ドル（無料の「Kontakt Player」を導入すれば、普段お使いのDAWですぐに鳴らせます）
+  <img src="/img/chiptune-tools/super-audio-cart-2.webp" alt="Super Audio Cart 2の画面" width="560" height="373" loading="lazy" />
+
+## 有料のプラグイン {#ja-paid-plugins}
+
+- [**Plogueの音源**](https://www.plogue.com/products/)：実機の音源チップを、とても細かく再現しています。どれもWindows・Mac・Linux（VST3・CLAP、MacはAUも）。値段は2026年10月30日の公式ストアのもの
+
+  - chipsynth C64（49.95ドル）：コモドール64の音源（SID）
+    <img src="/img/chiptune-tools/chipsynth-c64.webp" alt="chipsynth C64の画面" width="560" height="259" loading="lazy" />
+
+  - chipsynth MD（49.95ドル）：メガドライブの音源（金属的で鋭いFM音源と、ピコピコしたPSG音源の両方を再現）
+    <img src="/img/chiptune-tools/chipsynth-md.webp" alt="chipsynth MDの画面" width="560" height="319" loading="lazy" />
+
+  - chipsynth SFC（39.95ドル）：スーパーファミコンの音源
+    <img src="/img/chiptune-tools/chipsynth-sfc.webp" alt="chipsynth SFCの画面" width="560" height="344" loading="lazy" />
+
+  - chipsynth OPMZ（49.95ドル）：80〜90年代のゲームセンターや昔のパソコン（X68000など）で広く使われた、本格的なFM音源。2026年9月に出たばかり
+    <img src="/img/chiptune-tools/chipsynth-opmz.webp" alt="chipsynth OPMZの画面" width="560" height="341" loading="lazy" />
+
+  - chipsynth PortaFM（29.95ドル）：80年代のヤマハの小型キーボード（PSSシリーズ）や、パソコンのサウンドカード（AdLib・Sound Blaster）で使われた、素朴なFM音源
+    <img src="/img/chiptune-tools/chipsynth-portafm.webp" alt="chipsynth PortaFMの画面" width="560" height="264" loading="lazy" />
+
+  - chipsounds（75ドル）：ファミコンやコモドール64など、8bit時代の15種類の音源をまとめて再現。2009年に出た古い製品で、いまはchipsynthシリーズが後継です
+    <img src="/img/chiptune-tools/chipsounds.webp" alt="chipsoundsの画面" width="560" height="297" loading="lazy" />
+
+  - chipspeech（75ドル）：アーケードゲームや昔のパソコンで使われた、80年代の音声合成チップで歌わせる音源
+    <img src="/img/chiptune-tools/chipspeech.webp" alt="chipspeechの画面" width="341" height="420" loading="lazy" />
+
+- [**my2151**](https://booth.pm/ja/items/8292567)：YM2151を再現したFM音源。VOPMの音色ファイル（.opm）が読めます。Windows 64bitのみ（VST3）、BOOTHで販売（体験版あり）
+  <img src="/img/chiptune-tools/my2151.webp" alt="my2151の画面" width="560" height="374" loading="lazy" />
+
+- [**Junior**](https://fors.fm/junior)（Fors）：GAMEBOYの音源をもとにした、4bitの波形メモリのシンセ。自分で描いた32個の値の波形とノイズを、LSDjやM8のテーブルのようなモジュレーションで動かせます。実機をそのまま再現するのではなく、今のシンセとして使いやすく広げています。39ドル（機能をしぼった無料の「Junior-Lite」もあります）、Windows・Linux（VST3・CLAP）、Mac（VST3・CLAP・AUv2）
+  <img src="/img/chiptune-tools/junior.webp" alt="Juniorの画面" width="420" height="420" loading="lazy" />
+
+- [**inSIDious**](https://impactsoundworks.com/product/insidious/)：Impact Soundworksの、コモドール64の音源（SID）を再現した音源。64ドル（無料のReaktor Playerで動きます）
+  <img src="/img/chiptune-tools/insidious.webp" alt="inSIDiousの画面" width="560" height="320" loading="lazy" />
+  <small>画像：[Lospec](https://lospec.com/software/insidious/screenshots)より</small>
+
+## 昔のプラグイン（無料） {#ja-legacy}
+
+更新の止まった古いプラグインを、自分のパソコンに入っているものを中心に集めました。ほとんどはWindowsの32bitのVSTで、64bitのDAWにはそのまま読み込めないことがあります。REAPERは32bitと64bitをつなぐ機能が入っているので、そのまま読み込めます。ほかのDAWでは、[jBridge](https://jstuff.wordpress.com/jbridge/)（14.99ユーロ）のようなソフトが必要になることがあります。「今なら○○」と書いたものは、いま使うならもっと便利なツールがあるという意味です。
+
+- [**BitBoy**](https://plugins4free.com/plugin/253/)（DarkWare）：Jack Darkさんが2005年に作ったシンセ。昔のゲーム機の音をまとめてつなぎ、回路をいじって壊したような音が出ます。Windows（VST、32bit）
+  <img src="/img/chiptune-tools/legacy-bitboy.webp" alt="BitBoyの画面" width="468" height="245" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/253/)より</small>
+
+- [**pooBoy 2**](https://web.archive.org/web/20260513175227/https://woolyss.com/chipmusic/chipmusic-plugins/pooBoy_2.zip)（Pontonius）：GAMEBOYの音源をまねた、単音のシンセ。パルス波3種類とノイズを、0〜Fの値を選んで調整します。設定できる項目は少ないものの、音の種類を多く選べる初代も一緒に入っています。配布していたWoolyssが2026年に閉じたので、リンク先はInternet Archiveの記録です。Windows（VST、32bit）。今ならSoraboy
+  <img src="/img/chiptune-tools/legacy-pooboy2.webp" alt="pooBoy 2の画面" width="431" height="357" loading="lazy" />
+  <small>画像：[NitroAnilinさんのブログ](https://nitroanilinlab.wordpress.com/2020/10/29/pooboy-synth-showcase-s01-bonus/)より</small>
+
+- [**Retro Boy**](https://plugins4free.com/plugin/1852/)（Sound-Base Audio）：昔のゲーム機のような音を作るアナログ風のシンセ。12.5%、25%、50%のパルス波など、7種類の波形を切り替えられます。Windows（VST、32bit）
+  <img src="/img/chiptune-tools/legacy-retro-boy.webp" alt="Retro Boyの画面" width="240" height="382" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1852/)より</small>
+
+- [**Peach**](https://plugins4free.com/plugin/1775)（Tweakbench）V1.3：ファミコンの音源をもとにした、サンプルで鳴らすシンセ。波形は30種類以上あります。リンク先は昔の32bitのVSTです。Windowsのみ。今ならTweakbenchの[いまのバージョン](https://www.tweakbench.com/)（5ドル、VST3・AU・CLAP）。Tweakbenchは2025年に活動を再開し、昔のプラグインを作り直しています
+  <img src="/img/chiptune-tools/legacy-peach.webp" alt="Peachの画面" width="306" height="142" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1775)より</small>
+
+- [**Triforce**](https://plugins4free.com/plugin/1781)（Tweakbench）V1.7：ファミコンの音をまねたシンセ。矩形波、三角波、ノイズと、かんたんなアルペジオが付いています。リンク先は昔の32bitのVSTです。Windowsのみ。今ならTweakbenchのいまのバージョン（10ドル）
+  <img src="/img/chiptune-tools/legacy-triforce.webp" alt="Triforceの画面" width="379" height="260" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1781)より</small>
+
+- [**Toad**](https://plugins4free.com/plugin/257)（Tweakbench）V1.1：ファミコンの音をもとにしたドラムキット。リンク先は昔の32bitのVSTです。Windowsのみ。今ならTweakbenchのいまのバージョン（5ドル）
+  <img src="/img/chiptune-tools/legacy-toad.webp" alt="Toadの画面" width="296" height="158" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/257)より</small>
+
+- [**Magical 8bit Plug（初代）**](https://ymck.net/app/magical-8bit-plug)（YMCK）：Magical 8bit Plug 2のひとつ前のバージョン。いまも公式ページからダウンロードできます。2とはデータの互換性がありません。Windows・Mac。今ならMagical 8bit Plug 2
+
+- [**NES VST**](https://www.mattmontag.com/projects-page/nintendo-vst)（Matt Montag）1.2：ファミコンの音源を再現したもの。矩形波、三角波、ノイズのほか、DPCMのチャンネルに自分のWAVを読み込んで鳴らせます。Windows（VST、32bit）。今ならMagical 8bit Plug 2かNew DoReFAMI
+  <img src="/img/chiptune-tools/legacy-nes-vst.webp" alt="NES VST 1.1の画面" width="384" height="400" loading="lazy" />
+
+- [**Pure6581**](https://web.archive.org/web/20260116132555/https://woolyss.com/chipmusic/chipmusic-plugins/Pure6581.zip)（L-Day）v1.4：コモドール64の音源（SID）をまねたシンセ。波形を順番に切り替えて鳴らせるので、ドラムの音づくりに向いています。作者のページも、配布していたWoolyssもなくなったので、リンク先はInternet Archiveの記録です。Windows（VST、32bit）
+  <img src="/img/chiptune-tools/legacy-pure6581.webp" alt="Pure6581の画面" width="514" height="384" loading="lazy" />
+  <small>画像：[plugINDEX](https://www.plugindex.de/pure6581/)より</small>
+
+- [**miniSID**](https://delamanchavst.wordpress.com/2013/10/21/minisid/)（de la Mancha）：実機のSID（6581）から取った波形で鳴らすシンセ。オシレーターは2つで、シンクとアルペジオも付いています。Windows（VST、32bit）
+  <img src="/img/chiptune-tools/legacy-minisid.webp" alt="miniSIDの画面" width="320" height="270" loading="lazy" />
+
+- [**38911 Bytes**](https://plugins4free.com/plugin/1377/)（Odosynths）：コモドール64のソフトをもとに、機能を増やしたシンセ。4種類の波形と、3つのシーケンサーが付いています。Windows（VST、32bit）
+  <img src="/img/chiptune-tools/legacy-38911-bytes.webp" alt="38911 Bytesの画面" width="468" height="371" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1377/)より</small>
+
+- [**DrSid**](https://plugins4free.com/plugin/1384/)（Odosynths）v1.0：コモドール64風のローファイなドラム。320個のサンプルが入っていて、6つの枠に割り当てて鳴らします。Windows（VST、32bit）
+  <img src="/img/chiptune-tools/legacy-drsid.webp" alt="DrSidの画面" width="468" height="310" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1384/)より</small>
+
+- [**Bleep**](https://plugins4free.com/plugin/1105/)（ToneBytes）v1.1：SIDの音をヒントにしたシンセ。再現ではなく、オシレーターごとにエンベロープとフィルターを持っています。Windows（VST、32bit）
+  <img src="/img/chiptune-tools/legacy-bleep.webp" alt="Bleepの画面" width="468" height="276" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1105/)より</small>
+
+- [**ymVST**](http://www.preromanbritain.com/ymvst/)（gwEm）v1.0：Atari STの音源（YM2149）を再現した、2003年のプラグイン。実機に近づけるなら、同時に使うのは3つまでにするよう、作者がすすめています。Windows（VST、32bit）。今ならShiruさんのVT2i
+  <img src="/img/chiptune-tools/legacy-ymvst.webp" alt="ymVSTの画面" width="385" height="241" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/260/)より</small>
+
+- [**vst2413**](https://github.com/keijiro/vst2413)（Keijiro Takahashi）：MSXのFM-PACやセガ・マスターシステムで使われたFM音源（YM2413）を再現したもの。専用の画面はなく、DAWのつまみの一覧で操作します。2013年のWindowsバージョンは32bitです（VST）
+
+- [**JuceOPLVSTi**](https://github.com/bsutherland/JuceOPLVSTi)（bsutherland）1.0.0：AdLibやSound BlasterのFM音源（OPL2）を再現したもの。作者はもう更新していないと書いています。Windows（VST、64bit）。今なら作者もすすめる[ADLplug](https://github.com/jpcima/ADLplug)
+
+- [**Chip32**](https://plugins4free.com/plugin/1067)（Sam）：VOPMと同じ作者の、波形メモリのシンセ。8bit・32個の値の波形を画面に描いて、MSXのSCCのような音が作れます。エンベロープ、フィルター、音を粗くする機能付き。リンク先は32bitのWindowsバージョンとMacバージョン（VST）です。[kaetemiさんが64bitに移植したv0.10](https://cdn.kaetemi.be/dl/vst/chip32/index.htm)もあります（Visual Studio 2013の再頒布パッケージが必要）
+  <img src="/img/chiptune-tools/legacy-chip32.webp" alt="Chip32の画面" width="468" height="246" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1067)より</small>
+
+- [**LM358N**](/dl/LM358N-vst.zip)（32mbit／SECRETCODE）：昔のゲーム機やパソコンに使われた、安くて遅いオペアンプの音の癖をまねるエフェクト。歪み、ノイズ、低音の持ち上がりなどに加えて、かんたんなローパスフィルターも付いています。作者はチップチューンのマスタリング用に作ったそうで、FM音源によく合うとのことです。配布ページが見つからなかったので、readmeの「パブリックドメイン」の記載をもとに、元のファイルのままこのサイトに置きました。作者も十分には試していないそうで、保証はありません。Windows（VST、32bit・64bit）
+
+## ブラウザで使えるソフト（無料） {#ja-browser}
+
+インストールなしで、ブラウザを開くだけで曲を作れます。BeepBoxとその派生バージョンは、曲がURLに保存されるので、URLを送るだけで共有できます。WAVやMIDIへの書き出しもできます。
+
+- [**BeepBox**](https://www.beepbox.co/) 4.2.2：画面のマス目に音を置いていくだけで曲が作れる、いちばんシンプルな作曲ソフト。オフラインバージョンもあります
+  <img src="/img/chiptune-tools/beepbox.webp" alt="BeepBoxの画面" width="515" height="420" loading="lazy" />
+
+- [**JummBox**](https://jummb.us/) 2.6：BeepBoxをもとに、ピッチベンドや細かい音量の調整などを足した派生バージョン
+  <img src="/img/chiptune-tools/jummbox.webp" alt="JummBoxの画面" width="515" height="420" loading="lazy" />
+
+- [**UltraBox**](https://ultraabox.github.io/)：さまざまなBeepBox派生バージョンの便利機能をひとまとめにしたバージョン。現在もっとも人気のある派生バージョンの一つです
+  <img src="/img/chiptune-tools/ultrabox.webp" alt="UltraBoxの画面" width="515" height="420" loading="lazy" />
+
+- [**Slarmoo's Box**](https://slarmoo.github.io/slarmoosbox/) 1.4.11：UltraBoxをもとに、エフェクトや音量変化（エンベロープ）の設定などを増やした派生バージョン
+  <img src="/img/chiptune-tools/slarmoos-box.webp" alt="Slarmoo's Boxの画面" width="515" height="420" loading="lazy" />
+
+- [**Efflux**](https://www.igorski.nl/application/efflux/) 3.1.1：ブラウザで動くトラッカー。ピアノロールでも打ち込めます。無料
+
+- [**Bitphase**](https://bitphase.app/)：ブラウザで動く、PSG音源（AY-3-8910・YM2149）とファミコン用のトラッカー。無料
+  <img src="/img/chiptune-tools/bitphase.webp" alt="Bitphaseの画面" width="560" height="366" loading="lazy" />
+  <small>画像：[GitHub](https://github.com/paator/bitphase)より</small>
+
+- [**GBS Music**](https://music.gbstudio.dev/)：GB Studioを作っているチームによる、GAMEBOYの音で曲を作るソフト。ピアノロールでもトラッカーでも打ち込めて、MIDIキーボードも使えます。曲はhUGETrackerの形式（.uge）で扱い、MP3・FLAC・WAVに書き出せます。無料
+  <img src="/img/chiptune-tools/gbs-music.webp" alt="GBS Musicの画面" width="560" height="348" loading="lazy" />
+
+- [**ハケイラー**](https://0x41n.github.io/Hacayler/)：ちょっとした波形を作れるツール。波形メモリ、パルス波、FM音源風の音、ノイズを作って、WAVで保存できます。DAWに読みこんだり、サウンドフォントにしたりして使えます。無料
 
 ## トラッカー・専用ソフト（値段の書いていないものは無料） {#ja-trackers}
 
@@ -263,6 +407,8 @@ GAMEBOYのLSDjに影響を受けた、持ち運べるトラッカー。チップ
 - [**LAVIOR AURA**](https://hmfactory.jp/aura/)：HMFACTORYの、PSGや波形メモリ、SID、PCMなどの音を最大32チャンネルで鳴らす小さな音源ボード。Windowsのアプリ「AURA HOST」で操作します。2026年10月から先行配布
   <img src="/img/chiptune-tools/aura.webp" alt="LAVIOR AURAのAURA HOSTの画面" width="560" height="332" loading="lazy" />
 
+- [**Super MIDI Pak**](https://www.supermidipak.com/)：スーパーファミコンを、MIDIで鳴らす音源にするカートリッジ。16チャンネルで同時に8音まで鳴らせて、GM（MIDIの標準の音色）に対応しています。ブラウザのアプリから音色のサンプルを入れ替えられます。120ドル（税と送料は別、在庫は少なめで1人1個まで）
+
 ## スマホ・携帯ゲーム機で使えるソフト {#ja-handheld}
 
 スマホや携帯ゲーム機で、どこでも曲が作れます。
@@ -329,6 +475,8 @@ GAMEBOYやGBA、ファミコン、コモドール64などの実機（または�
 
 - [**SID-Wizard**](https://csdb.dk/release/?id=262561) 1.97：コモドール64の実機で動くトラッカー。赤帯さんによる[1.5のマニュアルの日本語訳](https://akaobi.wordpress.com/2013/12/31/sid-wizard-1-5-manual-japanese-version/)があります。無料
   <img src="/img/chiptune-tools/sidwizard.webp" alt="SID-Wizardの画面" width="544" height="420" loading="lazy" />
+
+- [**defMON**](https://defmon.vandervecken.com/doku.php?id=download:download)（Frantic）20201008：コモドール64で動くトラッカー。ひとつの表で楽器と効果をまとめて作れます。SIDを2つ使ったステレオや、実行ファイル（PRG）への書き出しに対応し、専用のアダプターを使えばLSDjやnanoloop、MIDIの機器と同期できます。Goto80さんの録音やライブでも使われています。無料（寄付可）、実機・エミュレーター（VICE）
   <small>画像：[CSDb](https://csdb.dk/release/?id=262561)より</small>
 
 - [**MiniSEQ**](https://4mat.itch.io/miniseq)：4matさんの、コモドール64の画面の文字を書きかえて音を鳴らすシーケンサー。無料
@@ -345,6 +493,8 @@ GAMEBOYやGBA、ファミコン、コモドール64などの実機（または�
 - [**Realfun 3**](https://www.msx.org/node/60323)：MSXのSCC・PSGと、コレコビジョンの音源に対応したトラッカー。2020年に体験版が出て、いまも開発中のようです
 
 - [**QuadTrack**](https://pinkparrotstudio.itch.io/quadtrack)：Amigaのしくみで動く、4トラックのサンプル演奏用シーケンサー。25ユーロから（無料の体験版あり）、Windows・Mac・Amiga
+
+- [**HoustonTracker 2**](https://irrlichtproject.de/houston/) 2.30：TI-82、TI-83、TI-84+などのグラフ電卓で動く、1bitの音のトラッカー。音3つとドラム1つを鳴らせます。無料（ソースも公開）
 
 ## 昔の日本のパソコン（X68000・PC-98・MSX）のツール {#ja-japanese-pcs}
 
@@ -369,37 +519,14 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 - [**mxv2**](https://github.com/gorry/mxv2) 2026.1015.2：X68000の音楽（MDX）を再生して、演奏のようすも見られるプレイヤー。無料、Windows・Android
   <img src="/img/chiptune-tools/mxv2.webp" alt="mxv2の画面" width="303" height="420" loading="lazy" />
 
+- [**MMDSP**](https://github.com/gaolay/MMDSP)：X68000で動く、演奏のようすを見ながら曲を選べるプレイヤー。MXDRV、MADRV、MCDRV、RCD、MLD、ZMUSICの曲に対応し、スペクトラムアナライザーも付いています。GitHubにあるのはソースだけなので、X68000の上で組み立てて使います。無料
+
 - [**VGMDRV**](https://sites.google.com/site/waveknife7/vgmdrv) 1.39：X68000の実機でVGMを鳴らすドライバー。追加の機器があれば、OPNやセガのPCMなどの曲も鳴らせます。無料
 
 - [**NDP**](https://ndp.squares.net/web/) 1.51：MSX用のPSGドライバーと、そのMMLを書くためのエディター。ブラウザで使える「[NDP Online](https://ndp.squares.net/online/)」もあります。無料、Windows・ブラウザ
   <img src="/img/chiptune-tools/ndp.webp" alt="NDPの画面" width="560" height="403" loading="lazy" />
 
 - [**MSXPLAYer**](https://msxplayer.net/wp/)：MSXアソシエーション公式のMSXエミュレーター。いまのバージョンは、技術評論社の本「MSX-BASICでゲームを作ろう」を持っている人が使えます。Windowsのみ
-
-## ブラウザで使えるソフト（無料） {#ja-browser}
-
-インストールなしで、ブラウザを開くだけで曲を作れます。BeepBoxとその派生バージョンは、曲がURLに保存されるので、URLを送るだけで共有できます。WAVやMIDIへの書き出しもできます。
-
-- [**BeepBox**](https://www.beepbox.co/) 4.2.2：画面のマス目に音を置いていくだけで曲が作れる、いちばんシンプルな作曲ソフト。オフラインバージョンもあります
-  <img src="/img/chiptune-tools/beepbox.webp" alt="BeepBoxの画面" width="515" height="420" loading="lazy" />
-
-- [**JummBox**](https://jummb.us/) 2.6：BeepBoxをもとに、ピッチベンドや細かい音量の調整などを足した派生バージョン
-  <img src="/img/chiptune-tools/jummbox.webp" alt="JummBoxの画面" width="515" height="420" loading="lazy" />
-
-- [**UltraBox**](https://ultraabox.github.io/)：さまざまなBeepBox派生バージョンの便利機能をひとまとめにしたバージョン。現在もっとも人気のある派生バージョンの一つです
-  <img src="/img/chiptune-tools/ultrabox.webp" alt="UltraBoxの画面" width="515" height="420" loading="lazy" />
-
-- [**Slarmoo's Box**](https://slarmoo.github.io/slarmoosbox/) 1.4.11：UltraBoxをもとに、エフェクトや音量変化（エンベロープ）の設定などを増やした派生バージョン
-  <img src="/img/chiptune-tools/slarmoos-box.webp" alt="Slarmoo's Boxの画面" width="515" height="420" loading="lazy" />
-
-- [**Efflux**](https://www.igorski.nl/application/efflux/) 3.1.1：ブラウザで動くトラッカー。ピアノロールでも打ち込めます。無料
-
-- [**Bitphase**](https://bitphase.app/)：ブラウザで動く、PSG音源（AY-3-8910・YM2149）とファミコン用のトラッカー。無料
-  <img src="/img/chiptune-tools/bitphase.webp" alt="Bitphaseの画面" width="560" height="366" loading="lazy" />
-  <small>画像：[GitHub](https://github.com/paator/bitphase)より</small>
-
-- [**GBS Music**](https://music.gbstudio.dev/)：GB Studioを作っているチームによる、GAMEBOYの音で曲を作るソフト。ピアノロールでもトラッカーでも打ち込めて、MIDIキーボードも使えます。曲はhUGETrackerの形式（.uge）で扱い、MP3・FLAC・WAVに書き出せます。無料
-  <img src="/img/chiptune-tools/gbs-music.webp" alt="GBS Musicの画面" width="560" height="348" loading="lazy" />
 
 ## MMLで書くソフト {#ja-mml}
 
@@ -430,116 +557,6 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 - [**NSD.Lib**](https://shaw02.github.io/nsdlib/) v1.30：ファミコン用のサウンドドライバーとMMLのコンパイラー。NSFの曲づくりにも、自作のファミコンのゲームに組みこむのにも使えます。ファミコンでMMLを書くなら一番、とsdhizumiさんもおすすめしています。無料、Windowsのみ
 
 - [**OFGS2tm**](https://x.com/EightbitMays/status/2086505645629718736) Ver0.93：ファミコン用のMMLのドライバー「OFGSv2」を、Maysさんが改造したもの。無料（Xの投稿から配布）
-
-## 有料のプラグイン {#ja-paid-plugins}
-
-- [**Plogueの音源**](https://www.plogue.com/products/)：実機の音源チップを、とても細かく再現しています。どれもWindows・Mac・Linux（VST3・CLAP、MacはAUも）。値段は2026年10月30日の公式ストアのもの
-
-  - chipsynth C64（49.95ドル）：コモドール64の音源（SID）
-    <img src="/img/chiptune-tools/chipsynth-c64.webp" alt="chipsynth C64の画面" width="560" height="259" loading="lazy" />
-
-  - chipsynth MD（49.95ドル）：メガドライブの音源（金属的で鋭いFM音源と、ピコピコしたPSG音源の両方を再現）
-    <img src="/img/chiptune-tools/chipsynth-md.webp" alt="chipsynth MDの画面" width="560" height="319" loading="lazy" />
-
-  - chipsynth SFC（39.95ドル）：スーパーファミコンの音源
-    <img src="/img/chiptune-tools/chipsynth-sfc.webp" alt="chipsynth SFCの画面" width="560" height="344" loading="lazy" />
-
-  - chipsynth OPMZ（49.95ドル）：80〜90年代のゲームセンターや昔のパソコン（X68000など）で広く使われた、本格的なFM音源。2026年9月に出たばかり
-    <img src="/img/chiptune-tools/chipsynth-opmz.webp" alt="chipsynth OPMZの画面" width="560" height="341" loading="lazy" />
-
-  - chipsynth PortaFM（29.95ドル）：80年代のヤマハの小型キーボード（PSSシリーズ）や、パソコンのサウンドカード（AdLib・Sound Blaster）で使われた、素朴なFM音源
-    <img src="/img/chiptune-tools/chipsynth-portafm.webp" alt="chipsynth PortaFMの画面" width="560" height="264" loading="lazy" />
-
-  - chipsounds（75ドル）：ファミコンやコモドール64など、8bit時代の15種類の音源をまとめて再現。2009年に出た古い製品で、いまはchipsynthシリーズが後継です
-    <img src="/img/chiptune-tools/chipsounds.webp" alt="chipsoundsの画面" width="560" height="297" loading="lazy" />
-
-  - chipspeech（75ドル）：アーケードゲームや昔のパソコンで使われた、80年代の音声合成チップで歌わせる音源
-    <img src="/img/chiptune-tools/chipspeech.webp" alt="chipspeechの画面" width="341" height="420" loading="lazy" />
-
-- [**my2151**](https://booth.pm/ja/items/8292567)：YM2151を再現したFM音源。VOPMの音色ファイル（.opm）が読めます。Windows 64bitのみ（VST3）、BOOTHで販売（体験版あり）
-  <img src="/img/chiptune-tools/my2151.webp" alt="my2151の画面" width="560" height="374" loading="lazy" />
-
-- [**Junior**](https://fors.fm/junior)（Fors）：GAMEBOYの音源をもとにした、4bitの波形メモリのシンセ。自分で描いた32個の値の波形とノイズを、LSDjやM8のテーブルのようなモジュレーションで動かせます。実機をそのまま再現するのではなく、今のシンセとして使いやすく広げています。39ドル（機能をしぼった無料の「Junior-Lite」もあります）、Windows・Linux（VST3・CLAP）、Mac（VST3・CLAP・AUv2）
-  <img src="/img/chiptune-tools/junior.webp" alt="Juniorの画面" width="420" height="420" loading="lazy" />
-
-- [**inSIDious**](https://impactsoundworks.com/product/insidious/)：Impact Soundworksの、コモドール64の音源（SID）を再現した音源。64ドル（無料のReaktor Playerで動きます）
-  <img src="/img/chiptune-tools/insidious.webp" alt="inSIDiousの画面" width="560" height="320" loading="lazy" />
-  <small>画像：[Lospec](https://lospec.com/software/insidious/screenshots)より</small>
-
-## 昔のプラグイン（無料） {#ja-legacy}
-
-更新の止まった古いプラグインを、自分のパソコンに入っているものを中心に集めました。ほとんどはWindowsの32bitのVSTで、64bitのDAWにはそのまま読み込めないことがあります。REAPERは32bitと64bitをつなぐ機能が入っているので、そのまま読み込めます。ほかのDAWでは、[jBridge](https://jstuff.wordpress.com/jbridge/)（14.99ユーロ）のようなソフトが必要になることがあります。「今なら○○」と書いたものは、いま使うならもっと便利なツールがあるという意味です。
-
-- [**BitBoy**](https://plugins4free.com/plugin/253/)（DarkWare）：Jack Darkさんが2005年に作ったシンセ。昔のゲーム機の音をまとめてつなぎ、回路をいじって壊したような音が出ます。Windows（VST、32bit）
-  <img src="/img/chiptune-tools/legacy-bitboy.webp" alt="BitBoyの画面" width="468" height="245" loading="lazy" />
-  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/253/)より</small>
-
-- [**pooBoy 2**](https://web.archive.org/web/20260513175227/https://woolyss.com/chipmusic/chipmusic-plugins/pooBoy_2.zip)（Pontonius）：GAMEBOYの音源をまねた、単音のシンセ。パルス波3種類とノイズを、0〜Fの値を選んで調整します。設定できる項目は少ないものの、音の種類を多く選べる初代も一緒に入っています。配布していたWoolyssが2026年に閉じたので、リンク先はInternet Archiveの記録です。Windows（VST、32bit）。今ならSoraboy
-  <img src="/img/chiptune-tools/legacy-pooboy2.webp" alt="pooBoy 2の画面" width="431" height="357" loading="lazy" />
-  <small>画像：[NitroAnilinさんのブログ](https://nitroanilinlab.wordpress.com/2020/10/29/pooboy-synth-showcase-s01-bonus/)より</small>
-
-- [**Retro Boy**](https://plugins4free.com/plugin/1852/)（Sound-Base Audio）：昔のゲーム機のような音を作るアナログ風のシンセ。12.5%、25%、50%のパルス波など、7種類の波形を切り替えられます。Windows（VST、32bit）
-  <img src="/img/chiptune-tools/legacy-retro-boy.webp" alt="Retro Boyの画面" width="240" height="382" loading="lazy" />
-  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1852/)より</small>
-
-- [**Peach**](https://plugins4free.com/plugin/1775)（Tweakbench）V1.3：ファミコンの音源をもとにした、サンプルで鳴らすシンセ。波形は30種類以上あります。リンク先は昔の32bitのVSTです。Windowsのみ。今ならTweakbenchの[いまのバージョン](https://www.tweakbench.com/)（5ドル、VST3・AU・CLAP）。Tweakbenchは2025年に活動を再開し、昔のプラグインを作り直しています
-  <img src="/img/chiptune-tools/legacy-peach.webp" alt="Peachの画面" width="306" height="142" loading="lazy" />
-  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1775)より</small>
-
-- [**Triforce**](https://plugins4free.com/plugin/1781)（Tweakbench）V1.7：ファミコンの音をまねたシンセ。矩形波、三角波、ノイズと、かんたんなアルペジオが付いています。リンク先は昔の32bitのVSTです。Windowsのみ。今ならTweakbenchのいまのバージョン（10ドル）
-  <img src="/img/chiptune-tools/legacy-triforce.webp" alt="Triforceの画面" width="379" height="260" loading="lazy" />
-  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1781)より</small>
-
-- [**Toad**](https://plugins4free.com/plugin/257)（Tweakbench）V1.1：ファミコンの音をもとにしたドラムキット。リンク先は昔の32bitのVSTです。Windowsのみ。今ならTweakbenchのいまのバージョン（5ドル）
-  <img src="/img/chiptune-tools/legacy-toad.webp" alt="Toadの画面" width="296" height="158" loading="lazy" />
-  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/257)より</small>
-
-- [**Magical 8bit Plug（初代）**](https://ymck.net/app/magical-8bit-plug)（YMCK）：Magical 8bit Plug 2のひとつ前のバージョン。いまも公式ページからダウンロードできます。2とはデータの互換性がありません。Windows・Mac。今ならMagical 8bit Plug 2
-
-- [**NES VST**](https://www.mattmontag.com/projects-page/nintendo-vst)（Matt Montag）1.2：ファミコンの音源を再現したもの。矩形波、三角波、ノイズのほか、DPCMのチャンネルに自分のWAVを読み込んで鳴らせます。Windows（VST、32bit）。今ならMagical 8bit Plug 2かNew DoReFAMI
-  <img src="/img/chiptune-tools/legacy-nes-vst.webp" alt="NES VST 1.1の画面" width="384" height="400" loading="lazy" />
-
-- [**Pure6581**](https://web.archive.org/web/20260116132555/https://woolyss.com/chipmusic/chipmusic-plugins/Pure6581.zip)（L-Day）v1.4：コモドール64の音源（SID）をまねたシンセ。波形を順番に切り替えて鳴らせるので、ドラムの音づくりに向いています。作者のページも、配布していたWoolyssもなくなったので、リンク先はInternet Archiveの記録です。Windows（VST、32bit）
-  <img src="/img/chiptune-tools/legacy-pure6581.webp" alt="Pure6581の画面" width="514" height="384" loading="lazy" />
-  <small>画像：[plugINDEX](https://www.plugindex.de/pure6581/)より</small>
-
-- [**miniSID**](https://delamanchavst.wordpress.com/2013/10/21/minisid/)（de la Mancha）：実機のSID（6581）から取った波形で鳴らすシンセ。オシレーターは2つで、シンクとアルペジオも付いています。Windows（VST、32bit）
-  <img src="/img/chiptune-tools/legacy-minisid.webp" alt="miniSIDの画面" width="320" height="270" loading="lazy" />
-
-- [**38911 Bytes**](https://plugins4free.com/plugin/1377/)（Odosynths）：コモドール64のソフトをもとに、機能を増やしたシンセ。4種類の波形と、3つのシーケンサーが付いています。Windows（VST、32bit）
-  <img src="/img/chiptune-tools/legacy-38911-bytes.webp" alt="38911 Bytesの画面" width="468" height="371" loading="lazy" />
-  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1377/)より</small>
-
-- [**DrSid**](https://plugins4free.com/plugin/1384/)（Odosynths）v1.0：コモドール64風のローファイなドラム。320個のサンプルが入っていて、6つの枠に割り当てて鳴らします。Windows（VST、32bit）
-  <img src="/img/chiptune-tools/legacy-drsid.webp" alt="DrSidの画面" width="468" height="310" loading="lazy" />
-  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1384/)より</small>
-
-- [**Bleep**](https://plugins4free.com/plugin/1105/)（ToneBytes）v1.1：SIDの音をヒントにしたシンセ。再現ではなく、オシレーターごとにエンベロープとフィルターを持っています。Windows（VST、32bit）
-  <img src="/img/chiptune-tools/legacy-bleep.webp" alt="Bleepの画面" width="468" height="276" loading="lazy" />
-  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1105/)より</small>
-
-- [**ymVST**](http://www.preromanbritain.com/ymvst/)（gwEm）v1.0：Atari STの音源（YM2149）を再現した、2003年のプラグイン。実機に近づけるなら、同時に使うのは3つまでにするよう、作者がすすめています。Windows（VST、32bit）。今ならShiruさんのVT2i
-  <img src="/img/chiptune-tools/legacy-ymvst.webp" alt="ymVSTの画面" width="385" height="241" loading="lazy" />
-  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/260/)より</small>
-
-- [**vst2413**](https://github.com/keijiro/vst2413)（Keijiro Takahashi）：MSXのFM-PACやセガ・マスターシステムで使われたFM音源（YM2413）を再現したもの。専用の画面はなく、DAWのつまみの一覧で操作します。2013年のWindowsバージョンは32bitです（VST）
-
-- [**JuceOPLVSTi**](https://github.com/bsutherland/JuceOPLVSTi)（bsutherland）1.0.0：AdLibやSound BlasterのFM音源（OPL2）を再現したもの。作者はもう更新していないと書いています。Windows（VST、64bit）。今なら作者もすすめる[ADLplug](https://github.com/jpcima/ADLplug)
-
-- [**Chip32**](https://plugins4free.com/plugin/1067)（Sam）：VOPMと同じ作者の、波形メモリのシンセ。8bit・32個の値の波形を画面に描いて、MSXのSCCのような音が作れます。エンベロープ、フィルター、音を粗くする機能付き。リンク先は32bitのWindowsバージョンとMacバージョン（VST）です。[kaetemiさんが64bitに移植したv0.10](https://cdn.kaetemi.be/dl/vst/chip32/index.htm)もあります（Visual Studio 2013の再頒布パッケージが必要）
-  <img src="/img/chiptune-tools/legacy-chip32.webp" alt="Chip32の画面" width="468" height="246" loading="lazy" />
-  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1067)より</small>
-
-- [**LM358N**](/dl/LM358N-vst.zip)（32mbit／SECRETCODE）：昔のゲーム機やパソコンに使われた、安くて遅いオペアンプの音の癖をまねるエフェクト。歪み、ノイズ、低音の持ち上がりなどに加えて、かんたんなローパスフィルターも付いています。作者はチップチューンのマスタリング用に作ったそうで、FM音源によく合うとのことです。配布ページが見つからなかったので、readmeの「パブリックドメイン」の記載をもとに、元のファイルのままこのサイトに置きました。作者も十分には試していないそうで、保証はありません。Windows（VST、32bit・64bit）
-
-## サンプルパック {#ja-sample-packs}
-
-- [**Bitkits**](https://www.uppercussion.com/products/bitkits)（Uppercussion）：8bitのドラムキット10種類。キックやスネア、ハイハットのほか、ピコピコした効果音もたくさん入っています。無料
-
-- [**Shirobon Presents: Chiptune for Serum**](https://shirobon.bandcamp.com/album/shirobon-presents-chiptune-for-serum)（Shirobon）：定番シンセ「Serum」用のプリセット100種類と、GAMEBOYの実機から録音した波形・ノイズが入っています。15ポンドから（Serum 1.107以降が必要）
-
-- [**Super Audio Cart 2**](https://impactsoundworks.com/product/super-audio-cart/)（Impact Soundworks）：Atari 2600からゲームボーイアドバンスまで、様々なレトロゲーム機の音を集めた定番の音源集（初代の音もすべて収録）。199ドル（無料の「Kontakt Player」を導入すれば、普段お使いのDAWですぐに鳴らせます）
-  <img src="/img/chiptune-tools/super-audio-cart-2.webp" alt="Super Audio Cart 2の画面" width="560" height="373" loading="lazy" />
 
 ## 効果音を作るソフト {#ja-sfx}
 
@@ -575,9 +592,27 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 - [**SNDH Player**](https://sndh.oxygenedemos.com/)：Atari STの音楽（SNDH）をブラウザで聴けるプレイヤー。無料
   <img src="/img/chiptune-tools/sndh.webp" alt="SNDH Playerの画面" width="560" height="350" loading="lazy" />
 
+- [**黒猫SPC**](https://kurohane.net/seisanbutu.html) 260101：スーパーファミコンの音楽ファイル（.spc）のプレイヤー。「DSP700」という画面を開くと、鍵盤やスペクトラムアナライザーで演奏のようすが見られます。X68000のMMDSPやPC-98のFMDSPのデザインを、許可を得て借りたものです。無料、Windowsのみ
+
 - [**Rustico**](https://rustico.reploid.cafe/)：音の正確さにこだわった、ファミコンのエミュレーター。鳴っている音をピアノロールのように見られます。ブラウザで動きます。無料
 
 - [**Keitai World Launcher**](https://keitaiarchive.org/downloads.html)：日本のガラケー（iアプリ）のゲームをパソコンで動かすためのランチャー。iアプリを動かすソフト（openDoJaなどのエミュレーター）と、[Keitai Archive](https://keitaiarchive.org/)に保存されたゲームをまとめて管理できます。ガラケーのゲームの音楽を聴くのにも使えます。無料、Windowsのみ
+
+## 演奏を映像にするソフト（ビジュアライザー） {#ja-visualizers}
+
+音の動きを、ピアノロールやオシロスコープの映像にします。曲を動画で公開するときに使えます。
+
+- [**GBPresenter**](https://github.com/nununoisy/gb-presenter-rs)（nununoisy）v0.6.1：GAMEBOYの曲を、ピアノロールの動画にするソフト。GBS、FurnaceやDefleMaskで書き出したVGM、LSDjのセーブデータを読みこめます。無料、Windowsのみ（[使用例](https://x.com/nanka_8bit/status/1681919549388759040)）
+
+- [**NSFPresenter**](https://github.com/nununoisy/nsf-presenter-rs)（nununoisy）v0.6.1：ファミコンの曲（NSF、NSFe、NSF2）を、ピアノロールの動画にするソフト。拡張音源にも対応しています。無料、Windowsのみ（[使用例](https://x.com/bran8bit/status/1763111695067861364)）
+
+- [**SPCPresenter**](https://github.com/nununoisy/spc-presenter-rs)（nununoisy）v0.2.0-beta.2：スーパーファミコンの曲（SPC）を、ピアノロールの動画にするソフト。ベータ版です。無料、Windowsのみ
+
+- [**SidWizPlus**](https://github.com/maxim-zhao/SidWizPlus)（Maxim）224：チャンネルごとの音声から、オシロスコープの動画を作るソフト。VGMは、[MultiDumper](https://github.com/maxim-zhao/multidumper/releases/)と組み合わせてチャンネルごとに分けられます。無料、Windowsのみ（[使用例](https://x.com/theta88p/status/1207608259869171713)、[自分の使用例](https://x.com/to6okegao/status/1224320287774101510)）
+
+- [**corrscope**](https://github.com/corrscope/corrscope) 0.11.0：チャンネルごとのWAVから、オシロスコープの動画を作るソフト。波形を追いかけるので、スーパーファミコンやメガドライブの複雑な波形でも画面がぶれにくくなります。Furnaceのチャンネルごとの書き出しが使えます。FFmpegが必要です。無料、Windows・Mac・Linux（[使用例](https://x.com/maakmusic/status/1779103517317410838)）
+
+- [**LSVJ**](https://onehitkill.itch.io/lsvj)（One Hit Kill）v0.3b：曲に合わせてボタンを押して、ライブで映す映像を動かすソフト。GB Studioで作られています。無料（投げ銭可）、GAMEBOY COLOR・Analogue Pocket・ニンテンドウ64・ブラウザ
 
 ## Shiruさんのツール（無料） {#ja-shiru}
 
@@ -1056,6 +1091,10 @@ This is an updated roundup based on Umeboshi Chazuke's 2021 article on their blo
 
 - [Start with free plugins](#en-free-plugins)
 - [Effects](#en-effects)
+- [Sample packs](#en-sample-packs)
+- [Paid plugins](#en-paid-plugins)
+- [Older plugins (free)](#en-legacy)
+- [Browser apps (free)](#en-browser)
 - [Trackers and dedicated software (free unless a price is given)](#en-trackers)
 - [LSDj and trackers inspired by it (free)](#en-lsdj)
 - [M8 (hardware tracker)](#en-m8)
@@ -1064,13 +1103,10 @@ This is an updated roundup based on Umeboshi Chazuke's 2021 article on their blo
 - [Apps for phones and handhelds](#en-handheld)
 - [Software for real consoles and old computers](#en-consoles)
 - [Tools for old Japanese computers (X68000, PC-98, MSX)](#en-japanese-pcs)
-- [Browser apps (free)](#en-browser)
 - [Writing music in MML](#en-mml)
-- [Paid plugins](#en-paid-plugins)
-- [Older plugins (free)](#en-legacy)
-- [Sample packs](#en-sample-packs)
 - [Sound effect makers](#en-sfx)
 - [Players, converters and more](#en-players)
+- [Visualizers](#en-visualizers)
 - [Shiru's tools (free)](#en-shiru)
 - [Trackers and tools by system](#en-botb)
 - [To dig deeper](#en-more)
@@ -1112,6 +1148,8 @@ These load in your usual DAW and play like any other instrument.
 - [**OPNA FM Synth**](https://trpico.booth.pm/items/8351023) v1.0.1: torupi's plugin recreating the YM2608 (OPNA) FM chip. Free (600 yen support option), Windows only (VST3)
   <img src="/img/chiptune-tools/opnafm.webp" alt="OPNA FM Synth screenshot" width="560" height="382" loading="lazy" />
 
+- [**RetroPlug**](https://github.com/tommitytom/RetroPlug) v0.7.4: runs GAMEBOY, NES and other console emulators as a plugin inside your DAW. LSDj, mGB, risa, smsggdj and others stay in sync with the DAW. Bring your own ROMs. It also runs standalone. Free, Windows, Mac, Linux (VST2, VST3, CLAP, plus AU on Mac)
+
 ## Effects {#en-effects}
 
 - [**Deltanizer**](https://ss1.xrea.com/theta.s57.xrea.com/software/#deltanizer) (theta) v2.0.0: gives sounds you've programmed the texture of the NES's DPCM channel (the gritty, rough sound used for drums and voices). Free, Windows 64-bit only (VST3)
@@ -1122,6 +1160,147 @@ These load in your usual DAW and play like any other instrument.
 
 - [**chipcrusher**](https://www.plogue.com/products/chipcrusher.html) (Plogue): adds the texture of old consoles after the fact, such as the slightly gritty voices and drums of the NES or the SNES's distinctive roughness and echo. $39
   <img src="/img/chiptune-tools/chipcrusher.webp" alt="chipcrusher screenshot" width="560" height="189" loading="lazy" />
+
+## Sample packs {#en-sample-packs}
+
+- [**Bitkits**](https://www.uppercussion.com/products/bitkits) (Uppercussion): ten 8-bit drum kits. Besides kicks, snares and hi-hats, there are lots of bleepy sound effects. Free
+
+- [**T98H.sf2**](https://0x41n.github.io/pages/download) (0x41n): a SoundFont that imitates the sound of the early PC-98 Touhou games, made as small as possible rather than as accurate as possible. Free
+
+- [**NostapC.sf2**](https://0x41n.github.io/pages/download) (0x41n): a chiptune-flavored SoundFont. Free
+
+- [**Shirobon Presents: Chiptune for Serum**](https://shirobon.bandcamp.com/album/shirobon-presents-chiptune-for-serum) (Shirobon): 100 presets for the popular synth Serum, plus waveforms and noise recorded from a real GAMEBOY. From £15 (needs Serum 1.107 or later)
+
+- [**Super Audio Cart 2**](https://impactsoundworks.com/product/super-audio-cart/) (Impact Soundworks): a well-known library of sounds from many retro consoles, from the Atari 2600 to the Game Boy Advance (includes all the sounds from the first version). $199 (runs in the free Kontakt Player, so you can play it right away in your usual DAW)
+  <img src="/img/chiptune-tools/super-audio-cart-2.webp" alt="Super Audio Cart 2 screenshot" width="560" height="373" loading="lazy" />
+
+## Paid plugins {#en-paid-plugins}
+
+- [**Plogue's instruments**](https://www.plogue.com/products/): very detailed recreations of real sound chips. All run on Windows, Mac and Linux (VST3, CLAP, plus AU on Mac). Prices are from the official store on October 30, 2026
+
+  - chipsynth C64 ($49.95): the Commodore 64 sound chip (SID)
+    <img src="/img/chiptune-tools/chipsynth-c64.webp" alt="chipsynth C64 screenshot" width="560" height="259" loading="lazy" />
+
+  - chipsynth MD ($49.95): the Mega Drive sound (recreating both the sharp, metallic FM sound and the bleepy PSG)
+    <img src="/img/chiptune-tools/chipsynth-md.webp" alt="chipsynth MD screenshot" width="560" height="319" loading="lazy" />
+
+  - chipsynth SFC ($39.95): the SNES sound chip
+    <img src="/img/chiptune-tools/chipsynth-sfc.webp" alt="chipsynth SFC screenshot" width="560" height="344" loading="lazy" />
+
+  - chipsynth OPMZ ($49.95): a full-featured FM chip widely used in '80s and '90s arcade games and old computers (such as the X68000). Just released in September 2026
+    <img src="/img/chiptune-tools/chipsynth-opmz.webp" alt="chipsynth OPMZ screenshot" width="560" height="341" loading="lazy" />
+
+  - chipsynth PortaFM ($29.95): simple FM chips used in Yamaha's small '80s keyboards (the PSS series) and in PC sound cards (AdLib, Sound Blaster)
+    <img src="/img/chiptune-tools/chipsynth-portafm.webp" alt="chipsynth PortaFM screenshot" width="560" height="264" loading="lazy" />
+
+  - chipsounds ($75): 15 sound chips from the 8-bit era, such as the NES and Commodore 64, in one instrument. An older product from 2009, now succeeded by the chipsynth series
+    <img src="/img/chiptune-tools/chipsounds.webp" alt="chipsounds screenshot" width="560" height="297" loading="lazy" />
+
+  - chipspeech ($75): sings with '80s speech synthesis chips used in arcade games and old computers
+    <img src="/img/chiptune-tools/chipspeech.webp" alt="chipspeech screenshot" width="341" height="420" loading="lazy" />
+
+- [**my2151**](https://booth.pm/ja/items/8292567): an FM synth that recreates the YM2151. It can load VOPM patch files (.opm). Windows 64-bit only (VST3), sold on BOOTH (demo available)
+  <img src="/img/chiptune-tools/my2151.webp" alt="my2151 screenshot" width="560" height="374" loading="lazy" />
+
+- [**Junior**](https://fors.fm/junior) (Fors): a 4-bit wavetable synth based on the GAMEBOY sound chip. Draw a 32-step waveform, add noise, and move them with table modulators like those in LSDj and M8. Rather than a strict emulation, it expands the original into a modern synth. $39 (a free, pared-down Junior-Lite is also available), Windows and Linux (VST3, CLAP), Mac (VST3, CLAP, AUv2)
+  <img src="/img/chiptune-tools/junior.webp" alt="Junior screenshot" width="420" height="420" loading="lazy" />
+
+- [**inSIDious**](https://impactsoundworks.com/product/insidious/): Impact Soundworks' Commodore 64 (SID) instrument. $64 (runs in the free Reaktor Player)
+  <img src="/img/chiptune-tools/insidious.webp" alt="inSIDious screenshot" width="560" height="320" loading="lazy" />
+  <small>Image: from [Lospec](https://lospec.com/software/insidious/screenshots)</small>
+
+## Older plugins (free) {#en-legacy}
+
+These are old plugins that are no longer updated, mostly ones I keep on my own computer. Most are 32-bit Windows VSTs, which may not load directly in a 64-bit DAW. REAPER has a built-in bridge and loads them directly, but other DAWs may need a bridging tool such as [jBridge](https://jstuff.wordpress.com/jbridge/) (€14.99). "Today, try X" means an easier tool is available now.
+
+- [**BitBoy**](https://plugins4free.com/plugin/253/) (DarkWare): a synth Jack Dark made in 2005. It sounds like old game consoles wired together and circuit-bent. Windows (VST, 32-bit)
+  <img src="/img/chiptune-tools/legacy-bitboy.webp" alt="BitBoy screenshot" width="468" height="245" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/253/)</small>
+
+- [**pooBoy 2**](https://web.archive.org/web/20260513175227/https://woolyss.com/chipmusic/chipmusic-plugins/pooBoy_2.zip) (Pontonius): a monophonic synth imitating the GAMEBOY sound chip. You adjust three pulse waves and noise by picking values from 0 to F. The download also includes the first version, which has fewer options but more oscillator choices. Woolyss, which hosted it, closed in 2026, so the link goes to the Internet Archive copy. Windows (VST, 32-bit). Today, try Soraboy
+  <img src="/img/chiptune-tools/legacy-pooboy2.webp" alt="pooBoy 2 screenshot" width="431" height="357" loading="lazy" />
+  <small>Image: from [NitroAnilin's blog](https://nitroanilinlab.wordpress.com/2020/10/29/pooboy-synth-showcase-s01-bonus/)</small>
+
+- [**Retro Boy**](https://plugins4free.com/plugin/1852/) (Sound-Base Audio): a virtual analog synth for retro console sounds. You can switch between seven waveforms, including 12.5%, 25%, and 50% pulse waves. Windows (VST, 32-bit)
+  <img src="/img/chiptune-tools/legacy-retro-boy.webp" alt="Retro Boy screenshot" width="240" height="382" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1852/)</small>
+
+- [**Peach**](https://plugins4free.com/plugin/1775) (Tweakbench) V1.3: a sample-based synth built on the NES sound chip, with more than 30 waveforms. The link goes to the old 32-bit VST. Windows only. Today, try Tweakbench's [current version](https://www.tweakbench.com/) ($5, VST3, AU, CLAP). Tweakbench came back in 2025 and has been rebuilding its old plugins
+  <img src="/img/chiptune-tools/legacy-peach.webp" alt="Peach screenshot" width="306" height="142" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1775)</small>
+
+- [**Triforce**](https://plugins4free.com/plugin/1781) (Tweakbench) V1.7: a synth imitating the NES sound, with square, triangle, and noise waves plus a simple arpeggiator. The link goes to the old 32-bit VST. Windows only. Today, try Tweakbench's current version ($10)
+  <img src="/img/chiptune-tools/legacy-triforce.webp" alt="Triforce screenshot" width="379" height="260" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1781)</small>
+
+- [**Toad**](https://plugins4free.com/plugin/257) (Tweakbench) V1.1: a drum kit based on NES sounds. The link goes to the old 32-bit VST. Windows only. Today, try Tweakbench's current version ($5)
+  <img src="/img/chiptune-tools/legacy-toad.webp" alt="Toad screenshot" width="296" height="158" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/257)</small>
+
+- [**Magical 8bit Plug (original)**](https://ymck.net/app/magical-8bit-plug) (YMCK): the version before Magical 8bit Plug 2, still available from the official page. Its data isn't compatible with version 2. Windows and Mac. Today, try Magical 8bit Plug 2
+
+- [**NES VST**](https://www.mattmontag.com/projects-page/nintendo-vst) (Matt Montag) 1.2: recreates the NES sound chip. Along with square, triangle, and noise, it can play your own WAV files through the DPCM channel. Windows (VST, 32-bit). Today, try Magical 8bit Plug 2 or New DoReFAMI
+  <img src="/img/chiptune-tools/legacy-nes-vst.webp" alt="NES VST 1.1 screenshot" width="384" height="400" loading="lazy" />
+
+- [**Pure6581**](https://web.archive.org/web/20260116132555/https://woolyss.com/chipmusic/chipmusic-plugins/Pure6581.zip) (L-Day) v1.4: a synth imitating the Commodore 64 sound chip (SID). It plays waveforms one after another, which suits drum sounds. The author's page and Woolyss, which hosted it, are both gone, so the link goes to the Internet Archive copy. Windows (VST, 32-bit)
+  <img src="/img/chiptune-tools/legacy-pure6581.webp" alt="Pure6581 screenshot" width="514" height="384" loading="lazy" />
+  <small>Image: from [plugINDEX](https://www.plugindex.de/pure6581/)</small>
+
+- [**miniSID**](https://delamanchavst.wordpress.com/2013/10/21/minisid/) (de la Mancha): a synth using waveforms sampled from a real SID (6581) chip, with two oscillators, sync, and an arpeggiator. Windows (VST, 32-bit)
+  <img src="/img/chiptune-tools/legacy-minisid.webp" alt="miniSID screenshot" width="320" height="270" loading="lazy" />
+
+- [**38911 Bytes**](https://plugins4free.com/plugin/1377/) (Odosynths): a synth based on Commodore 64 software that does much more, with four waveforms and three sequencers. Windows (VST, 32-bit)
+  <img src="/img/chiptune-tools/legacy-38911-bytes.webp" alt="38911 Bytes screenshot" width="468" height="371" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1377/)</small>
+
+- [**DrSid**](https://plugins4free.com/plugin/1384/) (Odosynths) v1.0: lo-fi Commodore 64-style drums. It comes with 320 samples that you assign to six slots. Windows (VST, 32-bit)
+  <img src="/img/chiptune-tools/legacy-drsid.webp" alt="DrSid screenshot" width="468" height="310" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1384/)</small>
+
+- [**Bleep**](https://plugins4free.com/plugin/1105/) (ToneBytes) v1.1: a synth inspired by the SID rather than an emulation of it. Each oscillator has its own envelope and filter. Windows (VST, 32-bit)
+  <img src="/img/chiptune-tools/legacy-bleep.webp" alt="Bleep screenshot" width="468" height="276" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1105/)</small>
+
+- [**ymVST**](http://www.preromanbritain.com/ymvst/) (gwEm) v1.0: a 2003 plugin recreating the Atari ST sound chip (YM2149). For an authentic sound, the author suggests running no more than three at once. Windows (VST, 32-bit). Today, try Shiru's VT2i
+  <img src="/img/chiptune-tools/legacy-ymvst.webp" alt="ymVST screenshot" width="385" height="241" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/260/)</small>
+
+- [**vst2413**](https://github.com/keijiro/vst2413) (Keijiro Takahashi): recreates the FM chip (YM2413) used in the MSX FM-PAC and Sega Master System. It has no interface of its own, so you use your DAW's generic controls. The 2013 Windows build is 32-bit (VST)
+
+- [**JuceOPLVSTi**](https://github.com/bsutherland/JuceOPLVSTi) (bsutherland) 1.0.0: recreates the FM chip (OPL2) used in AdLib and Sound Blaster cards. The author says it's no longer maintained. Windows (VST, 64-bit). Today, try [ADLplug](https://github.com/jpcima/ADLplug), which the author recommends
+
+- [**Chip32**](https://plugins4free.com/plugin/1067) (Sam): a wavetable synth by the author of VOPM. You draw an 8-bit, 32-value waveform on screen to make SCC-like sounds, with an envelope, filter, and bitcrusher. The link has 32-bit Windows and Mac builds (VST). There's also [a 64-bit v0.10 port by kaetemi](https://cdn.kaetemi.be/dl/vst/chip32/index.htm), which needs the Visual Studio 2013 redistributable
+  <img src="/img/chiptune-tools/legacy-chip32.webp" alt="Chip32 screenshot" width="468" height="246" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1067)</small>
+
+- [**LM358N**](/dl/LM358N-vst.zip) (32mbit / SECRETCODE): an effect imitating the character of the cheap, slow op-amps used in old consoles and home computers. It adds distortion, noise, and a bass boost, along with a simple low-pass filter. The author made it mainly for chiptune mastering and says it suits FM synths especially well. I couldn't find a download page, so I'm hosting the original files here, since the readme says it's public domain. The author notes it isn't thoroughly tested, and there's no warranty. Windows (VST, 32-bit and 64-bit)
+
+## Browser apps (free) {#en-browser}
+
+Nothing to install: just open a browser and start. BeepBox and its offshoots save songs in the URL, so sharing a song is as easy as sending its URL. They can also export to WAV or MIDI.
+
+- [**BeepBox**](https://www.beepbox.co/) 4.2.2: the simplest of them all. You make a song just by placing notes on a grid. There's an offline version too
+  <img src="/img/chiptune-tools/beepbox.webp" alt="BeepBox screenshot" width="515" height="420" loading="lazy" />
+
+- [**JummBox**](https://jummb.us/) 2.6: a mod of BeepBox that adds pitch bends, finer volume control and more
+  <img src="/img/chiptune-tools/jummbox.webp" alt="JummBox screenshot" width="515" height="420" loading="lazy" />
+
+- [**UltraBox**](https://ultraabox.github.io/): gathers handy features from many BeepBox mods into one. One of the most popular mods right now
+  <img src="/img/chiptune-tools/ultrabox.webp" alt="UltraBox screenshot" width="515" height="420" loading="lazy" />
+
+- [**Slarmoo's Box**](https://slarmoo.github.io/slarmoosbox/) 1.4.11: a mod of UltraBox with more effects, envelope settings and more
+  <img src="/img/chiptune-tools/slarmoos-box.webp" alt="Slarmoo's Box screenshot" width="515" height="420" loading="lazy" />
+
+- [**Efflux**](https://www.igorski.nl/application/efflux/) 3.1.1: a tracker that runs in the browser, with a piano roll as well. Free
+
+- [**Bitphase**](https://bitphase.app/): a browser tracker for PSG chips (AY-3-8910, YM2149) and the NES. Free
+  <img src="/img/chiptune-tools/bitphase.webp" alt="Bitphase screenshot" width="560" height="366" loading="lazy" />
+  <small>Image: from [GitHub](https://github.com/paator/bitphase)</small>
+
+- [**GBS Music**](https://music.gbstudio.dev/): a GAMEBOY music editor from the makers of GB Studio. Write in a piano roll or a tracker, with MIDI keyboard input. Songs use the hUGETracker format (.uge) and can be exported to MP3, FLAC or WAV. Free
+  <img src="/img/chiptune-tools/gbs-music.webp" alt="GBS Music screenshot" width="560" height="348" loading="lazy" />
+
+- [**Hacayler**](https://0x41n.github.io/Hacayler/): a small tool for making waveforms: wavetables, pulse waves, FM-like sounds and noise. Save them as WAV to load into a DAW or build a SoundFont. Free
 
 ## Trackers and dedicated software (free unless a price is given) {#en-trackers}
 
@@ -1302,6 +1481,8 @@ A portable tracker influenced by the GAMEBOY's LSDj. Besides chiptune-style soun
 - [**LAVIOR AURA**](https://hmfactory.jp/aura/): HMFACTORY's small sound board that plays PSG, wavetable, SID, PCM and other sounds in up to 32 channels, controlled from the Windows app AURA HOST. Early distribution started in October 2026
   <img src="/img/chiptune-tools/aura.webp" alt="AURA HOST for LAVIOR AURA screenshot" width="560" height="332" loading="lazy" />
 
+- [**Super MIDI Pak**](https://www.supermidipak.com/): a cartridge that turns a Super Nintendo into a MIDI sound module, with 16 MIDI channels, 8-voice polyphony and General MIDI sounds. A browser app lets you swap in your own samples. $120 plus tax and shipping (limited stock, one per customer)
+
 ## Apps for phones and handhelds {#en-handheld}
 
 Make music anywhere on a phone or a handheld.
@@ -1368,6 +1549,8 @@ These run on real GAMEBOY, GBA, NES, Commodore 64 and other hardware (or an emul
 
 - [**SID-Wizard**](https://csdb.dk/release/?id=262561) 1.97: a tracker that runs on a real Commodore 64. Akaobi has translated the [1.5 manual into Japanese](https://akaobi.wordpress.com/2013/12/31/sid-wizard-1-5-manual-japanese-version/). Free
   <img src="/img/chiptune-tools/sidwizard.webp" alt="SID-Wizard screenshot" width="544" height="420" loading="lazy" />
+
+- [**defMON**](https://defmon.vandervecken.com/doku.php?id=download:download) (Frantic) 20201008: a tracker that runs on the Commodore 64, with one flexible table for instruments and effects. It supports stereo with two SIDs and export to executable PRG files, and a dedicated adapter syncs it with LSDj, nanoloop and MIDI gear. Goto80 has used it heavily in recordings and live shows. Free (donations welcome), real hardware or the VICE emulator
   <small>Image: from [CSDb](https://csdb.dk/release/?id=262561)</small>
 
 - [**MiniSEQ**](https://4mat.itch.io/miniseq): 4mat's Commodore 64 sequencer where you make sound by editing the text on screen. Free
@@ -1384,6 +1567,8 @@ These run on real GAMEBOY, GBA, NES, Commodore 64 and other hardware (or an emul
 - [**Realfun 3**](https://www.msx.org/node/60323): a tracker for the MSX SCC and PSG and the ColecoVision sound chips. A trial came out in 2020, and it seems to still be in development
 
 - [**QuadTrack**](https://pinkparrotstudio.itch.io/quadtrack): a 4-track sample performance sequencer built on the Amiga's architecture. From 25 EUR (free demo), Windows, Mac, Amiga
+
+- [**HoustonTracker 2**](https://irrlichtproject.de/houston/) 2.30: a 1-bit music tracker for TI-82, TI-83 and TI-84+ graphing calculators, with three tone channels and one drum channel. Free and open source
 
 ## Tools for old Japanese computers (X68000, PC-98, MSX) {#en-japanese-pcs}
 
@@ -1408,37 +1593,14 @@ Tools for making and playing music for the X68000, PC-9801, PC-8801 and MSX.
 - [**mxv2**](https://github.com/gorry/mxv2) 2026.1015.2: a player and visualizer for X68000 music (MDX). Free, Windows, Android
   <img src="/img/chiptune-tools/mxv2.webp" alt="mxv2 screenshot" width="303" height="420" loading="lazy" />
 
+- [**MMDSP**](https://github.com/gaolay/MMDSP): an X68000 player and file selector with a live display of the performance and a spectrum analyzer. It supports MXDRV, MADRV, MCDRV, RCD, MLD and ZMUSIC. GitHub has the source only, so you build it on the X68000. Free
+
 - [**VGMDRV**](https://sites.google.com/site/waveknife7/vgmdrv) 1.39: a driver that plays VGM files on a real X68000; with add-on hardware it can also play OPN, SEGA PCM and more. Free
 
 - [**NDP**](https://ndp.squares.net/web/) 1.51: a PSG sound driver for the MSX and an MML editor for it, with a browser version, [NDP Online](https://ndp.squares.net/online/). Free, Windows, browser
   <img src="/img/chiptune-tools/ndp.webp" alt="NDP screenshot" width="560" height="403" loading="lazy" />
 
 - [**MSXPLAYer**](https://msxplayer.net/wp/): the official MSX emulator from the MSX Association. The current build is available to owners of the Gijutsu-Hyoron book "MSX-BASICでゲームを作ろう". Windows only
-
-## Browser apps (free) {#en-browser}
-
-Nothing to install: just open a browser and start. BeepBox and its offshoots save songs in the URL, so sharing a song is as easy as sending its URL. They can also export to WAV or MIDI.
-
-- [**BeepBox**](https://www.beepbox.co/) 4.2.2: the simplest of them all. You make a song just by placing notes on a grid. There's an offline version too
-  <img src="/img/chiptune-tools/beepbox.webp" alt="BeepBox screenshot" width="515" height="420" loading="lazy" />
-
-- [**JummBox**](https://jummb.us/) 2.6: a mod of BeepBox that adds pitch bends, finer volume control and more
-  <img src="/img/chiptune-tools/jummbox.webp" alt="JummBox screenshot" width="515" height="420" loading="lazy" />
-
-- [**UltraBox**](https://ultraabox.github.io/): gathers handy features from many BeepBox mods into one. One of the most popular mods right now
-  <img src="/img/chiptune-tools/ultrabox.webp" alt="UltraBox screenshot" width="515" height="420" loading="lazy" />
-
-- [**Slarmoo's Box**](https://slarmoo.github.io/slarmoosbox/) 1.4.11: a mod of UltraBox with more effects, envelope settings and more
-  <img src="/img/chiptune-tools/slarmoos-box.webp" alt="Slarmoo's Box screenshot" width="515" height="420" loading="lazy" />
-
-- [**Efflux**](https://www.igorski.nl/application/efflux/) 3.1.1: a tracker that runs in the browser, with a piano roll as well. Free
-
-- [**Bitphase**](https://bitphase.app/): a browser tracker for PSG chips (AY-3-8910, YM2149) and the NES. Free
-  <img src="/img/chiptune-tools/bitphase.webp" alt="Bitphase screenshot" width="560" height="366" loading="lazy" />
-  <small>Image: from [GitHub](https://github.com/paator/bitphase)</small>
-
-- [**GBS Music**](https://music.gbstudio.dev/): a GAMEBOY music editor from the makers of GB Studio. Write in a piano roll or a tracker, with MIDI keyboard input. Songs use the hUGETracker format (.uge) and can be exported to MP3, FLAC or WAV. Free
-  <img src="/img/chiptune-tools/gbs-music.webp" alt="GBS Music screenshot" width="560" height="348" loading="lazy" />
 
 ## Writing music in MML {#en-mml}
 
@@ -1469,116 +1631,6 @@ Write songs as text (MML) and play them.
 - [**NSD.Lib**](https://shaw02.github.io/nsdlib/) v1.30: an NES sound driver and MML compiler, for both NSF chiptunes and NES homebrew games. sdhizumi recommends it as the best choice for writing NES music in MML. Free, Windows only
 
 - [**OFGS2tm**](https://x.com/EightbitMays/status/2086505645629718736) Ver0.93: Mays's modified version of OFGSv2, an MML sound driver for the NES. Free (shared via an X post)
-
-## Paid plugins {#en-paid-plugins}
-
-- [**Plogue's instruments**](https://www.plogue.com/products/): very detailed recreations of real sound chips. All run on Windows, Mac and Linux (VST3, CLAP, plus AU on Mac). Prices are from the official store on October 30, 2026
-
-  - chipsynth C64 ($49.95): the Commodore 64 sound chip (SID)
-    <img src="/img/chiptune-tools/chipsynth-c64.webp" alt="chipsynth C64 screenshot" width="560" height="259" loading="lazy" />
-
-  - chipsynth MD ($49.95): the Mega Drive sound (recreating both the sharp, metallic FM sound and the bleepy PSG)
-    <img src="/img/chiptune-tools/chipsynth-md.webp" alt="chipsynth MD screenshot" width="560" height="319" loading="lazy" />
-
-  - chipsynth SFC ($39.95): the SNES sound chip
-    <img src="/img/chiptune-tools/chipsynth-sfc.webp" alt="chipsynth SFC screenshot" width="560" height="344" loading="lazy" />
-
-  - chipsynth OPMZ ($49.95): a full-featured FM chip widely used in '80s and '90s arcade games and old computers (such as the X68000). Just released in September 2026
-    <img src="/img/chiptune-tools/chipsynth-opmz.webp" alt="chipsynth OPMZ screenshot" width="560" height="341" loading="lazy" />
-
-  - chipsynth PortaFM ($29.95): simple FM chips used in Yamaha's small '80s keyboards (the PSS series) and in PC sound cards (AdLib, Sound Blaster)
-    <img src="/img/chiptune-tools/chipsynth-portafm.webp" alt="chipsynth PortaFM screenshot" width="560" height="264" loading="lazy" />
-
-  - chipsounds ($75): 15 sound chips from the 8-bit era, such as the NES and Commodore 64, in one instrument. An older product from 2009, now succeeded by the chipsynth series
-    <img src="/img/chiptune-tools/chipsounds.webp" alt="chipsounds screenshot" width="560" height="297" loading="lazy" />
-
-  - chipspeech ($75): sings with '80s speech synthesis chips used in arcade games and old computers
-    <img src="/img/chiptune-tools/chipspeech.webp" alt="chipspeech screenshot" width="341" height="420" loading="lazy" />
-
-- [**my2151**](https://booth.pm/ja/items/8292567): an FM synth that recreates the YM2151. It can load VOPM patch files (.opm). Windows 64-bit only (VST3), sold on BOOTH (demo available)
-  <img src="/img/chiptune-tools/my2151.webp" alt="my2151 screenshot" width="560" height="374" loading="lazy" />
-
-- [**Junior**](https://fors.fm/junior) (Fors): a 4-bit wavetable synth based on the GAMEBOY sound chip. Draw a 32-step waveform, add noise, and move them with table modulators like those in LSDj and M8. Rather than a strict emulation, it expands the original into a modern synth. $39 (a free, pared-down Junior-Lite is also available), Windows and Linux (VST3, CLAP), Mac (VST3, CLAP, AUv2)
-  <img src="/img/chiptune-tools/junior.webp" alt="Junior screenshot" width="420" height="420" loading="lazy" />
-
-- [**inSIDious**](https://impactsoundworks.com/product/insidious/): Impact Soundworks' Commodore 64 (SID) instrument. $64 (runs in the free Reaktor Player)
-  <img src="/img/chiptune-tools/insidious.webp" alt="inSIDious screenshot" width="560" height="320" loading="lazy" />
-  <small>Image: from [Lospec](https://lospec.com/software/insidious/screenshots)</small>
-
-## Older plugins (free) {#en-legacy}
-
-These are old plugins that are no longer updated, mostly ones I keep on my own computer. Most are 32-bit Windows VSTs, which may not load directly in a 64-bit DAW. REAPER has a built-in bridge and loads them directly, but other DAWs may need a bridging tool such as [jBridge](https://jstuff.wordpress.com/jbridge/) (€14.99). "Today, try X" means an easier tool is available now.
-
-- [**BitBoy**](https://plugins4free.com/plugin/253/) (DarkWare): a synth Jack Dark made in 2005. It sounds like old game consoles wired together and circuit-bent. Windows (VST, 32-bit)
-  <img src="/img/chiptune-tools/legacy-bitboy.webp" alt="BitBoy screenshot" width="468" height="245" loading="lazy" />
-  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/253/)</small>
-
-- [**pooBoy 2**](https://web.archive.org/web/20260513175227/https://woolyss.com/chipmusic/chipmusic-plugins/pooBoy_2.zip) (Pontonius): a monophonic synth imitating the GAMEBOY sound chip. You adjust three pulse waves and noise by picking values from 0 to F. The download also includes the first version, which has fewer options but more oscillator choices. Woolyss, which hosted it, closed in 2026, so the link goes to the Internet Archive copy. Windows (VST, 32-bit). Today, try Soraboy
-  <img src="/img/chiptune-tools/legacy-pooboy2.webp" alt="pooBoy 2 screenshot" width="431" height="357" loading="lazy" />
-  <small>Image: from [NitroAnilin's blog](https://nitroanilinlab.wordpress.com/2020/10/29/pooboy-synth-showcase-s01-bonus/)</small>
-
-- [**Retro Boy**](https://plugins4free.com/plugin/1852/) (Sound-Base Audio): a virtual analog synth for retro console sounds. You can switch between seven waveforms, including 12.5%, 25%, and 50% pulse waves. Windows (VST, 32-bit)
-  <img src="/img/chiptune-tools/legacy-retro-boy.webp" alt="Retro Boy screenshot" width="240" height="382" loading="lazy" />
-  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1852/)</small>
-
-- [**Peach**](https://plugins4free.com/plugin/1775) (Tweakbench) V1.3: a sample-based synth built on the NES sound chip, with more than 30 waveforms. The link goes to the old 32-bit VST. Windows only. Today, try Tweakbench's [current version](https://www.tweakbench.com/) ($5, VST3, AU, CLAP). Tweakbench came back in 2025 and has been rebuilding its old plugins
-  <img src="/img/chiptune-tools/legacy-peach.webp" alt="Peach screenshot" width="306" height="142" loading="lazy" />
-  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1775)</small>
-
-- [**Triforce**](https://plugins4free.com/plugin/1781) (Tweakbench) V1.7: a synth imitating the NES sound, with square, triangle, and noise waves plus a simple arpeggiator. The link goes to the old 32-bit VST. Windows only. Today, try Tweakbench's current version ($10)
-  <img src="/img/chiptune-tools/legacy-triforce.webp" alt="Triforce screenshot" width="379" height="260" loading="lazy" />
-  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1781)</small>
-
-- [**Toad**](https://plugins4free.com/plugin/257) (Tweakbench) V1.1: a drum kit based on NES sounds. The link goes to the old 32-bit VST. Windows only. Today, try Tweakbench's current version ($5)
-  <img src="/img/chiptune-tools/legacy-toad.webp" alt="Toad screenshot" width="296" height="158" loading="lazy" />
-  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/257)</small>
-
-- [**Magical 8bit Plug (original)**](https://ymck.net/app/magical-8bit-plug) (YMCK): the version before Magical 8bit Plug 2, still available from the official page. Its data isn't compatible with version 2. Windows and Mac. Today, try Magical 8bit Plug 2
-
-- [**NES VST**](https://www.mattmontag.com/projects-page/nintendo-vst) (Matt Montag) 1.2: recreates the NES sound chip. Along with square, triangle, and noise, it can play your own WAV files through the DPCM channel. Windows (VST, 32-bit). Today, try Magical 8bit Plug 2 or New DoReFAMI
-  <img src="/img/chiptune-tools/legacy-nes-vst.webp" alt="NES VST 1.1 screenshot" width="384" height="400" loading="lazy" />
-
-- [**Pure6581**](https://web.archive.org/web/20260116132555/https://woolyss.com/chipmusic/chipmusic-plugins/Pure6581.zip) (L-Day) v1.4: a synth imitating the Commodore 64 sound chip (SID). It plays waveforms one after another, which suits drum sounds. The author's page and Woolyss, which hosted it, are both gone, so the link goes to the Internet Archive copy. Windows (VST, 32-bit)
-  <img src="/img/chiptune-tools/legacy-pure6581.webp" alt="Pure6581 screenshot" width="514" height="384" loading="lazy" />
-  <small>Image: from [plugINDEX](https://www.plugindex.de/pure6581/)</small>
-
-- [**miniSID**](https://delamanchavst.wordpress.com/2013/10/21/minisid/) (de la Mancha): a synth using waveforms sampled from a real SID (6581) chip, with two oscillators, sync, and an arpeggiator. Windows (VST, 32-bit)
-  <img src="/img/chiptune-tools/legacy-minisid.webp" alt="miniSID screenshot" width="320" height="270" loading="lazy" />
-
-- [**38911 Bytes**](https://plugins4free.com/plugin/1377/) (Odosynths): a synth based on Commodore 64 software that does much more, with four waveforms and three sequencers. Windows (VST, 32-bit)
-  <img src="/img/chiptune-tools/legacy-38911-bytes.webp" alt="38911 Bytes screenshot" width="468" height="371" loading="lazy" />
-  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1377/)</small>
-
-- [**DrSid**](https://plugins4free.com/plugin/1384/) (Odosynths) v1.0: lo-fi Commodore 64-style drums. It comes with 320 samples that you assign to six slots. Windows (VST, 32-bit)
-  <img src="/img/chiptune-tools/legacy-drsid.webp" alt="DrSid screenshot" width="468" height="310" loading="lazy" />
-  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1384/)</small>
-
-- [**Bleep**](https://plugins4free.com/plugin/1105/) (ToneBytes) v1.1: a synth inspired by the SID rather than an emulation of it. Each oscillator has its own envelope and filter. Windows (VST, 32-bit)
-  <img src="/img/chiptune-tools/legacy-bleep.webp" alt="Bleep screenshot" width="468" height="276" loading="lazy" />
-  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1105/)</small>
-
-- [**ymVST**](http://www.preromanbritain.com/ymvst/) (gwEm) v1.0: a 2003 plugin recreating the Atari ST sound chip (YM2149). For an authentic sound, the author suggests running no more than three at once. Windows (VST, 32-bit). Today, try Shiru's VT2i
-  <img src="/img/chiptune-tools/legacy-ymvst.webp" alt="ymVST screenshot" width="385" height="241" loading="lazy" />
-  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/260/)</small>
-
-- [**vst2413**](https://github.com/keijiro/vst2413) (Keijiro Takahashi): recreates the FM chip (YM2413) used in the MSX FM-PAC and Sega Master System. It has no interface of its own, so you use your DAW's generic controls. The 2013 Windows build is 32-bit (VST)
-
-- [**JuceOPLVSTi**](https://github.com/bsutherland/JuceOPLVSTi) (bsutherland) 1.0.0: recreates the FM chip (OPL2) used in AdLib and Sound Blaster cards. The author says it's no longer maintained. Windows (VST, 64-bit). Today, try [ADLplug](https://github.com/jpcima/ADLplug), which the author recommends
-
-- [**Chip32**](https://plugins4free.com/plugin/1067) (Sam): a wavetable synth by the author of VOPM. You draw an 8-bit, 32-value waveform on screen to make SCC-like sounds, with an envelope, filter, and bitcrusher. The link has 32-bit Windows and Mac builds (VST). There's also [a 64-bit v0.10 port by kaetemi](https://cdn.kaetemi.be/dl/vst/chip32/index.htm), which needs the Visual Studio 2013 redistributable
-  <img src="/img/chiptune-tools/legacy-chip32.webp" alt="Chip32 screenshot" width="468" height="246" loading="lazy" />
-  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1067)</small>
-
-- [**LM358N**](/dl/LM358N-vst.zip) (32mbit / SECRETCODE): an effect imitating the character of the cheap, slow op-amps used in old consoles and home computers. It adds distortion, noise, and a bass boost, along with a simple low-pass filter. The author made it mainly for chiptune mastering and says it suits FM synths especially well. I couldn't find a download page, so I'm hosting the original files here, since the readme says it's public domain. The author notes it isn't thoroughly tested, and there's no warranty. Windows (VST, 32-bit and 64-bit)
-
-## Sample packs {#en-sample-packs}
-
-- [**Bitkits**](https://www.uppercussion.com/products/bitkits) (Uppercussion): ten 8-bit drum kits. Besides kicks, snares and hi-hats, there are lots of bleepy sound effects. Free
-
-- [**Shirobon Presents: Chiptune for Serum**](https://shirobon.bandcamp.com/album/shirobon-presents-chiptune-for-serum) (Shirobon): 100 presets for the popular synth Serum, plus waveforms and noise recorded from a real GAMEBOY. From £15 (needs Serum 1.107 or later)
-
-- [**Super Audio Cart 2**](https://impactsoundworks.com/product/super-audio-cart/) (Impact Soundworks): a well-known library of sounds from many retro consoles, from the Atari 2600 to the Game Boy Advance (includes all the sounds from the first version). $199 (runs in the free Kontakt Player, so you can play it right away in your usual DAW)
-  <img src="/img/chiptune-tools/super-audio-cart-2.webp" alt="Super Audio Cart 2 screenshot" width="560" height="373" loading="lazy" />
 
 ## Sound effect makers {#en-sfx}
 
@@ -1614,9 +1666,27 @@ Quickly make short game-style sound effects.
 - [**SNDH Player**](https://sndh.oxygenedemos.com/): a browser player for Atari ST music (SNDH). Free
   <img src="/img/chiptune-tools/sndh.webp" alt="SNDH Player screenshot" width="560" height="350" loading="lazy" />
 
+- [**Kuroneko SPC**](https://kurohane.net/seisanbutu.html) 260101: a player for SNES music files (.spc). Its DSP700 window shows the performance with keyboards and a spectrum analyzer, in designs borrowed with permission from MMDSP (X68000) and FMDSP (PC-98). Free, Windows only
+
 - [**Rustico**](https://rustico.reploid.cafe/): an NES emulator focused on accurate sound, with a piano-roll-style audio visualizer, running in the browser. Free
 
 - [**Keitai World Launcher**](https://keitaiarchive.org/downloads.html): a launcher for running Japanese feature phone (i-appli) games on PC, bringing together emulators (like openDoJa) and games preserved on [Keitai Archive](https://keitaiarchive.org/). Also great for listening to game soundtracks. Free, Windows only
+
+## Visualizers {#en-visualizers}
+
+These turn the music into piano-roll or oscilloscope pictures, which is handy for sharing a song as a video.
+
+- [**GBPresenter**](https://github.com/nununoisy/gb-presenter-rs) (nununoisy) v0.6.1: renders GAMEBOY music as a piano-roll video. It reads GBS files, VGM files exported from Furnace or DefleMask, and LSDj save files. Free, Windows only ([example](https://x.com/nanka_8bit/status/1681919549388759040))
+
+- [**NSFPresenter**](https://github.com/nununoisy/nsf-presenter-rs) (nununoisy) v0.6.1: renders NES music (NSF, NSFe, NSF2) as a piano-roll video, including expansion audio. Free, Windows only ([example](https://x.com/bran8bit/status/1763111695067861364))
+
+- [**SPCPresenter**](https://github.com/nununoisy/spc-presenter-rs) (nununoisy) v0.2.0-beta.2: renders SNES music (SPC) as a piano-roll video. Still in beta. Free, Windows only
+
+- [**SidWizPlus**](https://github.com/maxim-zhao/SidWizPlus) (Maxim) 224: makes oscilloscope videos from per-channel audio. VGM files can be split into channels through its [MultiDumper](https://github.com/maxim-zhao/multidumper/releases/) integration. Free, Windows only ([example](https://x.com/theta88p/status/1207608259869171713), [my own example](https://x.com/to6okegao/status/1224320287774101510))
+
+- [**corrscope**](https://github.com/corrscope/corrscope) 0.11.0: makes oscilloscope videos from per-channel WAV files. It follows the shape of the wave, so complex SNES and Mega Drive waves jump around less. Works with Furnace's per-channel export. Needs FFmpeg. Free, Windows, Mac, Linux ([example](https://x.com/maakmusic/status/1779103517317410838))
+
+- [**LSVJ**](https://onehitkill.itch.io/lsvj) (One Hit Kill) v0.3b: press buttons in time with the music to drive visuals for live shows. Made with GB Studio. Free (tips welcome), GAMEBOY COLOR, Analogue Pocket, Nintendo 64, browser
 
 ## Shiru's tools (free) {#en-shiru}
 
