@@ -96,7 +96,6 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, browser
 - [**Dn-FamiTracker**](https://github.com/Dn-Programming-Core-Management/Dn-FamiTracker) Dn0.5.3：ファミコン用のトラッカー。FamiTrackerの流れをくむバージョン。Windowsのみ
   <img src="/img/chiptune-tools/dn-famitracker.webp" alt="Dn-FamiTrackerの画面" width="560" height="315" loading="lazy" />
   <small>画像：Rei8bitさん提供</small>
-  - [**Ruikajさんの改造バージョン**](https://github.com/Ruikaj/Dn-FamiTracker)：NSFに書き出すときに音色のデータがあふれにくくなるよう改造したもの。無料、Windowsのみ
 
 - [**Furnace**](https://github.com/tildearrow/furnace) 0.6.8.3：ファミコン、GAMEBOY、メガドライブなど、たくさんの音源に対応したトラッカー。Windows・Mac・Linux
   <img src="/img/chiptune-tools/furnace.webp" alt="Furnaceの画面" width="560" height="307" loading="lazy" />
@@ -336,9 +335,6 @@ GAMEBOYやGBA、ファミコン、コモドール64などの実機（または�
 
 X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツールです。
 
-- [**FMSound**](https://uraraworks.github.io/FMSound/)：PC-9801の「PMD」とPC-8801の「MUCOM88」のMMLを、ブラウザで書いて鳴らせるプレイヤー兼エディター。パートごとの演奏のようすも見られます。まだ開発中のため、鳴らない曲もあります。無料
-  <img src="/img/chiptune-tools/fmsound.webp" alt="FMSoundの画面" width="560" height="350" loading="lazy" />
-
 - [**WebX68k**](https://uraraworks.github.io/WebX68k/)：ブラウザで動くX68000のエミュレーター。URLを開くだけで起動します。無料
   <img src="/img/chiptune-tools/webx68k.webp" alt="WebX68kの画面" width="507" height="420" loading="lazy" />
   <small>画像：[Xの投稿](https://x.com/haruuraran/status/2084989176400031951)より</small>
@@ -405,9 +401,6 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 
 - [**mml2vgm**](https://github.com/kuma4649/mml2vgm) TAG809：MMLから、メガドライブなどの音源で鳴らすVGMファイルを作るツール。YM2612やSN76489のほか、YM2151、YM2608、ファミコン、GAMEBOYなど多くの音源に対応し、作業しやすい編集画面（IDE）もあります。無料、Windowsのみ
   - [**MDPlayer**](https://github.com/kuma4649/MDPlayer) STBL567：mml2vgmと同じ作者による、VGMやMDX、NSF、GBS、SIDなど、たくさんの形式を鍵盤の表示つきで鳴らせるプレイヤー。mml2vgmで作った曲の確認にも使えます。無料、Windowsのみ
-
-- [**browser-mml-player**](https://github.com/t-sin/browser-mml-player)：ブラウザで動くMMLプレイヤー。シンセのしくみを学ぶ記事のために作られたものです。無料
-  <img src="/img/chiptune-tools/bmml.webp" alt="browser-mml-playerの画面" width="560" height="350" loading="lazy" />
 
 - [**SiON**](https://github.com/keim/SiON)：MMLで鳴らすFlash用のソフトシンセ。今はGodot用（GDSiON）などに移されています。無料
 
@@ -930,7 +923,7 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 
 - **VOPM**：古い32bitのプラグインで、いまのDAWではそのまま使えないことが多いです。osoumenさんによる改良バージョン「VOPMex」なら、64bitのDAWでも使えます。my2151やchipsynth OPMZも代わりになります
 
-各ツールのバージョンや価格は、2026年10月30日時点の各配布ページの情報に基づいています。掲載している画像の多くは、各ツールの公式ページ（App Storeを含む）や[Lospec](https://lospec.com/software/)から引用しました。なお、BeepBox、JummBox、UltraBox、Slarmoo's Box、FlMML on HTML5、browser-mml-player、NSF2MML、LSDJ Converter、SNDH Playerは実際にサイトを開いて撮影したものです。little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは各作者のX（旧Twitter）の投稿から引用し、Dn-FamiTracker、Furnace、furnace-piano-roll、FamiStudio、KiraStudio、OpenMPT、WaveTracker、GTUltra、SID Factory II、Bamboo Tracker、DefleMask、LabChirpの画像はRei8bitさんからご提供いただきました。機種別の欄の画像は、各ツールのページのほか、Battle of the Bits、Atarimania、pouet.net、Wikipedia、YouTubeの動画のサムネイルなどから引用しました。
+各ツールのバージョンや価格は、2026年10月30日時点の各配布ページの情報に基づいています。掲載している画像の多くは、各ツールの公式ページ（App Storeを含む）や[Lospec](https://lospec.com/software/)から引用しました。なお、BeepBox、JummBox、UltraBox、Slarmoo's Box、FlMML on HTML5、NSF2MML、LSDJ Converter、SNDH Playerは実際にサイトを開いて撮影したものです。little-scaleさんのトラッカー、WebX68k、NOTE MDX Workbenchは各作者のX（旧Twitter）の投稿から引用し、Dn-FamiTracker、Furnace、furnace-piano-roll、FamiStudio、KiraStudio、OpenMPT、WaveTracker、GTUltra、SID Factory II、Bamboo Tracker、DefleMask、LabChirpの画像はRei8bitさんからご提供いただきました。機種別の欄の画像は、各ツールのページのほか、Battle of the Bits、Atarimania、pouet.net、Wikipedia、YouTubeの動画のサムネイルなどから引用しました。
 {{< /lang >}}
 
 {{< lang en >}}
@@ -1023,7 +1016,6 @@ You program within the limits of the console's sound chip, which makes it easier
 - [**Dn-FamiTracker**](https://github.com/Dn-Programming-Core-Management/Dn-FamiTracker) Dn0.5.3: an NES tracker, descended from FamiTracker. Windows only
   <img src="/img/chiptune-tools/dn-famitracker.webp" alt="Dn-FamiTracker screenshot" width="560" height="315" loading="lazy" />
   <small>Image: provided by Rei8bit</small>
-  - [**Ruikaj's fork**](https://github.com/Ruikaj/Dn-FamiTracker): modified so instrument data is less likely to overflow when exporting NSF. Free, Windows only
 
 - [**Furnace**](https://github.com/tildearrow/furnace) 0.6.8.3: a tracker that supports many sound chips, including the NES, GAMEBOY and Mega Drive. Windows, Mac, Linux
   <img src="/img/chiptune-tools/furnace.webp" alt="Furnace screenshot" width="560" height="307" loading="lazy" />
@@ -1263,9 +1255,6 @@ These run on real GAMEBOY, GBA, NES, Commodore 64 and other hardware (or an emul
 
 Tools for making and playing music for the X68000, PC-9801, PC-8801 and MSX.
 
-- [**FMSound**](https://uraraworks.github.io/FMSound/): a browser-based MML player and editor for PMD (PC-9801) and MUCOM88 (PC-8801), with a live display of each part. Still a work in progress, so some songs don't play yet. Free
-  <img src="/img/chiptune-tools/fmsound.webp" alt="FMSound screenshot" width="560" height="350" loading="lazy" />
-
 - [**WebX68k**](https://uraraworks.github.io/WebX68k/): an X68000 emulator that runs in the browser and boots as soon as you open the URL. Free
   <img src="/img/chiptune-tools/webx68k.webp" alt="WebX68k screenshot" width="507" height="420" loading="lazy" />
   <small>Image: from [a post on X](https://x.com/haruuraran/status/2084989176400031951)</small>
@@ -1332,9 +1321,6 @@ Write songs as text (MML) and play them.
 
 - [**mml2vgm**](https://github.com/kuma4649/mml2vgm) TAG809: a tool that turns MML into VGM files for the Mega Drive and many other chips (YM2151, YM2608, NES, GAMEBOY and more), with an included IDE. Free, Windows only
   - [**MDPlayer**](https://github.com/kuma4649/MDPlayer) STBL567: a player by the same author for VGM, MDX, NSF, GBS, SID and many more formats, with a keyboard display. Handy for checking songs made with mml2vgm. Free, Windows only
-
-- [**browser-mml-player**](https://github.com/t-sin/browser-mml-player): a browser MML player made for an article introducing how synthesizers work. Free
-  <img src="/img/chiptune-tools/bmml.webp" alt="browser-mml-player screenshot" width="560" height="350" loading="lazy" />
 
 - [**SiON**](https://github.com/keim/SiON): a Flash software synth driven by MML, now ported to Godot (GDSiON) and others. Free
 
@@ -1857,5 +1843,5 @@ For more obscure trackers and tools not covered here, see the wiki pages of the 
 
 - **VOPM**: an old 32-bit plugin that often won't run as is in today's DAWs. osoumen's VOPMex runs in 64-bit DAWs, and my2151 or chipsynth OPMZ are also great alternatives
 
-Tool versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). The screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, FlMML on HTML5, browser-mml-player, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me. Screenshots for little-scale's trackers, WebX68k, and NOTE MDX Workbench were sourced from the creators' posts on X, and those for Dn-FamiTracker, Furnace, furnace-piano-roll, FamiStudio, KiraStudio, OpenMPT, WaveTracker, GTUltra, SID Factory II, Bamboo Tracker, DefleMask, and LabChirp were kindly provided by Rei8bit. Images in the by-system section come from each tool's page as well as Battle of the Bits, Atarimania, pouet.net, Wikipedia, and YouTube video thumbnails.
+Tool versions and prices are as of October 30, 2026, based on each tool's download page. Most screenshots are sourced from official sites (including the App Store) and [Lospec](https://lospec.com/software/). The screenshots for BeepBox, JummBox, UltraBox, Slarmoo's Box, FlMML on HTML5, NSF2MML, LSDJ Converter, and SNDH Player were captured directly by me. Screenshots for little-scale's trackers, WebX68k, and NOTE MDX Workbench were sourced from the creators' posts on X, and those for Dn-FamiTracker, Furnace, furnace-piano-roll, FamiStudio, KiraStudio, OpenMPT, WaveTracker, GTUltra, SID Factory II, Bamboo Tracker, DefleMask, and LabChirp were kindly provided by Rei8bit. Images in the by-system section come from each tool's page as well as Battle of the Bits, Atarimania, pouet.net, Wikipedia, and YouTube video thumbnails.
 {{< /lang >}}
