@@ -298,12 +298,12 @@ JA = r"぀-ヿ一-鿿"
 SPACED = re.compile(rf"[A-Za-z0-9](?:\]\([^)\s]*\))?(?:\*\*)? +(?:\*\*|\[)?[{JA}]|[{JA}](?:\*\*)? +(?:\*\*|\[)?[A-Za-z0-9]")
 # Titles in 「」『』, code, links' targets and tags are written as they are named
 AS_NAMED = re.compile(r"「[^「」]*」|『[^『』]*』|`[^`]*`|\{\{[<%].*?[>%]\}\}|<[^>]+>|https?://\S+")
+# Words that keep 版; any other 版 may read better as バージョン
+BAN_OK = re.compile(r"体験版|ベータ版|β版|出版|初版|再版|海賊版|保存版|図版|組版|\d月版|版[画権元]")
 
 
-def check_spacing(r: Result, changed: list[str]) -> None:
-    """Japanese text closes the space between Latin letters/digits and Japanese (decision 0019).
-    Only a reminder: names (DJ さうすまうぅん), track lists and timetables keep theirs."""
-    hits = []
+def ja_lines(changed: list[str]):
+    """The Japanese lines of the changed articles: (path, line number, line)."""
     for rel in changed:
         if not re.search(r"^(assets/news/.*\.ja\.md|content/.*\.md)$", rel) or not (ROOT / rel).exists():
             continue
@@ -311,12 +311,32 @@ def check_spacing(r: Result, changed: list[str]) -> None:
         if rel.startswith("content/"):
             text = "\n".join(re.findall(r"\{\{< lang ja >\}\}(.*?)\{\{< /lang >\}\}", text, re.S))
         for n, line in enumerate(text.splitlines(), 1):
-            if re.match(r"\s*(\d+\.\s|([-*]\s*)?\d{1,2}:\d{2}[\d:〜~／/ -]*\s)", line):   # track lists, timetables
-                continue
-            if SPACED.search(AS_NAMED.sub("「」", line)):
-                hits.append(f"{rel}: {line.strip()[:40]}")
+            yield rel, n, line
+
+
+def check_spacing(r: Result, changed: list[str]) -> None:
+    """Japanese text closes the space between Latin letters/digits and Japanese (decision 0019).
+    Only a reminder: names (DJ さうすまうぅん), track lists and timetables keep theirs."""
+    hits = []
+    for rel, n, line in ja_lines(changed):
+        if re.match(r"\s*(\d+\.\s|([-*]\s*)?\d{1,2}:\d{2}[\d:〜~／/ -]*\s)", line):   # track lists, timetables
+            continue
+        if SPACED.search(AS_NAMED.sub("「」", line)):
+            hits.append(f"{rel}: {line.strip()[:40]}")
     if hits:
         r.info.append(f"英字・数字と日本語のあいだに半角スペースが {len(hits)} 行（名前なら、そのままでよい）: " + " / ".join(hits[:3]))
+
+
+def check_ban(r: Result, changed: list[str]) -> None:
+    """版 for an OS, a device or a way of being sold reads softer as バージョン.
+    Only a reminder: whether it reads naturally is for a person to judge."""
+    hits = []
+    for rel, n, line in ja_lines(changed):
+        text = BAN_OK.sub("", AS_NAMED.sub("「」", line))
+        for m in re.finditer("版", text):
+            hits.append(f"{rel}: {text[max(0, m.start() - 8):m.end() + 4].strip()}")
+    if hits:
+        r.info.append(f"「版」が {len(hits)} か所（OSや機種、配布の形の違いなら「バージョン」に）: " + " / ".join(hits[:3]))
 
 
 def check_markdown(r: Result) -> None:
@@ -547,6 +567,7 @@ def main() -> int:
         jobs.append(("Markdown", check_markdown))
         if changed is not None:
             jobs.append(("スペース", lambda r: check_spacing(r, changed)))
+            jobs.append(("版", lambda r: check_ban(r, changed)))
     if touched(r"^data/.*\.json$"):
         jobs.append(("JSON", check_json))
     if touched(r"^static/img/"):
