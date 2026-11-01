@@ -1399,7 +1399,7 @@ You program within the limits of the console's sound chip, which makes it easier
   <img src="/img/chiptune-tools/bosca.webp" alt="Bosca Ceoil Blue screenshot" width="560" height="315" loading="lazy" />
   <small>Image: from [Lospec](https://lospec.com/software/bosca-ceoil-blue/screenshots)</small>
 
-- [**Pata Tracker**](https://pixwlk.itch.io/pata-tracker) (Cedric Stoquer) 1.5.2: a simple 8-channel tracker. You can choose between NES- and GAMEBOY-style waveforms, 4-operator FM synthesis, and a sampler. It also has a piano roll and exports to WAV and MP3. It is the official music tool for Pixelbox, a tool for making games in JavaScript. Its devlog stops in July 2020. Free (tips welcome), Windows, Mac, Linux
+- [**Pata Tracker**](https://pixwlk.itch.io/pata-tracker) (Cedric Stoquer) 1.5.2: a simple 8-channel tracker. You can choose from NES- and GAMEBOY-style waveforms, 4-operator FM synthesis, and a sampler. It also has a piano roll and exports to WAV and MP3. It is the official music tool for Pixelbox, a JavaScript game engine. Its devlog stops in July 2020. Free (tips welcome), Windows, Mac, Linux
   <img src="/img/chiptune-tools/pata-tracker.webp" alt="Pata Tracker screenshot" width="560" height="352" loading="lazy" />
   <small>Image: from [itch.io](https://pixwlk.itch.io/pata-tracker)</small>
 
@@ -1700,7 +1700,7 @@ These turn the music into piano-roll or oscilloscope pictures, which is handy fo
 
 - [**NSFPresenter**](https://github.com/nununoisy/nsf-presenter-rs) (nununoisy) v0.6.1: renders NES music (NSF, NSFe, NSF2) as a piano-roll video, including expansion audio. Free, Windows only ([example](https://x.com/bran8bit/status/1763111695067861364))
 
-- [**NSFPlay Synthesia**](https://github.com/Patashu/nsfplay) (Patashu) 0.62: a fork of NSFPlay. As an NES song plays, colored notes flow toward a keyboard. You can also see each channel's volume and pitch and the expansion chip waveforms, and slow the playback down. It is based on a beta of NSFPlay 2.4. Free, Windows only
+- [**NSFPlay Synthesia**](https://github.com/Patashu/nsfplay) (Patashu) 0.62: a fork of NSFPlay. As an NES song plays, colored notes flow toward a keyboard. You can also view each channel's volume, pitch, and expansion chip waveforms, and slow down playback. It is based on a beta of NSFPlay 2.4. Free, Windows only
   <img src="/img/chiptune-tools/nsfplay-synthesia.webp" alt="NSFPlay Synthesia screenshot" width="560" height="314" loading="lazy" />
   <small>Image: provided by Rei8bit</small>
 
