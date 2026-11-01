@@ -313,6 +313,10 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-bas
   <img src="/img/chiptune-tools/bosca.webp" alt="Bosca Ceoil Blueの画面" width="560" height="315" loading="lazy" />
   <small>画像：[Lospec](https://lospec.com/software/bosca-ceoil-blue/screenshots)より</small>
 
+- [**Pata Tracker**](https://pixwlk.itch.io/pata-tracker)（Cedric Stoquer）1.5.2：シンプルな8チャンネルのトラッカー。ファミコンやGAMEBOYのような波形、4オペレーターのFM音源、サンプラーを使い分けられます。ピアノロールも付いていて、WAVとMP3に保存できます。JavaScriptでゲームを作るPixelboxの公式の作曲ソフトです。開発の記録は2020年7月で止まっています。無料（投げ銭可）、Windows・Mac・Linux
+  <img src="/img/chiptune-tools/pata-tracker.webp" alt="Pata Trackerの画面" width="560" height="352" loading="lazy" />
+  <small>画像：[itch.io](https://pixwlk.itch.io/pata-tracker)より</small>
+
 - [**hUGETracker**](https://superdisk.github.io/hUGETracker/) v1.0.11：GAMEBOY用のトラッカー。作った曲を、自作のGAMEBOYゲームに組みこめます。無料、Windows・Mac・Linux
   <img src="/img/chiptune-tools/hugetracker.webp" alt="hUGETrackerの画面" width="560" height="311" loading="lazy" />
   <small>画像：[Lospec](https://lospec.com/software/hugetracker/screenshots)より</small>
@@ -609,6 +613,10 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 - [**GBPresenter**](https://github.com/nununoisy/gb-presenter-rs)（nununoisy）v0.6.1：GAMEBOYの曲を、ピアノロールの動画にするソフト。GBS、FurnaceやDefleMaskで書き出したVGM、LSDjのセーブデータを読みこめます。無料、Windowsのみ（[使用例](https://x.com/nanka_8bit/status/1681919549388759040)）
 
 - [**NSFPresenter**](https://github.com/nununoisy/nsf-presenter-rs)（nununoisy）v0.6.1：ファミコンの曲（NSF、NSFe、NSF2）を、ピアノロールの動画にするソフト。拡張音源にも対応しています。無料、Windowsのみ（[使用例](https://x.com/bran8bit/status/1763111695067861364)）
+
+- [**NSFPlay Synthesia**](https://github.com/Patashu/nsfplay)（Patashu）0.62：NSFPlayの派生バージョン。ファミコンの曲に合わせて、色のついた音符が鍵盤に向かって流れます。チャンネルごとの音量や音の高さ、拡張音源の波形も見られて、スロー再生もできます。もとになっているのはNSFPlay 2.4のベータ版です。無料、Windowsのみ
+  <img src="/img/chiptune-tools/nsfplay-synthesia.webp" alt="NSFPlay Synthesiaの画面" width="560" height="314" loading="lazy" />
+  <small>画像：Rei8bitさん提供</small>
 
 - [**SPCPresenter**](https://github.com/nununoisy/spc-presenter-rs)（nununoisy）v0.2.0-beta.2：スーパーファミコンの曲（SPC）を、ピアノロールの動画にするソフト。ベータ版です。無料、Windowsのみ
 
@@ -1391,6 +1399,10 @@ You program within the limits of the console's sound chip, which makes it easier
   <img src="/img/chiptune-tools/bosca.webp" alt="Bosca Ceoil Blue screenshot" width="560" height="315" loading="lazy" />
   <small>Image: from [Lospec](https://lospec.com/software/bosca-ceoil-blue/screenshots)</small>
 
+- [**Pata Tracker**](https://pixwlk.itch.io/pata-tracker) (Cedric Stoquer) 1.5.2: a simple 8-channel tracker. You can choose between NES- and GAMEBOY-style waveforms, 4-operator FM synthesis, and a sampler. It also has a piano roll and exports to WAV and MP3. It is the official music tool for Pixelbox, a tool for making games in JavaScript. Its devlog stops in July 2020. Free (tips welcome), Windows, Mac, Linux
+  <img src="/img/chiptune-tools/pata-tracker.webp" alt="Pata Tracker screenshot" width="560" height="352" loading="lazy" />
+  <small>Image: from [itch.io](https://pixwlk.itch.io/pata-tracker)</small>
+
 - [**hUGETracker**](https://superdisk.github.io/hUGETracker/) v1.0.11: a GAMEBOY tracker whose songs can be built into your own GAMEBOY homebrew games. Free, Windows, Mac, Linux
   <img src="/img/chiptune-tools/hugetracker.webp" alt="hUGETracker screenshot" width="560" height="311" loading="lazy" />
   <small>Image: from [Lospec](https://lospec.com/software/hugetracker/screenshots)</small>
@@ -1687,6 +1699,10 @@ These turn the music into piano-roll or oscilloscope pictures, which is handy fo
 - [**GBPresenter**](https://github.com/nununoisy/gb-presenter-rs) (nununoisy) v0.6.1: renders GAMEBOY music as a piano-roll video. It reads GBS files, VGM files exported from Furnace or DefleMask, and LSDj save files. Free, Windows only ([example](https://x.com/nanka_8bit/status/1681919549388759040))
 
 - [**NSFPresenter**](https://github.com/nununoisy/nsf-presenter-rs) (nununoisy) v0.6.1: renders NES music (NSF, NSFe, NSF2) as a piano-roll video, including expansion audio. Free, Windows only ([example](https://x.com/bran8bit/status/1763111695067861364))
+
+- [**NSFPlay Synthesia**](https://github.com/Patashu/nsfplay) (Patashu) 0.62: a fork of NSFPlay. As an NES song plays, colored notes flow toward a keyboard. You can also see each channel's volume and pitch and the expansion chip waveforms, and slow the playback down. It is based on a beta of NSFPlay 2.4. Free, Windows only
+  <img src="/img/chiptune-tools/nsfplay-synthesia.webp" alt="NSFPlay Synthesia screenshot" width="560" height="314" loading="lazy" />
+  <small>Image: provided by Rei8bit</small>
 
 - [**SPCPresenter**](https://github.com/nununoisy/spc-presenter-rs) (nununoisy) v0.2.0-beta.2: renders SNES music (SPC) as a piano-roll video. Still in beta. Free, Windows only
 

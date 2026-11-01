@@ -236,6 +236,11 @@ url = "https://yurisizov.itch.io/boscaceoil-blue"
 tags = ["tracker", "fantasy", "win", "mac", "linux", "web", "free"]
 
 [[tool]]
+name = "Pata Tracker"
+url = "https://pixwlk.itch.io/pata-tracker"
+tags = ["tracker", "nes", "gb", "fm", "snes", "win", "mac", "linux", "free"]
+
+[[tool]]
 name = "hUGETracker"
 url = "https://superdisk.github.io/hUGETracker/"
 tags = ["tracker", "gb", "win", "mac", "linux", "free"]
@@ -1456,6 +1461,11 @@ tags = ["visual", "gb", "win", "free"]
 [[tool]]
 name = "NSFPresenter"
 url = "https://github.com/nununoisy/nsf-presenter-rs"
+tags = ["visual", "nes", "win", "free"]
+
+[[tool]]
+name = "NSFPlay Synthesia"
+url = "https://github.com/Patashu/nsfplay"
 tags = ["visual", "nes", "win", "free"]
 
 [[tool]]
