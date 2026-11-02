@@ -125,6 +125,11 @@ url = "https://ss1.xrea.com/theta.s57.xrea.com/software/#interruptor"
 tags = ["effect", "win", "free"]
 
 [[tool]]
+name = "8-Bit Shaper"
+url = "https://xferrecords.com/freeware"
+tags = ["effect", "win", "mac", "free"]
+
+[[tool]]
 name = "chipcrusher"
 url = "https://www.plogue.com/products/chipcrusher.html"
 tags = ["effect", "nes", "snes", "otheros", "paid"]
@@ -706,6 +711,11 @@ url = "https://web.archive.org/web/20260116132555/https://woolyss.com/chipmusic/
 tags = ["plugin", "legacy", "sid", "win", "free"]
 
 [[tool]]
+name = "SIDmonster"
+url = "https://web.archive.org/web/20101130234123/http://woolyss.com/chipmusic/chipmusic-plugins/SIDmonster.zip"
+tags = ["plugin", "legacy", "sid", "win", "free"]
+
+[[tool]]
 name = "miniSID"
 url = "https://delamanchavst.wordpress.com/2013/10/21/minisid/"
 tags = ["plugin", "legacy", "sid", "win", "free"]
@@ -744,6 +754,11 @@ tags = ["plugin", "legacy", "fm", "win", "free"]
 name = "Chip32"
 url = "https://plugins4free.com/plugin/1067"
 tags = ["plugin", "legacy", "msx", "win", "mac", "free"]
+
+[[tool]]
+name = "PSC-02"
+url = "https://www.vector.co.jp/soft/win95/art/se273760.html"
+tags = ["plugin", "legacy", "win", "free"]
 
 [[tool]]
 name = "LM358N"
@@ -1487,3 +1502,233 @@ tags = ["visual", "win", "mac", "linux", "free"]
 name = "LSVJ"
 url = "https://onehitkill.itch.io/lsvj"
 tags = ["visual", "gb", "web", "real", "free"]
+
+[[tool]]
+name = "8Bit Synth / 8Bit Drums"
+url = "https://web.archive.org/web/20101130235635/http://woolyss.com/chipmusic/chipmusic-plugins/8Bit_Synth_-_8Bit_Drums.zip"
+tags = ["plugin", "legacy", "nes", "win", "free"]
+
+[[tool]]
+name = "Syntendo"
+url = "https://web.archive.org/web/20101201001611/http://woolyss.com/chipmusic/chipmusic-plugins/Syntendo.zip"
+tags = ["plugin", "legacy", "nes", "win", "free"]
+
+[[tool]]
+name = "NESTri / NESPulse / NESNoise"
+url = "https://web.archive.org/web/20101201000448/http://woolyss.com/chipmusic/chipmusic-plugins/NESTri_-_NESPulse_-_NESNoise.zip"
+tags = ["plugin", "legacy", "nes", "win", "free"]
+
+[[tool]]
+name = "NinTiny"
+url = "https://web.archive.org/web/20101201003317/http://woolyss.com/chipmusic/chipmusic-plugins/NinTiny.zip"
+tags = ["plugin", "legacy", "nes", "win", "free"]
+
+[[tool]]
+name = "Famisynth"
+url = "https://web.archive.org/web/20101130231215/http://woolyss.com/chipmusic/chipmusic-plugins/Famisynth.zip"
+tags = ["plugin", "legacy", "nes", "win", "free"]
+
+[[tool]]
+name = "Retorizer"
+url = "https://web.archive.org/web/20101201002128/http://woolyss.com/chipmusic/chipmusic-plugins/Retorizer.zip"
+tags = ["plugin", "legacy", "nes", "win", "free"]
+
+[[tool]]
+name = "SIDboy"
+url = "https://web.archive.org/web/20101130232808/http://woolyss.com/chipmusic/chipmusic-plugins/SIDboy.zip"
+tags = ["plugin", "legacy", "sid", "win", "free"]
+
+[[tool]]
+name = "Pure64"
+url = "https://web.archive.org/web/20101130235011/http://woolyss.com/chipmusic/chipmusic-plugins/Pure64.zip"
+tags = ["plugin", "legacy", "sid", "win", "free"]
+
+[[tool]]
+name = "MicroSynt"
+url = "https://www.kvraudio.com/product/microsynt_by_chris_huelsbeck"
+tags = ["plugin", "legacy", "sid", "win", "free"]
+
+[[tool]]
+name = "Unknown 64 Pro"
+url = "https://web.archive.org/web/20101201001255/http://woolyss.com/chipmusic/chipmusic-plugins/Unknown_64_Pro.zip"
+tags = ["plugin", "legacy", "sid", "win", "free"]
+
+[[tool]]
+name = "basic 64"
+url = "https://plugins4free.com/plugin/1802"
+tags = ["plugin", "legacy", "sid", "win", "free"]
+
+[[tool]]
+name = "basic 65"
+url = "https://plugins4free.com/plugin/1815"
+tags = ["plugin", "legacy", "sid", "win", "free"]
+
+[[tool]]
+name = "Dream 64"
+url = "https://web.archive.org/web/20140812142413/http://woolyss.com/chipmusic/chipmusic-plugins/Dream_64.zip"
+tags = ["plugin", "legacy", "sid", "win", "free"]
+
+[[tool]]
+name = "NeoRetro DX"
+url = "https://web.archive.org/web/20101130235102/http://woolyss.com/chipmusic/chipmusic-plugins/NeoRetro_DX.zip"
+tags = ["plugin", "legacy", "sid", "nes", "win", "free"]
+
+[[tool]]
+name = "Quantum 64"
+url = "https://plugins4free.com/plugin/1317"
+tags = ["plugin", "legacy", "sid", "win", "free"]
+
+[[tool]]
+name = "ProtoPSG"
+url = "https://www.g200kg.com/en/software/protopsg.html"
+tags = ["plugin", "legacy", "psg", "win", "free"]
+
+[[tool]]
+name = "SN-EMU"
+url = "https://web.archive.org/web/20101130235156/http://woolyss.com/chipmusic/chipmusic-plugins/SN-EMU.zip"
+tags = ["plugin", "legacy", "sega", "psg", "win", "free"]
+
+[[tool]]
+name = "YM2612 VST"
+url = "https://web.archive.org/web/20140812142052/http://woolyss.com/chipmusic/chipmusic-plugins/YM2612_VST.zip"
+tags = ["plugin", "legacy", "sega", "fm", "win", "free"]
+
+[[tool]]
+name = "Soft PSG"
+url = "https://web.archive.org/web/20101130232513/http://woolyss.com/chipmusic/chipmusic-plugins/Soft_PSG.zip"
+tags = ["plugin", "legacy", "psg", "msx", "win", "free"]
+
+[[tool]]
+name = "ayumi"
+url = "https://web.archive.org/web/20170929201947/http://woolyss.com/chipmusic/chipmusic-plugins/ayumi.zip"
+tags = ["plugin", "legacy", "psg", "atari", "msx", "win", "free"]
+
+[[tool]]
+name = "hues2600"
+url = "https://web.archive.org/web/20101201001720/http://woolyss.com/chipmusic/chipmusic-plugins/hues2600.zip"
+tags = ["plugin", "legacy", "atari", "win", "free"]
+
+[[tool]]
+name = "IceCream"
+url = "https://plugins4free.com/plugin/3611"
+tags = ["plugin", "legacy", "win", "free"]
+
+[[tool]]
+name = "Medusa 2"
+url = "https://web.archive.org/web/20101201002348/http://woolyss.com/chipmusic/chipmusic-plugins/Medusa_2.zip"
+tags = ["plugin", "legacy", "win", "free"]
+
+[[tool]]
+name = "Kraken"
+url = "https://web.archive.org/web/20140812022931/http://woolyss.com/chipmusic/chipmusic-plugins/Kraken.zip"
+tags = ["plugin", "legacy", "win", "free"]
+
+[[tool]]
+name = "monomate"
+url = "https://plugins4free.com/plugin/1773"
+tags = ["plugin", "legacy", "win", "free"]
+
+[[tool]]
+name = "SE64"
+url = "https://web.archive.org/web/20101201000225/http://woolyss.com/chipmusic/chipmusic-plugins/SE64.zip"
+tags = ["plugin", "legacy", "win", "free"]
+
+[[tool]]
+name = "Rocket Punch"
+url = "https://web.archive.org/web/20101130231645/http://woolyss.com/chipmusic/chipmusic-plugins/Rocket_Punch.zip"
+tags = ["plugin", "legacy", "win", "free"]
+
+[[tool]]
+name = "BiT BOX"
+url = "https://plugins4free.com/plugin/3577"
+tags = ["plugin", "legacy", "win", "free"]
+
+[[tool]]
+name = "Unicycle"
+url = "https://web.archive.org/web/20101130234535/http://woolyss.com/chipmusic/chipmusic-plugins/Unicycle.zip"
+tags = ["plugin", "legacy", "win", "free"]
+
+[[tool]]
+name = "Universe"
+url = "https://web.archive.org/web/20101130231033/http://woolyss.com/chipmusic/chipmusic-plugins/Universe.zip"
+tags = ["plugin", "legacy", "win", "free"]
+
+[[tool]]
+name = "TAL-Bitcrusher"
+url = "https://plugins4free.com/plugin/685"
+tags = ["effect", "legacy", "win", "mac", "free"]
+
+[[tool]]
+name = "LOFI"
+url = "https://plugins4free.com/plugin/525"
+tags = ["effect", "legacy", "win", "free"]
+
+[[tool]]
+name = "3Li73 Reducer 2"
+url = "https://web.archive.org/web/20101201004143/http://woolyss.com/chipmusic/chipmusic-plugins/3Li73_Reducer_2.zip"
+tags = ["effect", "legacy", "win", "mac", "free"]
+
+[[tool]]
+name = "Decimator"
+url = "https://www.apulsoft.ch/freeports/"
+tags = ["effect", "legacy", "win", "mac", "free"]
+
+[[tool]]
+name = "Geektronic"
+url = "https://web.archive.org/web/20101201001351/http://woolyss.com/chipmusic/chipmusic-plugins/Geektronic.zip"
+tags = ["effect", "legacy", "win", "free"]
+
+[[tool]]
+name = "Multiband Bitcrusher"
+url = "https://web.archive.org/web/20101201003126/http://woolyss.com/chipmusic/chipmusic-plugins/Multiband_Bitcrusher.zip"
+tags = ["effect", "legacy", "win", "free"]
+
+[[tool]]
+name = "Redu(p)cer"
+url = "https://web.archive.org/web/20101130234730/http://woolyss.com/chipmusic/chipmusic-plugins/Redu%28p%29cer.zip"
+tags = ["effect", "legacy", "win", "free"]
+
+[[tool]]
+name = "Timemachine"
+url = "https://web.archive.org/web/20101130235537/http://woolyss.com/chipmusic/chipmusic-plugins/Timemachine.zip"
+tags = ["effect", "legacy", "win", "free"]
+
+[[tool]]
+name = "Thrummaschine"
+url = "https://plugins4free.com/plugin/555"
+tags = ["effect", "legacy", "win", "free"]
+
+[[tool]]
+name = "FMDrive"
+url = "https://alyjameslab.com/alyjameslabfmdrive.html"
+tags = ["plugin", "sega", "fm", "win", "paid"]
+
+[[tool]]
+name = "SPSG"
+url = "https://alyjameslab.com/alyjameslabsuperpsg.html"
+tags = ["plugin", "sega", "psg", "win", "paid"]
+
+[[tool]]
+name = "SIDizer"
+url = "https://hypersynth.com/sidizer.html"
+tags = ["plugin", "sid", "win", "paid"]
+
+[[tool]]
+name = "retro-gsx"
+url = "https://www.simple-media.co.uk/vsti.htm"
+tags = ["plugin", "sid", "win", "paid"]
+
+[[tool]]
+name = "retro-gs01 / retro-gs02"
+url = "https://www.simple-media.co.uk/vsti.htm#retrogs01"
+tags = ["plugin", "sid", "win", "paid"]
+
+[[tool]]
+name = "Bitsmacker"
+url = "https://web.archive.org/web/20101130213220/http://woolyss.com/chipmusic/chipmusic-plugins/Bitsmacker.zip"
+tags = ["effect", "legacy", "mac", "free"]
+
+[[tool]]
+name = "QuadraSID"
+url = "https://www.kvraudio.com/product/quadrasid-by-refx"
+tags = ["plugin", "sid", "win", "mac", "paid"]

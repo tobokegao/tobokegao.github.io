@@ -2,8 +2,8 @@
 title: チップチューンづくりのおすすめツール
 title_en: Recommended Chiptune Tools
 date: 2026-10-30
-description: プラグイン、トラッカー、ハードウェア、ブラウザで使えるツール、サンプルパックまで、最新バージョンでまとめ直しました（2026年11月1日更新）
-description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-based tools, and sample packs, all updated with their latest versions. Last updated November 1, 2026.
+description: プラグイン、トラッカー、ハードウェア、ブラウザで使えるツール、サンプルパックまで、最新バージョンでまとめ直しました（2026年11月2日更新）
+description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-based tools, and sample packs, all updated with their latest versions. Last updated November 2, 2026.
 ---
 
 {{< tool-filter >}}
@@ -84,6 +84,10 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-bas
 - [**Interruptor**](https://ss1.xrea.com/theta.s57.xrea.com/software/#interruptor)（theta）v0.0.2：メロディのすき間に高速で効果音やドラムを挟み込む、昔のゲーム特有の鳴らし方（割り込み）を再現する。無料、Windows 64bitのみ（VST3）
   <img src="/img/chiptune-tools/interruptor.webp" alt="Interruptorの画面" width="291" height="310" loading="lazy" />
 
+- [**8-Bit Shaper**](https://xferrecords.com/freeware)（Xfer Records）：音を8bitに落としてから、線で描いたカーブで歪ませるエフェクト。音源の再現ではなく、荒れた音を作るためのものです。前後にフィルターも付いています。無料。Windowsバージョンはv1.05（VST、32bit）、Macバージョンはv1.106（VST・AU、64bit）
+  <img src="/img/chiptune-tools/8-bit-shaper.webp" alt="8-Bit Shaperの画面" width="276" height="340" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1228)より</small>
+
 - [**chipcrusher**](https://www.plogue.com/products/chipcrusher.html)（Plogue）：ファミコンの少しざらざらした声・ドラムの音や、スーパーファミコン独特の粗さとエコーなど、昔のゲーム機らしい音の質感をあとから加えられるエフェクト。39ドル
   <img src="/img/chiptune-tools/chipcrusher.webp" alt="chipcrusherの画面" width="560" height="189" loading="lazy" />
 
@@ -135,9 +139,21 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-bas
   <img src="/img/chiptune-tools/insidious.webp" alt="inSIDiousの画面" width="560" height="320" loading="lazy" />
   <small>画像：[Lospec](https://lospec.com/software/insidious/screenshots)より</small>
 
+- [**FMDrive**](https://alyjameslab.com/alyjameslabfmdrive.html)（Aly James Lab）1.2.6：メガドライブのFM音源（YM2612）をもとに、機能を足したシンセ。20ユーロ（払うのが難しい人向けの割引で15ユーロ）。Windows（VST、32bit。64bitのDAWではブリッジが必要）
+
+- [**SPSG**](https://alyjameslab.com/alyjameslabsuperpsg.html)（Aly James Lab）V1.3：セガ・マスターシステムの音源（SN76489）とAY-3-8910をもとにしたシンセ。20ユーロ（払うのが難しい人向けの割引で15ユーロ）。Windows（VST、32bit。64bitのDAWではブリッジが必要）
+
+- [**SIDizer**](https://hypersynth.com/sidizer.html)（Hypersynth）v1.4：SID（6581と8580）をヒントにしたシンセ。オシレーターは3つで、波形のシーケンサーも付いています。39ドル（通常49ドル）。Windows（VST、32bitのDAW向け）
+
+- [**retro-gsx**](https://www.simple-media.co.uk/vsti.htm)（Simple-Media）：SID風の音を作るシンセ。波形のシーケンサーが付いています。10ポンド（税別）。Windows（VST）
+
+- [**retro-gs01 / retro-gs02**](https://www.simple-media.co.uk/vsti.htm#retrogs01)（Simple-Media）：retro-gs01はSID風のシンセ（10ポンド）、retro-gs02はドラムのシンセ（7.5ポンド）。税別で、2つのセットは12.5ポンドです。Windows（VST）
+
+- [**QuadraSID**](https://www.kvraudio.com/product/quadrasid-by-refx)（reFX）1.6.2：1つで4基のSIDを鳴らせたシンセ。6581と8580を切り替えられました。販売は終わっていて、記録として載せています。リンク先はKVRの紹介ページです。Windows・Mac（VST・AU）。今ならchipsynth C64
+
 ## 昔のプラグイン（無料） {#ja-legacy}
 
-更新の止まった古いプラグインを、自分のパソコンに入っているものを中心に集めました。ほとんどはWindowsの32bitのVSTで、64bitのDAWにはそのまま読み込めないことがあります。REAPERは32bitと64bitをつなぐ機能が入っているので、そのまま読み込めます。ほかのDAWでは、[jBridge](https://jstuff.wordpress.com/jbridge/)（14.99ユーロ）のようなソフトが必要になることがあります。「今なら○○」と書いたものは、いま使うならもっと便利なツールがあるという意味です。
+更新の止まった古いプラグインを、自分のパソコンに入っているものを中心に集めました。ほとんどはWindowsの32bitのVSTで、64bitのDAWにはそのまま読み込めないことがあります。REAPERは32bitと64bitをつなぐ機能が入っているので、そのまま読み込めます。ほかのDAWでは、[jBridge](https://jstuff.wordpress.com/jbridge/)（14.99ユーロ）のようなソフトが必要になることがあります。「今なら○○」と書いたものは、いま使うならもっと便利なツールがあるという意味です。Woolyssが閉じたので、そこで配られていたものの多くは、リンク先がInternet Archiveの記録です。この節のファイルの多くは起動を確かめていません。古いファイルなので、使う前にウイルスチェックをおすすめします。
 
 - [**BitBoy**](https://plugins4free.com/plugin/253/)（DarkWare）：Jack Darkさんが2005年に作ったシンセ。昔のゲーム機の音をまとめてつなぎ、回路をいじって壊したような音が出ます。Windows（VST、32bit）
   <img src="/img/chiptune-tools/legacy-bitboy.webp" alt="BitBoyの画面" width="468" height="245" loading="lazy" />
@@ -172,9 +188,27 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-bas
 - [**NES VST**](https://www.mattmontag.com/projects-page/nintendo-vst)（Matt Montag）1.2：ファミコンの音源を再現したもの。矩形波、三角波、ノイズのほか、DPCMのチャンネルに自分のWAVを読み込んで鳴らせます。Windows（VST、32bit）。今ならMagical 8bit Plug 2かNew DoReFAMI
   <img src="/img/chiptune-tools/legacy-nes-vst.webp" alt="NES VST 1.1の画面" width="384" height="400" loading="lazy" />
 
+- [**8Bit Synth / 8Bit Drums**](https://web.archive.org/web/20101130235635/http://woolyss.com/chipmusic/chipmusic-plugins/8Bit_Synth_-_8Bit_Drums.zip)（tagomago）：nanofuuと同じ作者の、ファミコンの音をまねたシンセとドラム。Synthはパルス波（12.5%、25%、50%）とノコギリ波、Drumsはノイズを鳴らします。KVRの掲示板の投稿によると、Drumsは決まったフォルダにSF2ファイルを置く必要があります。Windows（VST、32bit）
+  <img src="/img/chiptune-tools/legacy-8bit-synth.webp" alt="8Bit Synth / 8Bit Drumsの画面" width="468" height="365" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/2003)より</small>
+
+- [**Syntendo**](https://web.archive.org/web/20101201001611/http://woolyss.com/chipmusic/chipmusic-plugins/Syntendo.zip)（Jack Dark）v1.1：ファミコンの音をまねたシンセ。矩形波2つ、三角波、ノイズの4チャンネルに、それぞれエンベロープと8ステップのシーケンサーが付いています。KVRのレビューには、DAWによっては不安定という指摘があります。Windows（VST、32bit）
+
+- [**NESTri / NESPulse / NESNoise**](https://web.archive.org/web/20101201000448/http://woolyss.com/chipmusic/chipmusic-plugins/NESTri_-_NESPulse_-_NESNoise.zip)（David M. Farler）1.0：「NES VST Pack」とも呼ばれる、ファミコンの音源（2A03）をまねた2006年のセット。4種類の幅を選べる矩形波、三角波、ノイズが、それぞれ別のVSTになっています。実機に合わせて、アルペジオは付いていません。作者によると、NESNoiseは音程の設定によって止まることがあります。Windows（VST、32bit）
+
+- [**NinTiny**](https://web.archive.org/web/20101201003317/http://woolyss.com/chipmusic/chipmusic-plugins/NinTiny.zip)（Suzumebachi）V0.03：ファミコンの波形を再現するシンセ。パルス波は25%、50%、75%、87.5%の4種類で、実機と同じく三角波の音量は変えられません。作者はまだ未完成と書いています。Windows（VST、32bit）
+
+- [**Famisynth**](https://web.archive.org/web/20101130231215/http://woolyss.com/chipmusic/chipmusic-plugins/Famisynth.zip)（mu-station）v2.5：ファミコンの音をまねたシンセ。KVRにはのちのVST3・AUバージョンも載っていますが、入手先は確かめられませんでした。Windows（VST、32bit）
+
+- [**Retorizer**](https://web.archive.org/web/20101201002128/http://woolyss.com/chipmusic/chipmusic-plugins/Retorizer.zip)（Bumpy）：ファミコンの音をまねたシンセ。リンク先のファイルは2009年のものです。Windows（VST、32bit）
+
 - [**Pure6581**](https://web.archive.org/web/20260116132555/https://woolyss.com/chipmusic/chipmusic-plugins/Pure6581.zip)（L-Day）v1.4：コモドール64の音源（SID）をまねたシンセ。波形を順番に切り替えて鳴らせるので、ドラムの音づくりに向いています。作者のページも、配布していたWoolyssもなくなったので、リンク先はInternet Archiveの記録です。Windows（VST、32bit）
   <img src="/img/chiptune-tools/legacy-pure6581.webp" alt="Pure6581の画面" width="514" height="384" loading="lazy" />
   <small>画像：[plugINDEX](https://www.plugindex.de/pure6581/)より</small>
+
+- [**SIDmonster**](https://web.archive.org/web/20101130234123/http://woolyss.com/chipmusic/chipmusic-plugins/SIDmonster.zip)（L-Day）V1.00：Pure6581と同じ作者の、コモドール64の音をまねた8bitのローファイなシンセ。オシレーターは1つで、三角波、ノコギリ波、矩形波、ノイズを16ステップの表で切り替えられます。フィルターはローパスのみです。作者のページも、配布していたWoolyssもなくなったので、リンク先はInternet Archiveの記録です。Windows（VST、32bit）
+  <img src="/img/chiptune-tools/legacy-sidmonster.webp" alt="SIDmonster v0.10の画面" width="560" height="429" loading="lazy" />
+  <small>画像：[rekkerd.org](https://rekkerd.org/l-day-releases-sidmonster-v010/)より</small>
 
 - [**miniSID**](https://delamanchavst.wordpress.com/2013/10/21/minisid/)（de la Mancha）：実機のSID（6581）から取った波形で鳴らすシンセ。オシレーターは2つで、シンクとアルペジオも付いています。Windows（VST、32bit）
   <img src="/img/chiptune-tools/legacy-minisid.webp" alt="miniSIDの画面" width="320" height="270" loading="lazy" />
@@ -191,9 +225,45 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-bas
   <img src="/img/chiptune-tools/legacy-bleep.webp" alt="Bleepの画面" width="468" height="276" loading="lazy" />
   <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1105/)より</small>
 
+- [**SIDboy**](https://web.archive.org/web/20101130232808/http://woolyss.com/chipmusic/chipmusic-plugins/SIDboy.zip)（Jack Dark）：SIDらしい音を出すシンセ。作者のreadmeによると、実機をモデルにしたものではありません。Windows（VST、32bit）
+
+- [**Pure64**](https://web.archive.org/web/20101130235011/http://woolyss.com/chipmusic/chipmusic-plugins/Pure64.zip)（L-Day）：Pure6581と同じ作者の、SIDの音をまねたシンセ。オシレーターは1つで、12ステップのアルペジエーター、LFO、3種類のフィルターが付いています。Windows（VST、32bit）
+
+- [**MicroSynt**](https://www.kvraudio.com/product/microsynt_by_chris_huelsbeck)（Chris Huelsbeck）1.01：コモドール64のゲーム音楽で知られる作曲家が作った、SIDの音をまねたシンセ。ファイルの説明書が再配布を禁じているので、リンク先はKVRの紹介ページです。Windows（VST、32bit）
+
+- [**Unknown 64 Pro**](https://web.archive.org/web/20101201001255/http://woolyss.com/chipmusic/chipmusic-plugins/Unknown_64_Pro.zip)（Odosynths）1.1：コモドール64の音に近づけたシンセ。波形は4種類で、寄付制です。Windows（VST、32bit）
+
+- [**basic 64**](https://plugins4free.com/plugin/1802)（de la Mancha）：SIDをもとに機能を足したシンセ。再現ではありません。オシレーターは3つで、音質を16bit、8bit、6bitから選べます。Windows（VST、32bit）
+  <img src="/img/chiptune-tools/legacy-basic64.webp" alt="basic 64の画面" width="468" height="234" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1802)より</small>
+
+- [**basic 65**](https://plugins4free.com/plugin/1815)（de la Mancha）：basic 64の後継の、単音のシンセ。2段のアルペジエーターと2つのLFOが付いていて、音質は4〜16bitから選べます。プリセットは128個です。Windows（VST、32bit）
+  <img src="/img/chiptune-tools/legacy-basic65.webp" alt="basic 65の画面" width="468" height="295" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1815)より</small>
+
+- [**Dream 64**](https://web.archive.org/web/20140812142413/http://woolyss.com/chipmusic/chipmusic-plugins/Dream_64.zip)（Odosynths）：SIDをヒントにしたシンセ。作者によると、再現ではなく、チップチューンで使う音を作るためのものです。Windows（VST、32bit）
+
+- [**NeoRetro DX**](https://web.archive.org/web/20101130235102/http://woolyss.com/chipmusic/chipmusic-plugins/NeoRetro_DX.zip)（Novuzeit）：SIDやファミコンの音を思わせる音に、当時の機械ではできなかった機能を足したシンセ。Windows（VST、32bit）
+
+- [**Quantum 64**](https://plugins4free.com/plugin/1317)（Land of Cockaigne）V1.1：SIDをヒントにした、荒いデジタルのシンセ。再現ではなく、アルペジエーターと音を粗くする機能が特徴です。4音まで同時に鳴らせます。Windows（VST、32bit）
+  <img src="/img/chiptune-tools/legacy-quantum64.webp" alt="Quantum 64の画面" width="454" height="298" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1317)より</small>
+
 - [**ymVST**](http://www.preromanbritain.com/ymvst/)（gwEm）v1.0：Atari STの音源（YM2149）を再現した、2003年のプラグイン。実機に近づけるなら、同時に使うのは3つまでにするよう、作者がすすめています。Windows（VST、32bit）。今ならShiruさんのVT2i
   <img src="/img/chiptune-tools/legacy-ymvst.webp" alt="ymVSTの画面" width="385" height="241" loading="lazy" />
   <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/260/)より</small>
+
+- [**ProtoPSG**](https://www.g200kg.com/en/software/protopsg.html)（g200kg）005：PSGの音を出す、8音まで鳴らせるシンセ。オシレーター2つとノイズに、フィルターやコーラス、ディレイも付いています。作者によると、画面は作りかけです。Windows（VST、32bit）
+
+- [**SN-EMU**](https://web.archive.org/web/20101130235156/http://woolyss.com/chipmusic/chipmusic-plugins/SN-EMU.zip)（Ben Anderson）：セガのゲーム機に使われた音源（SN76489）をまねたシンセ。Windows（VST、32bit）
+
+- [**YM2612 VST**](https://web.archive.org/web/20140812142052/http://woolyss.com/chipmusic/chipmusic-plugins/YM2612_VST.zip)（Landon Podbielski）V0.9：メガドライブの音源を再現するプラグインのベータバージョン。作者は不具合が残っていると書いています。Windows（VST、32bit）。今ならGenny
+
+- [**Soft PSG**](https://web.archive.org/web/20101130232513/http://woolyss.com/chipmusic/chipmusic-plugins/Soft_PSG.zip)（STARRFISH）：MSXのPSG音源をまねたシンセ。作者は、2つ起動して片方だけ音程をずらすなど、複数を同時に使うことをすすめています。Windows（VST、32bit）
+
+- [**ayumi**](https://web.archive.org/web/20170929201947/http://woolyss.com/chipmusic/chipmusic-plugins/ayumi.zip)（Pyotr Sovetov）：AY-3-8910とYM2149Fを再現したプラグイン。Vortex Tracker IIの音色を読み込めます。もとの[ライブラリはGitHub](https://github.com/true-grue/ayumi)にあります。作者のページのドメインは別のサイトに変わっているので、開かないでください。Windows（VST、32bit）
+
+- [**hues2600**](https://web.archive.org/web/20101201001720/http://woolyss.com/chipmusic/chipmusic-plugins/hues2600.zip)（Hues）：Atari 2600の音源（TIA）のノイズをまねたシンセ。「sample」と「hold」のつまみで音を変えます。Windows（VST、32bit）
 
 - [**vst2413**](https://github.com/keijiro/vst2413)（Keijiro Takahashi）：MSXのFM-PACやセガ・マスターシステムで使われたFM音源（YM2413）を再現したもの。専用の画面はなく、DAWのつまみの一覧で操作します。2013年のWindowsバージョンは32bitです（VST）
 
@@ -203,7 +273,62 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-bas
   <img src="/img/chiptune-tools/legacy-chip32.webp" alt="Chip32の画面" width="468" height="246" loading="lazy" />
   <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1067)より</small>
 
+- [**PSC-02**](https://www.vector.co.jp/soft/win95/art/se273760.html)（ksiyshd）1.00：8bitのパソコンやゲーム機の内蔵音源をまねた、2003年のシンセ。32本のスライダーで波形を描く音と、用意された波形を選ぶ音を混ぜて鳴らします。VSTではなくDXi形式なので、SONARのような対応するソフトが必要です。対応するOSはWindows XPまでで、いまの環境で動くかどうかは確かめていません
+  <img src="/img/chiptune-tools/legacy-psc-02.webp" alt="PSC-02の画面" width="544" height="424" loading="lazy" />
+
+- [**IceCream**](https://plugins4free.com/plugin/3611)（Cosmic Boy）V1.0：8bit風のシンセ。オシレーターは2つで、音程とフィルターのステップシーケンサー、ビットクラッシャー、リバーブとディレイが付いています。Windows（VST、32bit）
+  <img src="/img/chiptune-tools/legacy-icecream.webp" alt="IceCreamの画面" width="468" height="229" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/3611)より</small>
+
+- [**Medusa 2**](https://web.archive.org/web/20101201002348/http://woolyss.com/chipmusic/chipmusic-plugins/Medusa_2.zip)（µB）：パルス波、サイン波、三角波、ノコギリ波、ノイズ風の音を出すシンセ。4bitの音量エンベロープとアルペジオが付いています。Windows（VST、32bit）
+
+- [**Kraken**](https://web.archive.org/web/20140812022931/http://woolyss.com/chipmusic/chipmusic-plugins/Kraken.zip)（µB）：アシッド風の矩形波のシンセ。4bitの音量エンベロープと、パルス幅を動かすLFOが付いています。Windows（VST、32bit）
+
+- [**monomate**](https://plugins4free.com/plugin/1773)（Tweakbench）V2.3：レトロなベースや高いリードを作る、単音のシンセ。Windows（VST、32bit）
+  <img src="/img/chiptune-tools/legacy-monomate.webp" alt="monomateの画面" width="308" height="132" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/1773)より</small>
+
+- [**SE64**](https://web.archive.org/web/20101201000225/http://woolyss.com/chipmusic/chipmusic-plugins/SE64.zip)（Oli Larkin）：昔のパソコンゲームのような音を出す、単音のシンセ。Windows（VST、32bit）
+
+- [**Rocket Punch**](https://web.archive.org/web/20101130231645/http://woolyss.com/chipmusic/chipmusic-plugins/Rocket_Punch.zip)（Hello Robot）：速いエンベロープで、歯切れのよいベースやリードを作るシンセ。回路をいじったような音も出せます。Windows（VST、32bit）
+
+- [**BiT BOX**](https://plugins4free.com/plugin/3577)（Hello Robot）V1.0：昔のゲームの音を500個以上集めた8bitのドラム音源。Plugins 4 Freeのコメントには、音が出ないという報告があります。Windows（VST、32bit）
+  <img src="/img/chiptune-tools/legacy-bit-box.webp" alt="BiT BOXの画面" width="409" height="407" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/3577)より</small>
+
+- [**Unicycle**](https://web.archive.org/web/20101130234535/http://woolyss.com/chipmusic/chipmusic-plugins/Unicycle.zip)（spacedad）v013：300種類の短い波形を選べる、8bitのシンセ。音を粗くする機能も付いています。波形のファイルは決まったフォルダのまま置いてください。Windows（VST、32bit）
+
+- [**Universe**](https://web.archive.org/web/20101130231033/http://woolyss.com/chipmusic/chipmusic-plugins/Universe.zip)（Ace music）：昔のゲーム機の音をまねたシンセ。Windows（VST、32bit）
+
 - [**LM358N**](/dl/LM358N-vst.zip)（32mbit／SECRETCODE）：昔のゲーム機やパソコンに使われた、安くて遅いオペアンプの音の癖をまねるエフェクト。歪み、ノイズ、低音の持ち上がりなどに加えて、かんたんなローパスフィルターも付いています。作者はチップチューンのマスタリング用に作ったそうで、FM音源によく合うとのことです。配布ページが見つからなかったので、readmeの「パブリックドメイン」の記載をもとに、元のファイルのままこのサイトに置きました。作者も十分には試していないそうで、保証はありません。Windows（VST、32bit・64bit）
+
+- [**TAL-Bitcrusher**](https://plugins4free.com/plugin/685)（Togu Audio Line）V1.0：ビットとサンプルレートを下げるエフェクト。EQとノイズの変調も付いています。Windows（VST、32bit・64bit）・Mac（VST・AU）
+  <img src="/img/chiptune-tools/legacy-tal-bitcrusher.webp" alt="TAL-Bitcrusherの画面" width="468" height="96" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/685)より</small>
+
+- [**LOFI**](https://plugins4free.com/plugin/525)（E-Phonic）v1.0：ビットとサンプルレートを下げて、古いサンプラーのような音にするエフェクト。フィルターと歪みも付いています。Windows（VST、32bit）
+  <img src="/img/chiptune-tools/legacy-lofi.webp" alt="LOFIの画面" width="468" height="271" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/525)より</small>
+
+- [**3Li73 Reducer 2**](https://web.archive.org/web/20101201004143/http://woolyss.com/chipmusic/chipmusic-plugins/3Li73_Reducer_2.zip)（Virtual Creations）：ビットとサンプルレートを下げる小さなエフェクト。前後にフィルターが付いています。Windows・Mac（VST・AU）
+
+- [**Decimator**](https://www.apulsoft.ch/freeports/)（TobyBear／ApulSoft）：ビットとサンプルレートを下げてから、フィルターを通すエフェクト。リンク先はMacバージョンを作ったApulSoftのページです。Windows・Mac（VST・AU）
+
+- [**Geektronic**](https://web.archive.org/web/20101201001351/http://woolyss.com/chipmusic/chipmusic-plugins/Geektronic.zip)（Novaflash）：ビットを2〜24bitの範囲で下げる、ステレオのエフェクト。Windows（VST、32bit）
+
+- [**Multiband Bitcrusher**](https://web.archive.org/web/20101201003126/http://woolyss.com/chipmusic/chipmusic-plugins/Multiband_Bitcrusher.zip)（Nym）：音を4つの帯域に分けて、それぞれのビットとサンプルレートを下げるエフェクト。Windows（VST、32bit）
+
+- [**Redu(p)cer**](https://web.archive.org/web/20101130234730/http://woolyss.com/chipmusic/chipmusic-plugins/Redu%28p%29cer.zip)（Morfiki）：5つのプリセットのあいだを滑らかに移り変われる、ビットを下げるエフェクト。Windows（VST、32bit）
+
+- [**Timemachine**](https://web.archive.org/web/20101130235537/http://woolyss.com/chipmusic/chipmusic-plugins/Timemachine.zip)（Jeroen Breebaart）：コモドール64や、古いAkaiのサンプラーの音の質感をまねるエフェクト。サンプルレートとビット数を変えられます。Windows（VST、32bit）
+
+- [**Thrummaschine**](https://plugins4free.com/plugin/555)（de la Mancha）V1.0：音を3つの帯域に分けて、それぞれにフィルターのLFOと歪み、ビットクラッシュをかけるエフェクト。Windows（VST、32bit）
+  <img src="/img/chiptune-tools/legacy-thrummaschine.webp" alt="Thrummaschineの画面" width="468" height="293" loading="lazy" />
+  <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/555)より</small>
+
+- [**Bitsmacker**](https://web.archive.org/web/20101130213220/http://woolyss.com/chipmusic/chipmusic-plugins/Bitsmacker.zip)（Meatscience）1.1：デジタルの歪みで、古いサンプラーやゲーム機のような音にするエフェクト。ビットは0.01〜32bit、サンプルレートは50〜44,100Hzの範囲で変えられます。Mac（AU、Intel・PowerPC）で、Apple Siliconには対応していません
+  <img src="/img/chiptune-tools/legacy-bitsmacker.webp" alt="Bitsmackerの画面" width="520" height="207" loading="lazy" />
+  <small>画像：[rekkerd.org](https://rekkerd.org/meatscience-releases-bitsmacker/)より</small>
 
 ## ブラウザで使えるソフト（無料） {#ja-browser}
 
@@ -1170,6 +1295,10 @@ These load in your usual DAW and play like any other instrument.
 - [**Interruptor**](https://ss1.xrea.com/theta.s57.xrea.com/software/#interruptor) (theta) v0.0.2: recreates "interrupts," the old game-music trick of slipping quick sound effects or drums into the gaps of a melody. Free, Windows 64-bit only (VST3)
   <img src="/img/chiptune-tools/interruptor.webp" alt="Interruptor screenshot" width="291" height="310" loading="lazy" />
 
+- [**8-Bit Shaper**](https://xferrecords.com/freeware) (Xfer Records): an effect that reduces sound to 8 bits, then distorts it with a curve you draw. It's made for rough textures, not for recreating a sound chip. It includes pre- and post-filters. Free. Windows v1.05 (VST, 32-bit), Mac v1.106 (VST and AU, 64-bit)
+  <img src="/img/chiptune-tools/8-bit-shaper.webp" alt="8-Bit Shaper screenshot" width="276" height="340" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1228)</small>
+
 - [**chipcrusher**](https://www.plogue.com/products/chipcrusher.html) (Plogue): adds the texture of old consoles after the fact, such as the slightly gritty voices and drums of the NES or the SNES's distinctive roughness and echo. $39
   <img src="/img/chiptune-tools/chipcrusher.webp" alt="chipcrusher screenshot" width="560" height="189" loading="lazy" />
 
@@ -1221,9 +1350,21 @@ These load in your usual DAW and play like any other instrument.
   <img src="/img/chiptune-tools/insidious.webp" alt="inSIDious screenshot" width="560" height="320" loading="lazy" />
   <small>Image: from [Lospec](https://lospec.com/software/insidious/screenshots)</small>
 
+- [**FMDrive**](https://alyjameslab.com/alyjameslabfmdrive.html) (Aly James Lab) 1.2.6: a synth based on the Mega Drive's YM2612 FM chip, expanded with extra features. €20 (discounted to €15 for those who can't afford the regular price). Windows (VST, 32-bit; 64-bit DAWs need a bridge)
+
+- [**SPSG**](https://alyjameslab.com/alyjameslabsuperpsg.html) (Aly James Lab) V1.3: a synth based on the Sega Master System's SN76489 and the AY-3-8910. €20 (discounted to €15 for those who can't afford the regular price). Windows (VST, 32-bit; 64-bit DAWs need a bridge)
+
+- [**SIDizer**](https://hypersynth.com/sidizer.html) (Hypersynth) v1.4: a synth inspired by the 6581 and 8580 SID chips, with three oscillators and a wavetable sequencer. $39 (normally $49). Windows (VST, for 32-bit hosts)
+
+- [**retro-gsx**](https://www.simple-media.co.uk/vsti.htm) (Simple-Media): a SID-inspired synth with an advanced wave sequencer. £10 before tax. Windows (VST)
+
+- [**retro-gs01 / retro-gs02**](https://www.simple-media.co.uk/vsti.htm#retrogs01) (Simple-Media): retro-gs01 is a SID-inspired synth (£10) and retro-gs02 is a drum synth (£7.50), before tax. The bundle is £12.50. Windows (VST)
+
+- [**QuadraSID**](https://www.kvraudio.com/product/quadrasid-by-refx) (reFX) 1.6.2: a synth that ran four SID chips at once, switchable between 6581 and 8580. It's no longer sold, so this is a historical note, and the link goes to its KVR page. Windows and Mac (VST, AU). Today, try chipsynth C64
+
 ## Older plugins (free) {#en-legacy}
 
-These are old plugins that are no longer updated, mostly ones I keep on my own computer. Most are 32-bit Windows VSTs, which may not load directly in a 64-bit DAW. REAPER has a built-in bridge and loads them directly, but other DAWs may need a bridging tool such as [jBridge](https://jstuff.wordpress.com/jbridge/) (€14.99). "Today, try X" means an easier tool is available now.
+These are old plugins that are no longer updated, mostly ones I keep on my own computer. Most are 32-bit Windows VSTs, which may not load directly in a 64-bit DAW. REAPER has a built-in bridge and loads them directly, but other DAWs may need a bridging tool such as [jBridge](https://jstuff.wordpress.com/jbridge/) (€14.99). "Today, try X" means an easier tool is available now. Woolyss has closed, so many links here go to Internet Archive copies of its files. I haven't test-run most of these files, and because they're old, I recommend a virus scan first.
 
 - [**BitBoy**](https://plugins4free.com/plugin/253/) (DarkWare): a synth Jack Dark made in 2005. It sounds like old game consoles wired together and circuit-bent. Windows (VST, 32-bit)
   <img src="/img/chiptune-tools/legacy-bitboy.webp" alt="BitBoy screenshot" width="468" height="245" loading="lazy" />
@@ -1258,9 +1399,27 @@ These are old plugins that are no longer updated, mostly ones I keep on my own c
 - [**NES VST**](https://www.mattmontag.com/projects-page/nintendo-vst) (Matt Montag) 1.2: recreates the NES sound chip. Along with square, triangle, and noise, it can play your own WAV files through the DPCM channel. Windows (VST, 32-bit). Today, try Magical 8bit Plug 2 or New DoReFAMI
   <img src="/img/chiptune-tools/legacy-nes-vst.webp" alt="NES VST 1.1 screenshot" width="384" height="400" loading="lazy" />
 
+- [**8Bit Synth / 8Bit Drums**](https://web.archive.org/web/20101130235635/http://woolyss.com/chipmusic/chipmusic-plugins/8Bit_Synth_-_8Bit_Drums.zip) (tagomago): a NES-style synth and drum plugin by the author of nanofuu. Synth has pulse waves (12.5%, 25%, 50%) and a saw wave, and Drums plays noise. According to a KVR forum post, Drums needs an SF2 file in a specific folder. Windows (VST, 32-bit)
+  <img src="/img/chiptune-tools/legacy-8bit-synth.webp" alt="8Bit Synth / 8Bit Drums screenshot" width="468" height="365" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/2003)</small>
+
+- [**Syntendo**](https://web.archive.org/web/20101201001611/http://woolyss.com/chipmusic/chipmusic-plugins/Syntendo.zip) (Jack Dark) v1.1: a NES-style synth. Its four channels (two squares, triangle, and noise) each have an envelope and an 8-step sequencer. A KVR review says it can be unstable in some hosts. Windows (VST, 32-bit)
+
+- [**NESTri / NESPulse / NESNoise**](https://web.archive.org/web/20101201000448/http://woolyss.com/chipmusic/chipmusic-plugins/NESTri_-_NESPulse_-_NESNoise.zip) (David M. Farler) 1.0: a 2006 set imitating the NES 2A03 chip, also known as the NES VST Pack. A pulse with four duty cycles, a triangle, and noise each come as a separate VST. To stay close to the chip, there's no arpeggiator. The author notes that NESNoise can stop at certain pitch settings. Windows (VST, 32-bit)
+
+- [**NinTiny**](https://web.archive.org/web/20101201003317/http://woolyss.com/chipmusic/chipmusic-plugins/NinTiny.zip) (Suzumebachi) V0.03: a synth aiming for accurate NES waveforms. The pulse has four duty cycles (25%, 50%, 75%, 87.5%), and as on real hardware the triangle has no volume control. The author calls it an unfinished alpha. Windows (VST, 32-bit)
+
+- [**Famisynth**](https://web.archive.org/web/20101130231215/http://woolyss.com/chipmusic/chipmusic-plugins/Famisynth.zip) (mu-station) v2.5: a NES-style synth. KVR also lists later VST3 and AU versions, but I couldn't confirm where to get them. Windows (VST, 32-bit)
+
+- [**Retorizer**](https://web.archive.org/web/20101201002128/http://woolyss.com/chipmusic/chipmusic-plugins/Retorizer.zip) (Bumpy): a NES-style synth. The linked file dates from 2009. Windows (VST, 32-bit)
+
 - [**Pure6581**](https://web.archive.org/web/20260116132555/https://woolyss.com/chipmusic/chipmusic-plugins/Pure6581.zip) (L-Day) v1.4: a synth imitating the Commodore 64 sound chip (SID). It plays waveforms one after another, which suits drum sounds. The author's page and Woolyss, which hosted it, are both gone, so the link goes to the Internet Archive copy. Windows (VST, 32-bit)
   <img src="/img/chiptune-tools/legacy-pure6581.webp" alt="Pure6581 screenshot" width="514" height="384" loading="lazy" />
   <small>Image: from [plugINDEX](https://www.plugindex.de/pure6581/)</small>
+
+- [**SIDmonster**](https://web.archive.org/web/20101130234123/http://woolyss.com/chipmusic/chipmusic-plugins/SIDmonster.zip) (L-Day) V1.00: a lo-fi 8-bit synth imitating the Commodore 64 sound, by the author of Pure6581. It has a single oscillator that cycles through triangle, saw, square, and noise waveforms using a 16-step table. The filter is lowpass only. The author's page and Woolyss, which hosted it, are both gone, so the link goes to the Internet Archive copy. Windows (VST, 32-bit)
+  <img src="/img/chiptune-tools/legacy-sidmonster.webp" alt="SIDmonster v0.10 screenshot" width="560" height="429" loading="lazy" />
+  <small>Image: from [rekkerd.org](https://rekkerd.org/l-day-releases-sidmonster-v010/)</small>
 
 - [**miniSID**](https://delamanchavst.wordpress.com/2013/10/21/minisid/) (de la Mancha): a synth using waveforms sampled from a real SID (6581) chip, with two oscillators, sync, and an arpeggiator. Windows (VST, 32-bit)
   <img src="/img/chiptune-tools/legacy-minisid.webp" alt="miniSID screenshot" width="320" height="270" loading="lazy" />
@@ -1277,9 +1436,45 @@ These are old plugins that are no longer updated, mostly ones I keep on my own c
   <img src="/img/chiptune-tools/legacy-bleep.webp" alt="Bleep screenshot" width="468" height="276" loading="lazy" />
   <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1105/)</small>
 
+- [**SIDboy**](https://web.archive.org/web/20101130232808/http://woolyss.com/chipmusic/chipmusic-plugins/SIDboy.zip) (Jack Dark): a synth that sounds SID-like. The author's readme says it isn't modeled on the real chip. Windows (VST, 32-bit)
+
+- [**Pure64**](https://web.archive.org/web/20101130235011/http://woolyss.com/chipmusic/chipmusic-plugins/Pure64.zip) (L-Day): a SID-style synth by the author of Pure6581. It has one oscillator, a 12-step arpeggiator, an LFO, and three filter types. Windows (VST, 32-bit)
+
+- [**MicroSynt**](https://www.kvraudio.com/product/microsynt_by_chris_huelsbeck) (Chris Huelsbeck) 1.01: a SID-style synth by the composer known for his Commodore 64 game music. Its disclaimer forbids redistribution, so the link goes to the KVR product page. Windows (VST, 32-bit)
+
+- [**Unknown 64 Pro**](https://web.archive.org/web/20101201001255/http://woolyss.com/chipmusic/chipmusic-plugins/Unknown_64_Pro.zip) (Odosynths) 1.1: a synth built to sound closer to the Commodore 64, with four waveforms. It's donationware. Windows (VST, 32-bit)
+
+- [**basic 64**](https://plugins4free.com/plugin/1802) (de la Mancha): a synth based on the SID with some extras, not an emulation. It has three oscillators and a choice of 16-, 8-, or 6-bit sound. Windows (VST, 32-bit)
+  <img src="/img/chiptune-tools/legacy-basic64.webp" alt="basic 64 screenshot" width="468" height="234" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1802)</small>
+
+- [**basic 65**](https://plugins4free.com/plugin/1815) (de la Mancha): the monophonic successor to basic 64, with a double arpeggiator, two LFOs, and 4- to 16-bit sound settings. It includes 128 presets. Windows (VST, 32-bit)
+  <img src="/img/chiptune-tools/legacy-basic65.webp" alt="basic 65 screenshot" width="468" height="295" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1815)</small>
+
+- [**Dream 64**](https://web.archive.org/web/20140812142413/http://woolyss.com/chipmusic/chipmusic-plugins/Dream_64.zip) (Odosynths): a SID-inspired synth. The author says it isn't an emulation, just a way to make sounds used in chip music. Windows (VST, 32-bit)
+
+- [**NeoRetro DX**](https://web.archive.org/web/20101130235102/http://woolyss.com/chipmusic/chipmusic-plugins/NeoRetro_DX.zip) (Novuzeit): a synth with SID- and NES-like sounds, plus features beyond what that hardware could do. Windows (VST, 32-bit)
+
+- [**Quantum 64**](https://plugins4free.com/plugin/1317) (Land of Cockaigne) V1.1: a harsh digital synth inspired by the SID, not an emulation. Its arpeggiator and degrader define the sound. It has four-note polyphony. Windows (VST, 32-bit)
+  <img src="/img/chiptune-tools/legacy-quantum64.webp" alt="Quantum 64 screenshot" width="454" height="298" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1317)</small>
+
 - [**ymVST**](http://www.preromanbritain.com/ymvst/) (gwEm) v1.0: a 2003 plugin recreating the Atari ST sound chip (YM2149). For an authentic sound, the author suggests running no more than three at once. Windows (VST, 32-bit). Today, try Shiru's VT2i
   <img src="/img/chiptune-tools/legacy-ymvst.webp" alt="ymVST screenshot" width="385" height="241" loading="lazy" />
   <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/260/)</small>
+
+- [**ProtoPSG**](https://www.g200kg.com/en/software/protopsg.html) (g200kg) 005: a PSG-style synth with eight-voice polyphony. It has two oscillators and noise, plus a filter, chorus, and delay. The author says the interface is unfinished. Windows (VST, 32-bit)
+
+- [**SN-EMU**](https://web.archive.org/web/20101130235156/http://woolyss.com/chipmusic/chipmusic-plugins/SN-EMU.zip) (Ben Anderson): a synth imitating the SN76489 chip used in Sega consoles. Windows (VST, 32-bit)
+
+- [**YM2612 VST**](https://web.archive.org/web/20140812142052/http://woolyss.com/chipmusic/chipmusic-plugins/YM2612_VST.zip) (Landon Podbielski) V0.9: a beta plugin recreating the Mega Drive sound chip. The author warns that bugs remain. Windows (VST, 32-bit). Today, try Genny
+
+- [**Soft PSG**](https://web.archive.org/web/20101130232513/http://woolyss.com/chipmusic/chipmusic-plugins/Soft_PSG.zip) (STARRFISH): a synth imitating the MSX PSG. The author suggests running several at once, such as two slightly detuned copies. Windows (VST, 32-bit)
+
+- [**ayumi**](https://web.archive.org/web/20170929201947/http://woolyss.com/chipmusic/chipmusic-plugins/ayumi.zip) (Pyotr Sovetov): a plugin recreating the AY-3-8910 and YM2149F that can load Vortex Tracker II instruments. The [underlying library is on GitHub](https://github.com/true-grue/ayumi). The author's old domain now hosts an unrelated site, so avoid it. Windows (VST, 32-bit)
+
+- [**hues2600**](https://web.archive.org/web/20101201001720/http://woolyss.com/chipmusic/chipmusic-plugins/hues2600.zip) (Hues): a synth imitating the noises of the Atari 2600's TIA chip. You change the sound with the sample and hold dials. Windows (VST, 32-bit)
 
 - [**vst2413**](https://github.com/keijiro/vst2413) (Keijiro Takahashi): recreates the FM chip (YM2413) used in the MSX FM-PAC and Sega Master System. It has no interface of its own, so you use your DAW's generic controls. The 2013 Windows build is 32-bit (VST)
 
@@ -1289,7 +1484,62 @@ These are old plugins that are no longer updated, mostly ones I keep on my own c
   <img src="/img/chiptune-tools/legacy-chip32.webp" alt="Chip32 screenshot" width="468" height="246" loading="lazy" />
   <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1067)</small>
 
+- [**PSC-02**](https://www.vector.co.jp/soft/win95/art/se273760.html) (ksiyshd) 1.00: a 2003 synth imitating the built-in sound of 8-bit computers and game consoles. It mixes a waveform you draw with 32 sliders and a preset waveform you choose. It's a DXi plugin, not a VST, so it needs a compatible host such as SONAR. It supports up to Windows XP, and I haven't checked whether it runs on current systems
+  <img src="/img/chiptune-tools/legacy-psc-02.webp" alt="PSC-02 screenshot" width="544" height="424" loading="lazy" />
+
+- [**IceCream**](https://plugins4free.com/plugin/3611) (Cosmic Boy) V1.0: an 8-bit-style synth with two oscillators, a step sequencer for pitch and filter, a bitcrusher, reverb, and delay. Windows (VST, 32-bit)
+  <img src="/img/chiptune-tools/legacy-icecream.webp" alt="IceCream screenshot" width="468" height="229" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/3611)</small>
+
+- [**Medusa 2**](https://web.archive.org/web/20101201002348/http://woolyss.com/chipmusic/chipmusic-plugins/Medusa_2.zip) (µB): a synth with pulse, sine, triangle, saw, and pseudo-noise waves, a 4-bit volume envelope, and an arpeggiator. Windows (VST, 32-bit)
+
+- [**Kraken**](https://web.archive.org/web/20140812022931/http://woolyss.com/chipmusic/chipmusic-plugins/Kraken.zip) (µB): an acid-flavored square wave synth with a 4-bit volume envelope and a pulse-width LFO. Windows (VST, 32-bit)
+
+- [**monomate**](https://plugins4free.com/plugin/1773) (Tweakbench) V2.3: a monophonic synth for retro basslines and shrill leads. Windows (VST, 32-bit)
+  <img src="/img/chiptune-tools/legacy-monomate.webp" alt="monomate screenshot" width="308" height="132" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/1773)</small>
+
+- [**SE64**](https://web.archive.org/web/20101201000225/http://woolyss.com/chipmusic/chipmusic-plugins/SE64.zip) (Oli Larkin): a monosynth that makes retro computer game noises. Windows (VST, 32-bit)
+
+- [**Rocket Punch**](https://web.archive.org/web/20101130231645/http://woolyss.com/chipmusic/chipmusic-plugins/Rocket_Punch.zip) (Hello Robot): a synth with a very fast mod envelope for punchy basses and leads, and circuit-bent sounds. Windows (VST, 32-bit)
+
+- [**BiT BOX**](https://plugins4free.com/plugin/3577) (Hello Robot) V1.0: an 8-bit drum sampler with over 500 classic game sounds. Comments on Plugins 4 Free report that it doesn't make any sound. Windows (VST, 32-bit)
+  <img src="/img/chiptune-tools/legacy-bit-box.webp" alt="BiT BOX screenshot" width="409" height="407" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/3577)</small>
+
+- [**Unicycle**](https://web.archive.org/web/20101130234535/http://woolyss.com/chipmusic/chipmusic-plugins/Unicycle.zip) (spacedad) v013: an 8-bit synth with 300 short waveforms and bit and sample rate reducers. Keep the waveform files in their original folders. Windows (VST, 32-bit)
+
+- [**Universe**](https://web.archive.org/web/20101130231033/http://woolyss.com/chipmusic/chipmusic-plugins/Universe.zip) (Ace music): a synth imitating old game consoles. Windows (VST, 32-bit)
+
 - [**LM358N**](/dl/LM358N-vst.zip) (32mbit / SECRETCODE): an effect imitating the character of the cheap, slow op-amps used in old consoles and home computers. It adds distortion, noise, and a bass boost, along with a simple low-pass filter. The author made it mainly for chiptune mastering and says it suits FM synths especially well. I couldn't find a download page, so I'm hosting the original files here, since the readme says it's public domain. The author notes it isn't thoroughly tested, and there's no warranty. Windows (VST, 32-bit and 64-bit)
+
+- [**TAL-Bitcrusher**](https://plugins4free.com/plugin/685) (Togu Audio Line) V1.0: a bit and sample rate reducer with EQ and noise cross modulation. Windows (VST, 32-bit and 64-bit) and Mac (VST, AU)
+  <img src="/img/chiptune-tools/legacy-tal-bitcrusher.webp" alt="TAL-Bitcrusher screenshot" width="468" height="96" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/685)</small>
+
+- [**LOFI**](https://plugins4free.com/plugin/525) (E-Phonic) v1.0: an effect that degrades audio like an old sampler, with filters and a waveshaper. Windows (VST, 32-bit)
+  <img src="/img/chiptune-tools/legacy-lofi.webp" alt="LOFI screenshot" width="468" height="271" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/525)</small>
+
+- [**3Li73 Reducer 2**](https://web.archive.org/web/20101201004143/http://woolyss.com/chipmusic/chipmusic-plugins/3Li73_Reducer_2.zip) (Virtual Creations): a compact bit and sample rate reducer with filters before and after. Windows and Mac (VST, AU)
+
+- [**Decimator**](https://www.apulsoft.ch/freeports/) (TobyBear / ApulSoft): an effect with a bit quantizer and sample rate reducer followed by a filter. The link goes to ApulSoft, who made the Mac port. Windows and Mac (VST, AU)
+
+- [**Geektronic**](https://web.archive.org/web/20101201001351/http://woolyss.com/chipmusic/chipmusic-plugins/Geektronic.zip) (Novaflash): a stereo bitcrusher and decimator working from 2 to 24 bits. Windows (VST, 32-bit)
+
+- [**Multiband Bitcrusher**](https://web.archive.org/web/20101201003126/http://woolyss.com/chipmusic/chipmusic-plugins/Multiband_Bitcrusher.zip) (Nym): a four-band effect that reduces bits and sample rate separately in each band. Windows (VST, 32-bit)
+
+- [**Redu(p)cer**](https://web.archive.org/web/20101130234730/http://woolyss.com/chipmusic/chipmusic-plugins/Redu%28p%29cer.zip) (Morfiki): a bit reduction effect that morphs between five presets. Windows (VST, 32-bit)
+
+- [**Timemachine**](https://web.archive.org/web/20101130235537/http://woolyss.com/chipmusic/chipmusic-plugins/Timemachine.zip) (Jeroen Breebaart): an effect that reproduces the sound character of the Commodore 64 and vintage samplers like older Akai units, with adjustable sample rate and bit depth. Windows (VST, 32-bit)
+
+- [**Thrummaschine**](https://plugins4free.com/plugin/555) (de la Mancha) V1.0: a three-band effect with LFO-driven filters, distortion, and bitcrushing for each band. Windows (VST, 32-bit)
+  <img src="/img/chiptune-tools/legacy-thrummaschine.webp" alt="Thrummaschine screenshot" width="468" height="293" loading="lazy" />
+  <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/555)</small>
+
+- [**Bitsmacker**](https://web.archive.org/web/20101130213220/http://woolyss.com/chipmusic/chipmusic-plugins/Bitsmacker.zip) (Meatscience) 1.1: a digital distortion effect that recreates the gritty sound of vintage samplers and classic consoles. Bit depth runs from 0.01 to 32 bits and sample rate from 50 to 44,100 Hz. Mac (AU, Intel and PowerPC), with no native Apple Silicon support
+  <img src="/img/chiptune-tools/legacy-bitsmacker.webp" alt="Bitsmacker screenshot" width="520" height="207" loading="lazy" />
+  <small>Image: from [rekkerd.org](https://rekkerd.org/meatscience-releases-bitsmacker/)</small>
 
 ## Browser apps (free) {#en-browser}
 
