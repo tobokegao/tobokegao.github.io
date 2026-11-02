@@ -1552,9 +1552,9 @@ url = "https://web.archive.org/web/20101201003317/http://woolyss.com/chipmusic/c
 tags = ["plugin", "legacy", "nes", "win", "free"]
 
 [[tool]]
-name = "Famisynth"
-url = "https://web.archive.org/web/20101130231215/http://woolyss.com/chipmusic/chipmusic-plugins/Famisynth.zip"
-tags = ["plugin", "legacy", "nes", "win", "free"]
+name = "FAMISYNTH-II"
+url = "https://mu-station.chillout.jp/plugins/FAMISYNTH-II/index.html"
+tags = ["plugin", "nes", "win", "mac", "free"]
 
 [[tool]]
 name = "Neochip"

@@ -58,6 +58,10 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-bas
 - [**Twin DoReFAMI**](https://ss1.xrea.com/theta.s57.xrea.com/software/#twindorefami)（theta）v1.0.1：短い波の形を自分で描いて、オリジナルの音色を作れる音源（GAMEBOYなどで使われた「波形メモリ音源」）を再現したもの。無料、Windows 64bit（VST3）。波形づくりには同じ作者の[DWMEditor](https://ss1.xrea.com/theta.s57.xrea.com/software/#dwmeditor)が使えます
   <img src="/img/chiptune-tools/twin-dorefami.webp" alt="Twin DoReFAMIの画面" width="560" height="350" loading="lazy" />
 
+- [**FAMISYNTH-II**](https://mu-station.chillout.jp/plugins/FAMISYNTH-II/index.html)（mu-station）ver.3.0.4：ファミコンの音をまねたシンセ。ゲームのコントローラーのような十字ボタンで音色を作り、PAGEボタンからさらに細かい設定もできます。最後の更新は2019年です。無料、Windows 64bit（VST3）・Mac（AU）。古いバージョン（32bitのVST、v2.5）は[Woolyssの記録](https://web.archive.org/web/20101130231215/http://woolyss.com/chipmusic/chipmusic-plugins/Famisynth.zip)に残っています
+  <img src="/img/chiptune-tools/famisynth-ii.webp" alt="FAMISYNTH-IIの画面" width="344" height="406" loading="lazy" />
+  <small>画像：[作者のページ](https://mu-station.chillout.jp/plugins/FAMISYNTH-II/index.html)より</small>
+
 - [**Soraboy**](https://shadowsora211.itch.io/soraboy)（ShadowSora）v1.1.1：GAMEBOYの音源から着想したもの。無料（投げ銭可）、Windows 64bit・Mac（VST3）
   <img src="/img/chiptune-tools/soraboy.webp" alt="Soraboyの画面" width="560" height="420" loading="lazy" />
 
@@ -200,9 +204,6 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-bas
 - [**NinTiny**](https://web.archive.org/web/20101201003317/http://woolyss.com/chipmusic/chipmusic-plugins/NinTiny.zip)（Suzumebachi）V0.03：ファミコンの波形を再現するシンセ。パルス波は25%、50%、75%、87.5%の4種類で、実機と同じく三角波の音量は変えられません。作者はまだ未完成と書いています。Windows（VST、32bit）
   <img src="/img/chiptune-tools/legacy-nintiny.webp" alt="NinTinyの画面" width="370" height="104" loading="lazy" />
 
-- [**Famisynth**](https://web.archive.org/web/20101130231215/http://woolyss.com/chipmusic/chipmusic-plugins/Famisynth.zip)（mu-station）v2.5：ファミコンの音をまねたシンセ。KVRにはのちのVST3・AUバージョンも載っていますが、入手先は確かめられませんでした。Windows（VST、32bit）
-  <img src="/img/chiptune-tools/legacy-famisynth.webp" alt="Famisynthの画面" width="344" height="407" loading="lazy" />
-
 - [**Neochip**](https://www.kvraudio.com/forum/viewtopic.php?t=177011)（Espertone）1.0：ファミコンの音源（2A03）の音をもとにしたシンセ。メロディ用のピコピコ音（矩形波）2つと、ベース用の音（三角波）1つに、フィルターやリバーブ、ディレイといったエフェクトが付いています。ドラムのようなノイズ音やサンプリング音（DPCM）は入っていません。規約で再配布が認められておらず、もとの配布リンクも切れてしまっているため、作者本人が海外フォーラム「KVR」に投稿した紹介スレッドへリンクしています。Windows（VST、32bit）
   <img src="/img/chiptune-tools/legacy-neochip.webp" alt="Neochipの画面" width="560" height="433" loading="lazy" />
 
@@ -336,6 +337,8 @@ description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-bas
   <small>画像：[Plugins 4 Free](https://plugins4free.com/plugin/525)より</small>
 
 - [**3Li73 Reducer 2**](https://web.archive.org/web/20101201004143/http://woolyss.com/chipmusic/chipmusic-plugins/3Li73_Reducer_2.zip)（Virtual Creations）：ビットとサンプルレートを下げる小さなエフェクト。前後にフィルターが付いています。Windows・Mac（VST・AU）
+  <img src="/img/chiptune-tools/legacy-3li73-reducer-2.webp" alt="3Li73 Reducer 2の画面" width="347" height="198" loading="lazy" />
+  <small>画像：[KVR Audio](https://www.kvraudio.com/product/elite-reducer-2-by-virtual-creations)より</small>
 
 - [**Decimator**](https://www.apulsoft.ch/freeports/)（TobyBear／ApulSoft）：ビットとサンプルレートを下げてから、フィルターを通すエフェクト。リンク先はMacバージョンを作ったApulSoftのページです。Windows・Mac（VST・AU）
   <img src="/img/chiptune-tools/legacy-decimator.webp" alt="Decimatorの画面" width="300" height="250" loading="lazy" />
@@ -1300,6 +1303,10 @@ These load in your usual DAW and play like any other instrument.
 - [**Twin DoReFAMI**](https://ss1.xrea.com/theta.s57.xrea.com/software/#twindorefami) (theta) v1.0.1: recreates wavetable sound chips (the kind used in the GAMEBOY and others), where you draw a short waveform yourself to make your own sound. Free, Windows 64-bit (VST3). The same author's [DWMEditor](https://ss1.xrea.com/theta.s57.xrea.com/software/#dwmeditor) helps with drawing waveforms
   <img src="/img/chiptune-tools/twin-dorefami.webp" alt="Twin DoReFAMI screenshot" width="560" height="350" loading="lazy" />
 
+- [**FAMISYNTH-II**](https://mu-station.chillout.jp/plugins/FAMISYNTH-II/index.html) (mu-station) ver. 3.0.4: a NES-style synth. You shape sounds with a game-controller-style D-pad, and the PAGE button opens deeper settings. The last update was in 2019. Free, Windows 64-bit (VST3) and Mac (AU). The older 32-bit VST (v2.5) can still be found in [the Woolyss archive](https://web.archive.org/web/20101130231215/http://woolyss.com/chipmusic/chipmusic-plugins/Famisynth.zip)
+  <img src="/img/chiptune-tools/famisynth-ii.webp" alt="FAMISYNTH-II screenshot" width="344" height="406" loading="lazy" />
+  <small>Image: from [the author's page](https://mu-station.chillout.jp/plugins/FAMISYNTH-II/index.html)</small>
+
 - [**Soraboy**](https://shadowsora211.itch.io/soraboy) (ShadowSora) v1.1.1: inspired by the GAMEBOY sound chip. Free (tips welcome), Windows 64-bit and Mac (VST3)
   <img src="/img/chiptune-tools/soraboy.webp" alt="Soraboy screenshot" width="560" height="420" loading="lazy" />
 
@@ -1442,9 +1449,6 @@ These are old plugins that are no longer updated, mostly ones I keep on my own c
 - [**NinTiny**](https://web.archive.org/web/20101201003317/http://woolyss.com/chipmusic/chipmusic-plugins/NinTiny.zip) (Suzumebachi) V0.03: a synth aiming for accurate NES waveforms. The pulse has four duty cycles (25%, 50%, 75%, 87.5%), and as on real hardware the triangle has no volume control. The author calls it an unfinished alpha. Windows (VST, 32-bit)
   <img src="/img/chiptune-tools/legacy-nintiny.webp" alt="NinTiny screenshot" width="370" height="104" loading="lazy" />
 
-- [**Famisynth**](https://web.archive.org/web/20101130231215/http://woolyss.com/chipmusic/chipmusic-plugins/Famisynth.zip) (mu-station) v2.5: a NES-style synth. KVR also lists later VST3 and AU versions, but I couldn't confirm where to get them. Windows (VST, 32-bit)
-  <img src="/img/chiptune-tools/legacy-famisynth.webp" alt="Famisynth screenshot" width="344" height="407" loading="lazy" />
-
 - [**Neochip**](https://www.kvraudio.com/forum/viewtopic.php?t=177011) (Espertone) 1.0: a synth built on the sound of the NES chip (2A03). It features two pulse waves and one triangle wave, plus a filter, reverb, and delay. There are no noise or DPCM channels. Its license forbids redistribution and the original download links are dead, so the link leads to the author's thread on KVR. Windows (VST, 32-bit)
   <img src="/img/chiptune-tools/legacy-neochip.webp" alt="Neochip screenshot" width="560" height="433" loading="lazy" />
 
@@ -1578,6 +1582,8 @@ These are old plugins that are no longer updated, mostly ones I keep on my own c
   <small>Image: from [Plugins 4 Free](https://plugins4free.com/plugin/525)</small>
 
 - [**3Li73 Reducer 2**](https://web.archive.org/web/20101201004143/http://woolyss.com/chipmusic/chipmusic-plugins/3Li73_Reducer_2.zip) (Virtual Creations): a compact bit and sample rate reducer with filters before and after. Windows and Mac (VST, AU)
+  <img src="/img/chiptune-tools/legacy-3li73-reducer-2.webp" alt="3Li73 Reducer 2 screenshot" width="347" height="198" loading="lazy" />
+  <small>Image: from [KVR Audio](https://www.kvraudio.com/product/elite-reducer-2-by-virtual-creations)</small>
 
 - [**Decimator**](https://www.apulsoft.ch/freeports/) (TobyBear / ApulSoft): an effect with a bit quantizer and sample rate reducer followed by a filter. The link goes to ApulSoft, who made the Mac port. Windows and Mac (VST, AU)
   <img src="/img/chiptune-tools/legacy-decimator.webp" alt="Decimator screenshot" width="300" height="250" loading="lazy" />
