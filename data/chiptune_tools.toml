@@ -642,7 +642,35 @@ tags = ["mml", "nes", "otheros", "free"]
 name = "Plogueの音源"
 name_en = "Plogue's instruments"
 url = "https://www.plogue.com/products/"
-tags = ["plugin", "nes", "gb", "sid", "fm", "snes", "sega", "win", "mac", "linux", "paid"]
+tags = ["plugin", "win", "mac", "linux", "paid"]
+
+[[tool]]
+name = "chipsynth C64"
+tags = ["plugin", "sid", "win", "mac", "linux", "paid"]
+
+[[tool]]
+name = "chipsynth MD"
+tags = ["plugin", "sega", "fm", "psg", "win", "mac", "linux", "paid"]
+
+[[tool]]
+name = "chipsynth SFC"
+tags = ["plugin", "snes", "win", "mac", "linux", "paid"]
+
+[[tool]]
+name = "chipsynth OPMZ"
+tags = ["plugin", "fm", "jpc", "win", "mac", "linux", "paid"]
+
+[[tool]]
+name = "chipsynth PortaFM"
+tags = ["plugin", "fm", "win", "mac", "linux", "paid"]
+
+[[tool]]
+name = "chipsounds"
+tags = ["plugin", "nes", "gb", "sid", "psg", "atari", "sega", "win", "mac", "linux", "paid"]
+
+[[tool]]
+name = "chipspeech"
+tags = ["plugin", "othersys", "win", "mac", "linux", "paid"]
 
 [[tool]]
 name = "my2151"
@@ -1526,6 +1554,11 @@ tags = ["plugin", "legacy", "nes", "win", "free"]
 [[tool]]
 name = "Famisynth"
 url = "https://web.archive.org/web/20101130231215/http://woolyss.com/chipmusic/chipmusic-plugins/Famisynth.zip"
+tags = ["plugin", "legacy", "nes", "win", "free"]
+
+[[tool]]
+name = "Neochip"
+url = "https://www.kvraudio.com/forum/viewtopic.php?t=177011"
 tags = ["plugin", "legacy", "nes", "win", "free"]
 
 [[tool]]
