@@ -230,23 +230,48 @@
     }
   };
   var pick = function (a) { return a[Math.floor(Math.random() * a.length)]; };
-  // the words of a question that say what it is about: no words in hiragana only (particles
-  // and endings like でしょ, か) and no small English words, unless nothing else is left
-  var STOP = ["the", "a", "an", "is", "are", "was", "do", "does", "did", "you", "your", "i", "my", "to", "of", "in", "on",
-    "at", "for", "and", "or", "what", "how", "about", "any", "have", "has", "can", "it", "this", "that"];
+  // The words of a question that say what it is about: no words in hiragana only (particles
+  // and endings like でしょ, か), no small English words and no words any question may have
+  // (大丈夫, 教えて, 思う), unless nothing else is left. A verb or adjective keeps only its
+  // kanji (降り → 降, so it also finds 降る); those are listed in .stems.
+  var STOP = ["the", "a", "an", "is", "are", "was", "do", "does", "did", "you", "your", "i", "my", "me", "to", "of", "in",
+    "on", "at", "for", "and", "or", "what", "how", "about", "any", "have", "has", "can", "it", "this", "that", "think",
+    "know", "please", "tell", "ok", "okay",
+    "大丈夫", "何", "教", "思", "感", "本当", "今", "方", "知", "言", "可能", "自分", "皆"];
+  // The kinds of answer a question may ask for, as scripts/post_topics.py (KINDS) marks the
+  // posts: one that recommends something, tells how to do something, says what Tobokegao
+  // likes, gives an opinion, or announces something of theirs.
+  var KINDS = [
+    ["rec", /おすすめ|オススメ|お勧め|お薦め|すすめ|推し|recommend|suggest/i],
+    ["howto", /使い方|やり方|方法|コツ|どうやって|どうすれば|作り方|仕方|how\s+(?:to|do|can)|tips?(?![a-z])|tutorial/i],
+    ["like", /好き|好み|お気に入り|ハマって|favou?rite|(?<![a-z])(?:like|love)(?![a-z])/i],
+    ["think", /どう思|意見|考え|感想|(?<![a-z])think(?![a-z])|opinion/i],
+    ["news", /新曲|新作|リリース|ライブ|イベント|予定|告知|出演|release|(?<![a-z])(?:gig|live|event)s?(?![a-z])|new\s+(?:song|album)/i]
+  ];
+  // words in hiragana that still say something (かわいい)
+  var KEEP = ["おすすめ", "すすめ", "かわいい", "おもしろい", "たのしい", "うれしい", "おいしい", "むずかしい", "こわい"];
   var termsOf = function (text) {
     var parts = window.Intl && Intl.Segmenter ?
       Array.from(new Intl.Segmenter("ja", { granularity: "word" }).segment(text))
         .filter(function (s) { return s.isWordLike; }).map(function (s) { return s.segment; }) :
       text.split(/\s+/);
-    parts = parts.map(function (w) { return w.toLowerCase(); }).filter(function (w, i, a) { return w && a.indexOf(w) === i; });
-    var kept = parts.filter(function (w) { return !/^[ぁ-ゟ]+$/.test(w) && STOP.indexOf(w) < 0; });
-    return kept.length ? kept : parts;
+    var stems = [];
+    parts = parts.map(function (w) {
+      var k = w.toLowerCase().replace(/^([一-鿿々]+)[ぁ-ゟ]+$/, "$1");
+      if (k !== w.toLowerCase()) stems.push(k);
+      return k;
+    }).filter(function (w, i, a) { return w && a.indexOf(w) === i; });
+    var kept = parts.filter(function (w) { return (!/^[ぁ-ゟ]+$/.test(w) || KEEP.indexOf(w) >= 0) && STOP.indexOf(w) < 0; });
+    kept = kept.length ? kept : parts;
+    kept.stems = stems;
+    return kept;
   };
-  // longer words count more (タイヤ over 冬); words in Latin letters twice, as they are mostly
-  // names (M8 over 使い方), and words in katakana half again, as they are mostly things
-  // (タイヤ over 大丈夫)
-  var weight = function (t) { return t.length * (/^[a-z0-9]/.test(t) ? 2 : /^[゠-ヿ]+$/.test(t) ? 1.5 : 1); };
+  // longer words count more (タイヤ over 冬), though a word in kanji counts at least 2 (雪);
+  // words in Latin letters twice, as they are mostly names (M8 over 使い方), and words in
+  // katakana half again, as they are mostly things
+  var weight = function (t) {
+    return /^[a-z0-9]/.test(t) ? t.length * 2 : /^[゠-ヿ]+$/.test(t) ? t.length * 1.5 : Math.max(2, t.length);
+  };
   // A time in the question ("2019年", "2019年の夏", "2010年代後半", "去年", "3年前", "最近", "昔",
   // "in 2019", "last year"): the first one found, as days [since, until), and the question
   // without it. The memo starts in 2014.
@@ -316,7 +341,7 @@
       out.push({
         title: a.text, url: p.url + "#" + a.id,
         text: (cut < 0 ? body : body.slice(0, cut)).replace(/\.\s*$/, "").trim(),
-        all: body.toLowerCase()
+        own: (cut < 0 ? body : body.slice(0, cut)).toLowerCase(), all: body.toLowerCase()
       });
     });
     return out;
@@ -373,38 +398,62 @@
       var id = ++asked;
       say.textContent = "…";
       var when = whenOf(words);
-      var terms = termsOf(when ? when.rest : words);
-      if (!terms.length && !when) terms = [words.toLowerCase()];
+      var rest = when ? when.rest : words;
+      // the kinds of answer asked for (おすすめ → rec); their words are not looked for themselves
+      var kinds = [];
+      KINDS.forEach(function (k) { if (k[1].test(rest)) { kinds.push(k[0]); rest = rest.replace(k[1], " "); } });
+      var terms = termsOf(rest);
+      if (!terms.length && !when && !kinds.length) terms = [words.toLowerCase()];
+      // Pagefind matches whole words, so the kanji of a verb (降) would miss 降る: it is asked
+      // only the other words, and the kanji count when the posts are scored
+      var whole = terms.filter(function (t) { return (terms.stems || []).indexOf(t) < 0; });
+      if (!whole.length) whole = terms;
       // Look among the pages with own posts first (kind:own), and among all pages, reposts
       // too, only when nothing there fits. A time asks only the month pages of its months.
       var look = function (pf, own) {
         var filters = {};
         if (when) filters.month = { any: monthsIn(when) };
         if (own) filters.kind = "own";
-        return pf.search(terms.length ? terms.join(" ") : null, { filters: filters }).then(function (found) {
-          // pages at random from the forty best, so the same words bring different posts
-          // (eight for words; for a time alone, two months are plenty to pick from)
-          var top = found.results.slice(0, 40);
+        var ask = whole.length ? whole.join(" ") : kinds.length ? "kind" + kinds[0] : null;
+        return pf.search(ask, { filters: filters }).then(function (found) {
+          // for words: the four best pages, and four at random from the next thirty-six, so the
+          // same words bring different posts; for a time alone, two months at random
+          var keep = terms.length ? 4 : 0;
+          var top = found.results.slice(keep, 40);
           for (var i = top.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = top[i]; top[i] = top[j]; top[j] = t; }
-          return Promise.all(top.slice(0, terms.length ? 8 : 2).map(function (r) { return r.data(); }));
+          top = found.results.slice(0, keep).concat(top.slice(0, terms.length ? 4 : 2));
+          return Promise.all(top.map(function (r) { return r.data(); }));
         }).then(function (pages) {
           var posts = [];
           pages.forEach(function (p) { posts = posts.concat(postsOf(p)); });
           if (own) posts = posts.filter(function (s) { return !/RT @/.test(s.title); });
           if (when) posts = posts.filter(function (s) { var d = dayOf(s.title); return d >= when.since && d < when.until; });
-          if (!terms.length) return posts;
+          if (!terms.length && !kinds.length) return posts;
           // Pagefind finds a page with all the words somewhere in it. Score each post on it by
           // the words it has itself, in its text or its search words (see weight); a word that
           // many of the posts have (好き) counts less than a rare one (ゲーム). Keep the posts
           // with at least half of the whole, and of those the ones near the best.
-          var w = terms.map(function (t) {
-            var df = posts.filter(function (s) { return s.all.indexOf(t) >= 0; }).length;
+          // a word in Latin letters only as a whole word (business, not businesspastel; cards too)
+          var has = terms.map(function (t) {
+            if (!/^[a-z0-9]/.test(t)) return function (x) { return x.indexOf(t) >= 0; };
+            var re = new RegExp("(^|[^a-z0-9])" + t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "(s|es)?($|[^a-z0-9])");
+            return function (x) { return re.test(x); };
+          });
+          var w = terms.map(function (t, k) {
+            var df = posts.filter(function (s) { return has[k](s.all); }).length;
             return weight(t) * Math.log(1 + posts.length / (1 + df));
           });
           var total = w.reduce(function (n, x) { return n + x; }, 0);
+          // a post of a kind asked for gets 60% of the words' whole on top
+          var bonus = kinds.length ? (total || 1) * 0.6 : 0;
           posts.forEach(function (s) {
-            s.score = terms.reduce(function (n, t, k) { return n + (s.all.indexOf(t) >= 0 ? w[k] : 0); }, 0);
+            // a word in the post itself counts in full, one only in its search words 60%
+            s.score = terms.reduce(function (n, t, k) {
+              return n + (has[k](s.own) ? w[k] : has[k](s.all) ? w[k] * 0.6 : 0);
+            }, 0);
+            if (kinds.some(function (k) { return s.all.indexOf(" kind" + k) >= 0; })) s.score += bonus;
           });
+          total += bonus;
           var pool = posts.filter(function (s) { return s.score >= total * 0.5; });
           var best = pool.reduce(function (n, s) { return Math.max(n, s.score); }, 0);
           return pool.filter(function (s) { return s.score >= best * 0.85; });

@@ -26,9 +26,13 @@
   {{- with $p.tp }}
   <p class="np__tp">{{ range . }}{{ with index $g.topics . }}<a href="{{ .url | relURL }}">[{{ .title }}]</a> {{ end }}{{ end }}</p>
   {{- end }}
-  {{- /* words to search it by, from scripts/post_topics.py: read by the search, not shown.
-     They come after the post, behind ⁂, where notes.js cuts them off the excerpt. See 0045 */}}
-  {{- with site.Data.memo.topics }}{{ with index . (substr $p.d 0 7) }}{{ with index . $p.id }}
-  <p class="np__kw">⁂ {{ . }}</p>
-  {{- end }}{{ end }}{{ end }}
+  {{- /* words to search it by and the kinds of question it answers (rec, howto, ...), from
+     scripts/post_topics.py: read by the search, not shown. They come after the post, behind
+     ⁂, where notes.js cuts them off. A kind is written kindrec, kindhowto, ... See 0045 */}}
+  {{- $m := substr $p.d 0 7 }}
+  {{- $kw := "" }}{{ with site.Data.memo.topics }}{{ with index . $m }}{{ with index . $p.id }}{{ $kw = . }}{{ end }}{{ end }}{{ end }}
+  {{- $kinds := "" }}{{ with site.Data.memo.kinds }}{{ with index . $m }}{{ with index . $p.id }}{{ $kinds = . }}{{ end }}{{ end }}{{ end }}
+  {{- if or $kw $kinds }}
+  <p class="np__kw">⁂ {{ $kw }}{{ with $kinds }}{{ range split . " " }} kind{{ . }}{{ end }}{{ end }}</p>
+  {{- end }}
 </article>
