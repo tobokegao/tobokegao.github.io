@@ -24,7 +24,15 @@ the new ones.
     python scripts/post_topics.py --batch             # send all the rest as one batch (half price)
     python scripts/post_topics.py --collect           # take in the batch's results when it is done
 
-Add --kinds to any of them for the kinds instead of the words.
+Add --match REGEX to send only the posts whose text matches it.
+Add --kinds to any of them for the kinds instead of the words, or --songs to mark the
+posts with a video link (YouTube, niconico) that share a piece of music to listen to; those go
+to data/memo/songs/YYYY-MM.json ({id: "song"}, "" when not), so mini Tobokegao can answer a
+question about music with a song and not with any video.
+
+--pics looks at the pictures of the posts with pictures (from X's server, as the memo pages
+show them) and gives words for what is in them, so "おすすめの麻婆豆腐" finds a photo posted with
+only "どば…". They go to data/memo/pics/YYYY-MM.json, read with the words.
 TBK_TOPICS_MODEL chooses the model (default claude-opus-5-5).
 """
 
@@ -32,6 +40,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -61,6 +70,9 @@ KINDS = {
     "life": "about Tobokegao's day: weather, food, health, travel, things that happened",
 }
 
+# links to videos, which may or may not be music (assets/js/notes.js, VIDEO, has the same hosts)
+VIDEO = re.compile(r"https?://(?:[a-z0-9-]+\.)*(?:youtu\.be|youtube\.com|nico\.ms|nicovideo\.jp/watch)", re.I)
+
 JOBS = {
     "words": {
         "dir": MEMO / "topics",
@@ -88,7 +100,46 @@ Japanese and 8 English words, each one to three words long.""",
         "fields": {"kinds": {"type": "array", "items": {"type": "string", "enum": list(KINDS)}}},
         "out": 15,
     },
+    "pics": {
+        "dir": MEMO / "pics",
+        "pending": ROOT / "work" / "post_pics_batch.json",
+        "only": lambda p: bool(photos(p)),
+        "size": 8,   # posts in one request: a picture that is gone fails the whole request
+        "ask": "Give the search words for the pictures of these posts. Return one entry per id.",
+        "system": ABOUT + """Each post comes with its pictures. List the words someone might \
+type into a search box to find the post by what is in its pictures: the food and dish (麻婆豆腐, \
+ラーメン), the things, devices, places, animals, screens or games shown, and text that can be \
+read in them (a shop's name, a game's title). Name dishes and things as specifically as you \
+can, in their usual Japanese name, with kana and kanji forms. Do not name or describe people, \
+or guess who they are; say only "人" or "selfie" if a person is the main thing. Do not add \
+opinions or describe the mood. Give at most 10 Japanese and 6 English words, each one to three \
+words long; nothing when the pictures show nothing to search for.""",
+        "fields": {"ja": {"type": "array", "items": {"type": "string"}},
+                   "en": {"type": "array", "items": {"type": "string"}}},
+        "out": 50,
+        "pic_tokens": 480,   # a picture at X's "small" size (680 px wide at most)
+    },
+    "songs": {
+        "dir": MEMO / "songs",
+        "pending": ROOT / "work" / "post_songs_batch.json",
+        "only": lambda p: VIDEO.search(p["t"]),
+        "ask": "Say for each of these posts whether its video link is music. Return one entry per id.",
+        "system": ABOUT + "Each post has a link to a video (YouTube or niconico). Say whether "
+        "the video is a piece of music to listen to: a song, track, album, soundtrack or game "
+        "music, music video, cover, remix, live performance or DJ mix. It is not music when "
+        "the video is mostly something else: talk, comedy, a stream of drawing or games, a "
+        "tutorial, a review, an interview, news, a radio show of talk. Judge from the post's "
+        "text and the title in it (\"Artist - Title\", \"feat.\", \"MV\", \"OST\" are music). "
+        "When you cannot tell, say false.",
+        "fields": {"song": {"type": "boolean"}},
+        "out": 12,
+    },
 }
+
+
+def photos(p: dict) -> list[str]:
+    """A post's pictures (not videos) as URLs on X's server, at the small size."""
+    return [f"https://pbs.twimg.com/{m[0]}?format=jpg&name=small" for m in p.get("mx") or [] if m[1] == "p"]
 
 
 def schema(job: dict) -> dict:
@@ -125,20 +176,29 @@ def load_done(job: dict) -> dict[str, dict[str, str]]:
     return {path.stem: json.loads(path.read_text("utf-8")) for path in sorted(job["dir"].glob("*.json"))}
 
 
-def todo(posts: dict[str, dict], done: dict[str, dict[str, str]]) -> list[dict]:
-    """The posts without an answer yet, newest first."""
+def todo(job: dict, posts: dict[str, dict], done: dict[str, dict[str, str]]) -> list[dict]:
+    """The posts without an answer yet (of those the job is for), newest first."""
     have = {i for month in done.values() for i in month}
-    return sorted((p for i, p in posts.items() if i not in have), key=lambda p: p["d"], reverse=True)
+    only = job.get("only", lambda p: True)
+    return sorted((p for i, p in posts.items() if i not in have and only(p)), key=lambda p: p["d"], reverse=True)
 
 
 def params(job: dict, batch: list[dict]) -> dict:
     payload = [{"id": p["id"], "date": p["d"][:10], **({"to": p["to"]} if p.get("to") else {}), "text": p["t"]}
                for p in batch]
+    if job.get("pic_tokens"):
+        # each post's text, then its pictures
+        content = [{"type": "text", "text": job["ask"]}]
+        for p, item in zip(batch, payload):
+            content.append({"type": "text", "text": json.dumps(item, ensure_ascii=False)})
+            content += [{"type": "image", "source": {"type": "url", "url": u}} for u in photos(p)]
+    else:
+        content = job["ask"] + "\n\n" + json.dumps(payload, ensure_ascii=False)
     return {
         "model": MODEL,
         "max_tokens": 16000,
         "system": job["system"],
-        "messages": [{"role": "user", "content": job["ask"] + "\n\n" + json.dumps(payload, ensure_ascii=False)}],
+        "messages": [{"role": "user", "content": content}],
         "output_config": {"effort": "low", "format": {"type": "json_schema", "schema": schema(job)}},
     }
 
@@ -147,6 +207,8 @@ def value(r: dict) -> str:
     """One post's answer as the text put in the page."""
     if "kinds" in r:
         return " ".join(k for k in KINDS if k in r["kinds"])
+    if "song" in r:
+        return "song" if r["song"] else ""
     seen, out = set(), []
     for w in r["ja"] + r["en"]:
         w = " ".join(w.split())
@@ -183,8 +245,9 @@ def parse(message) -> list[dict]:
 def estimate(job: dict, pending: list[dict]) -> None:
     # Japanese runs about one token a character
     chars = sum(len(p["t"]) + 40 for p in pending)
-    requests = -(-len(pending) // BATCH)
+    requests = -(-len(pending) // job.get("size", BATCH))
     tokens_in = chars + requests * (len(job["system"]) // 4 + 300)
+    tokens_in += sum(len(photos(p)) for p in pending) * job.get("pic_tokens", 0)
     tokens_out = len(pending) * job["out"]
     print(f"{len(pending)} posts in {requests} requests, about {tokens_in / 1e6:.1f}M tokens in, "
           f"{tokens_out / 1e6:.1f}M out (more with thinking)")
@@ -195,11 +258,15 @@ def estimate(job: dict, pending: list[dict]) -> None:
 
 def main() -> int:
     args = sys.argv[1:]
-    job = JOBS["kinds" if "--kinds" in args else "words"]
+    job = JOBS[next((k for k in ("kinds", "songs", "pics") if f"--{k}" in args), "words")]
     pending_file = job["pending"]
     posts = load_posts()
     done = load_done(job)
-    pending = todo(posts, done)
+    pending = todo(job, posts, done)
+    if "--match" in args:
+        # only the posts whose text matches (--match "^どば" for the food photos)
+        match = re.compile(args[args.index("--match") + 1])
+        pending = [p for p in pending if match.search(p["t"])]
     if "--estimate" in args:
         estimate(job, pending)
         return 0
@@ -242,9 +309,10 @@ def main() -> int:
         from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
         from anthropic.types.messages.batch_create_params import Request
 
-        requests = [Request(custom_id=f"t{i // BATCH}",
-                            params=MessageCreateParamsNonStreaming(**params(job, pending[i:i + BATCH])))
-                    for i in range(0, len(pending), BATCH)]
+        size = job.get("size", BATCH)
+        requests = [Request(custom_id=f"t{i // size}",
+                            params=MessageCreateParamsNonStreaming(**params(job, pending[i:i + size])))
+                    for i in range(0, len(pending), size)]
         if not requests:
             print("every post is done")
             return 0
@@ -257,16 +325,17 @@ def main() -> int:
     limit = int(args[args.index("--limit") + 1]) if "--limit" in args else len(pending)
     pending = pending[:limit]
     got = 0
-    for i in range(0, len(pending), BATCH):
+    size = job.get("size", BATCH)
+    for i in range(0, len(pending), size):
         try:
-            message = client.messages.create(**params(job, pending[i:i + BATCH]))
+            message = client.messages.create(**params(job, pending[i:i + size]))
             results = parse(message)
         except (anthropic.APIStatusError, anthropic.APIConnectionError, RuntimeError, ValueError) as e:
-            print(f"request {i // BATCH + 1} failed, left for the next run: {e}", file=sys.stderr)
+            print(f"request {i // size + 1} failed, left for the next run: {e}", file=sys.stderr)
             continue
         got += merge(job, results, posts, done)
         u = message.usage
-        print(f"request {i // BATCH + 1}: {len(results)} posts, {u.input_tokens} tokens in, {u.output_tokens} out")
+        print(f"request {i // size + 1}: {len(results)} posts, {u.input_tokens} tokens in, {u.output_tokens} out")
     print(f"{got} posts done")
     return 0
 

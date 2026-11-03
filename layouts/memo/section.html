@@ -20,7 +20,18 @@
      "diary" pixel arts, chosen at random (data/minitobo.json, scripts/minitobo_art.py). Decision 0032 */}}
   {{ $art := slice }}
   {{ range $a := hugo.Data.minitobo.art }}{{ with $a.img }}{{ $art = $art | append (dict "d" $a.diary "p" $a.post "w" .w "h" .h "s" (cond (isset . "still") 1 0) "x" .x "k" .hard) }}{{ end }}{{ end }}
-  <section class="mini" id="mini" aria-labelledby="mini-t" data-art="{{ $art | jsonify }}" data-img="{{ "img/minitobo/" | relURL }}" hidden>
+  {{- /* answers chosen by hand for some questions (data/minitobo_picks.toml), with the posts' text */}}
+  {{ $picks := slice }}
+  {{ range $pk := hugo.Data.minitobo_picks.pick }}
+    {{ $ps := slice }}
+    {{ range $id := $pk.posts }}
+      {{ range $m, $month := hugo.Data.memo.posts }}{{ with index $month $id }}
+        {{ $ps = $ps | append (dict "t" .t "d" .d "u" (printf "memo/%s/#p%s" $m $id | relURL)) }}
+      {{ end }}{{ end }}
+    {{ end }}
+    {{ $picks = $picks | append (dict "a" $pk.ask "k" $pk.kinds "p" $ps) }}
+  {{ end }}
+  <section class="mini" id="mini" aria-labelledby="mini-t" data-art="{{ $art | jsonify }}" data-picks="{{ $picks | jsonify }}" data-img="{{ "img/minitobo/" | relURL }}" hidden>
     <h2 class="sub" id="mini-t">{{ partial "t.html" "miniTitle" }}</h2>
     <div class="mini__body">
       <a class="mini__pic" id="mini-pic" href="#" target="_blank" rel="noopener" title="{{ partial "tt.html" "miniPicTip" }}"><picture><source id="mini-still" media="(prefers-reduced-motion: reduce)"><img id="mini-img" alt="Tobokegao-chan" decoding="async"></picture></a>

@@ -248,6 +248,13 @@
     ["think", /どう思|意見|考え|感想|(?<![a-z])think(?![a-z])|opinion/i],
     ["news", /新曲|新作|リリース|ライブ|イベント|予定|告知|出演|release|(?<![a-z])(?:gig|live|event)s?(?![a-z])|new\s+(?:song|album)/i]
   ];
+  // A question about music (a genre, songs, an album): with rec or like, a post with a link to
+  // where the music can be heard counts more, so "おすすめのテクノ" brings a track, not talk.
+  var MUSIC = /曲|音楽|楽曲|音源|アルバム|アーティスト|バンド|ジャンル|聴|サントラ|bgm|(?<![a-z])(?:music|songs?|tracks?|albums?|artists?|bands?|genres?|listen|ep)(?![a-z])|チップチューン|chiptune|8bit|ピコピコ|テクノ|techno|ハウス|house|トランス|trance|ドラムンベース|drum\s*(?:n|and|&)\s*bass|dnb|ジャングル|jungle|ダブステップ|dubstep|ベース|bass|ヴェイパー|ベイパー|vapor|シティポップ|city\s*pop|アンビエント|ambient|エレクトロ|electro|edm|idm|ヒップホップ|hip\s*hop|ラップ|(?<![a-z])rap(?![a-z])|ロック|rock|パンク|punk|メタル|metal|ジャズ|jazz|ファンク|funk|ソウル|(?<![a-z])soul(?![a-z])|r&b|ポップ|(?<![a-z])pop|アイドル|アニソン|ボカロ|ボーカロイド|vocaloid|音mad|otomad|ytpmv|ゲーム音楽|vgm|fm音源|lo-?fi|クラシック|classical|フォーク|folk|レゲエ|reggae|ガバ|gabber|ハードコア|hardcore|フットワーク|footwork|ジューク|juke|グリッチ|glitch|ディスコ|disco|ブレイクビーツ|breakbeat|(?:core|wave|step|tune)s?(?![a-z])|(?:コア|ウェイヴ|ウェーブ|ステップ|チューン)(?![゠-ヿ])/i;
+  // where music can be heard (as the posts link it); a video link (VIDEO) counts only when
+  // scripts/post_topics.py --songs marked the post as music (kindsong), as many are talk or games
+  var AUDIO = /https?:\/\/(?:[a-z0-9-]+\.)*(?:bandcamp\.com|soundcloud\.com|soundcloud\.app\.goo\.gl|music\.apple\.com|itunes\.apple\.com|open\.spotify\.com|spotify\.link|weeklybeats\.com|battleofthebits\.org|shazam\.com|audiomack\.com|ototoy\.jp|lnk\.to|linkco\.re|big-up\.style)/;
+  var VIDEO = /https?:\/\/(?:[a-z0-9-]+\.)*(?:youtu\.be|youtube\.com|nico\.ms|nicovideo\.jp\/watch)/;
   // words in hiragana that still say something (かわいい)
   var KEEP = ["おすすめ", "すすめ", "かわいい", "おもしろい", "たのしい", "うれしい", "おいしい", "むずかしい", "こわい"];
   var termsOf = function (text) {
@@ -323,7 +330,8 @@
     return out;
   };
   // The posts on a page Pagefind gave back, cut out of its text: each post starts at its date
-  // line (an anchor with the post's id) and ends at the next one; its search words come after ⁂.
+  // line (an anchor with the post's id) and ends at the next one; its search words come after ⁂,
+  // the words for its pictures after ⁜.
   var postsOf = function (p) {
     var c = p.content || "", at = 0, out = [];
     var heads = (p.anchors || []).filter(function (a) { return /^p\d+$/.test(a.id); });
@@ -337,11 +345,13 @@
       var end = c.length;
       for (var n = k + 1; n < heads.length; n++) if (spots[n] >= 0) { end = spots[n]; break; }
       var body = c.slice(spots[k] + a.text.length, end).replace(/^\.\s*/, "");
-      var cut = body.indexOf("⁂");
+      var cut = body.indexOf("⁂"), seen = body.indexOf("⁜");
       out.push({
         title: a.text, url: p.url + "#" + a.id,
         text: (cut < 0 ? body : body.slice(0, cut)).replace(/\.\s*$/, "").trim(),
-        own: (cut < 0 ? body : body.slice(0, cut)).toLowerCase(), all: body.toLowerCase()
+        // the words for what is in its pictures (after ⁜) count as its own
+        own: ((cut < 0 ? body : body.slice(0, cut)) + (seen < 0 ? "" : " " + body.slice(seen + 1))).toLowerCase(),
+        all: body.toLowerCase()
       });
     });
     return out;
@@ -355,10 +365,15 @@
       var from = Math.max(0, Math.min(first - 60, text.length - 240));
       text = (from > 0 ? "…" : "") + text.substr(from, 240) + (from + 240 < text.length ? "…" : "");
     }
-    if (!terms.length) return esc(text);
-    var re = new RegExp("(" + terms.slice().sort(function (a, b) { return b.length - a.length; })
+    var re = terms.length && new RegExp("(" + terms.slice().sort(function (a, b) { return b.length - a.length; })
       .map(function (t) { return t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }).join("|") + ")", "gi");
-    return text.split(re).map(function (part, i) { return i % 2 ? "<mark>" + esc(part) + "</mark>" : esc(part); }).join("");
+    var marked = function (part) {
+      return re ? part.split(re).map(function (x, i) { return i % 2 ? "<mark>" + esc(x) + "</mark>" : esc(x); }).join("") : esc(part);
+    };
+    // a whole link in it opens (one cut by "…" stays text)
+    return text.split(/(https?:\/\/[A-Za-z0-9\-._~:\/?#@!$&'()*+,;=%]+)/).map(function (part, i, all) {
+      return i % 2 && all[i + 1] !== "…" ? '<a href="' + esc(part) + '" rel="noopener" target="_blank">' + esc(part) + "</a>" : marked(part);
+    }).join("");
   };
   function initMini(box, searchBox) {
     var art = [];
@@ -391,6 +406,9 @@
     say.textContent = pick(L().hello).replace("{hi}", L().hi[hour >= 5 && hour < 10 ? 0 : hour >= 10 && hour < 18 ? 1 : 2]);
     box.hidden = false;
     var asked = 0, recent = [];
+    // answers chosen by hand for some questions (data/minitobo_picks.toml)
+    var picks = [];
+    try { picks = JSON.parse(box.dataset.picks || "[]"); } catch (e) { picks = []; }
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var words = q.value.trim();
@@ -404,6 +422,7 @@
       KINDS.forEach(function (k) { if (k[1].test(rest)) { kinds.push(k[0]); rest = rest.replace(k[1], " "); } });
       var terms = termsOf(rest);
       if (!terms.length && !when && !kinds.length) terms = [words.toLowerCase()];
+      var music = MUSIC.test(rest) && kinds.some(function (k) { return k === "rec" || k === "like"; });
       // Pagefind matches whole words, so the kanji of a verb (降) would miss 降る: it is asked
       // only the other words, and the kanji count when the posts are scored
       var whole = terms.filter(function (t) { return (terms.stems || []).indexOf(t) < 0; });
@@ -446,12 +465,15 @@
           var total = w.reduce(function (n, x) { return n + x; }, 0);
           // a post of a kind asked for gets 60% of the words' whole on top
           var bonus = kinds.length ? (total || 1) * 0.6 : 0;
+          // and for music, one with a link to the music gets as much again
+          var heard = music ? (total || 1) * 0.6 : 0;
           posts.forEach(function (s) {
             // a word in the post itself counts in full, one only in its search words 60%
             s.score = terms.reduce(function (n, t, k) {
               return n + (has[k](s.own) ? w[k] : has[k](s.all) ? w[k] * 0.6 : 0);
             }, 0);
             if (kinds.some(function (k) { return s.all.indexOf(" kind" + k) >= 0; })) s.score += bonus;
+            if (heard && (AUDIO.test(s.own) || VIDEO.test(s.own) && s.all.indexOf(" kindsong") >= 0)) s.score += heard;
           });
           total += bonus;
           var pool = posts.filter(function (s) { return s.score >= total * 0.5; });
@@ -459,9 +481,17 @@
           return pool.filter(function (s) { return s.score >= best * 0.85; });
         });
       };
-      loadPagefind(searchBox.dataset.pagefind).then(function (pf) {
+      // a question with every word of a hand-chosen answer, of its kinds, gets one of its posts
+      var lower = rest.toLowerCase(), chosen = [];
+      if (!when) picks.forEach(function (pk) {
+        if (pk.a.every(function (w) { return lower.indexOf(w) >= 0; }) &&
+          (!pk.k || !pk.k.length || pk.k.some(function (k) { return kinds.indexOf(k) >= 0; }))) {
+          pk.p.forEach(function (x) { chosen.push({ title: x.d, url: sitePath(x.u), text: x.t }); });
+        }
+      });
+      (chosen.length ? Promise.resolve(chosen) : loadPagefind(searchBox.dataset.pagefind).then(function (pf) {
         return look(pf, true).then(function (pool) { return pool.length ? pool : look(pf, false); });
-      }).then(function (pool) {
+      })).then(function (pool) {
         if (id !== asked) return;
         // not one shown in the last twenty answers
         var fresh = pool.filter(function (s) { return recent.indexOf(s.url) < 0; });

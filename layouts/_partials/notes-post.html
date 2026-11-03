@@ -32,7 +32,12 @@
   {{- $m := substr $p.d 0 7 }}
   {{- $kw := "" }}{{ with site.Data.memo.topics }}{{ with index . $m }}{{ with index . $p.id }}{{ $kw = . }}{{ end }}{{ end }}{{ end }}
   {{- $kinds := "" }}{{ with site.Data.memo.kinds }}{{ with index . $m }}{{ with index . $p.id }}{{ $kinds = . }}{{ end }}{{ end }}{{ end }}
-  {{- if or $kw $kinds }}
-  <p class="np__kw">⁂ {{ $kw }}{{ with $kinds }}{{ range split . " " }} kind{{ . }}{{ end }}{{ end }}</p>
+  {{- /* and words for what is in its pictures (post_topics.py --pics), after ⁜: they count as
+     the post's own words, as the picture is what the post says (どば… and a photo) */}}
+  {{- $pw := "" }}{{ with site.Data.memo.pics }}{{ with index . $m }}{{ with index . $p.id }}{{ $pw = . }}{{ end }}{{ end }}{{ end }}
+  {{- /* and kindsong when its video link is music (post_topics.py --songs) */}}
+  {{- with site.Data.memo.songs }}{{ with index . $m }}{{ with index . $p.id }}{{ $kinds = trim (printf "%s %s" $kinds .) " " }}{{ end }}{{ end }}{{ end }}
+  {{- if or $kw $kinds $pw }}
+  <p class="np__kw">⁂ {{ $kw }}{{ with $kinds }}{{ range split . " " }} kind{{ . }}{{ end }}{{ end }}{{ with $pw }} ⁜ {{ . }}{{ end }}</p>
   {{- end }}
 </article>

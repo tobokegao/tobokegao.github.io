@@ -1,0 +1,11 @@
+# Answers chosen by hand for mini Tobokegao on the memo page (decision 0032, 0045).
+# When a question has every word in "ask" (lower case, as part of the question) and asks
+# for one of "kinds" (rec = おすすめ, like = 好き, howto = 使い方, think = どう思う,
+# news = 告知), mini Tobokegao answers with one of "posts" (own post ids in data/memo/posts)
+# instead of searching. A question with a time in it (2019年, 去年) searches as before.
+
+[[pick]]
+ask = ["daw"]
+kinds = ["rec", "like"]
+# Reaper: why it was chosen over Ableton Live; the way to it from SONAR; 最強DAWランキング
+posts = ["2049312221419983030", "2006745218775957970", "1679430596786024450"]
