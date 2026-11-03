@@ -351,6 +351,7 @@
         text: (cut < 0 ? body : body.slice(0, cut)).replace(/\.\s*$/, "").trim(),
         // the words for what is in its pictures (after ⁜) count as its own
         own: ((cut < 0 ? body : body.slice(0, cut)) + (seen < 0 ? "" : " " + body.slice(seen + 1))).toLowerCase(),
+        pics: seen < 0 ? "" : body.slice(seen + 1).toLowerCase(),
         all: body.toLowerCase()
       });
     });
@@ -467,12 +468,19 @@
           var bonus = kinds.length ? (total || 1) * 0.6 : 0;
           // and for music, one with a link to the music gets as much again
           var heard = music ? (total || 1) * 0.6 : 0;
+          // A thing seen in the post's pictures (猫, ラーメン) counts a fifth more, as the answer
+          // can show it, unless how or what Tobokegao thinks is asked. And a photo of it answers
+          // おすすめ or 好き as a post marked so would: few food photos ("どば…") are marked rec.
+          var seeing = !kinds.some(function (k) { return k === "howto" || k === "think" || k === "news"; });
+          var liked = kinds.some(function (k) { return k === "rec" || k === "like"; });
           posts.forEach(function (s) {
             // a word in the post itself counts in full, one only in its search words 60%
             s.score = terms.reduce(function (n, t, k) {
               return n + (has[k](s.own) ? w[k] : has[k](s.all) ? w[k] * 0.6 : 0);
             }, 0);
-            if (kinds.some(function (k) { return s.all.indexOf(" kind" + k) >= 0; })) s.score += bonus;
+            var seen = s.pics && terms.some(function (t, k) { return has[k](s.pics); });
+            if (seen && seeing) s.score += (total || 1) * 0.2;
+            if (kinds.some(function (k) { return s.all.indexOf(" kind" + k) >= 0; }) || seen && liked) s.score += bonus;
             if (heard && (AUDIO.test(s.own) || VIDEO.test(s.own) && s.all.indexOf(" kindsong") >= 0)) s.score += heard;
           });
           total += bonus;
