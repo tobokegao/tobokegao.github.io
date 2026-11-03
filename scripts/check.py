@@ -92,6 +92,7 @@ REMINDERS = [
      "ジャンルのノートを足したり dbpedia = を書いたりしたなら、scripts/dbpedia_links.py を回してから x_notes.py を回す"),
     (r"^(content/memo/|scripts/wiki_summaries\.py$)",
      "ジャンルのノートを足したり dbpedia = を書いたりしたなら、scripts/wiki_summaries.py も回し、出典の疑わしい要約を確かめる"),
+    (r"^data/memo/posts/", "ポストが増えた。検索用の語を付けるなら scripts/post_topics.py を回す（API の料金がかかる。0045）"),
 ]
 
 

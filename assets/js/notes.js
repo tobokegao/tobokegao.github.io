@@ -53,6 +53,12 @@
   var inRange = function (o, day) { return (!o.since || day >= o.since) && (!o.until || day < o.until); };
   // the day (in Japan) an X id was made: ids carry their time (ms since 2010-11-04, << 22)
   var dayOfId = function (id) { return new Date(Number(BigInt(id) >> 22n) + 1288834974657 + 9 * 3600e3).toISOString().slice(0, 10); };
+  // a post's excerpt without its date line (the link already) and without the words for the
+  // search after ⁂ (layouts/_partials/notes-post.html, docs/decisions/0045)
+  var postText = function (s) {
+    var text = s.excerpt.indexOf(s.title) === 0 ? s.excerpt.slice(s.title.length).replace(/^\.\s*/, "") : s.excerpt;
+    return text.split("⁂")[0].trim();
+  };
 
   // the account index (scripts/memo_query_index.py): 256 files by a hash of the name
   var bucket = function (name) {
@@ -179,10 +185,8 @@
             shown++;
             return '<li class="notes__hit"><a class="notes__hit-t" href="' + esc(p.url) + '">' + esc(p.meta.title) + "</a>" +
               (subs.length ? subs.slice(0, filtered ? 20 : 4).map(function (s) {
-                // Pagefind marks the hits with <mark> in an excerpt it has already escaped;
-                // the excerpt starts with the post's date line, which is the link already
-                var text = s.excerpt.indexOf(s.title) === 0 ? s.excerpt.slice(s.title.length).replace(/^\.\s*/, "") : s.excerpt;
-                return '<p class="notes__hit-s"><a href="' + esc(s.url) + '">' + esc(s.title) + "</a> " + text + "</p>";
+                // Pagefind marks the hits with <mark> in an excerpt it has already escaped
+                return '<p class="notes__hit-s"><a href="' + esc(s.url) + '">' + esc(s.title) + "</a> " + postText(s) + "</p>";
               }).join("") : '<p class="notes__hit-s">' + p.excerpt + "</p>") + "</li>";
           }).join("");
           say(shown + " ページ" + (o.media ? "（絵の有無は、from:かto:と一緒のときだけ絞れます）" : ""),
@@ -289,7 +293,7 @@
         var day = dayOf(s.title).split("-");
         var d = en() ? day[0] + "." + day[1] + "." + day[2] : day[0] + "年" + (+day[1]) + "月" + (+day[2]) + "日";
         var rt = s.title.match(/RT @(\w+)/);
-        var text = s.excerpt.indexOf(s.title) === 0 ? s.excerpt.slice(s.title.length).replace(/^\.\s*/, "") : s.excerpt;
+        var text = postText(s);
         // Pagefind's excerpt is already escaped, with the hits in <mark>
         say.innerHTML = esc(pick(l.open) + (rt ? l.foundRt.replace("{u}", "@" + rt[1]) : l.found).replace("{d}", d)) +
           '<span class="mini__quote">' + text + "</span>" + esc(pick(l.aside)) +

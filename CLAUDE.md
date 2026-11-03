@@ -26,6 +26,7 @@ DOSのテキスト画面のような見た目で、日本語と英語を一つ�
 - `subset_fonts.py`: ドットフォントを升目に合わせて作り直す
 - `minitobo_art.py`: メモのページのミニとぼけがおの絵（diaryのドット絵）を、`data/minitobo.json`から表示する大きさのWebPにする（0032）
 - `memo_query_index.py`: メモの検索のfrom:・to:のための索引。Actionsの組み立てで動く（0031）
+- `post_topics.py`: メモのポストに、検索用の見えない語をClaudeのAPIで付ける。手元だけで回し、全件を送る前に`--estimate`で料金を確かめる（0045）
 - `link_banners.py` / `link_letters.py`: トップの相互リンク用バナー（468×60、200×40、88×31。絵と配色の違う版つき）を、ミニとぼけがおの絵と手で置いた字で作る（0033）
 
 ## 見た目の決まり
@@ -85,3 +86,4 @@ AIが意味のある間違いをしたら、ここに1行足す。
 - `relativeURLs`は`src`や`href`のパスしか書き換えない。`data-*`属性に入れた`/`始まりのパスはプレビューで404になるので、`site.js`の`sitePath`を通す。
 - プレビューは`/tbk-preview/`の下にあり、リンクがそのページから見た相対の形になる。ページ移動（`site.js`）を試すときは、サイトのいちばん上ではなく、同じ下の階層で配って試す（`HUGO_RELATIVEURLS=true HUGO_PARAMS_PREVIEW=true`で`<作業用>/site/tbk-preview`にビルドし、`<作業用>/site`を配る）。
 - 埋め込んだスクリプトは、`hugo --minify`がHTMLと一緒にもう一度圧縮する。変数の名前が付け直されるとCSPの指紋と合わなくなり、ブラウザに止められる（`hugo.toml`の`keepVarNames`、`check.py`が点検する）。
+- 手元のスクリプト用のClaudeのAPIキーを`ANTHROPIC_API_KEY`という名前で環境変数に入れると、Claude Codeがその鍵で動き、ふだんの作業がMaxプランではなくAPIの料金になる。`TBK_ANTHROPIC_API_KEY`のように別の名前にする（0045）。

@@ -855,6 +855,8 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 .np__text { margin: 0; font: 15px/1.75 var(--f-body); overflow-wrap: anywhere; }
 .np__cut { font: var(--dot)/1 var(--f-dot); color: var(--ink-dim); }
 .np__tp { margin: 4px 0 0; font: var(--dot)/2 var(--f-dot); }
+/* words for the search only (scripts/post_topics.py, 0045) */
+.np__kw { display: none; }
 /* thumbnails from X: the "360x360" size (fits in 360px; videos have no "thumb"), cut to a 160px square; a video or GIF has a play mark */
 .np__pics { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 0; }
 .np__pic { position: relative; display: block; text-decoration: none; width: 164px; height: 164px; border: 2px solid; border-color: var(--bevel-dk) var(--bevel-md) var(--bevel-lt) var(--bevel-md); background: var(--win-2); }
