@@ -230,6 +230,111 @@
     }
   };
   var pick = function (a) { return a[Math.floor(Math.random() * a.length)]; };
+  // the words of a question that say what it is about: no words in hiragana only (particles
+  // and endings like でしょ, か) and no small English words, unless nothing else is left
+  var STOP = ["the", "a", "an", "is", "are", "was", "do", "does", "did", "you", "your", "i", "my", "to", "of", "in", "on",
+    "at", "for", "and", "or", "what", "how", "about", "any", "have", "has", "can", "it", "this", "that"];
+  var termsOf = function (text) {
+    var parts = window.Intl && Intl.Segmenter ?
+      Array.from(new Intl.Segmenter("ja", { granularity: "word" }).segment(text))
+        .filter(function (s) { return s.isWordLike; }).map(function (s) { return s.segment; }) :
+      text.split(/\s+/);
+    parts = parts.map(function (w) { return w.toLowerCase(); }).filter(function (w, i, a) { return w && a.indexOf(w) === i; });
+    var kept = parts.filter(function (w) { return !/^[ぁ-ゟ]+$/.test(w) && STOP.indexOf(w) < 0; });
+    return kept.length ? kept : parts;
+  };
+  // longer words count more (タイヤ over 冬); words in Latin letters twice, as they are mostly
+  // names (M8 over 使い方), and words in katakana half again, as they are mostly things
+  // (タイヤ over 大丈夫)
+  var weight = function (t) { return t.length * (/^[a-z0-9]/.test(t) ? 2 : /^[゠-ヿ]+$/.test(t) ? 1.5 : 1); };
+  // A time in the question ("2019年", "2019年の夏", "2010年代後半", "去年", "3年前", "最近", "昔",
+  // "in 2019", "last year"): the first one found, as days [since, until), and the question
+  // without it. The memo starts in 2014.
+  var FIRST_YEAR = 2014;
+  var day1 = function (y, m) { y = +y; while (m > 12) { m -= 12; y++; } return y + "-" + ("0" + m).slice(-2) + "-01"; };
+  var years = function (a, b) { return [day1(a, 1), day1(b + 1, 1)]; };
+  var whenOf = function (text) {
+    var y = new Date().getFullYear();
+    var rules = [
+      [/((?:19|20)\d\d)\s*年\s*(\d{1,2})\s*月/, function (m) { return [day1(m[1], +m[2]), day1(m[1], +m[2] + 1)]; }],
+      [/((?:19|20)\d\d)\s*年?\s*の?\s*(春|夏|秋|冬)/, function (m) {
+        var s = { "春": 3, "夏": 6, "秋": 9, "冬": 12 }[m[2]];
+        return [day1(m[1], s), day1(m[1], s + 3)];
+      }],
+      [/(今年|去年|昨年|一昨年|おととし)\s*の?\s*(春|夏|秋|冬)/, function (m) {
+        var n = y - { "今年": 0, "去年": 1, "昨年": 1, "一昨年": 2, "おととし": 2 }[m[1]];
+        var s = { "春": 3, "夏": 6, "秋": 9, "冬": 12 }[m[2]];
+        return [day1(n, s), day1(n, s + 3)];
+      }],
+      [/((?:19|20)\d)0\s*年代\s*(前半|半ば|後半)?/, function (m) {
+        var d = +m[1] * 10, part = { "前半": [0, 4], "半ば": [3, 6], "後半": [5, 9] }[m[2]] || [0, 9];
+        return years(d + part[0], d + part[1]);
+      }],
+      [/(?:in\s+)?((?:19|20)\d\d)\s*(?:年|頃|ごろ)?/i, function (m) { return years(+m[1], +m[1]); }],
+      [/(\d+)\s*年前|(\d+)\s*years?\s+ago/i, function (m) { var n = y - (m[1] || m[2]); return years(n, n); }],
+      [/一昨年|おととし/, function () { return years(y - 2, y - 2); }],
+      [/去年|昨年|last\s+year/i, function () { return years(y - 1, y - 1); }],
+      [/今年|this\s+year/i, function () { return years(y, y); }],
+      [/最近|recently|lately/i, function () {
+        var d = new Date(Date.now() - 183 * 864e5).toISOString().slice(0, 10);
+        return [d, day1(y + 1, 1)];
+      }],
+      [/昔|long\s+ago|the\s+old\s+days/i, function () { return years(FIRST_YEAR, y - 6); }]
+    ];
+    for (var i = 0; i < rules.length; i++) {
+      var m = text.match(rules[i][0]);
+      if (m) {
+        var r = rules[i][1](m);
+        return { since: r[0], until: r[1], rest: text.replace(m[0], " ") };
+      }
+    }
+    return null;
+  };
+  var monthsIn = function (w) {
+    var out = [];
+    for (var m = w.since.slice(0, 7); m + "-01" < w.until; m = day1(m.slice(0, 4), +m.slice(5) + 1).slice(0, 7)) {
+      if (+m.slice(0, 4) >= FIRST_YEAR) out.push(m);
+    }
+    return out;
+  };
+  // The posts on a page Pagefind gave back, cut out of its text: each post starts at its date
+  // line (an anchor with the post's id) and ends at the next one; its search words come after ⁂.
+  var postsOf = function (p) {
+    var c = p.content || "", at = 0, out = [];
+    var heads = (p.anchors || []).filter(function (a) { return /^p\d+$/.test(a.id); });
+    var spots = heads.map(function (a) {
+      var i = c.indexOf(a.text, at);
+      if (i >= 0) at = i + a.text.length;
+      return i;
+    });
+    heads.forEach(function (a, k) {
+      if (spots[k] < 0 || !dayOf(a.text)) return;
+      var end = c.length;
+      for (var n = k + 1; n < heads.length; n++) if (spots[n] >= 0) { end = spots[n]; break; }
+      var body = c.slice(spots[k] + a.text.length, end).replace(/^\.\s*/, "");
+      var cut = body.indexOf("⁂");
+      out.push({
+        title: a.text, url: p.url + "#" + a.id,
+        text: (cut < 0 ? body : body.slice(0, cut)).replace(/\.\s*$/, "").trim(),
+        all: body.toLowerCase()
+      });
+    });
+    return out;
+  };
+  // a post's text for the answer, escaped, with the question's words marked; a long post is
+  // cut around the first of them
+  var quote = function (text, terms) {
+    var lower = text.toLowerCase(), first = -1;
+    terms.forEach(function (t) { var i = lower.indexOf(t); if (i >= 0 && (first < 0 || i < first)) first = i; });
+    if (text.length > 240) {
+      var from = Math.max(0, Math.min(first - 60, text.length - 240));
+      text = (from > 0 ? "…" : "") + text.substr(from, 240) + (from + 240 < text.length ? "…" : "");
+    }
+    if (!terms.length) return esc(text);
+    var re = new RegExp("(" + terms.slice().sort(function (a, b) { return b.length - a.length; })
+      .map(function (t) { return t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }).join("|") + ")", "gi");
+    return text.split(re).map(function (part, i) { return i % 2 ? "<mark>" + esc(part) + "</mark>" : esc(part); }).join("");
+  };
   function initMini(box, searchBox) {
     var art = [];
     try { art = JSON.parse(box.dataset.art || "[]"); } catch (e) { art = []; }
@@ -267,25 +372,52 @@
       if (!words) return;
       var id = ++asked;
       say.textContent = "…";
-      loadPagefind(searchBox.dataset.pagefind).then(function (pf) {
-        return pf.search(words);
-      }).then(function (found) {
-        // eight pages at random from the forty best, so the same word brings different posts
-        var top = found.results.slice(0, 40);
-        for (var i = top.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = top[i]; top[i] = top[j]; top[j] = t; }
-        return Promise.all(top.slice(0, 8).map(function (r) { return r.data(); }));
-      }).then(function (pages) {
-        if (id !== asked) return;
-        // the posts among the hits (their titles start with a date), own posts first
-        var hits = [];
-        pages.forEach(function (p) {
-          (p.sub_results || []).forEach(function (s) { if (dayOf(s.title)) hits.push(s); });
+      var when = whenOf(words);
+      var terms = termsOf(when ? when.rest : words);
+      if (!terms.length && !when) terms = [words.toLowerCase()];
+      // Look among the pages with own posts first (kind:own), and among all pages, reposts
+      // too, only when nothing there fits. A time asks only the month pages of its months.
+      var look = function (pf, own) {
+        var filters = {};
+        if (when) filters.month = { any: monthsIn(when) };
+        if (own) filters.kind = "own";
+        return pf.search(terms.length ? terms.join(" ") : null, { filters: filters }).then(function (found) {
+          // pages at random from the forty best, so the same words bring different posts
+          // (eight for words; for a time alone, two months are plenty to pick from)
+          var top = found.results.slice(0, 40);
+          for (var i = top.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = top[i]; top[i] = top[j]; top[j] = t; }
+          return Promise.all(top.slice(0, terms.length ? 8 : 2).map(function (r) { return r.data(); }));
+        }).then(function (pages) {
+          var posts = [];
+          pages.forEach(function (p) { posts = posts.concat(postsOf(p)); });
+          if (own) posts = posts.filter(function (s) { return !/RT @/.test(s.title); });
+          if (when) posts = posts.filter(function (s) { var d = dayOf(s.title); return d >= when.since && d < when.until; });
+          if (!terms.length) return posts;
+          // Pagefind finds a page with all the words somewhere in it. Score each post on it by
+          // the words it has itself, in its text or its search words (see weight); a word that
+          // many of the posts have (好き) counts less than a rare one (ゲーム). Keep the posts
+          // with at least half of the whole, and of those the ones near the best.
+          var w = terms.map(function (t) {
+            var df = posts.filter(function (s) { return s.all.indexOf(t) >= 0; }).length;
+            return weight(t) * Math.log(1 + posts.length / (1 + df));
+          });
+          var total = w.reduce(function (n, x) { return n + x; }, 0);
+          posts.forEach(function (s) {
+            s.score = terms.reduce(function (n, t, k) { return n + (s.all.indexOf(t) >= 0 ? w[k] : 0); }, 0);
+          });
+          var pool = posts.filter(function (s) { return s.score >= total * 0.5; });
+          var best = pool.reduce(function (n, s) { return Math.max(n, s.score); }, 0);
+          return pool.filter(function (s) { return s.score >= best * 0.85; });
         });
-        // own posts first, and not one shown in the last twenty answers
-        var fresh = hits.filter(function (s) { return recent.indexOf(s.url) < 0; });
-        if (fresh.length) hits = fresh;
-        var own = hits.filter(function (s) { return !/RT @/.test(s.title); });
-        var s = pick(own.length ? own : hits);
+      };
+      loadPagefind(searchBox.dataset.pagefind).then(function (pf) {
+        return look(pf, true).then(function (pool) { return pool.length ? pool : look(pf, false); });
+      }).then(function (pool) {
+        if (id !== asked) return;
+        // not one shown in the last twenty answers
+        var fresh = pool.filter(function (s) { return recent.indexOf(s.url) < 0; });
+        if (fresh.length) pool = fresh;
+        var s = pick(pool);
         if (s) { recent.push(s.url); if (recent.length > 20) recent.shift(); }
         showArt();
         var l = L();
@@ -293,13 +425,11 @@
         var day = dayOf(s.title).split("-");
         var d = en() ? day[0] + "." + day[1] + "." + day[2] : day[0] + "年" + (+day[1]) + "月" + (+day[2]) + "日";
         var rt = s.title.match(/RT @(\w+)/);
-        var text = postText(s);
-        // Pagefind's excerpt is already escaped, with the hits in <mark>
         say.innerHTML = esc(pick(l.open) + (rt ? l.foundRt.replace("{u}", "@" + rt[1]) : l.found).replace("{d}", d)) +
-          '<span class="mini__quote">' + text + "</span>" + esc(pick(l.aside)) +
+          '<span class="mini__quote">' + quote(s.text, terms) + "</span>" + esc(pick(l.aside)) +
           ' <a href="' + esc(s.url) + '">' + esc(l.more) + "</a>";
         // the post's pictures, from the month's small list of pictures (scripts/memo_query_index.py),
-        // drawn as on the memo pages; the excerpt itself is text only
+        // drawn as on the memo pages; the quote itself is text only
         var pid = (s.url.split("#")[1] || "").replace(/^p/, "");
         if (!/^\d+$/.test(pid)) return;
         var file = memoTop + "m/" + (rt ? "rt-" : "") + dayOfId(pid).slice(0, 7) + ".json";
