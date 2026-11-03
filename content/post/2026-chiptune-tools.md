@@ -2,8 +2,8 @@
 title: チップチューンづくりのおすすめツール
 title_en: Recommended Chiptune Tools
 date: 2026-10-30
-description: プラグイン、トラッカー、ハードウェア、ブラウザで使えるツール、サンプルパックまで、最新バージョンでまとめ直しました（2026年11月2日更新）
-description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-based tools, and sample packs, all updated with their latest versions. Last updated November 2, 2026.
+description: プラグイン、トラッカー、ハードウェア、ブラウザで使えるツール、サンプルパックまで、最新バージョンでまとめ直しました（2026年11月3日更新）
+description_en: A fresh roundup of chiptune plugins, trackers, hardware, web-based tools, and sample packs, all updated with their latest versions. Last updated November 3, 2026.
 ---
 
 {{< tool-filter >}}
@@ -695,6 +695,13 @@ X68000やPC-9801、PC-8801、MSXの音楽を作る・鳴らすためのツール
 
 - [**MSXPLAYer**](https://msxplayer.net/wp/)：MSXアソシエーション公式のMSXエミュレーター。いまのバージョンは、技術評論社の本「MSX-BASICでゲームを作ろう」を持っている人が使えます。Windowsのみ
 
+- [**MUCOM88**](https://www.ancient.co.jp/~mucom88/) 2019年1月21日版：古代祐三さんが1987年に作った、PC-8801のFM音源（YM2203、サウンドボードIIのYM2608）で鳴らすMMLのドライバーとツール。エンシェントが、当時のディスクイメージ（MUCOM88、ALPHA-DOS、音色エディター）とMMLのサンプルを配っています。PC-8801mkIISR以降の実機かエミュレーターで動きます。無料
+  - [**MUCOM88 Windows**](https://onitama.tv/mucom88/) ver0.70：Open MUCOM88プロジェクトの、MUCOM88をWindowsで動かすソフト。PC-8801のBIOSやディスクイメージは要りません。古代さんのサンプル曲つきで、SCCI2を通して本物のYM2608でも鳴らせます。無料、Windowsのみ
+  - [**mucomDotNET**](https://github.com/kuma4649/mucomDotNET) TAG213：mml2vgmのkuma4649さんによる、MUCOM88のコンパイラーとドライバーを.NETで作り直したもの。OPNAを2つ、OPNBを2つ、OPMを1つ、同時に鳴らせます。無料、Windowsのみ
+  - [**MUCOM88 on Web**](https://aosoft.github.io/MucomWeb.Play/)：MUCOM88のMMLを、ブラウザでコンパイルして鳴らせるページ。サンプルのMMLもあります。無料
+  - [**MUCOMSX**](https://github.com/ToughkidDev/MUCOMSX) v1.0-stable：ToughkidCSTさんの、MUCOM88をMSXに移したもの。MSXの上でMMLを書いてコンパイルし、YM2608を積んだ「MAKOTO」カートリッジで鳴らせます。MUBやVGMにも書き出せ、SCCやMSX-MUSICのパートも足せます。無料、MSX2以降の実機・エミュレーター
+  - [**MUCPlayground**](https://toughkiddev.github.io/MUCOMSX/MUCPlayground/)：MUCOMSXのページにある、MUCOM88のMMLをブラウザで書いてすぐ聴けるエディター。FM・SSG・リズム・ADPCMのほか、MSX-MUSIC・PSG・SCCも鳴らせ、MUBやVGMで保存できます。無料
+
 ## MMLで書くソフト {#ja-mml}
 
 曲を文字（MML）で書いて鳴らす方法です。
@@ -1087,6 +1094,110 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
   <img src="/img/chiptune-tools/botb-tfmmm.webp" alt="TFM Music Makerの画面" width="300" height="300" loading="lazy" />
   <small>画像：[pouet.net](https://www.pouet.net/prod.php?which=53467)より</small>
 
+### PC-88・PC-98（OPN・OPNA）
+
+PC-88やPC-98のFM音源（OPN・OPNA）で曲を作るためのツールです。Rerrahさんの[まとめ](https://gist.github.com/rerrahkr/2af51e7328880410b853261b3940ec7b)から選びました。
+
+- [**PMDDotNET**](https://github.com/kuma4649/PMDDotNET) TAG065：kuma4649さんによる、PMDのコンパイラーとドライバーを.NETで作り直したもの。コマンドラインで使います。無料、Windowsのみ
+
+- [**FMP**](http://archive.fmp.jp/archives/85)：PC-98で動くFM音源のドライバー。配布ページにあるのは、MMLのコンパイラー（FMC 3.16z）です。FMP7に追加機能（exFMP4）を入れると、FMPの曲をWindowsで鳴らせます。無料、MS-DOS
+
+- [**FMP7**](http://archive.fmp.jp/archives/448) ver7.10g：FMPをWindowsで動くようにしたもの。FMPの曲とは互換性がありません。追加機能を入れると、FMP4やPMD、MXDRV、S98の曲も鳴らせます。無料、Windowsのみ
+
+- [**MML Editor 7**](https://github.com/aosoft/FMMLEditor7) v2.0.1.0：FMP7、FMP4、PMDのMMLを書くエディター。コンパイラーなどを入れておくと、書きながらコンパイルして鳴らせます。無料、Windowsのみ
+
+- [**みゅあっぷ98**](https://web.archive.org/web/20250929231246/http://ohta.music.coocan.jp/packen/download.htm) V6.41A：ぱっくんソフトの、PC-98で動くFM音源とPCMのドライバー。配布ページは今はなく、Internet Archiveに残ったページから探せます。無料、MS-DOS
+
+- [**MDRV2**](https://www.vector.co.jp/soft/dos/art/se018677.html)：Regulusさんの、PC-98で動くMMLのコンパイラーとドライバー。曲の途中に効果音を割りこませられます。無料、MS-DOS
+
+- [**Kolin98**](https://web.archive.org/web/19991003123743/http://www.netlaputa.ne.jp/~akikaz/arch.html) v1.02：Akikazさんの、PC-98のFM音源（OPN・OPNA）と86ボードのPCMで鳴らすドライバーと、MMLのコンパイラー。効果音のツールも付いています。配布ページは今はなく、Internet Archiveに残ったページから手に入ります。無料、MS-DOS
+
+- [**OPN2BankEditor**](https://github.com/Wohlstand/OPN2BankEditor) v1.3：Wohlstandさんの、OPN系のFM音源の音色をまとめて作る・直すエディター。メガドライブやFM TOWNS、PC-88・PC-98の音色を扱えます。無料、Windows・Mac・Linux
+
+- [**OPNplug**](https://github.com/jpcima/ADLplug) 1.0.2：ADLplugと同じ作者による、YM2612（OPN2）を再現したFM音源のプラグイン。無料、Windows・Mac・Linux（VST・LV2）
+
+- [**MAmidiMEmo**](https://github.com/110-kenichi/MAmidiMEmo) 6.5.6.3：itokenさんの、MAMEの音源を使ったMIDI音源。YM2151やファミコン、OPN系など、たくさんの音源をMIDIで鳴らせます。無料、Windowsのみ
+
+- [**YM2608 Tone Editor**](https://github.com/rerrahkr/YM2608-Tone-Editor) v0.4.5：Rerrahさんの、YM2608（OPNA）の音色エディター。BambooTrackerやMUCOM88、PMD、Furnaceなどの音色の形式で読み書きできます。無料、Windowsのみ
+
+- [**Mml Watch GUI**](https://eseakisakura.github.io/mml_watch_gui/) v5.3.2：eseakisakuraさんの、ppmck、NSD.Lib、PMDのMMLを、保存するたびにコンパイルして鳴らすツール。FM音源の音色エディター「FM Synthesis Chip - Tone Editor」と、ギターのアルペジオを複数のパートに分けて書き出す「Guitar Arpeggio - MML Generator」も入っています。無料、Windowsのみ
+
+- [**PMD File Watcher**](https://github.com/rerrahkr/PMDFileWatcher) v1.3.0：Rerrahさんの、PMDのMMLを保存するたびにコンパイルして、FMPMDなどで鳴らすツール。無料、Windowsのみ
+
+- [**WatchFileUpdate**](https://c60.la.coocan.jp/download.html) Ver 0.01：C60さんの、ファイルが更新されたら決めておいたソフトを動かすツール。MMLを保存したらコンパイルして、FMPMDで鳴らす、という使い方ができます。無料、Windowsのみ
+
+- [**opm2pmd**](https://github.com/raphaelgoulart/opm2pmd) 1.0：VOPMの音色（.opm）を、PMDの音色のMMLに変えるツール。無料
+
+- [**dmf2pmd.py**](https://gist.github.com/Pigu-A/a51a4f3b83a238579e225e06098ba4e7)：DefleMaskの曲（.dmf）を、PMDのMMLに変えるPythonのスクリプト。無料
+
+- [**dmp2mml**](https://github.com/SilSinn9801/dmp2mml)：DefleMaskのFM音源の音色（.dmp）を、PMDの音色のMMLに変えるツール。無料
+
+- [**PMD2S98**](http://www.vesta.dti.ne.jp/~tsato/soft_s98v3.html)：Ru^3さんの、PMDの曲をS98の形式に変えるツール。ADPCMには対応していません。無料、Windowsのみ
+
+- [**ConvFMML**](https://github.com/rerrahkr/ConvFMML) v1.1.0：Rerrahさんの、MIDIをPMDなどのMMLに変えるツール。和音は別のパートに分けます。無料、Windowsのみ
+
+- [**mid2pmd**](https://www.youtube.com/watch?v=tvt7p49B1MI)：SamDbさんの、MIDIをPMDのMMLに変えるツール。東方のPC-98の曲のリミックスを作りやすくするためのものです。ブラウザで動くツールで、動画の説明にあるリンクから落とせます。無料
+
+- [**VGMPlay**](https://github.com/vgmrips/vgmplay-legacy) 0.40.9：VGMの曲を鳴らすプレイヤー。コマンドラインで使い、Winampのプラグインもあります。無料、Windows・Linux
+
+- [**98Fmplayer**](https://github.com/myon98/98fmplayer) v0.1.14：PC-98のPMDとFMPの曲を鳴らすプレイヤー。音色も見られます。無料、Windowsのみ
+
+- [**webVGM**](https://www.wothke.ch/webVGM/)：VGMの曲をブラウザで鳴らすプレイヤー。無料
+
+- [**WebS98**](https://www.wothke.ch/webS98/)：S98の曲をブラウザで鳴らすプレイヤー。ファイルをページに落とすと鳴ります。無料
+
+- [**WebAssembly VGM Player**](https://chipstream.netlify.app/)：ヤマハのFM音源を再現した「ymfm」を使った、ブラウザで動くVGMのプレイヤー。無料
+
+- [**S98Player for iPhone**](https://apps.apple.com/jp/app/s98player-for-iphone/id388838337) 3.0：PC-98やX68000のFM音源の曲を鳴らすプレイヤー。S98のほか、PMD、FMP、MDXの曲も鳴らせます。無料、iPhone・iPad
+
+- [**Droidsound-E**](https://web.archive.org/web/20260802221321/https://droidsound-e.web.app/) 2.1.309：droidmjtさんが、Androidの音楽プレイヤー「Droidsound」を広げたもの。S98やVGM、PMDなど、昔のゲームやパソコンの音楽をたくさんの形式で鳴らせます。公式サイトは2026年8月ごろまでありましたが、今は開けません。リンク先は、Internet Archiveに残ったページです。無料、Android
+
+- [**SBVGM**](https://www.oplx.com/code/) 1.46：DOSで動く、VGMを本物の音源で鳴らすプレイヤー。PC-98にも対応しています。無料、MS-DOS
+
+- [**S98PLAY**](https://www.yui.ne.jp/pcb/nekobus/index.html)：PC-98の音源ボード「NEKO BUS」と一緒に配られている、S98のプレイヤー。無料、MS-DOS
+
+- [**S88DSP**](https://github.com/Mistranger/S88DSP)：PC-8801の実機で、OPN・OPNAの曲をフロッピーから読みながら鳴らすプレイヤー。まだ作っている途中で、配っているのはソースだけです。無料
+
+### 本物のFM音源チップを鳴らす（SCCI・RE:birth）
+
+本物の音源チップをパソコンにつないで鳴らす機械と、そのためのソフトです。
+
+- [**SCCI2**](https://www.pyonpyon.jp/~gasshi/fm/) 2026年10月8日版：がし３さんの、ソフトから本物の音源チップを鳴らすためのしくみ。前のSCCIの後継で、MMLのドライバー「mmldrv2」とそのプレイヤー「mmldrv2player」、S98やVGMを鳴らす「SCCI2Player」も入っています。SPFM系の機械で使うには、有料のファームウェアの更新が要ります。無料、Windowsのみ
+
+- [**SPFM（FMの塔）**](https://web.archive.org/web/20200107144931/http://www.pyonpyon.jp/~gasshi/fm/fmtower.html)：がし３さんたちが作った、本物の音源チップを積んだ箱。YM2608やYM2151のボードを挿して、SCCIで鳴らします。イベントでの頒布と、家電のケンちゃんでの委託販売だけだったので、今は手に入りません
+
+- [**SPFM Light**](https://ym2203.com/?p=542)：RE:birthの音源モジュールを2つ挿せる、安いマザーボード。はんだ付けして組み立てるキットで、セットは8,980円と9,980円（2026年11月3日には売り切れ）
+
+- [**RE:birth**](https://ym2203.com/)：本物のFM音源やPSGのチップ（YM2608、YM2203、YM2151、YM2612、OPL3、SN76489など）を載せた電子工作のキット。パソコンのソフトからSCCIを通して鳴らします。家電のケンちゃんで売っているモジュールのキットは7,400〜11,750円ほどで、音源チップは自分で用意します（2026年11月3日）
+
+- [**ToneEditor**](https://ym2203.com/?page_id=30)：Project RE:birthの、本物の音源チップを鳴らしながら音色を作るエディター。無料、Windowsのみ
+
+- [**FITOM**](https://github.com/madscient/FITOMApp)：madscientさんの、MIDIをRE:birthなどの本物のFM音源への命令に変えるソフト。パソコンをMIDI音源として使えます。無料、Windowsのみ
+
+- [**C86CTL**](https://github.com/honet/c86ctl) rel1-4-6：G.I.M.I.CやC86BOXにつないだ本物の音源を、ソフトから鳴らすためのしくみ。無料、Windowsのみ
+
+- [**C86BOX**](https://www.c86box.com/)：PC-98の音源ボードを2枚まで挿して、今のパソコンにUSBでつなぐ箱。25,000円（2026年11月3日には売り切れ）
+
+- [**G.I.M.I.C**](https://kurohane.net/wiki_gimic/)：音源チップのモジュールを差し替えて使う、本物の音源の機械。どのモデルも生産が終わっていて、中古で手に入れた人のためのWikiが残っています
+
+### PC-98のエミュレーター
+
+PMDなど、MS-DOSで動くソフトを使うときに要ります。
+
+- [**Neko Project II**](https://www.yui.ne.jp/np2/) ver0.86：PC-98のエミュレーター。C86BOXやRE:birth、SPFM Lightの本物の音源でも鳴らせます。BIOSのROMが要ります。無料、Windows・Mac
+
+- [**np2fmgen**](https://nenecchi.kirara.st/)：Neko Project IIのFM音源を、音のよい「fmgen」に替えたもの。無料、Windows
+
+- [**NP2kai**](https://github.com/AZO234/NP2kai) rev.22：Neko Project IIのいろいろな派生バージョンの変更をまとめたもの。RetroArchで使うか、ソースから組み立てて使います。無料、Windows・Mac・Linux・スマホ
+
+- [**T98-Next**](http://akiyuki.boy.jp/t98next/)：PC-9821のエミュレーター。もう更新されていません。無料、Windowsのみ
+
+- [**Anex86**](https://web.archive.org/web/20090705081052/http://hp.vector.co.jp/authors/VA015680/) v2.78：A.N.さんの、軽く動くPC-98のエミュレーター。2.78で更新が止まり、作者のサイトも今はありません。リンク先は、Internet Archiveに残った作者のページです。無料、Windowsのみ
+
+- [**DOSBox-X**](https://dosbox-x.com/) 2026.10.01：DOSBoxに、PC-98のエミュレーションと日本語の表示を足したもの。無料、Windows・Mac・Linux
+
+- [**MS-DOS Player for Win32-x64**](http://takeda-toshiya.my.coocan.jp/msdos/)：Takeda Toshiyaさんの、MS-DOSのコマンドをWindowsのコマンドプロンプトでそのまま動かすツール。64bitのWindowsでPMDのコンパイラーを動かすのに使えます（PMD File WatcherやMML Editor 7もこれを使います）。無料、Windowsのみ
+
 ### ZX Spectrum
 
 - [**Beepola**](https://freestuff.grok.co.uk/beepola/) v1.08.01：ZX Spectrumのビーパー用のトラッカー。無料、Windowsのみ
@@ -1116,6 +1227,8 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 - [**KORG DS-10**](https://en.wikipedia.org/wiki/KORG_DS-10)：ニンテンドーDSで動く、KORGのシンセ（MS-20風）とドラムのソフト。iPhone・iPadバージョンの「KORG iDS-10」も今は買えず、後継はありません
   <img src="/img/chiptune-tools/botb-ds10.webp" alt="KORG DS-10の画面" width="434" height="420" loading="lazy" />
   <small>画像：[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:KORG_DS-10.jpg)より</small>
+
+- [**Music On: Drums**](https://abylight.com/game/music-on-drums/)：Abylightの、ニンテンドーDSi用のドラムマシン。160の音を、8トラック・16ステップで打ち込みます。DSiウェアとして売られていたもので、今は買えません
 
 - [**Mario Paint Composer DS**](https://github.com/DerrickGold/MarioPaintComposer-NDS)：ニンテンドーDSで動く、マリオペイント風の作曲ソフト。今ならパソコン用のSuper Mario Paint
   <img src="/img/chiptune-tools/botb-mpcds.webp" alt="Mario Paint Composer DSの画面" width="256" height="384" loading="lazy" />
@@ -1243,6 +1356,8 @@ Shiruさんが公開している音楽のツールです。どれも[Shiruさん
 - [SID Media Lab](https://akaobi.wordpress.com/)：赤帯さんのチップチューンの研究ブログ
 
 コモドール64の音楽エディターは、Chordianさんの[比較表](http://chordian.net/c64editors.htm)（英語）でも見比べられます。
+
+PC-88・PC-98のFM音源（OPN・OPNA）のツールは、Rerrahさんの[まとめ](https://gist.github.com/rerrahkr/2af51e7328880410b853261b3940ec7b)にくわしく載っています。
 
 ## 2021年のまとめから変わったこと {#ja-changes}
 
@@ -1940,6 +2055,13 @@ Tools for making and playing music for the X68000, PC-9801, PC-8801 and MSX.
 
 - [**MSXPLAYer**](https://msxplayer.net/wp/): the official MSX emulator from the MSX Association. The current build is available to owners of the Gijutsu-Hyoron book "MSX-BASICでゲームを作ろう". Windows only
 
+- [**MUCOM88**](https://www.ancient.co.jp/~mucom88/) (January 21, 2019 release): Yuzo Koshiro's 1987 MML driver and tools for the PC-8801's FM sound (YM2203, and the YM2608 on Sound Board II). Ancient provides the original disk images (MUCOM88, ALPHA-DOS and a tone editor) with sample MML for free. Runs on a real PC-8801mkIISR or later, or in an emulator. Free
+  - [**MUCOM88 Windows**](https://onitama.tv/mucom88/) ver0.70: the Open MUCOM88 project's version of MUCOM88 for Windows, which needs no PC-8801 BIOS or disk images. Comes with Koshiro's sample songs and can play a real YM2608 through SCCI2. Free, Windows only
+  - [**mucomDotNET**](https://github.com/kuma4649/mucomDotNET) TAG213: kuma4649 (the mml2vgm author) rebuilt the MUCOM88 compiler and driver in .NET. It can play two OPNAs, two OPNBs and one OPM at once. Free, Windows only
+  - [**MUCOM88 on Web**](https://aosoft.github.io/MucomWeb.Play/): compiles and plays MUCOM88 MML in the browser, with sample MML. Free
+  - [**MUCOMSX**](https://github.com/ToughkidDev/MUCOMSX) v1.0-stable: ToughkidCST's port of MUCOM88 to the MSX. Write and compile MML on the MSX itself and play it on the MAKOTO cartridge, which carries a YM2608. It exports MUB and VGM and adds SCC and MSX-MUSIC parts. Free, real MSX2 or later, or an emulator
+  - [**MUCPlayground**](https://toughkiddev.github.io/MUCOMSX/MUCPlayground/): an editor on the MUCOMSX site for writing MUCOM88 MML in the browser and hearing it right away. In addition to FM, SSG, rhythm and ADPCM, it also supports MSX-MUSIC, PSG and SCC, and can export to MUB and VGM. Free
+
 ## Writing music in MML {#en-mml}
 
 Write songs as text (MML) and play them.
@@ -2332,6 +2454,110 @@ Here are trackers and tools listed on the wiki of the chiptune community [Battle
   <img src="/img/chiptune-tools/botb-tfmmm.webp" alt="TFM Music Maker screenshot" width="300" height="300" loading="lazy" />
   <small>Image: from [pouet.net](https://www.pouet.net/prod.php?which=53467)</small>
 
+### PC-88 and PC-98 (OPN, OPNA)
+
+Tools for making music with the FM sound (OPN, OPNA) of the PC-88 and PC-98, picked from Rerrah's [list](https://gist.github.com/rerrahkr/2af51e7328880410b853261b3940ec7b) (in Japanese).
+
+- [**PMDDotNET**](https://github.com/kuma4649/PMDDotNET) TAG065: kuma4649 rebuilt the PMD compiler and driver in .NET. Used from the command line. Free, Windows only
+
+- [**FMP**](http://archive.fmp.jp/archives/85): an FM sound driver for the PC-98. The download page has its MML compiler (FMC 3.16z). With the exFMP4 add-on, FMP7 plays FMP songs on Windows. Free, MS-DOS
+
+- [**FMP7**](http://archive.fmp.jp/archives/448) ver7.10g: FMP made to run on Windows. Its songs aren't compatible with FMP's. With add-ons it also plays FMP4, PMD, MXDRV and S98 songs. Free, Windows only
+
+- [**MML Editor 7**](https://github.com/aosoft/FMMLEditor7) v2.0.1.0: an MML editor for FMP7, FMP4 and PMD. With the compilers installed, it compiles and plays as you write. Free, Windows only
+
+- [**MUAP98 (みゅあっぷ98)**](https://web.archive.org/web/20250929231246/http://ohta.music.coocan.jp/packen/download.htm) V6.41A: Pakkun Soft's FM and PCM driver for the PC-98. The download page is gone; look for the files in the Internet Archive copy. Free, MS-DOS
+
+- [**MDRV2**](https://www.vector.co.jp/soft/dos/art/se018677.html): Regulus's MML compiler and driver for the PC-98. Sound effects can cut into the music. Free, MS-DOS
+
+- [**Kolin98**](https://web.archive.org/web/19991003123743/http://www.netlaputa.ne.jp/~akikaz/arch.html) v1.02: Akikaz's driver for the PC-98's FM sound (OPN, OPNA) and the PCM of the 86 board, with an MML compiler and sound-effect tools. The download page is gone; get it from the Internet Archive copy. Free, MS-DOS
+
+- [**OPN2BankEditor**](https://github.com/Wohlstand/OPN2BankEditor) v1.3: Wohlstand's editor for banks of OPN-family FM instruments, covering the Mega Drive, FM Towns, PC-88 and PC-98. Free, Windows, Mac, Linux
+
+- [**OPNplug**](https://github.com/jpcima/ADLplug) 1.0.2: from the author of ADLplug, an FM plugin that recreates the YM2612 (OPN2). Free, Windows, Mac, Linux (VST, LV2)
+
+- [**MAmidiMEmo**](https://github.com/110-kenichi/MAmidiMEmo) 6.5.6.3: itoken's MIDI sound module built on MAME's sound chips. Play the YM2151, the NES, the OPN family and many more from MIDI. Free, Windows only
+
+- [**YM2608 Tone Editor**](https://github.com/rerrahkr/YM2608-Tone-Editor) v0.4.5: Rerrah's tone editor for the YM2608 (OPNA). It reads and writes the instrument formats of BambooTracker, MUCOM88, PMD, Furnace and more. Free, Windows only
+
+- [**Mml Watch GUI**](https://eseakisakura.github.io/mml_watch_gui/) v5.3.2: eseakisakura's tool that compiles and plays ppmck, NSD.Lib and PMD MML each time you save. It comes with an FM tone editor, "FM Synthesis Chip - Tone Editor", and "Guitar Arpeggio - MML Generator", which writes guitar arpeggios split over several parts. Free, Windows only
+
+- [**PMD File Watcher**](https://github.com/rerrahkr/PMDFileWatcher) v1.3.0: Rerrah's tool that compiles PMD MML each time you save and plays it in FMPMD or a similar player. Free, Windows only
+
+- [**WatchFileUpdate**](https://c60.la.coocan.jp/download.html) Ver 0.01: C60's tool that runs a program of your choice when a file changes, for example compiling MML on save and playing it in FMPMD. Free, Windows only
+
+- [**opm2pmd**](https://github.com/raphaelgoulart/opm2pmd) 1.0: converts VOPM instruments (.opm) to PMD instrument MML. Free
+
+- [**dmf2pmd.py**](https://gist.github.com/Pigu-A/a51a4f3b83a238579e225e06098ba4e7): a Python script that converts DefleMask modules (.dmf) to PMD MML. Free
+
+- [**dmp2mml**](https://github.com/SilSinn9801/dmp2mml): converts DefleMask FM instruments (.dmp) to PMD instrument MML. Free
+
+- [**PMD2S98**](http://www.vesta.dti.ne.jp/~tsato/soft_s98v3.html): Ru^3's tool that converts PMD songs to S98. It doesn't support ADPCM. Free, Windows only
+
+- [**ConvFMML**](https://github.com/rerrahkr/ConvFMML) v1.1.0: Rerrah's MIDI to MML converter, with PMD among its outputs. Chords are split into extra parts. Free, Windows only
+
+- [**mid2pmd**](https://www.youtube.com/watch?v=tvt7p49B1MI): SamDb's MIDI to PMD MML converter, made to ease remixes of the PC-98 Touhou music. It's a page you open in the browser; get it from the link in the video description. Free
+
+- [**VGMPlay**](https://github.com/vgmrips/vgmplay-legacy) 0.40.9: a VGM player for the command line, with a Winamp plugin. Free, Windows, Linux
+
+- [**98Fmplayer**](https://github.com/myon98/98fmplayer) v0.1.14: plays PC-98 PMD and FMP songs and shows their instruments. Free, Windows only
+
+- [**webVGM**](https://www.wothke.ch/webVGM/): plays VGM songs in the browser. Free
+
+- [**WebS98**](https://www.wothke.ch/webS98/): plays S98 songs in the browser. Drop a file on the page to play it. Free
+
+- [**WebAssembly VGM Player**](https://chipstream.netlify.app/): a browser VGM player built on ymfm, which recreates Yamaha's FM chips. Free
+
+- [**S98Player for iPhone**](https://apps.apple.com/jp/app/s98player-for-iphone/id388838337) 3.0: plays PC-98 and X68000 FM music. Besides S98 it plays PMD, FMP and MDX songs. Free, iPhone, iPad
+
+- [**Droidsound-E**](https://web.archive.org/web/20260802221321/https://droidsound-e.web.app/) 2.1.309: droidmjt's extended version of the Android music player Droidsound. It plays many formats of old game and computer music, including S98, VGM and PMD. The official site was up until around August 2026 but no longer opens; the link goes to its copy in the Internet Archive. Free, Android
+
+- [**SBVGM**](https://www.oplx.com/code/) 1.46: a DOS player for VGM files on real sound hardware, PC-98 included. Free, MS-DOS
+
+- [**S98PLAY**](https://www.yui.ne.jp/pcb/nekobus/index.html): an S98 player that comes with NEKO BUS, a PC-98 sound board. Free, MS-DOS
+
+- [**S88DSP**](https://github.com/Mistranger/S88DSP): plays OPN and OPNA songs on a real PC-8801, reading them from floppy as it goes. Still in progress, and only the source is out. Free
+
+### Playing real FM chips (SCCI, RE:birth)
+
+Hardware that connects real sound chips to a computer, and the software to play them.
+
+- [**SCCI2**](https://www.pyonpyon.jp/~gasshi/fm/) (October 8, 2026 release): gasshi's system for playing real sound chips from software. It follows the older SCCI and includes the MML driver mmldrv2, its player mmldrv2player, and SCCI2Player for S98 and VGM. SPFM-family hardware needs a paid firmware update to use it. Free, Windows only
+
+- [**SPFM (FM Tower)**](https://web.archive.org/web/20200107144931/http://www.pyonpyon.jp/~gasshi/fm/fmtower.html): a box of real sound chips made by gasshi and friends. Plug in YM2608 or YM2151 boards and play them through SCCI. It was only handed out at events and sold on consignment at Kaden no Ken-chan, so it can't be had today
+
+- [**SPFM Light**](https://ym2203.com/?p=542): a low-cost mainboard with two slots for RE:birth sound modules, sold as a kit you solder yourself. Sets cost ¥8,980 and ¥9,980 (sold out as of November 3, 2026)
+
+- [**RE:birth**](https://ym2203.com/): electronics kits carrying real FM and PSG chips (YM2608, YM2203, YM2151, YM2612, OPL3, SN76489 and more), played from PC software through SCCI. Module kits at Kaden no Ken-chan cost about ¥7,400 to ¥11,750, and you supply the sound chip yourself (as of November 3, 2026)
+
+- [**ToneEditor**](https://ym2203.com/?page_id=30): Project RE:birth's tone editor that plays a real sound chip as you edit. Free, Windows only
+
+- [**FITOM**](https://github.com/madscient/FITOMApp): madscient's software that turns MIDI into commands for real FM chips such as RE:birth, so your computer works as a MIDI sound module. Free, Windows only
+
+- [**C86CTL**](https://github.com/honet/c86ctl) rel1-4-6: lets software play real chips connected through G.I.M.I.C or C86BOX. Free, Windows only
+
+- [**C86BOX**](https://www.c86box.com/): a box that holds up to two PC-98 sound cards and connects them to a modern computer over USB. ¥25,000 (sold out as of November 3, 2026)
+
+- [**G.I.M.I.C**](https://kurohane.net/wiki_gimic/): real sound hardware with swappable sound-chip modules. Every model is out of production; a wiki remains for people who bought one second-hand
+
+### PC-98 emulators
+
+Needed for PMD and other MS-DOS software.
+
+- [**Neko Project II**](https://www.yui.ne.jp/np2/) ver0.86: a PC-98 emulator. It can also play through real chips on C86BOX, RE:birth and SPFM Light. Needs the BIOS ROMs. Free, Windows, Mac
+
+- [**np2fmgen**](https://nenecchi.kirara.st/): Neko Project II with its FM sound swapped for the better-sounding fmgen. Free, Windows
+
+- [**NP2kai**](https://github.com/AZO234/NP2kai) rev.22: gathers the changes from many Neko Project II variants. Use it in RetroArch or build it from source. Free, Windows, Mac, Linux, mobile
+
+- [**T98-Next**](http://akiyuki.boy.jp/t98next/): a PC-9821 emulator, no longer updated. Free, Windows only
+
+- [**Anex86**](https://web.archive.org/web/20090705081052/http://hp.vector.co.jp/authors/VA015680/) v2.78: A.N.'s lightweight PC-98 emulator. Updates stopped at 2.78 and the author's site is gone; the link goes to the author's page in the Internet Archive. Free, Windows only
+
+- [**DOSBox-X**](https://dosbox-x.com/) 2026.10.01: DOSBox with PC-98 emulation and Japanese text added. Free, Windows, Mac, Linux
+
+- [**MS-DOS Player for Win32-x64**](http://takeda-toshiya.my.coocan.jp/msdos/): Takeda Toshiya's tool that runs MS-DOS commands straight from the Windows command prompt. Useful for running the PMD compiler on 64-bit Windows (PMD File Watcher and MML Editor 7 use it too). Free, Windows only
+
 ### ZX Spectrum
 
 - [**Beepola**](https://freestuff.grok.co.uk/beepola/) v1.08.01: a tracker for ZX Spectrum beeper engines. Free, Windows only
@@ -2361,6 +2587,8 @@ Here are trackers and tools listed on the wiki of the chiptune community [Battle
 - [**KORG DS-10**](https://en.wikipedia.org/wiki/KORG_DS-10): a KORG synth (MS-20 style) and drum app for the Nintendo DS. The iPhone and iPad version, KORG iDS-10, is no longer sold either, so there is no current successor
   <img src="/img/chiptune-tools/botb-ds10.webp" alt="KORG DS-10 screenshot" width="434" height="420" loading="lazy" />
   <small>Image: from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:KORG_DS-10.jpg)</small>
+
+- [**Music On: Drums**](https://abylight.com/game/music-on-drums/): Abylight's drum machine for the Nintendo DSi. Program 160 sounds over 8 tracks of 16 steps. It was sold as DSiWare and can't be bought anymore
 
 - [**Mario Paint Composer DS**](https://github.com/DerrickGold/MarioPaintComposer-NDS): a Mario Paint-style composer for the Nintendo DS. Today, use Super Mario Paint on a PC
   <img src="/img/chiptune-tools/botb-mpcds.webp" alt="Mario Paint Composer DS screenshot" width="256" height="384" loading="lazy" />
@@ -2488,6 +2716,8 @@ Akaobi's writing is a good starting point for digging up old software and music.
 - [SID Media Lab](https://akaobi.wordpress.com/): Akaobi's chipmusic research blog
 
 You can also compare Commodore 64 music editors in Chordian's [comparison table](http://chordian.net/c64editors.htm).
+
+For PC-88 and PC-98 FM (OPN, OPNA) tools, see Rerrah's [list](https://gist.github.com/rerrahkr/2af51e7328880410b853261b3940ec7b) (in Japanese).
 
 ## What changed since the 2021 roundup {#en-changes}
 

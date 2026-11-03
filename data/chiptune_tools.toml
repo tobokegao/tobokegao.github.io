@@ -1765,3 +1765,270 @@ tags = ["effect", "legacy", "mac", "free"]
 name = "QuadraSID"
 url = "https://www.kvraudio.com/product/quadrasid-by-refx"
 tags = ["plugin", "sid", "win", "mac", "paid"]
+
+[[tool]]
+name = "MUCOM88"
+url = "https://www.ancient.co.jp/~mucom88/"
+tags = ["mml", "fm", "jpc", "real", "free"]
+
+[[tool]]
+name = "MUCOM88 Windows"
+url = "https://onitama.tv/mucom88/"
+tags = ["mml", "fm", "jpc", "win", "free"]
+
+[[tool]]
+name = "mucomDotNET"
+url = "https://github.com/kuma4649/mucomDotNET"
+tags = ["mml", "fm", "jpc", "win", "free"]
+
+[[tool]]
+name = "MUCOM88 on Web"
+url = "https://aosoft.github.io/MucomWeb.Play/"
+tags = ["mml", "fm", "jpc", "web", "free"]
+
+[[tool]]
+name = "MUCOMSX"
+url = "https://github.com/ToughkidDev/MUCOMSX"
+tags = ["mml", "fm", "msx", "real", "free"]
+
+[[tool]]
+name = "MUCPlayground"
+url = "https://toughkiddev.github.io/MUCOMSX/MUCPlayground/"
+tags = ["mml", "fm", "psg", "msx", "web", "free"]
+
+[[tool]]
+name = "PMDDotNET"
+url = "https://github.com/kuma4649/PMDDotNET"
+tags = ["mml", "fm", "jpc", "win", "free"]
+
+[[tool]]
+name = "FMP"
+url = "http://archive.fmp.jp/archives/85"
+tags = ["mml", "fm", "jpc", "otheros", "free"]
+
+[[tool]]
+name = "FMP7"
+url = "http://archive.fmp.jp/archives/448"
+tags = ["mml", "fm", "jpc", "win", "free"]
+
+[[tool]]
+name = "MML Editor 7"
+url = "https://github.com/aosoft/FMMLEditor7"
+tags = ["mml", "fm", "jpc", "win", "free"]
+
+[[tool]]
+name = "みゅあっぷ98"
+name_en = "MUAP98 (みゅあっぷ98)"
+url = "https://web.archive.org/web/20250929231246/http://ohta.music.coocan.jp/packen/download.htm"
+tags = ["mml", "fm", "jpc", "otheros", "free"]
+
+[[tool]]
+name = "MDRV2"
+url = "https://www.vector.co.jp/soft/dos/art/se018677.html"
+tags = ["mml", "fm", "jpc", "otheros", "free"]
+
+[[tool]]
+name = "OPN2BankEditor"
+url = "https://github.com/Wohlstand/OPN2BankEditor"
+tags = ["tool", "fm", "sega", "jpc", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "OPNplug"
+url = "https://github.com/jpcima/ADLplug"
+tags = ["plugin", "fm", "sega", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "MAmidiMEmo"
+url = "https://github.com/110-kenichi/MAmidiMEmo"
+tags = ["tool", "fm", "nes", "win", "free"]
+
+[[tool]]
+name = "YM2608 Tone Editor"
+url = "https://github.com/rerrahkr/YM2608-Tone-Editor"
+tags = ["tool", "fm", "jpc", "win", "free"]
+
+[[tool]]
+name = "Mml Watch GUI"
+url = "https://eseakisakura.github.io/mml_watch_gui/"
+tags = ["mml", "fm", "nes", "jpc", "win", "free"]
+
+[[tool]]
+name = "PMD File Watcher"
+url = "https://github.com/rerrahkr/PMDFileWatcher"
+tags = ["mml", "fm", "jpc", "win", "free"]
+
+[[tool]]
+name = "WatchFileUpdate"
+url = "https://c60.la.coocan.jp/download.html"
+tags = ["tool", "win", "free"]
+
+[[tool]]
+name = "opm2pmd"
+url = "https://github.com/raphaelgoulart/opm2pmd"
+tags = ["tool", "fm", "jpc", "free"]
+
+[[tool]]
+name = "dmf2pmd.py"
+url = "https://gist.github.com/Pigu-A/a51a4f3b83a238579e225e06098ba4e7"
+tags = ["tool", "fm", "jpc", "free"]
+
+[[tool]]
+name = "dmp2mml"
+url = "https://github.com/SilSinn9801/dmp2mml"
+tags = ["tool", "fm", "jpc", "free"]
+
+[[tool]]
+name = "PMD2S98"
+url = "http://www.vesta.dti.ne.jp/~tsato/soft_s98v3.html"
+tags = ["tool", "fm", "jpc", "win", "free"]
+
+[[tool]]
+name = "ConvFMML"
+url = "https://github.com/rerrahkr/ConvFMML"
+tags = ["tool", "fm", "jpc", "win", "free"]
+
+[[tool]]
+name = "VGMPlay"
+url = "https://github.com/vgmrips/vgmplay-legacy"
+tags = ["tool", "fm", "sega", "win", "linux", "free"]
+
+[[tool]]
+name = "98Fmplayer"
+url = "https://github.com/myon98/98fmplayer"
+tags = ["tool", "fm", "jpc", "win", "free"]
+
+[[tool]]
+name = "webVGM"
+url = "https://www.wothke.ch/webVGM/"
+tags = ["tool", "fm", "sega", "web", "free"]
+
+[[tool]]
+name = "WebS98"
+url = "https://www.wothke.ch/webS98/"
+tags = ["tool", "fm", "jpc", "web", "free"]
+
+[[tool]]
+name = "WebAssembly VGM Player"
+url = "https://chipstream.netlify.app/"
+tags = ["tool", "fm", "sega", "web", "free"]
+
+[[tool]]
+name = "S98Player for iPhone"
+url = "https://apps.apple.com/jp/app/s98player-for-iphone/id388838337"
+tags = ["tool", "fm", "jpc", "phone", "free"]
+
+[[tool]]
+name = "SBVGM"
+url = "https://www.oplx.com/code/"
+tags = ["tool", "fm", "jpc", "real", "free"]
+
+[[tool]]
+name = "S98PLAY"
+url = "https://www.yui.ne.jp/pcb/nekobus/index.html"
+tags = ["tool", "fm", "jpc", "real", "free"]
+
+[[tool]]
+name = "S88DSP"
+url = "https://github.com/Mistranger/S88DSP"
+tags = ["tool", "fm", "jpc", "real", "free"]
+
+[[tool]]
+name = "SCCI2"
+url = "https://www.pyonpyon.jp/~gasshi/fm/"
+tags = ["tool", "fm", "win", "free"]
+
+[[tool]]
+name = "SPFM Light"
+url = "https://ym2203.com/?p=542"
+tags = ["hardware", "fm", "paid"]
+
+[[tool]]
+name = "RE:birth"
+url = "https://ym2203.com/"
+tags = ["hardware", "fm", "psg", "paid"]
+
+[[tool]]
+name = "ToneEditor"
+url = "https://ym2203.com/?page_id=30"
+tags = ["tool", "fm", "win", "free"]
+
+[[tool]]
+name = "FITOM"
+url = "https://github.com/madscient/FITOMApp"
+tags = ["tool", "fm", "win", "free"]
+
+[[tool]]
+name = "C86CTL"
+url = "https://github.com/honet/c86ctl"
+tags = ["tool", "fm", "win", "free"]
+
+[[tool]]
+name = "C86BOX"
+url = "https://www.c86box.com/"
+tags = ["hardware", "fm", "jpc", "paid"]
+
+[[tool]]
+name = "G.I.M.I.C"
+url = "https://kurohane.net/wiki_gimic/"
+tags = ["hardware", "fm"]
+
+[[tool]]
+name = "Neko Project II"
+url = "https://www.yui.ne.jp/np2/"
+tags = ["tool", "jpc", "win", "mac", "free"]
+
+[[tool]]
+name = "np2fmgen"
+url = "https://nenecchi.kirara.st/"
+tags = ["tool", "jpc", "win", "free"]
+
+[[tool]]
+name = "NP2kai"
+url = "https://github.com/AZO234/NP2kai"
+tags = ["tool", "jpc", "win", "mac", "linux", "phone", "free"]
+
+[[tool]]
+name = "T98-Next"
+url = "http://akiyuki.boy.jp/t98next/"
+tags = ["tool", "jpc", "win", "free"]
+
+[[tool]]
+name = "DOSBox-X"
+url = "https://dosbox-x.com/"
+tags = ["tool", "jpc", "win", "mac", "linux", "free"]
+
+[[tool]]
+name = "MS-DOS Player for Win32-x64"
+url = "http://takeda-toshiya.my.coocan.jp/msdos/"
+tags = ["tool", "jpc", "win", "free"]
+
+[[tool]]
+name = "Music On: Drums"
+url = "https://abylight.com/game/music-on-drums/"
+tags = ["tracker", "ds", "real", "paid"]
+
+[[tool]]
+name = "Kolin98"
+url = "https://web.archive.org/web/19991003123743/http://www.netlaputa.ne.jp/~akikaz/arch.html"
+tags = ["mml", "fm", "jpc", "otheros", "free"]
+
+[[tool]]
+name = "mid2pmd"
+url = "https://www.youtube.com/watch?v=tvt7p49B1MI"
+tags = ["tool", "fm", "jpc", "web", "free"]
+
+[[tool]]
+name = "SPFM（FMの塔）"
+name_en = "SPFM (FM Tower)"
+url = "https://web.archive.org/web/20200107144931/http://www.pyonpyon.jp/~gasshi/fm/fmtower.html"
+tags = ["hardware", "fm"]
+
+[[tool]]
+name = "Anex86"
+url = "https://web.archive.org/web/20090705081052/http://hp.vector.co.jp/authors/VA015680/"
+tags = ["tool", "jpc", "win", "free"]
+
+[[tool]]
+name = "Droidsound-E"
+url = "https://web.archive.org/web/20260802221321/https://droidsound-e.web.app/"
+tags = ["tool", "fm", "jpc", "phone", "free"]
