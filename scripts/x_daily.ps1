@@ -6,6 +6,9 @@ $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot
 Set-Location $root
 $env:PYTHONUTF8 = "1"
+# With ANTHROPIC_API_KEY set, Claude Code runs on the API key and bills it instead of the
+# Max plan (CLAUDE.md, decision 0045). Drop it for this run, whatever the machine has.
+Remove-Item Env:ANTHROPIC_API_KEY -ErrorAction SilentlyContinue
 $day = Get-Date -Format "yyyy-MM-dd"
 $dir = Join-Path $root "work\x\daily"
 New-Item -ItemType Directory -Force -Path $dir | Out-Null
