@@ -410,6 +410,18 @@
     // answers chosen by hand for some questions (data/minitobo_picks.toml)
     var picks = [];
     try { picks = JSON.parse(box.dataset.picks || "[]"); } catch (e) { picks = []; }
+    // words that mean the same thing (data/minitobo_words.toml): each group as its words in
+    // lower case and one pattern for all of them, longer words first (セットリスト before セット)
+    var groups = [];
+    try { groups = JSON.parse(box.dataset.words || "[]"); } catch (e) { groups = []; }
+    groups = groups.map(function (g) {
+      var ws = g.map(function (w) { return String(w).toLowerCase(); });
+      var re = new RegExp(ws.slice().sort(function (a, b) { return b.length - a.length; }).map(function (w) {
+        var t = w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/ /g, "\\s*");
+        return /^[a-z0-9]/.test(w) ? "(?<![a-z0-9])" + t + "(?:s|es)?(?![a-z0-9])" : t;
+      }).join("|"), "i");
+      return { words: ws, re: re };
+    });
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var words = q.value.trim();
@@ -421,9 +433,32 @@
       // the kinds of answer asked for (おすすめ → rec); their words are not looked for themselves
       var kinds = [];
       KINDS.forEach(function (k) { if (k[1].test(rest)) { kinds.push(k[0]); rest = rest.replace(k[1], " "); } });
-      var terms = termsOf(rest);
-      if (!terms.length && !when && !kinds.length) terms = [words.toLowerCase()];
       var music = MUSIC.test(rest) && kinds.some(function (k) { return k === "rec" || k === "like"; });
+      // A word of a group stands for the whole group: it is taken out before the question is
+      // cut into words (セットリスト might be cut into セット and リスト), and comes back as its
+      // group's first word; alts gives every word of it.
+      var alts = {}, words1 = rest;
+      groups.forEach(function (g) {
+        if (!g.re.test(words1)) return;
+        words1 = words1.replace(new RegExp(g.re.source, "gi"), " ");
+        alts[g.words[0]] = g.words;
+      });
+      var terms = termsOf(words1);
+      if (Object.keys(alts).length) {
+        // with a group found, the rest keeps only the words that say something (not の, なに)
+        var stems = terms.stems;
+        terms = terms.filter(function (w) { return (!/^[ぁ-ゟ]+$/.test(w) || KEEP.indexOf(w) >= 0) && STOP.indexOf(w) < 0; })
+          .concat(Object.keys(alts).filter(function (t) { return terms.indexOf(t) < 0; }));
+        terms.stems = stems;
+      }
+      if (!terms.length && !when && !kinds.length) terms = [words.toLowerCase()];
+      var altsOf = function (t) { return alts[t] || [t]; };
+      var cut = function (v) {
+        return window.Intl && Intl.Segmenter ? Array.from(new Intl.Segmenter("ja", { granularity: "word" }).segment(v))
+          .filter(function (s) { return s.isWordLike; }).map(function (s) { return s.segment; }).join(" ") || v : v;
+      };
+      // every word to mark in the answer
+      var marks = [].concat.apply([], terms.map(altsOf));
       // Pagefind matches whole words, so the kanji of a verb (降) would miss 降る: it is asked
       // only the other words, and the kanji count when the posts are scored
       var whole = terms.filter(function (t) { return (terms.stems || []).indexOf(t) < 0; });
@@ -434,8 +469,21 @@
         var filters = {};
         if (when) filters.month = { any: monthsIn(when) };
         if (own) filters.kind = "own";
-        var ask = whole.length ? whole.join(" ") : kinds.length ? "kind" + kinds[0] : null;
-        return pf.search(ask, { filters: filters }).then(function (found) {
+        // a word of a group is asked as each of its words (Pagefind wants every word it is
+        // asked), at most eight askings, and the pages they find are put together, best first
+        var asks = [[]];
+        whole.forEach(function (t) {
+          var next = [];
+          // Pagefind keeps a katakana word in parts (セット リスト, セ トリ), and finds none
+          // asked セットリスト whole: a group's word is asked cut as termsOf cuts it
+          asks.forEach(function (a) { altsOf(t).forEach(function (v) { next.push(a.concat([alts[t] ? cut(v) : v])); }); });
+          asks = next.slice(0, 8);
+        });
+        asks = whole.length ? asks.map(function (a) { return a.join(" "); }) : [kinds.length ? "kind" + kinds[0] : null];
+        return Promise.all(asks.map(function (ask) { return pf.search(ask, { filters: filters }); })).then(function (all) {
+          var ids = {}, found = { results: [] };
+          all.forEach(function (f) { f.results.forEach(function (r) { if (!ids[r.id]) { ids[r.id] = 1; found.results.push(r); } }); });
+          if (all.length > 1) found.results.sort(function (a, b) { return b.score - a.score; });
           // for words: the four best pages, and four at random from the next thirty-six, so the
           // same words bring different posts; for a time alone, two months at random
           var keep = terms.length ? 4 : 0;
@@ -454,14 +502,18 @@
           // many of the posts have (好き) counts less than a rare one (ゲーム). Keep the posts
           // with at least half of the whole, and of those the ones near the best.
           // a word in Latin letters only as a whole word (business, not businesspastel; cards too)
-          var has = terms.map(function (t) {
-            if (!/^[a-z0-9]/.test(t)) return function (x) { return x.indexOf(t) >= 0; };
-            var re = new RegExp("(^|[^a-z0-9])" + t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "(s|es)?($|[^a-z0-9])");
-            return function (x) { return re.test(x); };
+          // a word of a group: when the post has any of its words (see alts)
+          var has = terms.map(function (t0) {
+            var tests = altsOf(t0).map(function (t) {
+              if (!/^[a-z0-9]/.test(t)) return function (x) { return x.indexOf(t) >= 0; };
+              var re = new RegExp("(^|[^a-z0-9])" + t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/ /g, "\\s*") + "(s|es)?($|[^a-z0-9])");
+              return function (x) { return re.test(x); };
+            });
+            return function (x) { return tests.some(function (f) { return f(x); }); };
           });
           var w = terms.map(function (t, k) {
             var df = posts.filter(function (s) { return has[k](s.all); }).length;
-            return weight(t) * Math.log(1 + posts.length / (1 + df));
+            return Math.max.apply(null, altsOf(t).map(weight)) * Math.log(1 + posts.length / (1 + df));
           });
           var total = w.reduce(function (n, x) { return n + x; }, 0);
           // a post of a kind asked for gets 60% of the words' whole on top
@@ -513,7 +565,7 @@
         var d = en() ? day[0] + "." + day[1] + "." + day[2] : day[0] + "年" + (+day[1]) + "月" + (+day[2]) + "日";
         var rt = s.title.match(/RT @(\w+)/);
         say.innerHTML = esc(pick(l.open) + (rt ? l.foundRt.replace("{u}", "@" + rt[1]) : l.found).replace("{d}", d)) +
-          '<span class="mini__quote">' + quote(s.text, terms) + "</span>" + esc(pick(l.aside)) +
+          '<span class="mini__quote">' + quote(s.text, marks) + "</span>" + esc(pick(l.aside)) +
           ' <a href="' + esc(s.url) + '">' + esc(l.more) + "</a>";
         // the post's pictures, from the month's small list of pictures (scripts/memo_query_index.py),
         // drawn as on the memo pages; the quote itself is text only

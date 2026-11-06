@@ -31,7 +31,8 @@
     {{ end }}
     {{ $picks = $picks | append (dict "a" $pk.ask "k" $pk.kinds "p" $ps) }}
   {{ end }}
-  <section class="mini" id="mini" aria-labelledby="mini-t" data-art="{{ $art | jsonify }}" data-picks="{{ $picks | jsonify }}" data-img="{{ "img/minitobo/" | relURL }}" hidden>
+  {{- /* words that mean the same thing (data/minitobo_words.toml), decision 0046 */}}
+  <section class="mini" id="mini" aria-labelledby="mini-t" data-art="{{ $art | jsonify }}" data-picks="{{ $picks | jsonify }}" data-words="{{ hugo.Data.minitobo_words.same | jsonify }}" data-img="{{ "img/minitobo/" | relURL }}" hidden>
     <h2 class="sub" id="mini-t">{{ partial "t.html" "miniTitle" }}</h2>
     <div class="mini__body">
       <a class="mini__pic" id="mini-pic" href="#" target="_blank" rel="noopener" title="{{ partial "tt.html" "miniPicTip" }}"><picture><source id="mini-still" media="(prefers-reduced-motion: reduce)"><img id="mini-img" alt="Tobokegao-chan" decoding="async"></picture></a>

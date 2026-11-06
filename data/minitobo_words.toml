@@ -1,0 +1,37 @@
+# Words that mean the same thing, for mini Tobokegao on the memo page (decision 0046).
+# When a question has one of the words in a group, mini Tobokegao looks for posts with any
+# of them (セットリスト finds セトリ and setlist too). Write each word as it is written in the
+# posts; Latin letters in lower case. A word in Latin letters matches only as a whole word
+# (and with s or es after it), so "nes" does not match "business".
+# Leave out the words that say what kind of answer is asked (ライブ, リリース, おすすめ, 好き:
+# see KINDS in assets/js/notes.js); they are taken out of the question before this table.
+
+same = [
+  ["セットリスト", "セトリ", "setlist", "set list"],
+  ["タイムテーブル", "タイテ", "timetable", "time table"],
+  ["チップチューン", "chiptune"],
+  ["ゲームボーイ", "gameboy", "game boy"],
+  ["ファミコン", "famicom", "nes"],
+  ["シンセサイザー", "シンセ", "synthesizer", "synth"],
+  ["トラッカー", "tracker"],
+  ["プラグイン", "plugin", "plug-in"],
+  ["サンプリング", "sampling"],
+  ["マスタリング", "mastering"],
+  ["リミックス", "remix"],
+  ["コンピレーション", "コンピ", "compilation", "compi"],
+  ["アルバム", "album"],
+  ["ボーカル", "ヴォーカル", "vocal"],
+  ["歌詞", "lyrics", "lyric"],
+  ["ジャケット", "ジャケ", "cover art", "artwork"],
+  ["物販", "グッズ", "merch"],
+  ["機材", "gear"],
+  ["カセットテープ", "カセット", "cassette"],
+  ["ドット絵", "ピクセルアート", "pixel art"],
+  ["名刺", "business card"],
+  ["フェス", "フェスティバル", "festival", "fest"],
+  ["東京", "tokyo"],
+  ["大阪", "osaka"],
+  ["京都", "kyoto"],
+  ["アメリカ", "america", "usa"],
+  ["ロンドン", "london"],
+]
