@@ -85,6 +85,10 @@ timeZone = "Asia/Tokyo"
     icon = "reascratch"
     url = "/reascratch/"
   [[params.projects]]
+    name = "Tobo Imager"
+    icon = "toboimager"
+    url = "/toboimager/"
+  [[params.projects]]
     name = "チップチューンづくりのおすすめツール / Recommended Chiptune Tools"
     icon = "chiptune-tools"
     url = "/post/2026-chiptune-tools/"

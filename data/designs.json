@@ -1,5 +1,12 @@
 [
   {
+    "title": "Tobo Imager",
+    "kind": "plugin",
+    "date": "2026-11-17",
+    "image": "/img/designs/toboimager.webp",
+    "url": "/toboimager/"
+  },
+  {
     "title": "ReaScratch",
     "kind": "plugin",
     "date": "2026-10-17",

@@ -1,6 +1,8 @@
 {
  "_comment": "Manual fixes. Use item ids from data/items.json (e.g. youtube:XXXX, niconico:smXXXX). song = count this video as a song release, not_song = never count it, hide = drop the item from releases and from the video list (e.g. not Tobokegao's own work), same_video = uploads of one video under different titles, shown as one card, same_release = uploads of one release under different titles, grouped as one (the first id names it). kind = what a single upload is (song, mix, preview, demo) where the title's words mislead.",
- "song": [],
+ "song": [
+  "youtube:8K-__gzokdk"
+ ],
  "not_song": [],
  "hide": [
   "soundcloud:1100809633",
@@ -81,6 +83,10 @@
   [
    "youtube:XMfE0ZXU23E",
    "niconico:sm42205949"
+  ],
+  [
+   "youtube:-xDihM_Z1IE",
+   "niconico:sm47014833"
   ]
  ],
  "same_release": [
@@ -190,6 +196,13 @@
    "bandcamp:/album/-",
    "apple:1532520758",
    "youtube:f6frdRlxFi4"
+  ],
+  [
+   "soundcloud:2433904272",
+   "youtube:-xDihM_Z1IE",
+   "niconico:sm47014833",
+   "youtube:tiItYxrRvas",
+   "niconico:sm47019917"
   ]
  ],
  "kind": {

@@ -101,6 +101,10 @@ ICONS = {
                        flat_mark=True,            # flat paper: the pillow volume muddied the pages
                        shadow=(1, 1, 2, 2),       # the open book stands up off the wall: a longer shadow
                        hand_grid=True),
+    # Tobo Imager: its four bands, wider toward the top, in the panel's band colors, drawn on
+    # the grid by icons-src/hand/toboimager_grid.py (asked for 2026-11-17)
+    "toboimager": dict(src=HAND / "toboimager_grid.py", kind="swatch", size=24, hand_grid=True,
+                       colors={"o": "#ff7a1a", "y": "#ffcc00", "b": "#55a5ff", "n": "#005f99"}),
 }
 
 WARM = "#ffcc00"   # the light is Tobokegao yellow: highlights and lit edges lean toward it
