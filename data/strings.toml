@@ -315,8 +315,8 @@ ja = "ここにないものは検索で"
 en = "Search for more"
 
 [cutInArchive]
-ja = "アーカイブで途切れています"
-en = "Cut off in the archive"
+ja = "続きは保存されていません"
+en = "The rest wasn't archived"
 
 [rtTimeEst]
 ja = "ごろ"

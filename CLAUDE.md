@@ -19,6 +19,7 @@ DOSのテキスト画面のような見た目で、日本語と英語を一つ�
 - `collect_news.py` → `classify_news.py`: ニュースの候補を集め、ログに載せるものを選ぶ
 - `import_x_archive.py` → `review_x.py` → `x_to_timeline.py`: Xのアーカイブから出演や告知を拾ってログに足す（`work/`はGitに入れない）。アーカイブより新しいポストは、URLを`work/x/inbox.txt`に書いて`x_urls.py`で同じ候補に足す
 - `x_browse.py`: アーカイブより新しいポストとリポストを、ブラウザでプロフィールから拾った番号をもとにメモのデータに足す（0029）。足したら`x_notes.py`を回す
+- `x_rt_full.py`: アーカイブで本文が途中までのリポストを、fxtwitterで全文に読み直す（`work/x/rt_full.json`、0047）。途中で止めても続きから動く。終わったら`x_notes.py`を回す
 - `x_daily.py` / `x_daily.ps1` / `x_daily_prompt.md` / `x_profile_collect.js`: 上の取り込みを1日1回、Windowsのタスクから動かす（0030）
 - `row_pics.py`: 絵のないログの行に、リンク先（Bandcamp、Apple Music、Spotifyなど）のジャケットを取ってくる
 - `cover_cache.py`: リリースと動画のカードに出すジャケットとサムネイルを、表示する大きさのWebPにしてサイトに置く（`static/img/covers/`、対応表は`data/covers.json`）。`fetch_feeds.py`のあとに動かす
@@ -26,6 +27,7 @@ DOSのテキスト画面のような見た目で、日本語と英語を一つ�
 - `subset_fonts.py`: ドットフォントを升目に合わせて作り直す
 - `minitobo_art.py`: メモのページのミニとぼけがおの絵（diaryのドット絵）を、`data/minitobo.json`から表示する大きさのWebPにする（0032）
 - `memo_query_index.py`: メモの検索のfrom:・to:のための索引。Actionsの組み立てで動く（0031）
+- `memo_search_pages.py`: メモの検索の索引に入れる、1日ごとのページを月のページから切り出す。Actionsの組み立てで、Pagefindの前後に動く（0048）
 - `post_topics.py`: メモのポストに、検索用の見えない語と、どんな質問への答えになるかの印（`--kinds`）、動画のリンクが曲かどうか（`--songs`）、画像に写っている物の語（`--pics`）をClaudeのAPIで付ける。手元だけで回し、全件を送る前に`--estimate`で料金を確かめる（0045）
 - `link_banners.py` / `link_letters.py`: トップの相互リンク用バナー（468×60、200×40、88×31。絵と配色の違う版つき）を、ミニとぼけがおの絵と手で置いた字で作る（0033）
 

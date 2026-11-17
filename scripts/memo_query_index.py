@@ -1,6 +1,6 @@
 """A small index of who each memo post is from and to, for from: and to: in the search.
 
-Pagefind indexes whole pages (a month, a topic), so a search with only from:someone and no
+Pagefind indexes whole pages (a day of posts, a topic), so a search with only from:someone and no
 words cannot be answered from it. This index lists, for every account, the posts reposted
 from it (from:) and the replies sent to it (to:), as month and id, so the search box can
 find them in every year and then load each post from its month page.

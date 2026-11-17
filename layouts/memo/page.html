@@ -12,14 +12,13 @@
 {{ else if eq $view "month" }}{{ $file = printf `C:\TBK\MEMO\%s.LOG` .Params.month }}
 {{ else if eq $view "rt" }}{{ $file = printf `C:\TBK\MEMO\RT\%s.LOG` .Params.month }}
 {{ else if eq $view "roots" }}{{ $file = `C:\TBK\MEMO\ROOTS.SVG` }}{{ end }}
-<article class="win {{ if ne $view "roots" }}win--doc {{ end }}notes" aria-labelledby="page-t"{{ if ne $view "roots" }} data-pagefind-body{{ end }}>
-  {{- /* for mini Tobokegao (0045): a month page carries its month, so a question can name a
-     time, and pages with own posts are marked, so it can look there before the reposts */}}
-  {{- if in (slice "month" "rt") $view }}<span data-pagefind-filter="month:{{ .Params.month }}" hidden></span>{{ end }}
-  {{- if in (slice "month" "topic") $view }}<span data-pagefind-filter="kind:own" hidden></span>{{ end }}
+<article class="win {{ if ne $view "roots" }}win--doc {{ end }}notes" aria-labelledby="page-t">
   {{ partial "win.html" (dict "file" $file "id" "page-t-file") }}
   <p class="notes__path"><a href="{{ "/memo/" | relURL }}">{{ partial "t.html" "memo" }}</a> /</p>
-  <h1 class="doc__title" id="page-t">{{ partial "bi.html" (dict "ja" .Title "en" .Params.title_en) }}</h1>
+  {{- /* The search index (0048): a topic is indexed by its name and its note only (the kind
+     topic). The posts are indexed from a page per day, cut out of the month pages after the
+     build (scripts/memo_search_pages.py), which carry the kinds own and rt. */}}
+  <h1 class="doc__title" id="page-t"{{ if eq $view "topic" }} data-pagefind-body data-pagefind-filter="kind:topic"{{ end }}>{{ partial "bi.html" (dict "ja" .Title "en" .Params.title_en) }}</h1>
 
   {{ if eq $view "topic" }}
     {{ $all := slice }}{{ range $t.rel }}{{ $all = $all | append . }}{{ end }}
@@ -43,7 +42,7 @@
     {{ with .Content }}
       {{ $html := . }}
       {{ range $w, $u := $t.names }}{{ $html = replace $html (printf "[%s]" (htmlEscape $w)) (printf `<a href="%s">[%s]</a>` (relURL $u) (htmlEscape $w)) }}{{ end }}
-      <div class="prose notes__body">{{ $html | safeHTML }}</div>
+      <div class="prose notes__body" data-pagefind-body>{{ $html | safeHTML }}</div>
     {{ end }}
 
     {{ with $t.years }}
@@ -103,7 +102,7 @@
   {{ else if eq $view "rt" }}
     {{ $m := .Params.month }}
     <p class="notes__meta"><a href="{{ printf "/memo/%s/" $m | relURL }}">{{ partial "t.html" "xPosts" }} {{ replace $m "-" "." }}</a></p>
-    <div class="notes__posts" data-pagefind-filter="kind:rt">
+    <div class="notes__posts">
       {{ range sort (index hugo.Data.memo.rt $m) "d" }}{{ partial "notes-post.html" (dict "p" . "g" $g) }}{{ end }}
     </div>
 

@@ -44,11 +44,14 @@ import import_x_archive as archive  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 CACHE = ROOT / "work" / "x" / "all_posts.json"
+FULL = ROOT / "work" / "x" / "rt_full.json"   # retweets read in full (scripts/x_rt_full.py)
+HASHTAG = re.compile(r"(?<![\w#])#(\w+)")
 NOTES = ROOT / "content" / "memo"
 OUT = ROOT / "data" / "memo"
 JST = timezone(timedelta(hours=9))
 MIN_TAG = 3          # a hashtag becomes a topic once it is used this often
-MAX_LIST = 300       # posts listed on a topic page (the rest are found by search)
+CUT_LEN = 137        # a retweet cut off in the archive is this long or longer (nearly all are 138 to 140)
+MAX_LIST = 300      # posts listed on a topic page (the rest are found by search)
 REL = {"up": "down", "down": "up", "src": "inf", "inf": "src"}
 # a year known only as a part of a decade: where in the decade it is drawn
 ERA_OFFSET = {"x": 0, "x2": 2, "x3": 5, "x4": 7}
@@ -96,7 +99,9 @@ def read_archive(folder: Path) -> list[dict]:
             src = next((x.get("source_status_id_str") for x in media if x.get("source_status_id_str")), None)
             if src:
                 rec["src"] = src
-            if text.rstrip().endswith("…"):
+            # The archive keeps a retweet's text up to 140 characters, "RT @name: " included,
+            # and ends a longer one with "…". A shorter text that ends with "…" was written so.
+            if text.rstrip().endswith("…") and len(t.get("full_text") or t.get("text") or "") >= CUT_LEN:
                 rec["cut"] = 1
         else:
             reply = t.get("in_reply_to_user_id_str")
@@ -165,6 +170,16 @@ def main() -> int:
         return 1
     if args.year:
         posts = [p for p in posts if p["d"].startswith(str(args.year))]
+
+    # Retweets cut off in the archive, where scripts/x_rt_full.py has read the whole post:
+    # its text, a link to it, and the hashtags that were past the cut.
+    if FULL.exists():
+        full = json.loads(FULL.read_text(encoding="utf-8"))
+        for p in posts:
+            if p.get("cut") and (f := full.get(p["id"])) and f.get("t"):
+                p["t"], p["src"] = f["t"], f["src"]
+                p["tags"] = list(dict.fromkeys(p.get("tags", []) + HASHTAG.findall(f["t"])))
+                del p["cut"]
 
     # Retweets of one's own posts are not repeated: they count on the post itself.
     own = {norm(p["t"])[:60]: p for p in posts if p["k"] == "own"}

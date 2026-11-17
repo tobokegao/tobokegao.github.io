@@ -1,6 +1,8 @@
 # Pagefind (the NOTES search), run after Hugo: pagefind --site public
 # (the release binary, version and checksum in .github/workflows/build.yml)
-# Only the NOTES pages carry data-pagefind-body, so nothing else is indexed.
+# Only the NOTES topics (their name and note) and the pages made for the index, a day of posts
+# each (scripts/memo_search_pages.py, docs/decisions/0048), carry data-pagefind-body, so
+# nothing else is indexed.
 site: public
 exclude_selectors:
   # every UI string is on the page twice (Japanese and English); the English one is left out

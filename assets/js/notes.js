@@ -60,6 +60,12 @@
     return text.split("⁂")[0].trim();
   };
 
+  // A result of the search is a day of posts (scripts/memo_search_pages.py, decision 0048); the
+  // posts are on the month's page: memo/2025-01/ or memo/rt/2025-01/. A topic is its own page.
+  var pageUrl = function (p, memoTop) {
+    return p.meta && p.meta.m ? memoTop + (p.meta.rt ? "rt/" : "") + p.meta.m + "/" : p.url;
+  };
+
   // the account index (scripts/memo_query_index.py): 256 files by a hash of the name
   var bucket = function (name) {
     var h = 0x811c9dc5;
@@ -160,14 +166,30 @@
         return;
       }
       var filtered = o.from || o.to || o.since || o.until || o.kinds || Object.keys(o.notKinds).length;
+      // With a filter, Pagefind is asked only for the pages that can have such posts: the days
+      // of own posts or of reposts, in the months of since: and until:. The posts themselves
+      // are then checked one by one (keep).
+      var filters = {};
+      if (filtered) {
+        var rtOk = kindOk("rt") && (!o.from || o.from !== me) && !o.to;
+        var ownOk = (kindOk("own") || kindOk("reply")) && (!o.from || o.from === me);
+        filters.kind = rtOk && ownOk ? { any: ["own", "rt"] } : rtOk ? "rt" : ownOk ? "own" : "none";
+        var isDay = /^\d{4}-\d{2}-\d{2}$/;
+        if (isDay.test(o.since) || isDay.test(o.until)) {
+          var months = monthsIn({ since: isDay.test(o.since) ? o.since : FIRST_YEAR + "-01-01",
+            until: isDay.test(o.until) ? o.until : day1(new Date().getFullYear() + 1, 1) });
+          filters.month = months.length ? { any: months } : "none";
+        }
+      }
       timer = setTimeout(function () {
         loadPagefind(box.dataset.pagefind).then(function (pf) {
-          return pf.search(o.words.join(" "));
+          return pf.search(o.words.join(" "), { filters: filters });
         }).then(function (found) {
-          if (!found || id !== asked) return null;
-          return Promise.all(found.results.slice(0, filtered ? 60 : 20).map(function (r) { return r.data(); }));
-        }).then(function (pages) {
-          if (!pages || id !== asked) return;
+          if (!found || id !== asked) return;
+          // A result is a day of posts (or a topic, found by its name and note): 10 at a time,
+          // the rest behind "See more". With a filter, the first 300 days are looked at.
+          var results = filtered ? found.results.slice(0, 300) : found.results;
+          var at = 0, shown = 0;
           var keep = function (s) {
             // the sub-result's title is the post's date line: "2025.01.02 03:04 RT @name" etc.
             var rt = s.title.match(/RT @(\w+)/), to = !rt && s.title.match(/@(\w+)/);
@@ -176,22 +198,51 @@
             return inRange(o, dayOf(s.title)) && kindOk(kind) &&
               (!o.from || o.from === from) && (!o.to || (to && to[1].toLowerCase() === o.to));
           };
-          var shown = 0;
-          list.innerHTML = pages.map(function (p) {
-            // the page's own title (#page-t) is already the result's heading
-            var subs = (p.sub_results || []).filter(function (s) { return !/#page-t$/.test(s.url); });
+          var row = function (p) {
+            // a day's posts are on its month's page, each under its own id; a topic's own
+            // title (#page-t) is already the result's heading
+            var day = !!p.meta.m, top = pageUrl(p, memoTop);
+            var subs = (p.sub_results || []).filter(function (s) {
+              return day ? s.anchor && /^p\d+$/.test(s.anchor.id) : !/#page-t$/.test(s.url);
+            });
             if (filtered) subs = subs.filter(function (s) { return dayOf(s.title) && keep(s); });
             if (filtered && !subs.length) return "";
             shown++;
-            return '<li class="notes__hit"><a class="notes__hit-t" href="' + esc(p.url) + '">' + esc(p.meta.title) + "</a>" +
-              (subs.length ? subs.slice(0, filtered ? 20 : 4).map(function (s) {
+            var href = function (s) { return day ? top + "#" + s.anchor.id : s.url; };
+            return '<li class="notes__hit"><a class="notes__hit-t" href="' + esc(subs.length ? href(subs[0]) : top) + '">' + esc(p.meta.title) + "</a>" +
+              (subs.length ? subs.slice(0, filtered ? 20 : 8).map(function (s) {
                 // Pagefind marks the hits with <mark> in an excerpt it has already escaped
-                return '<p class="notes__hit-s"><a href="' + esc(s.url) + '">' + esc(s.title) + "</a> " + postText(s) + "</p>";
-              }).join("") : '<p class="notes__hit-s">' + p.excerpt + "</p>") + "</li>";
-          }).join("");
-          say(shown + " ページ" + (o.media ? "（絵の有無は、from:かto:と一緒のときだけ絞れます）" : ""),
-            shown + " pages" + (o.media ? " (you can filter by pictures only when using from: or to:)" : ""));
-          empty.hidden = shown !== 0;
+                return '<p class="notes__hit-s"><a href="' + esc(href(s)) + '">' + esc(s.title) + "</a> " + postText(s) + "</p>";
+              // a topic without a note has only its name, which the heading shows already
+              }).join("") : p.excerpt.replace(/<\/?mark>/g, "").trim().length > p.meta.title.length + 2 ? '<p class="notes__hit-s">' + p.excerpt + "</p>" : "") + "</li>";
+          };
+          // the next results, until `need` more are shown (a filter can leave a day out) or none are left
+          var more = function (need) {
+            var next = results.slice(at, at + 10);
+            at += next.length;
+            return Promise.all(next.map(function (r) { return r.data(); })).then(function (pages) {
+              if (id !== asked) return;
+              var before = shown;
+              list.insertAdjacentHTML("beforeend", pages.map(row).join(""));
+              need -= shown - before;
+              if (need > 0 && at < results.length) return more(need);
+              var old = list.querySelector(".notes__more");
+              if (old) old.remove();
+              if (at < results.length) {
+                list.insertAdjacentHTML("beforeend", '<li class="notes__more"><button type="button" class="btn">' + (en() ? "See more" : "もっと見る") + "</button></li>");
+                list.querySelector(".notes__more button").addEventListener("click", function () {
+                  this.disabled = true;
+                  more(10).catch(function () {});
+                });
+              }
+              // every day and topic that has the words, or with a filter the ones shown so far
+              var n = filtered ? shown : results.length;
+              say(n + " 件" + (o.media ? "（絵の有無は、from:かto:と一緒のときだけ絞れます）" : ""),
+                n + " results" + (o.media ? " (you can filter by pictures only when using from: or to:)" : ""));
+              empty.hidden = shown !== 0;
+            });
+          };
+          return more(10);
         }).catch(function () {
           // no index: `hugo server` alone does not run Pagefind
           say("ここでは検索を使えません", "Search is not available here");
@@ -329,10 +380,10 @@
     }
     return out;
   };
-  // The posts on a page Pagefind gave back, cut out of its text: each post starts at its date
-  // line (an anchor with the post's id) and ends at the next one; its search words come after ⁂,
-  // the words for its pictures after ⁜.
-  var postsOf = function (p) {
+  // The posts on a page Pagefind gave back (a day of posts), cut out of its text: each post
+  // starts at its date line (an anchor with the post's id) and ends at the next one; its search
+  // words come after ⁂, the words for its pictures after ⁜. `top` is the page the posts are on.
+  var postsOf = function (p, top) {
     var c = p.content || "", at = 0, out = [];
     var heads = (p.anchors || []).filter(function (a) { return /^p\d+$/.test(a.id); });
     var spots = heads.map(function (a) {
@@ -347,7 +398,7 @@
       var body = c.slice(spots[k] + a.text.length, end).replace(/^\.\s*/, "");
       var cut = body.indexOf("⁂"), seen = body.indexOf("⁜");
       out.push({
-        title: a.text, url: p.url + "#" + a.id,
+        title: a.text, url: top + "#" + a.id,
         text: (cut < 0 ? body : body.slice(0, cut)).replace(/\.\s*$/, "").trim(),
         // the words for what is in its pictures (after ⁜) count as its own
         own: ((cut < 0 ? body : body.slice(0, cut)) + (seen < 0 ? "" : " " + body.slice(seen + 1))).toLowerCase(),
@@ -463,8 +514,8 @@
       // only the other words, and the kanji count when the posts are scored
       var whole = terms.filter(function (t) { return (terms.stems || []).indexOf(t) < 0; });
       if (!whole.length) whole = terms;
-      // Look among the pages with own posts first (kind:own), and among all pages, reposts
-      // too, only when nothing there fits. A time asks only the month pages of its months.
+      // Look among the days of own posts first (kind:own), and among all pages, reposts
+      // too, only when nothing there fits. A time asks only the days of its months.
       var look = function (pf, own) {
         var filters = {};
         if (when) filters.month = { any: monthsIn(when) };
@@ -474,8 +525,9 @@
         var asks = [[]];
         whole.forEach(function (t) {
           var next = [];
-          // Pagefind keeps a katakana word in parts (セット リスト, セ トリ), and finds none
-          // asked セットリスト whole: a group's word is asked cut as termsOf cuts it
+          // Pagefind 1.3 kept a katakana word in parts (セット リスト, セ トリ), and found none
+          // asked セットリスト whole: a group's word is asked cut as termsOf cuts it (1.6 finds
+          // it either way)
           asks.forEach(function (a) { altsOf(t).forEach(function (v) { next.push(a.concat([alts[t] ? cut(v) : v])); }); });
           asks = next.slice(0, 8);
         });
@@ -484,16 +536,16 @@
           var ids = {}, found = { results: [] };
           all.forEach(function (f) { f.results.forEach(function (r) { if (!ids[r.id]) { ids[r.id] = 1; found.results.push(r); } }); });
           if (all.length > 1) found.results.sort(function (a, b) { return b.score - a.score; });
-          // for words: the four best pages, and four at random from the next thirty-six, so the
-          // same words bring different posts; for a time alone, two months at random
-          var keep = terms.length ? 4 : 0;
-          var top = found.results.slice(keep, 40);
+          // for words: the twelve best days, and twelve at random from the next hundred or so,
+          // so the same words bring different posts; for a time alone, twenty days at random
+          var keep = terms.length ? 12 : 0;
+          var top = found.results.slice(keep, 120);
           for (var i = top.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = top[i]; top[i] = top[j]; top[j] = t; }
-          top = found.results.slice(0, keep).concat(top.slice(0, terms.length ? 4 : 2));
+          top = found.results.slice(0, keep).concat(top.slice(0, terms.length ? 12 : 20));
           return Promise.all(top.map(function (r) { return r.data(); }));
         }).then(function (pages) {
           var posts = [];
-          pages.forEach(function (p) { posts = posts.concat(postsOf(p)); });
+          pages.forEach(function (p) { posts = posts.concat(postsOf(p, pageUrl(p, memoTop))); });
           if (own) posts = posts.filter(function (s) { return !/RT @/.test(s.title); });
           if (when) posts = posts.filter(function (s) { var d = dayOf(s.title); return d >= when.since && d < when.until; });
           if (!terms.length && !kinds.length) return posts;

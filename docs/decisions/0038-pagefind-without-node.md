@@ -1,5 +1,7 @@
 # 0038 メモの検索の索引は、Node.jsを通さずPagefindの配布物で作る
 
+（0048で、Pagefindを1.6.0に上げた。配布元のリポジトリは`Pagefind/pagefind`に変わった。）
+
 - **日付**: 2026-10-22
 - **決めたこと**: 組み立て（`build.yml`）で、Pagefindを`npx`ではなく、公式の配布物（`pagefind_extended`のLinux版）を取ってきて動かす。版（`PAGEFIND_VERSION`）とハッシュ（`PAGEFIND_SHA256`）は`build.yml`に書く。
 - **理由**:
