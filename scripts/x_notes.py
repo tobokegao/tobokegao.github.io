@@ -45,7 +45,9 @@ import import_x_archive as archive  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 CACHE = ROOT / "work" / "x" / "all_posts.json"
 FULL = ROOT / "work" / "x" / "rt_full.json"   # retweets read in full (scripts/x_rt_full.py)
-HASHTAG = re.compile(r"(?<![\w#])#(\w+)")
+# not the "#..." at the end of a link (a song kept whole in a web address can be thousands of
+# characters long, and a topic that long cannot be a folder); a hashtag on X is 100 at most
+HASHTAG = re.compile(r"(?<![\w#/?=&])#(\w{1,100})(?!\w)")
 NOTES = ROOT / "content" / "memo"
 OUT = ROOT / "data" / "memo"
 JST = timezone(timedelta(hours=9))

@@ -17,8 +17,8 @@ scripts/x_notes.py then shows the whole text, links the name to the post and dro
     python scripts/x_rt_full.py --count       # only say how many are read, gone and left
 
 It can be stopped and run again: what is already in rt_full.json is not asked for twice.
-It stops by itself when fxtwitter answers with an error other than "gone". Run
-scripts/x_notes.py afterwards.
+A post fxtwitter answers with an error other than "gone" is left for a later run; five such
+answers in a row stop the run. Run scripts/x_notes.py afterwards.
 """
 
 from __future__ import annotations
@@ -80,16 +80,26 @@ def main() -> int:
     todo.sort(key=lambda p: -int(p["id"]))   # the newest first: the most likely to be there still
     if args.limit:
         todo = todo[:args.limit]
+    failed = 0
     try:
         for n, p in enumerate(todo, 1):
             try:
                 t = fetch(p["id"])
             except urllib.error.HTTPError as e:
                 if e.code not in (401, 403, 404):
-                    print(f"stopped at {p['id']}: HTTP {e.code}")
-                    return 2
+                    # fxtwitter fails on some posts every time (HTTP 500) though it is up: such a
+                    # post is left for a later run, and only five failures in a row stop the run
+                    failed += 1
+                    print(f"left {p['id']}: HTTP {e.code}", flush=True)
+                    if failed >= 5:
+                        print("stopped: five failures in a row")
+                        return 2
+                    time.sleep(5)
+                    continue
                 full[p["id"]] = {}
+                failed = 0
             else:
+                failed = 0
                 if same_post(p, t):
                     full[p["id"]] = {"t": t.get("text", ""), "src": t["id"]}
                 else:
