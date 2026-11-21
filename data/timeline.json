@@ -45,6 +45,26 @@
     ]
   },
   {
+    "date": "2026-11-17",
+    "id": "20261117-971e6d",
+    "kind": "other",
+    "ja": "帯域ごとに音の広がりを決められる無料のVST3プラグイン「Tobo Imager」を公開",
+    "en": "Released Tobo Imager, a free VST3 plugin that lets you adjust the stereo width of each frequency band",
+    "source": "web",
+    "links": [
+      {
+        "source": "web",
+        "url": "/toboimager/",
+        "name": "Tobo Imager特設ページ",
+        "name_en": "Tobo Imager page"
+      },
+      {
+        "source": "web",
+        "url": "https://github.com/tobokegao/ToboImager/releases/latest"
+      }
+    ]
+  },
+  {
     "date": "2026-11-14",
     "id": "20261114-1314d4",
     "kind": "live",
