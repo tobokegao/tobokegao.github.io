@@ -26,7 +26,7 @@ en = "Flyer"
 
 [kind_plugin]
 ja = "プラグインの画面"
-en = "Plug-in UI"
+en = "Plugin UI"
 
 # Tobokegao's part in a design made with others (designs.json "role")
 [role_idea]

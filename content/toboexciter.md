@@ -2,7 +2,7 @@
 title: Tobo Exciter
 title_en: Tobo Exciter
 description: 1980年代のエキサイターペダルを再現した、無料のVST3プラグイン
-description_en: A free VST3 plug-in that models a 1980s exciter pedal
+description_en: A free VST3 plugin that models a 1980s exciter pedal
 ---
 
 {{< lang ja >}}
@@ -79,7 +79,7 @@ Download the latest ZIP from GitHub Releases.
 
 {{< video "toboexciter/tobo_exciter_demo.mp4" "img/toboexciter/demo.webp" "Demo video: a guitar through a fuzz, with Tobo Exciter in front of it and its knobs moved." >}}
 
-This plug-in is an independent work. It is not affiliated with, endorsed by, or sponsored by any hardware manufacturer.
+This plugin is an independent work. It is not affiliated with, endorsed by, or sponsored by any hardware manufacturer.
 
 ## What it does
 
@@ -89,7 +89,7 @@ This plug-in is an independent work. It is not affiliated with, endorsed by, or 
 - Oversampling at 2x, 4x or 8x; a higher setting gives less aliasing
 - Eight built-in presets, and preset files (`.tepreset`) that you can save and load
 - A panel that scales from 60% to 200%
-- The panel is a render of a 3D model made for this plug-in with Blender
+- The panel is a render of a 3D model made for this plugin with Blender
 
 ## How to use it
 
@@ -108,9 +108,9 @@ To hear a sound that stays on one pitch, try the presets One Note and Thin Screa
 
 1. Extract the ZIP file
 2. Copy the entire `Tobo Exciter.vst3` folder to `C:\Program Files\Common Files\VST3\`
-3. Have your DAW rescan for plug-ins
+3. Have your DAW rescan for plugins
 
-No installer or extra runtime is needed. The plug-in is not code-signed.
+No installer or extra runtime is needed. The plugin is not code-signed.
 
 ## Requirements
 
@@ -130,7 +130,7 @@ The manuals are in the ZIP file as PDFs (`ToboExciter_manual_en.pdf` in English,
 
 Tobo Exciter is licensed under AGPL-3.0-or-later, and the source code is on [GitHub](https://github.com/tobokegao/ToboExciter). It is built with JUCE and the VST 3 SDK. VST is a registered trademark of Steinberg Media Technologies GmbH. The libraries it uses are listed in [CREDITS.md](https://github.com/tobokegao/ToboExciter/blob/main/CREDITS.md).
 
-This plug-in is an independent work. It is not affiliated with, endorsed by, or sponsored by any hardware manufacturer.
+This plugin is an independent work. It is not affiliated with, endorsed by, or sponsored by any hardware manufacturer.
 
 Made with help from Claude.
 {{< /lang >}}
