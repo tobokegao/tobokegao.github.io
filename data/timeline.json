@@ -25,6 +25,26 @@
     ]
   },
   {
+    "date": "2026-11-21",
+    "id": "20261121-e5a47f",
+    "kind": "other",
+    "ja": "1980年代のエキサイターペダルを再現した無料のVST3プラグイン「Tobo Exciter」を公開",
+    "en": "Released Tobo Exciter, a free VST3 plug-in that models a 1980s exciter pedal",
+    "source": "web",
+    "links": [
+      {
+        "source": "web",
+        "url": "/toboexciter/",
+        "name": "Tobo Exciter特設ページ",
+        "name_en": "Tobo Exciter page"
+      },
+      {
+        "source": "web",
+        "url": "https://github.com/tobokegao/ToboExciter/releases/latest"
+      }
+    ]
+  },
+  {
     "date": "2026-11-14",
     "id": "20261114-1314d4",
     "kind": "live",
