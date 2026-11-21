@@ -697,6 +697,10 @@ a.src:hover { background: none; outline: 2px solid var(--mark); outline-offset: 
 @container (max-width: 747px) { .rs__stack .rs__gui { image-rendering: auto; } }
 /* Tobo Imager: the plug-in screen, a smooth vector-like UI, so it is never drawn with hard pixels */
 .ti__gui { display: block; width: 100%; max-width: 748px; height: auto; border: 2px solid var(--frame); }   /* 744 + the 2px frame on each side */
+/* Tobo Exciter: the pedal stands upright, so its screen is narrower (515 + the frame) and sits in the middle */
+.te__gui { max-width: 519px; margin-inline: auto; }
+/* its picture with the names of the parts: wider than the other pictures in a text, so the labels stay readable */
+.te__parts { max-width: none; }
 /* a niconico player (the nico shortcode), 16:9 in the same 2px frame as the plug-in screen */
 .nico { max-width: 748px; margin: 24px auto; }
 .nico__player { display: block; box-sizing: border-box; width: 100%; height: auto; aspect-ratio: 16 / 9; border: 2px solid var(--frame); background: var(--frame); }

@@ -89,6 +89,10 @@ timeZone = "Asia/Tokyo"
     icon = "toboimager"
     url = "/toboimager/"
   [[params.projects]]
+    name = "Tobo Exciter"
+    icon = "toboexciter"
+    url = "/toboexciter/"
+  [[params.projects]]
     name = "チップチューンづくりのおすすめツール / Recommended Chiptune Tools"
     icon = "chiptune-tools"
     url = "/post/2026-chiptune-tools/"

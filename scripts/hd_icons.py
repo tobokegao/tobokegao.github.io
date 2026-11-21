@@ -105,6 +105,12 @@ ICONS = {
     # the grid by icons-src/hand/toboimager_grid.py (asked for 2026-11-17)
     "toboimager": dict(src=HAND / "toboimager_grid.py", kind="swatch", size=24, hand_grid=True,
                        colors={"o": "#ff7a1a", "y": "#ffcc00", "b": "#55a5ff", "n": "#005f99"}),
+    # Tobo Exciter: the pedal of its panel seen from above (body, four knobs, lamp, name plate,
+    # foot switch), drawn on the grid by icons-src/hand/toboexciter_grid.py (2026-11-21);
+    # night_lit: the parts inside the frame that light up at night (the checks' "k" by default)
+    "toboexciter": dict(src=HAND / "toboexciter_grid.py", kind="swatch", size=24, hand_grid=True,
+                        colors={"d": "#2c2d30", "p": "#f2b79a", "r": "#ff4a3a", "b": "#7fb2e8", "s": "#c8cacc"},
+                        night_lit="prbs"),
 }
 
 WARM = "#ffcc00"   # the light is Tobokegao yellow: highlights and lit edges lean toward it
@@ -636,7 +642,7 @@ def to_mono_svg(cfg, g):
         for y in range(-1, N + 1):
             for x in range(-1, N + 1):
                 if (y, x) in sq:
-                    if g[y][x] == "k":
+                    if g[y][x] in cfg.get("night_lit", "k"):
                         lit.add((y, x))
                 elif any((y + dy, x + dx) in sq for dy in (-1, 0, 1) for dx in (-1, 0, 1)):
                     lit.add((y, x))

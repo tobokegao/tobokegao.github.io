@@ -1,0 +1,10 @@
+{{- /* A video file kept on the site (0049): the path of the file and of its still picture (both
+   under static/), then the caption. Used inside a lang block, once per language; nothing is
+   fetched until the play button is pressed (preload="none"), so the second player costs nothing.
+   The paths are written relative to the page: relativeURLs rewrites only src and href, and the
+   poster attribute would point outside /tbk-preview/ on the preview. */ -}}
+{{- $up := strings.Repeat (len (split (strings.Trim .Page.RelPermalink "/") "/")) "../" -}}
+<figure class="nico">
+<video class="nico__player" src="{{ $up }}{{ .Get 0 }}" poster="{{ $up }}{{ .Get 1 }}" width="1920" height="1080" controls playsinline preload="none"></video>
+<figcaption class="nico__cap">{{ .Get 2 }}</figcaption>
+</figure>

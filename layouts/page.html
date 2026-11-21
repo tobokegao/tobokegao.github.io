@@ -4,6 +4,7 @@
 {{ if eq .File.ContentBaseName "contact" }}{{ $file = `C:\TBK\CONTACT.TXT` }}{{ end }}
 {{ if eq .File.ContentBaseName "reascratch" }}{{ $file = `C:\TBK\REASCRAT\README.TXT` }}{{ end }}
 {{ if eq .File.ContentBaseName "toboimager" }}{{ $file = `C:\TBK\TOBOIMG\README.TXT` }}{{ end }}
+{{ if eq .File.ContentBaseName "toboexciter" }}{{ $file = `C:\TBK\TOBOEXC\README.TXT` }}{{ end }}
 <article class="win win--doc" aria-labelledby="page-t">
   {{ partial "win.html" (dict "file" $file "id" "page-t-file") }}
   {{ if eq .File.ContentBaseName "about" }}
@@ -20,6 +21,10 @@
   {{ else if eq .File.ContentBaseName "toboimager" }}
   <div class="doc__art doc__art--rs">
     <img class="ti__gui" src="{{ "img/toboimager/gui.webp" | relURL }}" srcset="{{ "img/toboimager/gui-full.webp" | relURL }} 1.25x" width="744" height="606" alt="" decoding="async">
+  </div>
+  {{ else if eq .File.ContentBaseName "toboexciter" }}
+  <div class="doc__art doc__art--rs">
+    <img class="ti__gui te__gui" src="{{ "img/toboexciter/gui.webp" | relURL }}" srcset="{{ "img/toboexciter/gui-full.webp" | relURL }} 1.5x" width="515" height="773" alt="" decoding="async">
   </div>
   {{ end }}
   <h1 class="doc__title" id="page-t">{{ partial "bi.html" (dict "ja" .Title "en" .Params.title_en) }}</h1>

@@ -1,5 +1,12 @@
 [
   {
+    "title": "Tobo Exciter",
+    "kind": "plugin",
+    "date": "2026-11-21",
+    "image": "/img/designs/toboexciter.webp",
+    "url": "/toboexciter/"
+  },
+  {
     "title": "Tobo Imager",
     "kind": "plugin",
     "date": "2026-11-17",
