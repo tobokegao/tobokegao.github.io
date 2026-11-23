@@ -9,17 +9,21 @@ aliases: ["/ja/about/"]
 {{< lang ja >}}
 2014年夏、バンド活動を経てたどり着いた表現として、「GAMEBOY」での作曲を開始。
 
-チップチューンアーティスト向けの作曲ソフト「[LSDj (Little Sound Dj)](https://www.littlesounddj.com/)」で作った楽曲を多数発表。
+レトロゲーム風の電子音楽「チップチューン」向けの作曲ソフト「[LSDj (Little Sound Dj)](https://www.littlesounddj.com/)」で作った楽曲を多数発表。
 
 2017年、世界最大級のチップチューンフェスティバル「[Square Sounds Tokyo](/news/20170916-7f203d/)」に出演。
 
-2019年、チップチューンミュージックを中心とした自主レーベル「[TBKgao](/tbkgao/)」の運営を開始。
+2019年、チップチューンを中心とした自主レーベル「[TBKgao](/tbkgao/)」の運営を開始。
 
 2020年、MSX2の新作ゲーム「[キャラバンブーマー](/news/20190705-addb62/)」にBGMを提供。
 
-2022年、LSDjの影響を受けて生まれた手のひらサイズのハードシンセ、[M8 Tracker](https://dirtywave.com/products/m8-tracker)に没頭。M8 TrackerにGAMEBOY、ギター、ピッチを上げた自らのボーカルを加えて、3rd album「[TOBOX](/news/20221030-665f86/)」を発表。
+2022年、LSDjの影響を受けて生まれた手のひらサイズの電子楽器「[M8 Tracker](https://dirtywave.com/products/m8-tracker)」に没頭。そこにGAMEBOY、ギター、音程を高く加工した自身のボーカルを加えて、3作目のアルバム「[TOBOX](/news/20221030-665f86/)」を発表。
+
+2023年11月から2026年1月まで、札幌のPLASTIC THEATERでイベント「To Be Kontinued」を毎月主催（全27回）。
 
 2024年、ATARIとWayForwardが制作したゲーム「[YARS RISING](/news/20240910-a03e0f/)」に楽曲「Nouveau Monde」を提供し、歌唱、主旋律の作曲、作詞を担当。
+
+2026年、好きな曲の紹介画像を作れるサイト「[TRACKMENTO](https://trackmento.com/)」を公開。続けて、音楽制作ソフト「REAPER」で音と映像をスクラッチできるキット「[ReaScratch](/reascratch/)」や、音を加工する追加機能（VST3プラグイン）「[Tobo Imager](/toboimager/)」「[Tobo Exciter](/toboexciter/)」など、音楽づくりのツールを無料で配布。
 
 現在は、合成音声、音MAD、素のMIDI音源に着目した音楽を目指して活動中。
 
@@ -70,21 +74,25 @@ aliases: ["/ja/about/"]
 {{< /lang >}}
 
 {{< lang en >}}
-In the summer of 2014, Tobokegao started composing music on the Game Boy, a way of making music they arrived at through their band activities.
+In the summer of 2014, Tobokegao started composing music on the Game Boy as a form of expression they arrived at through playing in bands.
 
-They have released many songs made with [LSDj (Little Sound Dj)](https://www.littlesounddj.com/), a composition program used by chiptune artists, and gained recognition.
+They released many tracks made with [LSDj (Little Sound Dj)](https://www.littlesounddj.com/), music-making software used by chiptune artists.
 
-In 2017, on the strength of that work, they performed at [Square Sounds Tokyo](/news/20170916-7f203d/), one of the largest chiptune festivals in the world.
+In 2017, they performed at [Square Sounds Tokyo](/news/20170916-7f203d/), one of the largest chiptune festivals in the world.
 
 In 2019, they started [TBKgao](/tbkgao/), an independent label focused on chiptune music.
 
-In 2020, they provided BGM for the new MSX2 game [*Caravan Boomer*](/news/20190705-addb62/) alongside a gorgeous team of composers.
+In 2020, they provided music for the newly released MSX2 game [*Caravan Boomer*](/news/20190705-addb62/).
 
-In 2022, they became deeply immersed in the [M8 Tracker](https://dirtywave.com/products/m8-tracker), a palm-sized hardware synthesizer inspired by LSDj, and released their third album [*TOBOX*](/news/20221030-665f86/), featuring sounds from a Game Boy, guitar and their own pitched-up vocals.
+In 2022, they immersed themselves in the [M8 Tracker](https://dirtywave.com/products/m8-tracker), a palm-sized hardware synthesizer inspired by LSDj, and released their third album, [*TOBOX*](/news/20221030-665f86/), combining it with a Game Boy, guitar, and their own pitched-up vocals.
 
-In 2024, they contributed the song "Nouveau Monde" to [*YARS RISING*](/news/20240910-a03e0f/), a game by ATARI and WayForward, handling the vocals, main melody and lyrics.
+From November 2023 to January 2026, they organized "To Be Kontinued," a monthly event at PLASTIC THEATER in Sapporo, running 27 editions in total.
 
-They are currently making music centered on VOCALOID and other voice synthesis, OTO-MAD, and Pure MIDI.
+In 2024, they contributed the song "Nouveau Monde" to [*YARS RISING*](/news/20240910-a03e0f/), a game by ATARI and WayForward, performing the vocals and writing the main melody and lyrics.
+
+In 2026, they launched [TRACKMENTO](https://trackmento.com/), a website for creating recommendation images to share favorite music. They then released free music production tools, including [ReaScratch](/reascratch/), a kit for scratching audio and video in REAPER, and the VST3 plugins [Tobo Imager](/toboimager/) and [Tobo Exciter](/toboexciter/).
+
+They are currently working to create music centered on voice synthesis, otoMAD, and Pure MIDI.
 
 <small>Written by Yasuyuki Hirata & Tobokegao</small>
 
