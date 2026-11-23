@@ -23,7 +23,7 @@ aliases: ["/ja/about/"]
 
 2024年、ATARIとWayForwardが制作したゲーム「[YARS RISING](/news/20240910-a03e0f/)」に楽曲「Nouveau Monde」を提供し、歌唱、主旋律の作曲、作詞を担当。
 
-2026年、好きな曲の紹介画像を作れるサイト「[TRACKMENTO](https://trackmento.com/)」を公開。続けて、音楽制作ソフト「REAPER」で音と映像をスクラッチできるキット「[ReaScratch](/reascratch/)」や、音を加工する追加機能（VST3プラグイン）「[Tobo Imager](/toboimager/)」「[Tobo Exciter](/toboexciter/)」など、音楽づくりのツールを無料で配布。
+2026年、好きな曲や音MADを紹介する画像を作れるサイト「[TRACKMENTO](https://trackmento.com/)」を公開。続けて、音楽制作ソフト「REAPER」で音と映像をスクラッチできるキット「[ReaScratch](/reascratch/)」や、音を加工する追加機能（VST3プラグイン）「[Tobo Imager](/toboimager/)」「[Tobo Exciter](/toboexciter/)」など、音楽づくりのツールを無料で配布。
 
 現在は、合成音声、音MAD、素のMIDI音源に着目した音楽を目指して活動中。
 
@@ -90,7 +90,7 @@ From November 2023 to January 2026, they organized "To Be Kontinued," a monthly 
 
 In 2024, they contributed the song "Nouveau Monde" to [*YARS RISING*](/news/20240910-a03e0f/), a game by ATARI and WayForward, performing the vocals and writing the main melody and lyrics.
 
-In 2026, they launched [TRACKMENTO](https://trackmento.com/), a website for creating recommendation images to share favorite music. They then released free music production tools, including [ReaScratch](/reascratch/), a kit for scratching audio and video in REAPER, and the VST3 plugins [Tobo Imager](/toboimager/) and [Tobo Exciter](/toboexciter/).
+In 2026, they launched [TRACKMENTO](https://trackmento.com/), a website for creating images to recommend favorite tracks and otoMAD videos. They then released free music production tools, including [ReaScratch](/reascratch/), a kit for scratching audio and video in REAPER, and the VST3 plugins [Tobo Imager](/toboimager/) and [Tobo Exciter](/toboexciter/).
 
 They are currently working to create music centered on voice synthesis, otoMAD, and Pure MIDI.
 
